@@ -1,0 +1,446 @@
+{
+  "classId": "druid",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Cyclone Armor",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__cyclone_armor",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Grizzly Rage",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__grizzly_rage",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Lightning Storm",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__lightning_storm",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Rabies",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__rabies",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Stone Burst",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__stone_burst",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Wolves",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__wolves",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__cyclone_armor",
+        "label": {
+          "category": "skill",
+          "enUS": "Cyclone Armor",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__cyclone_armor",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:371d36d2-ed42-4113-9fbc-7150de0aeb86:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__grizzly_rage",
+        "label": {
+          "category": "skill",
+          "enUS": "Grizzly Rage",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__grizzly_rage",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:371d36d2-ed42-4113-9fbc-7150de0aeb86:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__lightning_storm",
+        "label": {
+          "category": "skill",
+          "enUS": "Lightning Storm",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__lightning_storm",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:371d36d2-ed42-4113-9fbc-7150de0aeb86:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__rabies",
+        "label": {
+          "category": "skill",
+          "enUS": "Rabies",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__rabies",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:371d36d2-ed42-4113-9fbc-7150de0aeb86:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__stone_burst",
+        "label": {
+          "category": "skill",
+          "enUS": "Stone Burst",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__stone_burst",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:371d36d2-ed42-4113-9fbc-7150de0aeb86:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__wolves",
+        "label": {
+          "category": "skill",
+          "enUS": "Wolves",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__wolves",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:371d36d2-ed42-4113-9fbc-7150de0aeb86:0": 1
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "druid::skill__rabies::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "rabies-druid-endgame",
+  "primaryVariantId": "d4builds:371d36d2-ed42-4113-9fbc-7150de0aeb86:0",
+  "ratings": {
+    "pitTier": null,
+    "tierLabel": null,
+    "tierRank": null
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Rabies",
+    "es": "Rabies"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:371d36d2-ed42-4113-9fbc-7150de0aeb86:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Grizzly Rage",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__grizzly_rage",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Fortify",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__fortify",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Cornered Beast",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cornered_beast",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Cooldown Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown_reduction",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Lightning Storm",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__lightning_storm",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Movement Speed",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__movement_speed",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Hero of the Storm",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__hero_of_the_storm",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Additional Strikes",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__additional_strikes",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Wolves",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__wolves",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Thrill of the Hunt",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__thrill_of_the_hunt",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Attack Speed",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__attack_speed",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Cyclone Armor",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__cyclone_armor",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Increased Radius",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__increased_radius",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Reversal",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__reversal",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Resistance",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__resistance",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Rabies",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__rabies",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Poisoning Speed",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__poisoning_speed",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Superinfection",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__superinfection",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Healing",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__healing",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Stone Burst",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__stone_burst",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Growth Speed",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__growth_speed",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Living Stones",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__living_stones",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Armor",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__armor",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": null,
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "371d36d2-ed42-4113-9fbc-7150de0aeb86",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "36abc32a3249d01b6e8ecab86622bf24fc241fdb539b55a079267516918c0eb5",
+        "url": "https://d4builds.gg/builds/rabies-druid-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

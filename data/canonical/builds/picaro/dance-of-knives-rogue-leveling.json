@@ -1,0 +1,461 @@
+{
+  "classId": "rogue",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Concealment",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__concealment",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Dance of Knives",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__dance_of_knives",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Dark Shroud",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__dark_shroud",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Invigorating Strike",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__invigorating_strike",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Shadow Clone",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__shadow_clone",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Shadow Imbuement",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__shadow_imbuement",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__concealment",
+        "label": {
+          "category": "skill",
+          "enUS": "Concealment",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__concealment",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:9479f69b-b519-40ab-8340-047efb206b3e:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__dance_of_knives",
+        "label": {
+          "category": "skill",
+          "enUS": "Dance of Knives",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__dance_of_knives",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:9479f69b-b519-40ab-8340-047efb206b3e:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__dark_shroud",
+        "label": {
+          "category": "skill",
+          "enUS": "Dark Shroud",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__dark_shroud",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:9479f69b-b519-40ab-8340-047efb206b3e:0": 4
+        }
+      },
+      {
+        "key": "skill:skill__invigorating_strike",
+        "label": {
+          "category": "skill",
+          "enUS": "Invigorating Strike",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__invigorating_strike",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:9479f69b-b519-40ab-8340-047efb206b3e:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__shadow_clone",
+        "label": {
+          "category": "skill",
+          "enUS": "Shadow Clone",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__shadow_clone",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:9479f69b-b519-40ab-8340-047efb206b3e:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__shadow_imbuement",
+        "label": {
+          "category": "skill",
+          "enUS": "Shadow Imbuement",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__shadow_imbuement",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:9479f69b-b519-40ab-8340-047efb206b3e:0": 15
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "rogue::skill__dance_of_knives::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "dance-of-knives-rogue-leveling",
+  "primaryVariantId": "d4builds:9479f69b-b519-40ab-8340-047efb206b3e:0",
+  "ratings": {
+    "pitTier": null,
+    "tierLabel": "A",
+    "tierRank": 1
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "leveling"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Dance of Knives",
+    "es": "Dance of Knives"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:9479f69b-b519-40ab-8340-047efb206b3e:0",
+      "levelBand": "leveling",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Shadow Clone",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__shadow_clone",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Weaken & Vulnerable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__weaken_vulnerable",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Relentless",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__relentless",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Cooldown",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Shadow Imbuement",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__shadow_imbuement",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Vulnerable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__vulnerable",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Endemic",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__endemic",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Ferocity",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ferocity",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 4,
+          "ref": {
+            "category": "skill",
+            "enUS": "Dark Shroud",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__dark_shroud",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Movement Speed",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__movement_speed",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Overflow",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__overflow",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Healing",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__healing",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Concealment",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__concealment",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Energy",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__energy",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Calculation",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__calculation",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Unstoppable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__unstoppable",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Invigorating Strike",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__invigorating_strike",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Vulnerable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__vulnerable",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Accumulating Strike",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__accumulating_strike",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Energy",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__energy",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Dance of Knives",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__dance_of_knives",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Energy Cost Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__energy_cost_reduction",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Star Shards",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__star_shards",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Pierce and Size",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__pierce_and_size",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Dance of Knives Star Shards",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__dance_of_knives_star_shards",
+            "sno": null
+          }
+        }
+      ],
+      "source": {
+        "author": "Rob2628",
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "9479f69b-b519-40ab-8340-047efb206b3e",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "18c723b7e32a7020dd65d122fb629cf75e99706ac143d85eae1918100d18ebb2",
+        "url": "https://d4builds.gg/builds/dance-of-knives-rogue-leveling/",
+        "variantIndex": 0,
+        "variantLabel": "Leveling"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

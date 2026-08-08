@@ -1,0 +1,429 @@
+{
+  "classId": "warlock",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Doom",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__doom",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Dread Claws",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__dread_claws",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Nether Step",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__nether_step",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Rampage-v2",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__rampage_v2",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Summon Laalish",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__summon_laalish",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Terror Swarm",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__terror_swarm",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__doom",
+        "label": {
+          "category": "skill",
+          "enUS": "Doom",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__doom",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:6039c2cb-3bac-4a50-8f55-84c26e498e0a:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__dread_claws",
+        "label": {
+          "category": "skill",
+          "enUS": "Dread Claws",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__dread_claws",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:6039c2cb-3bac-4a50-8f55-84c26e498e0a:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__nether_step",
+        "label": {
+          "category": "skill",
+          "enUS": "Nether Step",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__nether_step",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:6039c2cb-3bac-4a50-8f55-84c26e498e0a:0": 13
+        }
+      },
+      {
+        "key": "skill:skill__rampage_v2",
+        "label": {
+          "category": "skill",
+          "enUS": "Rampage-v2",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__rampage_v2",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:6039c2cb-3bac-4a50-8f55-84c26e498e0a:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__summon_laalish",
+        "label": {
+          "category": "skill",
+          "enUS": "Summon Laalish",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__summon_laalish",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:6039c2cb-3bac-4a50-8f55-84c26e498e0a:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__terror_swarm",
+        "label": {
+          "category": "skill",
+          "enUS": "Terror Swarm",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__terror_swarm",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:6039c2cb-3bac-4a50-8f55-84c26e498e0a:0": 15
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "warlock::skill__dread_claws::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "dread-claws-warlock-leveling",
+  "primaryVariantId": "d4builds:6039c2cb-3bac-4a50-8f55-84c26e498e0a:0",
+  "ratings": {
+    "pitTier": null,
+    "tierLabel": "B",
+    "tierRank": 1
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "leveling"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Dread Claws",
+    "es": "Dread Claws"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:6039c2cb-3bac-4a50-8f55-84c26e498e0a:0",
+      "levelBand": "leveling",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Dread Claws",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__dread_claws",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Damage",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Cascading Dread",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cascading_dread",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Ambush",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ambush",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 13,
+          "ref": {
+            "category": "skill",
+            "enUS": "Nether Step",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__nether_step",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Damage Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage_reduction",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Portals",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__portals",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Vacuum Swap",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__vacuum_swap",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Rampage-v2",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__rampage_v2",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Killstreak Damage",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__killstreak_damage",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Shockwave",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__shockwave",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Elite Hit Chance",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__elite_hit_chance",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Terror Swarm",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__terror_swarm",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Extra Bites",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__extra_bites",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Nightmare",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__nightmare",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Pull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__pull",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Summon Laalish",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__summon_laalish",
+            "sno": null
+          },
+          "runes": [],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Doom",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__doom",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Wrath",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__wrath",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Contagion",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__contagion",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Echo",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__echo",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": "Rob2628",
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "6039c2cb-3bac-4a50-8f55-84c26e498e0a",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "b628eaf1a7cc203b659ff37e0ecaad8bb66266e9725412cd24cb4864110def87",
+        "url": "https://d4builds.gg/builds/dread-claws-warlock-leveling/",
+        "variantIndex": 0,
+        "variantLabel": "Leveling"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

@@ -1,0 +1,437 @@
+{
+  "classId": "druid",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Debilitating Roar",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__debilitating_roar",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Grizzly Rage",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__grizzly_rage",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Hurricane",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__hurricane",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Lightning Storm",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__lightning_storm",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Shred",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__shred",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Wolves",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__wolves",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__debilitating_roar",
+        "label": {
+          "category": "skill",
+          "enUS": "Debilitating Roar",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__debilitating_roar",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:43003e89-bb97-4963-b172-ecc41cf33417:0": 4
+        }
+      },
+      {
+        "key": "skill:skill__grizzly_rage",
+        "label": {
+          "category": "skill",
+          "enUS": "Grizzly Rage",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__grizzly_rage",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:43003e89-bb97-4963-b172-ecc41cf33417:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__hurricane",
+        "label": {
+          "category": "skill",
+          "enUS": "Hurricane",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__hurricane",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:43003e89-bb97-4963-b172-ecc41cf33417:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__lightning_storm",
+        "label": {
+          "category": "skill",
+          "enUS": "Lightning Storm",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__lightning_storm",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:43003e89-bb97-4963-b172-ecc41cf33417:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__shred",
+        "label": {
+          "category": "skill",
+          "enUS": "Shred",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__shred",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:43003e89-bb97-4963-b172-ecc41cf33417:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__wolves",
+        "label": {
+          "category": "skill",
+          "enUS": "Wolves",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__wolves",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:43003e89-bb97-4963-b172-ecc41cf33417:0": 1
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "druid::skill__shred::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "shred-druid-endgame",
+  "primaryVariantId": "d4builds:43003e89-bb97-4963-b172-ecc41cf33417:0",
+  "ratings": {
+    "pitTier": 145,
+    "tierLabel": "S",
+    "tierRank": 1
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Shred",
+    "es": "Shred"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:43003e89-bb97-4963-b172-ecc41cf33417:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Lightning Storm",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__lightning_storm",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Hero of the Storm",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__hero_of_the_storm",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Additional Strikes",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__additional_strikes",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 4,
+          "ref": {
+            "category": "skill",
+            "enUS": "Debilitating Roar",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__debilitating_roar",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Increased Duration",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__increased_duration",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Booming Roar",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__booming_roar",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Maximum Life",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__maximum_life",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Hurricane",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__hurricane",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Derecho",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__derecho",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Weaken",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__weaken",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Grizzly Rage",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__grizzly_rage",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Fortify",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__fortify",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Cornered Beast",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cornered_beast",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Cooldown Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown_reduction",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Wolves",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__wolves",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Thrill of the Hunt",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__thrill_of_the_hunt",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Attack Speed",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__attack_speed",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Shred",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__shred",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Cast Speed",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cast_speed",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Storm Shred",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__storm_shred",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Healing",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__healing",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Shred Storm Shred",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__shred_storm_shred",
+            "sno": null
+          }
+        }
+      ],
+      "source": {
+        "author": "Rob2628",
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "43003e89-bb97-4963-b172-ecc41cf33417",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "202304b609208a4a8321aa7403435238a33afc804708e1482b92153966700364",
+        "url": "https://d4builds.gg/builds/shred-druid-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

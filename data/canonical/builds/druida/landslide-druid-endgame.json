@@ -1,0 +1,438 @@
+{
+  "classId": "druid",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Cyclone Armor",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__cyclone_armor",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Earth Spike",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__earth_spike",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Grizzly Rage",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__grizzly_rage",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Landslide",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__landslide",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Lightning Storm",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__lightning_storm",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Wolves",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__wolves",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__cyclone_armor",
+        "label": {
+          "category": "skill",
+          "enUS": "Cyclone Armor",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__cyclone_armor",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:1d435390-4527-48cf-ae1d-03f44b1174fc:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__earth_spike",
+        "label": {
+          "category": "skill",
+          "enUS": "Earth Spike",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__earth_spike",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:1d435390-4527-48cf-ae1d-03f44b1174fc:0": 2
+        }
+      },
+      {
+        "key": "skill:skill__grizzly_rage",
+        "label": {
+          "category": "skill",
+          "enUS": "Grizzly Rage",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__grizzly_rage",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:1d435390-4527-48cf-ae1d-03f44b1174fc:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__landslide",
+        "label": {
+          "category": "skill",
+          "enUS": "Landslide",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__landslide",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:1d435390-4527-48cf-ae1d-03f44b1174fc:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__lightning_storm",
+        "label": {
+          "category": "skill",
+          "enUS": "Lightning Storm",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__lightning_storm",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:1d435390-4527-48cf-ae1d-03f44b1174fc:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__wolves",
+        "label": {
+          "category": "skill",
+          "enUS": "Wolves",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__wolves",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:1d435390-4527-48cf-ae1d-03f44b1174fc:0": 1
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "druid::skill__landslide::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "landslide-druid-endgame",
+  "primaryVariantId": "d4builds:1d435390-4527-48cf-ae1d-03f44b1174fc:0",
+  "ratings": {
+    "pitTier": 125,
+    "tierLabel": "A",
+    "tierRank": null
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Landslide",
+    "es": "Landslide"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:1d435390-4527-48cf-ae1d-03f44b1174fc:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Wolves",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__wolves",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Thrill of the Hunt",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__thrill_of_the_hunt",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Attack Speed",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__attack_speed",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Cyclone Armor",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__cyclone_armor",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Greater Cyclone Armor",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__greater_cyclone_armor",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Resistance",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__resistance",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Lightning Storm",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__lightning_storm",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Movement Speed",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__movement_speed",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Hero of the Storm",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__hero_of_the_storm",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Additional Strikes",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__additional_strikes",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Grizzly Rage",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__grizzly_rage",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Fortify",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__fortify",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Cornered Beast",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cornered_beast",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Cooldown Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown_reduction",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 2,
+          "ref": {
+            "category": "skill",
+            "enUS": "Earth Spike",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__earth_spike",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Overpower",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__overpower",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Seismic Shift",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__seismic_shift",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Spirit",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__spirit",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Landslide",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__landslide",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Additional Pillar",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__additional_pillar",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Continental Shift",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__continental_shift",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Critical Strike Chance",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__critical_strike_chance",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": "Rob2628",
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "1d435390-4527-48cf-ae1d-03f44b1174fc",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "94154cdca7d209e07b6ffc73354686974f4a6247ef8102b067f275566bc38ca7",
+        "url": "https://d4builds.gg/builds/landslide-druid-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

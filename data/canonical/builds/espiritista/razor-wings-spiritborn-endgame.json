@@ -1,0 +1,404 @@
+{
+  "classId": "spiritborn",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Armored Hide",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__armored_hide",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Ravager",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__ravager",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Razor Wings",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__razor_wings",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Scourge",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__scourge",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "The Hunter",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__the_hunter",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Toxic Skin",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__toxic_skin",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__armored_hide",
+        "label": {
+          "category": "skill",
+          "enUS": "Armored Hide",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__armored_hide",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:92abb5b7-17c8-41ee-94e3-ae8a89d1e473:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__ravager",
+        "label": {
+          "category": "skill",
+          "enUS": "Ravager",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__ravager",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:92abb5b7-17c8-41ee-94e3-ae8a89d1e473:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__razor_wings",
+        "label": {
+          "category": "skill",
+          "enUS": "Razor Wings",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__razor_wings",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:92abb5b7-17c8-41ee-94e3-ae8a89d1e473:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__scourge",
+        "label": {
+          "category": "skill",
+          "enUS": "Scourge",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__scourge",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:92abb5b7-17c8-41ee-94e3-ae8a89d1e473:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__the_hunter",
+        "label": {
+          "category": "skill",
+          "enUS": "The Hunter",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__the_hunter",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:92abb5b7-17c8-41ee-94e3-ae8a89d1e473:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__toxic_skin",
+        "label": {
+          "category": "skill",
+          "enUS": "Toxic Skin",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__toxic_skin",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:92abb5b7-17c8-41ee-94e3-ae8a89d1e473:0": 15
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "spiritborn::skill__razor_wings::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "razor-wings-spiritborn-endgame",
+  "primaryVariantId": "d4builds:92abb5b7-17c8-41ee-94e3-ae8a89d1e473:0",
+  "ratings": {
+    "pitTier": null,
+    "tierLabel": null,
+    "tierRank": null
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Razor Wings",
+    "es": "Razor Wings"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:92abb5b7-17c8-41ee-94e3-ae8a89d1e473:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Ravager",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__ravager",
+            "sno": null
+          },
+          "runes": [],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Armored Hide",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__armored_hide",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Blocked Damage Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__blocked_damage_reduction",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Force of Nature",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__force_of_nature",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Duration",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__duration",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Scourge",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__scourge",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Weaken",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__weaken",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Hive Mind",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__hive_mind",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Vulnerable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__vulnerable",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Toxic Skin",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__toxic_skin",
+            "sno": null
+          },
+          "runes": [],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Razor Wings",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__razor_wings",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Damage Increase",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage_increase",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Flock of Feathers",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__flock_of_feathers",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Refund Charges",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__refund_charges",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "The Hunter",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__the_hunter",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Size Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__size_bonus",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Relentless Pursuit",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__relentless_pursuit",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Execute",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__execute",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": null,
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "92abb5b7-17c8-41ee-94e3-ae8a89d1e473",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "7c2690e1e09f0743a78c220c26cda1a0a5a7a6f270f430e1562d0ad8e8e9e94f",
+        "url": "https://d4builds.gg/builds/razor-wings-spiritborn-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

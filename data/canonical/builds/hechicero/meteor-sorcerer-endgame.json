@@ -1,0 +1,460 @@
+{
+  "classId": "sorcerer",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Familiar",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__familiar",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Flame Shield",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__flame_shield",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Ice Armor",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__ice_armor",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Inferno",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__inferno",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Meteor",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__meteor",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Teleport",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__teleport",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__familiar",
+        "label": {
+          "category": "skill",
+          "enUS": "Familiar",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__familiar",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:85fbebdc-26fd-4d79-b295-2d9234b7dcd7:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__flame_shield",
+        "label": {
+          "category": "skill",
+          "enUS": "Flame Shield",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__flame_shield",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:85fbebdc-26fd-4d79-b295-2d9234b7dcd7:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__ice_armor",
+        "label": {
+          "category": "skill",
+          "enUS": "Ice Armor",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__ice_armor",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:85fbebdc-26fd-4d79-b295-2d9234b7dcd7:0": 11
+        }
+      },
+      {
+        "key": "skill:skill__inferno",
+        "label": {
+          "category": "skill",
+          "enUS": "Inferno",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__inferno",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:85fbebdc-26fd-4d79-b295-2d9234b7dcd7:0": 4
+        }
+      },
+      {
+        "key": "skill:skill__meteor",
+        "label": {
+          "category": "skill",
+          "enUS": "Meteor",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__meteor",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:85fbebdc-26fd-4d79-b295-2d9234b7dcd7:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__teleport",
+        "label": {
+          "category": "skill",
+          "enUS": "Teleport",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__teleport",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:85fbebdc-26fd-4d79-b295-2d9234b7dcd7:0": 1
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "sorcerer::skill__meteor::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "meteor-sorcerer-endgame",
+  "primaryVariantId": "d4builds:85fbebdc-26fd-4d79-b295-2d9234b7dcd7:0",
+  "ratings": {
+    "pitTier": null,
+    "tierLabel": "A",
+    "tierRank": null
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Meteor",
+    "es": "Meteor"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:85fbebdc-26fd-4d79-b295-2d9234b7dcd7:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Teleport",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__teleport",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Weaken",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__weaken",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Blaze",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__blaze",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Ferocity",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ferocity",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Teleport Blaze",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__teleport_blaze",
+            "sno": null
+          }
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 11,
+          "ref": {
+            "category": "skill",
+            "enUS": "Ice Armor",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__ice_armor",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Cooldown Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown_reduction",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Permafrost",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__permafrost",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Duration Bonus and Barrier",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__duration_bonus_and_barrier",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Familiar",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__familiar",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Healing Flames",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__healing_flames",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Duration Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__duration_bonus",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Familiar Healing Flames",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__familiar_healing_flames",
+            "sno": null
+          }
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Flame Shield",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__flame_shield",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Cooldown Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown_reduction",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Firebird",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__firebird",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Overpower",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__overpower",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Meteor",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__meteor",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Resource Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__resource_damage_bonus",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Air Burst",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__air_burst",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Overpower",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__overpower",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 4,
+          "ref": {
+            "category": "skill",
+            "enUS": "Inferno",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__inferno",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Overpower",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__overpower",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Living Bomb",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__living_bomb",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Cooldown Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown_reduction",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": "Rob2628",
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "85fbebdc-26fd-4d79-b295-2d9234b7dcd7",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "eb6f77f879a8f865ad22257200fd002498b3bcba473aed0a945ea397e6531833",
+        "url": "https://d4builds.gg/builds/meteor-sorcerer-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

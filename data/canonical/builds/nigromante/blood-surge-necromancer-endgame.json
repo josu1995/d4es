@@ -1,0 +1,461 @@
+{
+  "classId": "necromancer",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Blood Surge",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__blood_surge",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Blood Wave",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__blood_wave",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Bone Prison",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__bone_prison",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Corpse Tendrils",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__corpse_tendrils",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Sever",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__sever",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Skeleton Warrior",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__skeleton_warrior",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__blood_surge",
+        "label": {
+          "category": "skill",
+          "enUS": "Blood Surge",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__blood_surge",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:7d260966-2b82-4dd6-9507-e5b36ba0f685:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__blood_wave",
+        "label": {
+          "category": "skill",
+          "enUS": "Blood Wave",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__blood_wave",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:7d260966-2b82-4dd6-9507-e5b36ba0f685:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__bone_prison",
+        "label": {
+          "category": "skill",
+          "enUS": "Bone Prison",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__bone_prison",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:7d260966-2b82-4dd6-9507-e5b36ba0f685:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__corpse_tendrils",
+        "label": {
+          "category": "skill",
+          "enUS": "Corpse Tendrils",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__corpse_tendrils",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:7d260966-2b82-4dd6-9507-e5b36ba0f685:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__sever",
+        "label": {
+          "category": "skill",
+          "enUS": "Sever",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__sever",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:7d260966-2b82-4dd6-9507-e5b36ba0f685:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__skeleton_warrior",
+        "label": {
+          "category": "skill",
+          "enUS": "Skeleton Warrior",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__skeleton_warrior",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:7d260966-2b82-4dd6-9507-e5b36ba0f685:0": 10
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "necromancer::skill__blood_surge::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "blood-surge-necromancer-endgame",
+  "primaryVariantId": "d4builds:7d260966-2b82-4dd6-9507-e5b36ba0f685:0",
+  "ratings": {
+    "pitTier": null,
+    "tierLabel": null,
+    "tierRank": null
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Blood Surge",
+    "es": "Blood Surge"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:7d260966-2b82-4dd6-9507-e5b36ba0f685:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 10,
+          "ref": {
+            "category": "skill",
+            "enUS": "Skeleton Warrior",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__skeleton_warrior",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Healing",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__healing",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Master of Puppets",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__master_of_puppets",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Vulnerable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__vulnerable",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Corpse Tendrils",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__corpse_tendrils",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Critical Strike Chance",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__critical_strike_chance",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Get Over Here!",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__get_over_here",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Vulnerable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__vulnerable",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Bone Prison",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__bone_prison",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Vulnerable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__vulnerable",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Life Imprisonment",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__life_imprisonment",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Essence Generation",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__essence_generation",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Bone Prison Life Imprisonment",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__bone_prison_life_imprisonment",
+            "sno": null
+          }
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Blood Wave",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__blood_wave",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Damage Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage_reduction",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Hematolagnia",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__hematolagnia",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Overpower",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__overpower",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Blood Surge",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__blood_surge",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Weaken",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__weaken",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "You And What Army?",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__you_and_what_army",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage_bonus",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Sever",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__sever",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Cost Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cost_reduction",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Inexorable Reaper",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__inexorable_reaper",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Crowd Control and Corpse Generation",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__crowd_control_and_corpse_generation",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": null,
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "7d260966-2b82-4dd6-9507-e5b36ba0f685",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "8a938e26bebb156e8eb041e538118ed124a8435a866affdf865b6944c9fa5279",
+        "url": "https://d4builds.gg/builds/blood-surge-necromancer-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

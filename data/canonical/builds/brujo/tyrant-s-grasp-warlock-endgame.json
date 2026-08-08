@@ -1,0 +1,411 @@
+{
+  "classId": "warlock",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Apocalypse",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__apocalypse",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Dark Prison",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__dark_prison",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Demonic Swipe-v2",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__demonic_swipe_v2",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Metamorphosis",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__metamorphosis",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Nether Step",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__nether_step",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Tyrant's Grasp",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__tyrant_s_grasp",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__apocalypse",
+        "label": {
+          "category": "skill",
+          "enUS": "Apocalypse",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__apocalypse",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:e98235c4-d143-440d-98b5-e4f742f61a33:0": 0
+        }
+      },
+      {
+        "key": "skill:skill__dark_prison",
+        "label": {
+          "category": "skill",
+          "enUS": "Dark Prison",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__dark_prison",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:e98235c4-d143-440d-98b5-e4f742f61a33:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__demonic_swipe_v2",
+        "label": {
+          "category": "skill",
+          "enUS": "Demonic Swipe-v2",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__demonic_swipe_v2",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:e98235c4-d143-440d-98b5-e4f742f61a33:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__metamorphosis",
+        "label": {
+          "category": "skill",
+          "enUS": "Metamorphosis",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__metamorphosis",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:e98235c4-d143-440d-98b5-e4f742f61a33:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__nether_step",
+        "label": {
+          "category": "skill",
+          "enUS": "Nether Step",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__nether_step",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:e98235c4-d143-440d-98b5-e4f742f61a33:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__tyrant_s_grasp",
+        "label": {
+          "category": "skill",
+          "enUS": "Tyrant's Grasp",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__tyrant_s_grasp",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:e98235c4-d143-440d-98b5-e4f742f61a33:0": 15
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "warlock::skill__tyrant_s_grasp::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 13
+  },
+  "id": "tyrant-s-grasp-warlock-endgame",
+  "primaryVariantId": "d4builds:e98235c4-d143-440d-98b5-e4f742f61a33:0",
+  "ratings": {
+    "pitTier": null,
+    "tierLabel": null,
+    "tierRank": null
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Tyrant's Grasp",
+    "es": "Tyrant's Grasp"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:e98235c4-d143-440d-98b5-e4f742f61a33:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Tyrant's Grasp",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__tyrant_s_grasp",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Unstoppable Damage",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__unstoppable_damage",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Demonic Grasp",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__demonic_grasp",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Grasp Area",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__grasp_area",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Nether Step",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__nether_step",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Damage Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage_reduction",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Portals",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__portals",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Movement Speed",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__movement_speed",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 0,
+          "ref": {
+            "category": "skill",
+            "enUS": "Apocalypse",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__apocalypse",
+            "sno": null
+          },
+          "runes": [],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Metamorphosis",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__metamorphosis",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Damage Scaling",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage_scaling",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Destruction Demon",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__destruction_demon",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Dominance",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__dominance",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Demonic Swipe-v2",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__demonic_swipe_v2",
+            "sno": null
+          },
+          "runes": [],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Dark Prison",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__dark_prison",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Weaken",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__weaken",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Chain Aura",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__chain_aura",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Fortify",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__fortify",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Chain Aura",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__chain_aura",
+            "sno": null
+          }
+        }
+      ],
+      "source": {
+        "author": "Rob2628",
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "e98235c4-d143-440d-98b5-e4f742f61a33",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "01085b26972230f66ed0929b701813463317b14f4a8ff51c4e5691592cbee410",
+        "url": "https://d4builds.gg/builds/tyrant's-grasp-warlock-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

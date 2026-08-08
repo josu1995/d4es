@@ -1,0 +1,446 @@
+{
+  "classId": "rogue",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Barrage",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__barrage",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Cold Imbuement",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__cold_imbuement",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Concealment",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__concealment",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Dash",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__dash",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Forceful Arrow",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__forceful_arrow",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Smoke Grenade",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__smoke_grenade",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__barrage",
+        "label": {
+          "category": "skill",
+          "enUS": "Barrage",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__barrage",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:e40dbceb-08fb-4f58-a8f4-49f01a25f1a2:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__cold_imbuement",
+        "label": {
+          "category": "skill",
+          "enUS": "Cold Imbuement",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__cold_imbuement",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:e40dbceb-08fb-4f58-a8f4-49f01a25f1a2:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__concealment",
+        "label": {
+          "category": "skill",
+          "enUS": "Concealment",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__concealment",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:e40dbceb-08fb-4f58-a8f4-49f01a25f1a2:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__dash",
+        "label": {
+          "category": "skill",
+          "enUS": "Dash",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__dash",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:e40dbceb-08fb-4f58-a8f4-49f01a25f1a2:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__forceful_arrow",
+        "label": {
+          "category": "skill",
+          "enUS": "Forceful Arrow",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__forceful_arrow",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:e40dbceb-08fb-4f58-a8f4-49f01a25f1a2:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__smoke_grenade",
+        "label": {
+          "category": "skill",
+          "enUS": "Smoke Grenade",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__smoke_grenade",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:e40dbceb-08fb-4f58-a8f4-49f01a25f1a2:0": 1
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "rogue::skill__cold_imbuement::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "arrow-storms-rogue-endgame",
+  "primaryVariantId": "d4builds:e40dbceb-08fb-4f58-a8f4-49f01a25f1a2:0",
+  "ratings": {
+    "pitTier": null,
+    "tierLabel": null,
+    "tierRank": null
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Arrow Storms",
+    "es": "Arrow Storms"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:e40dbceb-08fb-4f58-a8f4-49f01a25f1a2:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Cold Imbuement",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__cold_imbuement",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Cooldown",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Frozen Heart",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__frozen_heart",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Overpower",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__overpower",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Dash",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__dash",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Primer",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__primer",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Charges and Cooldown Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__charges_and_cooldown_reduction",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Concealment",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__concealment",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Resolve",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__resolve",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Calculation",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__calculation",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Unstoppable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__unstoppable",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Smoke Grenade",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__smoke_grenade",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Increased Duration and Damage",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__increased_duration_and_damage",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Silhouette",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__silhouette",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Charge or Energy Cost Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__charge_or_energy_cost_reduction",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Barrage",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__barrage",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Vulnerable or Weakened",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__vulnerable_or_weakened",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Succession",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__succession",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Overpower",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__overpower",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Forceful Arrow",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__forceful_arrow",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Energy",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__energy",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Cloudburst",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cloudburst",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Overpower",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__overpower",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": null,
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "e40dbceb-08fb-4f58-a8f4-49f01a25f1a2",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "d2b1e77139963f89f5dbf5b260851b18417f3af90805e444fffddd2ee46868a5",
+        "url": "https://d4builds.gg/builds/arrow-storms-rogue-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

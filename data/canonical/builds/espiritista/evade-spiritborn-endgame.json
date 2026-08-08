@@ -1,0 +1,452 @@
+{
+  "classId": "spiritborn",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Armored Hide",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__armored_hide",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Concussive Stomp",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__concussive_stomp",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Ravager",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__ravager",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Rushing Claw",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__rushing_claw",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "The Seeker",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__the_seeker",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Toxic Skin",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__toxic_skin",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__armored_hide",
+        "label": {
+          "category": "skill",
+          "enUS": "Armored Hide",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__armored_hide",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:35fe4be7-216c-4d51-a3b9-1a75885f7b9f:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__concussive_stomp",
+        "label": {
+          "category": "skill",
+          "enUS": "Concussive Stomp",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__concussive_stomp",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:35fe4be7-216c-4d51-a3b9-1a75885f7b9f:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__ravager",
+        "label": {
+          "category": "skill",
+          "enUS": "Ravager",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__ravager",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:35fe4be7-216c-4d51-a3b9-1a75885f7b9f:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__rushing_claw",
+        "label": {
+          "category": "skill",
+          "enUS": "Rushing Claw",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__rushing_claw",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:35fe4be7-216c-4d51-a3b9-1a75885f7b9f:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__the_seeker",
+        "label": {
+          "category": "skill",
+          "enUS": "The Seeker",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__the_seeker",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:35fe4be7-216c-4d51-a3b9-1a75885f7b9f:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__toxic_skin",
+        "label": {
+          "category": "skill",
+          "enUS": "Toxic Skin",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__toxic_skin",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:35fe4be7-216c-4d51-a3b9-1a75885f7b9f:0": 3
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "spiritborn::skill__armored_hide::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 13
+  },
+  "id": "evade-spiritborn-endgame",
+  "primaryVariantId": "d4builds:35fe4be7-216c-4d51-a3b9-1a75885f7b9f:0",
+  "ratings": {
+    "pitTier": null,
+    "tierLabel": null,
+    "tierRank": null
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Evade",
+    "es": "Evade"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:35fe4be7-216c-4d51-a3b9-1a75885f7b9f:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Concussive Stomp",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__concussive_stomp",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Barrier Generation",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__barrier_generation",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Debilitate",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__debilitate",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Resolve Generation",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__resolve_generation",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 3,
+          "ref": {
+            "category": "skill",
+            "enUS": "Toxic Skin",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__toxic_skin",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Skuttle Bug",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__skuttle_bug",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Healing",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__healing",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Armored Hide",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__armored_hide",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Blocked Damage Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__blocked_damage_reduction",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Force of Nature",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__force_of_nature",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Duration",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__duration",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Ravager",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__ravager",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Duration Increase",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__duration_increase",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Flurry of Claws",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__flurry_of_claws",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Damage Increase",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage_increase",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Rushing Claw",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__rushing_claw",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Charge Increase",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__charge_increase",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Evasive Swipe",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__evasive_swipe",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Incarnate Duration",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__incarnate_duration",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Rushing Claw Evasive Swipe",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__rushing_claw_evasive_swipe",
+            "sno": null
+          }
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "The Seeker",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__the_seeker",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Vulnerable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__vulnerable",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Tag Team",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__tag_team",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "The Seeker Tag Team",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__the_seeker_tag_team",
+            "sno": null
+          }
+        }
+      ],
+      "source": {
+        "author": null,
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "35fe4be7-216c-4d51-a3b9-1a75885f7b9f",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "e5b954e85bc6ddba511ce028e7e18a04fc0edfd02d115f106dbf48bfc823235e",
+        "url": "https://d4builds.gg/builds/evade-spiritborn-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

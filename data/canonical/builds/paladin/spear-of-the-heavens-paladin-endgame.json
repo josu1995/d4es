@@ -1,0 +1,372 @@
+{
+  "classId": "paladin",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Condemn",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__condemn",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Defiance Aura",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__defiance_aura",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Falling Star",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__falling_star",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Fanaticism Aura",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__fanaticism_aura",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Rally",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__rally",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Spear of the Heavens",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__spear_of_the_heavens",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__condemn",
+        "label": {
+          "category": "skill",
+          "enUS": "Condemn",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__condemn",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:36a6ea06-edf1-4c2e-8b1b-cc4dfa1c39d2:0": 0
+        }
+      },
+      {
+        "key": "skill:skill__defiance_aura",
+        "label": {
+          "category": "skill",
+          "enUS": "Defiance Aura",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__defiance_aura",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:36a6ea06-edf1-4c2e-8b1b-cc4dfa1c39d2:0": 3
+        }
+      },
+      {
+        "key": "skill:skill__falling_star",
+        "label": {
+          "category": "skill",
+          "enUS": "Falling Star",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__falling_star",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:36a6ea06-edf1-4c2e-8b1b-cc4dfa1c39d2:0": 0
+        }
+      },
+      {
+        "key": "skill:skill__fanaticism_aura",
+        "label": {
+          "category": "skill",
+          "enUS": "Fanaticism Aura",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__fanaticism_aura",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:36a6ea06-edf1-4c2e-8b1b-cc4dfa1c39d2:0": 3
+        }
+      },
+      {
+        "key": "skill:skill__rally",
+        "label": {
+          "category": "skill",
+          "enUS": "Rally",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__rally",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:36a6ea06-edf1-4c2e-8b1b-cc4dfa1c39d2:0": 3
+        }
+      },
+      {
+        "key": "skill:skill__spear_of_the_heavens",
+        "label": {
+          "category": "skill",
+          "enUS": "Spear of the Heavens",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__spear_of_the_heavens",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:36a6ea06-edf1-4c2e-8b1b-cc4dfa1c39d2:0": 0
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "paladin::skill__spear_of_the_heavens::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 13
+  },
+  "id": "spear-of-the-heavens-paladin-endgame",
+  "primaryVariantId": "d4builds:36a6ea06-edf1-4c2e-8b1b-cc4dfa1c39d2:0",
+  "ratings": {
+    "pitTier": null,
+    "tierLabel": null,
+    "tierRank": null
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Spear of the Heavens",
+    "es": "Spear of the Heavens"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:36a6ea06-edf1-4c2e-8b1b-cc4dfa1c39d2:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 0,
+          "ref": {
+            "category": "skill",
+            "enUS": "Falling Star",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__falling_star",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Vulnerable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__vulnerable",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 3,
+          "ref": {
+            "category": "skill",
+            "enUS": "Fanaticism Aura",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__fanaticism_aura",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Rite of Humility",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__rite_of_humility",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Rite of Redemption",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__rite_of_redemption",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 0,
+          "ref": {
+            "category": "skill",
+            "enUS": "Condemn",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__condemn",
+            "sno": null
+          },
+          "runes": [],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 3,
+          "ref": {
+            "category": "skill",
+            "enUS": "Defiance Aura",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__defiance_aura",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Maximum Life",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__maximum_life",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Rite of Might",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__rite_of_might",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Potency",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__potency",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 3,
+          "ref": {
+            "category": "skill",
+            "enUS": "Rally",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__rally",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Critical Strike Chance",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__critical_strike_chance",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Unhindered and Movement Speed",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__unhindered_and_movement_speed",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 0,
+          "ref": {
+            "category": "skill",
+            "enUS": "Spear of the Heavens",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__spear_of_the_heavens",
+            "sno": null
+          },
+          "runes": [],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": "Rob2628",
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "36a6ea06-edf1-4c2e-8b1b-cc4dfa1c39d2",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "85d195d433f17b51ee01ec206251ae7eea476cbb127a9562e8ee8545b6758d87",
+        "url": "https://d4builds.gg/builds/spear-of-the-heavens-paladin-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

@@ -1,0 +1,405 @@
+{
+  "classId": "warlock",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Blazing Scream",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__blazing_scream",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Profane Sentinel",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__profane_sentinel",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Sigil of Summons",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__sigil_of_summons",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Summon Vollach",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__summon_vollach",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Terror Swarm",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__terror_swarm",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Umbral Chains",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__umbral_chains",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__blazing_scream",
+        "label": {
+          "category": "skill",
+          "enUS": "Blazing Scream",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__blazing_scream",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ca77f678-d72f-42cc-960c-1db28ce92aaa:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__profane_sentinel",
+        "label": {
+          "category": "skill",
+          "enUS": "Profane Sentinel",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__profane_sentinel",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ca77f678-d72f-42cc-960c-1db28ce92aaa:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__sigil_of_summons",
+        "label": {
+          "category": "skill",
+          "enUS": "Sigil of Summons",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__sigil_of_summons",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ca77f678-d72f-42cc-960c-1db28ce92aaa:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__summon_vollach",
+        "label": {
+          "category": "skill",
+          "enUS": "Summon Vollach",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__summon_vollach",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ca77f678-d72f-42cc-960c-1db28ce92aaa:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__terror_swarm",
+        "label": {
+          "category": "skill",
+          "enUS": "Terror Swarm",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__terror_swarm",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ca77f678-d72f-42cc-960c-1db28ce92aaa:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__umbral_chains",
+        "label": {
+          "category": "skill",
+          "enUS": "Umbral Chains",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__umbral_chains",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ca77f678-d72f-42cc-960c-1db28ce92aaa:0": 15
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "warlock::skill__umbral_chains::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "umbral-chains-warlock-endgame",
+  "primaryVariantId": "d4builds:ca77f678-d72f-42cc-960c-1db28ce92aaa:0",
+  "ratings": {
+    "pitTier": null,
+    "tierLabel": null,
+    "tierRank": null
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Umbral Chains",
+    "es": "Umbral Chains"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:ca77f678-d72f-42cc-960c-1db28ce92aaa:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Terror Swarm",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__terror_swarm",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Extra Bites",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__extra_bites",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Devouring Swarm",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__devouring_swarm",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Pull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__pull",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Sigil of Summons",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__sigil_of_summons",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Blood Ritual",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__blood_ritual",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Summon Hellwyrm",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__summon_hellwyrm",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Profane Sentinel",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__profane_sentinel",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Sentry",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__sentry",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Summon Vollach",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__summon_vollach",
+            "sno": null
+          },
+          "runes": [],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Umbral Chains",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__umbral_chains",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Capture Damage",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__capture_damage",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Heavy Harpoon",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__heavy_harpoon",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Chain Burst",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__chain_burst",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Blazing Scream",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__blazing_scream",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Damage",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Orbital Scream",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__orbital_scream",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Impact Velocity",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__impact_velocity",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": null,
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "ca77f678-d72f-42cc-960c-1db28ce92aaa",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "21029da87b7c85ba6aeb7afc4553d63c54659eb32647e2444f55bdbc60151d1f",
+        "url": "https://d4builds.gg/builds/umbral-chains-warlock-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

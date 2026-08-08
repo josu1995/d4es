@@ -21,7 +21,8 @@ export type SourceRef = z.infer<typeof SourceRef>;
 export const SkillEntry = z.object({
   ref: GameRef,
   order: z.number().int().min(0),
-  rank: z.number().int().min(1).max(MAX_SKILL_RANK),
+  /** 0 es valido: habilidad en la barra sin puntos invertidos (la otorga el equipo). */
+  rank: z.number().int().min(0).max(MAX_SKILL_RANK),
   /** Skill Variant del rework de Lord of Hatred: puede cambiar la etiqueta elemental. */
   skillVariant: GameRef.nullable(),
   runes: z.array(GameRef).max(3),
@@ -189,6 +190,8 @@ export const BuildIndexRow = z.object({
   sources: z.array(SourceSite),
   authors: z.array(z.string()),
   skills: z.array(z.string()),
+  /** Slugs de icono paralelos a `skills` (skillIconSlug del nombre o su variante). */
+  skillIcons: z.array(z.string()),
   hasMythic: z.boolean(),
   completeness: z.number(),
   season: z.number().int(),
@@ -201,6 +204,14 @@ export const BuildIndex = z.object({
   season: z.number().int(),
   patch: z.string(),
   count: z.number().int(),
+  /**
+   * De donde salieron estos datos. Los guardrails comparan contra la ejecucion anterior,
+   * y una base 'fixture' (8 builds de prueba) no es una vara de medir valida para la
+   * primera ingesta real (92): en ese caso se ignora como linea base. El default es
+   * 'fixture' a proposito: un indice sin procedencia declarada (anterior a este campo)
+   * no puede usarse como referencia.
+   */
+  origen: z.enum(['fixture', 'real']).default('fixture'),
   builds: z.array(BuildIndexRow),
 });
 export type BuildIndex = z.infer<typeof BuildIndex>;

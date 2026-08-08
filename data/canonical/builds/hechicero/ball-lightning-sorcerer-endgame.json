@@ -12,10 +12,26 @@
       },
       {
         "category": "skill",
+        "enUS": "Hydra",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__hydra",
+        "sno": null
+      },
+      {
+        "category": "skill",
         "enUS": "Ice Armor",
         "esES": null,
         "i18n": "none",
         "idName": "skill__ice_armor",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Meteor",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__meteor",
         "sno": null
       },
       {
@@ -53,6 +69,21 @@
         }
       },
       {
+        "key": "skill:skill__hydra",
+        "label": {
+          "category": "skill",
+          "enUS": "Hydra",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__hydra",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:0e5a63c6-49fa-4992-a65c-33f50db9bd4e:0": 1
+        }
+      },
+      {
         "key": "skill:skill__ice_armor",
         "label": {
           "category": "skill",
@@ -64,7 +95,22 @@
         },
         "status": "agree",
         "values": {
-          "d4builds:0e5a63c6-49fa-4992-a65c-33f50db9bd4e:0": 5
+          "d4builds:0e5a63c6-49fa-4992-a65c-33f50db9bd4e:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__meteor",
+        "label": {
+          "category": "skill",
+          "enUS": "Meteor",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__meteor",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:0e5a63c6-49fa-4992-a65c-33f50db9bd4e:0": 1
         }
       },
       {
@@ -79,7 +125,7 @@
         },
         "status": "agree",
         "values": {
-          "d4builds:0e5a63c6-49fa-4992-a65c-33f50db9bd4e:0": 5
+          "d4builds:0e5a63c6-49fa-4992-a65c-33f50db9bd4e:0": 1
         }
       },
       {
@@ -94,7 +140,7 @@
         },
         "status": "agree",
         "values": {
-          "d4builds:0e5a63c6-49fa-4992-a65c-33f50db9bd4e:0": 12
+          "d4builds:0e5a63c6-49fa-4992-a65c-33f50db9bd4e:0": 15
         }
       }
     ],
@@ -108,9 +154,9 @@
   "id": "ball-lightning-sorcerer-endgame",
   "primaryVariantId": "d4builds:0e5a63c6-49fa-4992-a65c-33f50db9bd4e:0",
   "ratings": {
-    "pitTier": 150,
-    "tierLabel": "A",
-    "tierRank": 1
+    "pitTier": 125,
+    "tierLabel": "B",
+    "tierRank": null
   },
   "summary": {
     "en": null,
@@ -127,7 +173,7 @@
     "en": "Ball Lightning",
     "es": "Ball Lightning"
   },
-  "updatedAt": "2026-08-08T00:00:00.000Z",
+  "updatedAt": "2026-08-08T21:57:21.526Z",
   "variants": [
     {
       "completeness": {
@@ -155,6 +201,173 @@
           "rank": 15,
           "ref": {
             "category": "skill",
+            "enUS": "Unstable Currents",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__unstable_currents",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Cooldown Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown_reduction",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Ramping Currents",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ramping_currents",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage_bonus",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Teleport",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__teleport",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Weaken",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__weaken",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Blaze",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__blaze",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Ferocity",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ferocity",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Teleport Blaze",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__teleport_blaze",
+            "sno": null
+          }
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Ice Armor",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__ice_armor",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Cooldown Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown_reduction",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Permafrost",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__permafrost",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Duration Bonus and Barrier",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__duration_bonus_and_barrier",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Meteor",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__meteor",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Immobilize",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__immobilize",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Shooting Star",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__shooting_star",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Overpower",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__overpower",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
             "enUS": "Ball Lightning",
             "esES": null,
             "i18n": "none",
@@ -164,10 +377,26 @@
           "runes": [
             {
               "category": "rune",
-              "enUS": "Enemy Damage Bonus",
+              "enUS": "Multiple Projectiles",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__enemy_damage_bonus",
+              "idName": "rune__multiple_projectiles",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Orbital",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__orbital",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage_bonus",
               "sno": null
             }
           ],
@@ -175,57 +404,59 @@
         },
         {
           "category": "unknown",
-          "order": 1,
-          "rank": 5,
+          "order": 5,
+          "rank": 1,
           "ref": {
             "category": "skill",
-            "enUS": "Teleport",
+            "enUS": "Hydra",
             "esES": null,
             "i18n": "none",
-            "idName": "skill__teleport",
+            "idName": "skill__hydra",
             "sno": null
           },
-          "runes": [],
-          "skillVariant": null
-        },
-        {
-          "category": "unknown",
-          "order": 2,
-          "rank": 5,
-          "ref": {
-            "category": "skill",
-            "enUS": "Ice Armor",
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Overpower",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__overpower",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Frigid Hydra",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__frigid_hydra",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Cooldown Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown_reduction",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Hydra Frigid Hydra",
             "esES": null,
             "i18n": "none",
-            "idName": "skill__ice_armor",
+            "idName": "skillVariant__hydra_frigid_hydra",
             "sno": null
-          },
-          "runes": [],
-          "skillVariant": null
-        },
-        {
-          "category": "unknown",
-          "order": 3,
-          "rank": 12,
-          "ref": {
-            "category": "skill",
-            "enUS": "Unstable Currents",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__unstable_currents",
-            "sno": null
-          },
-          "runes": [],
-          "skillVariant": null
+          }
         }
       ],
       "source": {
-        "author": "Northwar",
-        "capturedAt": "2026-08-08T00:00:00.000Z",
+        "author": null,
+        "capturedAt": "2026-08-08T21:57:21.526Z",
         "externalId": "0e5a63c6-49fa-4992-a65c-33f50db9bd4e",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "cb051328171a858036716f7b63a8e6433a7d5c96264823e786d0fe211a500a3b",
+        "snapshotHash": "c33eb3c4a4f0f6fd39d30cb47141d89fbad0d37605cbecbd154b7a7c6f6456eb",
         "url": "https://d4builds.gg/builds/ball-lightning-sorcerer-endgame/",
         "variantIndex": 0,
         "variantLabel": "Endgame"

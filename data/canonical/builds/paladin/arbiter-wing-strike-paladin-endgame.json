@@ -1,0 +1,446 @@
+{
+  "classId": "paladin",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Aegis",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__aegis",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Arbiter of Justice",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__arbiter_of_justice",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Condemn",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__condemn",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Consecration",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__consecration",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Defiance Aura",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__defiance_aura",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Fanaticism Aura",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__fanaticism_aura",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__aegis",
+        "label": {
+          "category": "skill",
+          "enUS": "Aegis",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__aegis",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:5d79f803-464b-4076-b161-7cac6568b5bf:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__arbiter_of_justice",
+        "label": {
+          "category": "skill",
+          "enUS": "Arbiter of Justice",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__arbiter_of_justice",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:5d79f803-464b-4076-b161-7cac6568b5bf:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__condemn",
+        "label": {
+          "category": "skill",
+          "enUS": "Condemn",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__condemn",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:5d79f803-464b-4076-b161-7cac6568b5bf:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__consecration",
+        "label": {
+          "category": "skill",
+          "enUS": "Consecration",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__consecration",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:5d79f803-464b-4076-b161-7cac6568b5bf:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__defiance_aura",
+        "label": {
+          "category": "skill",
+          "enUS": "Defiance Aura",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__defiance_aura",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:5d79f803-464b-4076-b161-7cac6568b5bf:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__fanaticism_aura",
+        "label": {
+          "category": "skill",
+          "enUS": "Fanaticism Aura",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__fanaticism_aura",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:5d79f803-464b-4076-b161-7cac6568b5bf:0": 15
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "paladin::skill__aegis::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "arbiter-wing-strike-paladin-endgame",
+  "primaryVariantId": "d4builds:5d79f803-464b-4076-b161-7cac6568b5bf:0",
+  "ratings": {
+    "pitTier": null,
+    "tierLabel": "A",
+    "tierRank": null
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Arbiter Wing Strike",
+    "es": "Arbiter Wing Strike"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:5d79f803-464b-4076-b161-7cac6568b5bf:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Aegis",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__aegis",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Duration",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__duration",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Cooldown Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown_reduction",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Fanaticism Aura",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__fanaticism_aura",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Additional Maximum Resource",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__additional_maximum_resource",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Rite of Vengeance",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__rite_of_vengeance",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Potency",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__potency",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Condemn",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__condemn",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Weaken",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__weaken",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Gather the Guilty",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__gather_the_guilty",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Size Increase",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__size_increase",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Defiance Aura",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__defiance_aura",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Unstoppable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__unstoppable",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Rite of Might",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__rite_of_might",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Potency",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__potency",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Arbiter of Justice",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__arbiter_of_justice",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Wing Strike Recast",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__wing_strike_recast",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Reach of the Law",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__reach_of_the_law",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Duration",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__duration",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Consecration",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__consecration",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Weaken",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__weaken",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Hallowed Ground",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__hallowed_ground",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Resource Generation",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__resource_generation",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": "Rob2628",
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "5d79f803-464b-4076-b161-7cac6568b5bf",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "6a188d7231230fb8de0336f686ebd9a171cf8db6f9100a4869a6c8ebc9d553f5",
+        "url": "https://d4builds.gg/builds/arbiter-wing-strike-paladin-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

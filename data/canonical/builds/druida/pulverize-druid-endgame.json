@@ -1,0 +1,453 @@
+{
+  "classId": "druid",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Cyclone Armor",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__cyclone_armor",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Earth Spike",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__earth_spike",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Grizzly Rage",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__grizzly_rage",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Lightning Storm",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__lightning_storm",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Pulverize",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__pulverize",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Wolves",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__wolves",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__cyclone_armor",
+        "label": {
+          "category": "skill",
+          "enUS": "Cyclone Armor",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__cyclone_armor",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ec633c6a-c363-4806-b002-23bee5a757a4:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__earth_spike",
+        "label": {
+          "category": "skill",
+          "enUS": "Earth Spike",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__earth_spike",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ec633c6a-c363-4806-b002-23bee5a757a4:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__grizzly_rage",
+        "label": {
+          "category": "skill",
+          "enUS": "Grizzly Rage",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__grizzly_rage",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ec633c6a-c363-4806-b002-23bee5a757a4:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__lightning_storm",
+        "label": {
+          "category": "skill",
+          "enUS": "Lightning Storm",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__lightning_storm",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ec633c6a-c363-4806-b002-23bee5a757a4:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__pulverize",
+        "label": {
+          "category": "skill",
+          "enUS": "Pulverize",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__pulverize",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ec633c6a-c363-4806-b002-23bee5a757a4:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__wolves",
+        "label": {
+          "category": "skill",
+          "enUS": "Wolves",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__wolves",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ec633c6a-c363-4806-b002-23bee5a757a4:0": 1
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "druid::skill__pulverize::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "pulverize-druid-endgame",
+  "primaryVariantId": "d4builds:ec633c6a-c363-4806-b002-23bee5a757a4:0",
+  "ratings": {
+    "pitTier": null,
+    "tierLabel": null,
+    "tierRank": null
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Pulverize",
+    "es": "Pulverize"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:ec633c6a-c363-4806-b002-23bee5a757a4:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Grizzly Rage",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__grizzly_rage",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Fortify",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__fortify",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Cornered Beast",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cornered_beast",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Cooldown Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown_reduction",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Lightning Storm",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__lightning_storm",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Movement Speed",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__movement_speed",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Hero of the Storm",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__hero_of_the_storm",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Additional Strikes",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__additional_strikes",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Wolves",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__wolves",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Thrill of the Hunt",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__thrill_of_the_hunt",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Attack Speed",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__attack_speed",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Cyclone Armor",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__cyclone_armor",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Increased Radius",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__increased_radius",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Reversal",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__reversal",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Resistance",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__resistance",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Pulverize",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__pulverize",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage_bonus",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Shockwave",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__shockwave",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Initial Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__initial_damage_bonus",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Pulverize Shockwave",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__pulverize_shockwave",
+            "sno": null
+          }
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Earth Spike",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__earth_spike",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Overpower",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__overpower",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Seismic Shift",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__seismic_shift",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Spirit",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__spirit",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": null,
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "ec633c6a-c363-4806-b002-23bee5a757a4",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "6cd1c4816ed91663b3cf723a7b88a29d41aefd818175b357ab663f48ca216d30",
+        "url": "https://d4builds.gg/builds/pulverize-druid-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

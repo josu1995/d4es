@@ -4,6 +4,14 @@
     "coreSkills": [
       {
         "category": "skill",
+        "enUS": "Apocalypse",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__apocalypse",
+        "sno": null
+      },
+      {
+        "category": "skill",
         "enUS": "Hell Fracture",
         "esES": null,
         "i18n": "none",
@@ -12,23 +20,54 @@
       },
       {
         "category": "skill",
-        "enUS": "Profane Sentinel",
+        "enUS": "Nether Step",
         "esES": null,
         "i18n": "none",
-        "idName": "skill__profane_sentinel",
+        "idName": "skill__nether_step",
         "sno": null
       },
       {
         "category": "skill",
-        "enUS": "Wall of Agony",
+        "enUS": "Sigil of Chaos",
         "esES": null,
         "i18n": "none",
-        "idName": "skill__wall_of_agony",
+        "idName": "skill__sigil_of_chaos",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Summon Abodian",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__summon_abodian",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Tyrant's Grasp",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__tyrant_s_grasp",
         "sno": null
       }
     ],
     "coreUniques": [],
     "fields": [
+      {
+        "key": "skill:skill__apocalypse",
+        "label": {
+          "category": "skill",
+          "enUS": "Apocalypse",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__apocalypse",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:7fe32f34-83cd-42b9-b574-005041d2985b:0": 15
+        }
+      },
       {
         "key": "skill:skill__hell_fracture",
         "label": {
@@ -41,37 +80,67 @@
         },
         "status": "agree",
         "values": {
-          "d4builds:0f0e0d0c-0b0a-0908-0706-050403020100:0": 15
+          "d4builds:7fe32f34-83cd-42b9-b574-005041d2985b:0": 12
         }
       },
       {
-        "key": "skill:skill__profane_sentinel",
+        "key": "skill:skill__nether_step",
         "label": {
           "category": "skill",
-          "enUS": "Profane Sentinel",
+          "enUS": "Nether Step",
           "esES": null,
           "i18n": "none",
-          "idName": "skill__profane_sentinel",
+          "idName": "skill__nether_step",
           "sno": null
         },
         "status": "agree",
         "values": {
-          "d4builds:0f0e0d0c-0b0a-0908-0706-050403020100:0": 6
+          "d4builds:7fe32f34-83cd-42b9-b574-005041d2985b:0": 12
         }
       },
       {
-        "key": "skill:skill__wall_of_agony",
+        "key": "skill:skill__sigil_of_chaos",
         "label": {
           "category": "skill",
-          "enUS": "Wall of Agony",
+          "enUS": "Sigil of Chaos",
           "esES": null,
           "i18n": "none",
-          "idName": "skill__wall_of_agony",
+          "idName": "skill__sigil_of_chaos",
           "sno": null
         },
         "status": "agree",
         "values": {
-          "d4builds:0f0e0d0c-0b0a-0908-0706-050403020100:0": 8
+          "d4builds:7fe32f34-83cd-42b9-b574-005041d2985b:0": 14
+        }
+      },
+      {
+        "key": "skill:skill__summon_abodian",
+        "label": {
+          "category": "skill",
+          "enUS": "Summon Abodian",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__summon_abodian",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:7fe32f34-83cd-42b9-b574-005041d2985b:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__tyrant_s_grasp",
+        "label": {
+          "category": "skill",
+          "enUS": "Tyrant's Grasp",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__tyrant_s_grasp",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:7fe32f34-83cd-42b9-b574-005041d2985b:0": 15
         }
       }
     ],
@@ -80,14 +149,14 @@
   "correlationKey": "warlock::skill__hell_fracture::generic",
   "gameVersion": {
     "patch": "3.1.2",
-    "season": 14
+    "season": 13
   },
   "id": "hell-fracture-warlock-endgame",
-  "primaryVariantId": "d4builds:0f0e0d0c-0b0a-0908-0706-050403020100:0",
+  "primaryVariantId": "d4builds:7fe32f34-83cd-42b9-b574-005041d2985b:0",
   "ratings": {
-    "pitTier": 140,
-    "tierLabel": "A",
-    "tierRank": 2
+    "pitTier": null,
+    "tierLabel": null,
+    "tierRank": null
   },
   "summary": {
     "en": null,
@@ -104,7 +173,7 @@
     "en": "Hell Fracture",
     "es": "Hell Fracture"
   },
-  "updatedAt": "2026-08-08T00:00:00.000Z",
+  "updatedAt": "2026-08-08T21:57:21.526Z",
   "variants": [
     {
       "completeness": {
@@ -117,7 +186,7 @@
         "score": 0.35
       },
       "gear": {},
-      "id": "d4builds:0f0e0d0c-0b0a-0908-0706-050403020100:0",
+      "id": "d4builds:7fe32f34-83cd-42b9-b574-005041d2985b:0",
       "levelBand": "endgame",
       "mercenary": null,
       "paragon": {
@@ -129,7 +198,7 @@
         {
           "category": "unknown",
           "order": 0,
-          "rank": 15,
+          "rank": 12,
           "ref": {
             "category": "skill",
             "enUS": "Hell Fracture",
@@ -138,19 +207,124 @@
             "idName": "skill__hell_fracture",
             "sno": null
           },
-          "runes": [],
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Volatility",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__volatility",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Eruption",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__eruption",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Additional Fracture",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__additional_fracture",
+              "sno": null
+            }
+          ],
           "skillVariant": null
         },
         {
           "category": "unknown",
           "order": 1,
-          "rank": 8,
+          "rank": 12,
           "ref": {
             "category": "skill",
-            "enUS": "Wall of Agony",
+            "enUS": "Nether Step",
             "esES": null,
             "i18n": "none",
-            "idName": "skill__wall_of_agony",
+            "idName": "skill__nether_step",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Damage Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage_reduction",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Portals",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__portals",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Movement Speed",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__movement_speed",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Apocalypse",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__apocalypse",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Survivor Damage",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__survivor_damage",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Annihilation",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__annihilation",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Double Blast",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__double_blast",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Summon Abodian",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__summon_abodian",
             "sno": null
           },
           "runes": [],
@@ -158,27 +332,92 @@
         },
         {
           "category": "unknown",
-          "order": 2,
-          "rank": 6,
+          "order": 4,
+          "rank": 14,
           "ref": {
             "category": "skill",
-            "enUS": "Profane Sentinel",
+            "enUS": "Sigil of Chaos",
             "esES": null,
             "i18n": "none",
-            "idName": "skill__profane_sentinel",
+            "idName": "skill__sigil_of_chaos",
             "sno": null
           },
-          "runes": [],
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Volatility Duration",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__volatility_duration",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Hellfire Aura",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__hellfire_aura",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Chain Reaction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__chain_reaction",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Tyrant's Grasp",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__tyrant_s_grasp",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Unstoppable Damage",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__unstoppable_damage",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Demonic Grasp",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__demonic_grasp",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Grasp Area",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__grasp_area",
+              "sno": null
+            }
+          ],
           "skillVariant": null
         }
       ],
       "source": {
-        "author": "Chronikz",
-        "capturedAt": "2026-08-08T00:00:00.000Z",
-        "externalId": "0f0e0d0c-0b0a-0908-0706-050403020100",
+        "author": "Rob2628",
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "7fe32f34-83cd-42b9-b574-005041d2985b",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "6dbeafdb1fbf5561839b36101efce3264978524c7b982493064fbd6e9edcf870",
+        "snapshotHash": "d2434b9096567ab13d9c944a60fa56f54bba8a2e3b42afd62ff6e39c40930a20",
         "url": "https://d4builds.gg/builds/hell-fracture-warlock-endgame/",
         "variantIndex": 0,
         "variantLabel": "Endgame"

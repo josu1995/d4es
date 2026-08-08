@@ -1,0 +1,436 @@
+{
+  "classId": "warlock",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Bombardment",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__bombardment",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Command Fallen",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__command_fallen",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Fiend of Abaddon",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__fiend_of_abaddon",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Rampage-v2",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__rampage_v2",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Sigil of Summons",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__sigil_of_summons",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Summon Ae'grom",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__summon_ae_grom",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__bombardment",
+        "label": {
+          "category": "skill",
+          "enUS": "Bombardment",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__bombardment",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:775094c6-ea32-4d36-9f25-93d2d08c82ef:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__command_fallen",
+        "label": {
+          "category": "skill",
+          "enUS": "Command Fallen",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__command_fallen",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:775094c6-ea32-4d36-9f25-93d2d08c82ef:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__fiend_of_abaddon",
+        "label": {
+          "category": "skill",
+          "enUS": "Fiend of Abaddon",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__fiend_of_abaddon",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:775094c6-ea32-4d36-9f25-93d2d08c82ef:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__rampage_v2",
+        "label": {
+          "category": "skill",
+          "enUS": "Rampage-v2",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__rampage_v2",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:775094c6-ea32-4d36-9f25-93d2d08c82ef:0": 12
+        }
+      },
+      {
+        "key": "skill:skill__sigil_of_summons",
+        "label": {
+          "category": "skill",
+          "enUS": "Sigil of Summons",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__sigil_of_summons",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:775094c6-ea32-4d36-9f25-93d2d08c82ef:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__summon_ae_grom",
+        "label": {
+          "category": "skill",
+          "enUS": "Summon Ae'grom",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__summon_ae_grom",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:775094c6-ea32-4d36-9f25-93d2d08c82ef:0": 1
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "warlock::skill__sigil_of_summons::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 13
+  },
+  "id": "summon-warlock-endgame",
+  "primaryVariantId": "d4builds:775094c6-ea32-4d36-9f25-93d2d08c82ef:0",
+  "ratings": {
+    "pitTier": null,
+    "tierLabel": null,
+    "tierRank": null
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Summon",
+    "es": "Summon"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:775094c6-ea32-4d36-9f25-93d2d08c82ef:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Summon Ae'grom",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__summon_ae_grom",
+            "sno": null
+          },
+          "runes": [],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Sigil of Summons",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__sigil_of_summons",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Damage",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Feeding Frenzy",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__feeding_frenzy",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Stronger Summons",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__stronger_summons",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 12,
+          "ref": {
+            "category": "skill",
+            "enUS": "Rampage-v2",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__rampage_v2",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Killstreak Damage",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__killstreak_damage",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Shockwave",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__shockwave",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Elite Hit Chance",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__elite_hit_chance",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Fiend of Abaddon",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__fiend_of_abaddon",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Crowd Damage",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__crowd_damage",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Spiteful Enrage",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__spiteful_enrage",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Elite Damage",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__elite_damage",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Command Fallen",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__command_fallen",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Wrath",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__wrath",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Meat Shields",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__meat_shields",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Dominance",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__dominance",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Meat Shields",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__meat_shields",
+            "sno": null
+          }
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Bombardment",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__bombardment",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Additional Demon",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__additional_demon",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Demon Mangler",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__demon_mangler",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Focused Target",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__focused_target",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": "Rob2628",
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "775094c6-ea32-4d36-9f25-93d2d08c82ef",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "d7b0a13a1b00b31ca6d09b6d9295cb6b3e6cd289749a7a4cdfe3d72eb4d89e54",
+        "url": "https://d4builds.gg/builds/summon-warlock-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

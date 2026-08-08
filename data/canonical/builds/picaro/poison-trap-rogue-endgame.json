@@ -1,0 +1,444 @@
+{
+  "classId": "rogue",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Cold Imbuement",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__cold_imbuement",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Concealment",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__concealment",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Dance of Knives",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__dance_of_knives",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Dark Shroud",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__dark_shroud",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Poison Trap",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__poison_trap",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Shadow Clone",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__shadow_clone",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__cold_imbuement",
+        "label": {
+          "category": "skill",
+          "enUS": "Cold Imbuement",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__cold_imbuement",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ad5d0919-ca9c-431b-9ea8-7b295465990f:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__concealment",
+        "label": {
+          "category": "skill",
+          "enUS": "Concealment",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__concealment",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ad5d0919-ca9c-431b-9ea8-7b295465990f:0": 7
+        }
+      },
+      {
+        "key": "skill:skill__dance_of_knives",
+        "label": {
+          "category": "skill",
+          "enUS": "Dance of Knives",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__dance_of_knives",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ad5d0919-ca9c-431b-9ea8-7b295465990f:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__dark_shroud",
+        "label": {
+          "category": "skill",
+          "enUS": "Dark Shroud",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__dark_shroud",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ad5d0919-ca9c-431b-9ea8-7b295465990f:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__poison_trap",
+        "label": {
+          "category": "skill",
+          "enUS": "Poison Trap",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__poison_trap",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ad5d0919-ca9c-431b-9ea8-7b295465990f:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__shadow_clone",
+        "label": {
+          "category": "skill",
+          "enUS": "Shadow Clone",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__shadow_clone",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ad5d0919-ca9c-431b-9ea8-7b295465990f:0": 15
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "rogue::skill__poison_trap::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "poison-trap-rogue-endgame",
+  "primaryVariantId": "d4builds:ad5d0919-ca9c-431b-9ea8-7b295465990f:0",
+  "ratings": {
+    "pitTier": null,
+    "tierLabel": null,
+    "tierRank": null
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Poison Trap",
+    "es": "Poison Trap"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:ad5d0919-ca9c-431b-9ea8-7b295465990f:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Cold Imbuement",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__cold_imbuement",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Cooldown",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Frozen Heart",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__frozen_heart",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Overpower",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__overpower",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 7,
+          "ref": {
+            "category": "skill",
+            "enUS": "Concealment",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__concealment",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Recuperate",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__recuperate",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Poison Trap",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__poison_trap",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Knock Down",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__knock_down",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Frostbite Trap",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__frostbite_trap",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Poison Trap Frostbite Trap",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__poison_trap_frostbite_trap",
+            "sno": null
+          }
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Dark Shroud",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__dark_shroud",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Movement Speed",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__movement_speed",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Shadow Dancer",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__shadow_dancer",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Consume Chance",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__consume_chance",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Dance of Knives",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__dance_of_knives",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Slow and Movement Speed",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__slow_and_movement_speed",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Star Shards",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__star_shards",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Pierce and Size",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__pierce_and_size",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Dance of Knives Star Shards",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__dance_of_knives_star_shards",
+            "sno": null
+          }
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Shadow Clone",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__shadow_clone",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Unstoppable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__unstoppable",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Relentless",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__relentless",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Cooldown",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": null,
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "ad5d0919-ca9c-431b-9ea8-7b295465990f",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "8b810835dee7660f2d1c29a8068741f167b137c85beb0359cca65846ba6e2e49",
+        "url": "https://d4builds.gg/builds/poison-trap-rogue-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

@@ -1,0 +1,454 @@
+{
+  "classId": "paladin",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Arbiter of Justice",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__arbiter_of_justice",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Condemn",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__condemn",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Defiance Aura",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__defiance_aura",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Fanaticism Aura",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__fanaticism_aura",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Rally",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__rally",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Zeal",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__zeal",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__arbiter_of_justice",
+        "label": {
+          "category": "skill",
+          "enUS": "Arbiter of Justice",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__arbiter_of_justice",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:d1969fb4-7bd4-49f8-ad2d-48752d3e0a93:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__condemn",
+        "label": {
+          "category": "skill",
+          "enUS": "Condemn",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__condemn",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:d1969fb4-7bd4-49f8-ad2d-48752d3e0a93:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__defiance_aura",
+        "label": {
+          "category": "skill",
+          "enUS": "Defiance Aura",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__defiance_aura",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:d1969fb4-7bd4-49f8-ad2d-48752d3e0a93:0": 8
+        }
+      },
+      {
+        "key": "skill:skill__fanaticism_aura",
+        "label": {
+          "category": "skill",
+          "enUS": "Fanaticism Aura",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__fanaticism_aura",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:d1969fb4-7bd4-49f8-ad2d-48752d3e0a93:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__rally",
+        "label": {
+          "category": "skill",
+          "enUS": "Rally",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__rally",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:d1969fb4-7bd4-49f8-ad2d-48752d3e0a93:0": 11
+        }
+      },
+      {
+        "key": "skill:skill__zeal",
+        "label": {
+          "category": "skill",
+          "enUS": "Zeal",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__zeal",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:d1969fb4-7bd4-49f8-ad2d-48752d3e0a93:0": 15
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "paladin::skill__zeal::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "zeal-paladin-endgame",
+  "primaryVariantId": "d4builds:d1969fb4-7bd4-49f8-ad2d-48752d3e0a93:0",
+  "ratings": {
+    "pitTier": 130,
+    "tierLabel": "A",
+    "tierRank": 1
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Zeal",
+    "es": "Zeal"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:d1969fb4-7bd4-49f8-ad2d-48752d3e0a93:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Zeal",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__zeal",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Additional Strikes",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__additional_strikes",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Zealot's Legacy",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__zealot_s_legacy",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Weaken",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__weaken",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Fanaticism Aura",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__fanaticism_aura",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Additional Maximum Resource",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__additional_maximum_resource",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Rite of Vengeance",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__rite_of_vengeance",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Potency",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__potency",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Condemn",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__condemn",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Weaken",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__weaken",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Gather the Guilty",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__gather_the_guilty",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Size Increase",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__size_increase",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 8,
+          "ref": {
+            "category": "skill",
+            "enUS": "Defiance Aura",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__defiance_aura",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Unstoppable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__unstoppable",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Rite of Might",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__rite_of_might",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Bonus Healing",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__bonus_healing",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 11,
+          "ref": {
+            "category": "skill",
+            "enUS": "Rally",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__rally",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Duration Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__duration_bonus",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Words of Rejuvenation",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__words_of_rejuvenation",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Unhindered and Movement Speed",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__unhindered_and_movement_speed",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Arbiter of Justice",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__arbiter_of_justice",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Cooldown Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown_reduction",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Seraph's Wings",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__seraph_s_wings",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Duration",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__duration",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": "Rob2628",
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "d1969fb4-7bd4-49f8-ad2d-48752d3e0a93",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "b0c8dac38da1088f76675e3b43638a9af0133ca6370d28c810f7707be657105c",
+        "url": "https://d4builds.gg/builds/zeal-paladin-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

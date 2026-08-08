@@ -1,0 +1,453 @@
+{
+  "classId": "spiritborn",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Armored Hide",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__armored_hide",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Rake",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__rake",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Ravager",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__ravager",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Scourge",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__scourge",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "The Hunter",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__the_hunter",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Toxic Skin",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__toxic_skin",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__armored_hide",
+        "label": {
+          "category": "skill",
+          "enUS": "Armored Hide",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__armored_hide",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:e2010f87-3aa2-4507-9ceb-148461187de0:0": 9
+        }
+      },
+      {
+        "key": "skill:skill__rake",
+        "label": {
+          "category": "skill",
+          "enUS": "Rake",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__rake",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:e2010f87-3aa2-4507-9ceb-148461187de0:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__ravager",
+        "label": {
+          "category": "skill",
+          "enUS": "Ravager",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__ravager",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:e2010f87-3aa2-4507-9ceb-148461187de0:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__scourge",
+        "label": {
+          "category": "skill",
+          "enUS": "Scourge",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__scourge",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:e2010f87-3aa2-4507-9ceb-148461187de0:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__the_hunter",
+        "label": {
+          "category": "skill",
+          "enUS": "The Hunter",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__the_hunter",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:e2010f87-3aa2-4507-9ceb-148461187de0:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__toxic_skin",
+        "label": {
+          "category": "skill",
+          "enUS": "Toxic Skin",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__toxic_skin",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:e2010f87-3aa2-4507-9ceb-148461187de0:0": 15
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "spiritborn::skill__rake::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "rake-spiritborn-endgame",
+  "primaryVariantId": "d4builds:e2010f87-3aa2-4507-9ceb-148461187de0:0",
+  "ratings": {
+    "pitTier": null,
+    "tierLabel": "B",
+    "tierRank": null
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Rake",
+    "es": "Rake"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:e2010f87-3aa2-4507-9ceb-148461187de0:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Ravager",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__ravager",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Vigor Generation",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__vigor_generation",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Flurry of Claws",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__flurry_of_claws",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Ferocity Maximum",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ferocity_maximum",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 9,
+          "ref": {
+            "category": "skill",
+            "enUS": "Armored Hide",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__armored_hide",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Blocked Damage Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__blocked_damage_reduction",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Force of Nature",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__force_of_nature",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Duration",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__duration",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Scourge",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__scourge",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Weaken",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__weaken",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Hive Mind",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__hive_mind",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Vulnerable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__vulnerable",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Toxic Skin",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__toxic_skin",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Skuttle Bug",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__skuttle_bug",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Duration Increase",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__duration_increase",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Rake",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__rake",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Cost Reduction and Damage",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cost_reduction_and_damage",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Simian Swipe",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__simian_swipe",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Cast Speed",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cast_speed",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Rake Simian Swipe",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__rake_simian_swipe",
+            "sno": null
+          }
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "The Hunter",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__the_hunter",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Size Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__size_bonus",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Relentless Pursuit",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__relentless_pursuit",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Execute",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__execute",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": null,
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "e2010f87-3aa2-4507-9ceb-148461187de0",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "a2bbd7f0c21f9daf65db23c9ca401ae19a2baa84ad8ee69c72e4967a44155f00",
+        "url": "https://d4builds.gg/builds/rake-spiritborn-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

@@ -1,0 +1,468 @@
+{
+  "classId": "warlock",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Infernal Breath",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__infernal_breath",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Metamorphosis",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__metamorphosis",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Molten Bomb",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__molten_bomb",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Profane Sentinel",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__profane_sentinel",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Rampage-v2",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__rampage_v2",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Tyrant's Grasp",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__tyrant_s_grasp",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__infernal_breath",
+        "label": {
+          "category": "skill",
+          "enUS": "Infernal Breath",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__infernal_breath",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:7e1956ea-90b2-48c5-b144-ebce6f75ef75:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__metamorphosis",
+        "label": {
+          "category": "skill",
+          "enUS": "Metamorphosis",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__metamorphosis",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:7e1956ea-90b2-48c5-b144-ebce6f75ef75:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__molten_bomb",
+        "label": {
+          "category": "skill",
+          "enUS": "Molten Bomb",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__molten_bomb",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:7e1956ea-90b2-48c5-b144-ebce6f75ef75:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__profane_sentinel",
+        "label": {
+          "category": "skill",
+          "enUS": "Profane Sentinel",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__profane_sentinel",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:7e1956ea-90b2-48c5-b144-ebce6f75ef75:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__rampage_v2",
+        "label": {
+          "category": "skill",
+          "enUS": "Rampage-v2",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__rampage_v2",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:7e1956ea-90b2-48c5-b144-ebce6f75ef75:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__tyrant_s_grasp",
+        "label": {
+          "category": "skill",
+          "enUS": "Tyrant's Grasp",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__tyrant_s_grasp",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:7e1956ea-90b2-48c5-b144-ebce6f75ef75:0": 15
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "warlock::skill__metamorphosis::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 13
+  },
+  "id": "metamorphosis-warlock-endgame",
+  "primaryVariantId": "d4builds:7e1956ea-90b2-48c5-b144-ebce6f75ef75:0",
+  "ratings": {
+    "pitTier": null,
+    "tierLabel": null,
+    "tierRank": null
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Metamorphosis",
+    "es": "Metamorphosis"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:7e1956ea-90b2-48c5-b144-ebce6f75ef75:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Rampage-v2",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__rampage_v2",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Killstreak Damage",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__killstreak_damage",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Demonic Smash",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__demonic_smash",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Demon Masher",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__demon_masher",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Demonic Smash",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__demonic_smash",
+            "sno": null
+          }
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Tyrant's Grasp",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__tyrant_s_grasp",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Unstoppable Damage",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__unstoppable_damage",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Demonic Grasp",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__demonic_grasp",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Grasp Area",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__grasp_area",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Metamorphosis",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__metamorphosis",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Damage Scaling",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage_scaling",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Destruction Demon",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__destruction_demon",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Dominance",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__dominance",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Profane Sentinel",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__profane_sentinel",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Lesser Demon Vulnerable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__lesser_demon_vulnerable",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Demonic Glare",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__demonic_glare",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Wide Beam",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__wide_beam",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Demonic Glare",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__demonic_glare",
+            "sno": null
+          }
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Molten Bomb",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__molten_bomb",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Area Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__area_bonus",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Ranged Damage",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ranged_damage",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Demon Turret",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__demon_turret",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Infernal Breath",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__infernal_breath",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Ramping Damage",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ramping_damage",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Explosive Death",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__explosive_death",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Heavy Impact Damage",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__heavy_impact_damage",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": "Rob2628",
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "7e1956ea-90b2-48c5-b144-ebce6f75ef75",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "3346e55988a9a74731d939f6944157e70d9d58912bfb053555cbf0c66be61444",
+        "url": "https://d4builds.gg/builds/metamorphosis-warlock-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

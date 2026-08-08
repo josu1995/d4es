@@ -1,0 +1,461 @@
+{
+  "classId": "barbarian",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Challenging Shout",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__challenging_shout",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Double Swing",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__double_swing",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Iron Skin",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__iron_skin",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Rallying Cry",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__rallying_cry",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "War Cry",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__war_cry",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Wrath of the Berserker",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__wrath_of_the_berserker",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__challenging_shout",
+        "label": {
+          "category": "skill",
+          "enUS": "Challenging Shout",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__challenging_shout",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:526f92bf-ebc2-40c9-acc8-75f2dfd3e744:0": 4
+        }
+      },
+      {
+        "key": "skill:skill__double_swing",
+        "label": {
+          "category": "skill",
+          "enUS": "Double Swing",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__double_swing",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:526f92bf-ebc2-40c9-acc8-75f2dfd3e744:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__iron_skin",
+        "label": {
+          "category": "skill",
+          "enUS": "Iron Skin",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__iron_skin",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:526f92bf-ebc2-40c9-acc8-75f2dfd3e744:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__rallying_cry",
+        "label": {
+          "category": "skill",
+          "enUS": "Rallying Cry",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__rallying_cry",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:526f92bf-ebc2-40c9-acc8-75f2dfd3e744:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__war_cry",
+        "label": {
+          "category": "skill",
+          "enUS": "War Cry",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__war_cry",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:526f92bf-ebc2-40c9-acc8-75f2dfd3e744:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__wrath_of_the_berserker",
+        "label": {
+          "category": "skill",
+          "enUS": "Wrath of the Berserker",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__wrath_of_the_berserker",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:526f92bf-ebc2-40c9-acc8-75f2dfd3e744:0": 15
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "barbarian::skill__double_swing::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "double-swing-barbarian-endgame",
+  "primaryVariantId": "d4builds:526f92bf-ebc2-40c9-acc8-75f2dfd3e744:0",
+  "ratings": {
+    "pitTier": null,
+    "tierLabel": "B",
+    "tierRank": null
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Double Swing",
+    "es": "Double Swing"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:526f92bf-ebc2-40c9-acc8-75f2dfd3e744:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Double Swing",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__double_swing",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Damage Increase",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage_increase",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Twister",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__twister",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Chance to Hit Twice",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__chance_to_hit_twice",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 4,
+          "ref": {
+            "category": "skill",
+            "enUS": "Challenging Shout",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__challenging_shout",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Duration Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__duration_bonus",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Bawl",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__bawl",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage_bonus",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "War Cry",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__war_cry",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Vulnerable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__vulnerable",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Mighty Roar",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__mighty_roar",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Ferocity",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ferocity",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Rallying Cry",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__rallying_cry",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Fortify",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__fortify",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Booming",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__booming",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Fury Gain",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__fury_gain",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Wrath of the Berserker",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__wrath_of_the_berserker",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Fury Generation",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__fury_generation",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Maximum Carnage",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__maximum_carnage",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Duration Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__duration_bonus",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Iron Skin",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__iron_skin",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Weaken",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__weaken",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Retaliation",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__retaliation",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Resolve",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__resolve",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Iron Skin Retaliation",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__iron_skin_retaliation",
+            "sno": null
+          }
+        }
+      ],
+      "source": {
+        "author": "Rob2628",
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "526f92bf-ebc2-40c9-acc8-75f2dfd3e744",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "b0094eab020bdce3a14a4c17390d28bd36dda69913e280c7e710bfa6308d5084",
+        "url": "https://d4builds.gg/builds/double-swing-barbarian-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

@@ -20,6 +20,14 @@
       },
       {
         "category": "skill",
+        "enUS": "Rallying Cry",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__rallying_cry",
+        "sno": null
+      },
+      {
+        "category": "skill",
         "enUS": "Steel Grasp",
         "esES": null,
         "i18n": "none",
@@ -32,6 +40,14 @@
         "esES": null,
         "i18n": "none",
         "idName": "skill__war_cry",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Wrath of the Berserker",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__wrath_of_the_berserker",
         "sno": null
       }
     ],
@@ -68,6 +84,21 @@
         }
       },
       {
+        "key": "skill:skill__rallying_cry",
+        "label": {
+          "category": "skill",
+          "enUS": "Rallying Cry",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__rallying_cry",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ddaaaed4-6f3b-4c97-b65b-55b04aa2ae39:0": 1
+        }
+      },
+      {
         "key": "skill:skill__steel_grasp",
         "label": {
           "category": "skill",
@@ -90,6 +121,21 @@
           "esES": null,
           "i18n": "none",
           "idName": "skill__war_cry",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ddaaaed4-6f3b-4c97-b65b-55b04aa2ae39:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__wrath_of_the_berserker",
+        "label": {
+          "category": "skill",
+          "enUS": "Wrath of the Berserker",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__wrath_of_the_berserker",
           "sno": null
         },
         "status": "agree",
@@ -127,7 +173,7 @@
     "en": "Charge",
     "es": "Charge"
   },
-  "updatedAt": "2026-08-08T00:00:00.000Z",
+  "updatedAt": "2026-08-08T21:57:21.526Z",
   "variants": [
     {
       "completeness": {
@@ -152,6 +198,166 @@
         {
           "category": "unknown",
           "order": 0,
+          "rank": 14,
+          "ref": {
+            "category": "skill",
+            "enUS": "Iron Skin",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__iron_skin",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Weaken",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__weaken",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Juggernaut",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__juggernaut",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Maximum Life",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__maximum_life",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "War Cry",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__war_cry",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Duration Increase",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__duration_increase",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Mighty Roar",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__mighty_roar",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Ferocity",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ferocity",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Steel Grasp",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__steel_grasp",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Berserking",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__berserking",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Chain Whip",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__chain_whip",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Vulnerable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__vulnerable",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Rallying Cry",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__rallying_cry",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Fortify",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__fortify",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Booming",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__booming",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Potency",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__potency",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
           "rank": 15,
           "ref": {
             "category": "skill",
@@ -198,57 +404,59 @@
         },
         {
           "category": "unknown",
-          "order": 1,
-          "rank": 14,
-          "ref": {
-            "category": "skill",
-            "enUS": "Iron Skin",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__iron_skin",
-            "sno": null
-          },
-          "runes": [],
-          "skillVariant": null
-        },
-        {
-          "category": "unknown",
-          "order": 2,
+          "order": 5,
           "rank": 15,
           "ref": {
             "category": "skill",
-            "enUS": "War Cry",
+            "enUS": "Wrath of the Berserker",
             "esES": null,
             "i18n": "none",
-            "idName": "skill__war_cry",
+            "idName": "skill__wrath_of_the_berserker",
             "sno": null
           },
-          "runes": [],
-          "skillVariant": null
-        },
-        {
-          "category": "unknown",
-          "order": 3,
-          "rank": 1,
-          "ref": {
-            "category": "skill",
-            "enUS": "Steel Grasp",
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Berserking",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__berserking",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Full Throttle",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__full_throttle",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Duration Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__duration_bonus",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Wrath of the Berserker Full Throttle",
             "esES": null,
             "i18n": "none",
-            "idName": "skill__steel_grasp",
+            "idName": "skillVariant__wrath_of_the_berserker_full_throttle",
             "sno": null
-          },
-          "runes": [],
-          "skillVariant": null
+          }
         }
       ],
       "source": {
         "author": "Rob2628",
-        "capturedAt": "2026-08-08T00:00:00.000Z",
+        "capturedAt": "2026-08-08T21:57:21.526Z",
         "externalId": "ddaaaed4-6f3b-4c97-b65b-55b04aa2ae39",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "f562f326b29163a2d1405193e3bc5c1344d0eddbb6112a25cf78456e3752de2a",
+        "snapshotHash": "233ec0b753b9b6df18e79985f0bd7352d115381b6b14d70e6971dc9ea720b26e",
         "url": "https://d4builds.gg/builds/charge-barbarian-endgame/",
         "variantIndex": 0,
         "variantLabel": "Endgame"

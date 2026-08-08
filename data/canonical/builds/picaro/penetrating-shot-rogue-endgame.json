@@ -1,0 +1,437 @@
+{
+  "classId": "rogue",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Concealment",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__concealment",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Dash",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__dash",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Penetrating Shot",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__penetrating_shot",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Poison Imbuement",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__poison_imbuement",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Shadow Clone",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__shadow_clone",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Smoke Grenade",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__smoke_grenade",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__concealment",
+        "label": {
+          "category": "skill",
+          "enUS": "Concealment",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__concealment",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ed086872-1243-46cb-bea0-c23c14cadc48:0": 3
+        }
+      },
+      {
+        "key": "skill:skill__dash",
+        "label": {
+          "category": "skill",
+          "enUS": "Dash",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__dash",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ed086872-1243-46cb-bea0-c23c14cadc48:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__penetrating_shot",
+        "label": {
+          "category": "skill",
+          "enUS": "Penetrating Shot",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__penetrating_shot",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ed086872-1243-46cb-bea0-c23c14cadc48:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__poison_imbuement",
+        "label": {
+          "category": "skill",
+          "enUS": "Poison Imbuement",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__poison_imbuement",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ed086872-1243-46cb-bea0-c23c14cadc48:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__shadow_clone",
+        "label": {
+          "category": "skill",
+          "enUS": "Shadow Clone",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__shadow_clone",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ed086872-1243-46cb-bea0-c23c14cadc48:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__smoke_grenade",
+        "label": {
+          "category": "skill",
+          "enUS": "Smoke Grenade",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__smoke_grenade",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ed086872-1243-46cb-bea0-c23c14cadc48:0": 1
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "rogue::skill__penetrating_shot::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "penetrating-shot-rogue-endgame",
+  "primaryVariantId": "d4builds:ed086872-1243-46cb-bea0-c23c14cadc48:0",
+  "ratings": {
+    "pitTier": 145,
+    "tierLabel": "S",
+    "tierRank": 1
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Penetrating Shot",
+    "es": "Penetrating Shot"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:ed086872-1243-46cb-bea0-c23c14cadc48:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Poison Imbuement",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__poison_imbuement",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Duration",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__duration",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Toxic Touch",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__toxic_touch",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Cooldown",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Dash",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__dash",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Primer",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__primer",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Charges and Cooldown Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__charges_and_cooldown_reduction",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Smoke Grenade",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__smoke_grenade",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Size",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__size",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Silhouette",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__silhouette",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Charge or Energy Cost Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__charge_or_energy_cost_reduction",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 3,
+          "ref": {
+            "category": "skill",
+            "enUS": "Concealment",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__concealment",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Calculation",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__calculation",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Penetrating Shot",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__penetrating_shot",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Ferocity",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ferocity",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Ballista",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ballista",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Damage Increase",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage_increase",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Shadow Clone",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__shadow_clone",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Weaken & Vulnerable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__weaken_vulnerable",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Sentry",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__sentry",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Cooldown",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Shadow Clone Sentry",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__shadow_clone_sentry",
+            "sno": null
+          }
+        }
+      ],
+      "source": {
+        "author": null,
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "ed086872-1243-46cb-bea0-c23c14cadc48",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "1d6b3246868657fc773f7ac4e3372a0356ca6afa79c51ed813b1b07c6b9250e0",
+        "url": "https://d4builds.gg/builds/penetrating-shot-rogue-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

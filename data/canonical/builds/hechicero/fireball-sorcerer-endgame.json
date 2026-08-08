@@ -1,0 +1,468 @@
+{
+  "classId": "sorcerer",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Familiar",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__familiar",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Fireball",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__fireball",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Hydra",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__hydra",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Ice Armor",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__ice_armor",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Inferno",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__inferno",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Teleport",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__teleport",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__familiar",
+        "label": {
+          "category": "skill",
+          "enUS": "Familiar",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__familiar",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:7e246084-d0b3-45e5-9c94-ce258a265091:0": 12
+        }
+      },
+      {
+        "key": "skill:skill__fireball",
+        "label": {
+          "category": "skill",
+          "enUS": "Fireball",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__fireball",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:7e246084-d0b3-45e5-9c94-ce258a265091:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__hydra",
+        "label": {
+          "category": "skill",
+          "enUS": "Hydra",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__hydra",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:7e246084-d0b3-45e5-9c94-ce258a265091:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__ice_armor",
+        "label": {
+          "category": "skill",
+          "enUS": "Ice Armor",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__ice_armor",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:7e246084-d0b3-45e5-9c94-ce258a265091:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__inferno",
+        "label": {
+          "category": "skill",
+          "enUS": "Inferno",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__inferno",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:7e246084-d0b3-45e5-9c94-ce258a265091:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__teleport",
+        "label": {
+          "category": "skill",
+          "enUS": "Teleport",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__teleport",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:7e246084-d0b3-45e5-9c94-ce258a265091:0": 1
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "sorcerer::skill__fireball::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "fireball-sorcerer-endgame",
+  "primaryVariantId": "d4builds:7e246084-d0b3-45e5-9c94-ce258a265091:0",
+  "ratings": {
+    "pitTier": null,
+    "tierLabel": "B",
+    "tierRank": null
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Fireball",
+    "es": "Fireball"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:7e246084-d0b3-45e5-9c94-ce258a265091:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Teleport",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__teleport",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Weaken",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__weaken",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Wormhole",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__wormhole",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Crackling Energy",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__crackling_energy",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Ice Armor",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__ice_armor",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Cooldown Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown_reduction",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Permafrost",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__permafrost",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Duration Bonus and Barrier",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__duration_bonus_and_barrier",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 12,
+          "ref": {
+            "category": "skill",
+            "enUS": "Familiar",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__familiar",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Charge",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__charge",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Fast As Lightning",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__fast_as_lightning",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Duration Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__duration_bonus",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Familiar Fast As Lightning",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__familiar_fast_as_lightning",
+            "sno": null
+          }
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Hydra",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__hydra",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Overpower",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__overpower",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Frigid Hydra",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__frigid_hydra",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Cooldown Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown_reduction",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Hydra Frigid Hydra",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__hydra_frigid_hydra",
+            "sno": null
+          }
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Fireball",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__fireball",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Damage Over Time",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage_over_time",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Instantaneous Destruction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__instantaneous_destruction",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage_bonus",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Inferno",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__inferno",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Overpower",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__overpower",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Lifecoil",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__lifecoil",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Cooldown Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown_reduction",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": null,
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "7e246084-d0b3-45e5-9c94-ce258a265091",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "0fe610b43256564a2b67688da6c8fc7401b4a3458ac254c6c2045730e44ae88e",
+        "url": "https://d4builds.gg/builds/fireball-sorcerer-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

@@ -1,0 +1,461 @@
+{
+  "classId": "necromancer",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Bone Storm",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__bone_storm",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Decrepify",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__decrepify",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Golem",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__golem",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Sever",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__sever",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Skeleton Mage",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__skeleton_mage",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Skeleton Warrior",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__skeleton_warrior",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__bone_storm",
+        "label": {
+          "category": "skill",
+          "enUS": "Bone Storm",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__bone_storm",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:05930bc7-e892-4fff-b8a5-1cfa9c34372c:0": 14
+        }
+      },
+      {
+        "key": "skill:skill__decrepify",
+        "label": {
+          "category": "skill",
+          "enUS": "Decrepify",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__decrepify",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:05930bc7-e892-4fff-b8a5-1cfa9c34372c:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__golem",
+        "label": {
+          "category": "skill",
+          "enUS": "Golem",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__golem",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:05930bc7-e892-4fff-b8a5-1cfa9c34372c:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__sever",
+        "label": {
+          "category": "skill",
+          "enUS": "Sever",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__sever",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:05930bc7-e892-4fff-b8a5-1cfa9c34372c:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__skeleton_mage",
+        "label": {
+          "category": "skill",
+          "enUS": "Skeleton Mage",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__skeleton_mage",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:05930bc7-e892-4fff-b8a5-1cfa9c34372c:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__skeleton_warrior",
+        "label": {
+          "category": "skill",
+          "enUS": "Skeleton Warrior",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__skeleton_warrior",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:05930bc7-e892-4fff-b8a5-1cfa9c34372c:0": 15
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "necromancer::skill__skeleton_mage::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "minion-necromancer-endgame",
+  "primaryVariantId": "d4builds:05930bc7-e892-4fff-b8a5-1cfa9c34372c:0",
+  "ratings": {
+    "pitTier": 135,
+    "tierLabel": null,
+    "tierRank": 1
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Minion",
+    "es": "Minion"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:05930bc7-e892-4fff-b8a5-1cfa9c34372c:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Skeleton Mage",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__skeleton_mage",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Crowd Control Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__crowd_control_damage_bonus",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Coven",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__coven",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Duration Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__duration_damage_bonus",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 14,
+          "ref": {
+            "category": "skill",
+            "enUS": "Bone Storm",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__bone_storm",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Damage Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage_reduction",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Roll the Bones",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__roll_the_bones",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Barrier",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__barrier",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Sever",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__sever",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Cost Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cost_reduction",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Inexorable Reaper",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__inexorable_reaper",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Crowd Control and Corpse Generation",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__crowd_control_and_corpse_generation",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Skeleton Warrior",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__skeleton_warrior",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage_bonus",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Litany of Death",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__litany_of_death",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Resolve",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__resolve",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Decrepify",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__decrepify",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Cooldown Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown_reduction",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Life Tap",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__life_tap",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Resolve",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__resolve",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Decrepify Life Tap",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__decrepify_life_tap",
+            "sno": null
+          }
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Golem",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__golem",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Unstoppable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__unstoppable",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Gargantua",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__gargantua",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Resolve, Overpower, or Ferocity",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__resolve_overpower_or_ferocity",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": "Rob2628",
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "05930bc7-e892-4fff-b8a5-1cfa9c34372c",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "12ada510b68ad8edc871fecfb1eab546f75f243d25fc024083a8871f7144af3a",
+        "url": "https://d4builds.gg/builds/minion-necromancer-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

@@ -4,10 +4,18 @@
     "coreSkills": [
       {
         "category": "skill",
-        "enUS": "Blood Mist",
+        "enUS": "Blood Wave",
         "esES": null,
         "i18n": "none",
-        "idName": "skill__blood_mist",
+        "idName": "skill__blood_wave",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Bone Prison",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__bone_prison",
         "sno": null
       },
       {
@@ -25,23 +33,54 @@
         "i18n": "none",
         "idName": "skill__corpse_tendrils",
         "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Sever",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__sever",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Skeleton Warrior",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__skeleton_warrior",
+        "sno": null
       }
     ],
     "coreUniques": [],
     "fields": [
       {
-        "key": "skill:skill__blood_mist",
+        "key": "skill:skill__blood_wave",
         "label": {
           "category": "skill",
-          "enUS": "Blood Mist",
+          "enUS": "Blood Wave",
           "esES": null,
           "i18n": "none",
-          "idName": "skill__blood_mist",
+          "idName": "skill__blood_wave",
           "sno": null
         },
         "status": "agree",
         "values": {
-          "d4builds:12345678-90ab-cdef-1234-567890abcdef:0": 3
+          "d4builds:c5fe8420-4aa3-4961-9248-70b1040d652b:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__bone_prison",
+        "label": {
+          "category": "skill",
+          "enUS": "Bone Prison",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__bone_prison",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:c5fe8420-4aa3-4961-9248-70b1040d652b:0": 15
         }
       },
       {
@@ -56,7 +95,7 @@
         },
         "status": "agree",
         "values": {
-          "d4builds:12345678-90ab-cdef-1234-567890abcdef:0": 15
+          "d4builds:c5fe8420-4aa3-4961-9248-70b1040d652b:0": 15
         }
       },
       {
@@ -71,7 +110,37 @@
         },
         "status": "agree",
         "values": {
-          "d4builds:12345678-90ab-cdef-1234-567890abcdef:0": 6
+          "d4builds:c5fe8420-4aa3-4961-9248-70b1040d652b:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__sever",
+        "label": {
+          "category": "skill",
+          "enUS": "Sever",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__sever",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:c5fe8420-4aa3-4961-9248-70b1040d652b:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__skeleton_warrior",
+        "label": {
+          "category": "skill",
+          "enUS": "Skeleton Warrior",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__skeleton_warrior",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:c5fe8420-4aa3-4961-9248-70b1040d652b:0": 10
         }
       }
     ],
@@ -83,11 +152,11 @@
     "season": 14
   },
   "id": "bone-spear-necromancer-endgame",
-  "primaryVariantId": "d4builds:12345678-90ab-cdef-1234-567890abcdef:0",
+  "primaryVariantId": "d4builds:c5fe8420-4aa3-4961-9248-70b1040d652b:0",
   "ratings": {
-    "pitTier": 130,
+    "pitTier": null,
     "tierLabel": "B",
-    "tierRank": 3
+    "tierRank": null
   },
   "summary": {
     "en": null,
@@ -104,7 +173,7 @@
     "en": "Bone Spear",
     "es": "Bone Spear"
   },
-  "updatedAt": "2026-08-08T00:00:00.000Z",
+  "updatedAt": "2026-08-08T21:57:21.526Z",
   "variants": [
     {
       "completeness": {
@@ -117,7 +186,7 @@
         "score": 0.35
       },
       "gear": {},
-      "id": "d4builds:12345678-90ab-cdef-1234-567890abcdef:0",
+      "id": "d4builds:c5fe8420-4aa3-4961-9248-70b1040d652b:0",
       "levelBand": "endgame",
       "mercenary": null,
       "paragon": {
@@ -129,6 +198,173 @@
         {
           "category": "unknown",
           "order": 0,
+          "rank": 10,
+          "ref": {
+            "category": "skill",
+            "enUS": "Skeleton Warrior",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__skeleton_warrior",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Healing",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__healing",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Master of Puppets",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__master_of_puppets",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Vulnerable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__vulnerable",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Corpse Tendrils",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__corpse_tendrils",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Critical Strike Chance",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__critical_strike_chance",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Get Over Here!",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__get_over_here",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Vulnerable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__vulnerable",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Bone Prison",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__bone_prison",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Vulnerable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__vulnerable",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Life Imprisonment",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__life_imprisonment",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Essence Generation",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__essence_generation",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Bone Prison Life Imprisonment",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__bone_prison_life_imprisonment",
+            "sno": null
+          }
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Blood Wave",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__blood_wave",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Damage Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage_reduction",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Hematolagnia",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__hematolagnia",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Overpower",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__overpower",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
           "rank": 15,
           "ref": {
             "category": "skill",
@@ -138,47 +374,89 @@
             "idName": "skill__bone_spear",
             "sno": null
           },
-          "runes": [],
-          "skillVariant": null
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "First Hit Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__first_hit_damage_bonus",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Blood Spear",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__blood_spear",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Resolve",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__resolve",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Bone Spear Blood Spear",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__bone_spear_blood_spear",
+            "sno": null
+          }
         },
         {
           "category": "unknown",
-          "order": 1,
-          "rank": 6,
+          "order": 5,
+          "rank": 1,
           "ref": {
             "category": "skill",
-            "enUS": "Corpse Tendrils",
+            "enUS": "Sever",
             "esES": null,
             "i18n": "none",
-            "idName": "skill__corpse_tendrils",
+            "idName": "skill__sever",
             "sno": null
           },
-          "runes": [],
-          "skillVariant": null
-        },
-        {
-          "category": "unknown",
-          "order": 2,
-          "rank": 3,
-          "ref": {
-            "category": "skill",
-            "enUS": "Blood Mist",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__blood_mist",
-            "sno": null
-          },
-          "runes": [],
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Cost Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cost_reduction",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Inexorable Reaper",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__inexorable_reaper",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Crowd Control and Corpse Generation",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__crowd_control_and_corpse_generation",
+              "sno": null
+            }
+          ],
           "skillVariant": null
         }
       ],
       "source": {
-        "author": "MacroBioBoi",
-        "capturedAt": "2026-08-08T00:00:00.000Z",
-        "externalId": "12345678-90ab-cdef-1234-567890abcdef",
+        "author": null,
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "c5fe8420-4aa3-4961-9248-70b1040d652b",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "39fb43f3eedcb34356e9795f48de5b6e26ce93d7cca41ff858ecb9c53f070580",
+        "snapshotHash": "ba4bd1e02c496b84413cf746ec25a3bc92467c7ae2d394aaf63261f246e6420a",
         "url": "https://d4builds.gg/builds/bone-spear-necromancer-endgame/",
         "variantIndex": 0,
         "variantLabel": "Endgame"

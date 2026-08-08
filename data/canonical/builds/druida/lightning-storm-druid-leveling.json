@@ -1,0 +1,446 @@
+{
+  "classId": "druid",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Cataclysm",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__cataclysm",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Claw",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__claw",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Cyclone Armor",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__cyclone_armor",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Debilitating Roar",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__debilitating_roar",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Earthen Bulwark",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__earthen_bulwark",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Lightning Storm",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__lightning_storm",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__cataclysm",
+        "label": {
+          "category": "skill",
+          "enUS": "Cataclysm",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__cataclysm",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:10de5d53-31d3-4d2e-a843-52f6f3f7e4c1:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__claw",
+        "label": {
+          "category": "skill",
+          "enUS": "Claw",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__claw",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:10de5d53-31d3-4d2e-a843-52f6f3f7e4c1:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__cyclone_armor",
+        "label": {
+          "category": "skill",
+          "enUS": "Cyclone Armor",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__cyclone_armor",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:10de5d53-31d3-4d2e-a843-52f6f3f7e4c1:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__debilitating_roar",
+        "label": {
+          "category": "skill",
+          "enUS": "Debilitating Roar",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__debilitating_roar",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:10de5d53-31d3-4d2e-a843-52f6f3f7e4c1:0": 8
+        }
+      },
+      {
+        "key": "skill:skill__earthen_bulwark",
+        "label": {
+          "category": "skill",
+          "enUS": "Earthen Bulwark",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__earthen_bulwark",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:10de5d53-31d3-4d2e-a843-52f6f3f7e4c1:0": 12
+        }
+      },
+      {
+        "key": "skill:skill__lightning_storm",
+        "label": {
+          "category": "skill",
+          "enUS": "Lightning Storm",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__lightning_storm",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:10de5d53-31d3-4d2e-a843-52f6f3f7e4c1:0": 15
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "druid::skill__lightning_storm::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "lightning-storm-druid-leveling",
+  "primaryVariantId": "d4builds:10de5d53-31d3-4d2e-a843-52f6f3f7e4c1:0",
+  "ratings": {
+    "pitTier": null,
+    "tierLabel": "A",
+    "tierRank": 1
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "leveling"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Lightning Storm",
+    "es": "Lightning Storm"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:10de5d53-31d3-4d2e-a843-52f6f3f7e4c1:0",
+      "levelBand": "leveling",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 12,
+          "ref": {
+            "category": "skill",
+            "enUS": "Earthen Bulwark",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__earthen_bulwark",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Fortify and Healing",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__fortify_and_healing",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Reconstruction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__reconstruction",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Overpower",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__overpower",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 8,
+          "ref": {
+            "category": "skill",
+            "enUS": "Debilitating Roar",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__debilitating_roar",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Increased Duration",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__increased_duration",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Booming Roar",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__booming_roar",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Maximum Life",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__maximum_life",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Cyclone Armor",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__cyclone_armor",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Greater Cyclone Armor",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__greater_cyclone_armor",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Resistance",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__resistance",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Cataclysm",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__cataclysm",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Duration",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__duration",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Severe Storm",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__severe_storm",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Vulnerable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__vulnerable",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Claw",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__claw",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Spirit",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__spirit",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Dash",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__dash",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Cast Speed",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cast_speed",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Lightning Storm",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__lightning_storm",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Minimum Strikes",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__minimum_strikes",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Hero of the Storm",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__hero_of_the_storm",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage_bonus",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": "Rob2628",
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "10de5d53-31d3-4d2e-a843-52f6f3f7e4c1",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "d0441ad613eaf055ed02070542d16ecc1fa7d713d4737cd34a98e37a51eb85c3",
+        "url": "https://d4builds.gg/builds/lightning-storm-druid-leveling/",
+        "variantIndex": 0,
+        "variantLabel": "Leveling"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

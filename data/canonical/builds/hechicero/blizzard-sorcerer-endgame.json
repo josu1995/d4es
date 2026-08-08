@@ -1,0 +1,475 @@
+{
+  "classId": "sorcerer",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Blizzard",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__blizzard",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Flame Shield",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__flame_shield",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Hydra",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__hydra",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Ice Armor",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__ice_armor",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Teleport",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__teleport",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Unstable Currents",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__unstable_currents",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__blizzard",
+        "label": {
+          "category": "skill",
+          "enUS": "Blizzard",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__blizzard",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:8a87c08b-610a-4ffd-9017-63c83c2aeebb:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__flame_shield",
+        "label": {
+          "category": "skill",
+          "enUS": "Flame Shield",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__flame_shield",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:8a87c08b-610a-4ffd-9017-63c83c2aeebb:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__hydra",
+        "label": {
+          "category": "skill",
+          "enUS": "Hydra",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__hydra",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:8a87c08b-610a-4ffd-9017-63c83c2aeebb:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__ice_armor",
+        "label": {
+          "category": "skill",
+          "enUS": "Ice Armor",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__ice_armor",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:8a87c08b-610a-4ffd-9017-63c83c2aeebb:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__teleport",
+        "label": {
+          "category": "skill",
+          "enUS": "Teleport",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__teleport",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:8a87c08b-610a-4ffd-9017-63c83c2aeebb:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__unstable_currents",
+        "label": {
+          "category": "skill",
+          "enUS": "Unstable Currents",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__unstable_currents",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:8a87c08b-610a-4ffd-9017-63c83c2aeebb:0": 15
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "sorcerer::skill__blizzard::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "blizzard-sorcerer-endgame",
+  "primaryVariantId": "d4builds:8a87c08b-610a-4ffd-9017-63c83c2aeebb:0",
+  "ratings": {
+    "pitTier": 120,
+    "tierLabel": "B",
+    "tierRank": null
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Blizzard",
+    "es": "Blizzard"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:8a87c08b-610a-4ffd-9017-63c83c2aeebb:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Unstable Currents",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__unstable_currents",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Cooldown Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown_reduction",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Thunder God",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__thunder_god",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage_bonus",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Teleport",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__teleport",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Weaken",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__weaken",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Blaze",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__blaze",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Ferocity",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ferocity",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Teleport Blaze",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__teleport_blaze",
+            "sno": null
+          }
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Ice Armor",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__ice_armor",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Resource Regeneration",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__resource_regeneration",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Permafrost",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__permafrost",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Duration Bonus and Barrier",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__duration_bonus_and_barrier",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Flame Shield",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__flame_shield",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Cooldown Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown_reduction",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Firebird",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__firebird",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Overpower",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__overpower",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Blizzard",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__blizzard",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage_bonus",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Static Field",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__static_field",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Seek and Duration Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__seek_and_duration_bonus",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Blizzard Static Field",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__blizzard_static_field",
+            "sno": null
+          }
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Hydra",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__hydra",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Overpower",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__overpower",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Frigid Hydra",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__frigid_hydra",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Cooldown Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown_reduction",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Hydra Frigid Hydra",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__hydra_frigid_hydra",
+            "sno": null
+          }
+        }
+      ],
+      "source": {
+        "author": null,
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "8a87c08b-610a-4ffd-9017-63c83c2aeebb",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "0b09206f306bd471226f59c84f41e1ed3db70d6c3c0f896e2f4e6d5d9e781897",
+        "url": "https://d4builds.gg/builds/blizzard-sorcerer-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

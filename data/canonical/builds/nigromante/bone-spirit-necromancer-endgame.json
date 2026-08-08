@@ -1,0 +1,454 @@
+{
+  "classId": "necromancer",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Bone Spirit",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__bone_spirit",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Bone Storm",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__bone_storm",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Corpse Tendrils",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__corpse_tendrils",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Sever",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__sever",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Skeleton Mage",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__skeleton_mage",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Skeleton Warrior",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__skeleton_warrior",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__bone_spirit",
+        "label": {
+          "category": "skill",
+          "enUS": "Bone Spirit",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__bone_spirit",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:65461ac6-c3c5-4079-b795-6437ffca6880:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__bone_storm",
+        "label": {
+          "category": "skill",
+          "enUS": "Bone Storm",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__bone_storm",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:65461ac6-c3c5-4079-b795-6437ffca6880:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__corpse_tendrils",
+        "label": {
+          "category": "skill",
+          "enUS": "Corpse Tendrils",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__corpse_tendrils",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:65461ac6-c3c5-4079-b795-6437ffca6880:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__sever",
+        "label": {
+          "category": "skill",
+          "enUS": "Sever",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__sever",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:65461ac6-c3c5-4079-b795-6437ffca6880:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__skeleton_mage",
+        "label": {
+          "category": "skill",
+          "enUS": "Skeleton Mage",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__skeleton_mage",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:65461ac6-c3c5-4079-b795-6437ffca6880:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__skeleton_warrior",
+        "label": {
+          "category": "skill",
+          "enUS": "Skeleton Warrior",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__skeleton_warrior",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:65461ac6-c3c5-4079-b795-6437ffca6880:0": 1
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "necromancer::skill__bone_spirit::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "bone-spirit-necromancer-endgame",
+  "primaryVariantId": "d4builds:65461ac6-c3c5-4079-b795-6437ffca6880:0",
+  "ratings": {
+    "pitTier": 130,
+    "tierLabel": "B",
+    "tierRank": null
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Bone Spirit",
+    "es": "Bone Spirit"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:65461ac6-c3c5-4079-b795-6437ffca6880:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Sever",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__sever",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Cost Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cost_reduction",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Inexorable Reaper",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__inexorable_reaper",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Crowd Control and Corpse Generation",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__crowd_control_and_corpse_generation",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Corpse Tendrils",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__corpse_tendrils",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Essence Generation",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__essence_generation",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Get Over Here!",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__get_over_here",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Vulnerable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__vulnerable",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Skeleton Warrior",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__skeleton_warrior",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Healing",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__healing",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Master of Puppets",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__master_of_puppets",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Vulnerable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__vulnerable",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Skeleton Mage",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__skeleton_mage",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Ferocity, Resolve, or Overpower",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ferocity_resolve_or_overpower",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Gift of Death",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__gift_of_death",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Critical Strike Chance",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__critical_strike_chance",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Bone Spirit",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__bone_spirit",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Core Skill",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__core_skill",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Astral Projection",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__astral_projection",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Maximum Essence",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__maximum_essence",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Bone Storm",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__bone_storm",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Duration Increase",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__duration_increase",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Roll the Bones",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__roll_the_bones",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Barrier",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__barrier",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": null,
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "65461ac6-c3c5-4079-b795-6437ffca6880",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "75e4ccf87441362c355e2ad4ed48b66260107edc349e11e3c80c234ffcf14d55",
+        "url": "https://d4builds.gg/builds/bone-spirit-necromancer-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

@@ -1,0 +1,454 @@
+{
+  "classId": "barbarian",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Call of the Ancients",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__call_of_the_ancients",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Challenging Shout",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__challenging_shout",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Ground Stomp",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__ground_stomp",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Leap",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__leap",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Lunging Strike",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__lunging_strike",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Whirlwind",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__whirlwind",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__call_of_the_ancients",
+        "label": {
+          "category": "skill",
+          "enUS": "Call of the Ancients",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__call_of_the_ancients",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:2c273831-6609-4414-8486-6da72c903e83:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__challenging_shout",
+        "label": {
+          "category": "skill",
+          "enUS": "Challenging Shout",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__challenging_shout",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:2c273831-6609-4414-8486-6da72c903e83:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__ground_stomp",
+        "label": {
+          "category": "skill",
+          "enUS": "Ground Stomp",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__ground_stomp",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:2c273831-6609-4414-8486-6da72c903e83:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__leap",
+        "label": {
+          "category": "skill",
+          "enUS": "Leap",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__leap",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:2c273831-6609-4414-8486-6da72c903e83:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__lunging_strike",
+        "label": {
+          "category": "skill",
+          "enUS": "Lunging Strike",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__lunging_strike",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:2c273831-6609-4414-8486-6da72c903e83:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__whirlwind",
+        "label": {
+          "category": "skill",
+          "enUS": "Whirlwind",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__whirlwind",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:2c273831-6609-4414-8486-6da72c903e83:0": 15
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "barbarian::skill__whirlwind::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "whirlwind-barbarian-leveling",
+  "primaryVariantId": "d4builds:2c273831-6609-4414-8486-6da72c903e83:0",
+  "ratings": {
+    "pitTier": null,
+    "tierLabel": "S",
+    "tierRank": 1
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "leveling"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Whirlwind",
+    "es": "Whirlwind"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:2c273831-6609-4414-8486-6da72c903e83:0",
+      "levelBand": "leveling",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Lunging Strike",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__lunging_strike",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Healing",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__healing",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Skewer",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__skewer",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Fury Generation",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__fury_generation",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Ground Stomp",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__ground_stomp",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Fury Generation",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__fury_generation",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Stomping Grounds",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__stomping_grounds",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Size Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__size_bonus",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Leap",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__leap",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Pull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__pull",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Death From Above",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__death_from_above",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Fury Generation",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__fury_generation",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Call of the Ancients",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__call_of_the_ancients",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage_bonus",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Empowered",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__empowered",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Attack Speed and Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__attack_speed_and_damage_bonus",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Challenging Shout",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__challenging_shout",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Duration Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__duration_bonus",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Bawl",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__bawl",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage_bonus",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Whirlwind",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__whirlwind",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Cost Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cost_damage_bonus",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Tornado",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__tornado",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Channel Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__channel_damage_bonus",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": "Rob2628",
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "2c273831-6609-4414-8486-6da72c903e83",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "98227d518ebad6a7b297a25ef75c7c6acc023d02029ea3c0a285714b2ebeadee",
+        "url": "https://d4builds.gg/builds/whirlwind-barbarian-leveling/",
+        "variantIndex": 0,
+        "variantLabel": "Leveling"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

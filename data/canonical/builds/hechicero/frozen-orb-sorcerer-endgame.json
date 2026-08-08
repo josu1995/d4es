@@ -1,0 +1,435 @@
+{
+  "classId": "sorcerer",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Arc Lash",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__arc_lash",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Familiar",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__familiar",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Flame Shield",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__flame_shield",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Frozen Orb",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__frozen_orb",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Ice Armor",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__ice_armor",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Teleport",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__teleport",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__arc_lash",
+        "label": {
+          "category": "skill",
+          "enUS": "Arc Lash",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__arc_lash",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:dd6748ed-9e12-42f3-b56e-aeecba779a76:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__familiar",
+        "label": {
+          "category": "skill",
+          "enUS": "Familiar",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__familiar",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:dd6748ed-9e12-42f3-b56e-aeecba779a76:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__flame_shield",
+        "label": {
+          "category": "skill",
+          "enUS": "Flame Shield",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__flame_shield",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:dd6748ed-9e12-42f3-b56e-aeecba779a76:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__frozen_orb",
+        "label": {
+          "category": "skill",
+          "enUS": "Frozen Orb",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__frozen_orb",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:dd6748ed-9e12-42f3-b56e-aeecba779a76:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__ice_armor",
+        "label": {
+          "category": "skill",
+          "enUS": "Ice Armor",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__ice_armor",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:dd6748ed-9e12-42f3-b56e-aeecba779a76:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__teleport",
+        "label": {
+          "category": "skill",
+          "enUS": "Teleport",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__teleport",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:dd6748ed-9e12-42f3-b56e-aeecba779a76:0": 1
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "sorcerer::skill__frozen_orb::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "frozen-orb-sorcerer-endgame",
+  "primaryVariantId": "d4builds:dd6748ed-9e12-42f3-b56e-aeecba779a76:0",
+  "ratings": {
+    "pitTier": null,
+    "tierLabel": null,
+    "tierRank": null
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Frozen Orb",
+    "es": "Frozen Orb"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:dd6748ed-9e12-42f3-b56e-aeecba779a76:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Teleport",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__teleport",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Weaken",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__weaken",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Blaze",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__blaze",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Ferocity",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ferocity",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Teleport Blaze",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__teleport_blaze",
+            "sno": null
+          }
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Ice Armor",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__ice_armor",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Cooldown Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown_reduction",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Permafrost",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__permafrost",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Duration Bonus and Barrier",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__duration_bonus_and_barrier",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Flame Shield",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__flame_shield",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Cooldown Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown_reduction",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Duration Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__duration_bonus",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Familiar",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__familiar",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Charge",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__charge",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Fast As Lightning",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__fast_as_lightning",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Duration Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__duration_bonus",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Familiar Fast As Lightning",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__familiar_fast_as_lightning",
+            "sno": null
+          }
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Frozen Orb",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__frozen_orb",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Explosion Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__explosion_damage_bonus",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Shattered Path",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__shattered_path",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Barrier",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__barrier",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Arc Lash",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__arc_lash",
+            "sno": null
+          },
+          "runes": [],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": null,
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "dd6748ed-9e12-42f3-b56e-aeecba779a76",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "bba703d2e6e24d099f2fa52e085e76290655d66eeaf12ed9765b48ac89924352",
+        "url": "https://d4builds.gg/builds/frozen-orb-sorcerer-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

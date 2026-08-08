@@ -1,0 +1,429 @@
+{
+  "classId": "warlock",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Command Fallen",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__command_fallen",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Metamorphosis",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__metamorphosis",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Rampage-v2",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__rampage_v2",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Sigil of Summons",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__sigil_of_summons",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Summon Ae'grom",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__summon_ae_grom",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Tortured Wretch",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__tortured_wretch",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__command_fallen",
+        "label": {
+          "category": "skill",
+          "enUS": "Command Fallen",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__command_fallen",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:37988a2a-4a9e-49c2-9346-54474c19dd86:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__metamorphosis",
+        "label": {
+          "category": "skill",
+          "enUS": "Metamorphosis",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__metamorphosis",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:37988a2a-4a9e-49c2-9346-54474c19dd86:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__rampage_v2",
+        "label": {
+          "category": "skill",
+          "enUS": "Rampage-v2",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__rampage_v2",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:37988a2a-4a9e-49c2-9346-54474c19dd86:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__sigil_of_summons",
+        "label": {
+          "category": "skill",
+          "enUS": "Sigil of Summons",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__sigil_of_summons",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:37988a2a-4a9e-49c2-9346-54474c19dd86:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__summon_ae_grom",
+        "label": {
+          "category": "skill",
+          "enUS": "Summon Ae'grom",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__summon_ae_grom",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:37988a2a-4a9e-49c2-9346-54474c19dd86:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__tortured_wretch",
+        "label": {
+          "category": "skill",
+          "enUS": "Tortured Wretch",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__tortured_wretch",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:37988a2a-4a9e-49c2-9346-54474c19dd86:0": 15
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "warlock::skill__command_fallen::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "command-fallen-warlock-endgame",
+  "primaryVariantId": "d4builds:37988a2a-4a9e-49c2-9346-54474c19dd86:0",
+  "ratings": {
+    "pitTier": 140,
+    "tierLabel": null,
+    "tierRank": 1
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Command Fallen",
+    "es": "Command Fallen"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:37988a2a-4a9e-49c2-9346-54474c19dd86:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Metamorphosis",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__metamorphosis",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Damage Scaling",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage_scaling",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Destruction Demon",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__destruction_demon",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Dominance",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__dominance",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Sigil of Summons",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__sigil_of_summons",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Damage",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Summon Hellwyrm",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__summon_hellwyrm",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Stronger Summons",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__stronger_summons",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Summon Ae'grom",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__summon_ae_grom",
+            "sno": null
+          },
+          "runes": [],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Rampage-v2",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__rampage_v2",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Lesser Demon Wrath",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__lesser_demon_wrath",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Shockwave",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__shockwave",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Elite Hit Chance",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__elite_hit_chance",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Command Fallen",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__command_fallen",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Damage Per Demon",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage_per_demon",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Mega Lunatic",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__mega_lunatic",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Dominance",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__dominance",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Tortured Wretch",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__tortured_wretch",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Unstoppable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__unstoppable",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Punching Bag",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__punching_bag",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Duration",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__duration",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": null,
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "37988a2a-4a9e-49c2-9346-54474c19dd86",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "1ed0e5b8f7a19d84a5e9838cea61d05d40f1d2746291d2f5271d57f0496c3825",
+        "url": "https://d4builds.gg/builds/command-fallen-warlock-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

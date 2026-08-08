@@ -1,0 +1,446 @@
+{
+  "classId": "paladin",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Brandish",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__brandish",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Defiance Aura",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__defiance_aura",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Falling Star",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__falling_star",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Fanaticism Aura",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__fanaticism_aura",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Fortress",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__fortress",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Holy Light Aura",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__holy_light_aura",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__brandish",
+        "label": {
+          "category": "skill",
+          "enUS": "Brandish",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__brandish",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ffa6be98-a365-4497-b652-7936efb93804:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__defiance_aura",
+        "label": {
+          "category": "skill",
+          "enUS": "Defiance Aura",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__defiance_aura",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ffa6be98-a365-4497-b652-7936efb93804:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__falling_star",
+        "label": {
+          "category": "skill",
+          "enUS": "Falling Star",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__falling_star",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ffa6be98-a365-4497-b652-7936efb93804:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__fanaticism_aura",
+        "label": {
+          "category": "skill",
+          "enUS": "Fanaticism Aura",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__fanaticism_aura",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ffa6be98-a365-4497-b652-7936efb93804:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__fortress",
+        "label": {
+          "category": "skill",
+          "enUS": "Fortress",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__fortress",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ffa6be98-a365-4497-b652-7936efb93804:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__holy_light_aura",
+        "label": {
+          "category": "skill",
+          "enUS": "Holy Light Aura",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__holy_light_aura",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ffa6be98-a365-4497-b652-7936efb93804:0": 5
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "paladin::skill__brandish::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "brandish-paladin-endgame",
+  "primaryVariantId": "d4builds:ffa6be98-a365-4497-b652-7936efb93804:0",
+  "ratings": {
+    "pitTier": null,
+    "tierLabel": null,
+    "tierRank": null
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Brandish",
+    "es": "Brandish"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:ffa6be98-a365-4497-b652-7936efb93804:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Fanaticism Aura",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__fanaticism_aura",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Extra Passive Stack",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__extra_passive_stack",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Rite of Vengeance",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__rite_of_vengeance",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Potency",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__potency",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Defiance Aura",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__defiance_aura",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Maximum Life",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__maximum_life",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Rite of Might",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__rite_of_might",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Bonus Healing",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__bonus_healing",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 5,
+          "ref": {
+            "category": "skill",
+            "enUS": "Holy Light Aura",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__holy_light_aura",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Additional Bounce",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__additional_bounce",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Rite of Mercy",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__rite_of_mercy",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Falling Star",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__falling_star",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Vulnerable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__vulnerable",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Faster Than Light",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__faster_than_light",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Cooldown Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown_reduction",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Brandish",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__brandish",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Cast Speed",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cast_speed",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Returning Light",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__returning_light",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Damage Increase",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage_increase",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Fortress",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__fortress",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Resolve Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__resolve_damage_bonus",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Barricade",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__barricade",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Unstoppable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__unstoppable",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": null,
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "ffa6be98-a365-4497-b652-7936efb93804",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "16c4755f33b6e72b00108a610045e0dc4e3be40c5a9b47a36e980e458356872b",
+        "url": "https://d4builds.gg/builds/brandish-paladin-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

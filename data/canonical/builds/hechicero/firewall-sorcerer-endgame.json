@@ -1,0 +1,446 @@
+{
+  "classId": "sorcerer",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Firewall",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__firewall",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Frost Nova",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__frost_nova",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Ice Armor",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__ice_armor",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Inferno",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__inferno",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Lightning Spear",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__lightning_spear",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Teleport",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__teleport",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__firewall",
+        "label": {
+          "category": "skill",
+          "enUS": "Firewall",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__firewall",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:a34ba13c-e634-4685-a92f-5086010e9fb1:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__frost_nova",
+        "label": {
+          "category": "skill",
+          "enUS": "Frost Nova",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__frost_nova",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:a34ba13c-e634-4685-a92f-5086010e9fb1:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__ice_armor",
+        "label": {
+          "category": "skill",
+          "enUS": "Ice Armor",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__ice_armor",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:a34ba13c-e634-4685-a92f-5086010e9fb1:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__inferno",
+        "label": {
+          "category": "skill",
+          "enUS": "Inferno",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__inferno",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:a34ba13c-e634-4685-a92f-5086010e9fb1:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__lightning_spear",
+        "label": {
+          "category": "skill",
+          "enUS": "Lightning Spear",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__lightning_spear",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:a34ba13c-e634-4685-a92f-5086010e9fb1:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__teleport",
+        "label": {
+          "category": "skill",
+          "enUS": "Teleport",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__teleport",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:a34ba13c-e634-4685-a92f-5086010e9fb1:0": 1
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "sorcerer::skill__firewall::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "firewall-sorcerer-endgame",
+  "primaryVariantId": "d4builds:a34ba13c-e634-4685-a92f-5086010e9fb1:0",
+  "ratings": {
+    "pitTier": 145,
+    "tierLabel": "S",
+    "tierRank": 1
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Firewall",
+    "es": "Firewall"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:a34ba13c-e634-4685-a92f-5086010e9fb1:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Teleport",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__teleport",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Weaken",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__weaken",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Electrobolt",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__electrobolt",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Crackling Energy",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__crackling_energy",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Ice Armor",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__ice_armor",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Cooldown Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown_reduction",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Permafrost",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__permafrost",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Frozen and Chill",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__frozen_and_chill",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Frost Nova",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__frost_nova",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Size Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__size_bonus",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Shatter",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__shatter",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Vulnerable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__vulnerable",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Lightning Spear",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__lightning_spear",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Projectile Speed",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__projectile_speed",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Reverse Polarity",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__reverse_polarity",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Firewall",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__firewall",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage_bonus",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Ring of Fire",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ring_of_fire",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Weaken",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__weaken",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Inferno",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__inferno",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Overpower",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__overpower",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Living Bomb",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__living_bomb",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Cooldown Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown_reduction",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": "Rob2628",
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "a34ba13c-e634-4685-a92f-5086010e9fb1",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "10b8f760553a8eb4a7ff0590f492340a8f91ff2ba7ae0cdae8e7e1523e614fbb",
+        "url": "https://d4builds.gg/builds/firewall-sorcerer-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

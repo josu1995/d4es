@@ -1,0 +1,151 @@
+---
+import type { SkillEntry } from '@d4es/schema';
+import { iconoSkill, colorCategoria } from '../lib/iconos';
+import { skillInfo } from '../lib/data';
+
+/**
+ * Un slot de habilidad como el de d4builds: icono circular con borde por categoria,
+ * insignia de rango y, debajo, las runas elegidas. El contenido del tooltip se emite en
+ * un <template> y el motor de tooltips de la ficha lo pinta al pasar el raton.
+ */
+interface Props {
+  skill: SkillEntry;
+  idTooltip: string;
+}
+
+const { skill, idTooltip } = Astro.props;
+
+const nombreVisible = skill.ref.esES ?? skill.ref.enUS;
+const sinTraducir = skill.ref.esES === null;
+const nombreIcono = skill.skillVariant?.enUS ?? skill.ref.enUS;
+const info = skillInfo(skill.ref.enUS);
+const color = colorCategoria(info?.category ?? null);
+
+// Descripcion de cada runa elegida, sacada del dataset de la habilidad.
+const runas = skill.runes.map((r) => ({
+  nombre: r.esES ?? r.enUS,
+  sinTraducir: r.esES === null,
+  descripcion: info?.runes[r.enUS] ?? null,
+}));
+---
+
+<div class="flex flex-col items-center gap-1.5 w-24">
+  <button
+    type="button"
+    class="slot-skill group relative block h-16 w-16 rounded-full bg-piedra-alta"
+    style={`--anillo: ${color}`}
+    data-tooltip={idTooltip}
+    aria-describedby={idTooltip}
+  >
+    <img
+      src={iconoSkill(nombreIcono)}
+      alt=""
+      width="64"
+      height="64"
+      loading="lazy"
+      class="h-full w-full rounded-full object-cover"
+      onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+    />
+    <span
+      class="hidden absolute inset-0 items-center justify-center rounded-full font-titulo text-xl text-ceniza"
+      aria-hidden="true"
+    >
+      {nombreVisible.charAt(0)}
+    </span>
+    {
+      skill.rank > 0 && (
+        <span class="absolute -bottom-1 -right-1 min-w-6 rounded-full border border-grabado-vivo bg-abismo px-1.5 py-0.5 text-center font-mono text-xs text-oro">
+          {skill.rank}
+        </span>
+      )
+    }
+  </button>
+
+  <span class="text-center text-[0.7rem] leading-tight text-ceniza">
+    {nombreVisible}
+    {sinTraducir && <span class="chip-en" data-i18n-missing aria-label="sin traducir">EN</span>}
+  </span>
+
+  {
+    runas.length > 0 && (
+      <div class="flex gap-1" aria-label={`Runas de ${nombreVisible}`}>
+        {runas.map((r, i) => (
+          <button
+            type="button"
+            class="runa-chip h-3.5 w-3.5 rotate-45 border border-oro-apagado/60 bg-piedra-alta transition-colors hover:border-oro"
+            data-tooltip={`${idTooltip}-r${i}`}
+            aria-describedby={`${idTooltip}-r${i}`}
+            aria-label={r.nombre}
+          />
+        ))}
+      </div>
+    )
+  }
+</div>
+
+<!-- Contenido de los tooltips. Los pinta el motor de la pagina al hacer hover/focus. -->
+<template id={idTooltip}>
+  <div class="tt-titulo">
+    {nombreVisible}
+    {skill.ref.esES && <span class="tt-en">{skill.ref.enUS}</span>}
+  </div>
+  {
+    (info?.category || skill.rank > 0) && (
+      <div class="tt-meta">
+        {info?.category && <span>{info.category}</span>}
+        {skill.rank > 0 && <span>Rango {skill.rank}</span>}
+        {info?.cost && <span>{info.cost}</span>}
+        {info?.luckyHit && <span>Golpe de suerte: {info.luckyHit}</span>}
+      </div>
+    )
+  }
+  {skill.skillVariant && <div class="tt-variante">Variante: {skill.skillVariant.esES ?? skill.skillVariant.enUS}</div>}
+  {info?.description && <p class="tt-descripcion">{info.description}</p>}
+  {info?.extra.map((e) => <p class="tt-extra">{e}</p>)}
+  {
+    runas.length > 0 && (
+      <div class="tt-runas">
+        {runas.map((r) => (
+          <div>
+            <span class="tt-runa-nombre">◆ {r.nombre}</span>
+            {r.descripcion && <span class="tt-runa-desc"> — {r.descripcion}</span>}
+          </div>
+        ))}
+      </div>
+    )
+  }
+  {info?.description && <p class="tt-idioma">Descripción original en inglés</p>}
+</template>
+
+{
+  runas.map((r, i) => (
+    <template id={`${idTooltip}-r${i}`}>
+      <div class="tt-titulo">◆ {r.nombre}</div>
+      {r.descripcion ? (
+        <p class="tt-descripcion">{r.descripcion}</p>
+      ) : (
+        <p class="tt-extra">Runa de {nombreVisible}</p>
+      )}
+    </template>
+  ))
+}
+
+<style>
+  .slot-skill {
+    border: 2px solid var(--anillo);
+    box-shadow:
+      0 0 0 1px var(--color-abismo),
+      inset 0 0 12px rgb(0 0 0 / 0.6);
+    transition:
+      transform 120ms ease,
+      box-shadow 120ms ease;
+  }
+  .slot-skill:hover,
+  .slot-skill:focus-visible {
+    transform: scale(1.07);
+    box-shadow:
+      0 0 0 1px var(--color-abismo),
+      0 0 14px color-mix(in srgb, var(--anillo) 55%, transparent),
+      inset 0 0 12px rgb(0 0 0 / 0.6);
+  }
+</style>

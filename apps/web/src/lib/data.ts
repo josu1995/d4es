@@ -1,7 +1,15 @@
 import { readFileSync, existsSync, readdirSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { BuildIndex, CanonicalBuild, classById, type BuildIndexRow } from '@d4es/schema';
+import {
+  BuildIndex,
+  CanonicalBuild,
+  SkillsDataset,
+  classById,
+  skillNameKey,
+  type BuildIndexRow,
+  type SkillInfo,
+} from '@d4es/schema';
 
 function repoRoot(): string {
   let dir = resolve(dirname(fileURLToPath(import.meta.url)));
@@ -46,6 +54,22 @@ export function loadBuilds(): CanonicalBuild[] {
     }
   }
   return salida.sort((a, b) => a.id.localeCompare(b.id));
+}
+
+let cacheDataset: SkillsDataset | null = null;
+
+/** Dataset de habilidades (descripciones, runas, categorias) para los tooltips. */
+export function loadSkillsDataset(): SkillsDataset | null {
+  if (cacheDataset) return cacheDataset;
+  const path = join(DATA, 'canonical', 'skills-dataset.json');
+  if (!existsSync(path)) return null;
+  cacheDataset = SkillsDataset.parse(JSON.parse(readFileSync(path, 'utf8')));
+  return cacheDataset;
+}
+
+export function skillInfo(nombreEn: string): SkillInfo | null {
+  const dataset = loadSkillsDataset();
+  return dataset?.byName[skillNameKey(nombreEn)] ?? null;
 }
 
 export interface EstadoJuego {

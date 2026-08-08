@@ -1,0 +1,435 @@
+{
+  "classId": "spiritborn",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Counterattack",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__counterattack",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Rock Splitter",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__rock_splitter",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Scourge",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__scourge",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Stinger",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__stinger",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "The Devourer",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__the_devourer",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Toxic Skin",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__toxic_skin",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__counterattack",
+        "label": {
+          "category": "skill",
+          "enUS": "Counterattack",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__counterattack",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:a46f8eee-efa6-49e6-bd04-65ed29ba3a25:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__rock_splitter",
+        "label": {
+          "category": "skill",
+          "enUS": "Rock Splitter",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__rock_splitter",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:a46f8eee-efa6-49e6-bd04-65ed29ba3a25:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__scourge",
+        "label": {
+          "category": "skill",
+          "enUS": "Scourge",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__scourge",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:a46f8eee-efa6-49e6-bd04-65ed29ba3a25:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__stinger",
+        "label": {
+          "category": "skill",
+          "enUS": "Stinger",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__stinger",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:a46f8eee-efa6-49e6-bd04-65ed29ba3a25:0": 5
+        }
+      },
+      {
+        "key": "skill:skill__the_devourer",
+        "label": {
+          "category": "skill",
+          "enUS": "The Devourer",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__the_devourer",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:a46f8eee-efa6-49e6-bd04-65ed29ba3a25:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__toxic_skin",
+        "label": {
+          "category": "skill",
+          "enUS": "Toxic Skin",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__toxic_skin",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:a46f8eee-efa6-49e6-bd04-65ed29ba3a25:0": 15
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "spiritborn::skill__stinger::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "stinger-spiritborn-leveling",
+  "primaryVariantId": "d4builds:a46f8eee-efa6-49e6-bd04-65ed29ba3a25:0",
+  "ratings": {
+    "pitTier": null,
+    "tierLabel": "A",
+    "tierRank": 1
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "leveling"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Stinger",
+    "es": "Stinger"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:a46f8eee-efa6-49e6-bd04-65ed29ba3a25:0",
+      "levelBand": "leveling",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 5,
+          "ref": {
+            "category": "skill",
+            "enUS": "Stinger",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__stinger",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Healing and Vulnerable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__healing_and_vulnerable",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Potent Sting",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__potent_sting",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Size Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__size_bonus",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Counterattack",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__counterattack",
+            "sno": null
+          },
+          "runes": [],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "The Devourer",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__the_devourer",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Sky and Soil",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__sky_and_soil",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Thorns",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__thorns",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "The Devourer Sky and Soil",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__the_devourer_sky_and_soil",
+            "sno": null
+          }
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Toxic Skin",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__toxic_skin",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Thorns",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__thorns",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Skuttle Bug",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__skuttle_bug",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Duration Increase",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__duration_increase",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Rock Splitter",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__rock_splitter",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Resolve",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__resolve",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Shattered Stone",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__shattered_stone",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Crowd Control Damage",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__crowd_control_damage",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Scourge",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__scourge",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Weaken",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__weaken",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "The Beast Within",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__the_beast_within",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Vulnerable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__vulnerable",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Scourge The Beast Within",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__scourge_the_beast_within",
+            "sno": null
+          }
+        }
+      ],
+      "source": {
+        "author": "Rob2628",
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "a46f8eee-efa6-49e6-bd04-65ed29ba3a25",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "6192ea6201ab1f6691f1b366169b0e927e4bcc5d13779e98e066c958104193d4",
+        "url": "https://d4builds.gg/builds/stinger-spiritborn-leveling/",
+        "variantIndex": 0,
+        "variantLabel": "Leveling"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

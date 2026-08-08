@@ -4,67 +4,159 @@
     "coreSkills": [
       {
         "category": "skill",
-        "enUS": "Holy Aura",
+        "enUS": "Arbiter of Justice",
         "esES": null,
         "i18n": "none",
-        "idName": "skill__holy_aura",
+        "idName": "skill__arbiter_of_justice",
         "sno": null
       },
       {
         "category": "skill",
-        "enUS": "Judgement",
+        "enUS": "Blessed Hammer",
         "esES": null,
         "i18n": "none",
-        "idName": "skill__judgement",
+        "idName": "skill__blessed_hammer",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Condemn",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__condemn",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Defiance Aura",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__defiance_aura",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Fanaticism Aura",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__fanaticism_aura",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Spear of the Heavens",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__spear_of_the_heavens",
         "sno": null
       }
     ],
     "coreUniques": [],
     "fields": [
       {
-        "key": "skill:skill__holy_aura",
+        "key": "skill:skill__arbiter_of_justice",
         "label": {
           "category": "skill",
-          "enUS": "Holy Aura",
+          "enUS": "Arbiter of Justice",
           "esES": null,
           "i18n": "none",
-          "idName": "skill__holy_aura",
+          "idName": "skill__arbiter_of_justice",
           "sno": null
         },
         "status": "agree",
         "values": {
-          "d4builds:fedcba98-7654-3210-fedc-ba9876543210:0": 10
+          "d4builds:6b045c7f-3bf1-4523-a2d4-4c5fbb58ea30:0": 15
         }
       },
       {
-        "key": "skill:skill__judgement",
+        "key": "skill:skill__blessed_hammer",
         "label": {
           "category": "skill",
-          "enUS": "Judgement",
+          "enUS": "Blessed Hammer",
           "esES": null,
           "i18n": "none",
-          "idName": "skill__judgement",
+          "idName": "skill__blessed_hammer",
           "sno": null
         },
         "status": "agree",
         "values": {
-          "d4builds:fedcba98-7654-3210-fedc-ba9876543210:0": 15
+          "d4builds:6b045c7f-3bf1-4523-a2d4-4c5fbb58ea30:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__condemn",
+        "label": {
+          "category": "skill",
+          "enUS": "Condemn",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__condemn",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:6b045c7f-3bf1-4523-a2d4-4c5fbb58ea30:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__defiance_aura",
+        "label": {
+          "category": "skill",
+          "enUS": "Defiance Aura",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__defiance_aura",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:6b045c7f-3bf1-4523-a2d4-4c5fbb58ea30:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__fanaticism_aura",
+        "label": {
+          "category": "skill",
+          "enUS": "Fanaticism Aura",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__fanaticism_aura",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:6b045c7f-3bf1-4523-a2d4-4c5fbb58ea30:0": 14
+        }
+      },
+      {
+        "key": "skill:skill__spear_of_the_heavens",
+        "label": {
+          "category": "skill",
+          "enUS": "Spear of the Heavens",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__spear_of_the_heavens",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:6b045c7f-3bf1-4523-a2d4-4c5fbb58ea30:0": 15
         }
       }
     ],
     "variantCount": 1
   },
-  "correlationKey": "paladin::skill__judgement::generic",
+  "correlationKey": "paladin::skill__arbiter_of_justice::generic",
   "gameVersion": {
     "patch": "3.1.2",
-    "season": 14
+    "season": 13
   },
   "id": "judgement-paladin-endgame",
-  "primaryVariantId": "d4builds:fedcba98-7654-3210-fedc-ba9876543210:0",
+  "primaryVariantId": "d4builds:6b045c7f-3bf1-4523-a2d4-4c5fbb58ea30:0",
   "ratings": {
-    "pitTier": 148,
-    "tierLabel": "S",
-    "tierRank": 1
+    "pitTier": null,
+    "tierLabel": "B",
+    "tierRank": null
   },
   "summary": {
     "en": null,
@@ -81,7 +173,7 @@
     "en": "Judgement",
     "es": "Judgement"
   },
-  "updatedAt": "2026-08-08T00:00:00.000Z",
+  "updatedAt": "2026-08-08T21:57:21.526Z",
   "variants": [
     {
       "completeness": {
@@ -94,7 +186,7 @@
         "score": 0.35
       },
       "gear": {},
-      "id": "d4builds:fedcba98-7654-3210-fedc-ba9876543210:0",
+      "id": "d4builds:6b045c7f-3bf1-4523-a2d4-4c5fbb58ea30:0",
       "levelBand": "endgame",
       "mercenary": null,
       "paragon": {
@@ -109,19 +201,35 @@
           "rank": 15,
           "ref": {
             "category": "skill",
-            "enUS": "Judgement",
+            "enUS": "Arbiter of Justice",
             "esES": null,
             "i18n": "none",
-            "idName": "skill__judgement",
+            "idName": "skill__arbiter_of_justice",
             "sno": null
           },
           "runes": [
             {
               "category": "rune",
-              "enUS": "Enemy Damage Bonus",
+              "enUS": "Cooldown Reduction",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__enemy_damage_bonus",
+              "idName": "rune__cooldown_reduction",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Reach of the Law",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__reach_of_the_law",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Duration",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__duration",
               "sno": null
             }
           ],
@@ -130,26 +238,211 @@
         {
           "category": "unknown",
           "order": 1,
-          "rank": 10,
+          "rank": 14,
           "ref": {
             "category": "skill",
-            "enUS": "Holy Aura",
+            "enUS": "Fanaticism Aura",
             "esES": null,
             "i18n": "none",
-            "idName": "skill__holy_aura",
+            "idName": "skill__fanaticism_aura",
             "sno": null
           },
-          "runes": [],
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Additional Maximum Resource",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__additional_maximum_resource",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Rite of Vengeance",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__rite_of_vengeance",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Potency",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__potency",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Blessed Hammer",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__blessed_hammer",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Cost Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cost_reduction",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Shattering Blow",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__shattering_blow",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Slow",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__slow",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Defiance Aura",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__defiance_aura",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Unstoppable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__unstoppable",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Rite of Prayer",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__rite_of_prayer",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Potency",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__potency",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Condemn",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__condemn",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Weaken",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__weaken",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Gather the Guilty",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__gather_the_guilty",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Size Increase",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__size_increase",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Spear of the Heavens",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__spear_of_the_heavens",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Cooldown Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown_reduction",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Part the Heavens",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__part_the_heavens",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Vulnerable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__vulnerable",
+              "sno": null
+            }
+          ],
           "skillVariant": null
         }
       ],
       "source": {
         "author": "Rob2628",
-        "capturedAt": "2026-08-08T00:00:00.000Z",
-        "externalId": "fedcba98-7654-3210-fedc-ba9876543210",
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "6b045c7f-3bf1-4523-a2d4-4c5fbb58ea30",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "d4b1f4f0c0ce190fcf066b8a497d1ca2cd8c132968427c212a12f0cb9ffaf1d4",
+        "snapshotHash": "d51ffaf945678120f9763e60043cf6366e828d0f69cc04b43bcf56b5abe07bb0",
         "url": "https://d4builds.gg/builds/judgement-paladin-endgame/",
         "variantIndex": 0,
         "variantLabel": "Endgame"

@@ -1,0 +1,446 @@
+{
+  "classId": "druid",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Boulder",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__boulder",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Claw",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__claw",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Cyclone Armor",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__cyclone_armor",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Grizzly Rage",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__grizzly_rage",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Lightning Storm",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__lightning_storm",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Wolves",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__wolves",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__boulder",
+        "label": {
+          "category": "skill",
+          "enUS": "Boulder",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__boulder",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:c5d56e75-51f1-4c89-a340-7a7e74982076:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__claw",
+        "label": {
+          "category": "skill",
+          "enUS": "Claw",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__claw",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:c5d56e75-51f1-4c89-a340-7a7e74982076:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__cyclone_armor",
+        "label": {
+          "category": "skill",
+          "enUS": "Cyclone Armor",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__cyclone_armor",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:c5d56e75-51f1-4c89-a340-7a7e74982076:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__grizzly_rage",
+        "label": {
+          "category": "skill",
+          "enUS": "Grizzly Rage",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__grizzly_rage",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:c5d56e75-51f1-4c89-a340-7a7e74982076:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__lightning_storm",
+        "label": {
+          "category": "skill",
+          "enUS": "Lightning Storm",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__lightning_storm",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:c5d56e75-51f1-4c89-a340-7a7e74982076:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__wolves",
+        "label": {
+          "category": "skill",
+          "enUS": "Wolves",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__wolves",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:c5d56e75-51f1-4c89-a340-7a7e74982076:0": 1
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "druid::skill__boulder::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "boulder-druid-endgame",
+  "primaryVariantId": "d4builds:c5d56e75-51f1-4c89-a340-7a7e74982076:0",
+  "ratings": {
+    "pitTier": null,
+    "tierLabel": null,
+    "tierRank": null
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Boulder",
+    "es": "Boulder"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:c5d56e75-51f1-4c89-a340-7a7e74982076:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Grizzly Rage",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__grizzly_rage",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Fortify",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__fortify",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Cornered Beast",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cornered_beast",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Cooldown Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown_reduction",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Lightning Storm",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__lightning_storm",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Movement Speed",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__movement_speed",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Hero of the Storm",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__hero_of_the_storm",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Additional Strikes",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__additional_strikes",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Wolves",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__wolves",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Thrill of the Hunt",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__thrill_of_the_hunt",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Attack Speed",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__attack_speed",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Cyclone Armor",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__cyclone_armor",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Increased Radius",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__increased_radius",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Reversal",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__reversal",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Resistance",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__resistance",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Boulder",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__boulder",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Critical Strike Chance",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__critical_strike_chance",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Dolmen's Will",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__dolmen_s_will",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Fortify",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__fortify",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Claw",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__claw",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Ferocity",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ferocity",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Dash",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__dash",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Cast Speed",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cast_speed",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": null,
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "c5d56e75-51f1-4c89-a340-7a7e74982076",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "9c537ce7f1777aae10dfbf010d63cd0c3ca97114f2bf1370a974602b4d525a82",
+        "url": "https://d4builds.gg/builds/boulder-druid-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

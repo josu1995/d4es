@@ -1,0 +1,437 @@
+{
+  "classId": "rogue",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Concealment",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__concealment",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Dark Shroud",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__dark_shroud",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Dash",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__dash",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Shadow Clone",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__shadow_clone",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Shadow Step",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__shadow_step",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Smoke Grenade",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__smoke_grenade",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__concealment",
+        "label": {
+          "category": "skill",
+          "enUS": "Concealment",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__concealment",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:54ff400c-3585-4ce5-827d-f6770164d32e:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__dark_shroud",
+        "label": {
+          "category": "skill",
+          "enUS": "Dark Shroud",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__dark_shroud",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:54ff400c-3585-4ce5-827d-f6770164d32e:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__dash",
+        "label": {
+          "category": "skill",
+          "enUS": "Dash",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__dash",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:54ff400c-3585-4ce5-827d-f6770164d32e:0": 7
+        }
+      },
+      {
+        "key": "skill:skill__shadow_clone",
+        "label": {
+          "category": "skill",
+          "enUS": "Shadow Clone",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__shadow_clone",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:54ff400c-3585-4ce5-827d-f6770164d32e:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__shadow_step",
+        "label": {
+          "category": "skill",
+          "enUS": "Shadow Step",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__shadow_step",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:54ff400c-3585-4ce5-827d-f6770164d32e:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__smoke_grenade",
+        "label": {
+          "category": "skill",
+          "enUS": "Smoke Grenade",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__smoke_grenade",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:54ff400c-3585-4ce5-827d-f6770164d32e:0": 15
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "rogue::skill__smoke_grenade::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "smoke-grenade-rogue-endgame",
+  "primaryVariantId": "d4builds:54ff400c-3585-4ce5-827d-f6770164d32e:0",
+  "ratings": {
+    "pitTier": null,
+    "tierLabel": null,
+    "tierRank": null
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Smoke Grenade",
+    "es": "Smoke Grenade"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:54ff400c-3585-4ce5-827d-f6770164d32e:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 7,
+          "ref": {
+            "category": "skill",
+            "enUS": "Dash",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__dash",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Primer",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__primer",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Charges and Cooldown Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__charges_and_cooldown_reduction",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Shadow Step",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__shadow_step",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Cooldown",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Artifice",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__artifice",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Unstoppable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__unstoppable",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Concealment",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__concealment",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Calculation",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__calculation",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Dark Shroud",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__dark_shroud",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Critical Strike",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__critical_strike",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Shadow Dancer",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__shadow_dancer",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Consume Chance",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__consume_chance",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Smoke Grenade",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__smoke_grenade",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Increased Duration and Damage",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__increased_duration_and_damage",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Shade Grenade",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__shade_grenade",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Vulnerable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__vulnerable",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Smoke Grenade Shade Grenade",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__smoke_grenade_shade_grenade",
+            "sno": null
+          }
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Shadow Clone",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__shadow_clone",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Unstoppable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__unstoppable",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Awakening",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__awakening",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Cooldown",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": null,
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "54ff400c-3585-4ce5-827d-f6770164d32e",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "19c5dc098d9c40a96a0fb2fb589babe5e56c599a488352fc94a66b3819502953",
+        "url": "https://d4builds.gg/builds/smoke-grenade-rogue-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

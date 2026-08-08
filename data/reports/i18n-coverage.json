@@ -14,74 +14,1224 @@
     },
     "sourceSha": "7b956b088d728a06b889c42555c32d34e1a563a5"
   },
-  "generatedAt": "2026-08-08T00:00:00.000Z",
+  "generatedAt": "2026-08-08T21:57:21.526Z",
   "resolucion": {
     "hits": 0,
     "missRate": 1,
-    "misses": 31
+    "misses": 2142
   },
   "sinTraducir": {
     "rune": [
       {
-        "termino": "Enemy Damage Bonus",
+        "termino": "Cooldown Reduction",
+        "veces": 56
+      },
+      {
+        "termino": "Weaken",
+        "veces": 48
+      },
+      {
+        "termino": "Vulnerable",
+        "veces": 45
+      },
+      {
+        "termino": "Overpower",
+        "veces": 44
+      },
+      {
+        "termino": "Damage Bonus",
+        "veces": 32
+      },
+      {
+        "termino": "Cooldown",
+        "veces": 28
+      },
+      {
+        "termino": "Duration",
+        "veces": 26
+      },
+      {
+        "termino": "Ferocity",
+        "veces": 26
+      },
+      {
+        "termino": "Fortify",
+        "veces": 26
+      },
+      {
+        "termino": "Resolve",
+        "veces": 23
+      },
+      {
+        "termino": "Unstoppable",
+        "veces": 23
+      },
+      {
+        "termino": "Movement Speed",
+        "veces": 21
+      },
+      {
+        "termino": "Potency",
+        "veces": 21
+      },
+      {
+        "termino": "Duration Bonus",
+        "veces": 19
+      },
+      {
+        "termino": "Healing",
+        "veces": 18
+      },
+      {
+        "termino": "Critical Strike Chance",
+        "veces": 15
+      },
+      {
+        "termino": "Cost Reduction",
+        "veces": 13
+      },
+      {
+        "termino": "Hero of the Storm",
+        "veces": 13
+      },
+      {
+        "termino": "Additional Strikes",
+        "veces": 12
+      },
+      {
+        "termino": "Maximum Life",
+        "veces": 12
+      },
+      {
+        "termino": "Permafrost",
+        "veces": 12
+      },
+      {
+        "termino": "Rite of Vengeance",
+        "veces": 12
+      },
+      {
+        "termino": "Attack Speed",
+        "veces": 11
+      },
+      {
+        "termino": "Cast Speed",
+        "veces": 11
+      },
+      {
+        "termino": "Cornered Beast",
+        "veces": 11
+      },
+      {
+        "termino": "Duration Increase",
+        "veces": 11
+      },
+      {
+        "termino": "Resistance",
+        "veces": 11
+      },
+      {
+        "termino": "Rite of Might",
+        "veces": 11
+      },
+      {
+        "termino": "Size Bonus",
+        "veces": 11
+      },
+      {
+        "termino": "Calculation",
+        "veces": 10
+      },
+      {
+        "termino": "Charges and Cooldown Reduction",
+        "veces": 10
+      },
+      {
+        "termino": "Duration Bonus and Barrier",
+        "veces": 10
+      },
+      {
+        "termino": "Fury Generation",
+        "veces": 10
+      },
+      {
+        "termino": "Primer",
+        "veces": 10
+      },
+      {
+        "termino": "Thrill of the Hunt",
+        "veces": 10
+      },
+      {
+        "termino": "Berserking",
+        "veces": 9
+      },
+      {
+        "termino": "Blocked Damage Reduction",
+        "veces": 9
+      },
+      {
+        "termino": "Damage Reduction",
+        "veces": 9
+      },
+      {
+        "termino": "Force of Nature",
+        "veces": 9
+      },
+      {
+        "termino": "Skuttle Bug",
+        "veces": 9
+      },
+      {
+        "termino": "Barrier",
+        "veces": 8
+      },
+      {
+        "termino": "Blaze",
+        "veces": 8
+      },
+      {
+        "termino": "Booming",
+        "veces": 8
+      },
+      {
+        "termino": "Charge or Energy Cost Reduction",
+        "veces": 8
+      },
+      {
+        "termino": "Crowd Control and Corpse Generation",
+        "veces": 8
+      },
+      {
+        "termino": "Flurry of Claws",
+        "veces": 8
+      },
+      {
+        "termino": "Hive Mind",
+        "veces": 8
+      },
+      {
+        "termino": "Increased Duration",
+        "veces": 8
+      },
+      {
+        "termino": "Increased Duration and Damage",
+        "veces": 8
+      },
+      {
+        "termino": "Inexorable Reaper",
+        "veces": 8
+      },
+      {
+        "termino": "Silhouette",
+        "veces": 8
+      },
+      {
+        "termino": "Booming Roar",
+        "veces": 7
+      },
+      {
+        "termino": "Damage Increase",
+        "veces": 7
+      },
+      {
+        "termino": "Essence Generation",
+        "veces": 7
+      },
+      {
+        "termino": "Execute",
+        "veces": 7
+      },
+      {
+        "termino": "Ferocity Maximum",
+        "veces": 7
+      },
+      {
+        "termino": "Frigid Hydra",
+        "veces": 7
+      },
+      {
+        "termino": "Relentless",
+        "veces": 7
+      },
+      {
+        "termino": "Vigor Generation",
+        "veces": 7
+      },
+      {
+        "termino": "Additional Maximum Resource",
+        "veces": 6
+      },
+      {
+        "termino": "Bawl",
+        "veces": 6
+      },
+      {
+        "termino": "Bonus Healing",
+        "veces": 6
+      },
+      {
+        "termino": "Consume Chance",
+        "veces": 6
+      },
+      {
+        "termino": "Critical Strike",
+        "veces": 6
+      },
+      {
+        "termino": "Damage",
+        "veces": 6
+      },
+      {
+        "termino": "Dominance",
+        "veces": 6
+      },
+      {
+        "termino": "Extra Passive Stack",
+        "veces": 6
+      },
+      {
+        "termino": "Frozen Heart",
+        "veces": 6
+      },
+      {
+        "termino": "Gather the Guilty",
+        "veces": 6
+      },
+      {
+        "termino": "Hallowed Ground",
+        "veces": 6
+      },
+      {
+        "termino": "Master of Puppets",
+        "veces": 6
+      },
+      {
+        "termino": "Maximum Carnage",
+        "veces": 6
+      },
+      {
+        "termino": "Relentless Pursuit",
+        "veces": 6
+      },
+      {
+        "termino": "Reversal",
+        "veces": 6
+      },
+      {
+        "termino": "Shadow Dancer",
+        "veces": 6
+      },
+      {
+        "termino": "Size Increase",
+        "veces": 6
+      },
+      {
+        "termino": "Additional Bounce",
         "veces": 5
+      },
+      {
+        "termino": "Charge",
+        "veces": 5
+      },
+      {
+        "termino": "Fast As Lightning",
+        "veces": 5
+      },
+      {
+        "termino": "Fury Gain",
+        "veces": 5
+      },
+      {
+        "termino": "Get Over Here!",
+        "veces": 5
+      },
+      {
+        "termino": "Greater Cyclone Armor",
+        "veces": 5
+      },
+      {
+        "termino": "Hematolagnia",
+        "veces": 5
+      },
+      {
+        "termino": "Increased Radius",
+        "veces": 5
+      },
+      {
+        "termino": "Life Imprisonment",
+        "veces": 5
+      },
+      {
+        "termino": "Mighty Roar",
+        "veces": 5
+      },
+      {
+        "termino": "Pull",
+        "veces": 5
+      },
+      {
+        "termino": "Slow",
+        "veces": 5
+      },
+      {
+        "termino": "Spirit",
+        "veces": 5
+      },
+      {
+        "termino": "Armor",
+        "veces": 4
+      },
+      {
+        "termino": "Artifice",
+        "veces": 4
+      },
+      {
+        "termino": "Damage Scaling",
+        "veces": 4
+      },
+      {
+        "termino": "Derecho",
+        "veces": 4
+      },
+      {
+        "termino": "Minimum Strikes",
+        "veces": 4
+      },
+      {
+        "termino": "Resource Generation",
+        "veces": 4
+      },
+      {
+        "termino": "Rite of Mercy",
+        "veces": 4
+      },
+      {
+        "termino": "Seraph's Wings",
+        "veces": 4
+      },
+      {
+        "termino": "Shockwave",
+        "veces": 4
+      },
+      {
+        "termino": "Weaken & Vulnerable",
+        "veces": 4
+      },
+      {
+        "termino": "Wing Strike Recast",
+        "veces": 4
+      },
+      {
+        "termino": "Channel Damage Bonus",
+        "veces": 3
+      },
+      {
+        "termino": "Cost Damage Bonus",
+        "veces": 3
+      },
+      {
+        "termino": "Coven",
+        "veces": 3
+      },
+      {
+        "termino": "Crackling Energy",
+        "veces": 3
+      },
+      {
+        "termino": "Dash",
+        "veces": 3
+      },
+      {
+        "termino": "Demonic Grasp",
+        "veces": 3
+      },
+      {
+        "termino": "Destruction Demon",
+        "veces": 3
+      },
+      {
+        "termino": "Elite Hit Chance",
+        "veces": 3
+      },
+      {
+        "termino": "Energy",
+        "veces": 3
+      },
+      {
+        "termino": "Extra Bites",
+        "veces": 3
+      },
+      {
+        "termino": "Ferocity, Resolve, or Overpower",
+        "veces": 3
+      },
+      {
+        "termino": "Firebird",
+        "veces": 3
+      },
+      {
+        "termino": "Grasp Area",
+        "veces": 3
+      },
+      {
+        "termino": "Killstreak Damage",
+        "veces": 3
+      },
+      {
+        "termino": "Lifecoil",
+        "veces": 3
+      },
+      {
+        "termino": "Living Bomb",
+        "veces": 3
+      },
+      {
+        "termino": "Pierce and Size",
+        "veces": 3
+      },
+      {
+        "termino": "Portals",
+        "veces": 3
+      },
+      {
+        "termino": "Reach of the Law",
+        "veces": 3
+      },
+      {
+        "termino": "Resolve Damage Bonus",
+        "veces": 3
+      },
+      {
+        "termino": "Roll the Bones",
+        "veces": 3
+      },
+      {
+        "termino": "Seismic Shift",
+        "veces": 3
+      },
+      {
+        "termino": "Sentry",
+        "veces": 3
+      },
+      {
+        "termino": "Slow and Movement Speed",
+        "veces": 3
+      },
+      {
+        "termino": "Star Shards",
+        "veces": 3
+      },
+      {
+        "termino": "Toxic Touch",
+        "veces": 3
+      },
+      {
+        "termino": "Unstoppable Damage",
+        "veces": 3
+      },
+      {
+        "termino": "Wormhole",
+        "veces": 3
+      },
+      {
+        "termino": "Wrath",
+        "veces": 3
+      },
+      {
+        "termino": "Additional Demon",
+        "veces": 2
+      },
+      {
+        "termino": "Additional Hits",
+        "veces": 2
+      },
+      {
+        "termino": "Ambush",
+        "veces": 2
+      },
+      {
+        "termino": "Annihilation",
+        "veces": 2
+      },
+      {
+        "termino": "Attack Speed and Damage Bonus",
+        "veces": 2
+      },
+      {
+        "termino": "Barricade",
+        "veces": 2
+      },
+      {
+        "termino": "Blood Ritual",
+        "veces": 2
+      },
+      {
+        "termino": "Cascading Dread",
+        "veces": 2
+      },
+      {
+        "termino": "Cast Range",
+        "veces": 2
+      },
+      {
+        "termino": "Chain Aura",
+        "veces": 2
+      },
+      {
+        "termino": "Charge Increase",
+        "veces": 2
+      },
+      {
+        "termino": "Contagion",
+        "veces": 2
+      },
+      {
+        "termino": "Crowd Control Damage",
+        "veces": 2
+      },
+      {
+        "termino": "Crowd Control Damage Bonus",
+        "veces": 2
+      },
+      {
+        "termino": "Devouring Swarm",
+        "veces": 2
+      },
+      {
+        "termino": "Disciple's Halo",
+        "veces": 2
+      },
+      {
+        "termino": "Double Blast",
+        "veces": 2
+      },
+      {
+        "termino": "Duration Damage Bonus",
+        "veces": 2
+      },
+      {
+        "termino": "Empowered",
+        "veces": 2
+      },
+      {
+        "termino": "Faster Than Light",
+        "veces": 2
+      },
+      {
+        "termino": "Focused Target",
+        "veces": 2
+      },
+      {
+        "termino": "Free Cast",
+        "veces": 2
+      },
+      {
+        "termino": "Growth Speed",
+        "veces": 2
+      },
+      {
+        "termino": "Healing Flames",
+        "veces": 2
+      },
+      {
+        "termino": "Healthy Damage Bonus",
+        "veces": 2
+      },
+      {
+        "termino": "Immobilize",
+        "veces": 2
+      },
+      {
+        "termino": "Impact Velocity",
+        "veces": 2
+      },
+      {
+        "termino": "Incarnate Duration",
+        "veces": 2
+      },
+      {
+        "termino": "Juggernaut",
+        "veces": 2
+      },
+      {
+        "termino": "Korlic",
+        "veces": 2
+      },
+      {
+        "termino": "Lesser Demon Vulnerable",
+        "veces": 2
+      },
+      {
+        "termino": "Life Tap",
+        "veces": 2
+      },
+      {
+        "termino": "Litany of Death",
+        "veces": 2
+      },
+      {
+        "termino": "Living Stones",
+        "veces": 2
+      },
+      {
+        "termino": "Pierce",
+        "veces": 2
+      },
+      {
+        "termino": "Ramping Currents",
+        "veces": 2
+      },
+      {
+        "termino": "Recuperate",
+        "veces": 2
+      },
+      {
+        "termino": "Resolve Generation",
+        "veces": 2
+      },
+      {
+        "termino": "Resolve, Overpower, or Ferocity",
+        "veces": 2
+      },
+      {
+        "termino": "Resource Regeneration",
+        "veces": 2
+      },
+      {
+        "termino": "Retaliation",
+        "veces": 2
+      },
+      {
+        "termino": "Reverse Polarity",
+        "veces": 2
+      },
+      {
+        "termino": "Seek and Duration Bonus",
+        "veces": 2
+      },
+      {
+        "termino": "Shattering Blow",
+        "veces": 2
+      },
+      {
+        "termino": "Shooting Star",
+        "veces": 2
+      },
+      {
+        "termino": "Skewer",
+        "veces": 2
+      },
+      {
+        "termino": "Stomping Grounds",
+        "veces": 2
+      },
+      {
+        "termino": "Stronger Summons",
+        "veces": 2
+      },
+      {
+        "termino": "Summon Hellwyrm",
+        "veces": 2
+      },
+      {
+        "termino": "Survivor Damage",
+        "veces": 2
+      },
+      {
+        "termino": "Thorns",
+        "veces": 2
+      },
+      {
+        "termino": "Tornado",
+        "veces": 2
+      },
+      {
+        "termino": "Unhindered and Movement Speed",
+        "veces": 2
+      },
+      {
+        "termino": "Wide Beam",
+        "veces": 2
+      },
+      {
+        "termino": "Words of Rejuvenation",
+        "veces": 2
+      },
+      {
+        "termino": "Abyssal Oppression",
+        "veces": 1
+      },
+      {
+        "termino": "Accumulating Strike",
+        "veces": 1
+      },
+      {
+        "termino": "Additional Fracture",
+        "veces": 1
+      },
+      {
+        "termino": "Additional Pillar",
+        "veces": 1
+      },
+      {
+        "termino": "Additional Raven",
+        "veces": 1
+      },
+      {
+        "termino": "Aftershock",
+        "veces": 1
+      },
+      {
+        "termino": "Air Burst",
+        "veces": 1
+      },
+      {
+        "termino": "Area Bonus",
+        "veces": 1
+      },
+      {
+        "termino": "Area Damage Bonus",
+        "veces": 1
+      },
+      {
+        "termino": "Area Increase",
+        "veces": 1
+      },
+      {
+        "termino": "Assimilation",
+        "veces": 1
+      },
+      {
+        "termino": "Astral Projection",
+        "veces": 1
+      },
+      {
+        "termino": "Awakening",
+        "veces": 1
+      },
+      {
+        "termino": "Ballista",
+        "veces": 1
+      },
+      {
+        "termino": "Barrier Duration and Bonus",
+        "veces": 1
+      },
+      {
+        "termino": "Barrier Generation",
+        "veces": 1
+      },
+      {
+        "termino": "Bathed in Flame",
+        "veces": 1
       },
       {
         "termino": "Battering Ram",
         "veces": 1
       },
       {
+        "termino": "Bitter Harvest",
+        "veces": 1
+      },
+      {
+        "termino": "Bladedancer",
+        "veces": 1
+      },
+      {
+        "termino": "Blood Orb",
+        "veces": 1
+      },
+      {
+        "termino": "Blood Seeker",
+        "veces": 1
+      },
+      {
+        "termino": "Blood Spear",
+        "veces": 1
+      },
+      {
+        "termino": "Blood Sworn",
+        "veces": 1
+      },
+      {
+        "termino": "Blood Transfusion",
+        "veces": 1
+      },
+      {
+        "termino": "Bloody Mess",
+        "veces": 1
+      },
+      {
+        "termino": "Bonus Feathers",
+        "veces": 1
+      },
+      {
+        "termino": "Boundless",
+        "veces": 1
+      },
+      {
+        "termino": "Breakneck Quiver",
+        "veces": 1
+      },
+      {
+        "termino": "Buffered Battery",
+        "veces": 1
+      },
+      {
+        "termino": "Canopy Shelter",
+        "veces": 1
+      },
+      {
+        "termino": "Capture Damage",
+        "veces": 1
+      },
+      {
+        "termino": "Chain Burst",
+        "veces": 1
+      },
+      {
+        "termino": "Chain Reaction",
+        "veces": 1
+      },
+      {
+        "termino": "Chain Whip",
+        "veces": 1
+      },
+      {
+        "termino": "Chain Whips",
+        "veces": 1
+      },
+      {
+        "termino": "Chance to Hit Twice",
+        "veces": 1
+      },
+      {
+        "termino": "Cloudburst",
+        "veces": 1
+      },
+      {
+        "termino": "Confluence",
+        "veces": 1
+      },
+      {
+        "termino": "Continental Shift",
+        "veces": 1
+      },
+      {
+        "termino": "Core Skill",
+        "veces": 1
+      },
+      {
+        "termino": "Corpse Generation",
+        "veces": 1
+      },
+      {
+        "termino": "Cost Reduction and Damage",
+        "veces": 1
+      },
+      {
+        "termino": "Counterattack of the Swarm",
+        "veces": 1
+      },
+      {
+        "termino": "Crashing Waves",
+        "veces": 1
+      },
+      {
+        "termino": "Crowd Controlled or Weakened",
+        "veces": 1
+      },
+      {
+        "termino": "Crowd Damage",
+        "veces": 1
+      },
+      {
+        "termino": "Crusader's March Effectiveness",
+        "veces": 1
+      },
+      {
+        "termino": "Damage Bonus and Crowd Control",
+        "veces": 1
+      },
+      {
+        "termino": "Damage Bonus to Multiple",
+        "veces": 1
+      },
+      {
+        "termino": "Damage Bonus to Target",
+        "veces": 1
+      },
+      {
+        "termino": "Damage Increase and Execute",
+        "veces": 1
+      },
+      {
+        "termino": "Damage Over Time",
+        "veces": 1
+      },
+      {
+        "termino": "Damage Per Demon",
+        "veces": 1
+      },
+      {
+        "termino": "Damage to Sparking",
+        "veces": 1
+      },
+      {
+        "termino": "Dead Cold",
+        "veces": 1
+      },
+      {
+        "termino": "Death From Above",
+        "veces": 1
+      },
+      {
+        "termino": "Debilitate",
+        "veces": 1
+      },
+      {
+        "termino": "Demon Mangler",
+        "veces": 1
+      },
+      {
+        "termino": "Demon Masher",
+        "veces": 1
+      },
+      {
+        "termino": "Demon Turret",
+        "veces": 1
+      },
+      {
+        "termino": "Demonic Glare",
+        "veces": 1
+      },
+      {
+        "termino": "Demonic Smash",
+        "veces": 1
+      },
+      {
         "termino": "Distance Damage Bonus",
         "veces": 1
-      }
-    ],
-    "skill": [
+      },
       {
-        "termino": "Ball Lightning",
+        "termino": "Dizzying Curse",
         "veces": 1
       },
       {
-        "termino": "Blood Mist",
+        "termino": "Dodge",
         "veces": 1
       },
       {
-        "termino": "Bone Spear",
+        "termino": "Dolmen's Will",
         "veces": 1
       },
       {
-        "termino": "Challenging Shout",
+        "termino": "Echo",
         "veces": 1
       },
       {
-        "termino": "Charge",
+        "termino": "Electrobolt",
         "veces": 1
       },
       {
-        "termino": "Corpse Tendrils",
+        "termino": "Elite Damage",
         "veces": 1
       },
       {
-        "termino": "Firewall",
+        "termino": "Endemic",
         "veces": 1
       },
       {
-        "termino": "Flame Shield",
+        "termino": "Endless Barrage",
         "veces": 1
       },
       {
-        "termino": "Hell Fracture",
+        "termino": "Enemy Damage Bonus",
         "veces": 1
       },
       {
-        "termino": "Holy Aura",
+        "termino": "Energy Cost Reduction",
         "veces": 1
       },
       {
-        "termino": "Ice Armor",
+        "termino": "Energy Gain",
         "veces": 1
       },
       {
-        "termino": "Iron Skin",
+        "termino": "Erupting Skin",
+        "veces": 1
+      },
+      {
+        "termino": "Eruption",
+        "veces": 1
+      },
+      {
+        "termino": "Evasive Swipe",
+        "veces": 1
+      },
+      {
+        "termino": "Evolving Claws",
+        "veces": 1
+      },
+      {
+        "termino": "Explosion Damage Bonus",
+        "veces": 1
+      },
+      {
+        "termino": "Explosive",
+        "veces": 1
+      },
+      {
+        "termino": "Explosive Death",
+        "veces": 1
+      },
+      {
+        "termino": "Explosive Tornado",
+        "veces": 1
+      },
+      {
+        "termino": "Explosive Trigger",
+        "veces": 1
+      },
+      {
+        "termino": "Fanatic Descent",
+        "veces": 1
+      },
+      {
+        "termino": "Feeding Frenzy",
+        "veces": 1
+      },
+      {
+        "termino": "Fel Gluttony",
+        "veces": 1
+      },
+      {
+        "termino": "Festering Wound",
+        "veces": 1
+      },
+      {
+        "termino": "First Hit Damage Bonus",
+        "veces": 1
+      },
+      {
+        "termino": "Fissure",
+        "veces": 1
+      },
+      {
+        "termino": "Flamethrower",
+        "veces": 1
+      },
+      {
+        "termino": "Flash",
+        "veces": 1
+      },
+      {
+        "termino": "Flock of Feathers",
+        "veces": 1
+      },
+      {
+        "termino": "Focused Flame",
+        "veces": 1
+      },
+      {
+        "termino": "Focused Glare",
+        "veces": 1
+      },
+      {
+        "termino": "Focused Strike",
+        "veces": 1
+      },
+      {
+        "termino": "Fortify and Healing",
+        "veces": 1
+      },
+      {
+        "termino": "Frenzy Stacks",
+        "veces": 1
+      },
+      {
+        "termino": "Frostbite Trap",
+        "veces": 1
+      },
+      {
+        "termino": "Frozen and Chill",
+        "veces": 1
+      },
+      {
+        "termino": "Full Throttle",
+        "veces": 1
+      },
+      {
+        "termino": "Gargantua",
+        "veces": 1
+      },
+      {
+        "termino": "Gift of Death",
+        "veces": 1
+      },
+      {
+        "termino": "Gravebloom",
+        "veces": 1
+      },
+      {
+        "termino": "Grenade Jumper",
+        "veces": 1
+      },
+      {
+        "termino": "Hailstorm",
+        "veces": 1
+      },
+      {
+        "termino": "Harvest",
+        "veces": 1
+      },
+      {
+        "termino": "Healing and Vulnerable",
+        "veces": 1
+      },
+      {
+        "termino": "Heavy Harpoon",
+        "veces": 1
+      },
+      {
+        "termino": "Heavy Impact Damage",
+        "veces": 1
+      },
+      {
+        "termino": "Hellfire Aura",
+        "veces": 1
+      },
+      {
+        "termino": "Hit Damage Bonus",
+        "veces": 1
+      },
+      {
+        "termino": "Impunity",
+        "veces": 1
+      },
+      {
+        "termino": "Increased Cost and Damage",
+        "veces": 1
+      },
+      {
+        "termino": "Infiltration Trails",
+        "veces": 1
+      },
+      {
+        "termino": "Initial Damage Bonus",
+        "veces": 1
+      },
+      {
+        "termino": "Inner Ferocity",
+        "veces": 1
+      },
+      {
+        "termino": "Instantaneous Destruction",
+        "veces": 1
+      },
+      {
+        "termino": "Jaws of Death",
         "veces": 1
       },
       {
@@ -89,19 +1239,1057 @@
         "veces": 1
       },
       {
-        "termino": "Pestilent Swarm",
+        "termino": "Knock Down",
         "veces": 1
       },
       {
-        "termino": "Profane Sentinel",
+        "termino": "Lesser Demon Wrath",
         "veces": 1
       },
       {
-        "termino": "Rallying Cry",
+        "termino": "Lightning Dancer",
         "veces": 1
+      },
+      {
+        "termino": "Long Range Slow",
+        "veces": 1
+      },
+      {
+        "termino": "Lucky Hit",
+        "veces": 1
+      },
+      {
+        "termino": "Lucky Hit Chance",
+        "veces": 1
+      },
+      {
+        "termino": "Maximum Essence",
+        "veces": 1
+      },
+      {
+        "termino": "Meat Shields",
+        "veces": 1
+      },
+      {
+        "termino": "Mega Lunatic",
+        "veces": 1
+      },
+      {
+        "termino": "Megalith Stone",
+        "veces": 1
+      },
+      {
+        "termino": "Mightiest",
+        "veces": 1
+      },
+      {
+        "termino": "Mosh",
+        "veces": 1
+      },
+      {
+        "termino": "Multiple Corpses",
+        "veces": 1
+      },
+      {
+        "termino": "Multiple Projectiles",
+        "veces": 1
+      },
+      {
+        "termino": "Narrow Blast",
+        "veces": 1
+      },
+      {
+        "termino": "Nightmare",
+        "veces": 1
+      },
+      {
+        "termino": "Orbital",
+        "veces": 1
+      },
+      {
+        "termino": "Orbital Scream",
+        "veces": 1
+      },
+      {
+        "termino": "Overcharged",
+        "veces": 1
+      },
+      {
+        "termino": "Overflow",
+        "veces": 1
+      },
+      {
+        "termino": "Part the Heavens",
+        "veces": 1
+      },
+      {
+        "termino": "Passive Bonus",
+        "veces": 1
+      },
+      {
+        "termino": "Pierce Damage Bonus",
+        "veces": 1
+      },
+      {
+        "termino": "Plunging Darkness",
+        "veces": 1
+      },
+      {
+        "termino": "Poisoning Duration",
+        "veces": 1
+      },
+      {
+        "termino": "Poisoning Speed",
+        "veces": 1
+      },
+      {
+        "termino": "Potent Sting",
+        "veces": 1
+      },
+      {
+        "termino": "Procession",
+        "veces": 1
+      },
+      {
+        "termino": "Projectile Speed",
+        "veces": 1
+      },
+      {
+        "termino": "Punching Bag",
+        "veces": 1
+      },
+      {
+        "termino": "Punishment",
+        "veces": 1
+      },
+      {
+        "termino": "Quill Command",
+        "veces": 1
+      },
+      {
+        "termino": "Rampart of Thorns",
+        "veces": 1
+      },
+      {
+        "termino": "Ramping Damage",
+        "veces": 1
+      },
+      {
+        "termino": "Ranged Damage",
+        "veces": 1
+      },
+      {
+        "termino": "Raven Flock",
+        "veces": 1
+      },
+      {
+        "termino": "Reconstruction",
+        "veces": 1
+      },
+      {
+        "termino": "Refund Charges",
+        "veces": 1
+      },
+      {
+        "termino": "Resource Damage Bonus",
+        "veces": 1
+      },
+      {
+        "termino": "Returning Feathers",
+        "veces": 1
+      },
+      {
+        "termino": "Returning Light",
+        "veces": 1
+      },
+      {
+        "termino": "Ricochet",
+        "veces": 1
+      },
+      {
+        "termino": "Ring of Fire",
+        "veces": 1
+      },
+      {
+        "termino": "Rite of Humility",
+        "veces": 1
+      },
+      {
+        "termino": "Rite of Prayer",
+        "veces": 1
+      },
+      {
+        "termino": "Rite of Redemption",
+        "veces": 1
+      },
+      {
+        "termino": "Rite of Submission",
+        "veces": 1
+      },
+      {
+        "termino": "Rite of Thorns",
+        "veces": 1
+      },
+      {
+        "termino": "Roar of Resolve",
+        "veces": 1
+      },
+      {
+        "termino": "Rumbling Stones",
+        "veces": 1
+      },
+      {
+        "termino": "Seekers",
+        "veces": 1
+      },
+      {
+        "termino": "Seize Them",
+        "veces": 1
+      },
+      {
+        "termino": "Sermon of Steel",
+        "veces": 1
+      },
+      {
+        "termino": "Service and Sacrifice",
+        "veces": 1
+      },
+      {
+        "termino": "Severe Storm",
+        "veces": 1
+      },
+      {
+        "termino": "Shade Grenade",
+        "veces": 1
+      },
+      {
+        "termino": "Shatter",
+        "veces": 1
+      },
+      {
+        "termino": "Shattered Path",
+        "veces": 1
+      },
+      {
+        "termino": "Shattered Stone",
+        "veces": 1
+      },
+      {
+        "termino": "Shield of Retribution",
+        "veces": 1
+      },
+      {
+        "termino": "Shiver",
+        "veces": 1
+      },
+      {
+        "termino": "Sigil of Lava",
+        "veces": 1
+      },
+      {
+        "termino": "Simian Swipe",
+        "veces": 1
+      },
+      {
+        "termino": "Single Target Damage",
+        "veces": 1
+      },
+      {
+        "termino": "Size",
+        "veces": 1
+      },
+      {
+        "termino": "Size and Damage Bonus",
+        "veces": 1
+      },
+      {
+        "termino": "Sky and Soil",
+        "veces": 1
+      },
+      {
+        "termino": "Spew Putrefaction",
+        "veces": 1
+      },
+      {
+        "termino": "Spiteful Enrage",
+        "veces": 1
+      },
+      {
+        "termino": "Stacking Damage",
+        "veces": 1
+      },
+      {
+        "termino": "Static Field",
+        "veces": 1
+      },
+      {
+        "termino": "Stone Fists",
+        "veces": 1
+      },
+      {
+        "termino": "Storm Bolt",
+        "veces": 1
+      },
+      {
+        "termino": "Storm Shred",
+        "veces": 1
+      },
+      {
+        "termino": "Succession",
+        "veces": 1
+      },
+      {
+        "termino": "Summon Succubus",
+        "veces": 1
+      },
+      {
+        "termino": "Superinfection",
+        "veces": 1
+      },
+      {
+        "termino": "Tag Team",
+        "veces": 1
+      },
+      {
+        "termino": "Talic",
+        "veces": 1
+      },
+      {
+        "termino": "Tectonic Spikes",
+        "veces": 1
+      },
+      {
+        "termino": "Temperance Training",
+        "veces": 1
+      },
+      {
+        "termino": "Terror Demon",
+        "veces": 1
+      },
+      {
+        "termino": "The Beast Within",
+        "veces": 1
+      },
+      {
+        "termino": "Thorns Damage",
+        "veces": 1
+      },
+      {
+        "termino": "Throwing",
+        "veces": 1
+      },
+      {
+        "termino": "Thunder God",
+        "veces": 1
+      },
+      {
+        "termino": "Thunderbolt",
+        "veces": 1
+      },
+      {
+        "termino": "Tip of the Spear",
+        "veces": 1
+      },
+      {
+        "termino": "Transporter",
+        "veces": 1
+      },
+      {
+        "termino": "Travertine Bulwark",
+        "veces": 1
+      },
+      {
+        "termino": "Twister",
+        "veces": 1
+      },
+      {
+        "termino": "Unleash the Swarm",
+        "veces": 1
+      },
+      {
+        "termino": "Unrelenting Assault",
+        "veces": 1
+      },
+      {
+        "termino": "Unyielding Commander",
+        "veces": 1
+      },
+      {
+        "termino": "Vacuum Swap",
+        "veces": 1
+      },
+      {
+        "termino": "Volatile Blood",
+        "veces": 1
+      },
+      {
+        "termino": "Volatility",
+        "veces": 1
+      },
+      {
+        "termino": "Volatility Duration",
+        "veces": 1
+      },
+      {
+        "termino": "Vulnerable Damage Bonus",
+        "veces": 1
+      },
+      {
+        "termino": "Vulnerable or Weakened",
+        "veces": 1
+      },
+      {
+        "termino": "Walk With The Light",
+        "veces": 1
+      },
+      {
+        "termino": "Weakened Damage Bonus",
+        "veces": 1
+      },
+      {
+        "termino": "Werewolf Pack",
+        "veces": 1
+      },
+      {
+        "termino": "Whirling",
+        "veces": 1
+      },
+      {
+        "termino": "Whirlpool",
+        "veces": 1
+      },
+      {
+        "termino": "Winding",
+        "veces": 1
+      },
+      {
+        "termino": "Wrath of the Gorilla",
+        "veces": 1
+      },
+      {
+        "termino": "Wrath Refund",
+        "veces": 1
+      },
+      {
+        "termino": "You And What Army?",
+        "veces": 1
+      },
+      {
+        "termino": "Zealot's Legacy",
+        "veces": 1
+      }
+    ],
+    "skill": [
+      {
+        "termino": "Defiance Aura",
+        "veces": 13
+      },
+      {
+        "termino": "Fanaticism Aura",
+        "veces": 13
+      },
+      {
+        "termino": "Lightning Storm",
+        "veces": 13
+      },
+      {
+        "termino": "Concealment",
+        "veces": 12
+      },
+      {
+        "termino": "Ice Armor",
+        "veces": 12
+      },
+      {
+        "termino": "Teleport",
+        "veces": 12
+      },
+      {
+        "termino": "Wolves",
+        "veces": 12
+      },
+      {
+        "termino": "Cyclone Armor",
+        "veces": 11
+      },
+      {
+        "termino": "Grizzly Rage",
+        "veces": 11
+      },
+      {
+        "termino": "Toxic Skin",
+        "veces": 11
+      },
+      {
+        "termino": "Dash",
+        "veces": 10
       },
       {
         "termino": "Ravager",
+        "veces": 10
+      },
+      {
+        "termino": "Armored Hide",
+        "veces": 9
+      },
+      {
+        "termino": "Scourge",
+        "veces": 9
+      },
+      {
+        "termino": "Shadow Clone",
+        "veces": 9
+      },
+      {
+        "termino": "Skeleton Warrior",
+        "veces": 9
+      },
+      {
+        "termino": "Smoke Grenade",
+        "veces": 9
+      },
+      {
+        "termino": "Debilitating Roar",
+        "veces": 8
+      },
+      {
+        "termino": "Hydra",
+        "veces": 8
+      },
+      {
+        "termino": "Rallying Cry",
+        "veces": 8
+      },
+      {
+        "termino": "Sever",
+        "veces": 8
+      },
+      {
+        "termino": "Arbiter of Justice",
+        "veces": 7
+      },
+      {
+        "termino": "Challenging Shout",
+        "veces": 7
+      },
+      {
+        "termino": "Cold Imbuement",
+        "veces": 7
+      },
+      {
+        "termino": "Condemn",
+        "veces": 7
+      },
+      {
+        "termino": "Corpse Tendrils",
+        "veces": 7
+      },
+      {
+        "termino": "Dark Shroud",
+        "veces": 7
+      },
+      {
+        "termino": "Familiar",
+        "veces": 7
+      },
+      {
+        "termino": "The Hunter",
+        "veces": 7
+      },
+      {
+        "termino": "War Cry",
+        "veces": 7
+      },
+      {
+        "termino": "Wrath of the Berserker",
+        "veces": 7
+      },
+      {
+        "termino": "Bone Prison",
+        "veces": 6
+      },
+      {
+        "termino": "Consecration",
+        "veces": 6
+      },
+      {
+        "termino": "Inferno",
+        "veces": 6
+      },
+      {
+        "termino": "Blood Wave",
+        "veces": 5
+      },
+      {
+        "termino": "Earth Spike",
+        "veces": 5
+      },
+      {
+        "termino": "Flame Shield",
+        "veces": 5
+      },
+      {
+        "termino": "Holy Light Aura",
+        "veces": 5
+      },
+      {
+        "termino": "Blessed Hammer",
+        "veces": 4
+      },
+      {
+        "termino": "Dance of Knives",
+        "veces": 4
+      },
+      {
+        "termino": "Falling Star",
+        "veces": 4
+      },
+      {
+        "termino": "Hurricane",
+        "veces": 4
+      },
+      {
+        "termino": "Iron Skin",
+        "veces": 4
+      },
+      {
+        "termino": "Metamorphosis",
+        "veces": 4
+      },
+      {
+        "termino": "Profane Sentinel",
+        "veces": 4
+      },
+      {
+        "termino": "Rampage-v2",
+        "veces": 4
+      },
+      {
+        "termino": "Shadow Step",
+        "veces": 4
+      },
+      {
+        "termino": "Sigil of Summons",
+        "veces": 4
+      },
+      {
+        "termino": "Skeleton Mage",
+        "veces": 4
+      },
+      {
+        "termino": "Unstable Currents",
+        "veces": 4
+      },
+      {
+        "termino": "Apocalypse",
+        "veces": 3
+      },
+      {
+        "termino": "Bone Storm",
+        "veces": 3
+      },
+      {
+        "termino": "Claw",
+        "veces": 3
+      },
+      {
+        "termino": "Decrepify",
+        "veces": 3
+      },
+      {
+        "termino": "Fortress",
+        "veces": 3
+      },
+      {
+        "termino": "Golem",
+        "veces": 3
+      },
+      {
+        "termino": "Lunging Strike",
+        "veces": 3
+      },
+      {
+        "termino": "Meteor",
+        "veces": 3
+      },
+      {
+        "termino": "Nether Step",
+        "veces": 3
+      },
+      {
+        "termino": "Poison Imbuement",
+        "veces": 3
+      },
+      {
+        "termino": "Rally",
+        "veces": 3
+      },
+      {
+        "termino": "Sigil of Subversion",
+        "veces": 3
+      },
+      {
+        "termino": "Stone Burst",
+        "veces": 3
+      },
+      {
+        "termino": "Summon Laalish",
+        "veces": 3
+      },
+      {
+        "termino": "Terror Swarm",
+        "veces": 3
+      },
+      {
+        "termino": "Tyrant's Grasp",
+        "veces": 3
+      },
+      {
+        "termino": "Whirlwind",
+        "veces": 3
+      },
+      {
+        "termino": "Aegis",
+        "veces": 2
+      },
+      {
+        "termino": "Army of the Dead",
+        "veces": 2
+      },
+      {
+        "termino": "Blazing Scream",
+        "veces": 2
+      },
+      {
+        "termino": "Blight",
+        "veces": 2
+      },
+      {
+        "termino": "Blizzard",
+        "veces": 2
+      },
+      {
+        "termino": "Blood Lance",
+        "veces": 2
+      },
+      {
+        "termino": "Bombardment",
+        "veces": 2
+      },
+      {
+        "termino": "Call of the Ancients",
+        "veces": 2
+      },
+      {
+        "termino": "Cataclysm",
+        "veces": 2
+      },
+      {
+        "termino": "Clash",
+        "veces": 2
+      },
+      {
+        "termino": "Command Fallen",
+        "veces": 2
+      },
+      {
+        "termino": "Counterattack",
+        "veces": 2
+      },
+      {
+        "termino": "Dark Prison",
+        "veces": 2
+      },
+      {
+        "termino": "Doom",
+        "veces": 2
+      },
+      {
+        "termino": "Dread Claws",
+        "veces": 2
+      },
+      {
+        "termino": "Earthen Bulwark",
+        "veces": 2
+      },
+      {
+        "termino": "Ground Stomp",
+        "veces": 2
+      },
+      {
+        "termino": "Hammer of the Ancients",
+        "veces": 2
+      },
+      {
+        "termino": "Heartseeker",
+        "veces": 2
+      },
+      {
+        "termino": "Incinerate",
+        "veces": 2
+      },
+      {
+        "termino": "Leap",
+        "veces": 2
+      },
+      {
+        "termino": "Lightning Spear",
+        "veces": 2
+      },
+      {
+        "termino": "Quill Volley",
+        "veces": 2
+      },
+      {
+        "termino": "Rock Splitter",
+        "veces": 2
+      },
+      {
+        "termino": "Rushing Claw",
+        "veces": 2
+      },
+      {
+        "termino": "Spear of the Heavens",
+        "veces": 2
+      },
+      {
+        "termino": "Stinger",
+        "veces": 2
+      },
+      {
+        "termino": "Summon Ae'grom",
+        "veces": 2
+      },
+      {
+        "termino": "Summon Vollach",
+        "veces": 2
+      },
+      {
+        "termino": "The Devourer",
+        "veces": 2
+      },
+      {
+        "termino": "Umbral Chains",
+        "veces": 2
+      },
+      {
+        "termino": "Arc Lash",
+        "veces": 1
+      },
+      {
+        "termino": "Ball Lightning",
+        "veces": 1
+      },
+      {
+        "termino": "Barrage",
+        "veces": 1
+      },
+      {
+        "termino": "Blessed Shield",
+        "veces": 1
+      },
+      {
+        "termino": "Blood Mist",
+        "veces": 1
+      },
+      {
+        "termino": "Blood Surge",
+        "veces": 1
+      },
+      {
+        "termino": "Bone Spear",
+        "veces": 1
+      },
+      {
+        "termino": "Bone Spirit",
+        "veces": 1
+      },
+      {
+        "termino": "Boulder",
+        "veces": 1
+      },
+      {
+        "termino": "Brandish",
+        "veces": 1
+      },
+      {
+        "termino": "Charge",
+        "veces": 1
+      },
+      {
+        "termino": "Concussive Stomp",
+        "veces": 1
+      },
+      {
+        "termino": "Corpse Explosion",
+        "veces": 1
+      },
+      {
+        "termino": "Crushing Hand",
+        "veces": 1
+      },
+      {
+        "termino": "Death Blow",
+        "veces": 1
+      },
+      {
+        "termino": "Death Trap",
+        "veces": 1
+      },
+      {
+        "termino": "Demonic Swipe-v2",
+        "veces": 1
+      },
+      {
+        "termino": "Divine Lance",
+        "veces": 1
+      },
+      {
+        "termino": "Double Swing",
+        "veces": 1
+      },
+      {
+        "termino": "Fiend of Abaddon",
+        "veces": 1
+      },
+      {
+        "termino": "Fire Bolt",
+        "veces": 1
+      },
+      {
+        "termino": "Fireball",
+        "veces": 1
+      },
+      {
+        "termino": "Firewall",
+        "veces": 1
+      },
+      {
+        "termino": "Flurry",
+        "veces": 1
+      },
+      {
+        "termino": "Forceful Arrow",
+        "veces": 1
+      },
+      {
+        "termino": "Frenzy",
+        "veces": 1
+      },
+      {
+        "termino": "Frost Nova",
+        "veces": 1
+      },
+      {
+        "termino": "Frozen Orb",
+        "veces": 1
+      },
+      {
+        "termino": "Heaven's Fury",
+        "veces": 1
+      },
+      {
+        "termino": "Hell Fracture",
+        "veces": 1
+      },
+      {
+        "termino": "Holy Bolt",
+        "veces": 1
+      },
+      {
+        "termino": "Ice Shards",
+        "veces": 1
+      },
+      {
+        "termino": "Infernal Breath",
+        "veces": 1
+      },
+      {
+        "termino": "Invigorating Strike",
+        "veces": 1
+      },
+      {
+        "termino": "Lacerate",
+        "veces": 1
+      },
+      {
+        "termino": "Landslide",
+        "veces": 1
+      },
+      {
+        "termino": "Maul",
+        "veces": 1
+      },
+      {
+        "termino": "Mighty Throw",
+        "veces": 1
+      },
+      {
+        "termino": "Molten Bomb",
+        "veces": 1
+      },
+      {
+        "termino": "Payback",
+        "veces": 1
+      },
+      {
+        "termino": "Penetrating Shot",
+        "veces": 1
+      },
+      {
+        "termino": "Poison Trap",
+        "veces": 1
+      },
+      {
+        "termino": "Pulverize",
+        "veces": 1
+      },
+      {
+        "termino": "Rabies",
+        "veces": 1
+      },
+      {
+        "termino": "Rain of Arrows",
+        "veces": 1
+      },
+      {
+        "termino": "Rake",
+        "veces": 1
+      },
+      {
+        "termino": "Rapid Fire",
+        "veces": 1
+      },
+      {
+        "termino": "Ravens",
+        "veces": 1
+      },
+      {
+        "termino": "Razor Wings",
+        "veces": 1
+      },
+      {
+        "termino": "Reap",
+        "veces": 1
+      },
+      {
+        "termino": "Rend",
+        "veces": 1
+      },
+      {
+        "termino": "Shadow Imbuement",
+        "veces": 1
+      },
+      {
+        "termino": "Shred",
+        "veces": 1
+      },
+      {
+        "termino": "Sigil of Chaos",
+        "veces": 1
+      },
+      {
+        "termino": "Spark",
         "veces": 1
       },
       {
@@ -109,29 +2297,253 @@
         "veces": 1
       },
       {
-        "termino": "Teleport",
+        "termino": "Storm Strike",
         "veces": 1
       },
       {
-        "termino": "Unstable Currents",
+        "termino": "Summon Abodian",
         "veces": 1
       },
       {
-        "termino": "Wall of Agony",
+        "termino": "The Protector",
         "veces": 1
       },
       {
-        "termino": "War Cry",
+        "termino": "The Seeker",
         "veces": 1
       },
       {
-        "termino": "Whirlwind",
+        "termino": "Thunderspike",
+        "veces": 1
+      },
+      {
+        "termino": "Tornado",
+        "veces": 1
+      },
+      {
+        "termino": "Tortured Wretch",
+        "veces": 1
+      },
+      {
+        "termino": "Twisting Blades",
+        "veces": 1
+      },
+      {
+        "termino": "Zeal",
+        "veces": 1
+      },
+      {
+        "termino": "Zenith",
         "veces": 1
       }
     ],
     "skillVariant": [
       {
+        "termino": "Teleport Blaze",
+        "veces": 8
+      },
+      {
+        "termino": "Hydra Frigid Hydra",
+        "veces": 7
+      },
+      {
+        "termino": "Bone Prison Life Imprisonment",
+        "veces": 5
+      },
+      {
+        "termino": "Familiar Fast As Lightning",
+        "veces": 5
+      },
+      {
+        "termino": "Dance of Knives Star Shards",
+        "veces": 3
+      },
+      {
+        "termino": "Blessed Hammer Disciple's Halo",
+        "veces": 2
+      },
+      {
+        "termino": "Chain Aura",
+        "veces": 2
+      },
+      {
+        "termino": "Decrepify Life Tap",
+        "veces": 2
+      },
+      {
+        "termino": "Familiar Healing Flames",
+        "veces": 2
+      },
+      {
+        "termino": "Iron Skin Retaliation",
+        "veces": 2
+      },
+      {
+        "termino": "War Cry Korlic",
+        "veces": 2
+      },
+      {
+        "termino": "Army of the Dead Dead Cold",
+        "veces": 1
+      },
+      {
+        "termino": "Blazing Scream Abyssal Oppression",
+        "veces": 1
+      },
+      {
+        "termino": "Blessed Shield Shield of Retribution",
+        "veces": 1
+      },
+      {
+        "termino": "Blight Volatile Blood",
+        "veces": 1
+      },
+      {
+        "termino": "Blight Whirlpool",
+        "veces": 1
+      },
+      {
+        "termino": "Blizzard Static Field",
+        "veces": 1
+      },
+      {
+        "termino": "Blood Lance Festering Wound",
+        "veces": 1
+      },
+      {
+        "termino": "Bombardment Endless Barrage",
+        "veces": 1
+      },
+      {
+        "termino": "Bone Prison Plunging Darkness",
+        "veces": 1
+      },
+      {
+        "termino": "Bone Spear Blood Spear",
+        "veces": 1
+      },
+      {
+        "termino": "Chain Whips",
+        "veces": 1
+      },
+      {
+        "termino": "Challenging Shout Talic",
+        "veces": 1
+      },
+      {
         "termino": "Charge Battering Ram",
+        "veces": 1
+      },
+      {
+        "termino": "Counterattack Counterattack of the Swarm",
+        "veces": 1
+      },
+      {
+        "termino": "Demonic Glare",
+        "veces": 1
+      },
+      {
+        "termino": "Demonic Smash",
+        "veces": 1
+      },
+      {
+        "termino": "Falling Star Fanatic Descent",
+        "veces": 1
+      },
+      {
+        "termino": "Fire Bolt Shiver",
+        "veces": 1
+      },
+      {
+        "termino": "Flame Shield Flash",
+        "veces": 1
+      },
+      {
+        "termino": "Frenzy Throwing",
+        "veces": 1
+      },
+      {
+        "termino": "Ice Shards Thunderbolt",
+        "veces": 1
+      },
+      {
+        "termino": "Leap Mosh",
+        "veces": 1
+      },
+      {
+        "termino": "Maul Stone Fists",
+        "veces": 1
+      },
+      {
+        "termino": "Meat Shields",
+        "veces": 1
+      },
+      {
+        "termino": "Poison Trap Frostbite Trap",
+        "veces": 1
+      },
+      {
+        "termino": "Pulverize Shockwave",
+        "veces": 1
+      },
+      {
+        "termino": "Rake Simian Swipe",
+        "veces": 1
+      },
+      {
+        "termino": "Rock Splitter Inner Ferocity",
+        "veces": 1
+      },
+      {
+        "termino": "Rushing Claw Evasive Swipe",
+        "veces": 1
+      },
+      {
+        "termino": "Scourge The Beast Within",
+        "veces": 1
+      },
+      {
+        "termino": "Shadow Clone Sentry",
+        "veces": 1
+      },
+      {
+        "termino": "Shred Storm Shred",
+        "veces": 1
+      },
+      {
+        "termino": "Sigil of Lava",
+        "veces": 1
+      },
+      {
+        "termino": "Smoke Grenade Shade Grenade",
+        "veces": 1
+      },
+      {
+        "termino": "Summon Succubus",
+        "veces": 1
+      },
+      {
+        "termino": "Terror Demon",
+        "veces": 1
+      },
+      {
+        "termino": "The Devourer Sky and Soil",
+        "veces": 1
+      },
+      {
+        "termino": "The Seeker Tag Team",
+        "veces": 1
+      },
+      {
+        "termino": "Whirlwind Winding",
+        "veces": 1
+      },
+      {
+        "termino": "Wolves Werewolf Pack",
+        "veces": 1
+      },
+      {
+        "termino": "Wrath of the Berserker Full Throttle",
         "veces": 1
       }
     ]

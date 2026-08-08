@@ -1,0 +1,436 @@
+{
+  "classId": "warlock",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Doom",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__doom",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Dread Claws",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__dread_claws",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Metamorphosis",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__metamorphosis",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Profane Sentinel",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__profane_sentinel",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Sigil of Subversion",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__sigil_of_subversion",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Summon Laalish",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__summon_laalish",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__doom",
+        "label": {
+          "category": "skill",
+          "enUS": "Doom",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__doom",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:6daa660e-d706-4572-afb6-4352304c1244:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__dread_claws",
+        "label": {
+          "category": "skill",
+          "enUS": "Dread Claws",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__dread_claws",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:6daa660e-d706-4572-afb6-4352304c1244:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__metamorphosis",
+        "label": {
+          "category": "skill",
+          "enUS": "Metamorphosis",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__metamorphosis",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:6daa660e-d706-4572-afb6-4352304c1244:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__profane_sentinel",
+        "label": {
+          "category": "skill",
+          "enUS": "Profane Sentinel",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__profane_sentinel",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:6daa660e-d706-4572-afb6-4352304c1244:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__sigil_of_subversion",
+        "label": {
+          "category": "skill",
+          "enUS": "Sigil of Subversion",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__sigil_of_subversion",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:6daa660e-d706-4572-afb6-4352304c1244:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__summon_laalish",
+        "label": {
+          "category": "skill",
+          "enUS": "Summon Laalish",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__summon_laalish",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:6daa660e-d706-4572-afb6-4352304c1244:0": 1
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "warlock::skill__dread_claws::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "dread-claws-warlock-endgame",
+  "primaryVariantId": "d4builds:6daa660e-d706-4572-afb6-4352304c1244:0",
+  "ratings": {
+    "pitTier": 120,
+    "tierLabel": "B",
+    "tierRank": null
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Dread Claws",
+    "es": "Dread Claws"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:6daa660e-d706-4572-afb6-4352304c1244:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Dread Claws",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__dread_claws",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Damage",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Cascading Dread",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cascading_dread",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Ambush",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ambush",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Doom",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__doom",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Wrath",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__wrath",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Contagion",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__contagion",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Assimilation",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__assimilation",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Profane Sentinel",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__profane_sentinel",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Lesser Demon Vulnerable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__lesser_demon_vulnerable",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Focused Glare",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__focused_glare",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Wide Beam",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__wide_beam",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Metamorphosis",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__metamorphosis",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Damage Scaling",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage_scaling",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Terror Demon",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__terror_demon",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Dominance",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__dominance",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Terror Demon",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__terror_demon",
+            "sno": null
+          }
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Summon Laalish",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__summon_laalish",
+            "sno": null
+          },
+          "runes": [],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Sigil of Subversion",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__sigil_of_subversion",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Movement Speed",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__movement_speed",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Infiltration Trails",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__infiltration_trails",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Cast Range",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cast_range",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": "Rob2628",
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "6daa660e-d706-4572-afb6-4352304c1244",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "52a36a250edd764e03d7c0b32a3f143c3c3eb4ffd710ff1e8c68aebb841602eb",
+        "url": "https://d4builds.gg/builds/dread-claws-warlock-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

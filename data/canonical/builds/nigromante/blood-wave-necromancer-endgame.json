@@ -1,0 +1,475 @@
+{
+  "classId": "necromancer",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Blood Lance",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__blood_lance",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Blood Wave",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__blood_wave",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Bone Prison",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__bone_prison",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Corpse Tendrils",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__corpse_tendrils",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Decrepify",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__decrepify",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Sever",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__sever",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__blood_lance",
+        "label": {
+          "category": "skill",
+          "enUS": "Blood Lance",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__blood_lance",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:4701a6ac-a455-440d-9f8a-a51e4e4f3481:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__blood_wave",
+        "label": {
+          "category": "skill",
+          "enUS": "Blood Wave",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__blood_wave",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:4701a6ac-a455-440d-9f8a-a51e4e4f3481:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__bone_prison",
+        "label": {
+          "category": "skill",
+          "enUS": "Bone Prison",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__bone_prison",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:4701a6ac-a455-440d-9f8a-a51e4e4f3481:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__corpse_tendrils",
+        "label": {
+          "category": "skill",
+          "enUS": "Corpse Tendrils",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__corpse_tendrils",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:4701a6ac-a455-440d-9f8a-a51e4e4f3481:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__decrepify",
+        "label": {
+          "category": "skill",
+          "enUS": "Decrepify",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__decrepify",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:4701a6ac-a455-440d-9f8a-a51e4e4f3481:0": 9
+        }
+      },
+      {
+        "key": "skill:skill__sever",
+        "label": {
+          "category": "skill",
+          "enUS": "Sever",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__sever",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:4701a6ac-a455-440d-9f8a-a51e4e4f3481:0": 1
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "necromancer::skill__blood_wave::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "blood-wave-necromancer-endgame",
+  "primaryVariantId": "d4builds:4701a6ac-a455-440d-9f8a-a51e4e4f3481:0",
+  "ratings": {
+    "pitTier": 135,
+    "tierLabel": "A",
+    "tierRank": 1
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Blood Wave",
+    "es": "Blood Wave"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:4701a6ac-a455-440d-9f8a-a51e4e4f3481:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Sever",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__sever",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Cost Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cost_reduction",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Inexorable Reaper",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__inexorable_reaper",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Crowd Control and Corpse Generation",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__crowd_control_and_corpse_generation",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Blood Lance",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__blood_lance",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Overpower",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__overpower",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Festering Wound",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__festering_wound",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Fortify",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__fortify",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Blood Lance Festering Wound",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__blood_lance_festering_wound",
+            "sno": null
+          }
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Bone Prison",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__bone_prison",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Resolve",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__resolve",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Life Imprisonment",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__life_imprisonment",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Essence Generation",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__essence_generation",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Bone Prison Life Imprisonment",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__bone_prison_life_imprisonment",
+            "sno": null
+          }
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Corpse Tendrils",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__corpse_tendrils",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Critical Strike Chance",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__critical_strike_chance",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Jaws of Death",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__jaws_of_death",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Vulnerable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__vulnerable",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 9,
+          "ref": {
+            "category": "skill",
+            "enUS": "Decrepify",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__decrepify",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Cooldown Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown_reduction",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Life Tap",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__life_tap",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Resolve",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__resolve",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Decrepify Life Tap",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__decrepify_life_tap",
+            "sno": null
+          }
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Blood Wave",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__blood_wave",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage_bonus",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Hematolagnia",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__hematolagnia",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Overpower",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__overpower",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": "Rob2628",
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "4701a6ac-a455-440d-9f8a-a51e4e4f3481",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "c4ad8a29f6c1b914a31cf0782bb4e16638df074de09bb4c19b866f084465c549",
+        "url": "https://d4builds.gg/builds/blood-wave-necromancer-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

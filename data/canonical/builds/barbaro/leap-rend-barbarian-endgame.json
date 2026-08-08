@@ -1,0 +1,461 @@
+{
+  "classId": "barbarian",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Challenging Shout",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__challenging_shout",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Leap",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__leap",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Rallying Cry",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__rallying_cry",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Rend",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__rend",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "War Cry",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__war_cry",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Wrath of the Berserker",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__wrath_of_the_berserker",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__challenging_shout",
+        "label": {
+          "category": "skill",
+          "enUS": "Challenging Shout",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__challenging_shout",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:828f4501-84e4-4e5f-9715-866d4581f98f:0": 4
+        }
+      },
+      {
+        "key": "skill:skill__leap",
+        "label": {
+          "category": "skill",
+          "enUS": "Leap",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__leap",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:828f4501-84e4-4e5f-9715-866d4581f98f:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__rallying_cry",
+        "label": {
+          "category": "skill",
+          "enUS": "Rallying Cry",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__rallying_cry",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:828f4501-84e4-4e5f-9715-866d4581f98f:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__rend",
+        "label": {
+          "category": "skill",
+          "enUS": "Rend",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__rend",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:828f4501-84e4-4e5f-9715-866d4581f98f:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__war_cry",
+        "label": {
+          "category": "skill",
+          "enUS": "War Cry",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__war_cry",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:828f4501-84e4-4e5f-9715-866d4581f98f:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__wrath_of_the_berserker",
+        "label": {
+          "category": "skill",
+          "enUS": "Wrath of the Berserker",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__wrath_of_the_berserker",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:828f4501-84e4-4e5f-9715-866d4581f98f:0": 15
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "barbarian::skill__war_cry::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "leap-rend-barbarian-endgame",
+  "primaryVariantId": "d4builds:828f4501-84e4-4e5f-9715-866d4581f98f:0",
+  "ratings": {
+    "pitTier": 150,
+    "tierLabel": "S",
+    "tierRank": 1
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Leap Rend",
+    "es": "Leap Rend"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:828f4501-84e4-4e5f-9715-866d4581f98f:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "War Cry",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__war_cry",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Vulnerable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__vulnerable",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Mighty Roar",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__mighty_roar",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Ferocity",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ferocity",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Rend",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__rend",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Healing",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__healing",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Blood Sworn",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__blood_sworn",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Vulnerable Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__vulnerable_damage_bonus",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 4,
+          "ref": {
+            "category": "skill",
+            "enUS": "Challenging Shout",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__challenging_shout",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Duration Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__duration_bonus",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Bawl",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__bawl",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage_bonus",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Rallying Cry",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__rallying_cry",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Fortify",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__fortify",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Booming",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__booming",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Fury Gain",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__fury_gain",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Wrath of the Berserker",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__wrath_of_the_berserker",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Berserking",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__berserking",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Maximum Carnage",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__maximum_carnage",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Overpower",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__overpower",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Leap",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__leap",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Damage Bonus and Crowd Control",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage_bonus_and_crowd_control",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Mosh",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__mosh",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Fury Generation",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__fury_generation",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Leap Mosh",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__leap_mosh",
+            "sno": null
+          }
+        }
+      ],
+      "source": {
+        "author": "Rob2628",
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "828f4501-84e4-4e5f-9715-866d4581f98f",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "3ab5b89406d008a29e9dd47aefc1501ae6c81d0acb03d74b0103cdc635f064c7",
+        "url": "https://d4builds.gg/builds/leap-rend-barbarian-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

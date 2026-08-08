@@ -107,6 +107,81 @@
   }
 }
 
+@layer components {
+  /* Panel de tooltip estilo juego: lo posiciona el motor JS de la ficha. */
+  .tooltip-panel {
+    position: fixed;
+    z-index: 60;
+    max-width: 22rem;
+    padding: 0.75rem 0.9rem;
+    border: 1px solid var(--color-grabado-vivo);
+    border-radius: 0.4rem;
+    background:
+      linear-gradient(to bottom, rgb(28 22 19 / 0.98), rgb(11 9 8 / 0.98));
+    box-shadow:
+      0 0 0 1px rgb(0 0 0 / 0.8),
+      0 10px 30px rgb(0 0 0 / 0.7);
+    pointer-events: none;
+    font-size: 0.8rem;
+    line-height: 1.45;
+  }
+
+  .tooltip-panel .tt-titulo {
+    font-family: var(--font-titulo);
+    font-size: 1rem;
+    color: var(--color-oro);
+  }
+  .tooltip-panel .tt-en {
+    margin-left: 0.4rem;
+    font-family: var(--font-cuerpo);
+    font-size: 0.7rem;
+    color: var(--color-humo);
+  }
+  .tooltip-panel .tt-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem 0.8rem;
+    margin-top: 0.2rem;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-ceniza);
+  }
+  .tooltip-panel .tt-variante {
+    margin-top: 0.35rem;
+    font-size: 0.75rem;
+    color: var(--color-rareza-mitico);
+  }
+  .tooltip-panel .tt-descripcion {
+    margin-top: 0.5rem;
+    color: var(--color-pergamino);
+  }
+  .tooltip-panel .tt-extra {
+    margin-top: 0.3rem;
+    font-size: 0.72rem;
+    color: var(--color-rareza-legendario);
+  }
+  .tooltip-panel .tt-runas {
+    margin-top: 0.55rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--color-grabado);
+    display: grid;
+    gap: 0.3rem;
+  }
+  .tooltip-panel .tt-runa-nombre {
+    color: var(--color-oro-apagado);
+  }
+  .tooltip-panel .tt-runa-desc {
+    color: var(--color-ceniza);
+  }
+  .tooltip-panel .tt-idioma {
+    margin-top: 0.55rem;
+    font-size: 0.65rem;
+    font-style: italic;
+    color: var(--color-humo);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

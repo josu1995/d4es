@@ -1,0 +1,435 @@
+{
+  "classId": "warlock",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Blazing Scream",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__blazing_scream",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Profane Sentinel",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__profane_sentinel",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Sigil of Subversion",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__sigil_of_subversion",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Sigil of Summons",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__sigil_of_summons",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Summon Laalish",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__summon_laalish",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Terror Swarm",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__terror_swarm",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__blazing_scream",
+        "label": {
+          "category": "skill",
+          "enUS": "Blazing Scream",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__blazing_scream",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:1788eb9b-fb77-4aa3-af93-d1e2bc8e292a:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__profane_sentinel",
+        "label": {
+          "category": "skill",
+          "enUS": "Profane Sentinel",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__profane_sentinel",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:1788eb9b-fb77-4aa3-af93-d1e2bc8e292a:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__sigil_of_subversion",
+        "label": {
+          "category": "skill",
+          "enUS": "Sigil of Subversion",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__sigil_of_subversion",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:1788eb9b-fb77-4aa3-af93-d1e2bc8e292a:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__sigil_of_summons",
+        "label": {
+          "category": "skill",
+          "enUS": "Sigil of Summons",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__sigil_of_summons",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:1788eb9b-fb77-4aa3-af93-d1e2bc8e292a:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__summon_laalish",
+        "label": {
+          "category": "skill",
+          "enUS": "Summon Laalish",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__summon_laalish",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:1788eb9b-fb77-4aa3-af93-d1e2bc8e292a:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__terror_swarm",
+        "label": {
+          "category": "skill",
+          "enUS": "Terror Swarm",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__terror_swarm",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:1788eb9b-fb77-4aa3-af93-d1e2bc8e292a:0": 15
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "warlock::skill__profane_sentinel::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "profane-sentinel-warlock-endgame",
+  "primaryVariantId": "d4builds:1788eb9b-fb77-4aa3-af93-d1e2bc8e292a:0",
+  "ratings": {
+    "pitTier": null,
+    "tierLabel": null,
+    "tierRank": null
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Profane Sentinel",
+    "es": "Profane Sentinel"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:1788eb9b-fb77-4aa3-af93-d1e2bc8e292a:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Terror Swarm",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__terror_swarm",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Extra Bites",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__extra_bites",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Devouring Swarm",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__devouring_swarm",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Pull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__pull",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Sigil of Summons",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__sigil_of_summons",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Blood Ritual",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__blood_ritual",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Summon Succubus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__summon_succubus",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Summon Succubus",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__summon_succubus",
+            "sno": null
+          }
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Sigil of Subversion",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__sigil_of_subversion",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Movement Speed",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__movement_speed",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Seekers",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__seekers",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Slow",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__slow",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Summon Laalish",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__summon_laalish",
+            "sno": null
+          },
+          "runes": [],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Profane Sentinel",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__profane_sentinel",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Single Target Damage",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__single_target_damage",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Sentry",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__sentry",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Narrow Blast",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__narrow_blast",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Blazing Scream",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__blazing_scream",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Damage",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Abyssal Oppression",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__abyssal_oppression",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Impact Velocity",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__impact_velocity",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Blazing Scream Abyssal Oppression",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__blazing_scream_abyssal_oppression",
+            "sno": null
+          }
+        }
+      ],
+      "source": {
+        "author": null,
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "1788eb9b-fb77-4aa3-af93-d1e2bc8e292a",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "22b805317c5a8bd26431facfa4de9689efb63153ea7dc1e5ff6d30a688a3d8a8",
+        "url": "https://d4builds.gg/builds/profane-sentinel-warlock-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

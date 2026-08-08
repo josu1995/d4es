@@ -1,0 +1,446 @@
+{
+  "classId": "paladin",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Clash",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__clash",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Consecration",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__consecration",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Defiance Aura",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__defiance_aura",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Fanaticism Aura",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__fanaticism_aura",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Fortress",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__fortress",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Holy Light Aura",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__holy_light_aura",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__clash",
+        "label": {
+          "category": "skill",
+          "enUS": "Clash",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__clash",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:895acb96-2d37-4ab2-82dc-d48899e9dbe3:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__consecration",
+        "label": {
+          "category": "skill",
+          "enUS": "Consecration",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__consecration",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:895acb96-2d37-4ab2-82dc-d48899e9dbe3:0": 5
+        }
+      },
+      {
+        "key": "skill:skill__defiance_aura",
+        "label": {
+          "category": "skill",
+          "enUS": "Defiance Aura",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__defiance_aura",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:895acb96-2d37-4ab2-82dc-d48899e9dbe3:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__fanaticism_aura",
+        "label": {
+          "category": "skill",
+          "enUS": "Fanaticism Aura",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__fanaticism_aura",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:895acb96-2d37-4ab2-82dc-d48899e9dbe3:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__fortress",
+        "label": {
+          "category": "skill",
+          "enUS": "Fortress",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__fortress",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:895acb96-2d37-4ab2-82dc-d48899e9dbe3:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__holy_light_aura",
+        "label": {
+          "category": "skill",
+          "enUS": "Holy Light Aura",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__holy_light_aura",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:895acb96-2d37-4ab2-82dc-d48899e9dbe3:0": 1
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "paladin::skill__clash::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "clash-paladin-endgame",
+  "primaryVariantId": "d4builds:895acb96-2d37-4ab2-82dc-d48899e9dbe3:0",
+  "ratings": {
+    "pitTier": 130,
+    "tierLabel": "B",
+    "tierRank": 1
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Clash",
+    "es": "Clash"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:895acb96-2d37-4ab2-82dc-d48899e9dbe3:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Fanaticism Aura",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__fanaticism_aura",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Extra Passive Stack",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__extra_passive_stack",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Rite of Vengeance",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__rite_of_vengeance",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Potency",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__potency",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Defiance Aura",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__defiance_aura",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Maximum Life",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__maximum_life",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Rite of Might",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__rite_of_might",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Bonus Healing",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__bonus_healing",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Holy Light Aura",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__holy_light_aura",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Additional Bounce",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__additional_bounce",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Rite of Mercy",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__rite_of_mercy",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 5,
+          "ref": {
+            "category": "skill",
+            "enUS": "Consecration",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__consecration",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Duration",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__duration",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Hallowed Ground",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__hallowed_ground",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Fortify",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__fortify",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Clash",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__clash",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Resolve",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__resolve",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Seize Them",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__seize_them",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Damage Increase",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage_increase",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Fortress",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__fortress",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Resolve Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__resolve_damage_bonus",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Barricade",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__barricade",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Free Cast",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__free_cast",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": null,
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "895acb96-2d37-4ab2-82dc-d48899e9dbe3",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "bbcb0db5ed5450c392cc072c633241441691dcccc8c58c43a57b9a4b99d5d6e0",
+        "url": "https://d4builds.gg/builds/clash-paladin-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

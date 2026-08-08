@@ -1,0 +1,446 @@
+{
+  "classId": "rogue",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Cold Imbuement",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__cold_imbuement",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Concealment",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__concealment",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Dash",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__dash",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Heartseeker",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__heartseeker",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Shadow Step",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__shadow_step",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Smoke Grenade",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__smoke_grenade",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__cold_imbuement",
+        "label": {
+          "category": "skill",
+          "enUS": "Cold Imbuement",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__cold_imbuement",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:93bafbdb-301a-43b5-b88b-7657737fe944:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__concealment",
+        "label": {
+          "category": "skill",
+          "enUS": "Concealment",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__concealment",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:93bafbdb-301a-43b5-b88b-7657737fe944:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__dash",
+        "label": {
+          "category": "skill",
+          "enUS": "Dash",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__dash",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:93bafbdb-301a-43b5-b88b-7657737fe944:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__heartseeker",
+        "label": {
+          "category": "skill",
+          "enUS": "Heartseeker",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__heartseeker",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:93bafbdb-301a-43b5-b88b-7657737fe944:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__shadow_step",
+        "label": {
+          "category": "skill",
+          "enUS": "Shadow Step",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__shadow_step",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:93bafbdb-301a-43b5-b88b-7657737fe944:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__smoke_grenade",
+        "label": {
+          "category": "skill",
+          "enUS": "Smoke Grenade",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__smoke_grenade",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:93bafbdb-301a-43b5-b88b-7657737fe944:0": 1
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "rogue::skill__heartseeker::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "heartseeker-rogue-endgame",
+  "primaryVariantId": "d4builds:93bafbdb-301a-43b5-b88b-7657737fe944:0",
+  "ratings": {
+    "pitTier": 115,
+    "tierLabel": null,
+    "tierRank": null
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Heartseeker",
+    "es": "Heartseeker"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:93bafbdb-301a-43b5-b88b-7657737fe944:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Cold Imbuement",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__cold_imbuement",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Cooldown",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Frozen Heart",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__frozen_heart",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Resolve",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__resolve",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Smoke Grenade",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__smoke_grenade",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Increased Duration and Damage",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__increased_duration_and_damage",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Silhouette",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__silhouette",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Charge or Energy Cost Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__charge_or_energy_cost_reduction",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Concealment",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__concealment",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Resolve",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__resolve",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Calculation",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__calculation",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Ferocity",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ferocity",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Dash",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__dash",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Primer",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__primer",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Charges and Cooldown Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__charges_and_cooldown_reduction",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Heartseeker",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__heartseeker",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Critical Strike Chance",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__critical_strike_chance",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Procession",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__procession",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Pierce",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__pierce",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Shadow Step",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__shadow_step",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Cooldown",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Artifice",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__artifice",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Unstoppable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__unstoppable",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": null,
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "93bafbdb-301a-43b5-b88b-7657737fe944",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "36d5919a66b25240ce3929e20706d6c1fa5e78f703054576545d1e1206153ebc",
+        "url": "https://d4builds.gg/builds/heartseeker-rogue-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

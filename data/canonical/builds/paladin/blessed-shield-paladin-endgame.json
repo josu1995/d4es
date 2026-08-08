@@ -1,0 +1,461 @@
+{
+  "classId": "paladin",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Aegis",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__aegis",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Blessed Shield",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__blessed_shield",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Clash",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__clash",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Defiance Aura",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__defiance_aura",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Fanaticism Aura",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__fanaticism_aura",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Fortress",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__fortress",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__aegis",
+        "label": {
+          "category": "skill",
+          "enUS": "Aegis",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__aegis",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:18e75bb2-fd75-4478-9af2-29dc6fe7549a:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__blessed_shield",
+        "label": {
+          "category": "skill",
+          "enUS": "Blessed Shield",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__blessed_shield",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:18e75bb2-fd75-4478-9af2-29dc6fe7549a:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__clash",
+        "label": {
+          "category": "skill",
+          "enUS": "Clash",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__clash",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:18e75bb2-fd75-4478-9af2-29dc6fe7549a:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__defiance_aura",
+        "label": {
+          "category": "skill",
+          "enUS": "Defiance Aura",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__defiance_aura",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:18e75bb2-fd75-4478-9af2-29dc6fe7549a:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__fanaticism_aura",
+        "label": {
+          "category": "skill",
+          "enUS": "Fanaticism Aura",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__fanaticism_aura",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:18e75bb2-fd75-4478-9af2-29dc6fe7549a:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__fortress",
+        "label": {
+          "category": "skill",
+          "enUS": "Fortress",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__fortress",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:18e75bb2-fd75-4478-9af2-29dc6fe7549a:0": 14
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "paladin::skill__blessed_shield::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "blessed-shield-paladin-endgame",
+  "primaryVariantId": "d4builds:18e75bb2-fd75-4478-9af2-29dc6fe7549a:0",
+  "ratings": {
+    "pitTier": 135,
+    "tierLabel": "B",
+    "tierRank": 1
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Blessed Shield",
+    "es": "Blessed Shield"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:18e75bb2-fd75-4478-9af2-29dc6fe7549a:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 14,
+          "ref": {
+            "category": "skill",
+            "enUS": "Fortress",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__fortress",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Resolve Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__resolve_damage_bonus",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Rampart of Thorns",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__rampart_of_thorns",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Free Cast",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__free_cast",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Fanaticism Aura",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__fanaticism_aura",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Extra Passive Stack",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__extra_passive_stack",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Rite of Vengeance",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__rite_of_vengeance",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Potency",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__potency",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Defiance Aura",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__defiance_aura",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Maximum Life",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__maximum_life",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Rite of Thorns",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__rite_of_thorns",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Potency",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__potency",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Aegis",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__aegis",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Duration",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__duration",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Impunity",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__impunity",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Cooldown Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown_reduction",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Blessed Shield",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__blessed_shield",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Cast Speed",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cast_speed",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Shield of Retribution",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__shield_of_retribution",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage_bonus",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Blessed Shield Shield of Retribution",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__blessed_shield_shield_of_retribution",
+            "sno": null
+          }
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Clash",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__clash",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Resolve",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__resolve",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Punishment",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__punishment",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Crusader's March Effectiveness",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__crusader_s_march_effectiveness",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": null,
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "18e75bb2-fd75-4478-9af2-29dc6fe7549a",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "1c792d2f42f46ff0a414e3a5fb291301835b2c94b6e3db47da1e9aee88e9378d",
+        "url": "https://d4builds.gg/builds/blessed-shield-paladin-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

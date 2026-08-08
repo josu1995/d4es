@@ -65,12 +65,13 @@ function normalizarHabilidades(entry: RawD4BuildsEntry, resolver: Resolver, avis
   const salida: SkillEntry[] = [];
   const skills = entry.skills ?? [];
   for (const [i, s] of skills.entries()) {
-    const rank = s.rank ?? 1;
-    if (rank < 1 || rank > MAX_SKILL_RANK) {
+    // 0 = en la barra sin puntos (la otorga el equipo). Lo publica asi la fuente.
+    const rank = s.rank ?? 0;
+    if (rank < 0 || rank > MAX_SKILL_RANK) {
       // No se recorta en silencio: si la fuente publica un rango fuera de rango,
       // queremos enterarnos, porque suele significar que el juego ha cambiado.
       avisos.push(
-        `${entry.seo_url}: habilidad "${s.name}" con rango ${rank} fuera de [1, ${MAX_SKILL_RANK}] — omitida`,
+        `${entry.seo_url}: habilidad "${s.name}" con rango ${rank} fuera de [0, ${MAX_SKILL_RANK}] — omitida`,
       );
       continue;
     }

@@ -1,0 +1,454 @@
+{
+  "classId": "rogue",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Concealment",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__concealment",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Dark Shroud",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__dark_shroud",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Dash",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__dash",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Death Trap",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__death_trap",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Shadow Step",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__shadow_step",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Smoke Grenade",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__smoke_grenade",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__concealment",
+        "label": {
+          "category": "skill",
+          "enUS": "Concealment",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__concealment",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:f97bb7fd-d762-4ee4-a524-c7a61d95cbc1:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__dark_shroud",
+        "label": {
+          "category": "skill",
+          "enUS": "Dark Shroud",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__dark_shroud",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:f97bb7fd-d762-4ee4-a524-c7a61d95cbc1:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__dash",
+        "label": {
+          "category": "skill",
+          "enUS": "Dash",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__dash",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:f97bb7fd-d762-4ee4-a524-c7a61d95cbc1:0": 4
+        }
+      },
+      {
+        "key": "skill:skill__death_trap",
+        "label": {
+          "category": "skill",
+          "enUS": "Death Trap",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__death_trap",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:f97bb7fd-d762-4ee4-a524-c7a61d95cbc1:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__shadow_step",
+        "label": {
+          "category": "skill",
+          "enUS": "Shadow Step",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__shadow_step",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:f97bb7fd-d762-4ee4-a524-c7a61d95cbc1:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__smoke_grenade",
+        "label": {
+          "category": "skill",
+          "enUS": "Smoke Grenade",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__smoke_grenade",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:f97bb7fd-d762-4ee4-a524-c7a61d95cbc1:0": 15
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "rogue::skill__death_trap::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "death-trap-rogue-endgame",
+  "primaryVariantId": "d4builds:f97bb7fd-d762-4ee4-a524-c7a61d95cbc1:0",
+  "ratings": {
+    "pitTier": 115,
+    "tierLabel": "A",
+    "tierRank": null
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Death Trap",
+    "es": "Death Trap"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:f97bb7fd-d762-4ee4-a524-c7a61d95cbc1:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Dark Shroud",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__dark_shroud",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Critical Strike",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__critical_strike",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Shadow Dancer",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__shadow_dancer",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Consume Chance",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__consume_chance",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Concealment",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__concealment",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Resolve",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__resolve",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Calculation",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__calculation",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Ferocity",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ferocity",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Smoke Grenade",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__smoke_grenade",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Increased Duration and Damage",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__increased_duration_and_damage",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Silhouette",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__silhouette",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Charge or Energy Cost Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__charge_or_energy_cost_reduction",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Shadow Step",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__shadow_step",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Cooldown",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Artifice",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__artifice",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Unstoppable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__unstoppable",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Death Trap",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__death_trap",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Resolve",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__resolve",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Explosive Trigger",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__explosive_trigger",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Dodge",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__dodge",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 4,
+          "ref": {
+            "category": "skill",
+            "enUS": "Dash",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__dash",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Weaken",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__weaken",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Primer",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__primer",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Charges and Cooldown Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__charges_and_cooldown_reduction",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": null,
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "f97bb7fd-d762-4ee4-a524-c7a61d95cbc1",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "8700415bec558735a4775ce84352f71317b6717408863b58a317dd166172b9a2",
+        "url": "https://d4builds.gg/builds/death-trap-rogue-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

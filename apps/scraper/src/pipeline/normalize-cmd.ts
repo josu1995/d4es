@@ -5,9 +5,14 @@ import {
   BuildIndex,
   RawD4BuildsCatalog,
   RawD4BuildsTierList,
+  SkillsDataset,
   classById,
+  skillIconSlug,
+  skillNameKey,
+  unwrapTemplates,
   type BuildIndexRow,
   type CanonicalBuild,
+  type SkillInfo,
 } from '@d4es/schema';
 import { Resolver, type Dictionary } from '@d4es/i18n';
 import { PATHS } from '../paths.js';
@@ -39,6 +44,58 @@ async function idsExistentes(): Promise<Map<string, string>> {
   return mapa;
 }
 
+/**
+ * Extrae el dataset de habilidades que el catalogo trae de regalo en pageContext.skills:
+ * categoria, descripcion y descripciones de runas. Es la materia prima de los tooltips.
+ */
+function extraerDataset(catalogo: unknown, generatedAt: string): SkillsDataset {
+  const pc = (catalogo as { result?: { pageContext?: { skills?: unknown } } }).result?.pageContext;
+  const crudas = Array.isArray(pc?.skills) ? (pc.skills as Record<string, unknown>[]) : [];
+  const byName: Record<string, SkillInfo> = {};
+
+  const texto = (v: unknown): string | null => (typeof v === 'string' && v.trim() !== '' ? v.trim() : null);
+  const lineas = (v: unknown): string[] =>
+    Array.isArray(v) ? v.filter((x): x is string => typeof x === 'string').map(unwrapTemplates) : [];
+
+  for (const s of crudas) {
+    const name = texto(s['name']);
+    if (!name) continue;
+    const tags = Array.isArray(s['tags']) ? (s['tags'] as unknown[]).filter((t): t is string => typeof t === 'string') : [];
+    const runas: Record<string, string> = {};
+    if (Array.isArray(s['runes'])) {
+      for (const r of s['runes'] as Record<string, unknown>[]) {
+        const rn = texto(r['name']);
+        const rd = lineas(r['description']).join(' ');
+        if (rn && rd) runas[rn] = rd;
+      }
+    }
+    // El coste viene en campos distintos por clase (fury_cost, wrath_generate...).
+    const coste = Object.entries(s)
+      .filter(([k, v]) => /_cost$|_generate$/.test(k) && (typeof v === 'string' || typeof v === 'number'))
+      .map(([k, v]) => `${String(v)} (${k.replace(/_/g, ' ')})`)
+      .join(', ');
+
+    byName[skillNameKey(name)] = {
+      name,
+      class: texto(s['class']),
+      category: tags[0] ?? null,
+      tags,
+      description: lineas(s['description']).join(' ') || null,
+      extra: lineas(s['extra']),
+      cost: coste || null,
+      luckyHit: texto(s['lucky_hit']),
+      runes: runas,
+    };
+  }
+
+  return {
+    generatedAt,
+    source: 'd4builds pageContext.skills',
+    count: Object.keys(byName).length,
+    byName,
+  };
+}
+
 function fila(build: CanonicalBuild): BuildIndexRow {
   const clase = classById(build.classId);
   const principal = build.variants.find((v) => v.id === build.primaryVariantId) ?? build.variants[0]!;
@@ -59,6 +116,8 @@ function fila(build: CanonicalBuild): BuildIndexRow {
     // El indice guarda lo que se PINTA, para que el filtrado en cliente no tenga que
     // resolver referencias ni cargar el diccionario entero.
     skills: principal.skills.map((s) => s.ref.esES ?? s.ref.enUS),
+    // El icono de la variante de skill (si la hay) es el que pinta d4builds.
+    skillIcons: principal.skills.map((s) => skillIconSlug(s.skillVariant?.enUS ?? s.ref.enUS)),
     hasMythic,
     completeness: principal.completeness.score,
     season: build.gameVersion.season,
@@ -105,8 +164,11 @@ export async function runNormalize(): Promise<NormalizeResultado> {
   const aBorrar = [...existentes.keys()].filter((id) => !nuevos.has(id));
 
   const stats = resolver.stats();
+  const previoValido = previo ? BuildIndex.safeParse(previo) : null;
+  // Una base de fixtures no sirve para medir la variacion de la primera ingesta real.
+  const lineaBase = previoValido?.success && previoValido.data.origen === 'real' ? previoValido.data.count : 0;
   const guard = evaluarGuardrails({
-    buildsAnteriores: previo?.count ?? 0,
+    buildsAnteriores: lineaBase,
     buildsActuales: builds.length,
     eliminadas: aBorrar.length,
     ficherosTocados: builds.length,
@@ -150,9 +212,17 @@ export async function runNormalize(): Promise<NormalizeResultado> {
     season: estado.temporadaActual,
     patch: estado.parche,
     count: builds.length,
+    origen: catalogo.desdeFixture ? 'fixture' : 'real',
     builds: builds.map(fila),
   };
   if (await writeIfChanged(PATHS.buildIndex, stableStringify(BuildIndex.parse(indice)))) tocados++;
+
+  // El dataset de habilidades (tooltips): viene de regalo en el mismo catalogo.
+  const dataset = extraerDataset(catalogo.body, catalogo.meta.lastChangedAt);
+  if (dataset.count > 0) {
+    const datasetPath = join(PATHS.canonical, 'skills-dataset.json');
+    if (await writeIfChanged(datasetPath, stableStringify(SkillsDataset.parse(dataset)))) tocados++;
+  }
 
   await mkdir(PATHS.reports, { recursive: true });
   await writeIfChanged(

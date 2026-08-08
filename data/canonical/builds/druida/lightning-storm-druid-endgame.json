@@ -1,0 +1,438 @@
+{
+  "classId": "druid",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Debilitating Roar",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__debilitating_roar",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Grizzly Rage",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__grizzly_rage",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Lightning Storm",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__lightning_storm",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Stone Burst",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__stone_burst",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Storm Strike",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__storm_strike",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Wolves",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__wolves",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__debilitating_roar",
+        "label": {
+          "category": "skill",
+          "enUS": "Debilitating Roar",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__debilitating_roar",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:de491527-1280-4d83-b5ea-dd26ca882385:0": 2
+        }
+      },
+      {
+        "key": "skill:skill__grizzly_rage",
+        "label": {
+          "category": "skill",
+          "enUS": "Grizzly Rage",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__grizzly_rage",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:de491527-1280-4d83-b5ea-dd26ca882385:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__lightning_storm",
+        "label": {
+          "category": "skill",
+          "enUS": "Lightning Storm",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__lightning_storm",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:de491527-1280-4d83-b5ea-dd26ca882385:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__stone_burst",
+        "label": {
+          "category": "skill",
+          "enUS": "Stone Burst",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__stone_burst",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:de491527-1280-4d83-b5ea-dd26ca882385:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__storm_strike",
+        "label": {
+          "category": "skill",
+          "enUS": "Storm Strike",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__storm_strike",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:de491527-1280-4d83-b5ea-dd26ca882385:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__wolves",
+        "label": {
+          "category": "skill",
+          "enUS": "Wolves",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__wolves",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:de491527-1280-4d83-b5ea-dd26ca882385:0": 1
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "druid::skill__lightning_storm::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "lightning-storm-druid-endgame",
+  "primaryVariantId": "d4builds:de491527-1280-4d83-b5ea-dd26ca882385:0",
+  "ratings": {
+    "pitTier": 135,
+    "tierLabel": "A",
+    "tierRank": null
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Lightning Storm",
+    "es": "Lightning Storm"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:de491527-1280-4d83-b5ea-dd26ca882385:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Grizzly Rage",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__grizzly_rage",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Fortify",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__fortify",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Cornered Beast",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cornered_beast",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Cooldown Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown_reduction",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Stone Burst",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__stone_burst",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Living Stones",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__living_stones",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Armor",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__armor",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Wolves",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__wolves",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Thrill of the Hunt",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__thrill_of_the_hunt",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Attack Speed",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__attack_speed",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 2,
+          "ref": {
+            "category": "skill",
+            "enUS": "Debilitating Roar",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__debilitating_roar",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Increased Duration",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__increased_duration",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Roar of Resolve",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__roar_of_resolve",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Cooldown",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Lightning Storm",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__lightning_storm",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Minimum Strikes",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__minimum_strikes",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Hero of the Storm",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__hero_of_the_storm",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage_bonus",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Storm Strike",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__storm_strike",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Armor",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__armor",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Focused Strike",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__focused_strike",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Spirit",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__spirit",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": "Rob2628",
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "de491527-1280-4d83-b5ea-dd26ca882385",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "0f4f092355451a85e345aa341d0d7f657ae9ab53e4ece134748fefc45acc9e3c",
+        "url": "https://d4builds.gg/builds/lightning-storm-druid-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

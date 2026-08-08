@@ -1,0 +1,443 @@
+{
+  "classId": "barbarian",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Challenging Shout",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__challenging_shout",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Death Blow",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__death_blow",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Frenzy",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__frenzy",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Rallying Cry",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__rallying_cry",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Whirlwind",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__whirlwind",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Wrath of the Berserker",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__wrath_of_the_berserker",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__challenging_shout",
+        "label": {
+          "category": "skill",
+          "enUS": "Challenging Shout",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__challenging_shout",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:9ba1c760-fc3f-4980-a4af-95960b421f16:0": 4
+        }
+      },
+      {
+        "key": "skill:skill__death_blow",
+        "label": {
+          "category": "skill",
+          "enUS": "Death Blow",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__death_blow",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:9ba1c760-fc3f-4980-a4af-95960b421f16:0": 0
+        }
+      },
+      {
+        "key": "skill:skill__frenzy",
+        "label": {
+          "category": "skill",
+          "enUS": "Frenzy",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__frenzy",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:9ba1c760-fc3f-4980-a4af-95960b421f16:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__rallying_cry",
+        "label": {
+          "category": "skill",
+          "enUS": "Rallying Cry",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__rallying_cry",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:9ba1c760-fc3f-4980-a4af-95960b421f16:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__whirlwind",
+        "label": {
+          "category": "skill",
+          "enUS": "Whirlwind",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__whirlwind",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:9ba1c760-fc3f-4980-a4af-95960b421f16:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__wrath_of_the_berserker",
+        "label": {
+          "category": "skill",
+          "enUS": "Wrath of the Berserker",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__wrath_of_the_berserker",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:9ba1c760-fc3f-4980-a4af-95960b421f16:0": 15
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "barbarian::skill__death_blow::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "death-blow-barbarian-endgame",
+  "primaryVariantId": "d4builds:9ba1c760-fc3f-4980-a4af-95960b421f16:0",
+  "ratings": {
+    "pitTier": null,
+    "tierLabel": "B",
+    "tierRank": null
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Death Blow",
+    "es": "Death Blow"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:9ba1c760-fc3f-4980-a4af-95960b421f16:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Frenzy",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__frenzy",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Ferocity",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ferocity",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Throwing",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__throwing",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Frenzy Stacks",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__frenzy_stacks",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Frenzy Throwing",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__frenzy_throwing",
+            "sno": null
+          }
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 0,
+          "ref": {
+            "category": "skill",
+            "enUS": "Death Blow",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__death_blow",
+            "sno": null
+          },
+          "runes": [],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 4,
+          "ref": {
+            "category": "skill",
+            "enUS": "Challenging Shout",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__challenging_shout",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Weaken",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__weaken",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Bawl",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__bawl",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage_bonus",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Rallying Cry",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__rallying_cry",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Fortify",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__fortify",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Booming",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__booming",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Fury Gain",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__fury_gain",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Wrath of the Berserker",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__wrath_of_the_berserker",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Berserking",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__berserking",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Maximum Carnage",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__maximum_carnage",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Duration Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__duration_bonus",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Whirlwind",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__whirlwind",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Cost Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cost_damage_bonus",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Winding",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__winding",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Channel Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__channel_damage_bonus",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Whirlwind Winding",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__whirlwind_winding",
+            "sno": null
+          }
+        }
+      ],
+      "source": {
+        "author": "Rob2628",
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "9ba1c760-fc3f-4980-a4af-95960b421f16",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "a57305c9b12029c485df2355f2228cd4d5775e7188b974eeb5023786e8fb508d",
+        "url": "https://d4builds.gg/builds/death-blow-barbarian-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

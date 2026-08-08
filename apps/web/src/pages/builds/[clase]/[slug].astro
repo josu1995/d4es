@@ -1,7 +1,8 @@
 ---
 import Base from '../../../layouts/Base.astro';
-import Termino from '../../../components/Termino.astro';
+import SlotSkill from '../../../components/SlotSkill.astro';
 import { loadBuilds, loadClasesEs, claseNombre } from '../../../lib/data';
+import { iconoClase } from '../../../lib/iconos';
 import { classById, type CanonicalBuild } from '@d4es/schema';
 
 export function getStaticPaths() {
@@ -22,206 +23,305 @@ const nombreClase = claseNombre(build.classId, clasesEs);
 const principal = build.variants.find((v) => v.id === build.primaryVariantId) ?? build.variants[0]!;
 const hayVariasFuentes = build.variants.length > 1;
 
-const FALTA: { clave: keyof typeof principal.completeness; etiqueta: string }[] = [
-  { clave: 'hasGear', etiqueta: 'equipo y aspectos' },
-  { clave: 'hasParagon', etiqueta: 'tablero de Paragón y glifos' },
-  { clave: 'hasTalisman', etiqueta: 'talismán (sello y amuletos)' },
-  { clave: 'hasMercenary', etiqueta: 'mercenario' },
-];
-const queFalta = FALTA.filter((f) => principal.completeness[f.clave] === false).map((f) => f.etiqueta);
+const COLOR_TIER: Record<string, string> = {
+  S: 'text-rareza-mitico border-rareza-mitico/60',
+  A: 'text-rareza-legendario border-rareza-legendario/60',
+  B: 'text-rareza-raro border-rareza-raro/50',
+  C: 'text-rareza-magico border-rareza-magico/50',
+};
+const tierClase = build.ratings.tierLabel ? (COLOR_TIER[build.ratings.tierLabel[0] ?? ''] ?? '') : '';
 
 const fechaCaptura = new Date(principal.source.capturedAt).toLocaleDateString('es-ES', {
   day: 'numeric',
   month: 'long',
   year: 'numeric',
 });
+
+/*
+  Pestañas con la misma estructura que d4builds (equipo/habilidades · árbol · paragón).
+  Hoy solo Habilidades trae datos: las otras dos existen y dicen honestamente de dónde
+  saldrán, en vez de fingir que no existen.
+*/
+const pestanas = [
+  { id: 'habilidades', etiqueta: 'Habilidades', disponible: principal.skills.length > 0 },
+  { id: 'equipo', etiqueta: 'Equipo y aspectos', disponible: principal.completeness.hasGear },
+  { id: 'paragon', etiqueta: 'Paragón', disponible: principal.completeness.hasParagon },
+];
 ---
 
 <Base
   titulo={`${build.title.es} — ${nombreClase} · Build de Diablo 4 en español`}
-  descripcion={`Build de ${nombreClase} "${build.title.es}" (${build.title.en}) para Diablo 4 temporada ${build.gameVersion.season}, traducida al castellano.`}
+  descripcion={`Build de ${nombreClase} "${build.title.es}" (${build.title.en}) para Diablo 4 temporada ${build.gameVersion.season}: habilidades, runas y rangos, traducida al castellano.`}
 >
-  <div class="mx-auto max-w-4xl px-4 py-10">
+  <div class="mx-auto max-w-5xl px-4 py-8">
     <nav aria-label="Migas de pan" class="text-xs text-humo">
       <a href="/builds" class="hover:text-pergamino">Builds</a>
       <span> / </span>
       <a href={`/builds?clase=${classById(build.classId)?.slug}`} class="hover:text-pergamino">{nombreClase}</a>
     </nav>
 
-    <header class="mt-3">
-      <h1 class="font-titulo text-3xl sm:text-4xl">{build.title.es}</h1>
-      {
-        build.title.es !== build.title.en && (
-          <p class="mt-1 text-sm text-humo">
-            En inglés: <span class="text-ceniza">{build.title.en}</span>
+    <!-- Cabecera estilo d4builds: retrato de clase + titulo + insignias -->
+    <header class="mt-4 grabado rounded-xl bg-piedra overflow-hidden">
+      <div class="flex items-center gap-5 p-5 sm:p-6 bg-gradient-to-r from-brasa/10 via-transparent to-transparent">
+        <img
+          src={iconoClase(build.classId)}
+          alt=""
+          width="88"
+          height="88"
+          loading="eager"
+          class="h-20 w-20 sm:h-22 sm:w-22 shrink-0 rounded-lg border border-grabado-vivo bg-abismo object-cover"
+          onerror="this.style.display='none'"
+        />
+        <div class="min-w-0">
+          <h1 class="font-titulo text-3xl sm:text-4xl leading-tight">{build.title.es}</h1>
+          <p class="mt-1 text-sm text-ceniza">
+            {nombreClase}
+            {principal.source.author && <span class="text-humo"> · por {principal.source.author}</span>}
+            {build.title.es !== build.title.en && <span class="text-humo"> · «{build.title.en}»</span>}
           </p>
-        )
-      }
-      <div class="mt-4 flex flex-wrap items-center gap-2 text-sm">
-        <span class="grabado rounded bg-piedra px-2.5 py-1">{nombreClase}</span>
-        {build.ratings.tierLabel && (
-          <span class="grabado rounded bg-piedra px-2.5 py-1">Tier {build.ratings.tierLabel}</span>
-        )}
-        {build.ratings.pitTier && (
-          <span class="grabado rounded bg-piedra px-2.5 py-1">Fosa {build.ratings.pitTier}</span>
-        )}
-        <span class="grabado rounded bg-piedra px-2.5 py-1">
-          Temporada {build.gameVersion.season} · {build.gameVersion.patch}
-        </span>
+          <div class="mt-3 flex flex-wrap items-center gap-2 text-xs">
+            {
+              build.ratings.tierLabel && (
+                <span class={`rounded border bg-abismo px-2 py-1 font-semibold ${tierClase}`}>
+                  Tier {build.ratings.tierLabel}
+                </span>
+              )
+            }
+            {
+              build.ratings.pitTier && (
+                <span class="rounded border border-grabado bg-abismo px-2 py-1 text-ceniza" title="Nivel de Fosa que aguanta según la fuente">
+                  Fosa {build.ratings.pitTier}
+                </span>
+              )
+            }
+            <span class="rounded border border-grabado bg-abismo px-2 py-1 text-ceniza">
+              {principal.levelBand === 'leveling' ? 'Subida de nivel' : 'Endgame'}
+            </span>
+            <span class="rounded border border-grabado bg-abismo px-2 py-1 text-humo">
+              T{build.gameVersion.season} · {build.gameVersion.patch}
+            </span>
+          </div>
+        </div>
       </div>
-    </header>
 
-    <!--
-      El selector de fuente es la razón de ser del sitio: la misma build vista con los ojos
-      de cada autor, sin fusionarlas nunca. Con una sola fuente se muestra igual, para que
-      quede claro de dónde sale lo que estás leyendo.
-    -->
-    <section class="mt-8" aria-labelledby="h-fuentes">
-      <h2 id="h-fuentes" class="text-xs uppercase tracking-wider text-humo">
-        {hayVariasFuentes ? 'Elige la versión que quieres ver' : 'Fuente'}
-      </h2>
-      <div class="mt-2 flex flex-wrap gap-2" role="tablist">
-        {
-          build.variants.map((v) => (
-            <button
-              type="button"
-              role="tab"
-              data-variante={v.id}
-              aria-selected={v.id === build.primaryVariantId}
-              class="grabado grabado-hover rounded bg-piedra px-3 py-2 text-sm aria-selected:border-brasa/60 aria-selected:bg-brasa/15"
-            >
-              <span class="font-medium">{v.source.site}</span>
-              {v.source.author && <span class="text-humo"> · {v.source.author}</span>}
-              {v.source.variantLabel && <span class="text-humo"> · {v.source.variantLabel}</span>}
-            </button>
-          ))
-        }
-      </div>
       {
         hayVariasFuentes && (
-          <a href={`${Astro.url.pathname}/comparar`} class="mt-2 inline-block text-sm text-ceniza underline underline-offset-4 hover:text-pergamino">
-            Ver en qué se diferencian →
-          </a>
+          <div class="border-t border-grabado px-5 py-3">
+            <span class="text-xs uppercase tracking-wider text-humo mr-3">Versión:</span>
+            <div class="inline-flex flex-wrap gap-2" role="tablist" aria-label="Fuente de la build">
+              {build.variants.map((v) => (
+                <button
+                  type="button"
+                  role="tab"
+                  data-variante={v.id}
+                  aria-selected={v.id === build.primaryVariantId}
+                  class="grabado grabado-hover rounded bg-abismo px-3 py-1.5 text-sm aria-selected:border-brasa/60 aria-selected:bg-brasa/15"
+                >
+                  {v.source.site}
+                  {v.source.variantLabel && <span class="text-humo"> · {v.source.variantLabel}</span>}
+                </button>
+              ))}
+            </div>
+          </div>
         )
       }
-    </section>
+    </header>
+
+    <!-- Pestañas -->
+    <div class="mt-6 flex gap-1 border-b border-grabado" role="tablist" aria-label="Secciones de la build">
+      {
+        pestanas.map((p, i) => (
+          <button
+            type="button"
+            role="tab"
+            id={`tab-${p.id}`}
+            aria-controls={`panel-${p.id}`}
+            aria-selected={i === 0}
+            data-pestana={p.id}
+            class="relative rounded-t px-4 py-2.5 text-sm text-ceniza transition-colors hover:text-pergamino aria-selected:text-pergamino aria-selected:bg-piedra grabado aria-selected:border-b-transparent border-transparent"
+          >
+            {p.etiqueta}
+            {!p.disponible && <span class="ml-1.5 text-[0.6rem] uppercase tracking-wider text-humo">pronto</span>}
+          </button>
+        ))
+      }
+    </div>
 
     {
       build.variants.map((v) => (
-        <div data-panel={v.id} class:list={[v.id !== build.primaryVariantId && 'hidden']}>
-          <section class="mt-8" aria-label="Habilidades">
-            <h2 class="font-titulo text-xl">Habilidades</h2>
+        <div data-panel-variante={v.id} class:list={[v.id !== build.primaryVariantId && 'hidden']}>
+          <!-- HABILIDADES -->
+          <section
+            id="panel-habilidades"
+            role="tabpanel"
+            aria-labelledby="tab-habilidades"
+            data-panel-pestana="habilidades"
+            class="grabado rounded-b-lg rounded-tr-lg bg-piedra p-5 sm:p-6"
+          >
             {v.skills.length === 0 ? (
-              <p class="mt-2 text-ceniza">Esta fuente no publica las habilidades de la build.</p>
+              <p class="text-ceniza">Esta fuente no publica las habilidades de la build.</p>
             ) : (
-              <ul class="mt-3 divide-y divide-grabado grabado rounded-lg bg-piedra overflow-hidden">
-                {v.skills.map((s) => (
-                  <li class="flex items-baseline gap-3 px-4 py-2.5">
-                    <span class="w-10 shrink-0 text-right font-mono text-sm text-oro">{s.rank}</span>
-                    <span class="min-w-0">
-                      <Termino ref={s.ref} />
-                      {s.skillVariant && (
-                        <span class="text-sm text-humo">
-                          {' — '}
-                          <Termino ref={s.skillVariant} />
-                        </span>
-                      )}
-                      {s.runes.length > 0 && (
-                        <span class="mt-1 flex flex-wrap gap-1.5">
-                          {s.runes.map((r) => (
-                            <span class="rounded border border-grabado bg-abismo px-1.5 py-0.5 text-[0.7rem] text-ceniza">
-                              <Termino ref={r} />
-                            </span>
-                          ))}
-                        </span>
-                      )}
-                    </span>
-                  </li>
-                ))}
-              </ul>
+              <>
+                <p class="text-xs text-humo">
+                  Pasa el ratón (o pulsa) sobre una habilidad o una runa <span class="inline-block h-2 w-2 rotate-45 border border-oro-apagado/60 bg-piedra-alta align-middle" /> para ver su detalle.
+                </p>
+                <div class="mt-5 flex flex-wrap justify-center gap-x-4 gap-y-6 sm:justify-start">
+                  {v.skills.map((s, i) => (
+                    <SlotSkill skill={s} idTooltip={`tt-${v.source.variantIndex}-${i}`} />
+                  ))}
+                </div>
+              </>
             )}
           </section>
 
-          <section class="mt-8 grabado rounded-lg bg-piedra p-4 text-sm">
-            <h2 class="font-titulo text-lg">De dónde sale esta build</h2>
-            <dl class="mt-3 grid gap-2 sm:grid-cols-2">
-              <div>
-                <dt class="text-humo text-xs uppercase tracking-wider">Fuente</dt>
-                <dd>
-                  <a
-                    href={v.source.url}
-                    rel="nofollow noopener external"
-                    target="_blank"
-                    class="text-ceniza underline underline-offset-4 hover:text-pergamino"
-                  >
-                    {v.source.site} — ver la guía original
-                  </a>
-                </dd>
-              </div>
-              {v.source.author && (
-                <div>
-                  <dt class="text-humo text-xs uppercase tracking-wider">Autor</dt>
-                  <dd class="text-ceniza">{v.source.author}</dd>
-                </div>
-              )}
-              <div>
-                <dt class="text-humo text-xs uppercase tracking-wider">Última captura</dt>
-                <dd class="text-ceniza">{fechaCaptura}</dd>
-              </div>
-              <div>
-                <dt class="text-humo text-xs uppercase tracking-wider">Completitud</dt>
-                <dd class="text-ceniza">{Math.round(v.completeness.score * 100)}%</dd>
-              </div>
-            </dl>
+          <!-- EQUIPO -->
+          <section
+            id="panel-equipo"
+            role="tabpanel"
+            aria-labelledby="tab-equipo"
+            data-panel-pestana="equipo"
+            class="hidden grabado rounded-b-lg rounded-tr-lg bg-piedra p-5 sm:p-6"
+          >
+            <h2 class="font-titulo text-xl">Equipo y aspectos</h2>
+            <p class="mt-2 text-sm text-ceniza max-w-2xl">
+              El catálogo público de la fuente no incluye el equipo: se extrae página a página y es la
+              siguiente fase de este sitio. Mientras tanto lo tienes íntegro en la guía original:
+            </p>
+            <a
+              href={v.source.url}
+              rel="nofollow noopener external"
+              target="_blank"
+              class="mt-4 inline-block grabado grabado-hover rounded bg-abismo px-4 py-2 text-sm"
+            >
+              Ver el equipo en {v.source.site} →
+            </a>
           </section>
+
+          <!-- PARAGON -->
+          <section
+            id="panel-paragon"
+            role="tabpanel"
+            aria-labelledby="tab-paragon"
+            data-panel-pestana="paragon"
+            class="hidden grabado rounded-b-lg rounded-tr-lg bg-piedra p-5 sm:p-6"
+          >
+            <h2 class="font-titulo text-xl">Tablero de Paragón</h2>
+            <p class="mt-2 text-sm text-ceniza max-w-2xl">
+              Los tableros y glifos tampoco están en el catálogo público; llegarán con la misma fase que el
+              equipo. La guía original los muestra completos:
+            </p>
+            <a
+              href={v.source.url}
+              rel="nofollow noopener external"
+              target="_blank"
+              class="mt-4 inline-block grabado grabado-hover rounded bg-abismo px-4 py-2 text-sm"
+            >
+              Ver el Paragón en {v.source.site} →
+            </a>
+          </section>
+
+          <!-- Procedencia -->
+          <footer class="mt-4 flex flex-wrap items-center gap-x-6 gap-y-2 px-1 text-xs text-humo">
+            <span>
+              Fuente:
+              <a href={v.source.url} rel="nofollow noopener external" target="_blank" class="underline underline-offset-4 hover:text-pergamino">
+                {v.source.site}
+              </a>
+              {v.source.author && <> · {v.source.author}</>}
+            </span>
+            <span>Capturada el {fechaCaptura}</span>
+            <span>Completitud: {Math.round(v.completeness.score * 100)}%</span>
+          </footer>
         </div>
       ))
-    }
-
-    {
-      queFalta.length > 0 && (
-        <aside class="mt-6 grabado rounded-lg border-oro-apagado/40 bg-oro/5 p-4 text-sm">
-          <p class="text-pergamino">
-            <strong>Esta ficha aún no incluye {queFalta.join(', ')}.</strong>
-          </p>
-          <p class="mt-1.5 text-ceniza">
-            El catálogo público de la fuente solo publica las habilidades. El resto se extrae de la página de
-            la build, que es un paso posterior del proyecto. Mientras tanto, el enlace de arriba te lleva a
-            la guía completa del autor.
-          </p>
-        </aside>
-      )
     }
   </div>
 </Base>
 
-<script>
-  // Cambio de fuente sin recargar. La URL refleja la elección para poder compartirla.
-  const botones = document.querySelectorAll<HTMLButtonElement>('[data-variante]');
-  const paneles = document.querySelectorAll<HTMLElement>('[data-panel]');
+<div id="tooltip" class="tooltip-panel hidden" role="tooltip"></div>
 
-  function mostrar(id: string, actualizarUrl = true) {
+<script>
+  // ---- Pestañas -----------------------------------------------------------------
+  const tabs = document.querySelectorAll<HTMLButtonElement>('[data-pestana]');
+  const panelesPestana = document.querySelectorAll<HTMLElement>('[data-panel-pestana]');
+
+  for (const tab of tabs) {
+    tab.addEventListener('click', () => {
+      const id = tab.dataset['pestana'];
+      for (const t of tabs) t.setAttribute('aria-selected', String(t === tab));
+      for (const p of panelesPestana) p.classList.toggle('hidden', p.dataset['panelPestana'] !== id);
+    });
+  }
+
+  // ---- Selector de fuente ---------------------------------------------------------
+  const botonesVariante = document.querySelectorAll<HTMLButtonElement>('[data-variante]');
+  const panelesVariante = document.querySelectorAll<HTMLElement>('[data-panel-variante]');
+
+  function mostrarVariante(id: string, actualizarUrl = true) {
     let encontrado = false;
-    for (const panel of paneles) {
-      const visible = panel.dataset['panel'] === id;
-      panel.classList.toggle('hidden', !visible);
+    for (const p of panelesVariante) {
+      const visible = p.dataset['panelVariante'] === id;
+      p.classList.toggle('hidden', !visible);
       if (visible) encontrado = true;
     }
     if (!encontrado) return;
-    for (const boton of botones) {
-      boton.setAttribute('aria-selected', String(boton.dataset['variante'] === id));
-    }
+    for (const b of botonesVariante) b.setAttribute('aria-selected', String(b.dataset['variante'] === id));
     if (actualizarUrl) {
       const params = new URLSearchParams(location.search);
       params.set('fuente', id);
       history.replaceState(null, '', `?${params}`);
     }
   }
+  for (const b of botonesVariante) b.addEventListener('click', () => mostrarVariante(b.dataset['variante'] ?? ''));
+  const fuenteInicial = new URLSearchParams(location.search).get('fuente');
+  if (fuenteInicial) mostrarVariante(fuenteInicial, false);
 
-  for (const boton of botones) {
-    boton.addEventListener('click', () => mostrar(boton.dataset['variante'] ?? ''));
+  // ---- Motor de tooltips ------------------------------------------------------------
+  // Un unico panel flotante; el contenido vive en <template> junto a cada slot.
+  const panel = document.getElementById('tooltip')!;
+  let ancladoA: HTMLElement | null = null;
+
+  function colocar(objetivo: HTMLElement) {
+    const r = objetivo.getBoundingClientRect();
+    const p = panel.getBoundingClientRect();
+    // Preferencia: encima y centrado, como en el juego. Si no cabe, debajo.
+    let x = r.left + r.width / 2 - p.width / 2;
+    let y = r.top - p.height - 10;
+    x = Math.max(8, Math.min(x, window.innerWidth - p.width - 8));
+    if (y < 8) y = Math.min(r.bottom + 10, window.innerHeight - p.height - 8);
+    panel.style.left = `${x}px`;
+    panel.style.top = `${y}px`;
   }
 
-  const inicial = new URLSearchParams(location.search).get('fuente');
-  if (inicial) mostrar(inicial, false);
+  function abrir(objetivo: HTMLElement) {
+    const plantilla = document.getElementById(objetivo.dataset['tooltip'] ?? '') as HTMLTemplateElement | null;
+    if (!plantilla) return;
+    panel.replaceChildren(plantilla.content.cloneNode(true));
+    panel.classList.remove('hidden');
+    ancladoA = objetivo;
+    colocar(objetivo);
+  }
+
+  function cerrar() {
+    panel.classList.add('hidden');
+    ancladoA = null;
+  }
+
+  for (const el of document.querySelectorAll<HTMLElement>('[data-tooltip]')) {
+    el.addEventListener('mouseenter', () => abrir(el));
+    el.addEventListener('mouseleave', cerrar);
+    el.addEventListener('focus', () => abrir(el));
+    el.addEventListener('blur', cerrar);
+    // En tactil no hay hover: el toque alterna el tooltip.
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (ancladoA === el) cerrar();
+      else abrir(el);
+    });
+  }
+  window.addEventListener('scroll', () => ancladoA && colocar(ancladoA), { passive: true });
+  window.addEventListener('resize', () => ancladoA && colocar(ancladoA));
+  document.addEventListener('click', (e) => {
+    if (ancladoA && !(e.target as HTMLElement).closest('[data-tooltip]')) cerrar();
+  });
 </script>

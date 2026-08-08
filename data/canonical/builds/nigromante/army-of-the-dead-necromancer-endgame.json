@@ -1,0 +1,461 @@
+{
+  "classId": "necromancer",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Army of the Dead",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__army_of_the_dead",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Blood Mist",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__blood_mist",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Corpse Explosion",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__corpse_explosion",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Golem",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__golem",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Skeleton Mage",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__skeleton_mage",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Skeleton Warrior",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__skeleton_warrior",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__army_of_the_dead",
+        "label": {
+          "category": "skill",
+          "enUS": "Army of the Dead",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__army_of_the_dead",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:eff0d5ea-4918-4e28-a37e-a471ff2e1d6d:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__blood_mist",
+        "label": {
+          "category": "skill",
+          "enUS": "Blood Mist",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__blood_mist",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:eff0d5ea-4918-4e28-a37e-a471ff2e1d6d:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__corpse_explosion",
+        "label": {
+          "category": "skill",
+          "enUS": "Corpse Explosion",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__corpse_explosion",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:eff0d5ea-4918-4e28-a37e-a471ff2e1d6d:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__golem",
+        "label": {
+          "category": "skill",
+          "enUS": "Golem",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__golem",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:eff0d5ea-4918-4e28-a37e-a471ff2e1d6d:0": 8
+        }
+      },
+      {
+        "key": "skill:skill__skeleton_mage",
+        "label": {
+          "category": "skill",
+          "enUS": "Skeleton Mage",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__skeleton_mage",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:eff0d5ea-4918-4e28-a37e-a471ff2e1d6d:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__skeleton_warrior",
+        "label": {
+          "category": "skill",
+          "enUS": "Skeleton Warrior",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__skeleton_warrior",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:eff0d5ea-4918-4e28-a37e-a471ff2e1d6d:0": 13
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "necromancer::skill__army_of_the_dead::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "army-of-the-dead-necromancer-endgame",
+  "primaryVariantId": "d4builds:eff0d5ea-4918-4e28-a37e-a471ff2e1d6d:0",
+  "ratings": {
+    "pitTier": 115,
+    "tierLabel": null,
+    "tierRank": null
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Army of the Dead",
+    "es": "Army of the Dead"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:eff0d5ea-4918-4e28-a37e-a471ff2e1d6d:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 13,
+          "ref": {
+            "category": "skill",
+            "enUS": "Skeleton Warrior",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__skeleton_warrior",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Healing",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__healing",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Service and Sacrifice",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__service_and_sacrifice",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Resolve",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__resolve",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Army of the Dead",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__army_of_the_dead",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Corpse Generation",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__corpse_generation",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Dead Cold",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__dead_cold",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage_bonus",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Army of the Dead Dead Cold",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__army_of_the_dead_dead_cold",
+            "sno": null
+          }
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Blood Mist",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__blood_mist",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Overpower",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__overpower",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Blood Transfusion",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__blood_transfusion",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Critical Strike",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__critical_strike",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Corpse Explosion",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__corpse_explosion",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Multiple Corpses",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__multiple_corpses",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Bloody Mess",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__bloody_mess",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Blood Orb",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__blood_orb",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Skeleton Mage",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__skeleton_mage",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Ferocity, Resolve, or Overpower",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ferocity_resolve_or_overpower",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Coven",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__coven",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Critical Strike Chance",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__critical_strike_chance",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 8,
+          "ref": {
+            "category": "skill",
+            "enUS": "Golem",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__golem",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Unstoppable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__unstoppable",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Fel Gluttony",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__fel_gluttony",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Weaken",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__weaken",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": "Rob2628",
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "eff0d5ea-4918-4e28-a37e-a471ff2e1d6d",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "5de5472ac3a036d2efa82c2613de9cfb0043ae9d5e18bb60314af20f08f07092",
+        "url": "https://d4builds.gg/builds/army-of-the-dead-necromancer-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

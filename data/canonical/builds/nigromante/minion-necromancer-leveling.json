@@ -1,0 +1,454 @@
+{
+  "classId": "necromancer",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Army of the Dead",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__army_of_the_dead",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Corpse Tendrils",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__corpse_tendrils",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Decrepify",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__decrepify",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Reap",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__reap",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Skeleton Mage",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__skeleton_mage",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Skeleton Warrior",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__skeleton_warrior",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__army_of_the_dead",
+        "label": {
+          "category": "skill",
+          "enUS": "Army of the Dead",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__army_of_the_dead",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:e2d79811-4661-479f-80c4-e0d5a5e00960:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__corpse_tendrils",
+        "label": {
+          "category": "skill",
+          "enUS": "Corpse Tendrils",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__corpse_tendrils",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:e2d79811-4661-479f-80c4-e0d5a5e00960:0": 14
+        }
+      },
+      {
+        "key": "skill:skill__decrepify",
+        "label": {
+          "category": "skill",
+          "enUS": "Decrepify",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__decrepify",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:e2d79811-4661-479f-80c4-e0d5a5e00960:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__reap",
+        "label": {
+          "category": "skill",
+          "enUS": "Reap",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__reap",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:e2d79811-4661-479f-80c4-e0d5a5e00960:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__skeleton_mage",
+        "label": {
+          "category": "skill",
+          "enUS": "Skeleton Mage",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__skeleton_mage",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:e2d79811-4661-479f-80c4-e0d5a5e00960:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__skeleton_warrior",
+        "label": {
+          "category": "skill",
+          "enUS": "Skeleton Warrior",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__skeleton_warrior",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:e2d79811-4661-479f-80c4-e0d5a5e00960:0": 15
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "necromancer::skill__skeleton_warrior::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "minion-necromancer-leveling",
+  "primaryVariantId": "d4builds:e2d79811-4661-479f-80c4-e0d5a5e00960:0",
+  "ratings": {
+    "pitTier": null,
+    "tierLabel": null,
+    "tierRank": 1
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "leveling"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Minion",
+    "es": "Minion"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:e2d79811-4661-479f-80c4-e0d5a5e00960:0",
+      "levelBand": "leveling",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Decrepify",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__decrepify",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Cooldown Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown_reduction",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Dizzying Curse",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__dizzying_curse",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Movement Speed",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__movement_speed",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Skeleton Warrior",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__skeleton_warrior",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage_bonus",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Master of Puppets",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__master_of_puppets",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Resolve",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__resolve",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 14,
+          "ref": {
+            "category": "skill",
+            "enUS": "Corpse Tendrils",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__corpse_tendrils",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Essence Generation",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__essence_generation",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Bitter Harvest",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__bitter_harvest",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Vulnerable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__vulnerable",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Skeleton Mage",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__skeleton_mage",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Ferocity, Resolve, or Overpower",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ferocity_resolve_or_overpower",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Coven",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__coven",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Duration Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__duration_damage_bonus",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Army of the Dead",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__army_of_the_dead",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Passive Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__passive_bonus",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Unyielding Commander",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__unyielding_commander",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Cooldown Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown_reduction",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Reap",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__reap",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Ferocity",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ferocity",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Harvest",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__harvest",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Critical Strike Chance",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__critical_strike_chance",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": "Rob2628",
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "e2d79811-4661-479f-80c4-e0d5a5e00960",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "d3d266a4e31c209a653caf37e93ba154fb77eee844674a26cab1801782f8bdb8",
+        "url": "https://d4builds.gg/builds/minion-necromancer-leveling/",
+        "variantIndex": 0,
+        "variantLabel": "Leveling"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

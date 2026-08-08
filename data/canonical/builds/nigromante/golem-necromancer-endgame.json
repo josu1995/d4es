@@ -1,0 +1,468 @@
+{
+  "classId": "necromancer",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Blight",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__blight",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Bone Prison",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__bone_prison",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Bone Storm",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__bone_storm",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Golem",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__golem",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Sever",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__sever",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Skeleton Warrior",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__skeleton_warrior",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__blight",
+        "label": {
+          "category": "skill",
+          "enUS": "Blight",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__blight",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:3c144000-e477-4d13-8c50-1654b5ac16eb:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__bone_prison",
+        "label": {
+          "category": "skill",
+          "enUS": "Bone Prison",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__bone_prison",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:3c144000-e477-4d13-8c50-1654b5ac16eb:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__bone_storm",
+        "label": {
+          "category": "skill",
+          "enUS": "Bone Storm",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__bone_storm",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:3c144000-e477-4d13-8c50-1654b5ac16eb:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__golem",
+        "label": {
+          "category": "skill",
+          "enUS": "Golem",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__golem",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:3c144000-e477-4d13-8c50-1654b5ac16eb:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__sever",
+        "label": {
+          "category": "skill",
+          "enUS": "Sever",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__sever",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:3c144000-e477-4d13-8c50-1654b5ac16eb:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__skeleton_warrior",
+        "label": {
+          "category": "skill",
+          "enUS": "Skeleton Warrior",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__skeleton_warrior",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:3c144000-e477-4d13-8c50-1654b5ac16eb:0": 15
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "necromancer::skill__golem::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "golem-necromancer-endgame",
+  "primaryVariantId": "d4builds:3c144000-e477-4d13-8c50-1654b5ac16eb:0",
+  "ratings": {
+    "pitTier": 130,
+    "tierLabel": "B",
+    "tierRank": null
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Golem",
+    "es": "Golem"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:3c144000-e477-4d13-8c50-1654b5ac16eb:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Sever",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__sever",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Cost Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cost_reduction",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Inexorable Reaper",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__inexorable_reaper",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Crowd Control and Corpse Generation",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__crowd_control_and_corpse_generation",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Bone Prison",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__bone_prison",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Vulnerable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__vulnerable",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Plunging Darkness",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__plunging_darkness",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Cooldown Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown_reduction",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Bone Prison Plunging Darkness",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__bone_prison_plunging_darkness",
+            "sno": null
+          }
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Skeleton Warrior",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__skeleton_warrior",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Healing",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__healing",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Litany of Death",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__litany_of_death",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Vulnerable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__vulnerable",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Bone Storm",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__bone_storm",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Damage Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage_reduction",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Roll the Bones",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__roll_the_bones",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Barrier",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__barrier",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Golem",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__golem",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage_bonus",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Gravebloom",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__gravebloom",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Resolve, Overpower, or Ferocity",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__resolve_overpower_or_ferocity",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Blight",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__blight",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Size Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__size_bonus",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Whirlpool",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__whirlpool",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Lucky Hit Chance",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__lucky_hit_chance",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Blight Whirlpool",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__blight_whirlpool",
+            "sno": null
+          }
+        }
+      ],
+      "source": {
+        "author": null,
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "3c144000-e477-4d13-8c50-1654b5ac16eb",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "5eb14e7c77a449c4f694e4c2e8247610c7dc6462107f6cf8d0a49c91b2e9ca1b",
+        "url": "https://d4builds.gg/builds/golem-necromancer-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

@@ -15,8 +15,1543 @@
   "pendientes": [
     {
       "category": "rune",
-      "en": "Enemy Damage Bonus",
+      "en": "Cooldown Reduction",
+      "veces": 56
+    },
+    {
+      "category": "rune",
+      "en": "Weaken",
+      "veces": 48
+    },
+    {
+      "category": "rune",
+      "en": "Vulnerable",
+      "veces": 45
+    },
+    {
+      "category": "rune",
+      "en": "Overpower",
+      "veces": 44
+    },
+    {
+      "category": "rune",
+      "en": "Damage Bonus",
+      "veces": 32
+    },
+    {
+      "category": "rune",
+      "en": "Cooldown",
+      "veces": 28
+    },
+    {
+      "category": "rune",
+      "en": "Duration",
+      "veces": 26
+    },
+    {
+      "category": "rune",
+      "en": "Ferocity",
+      "veces": 26
+    },
+    {
+      "category": "rune",
+      "en": "Fortify",
+      "veces": 26
+    },
+    {
+      "category": "rune",
+      "en": "Resolve",
+      "veces": 23
+    },
+    {
+      "category": "rune",
+      "en": "Unstoppable",
+      "veces": 23
+    },
+    {
+      "category": "rune",
+      "en": "Movement Speed",
+      "veces": 21
+    },
+    {
+      "category": "rune",
+      "en": "Potency",
+      "veces": 21
+    },
+    {
+      "category": "rune",
+      "en": "Duration Bonus",
+      "veces": 19
+    },
+    {
+      "category": "rune",
+      "en": "Healing",
+      "veces": 18
+    },
+    {
+      "category": "rune",
+      "en": "Critical Strike Chance",
+      "veces": 15
+    },
+    {
+      "category": "rune",
+      "en": "Cost Reduction",
+      "veces": 13
+    },
+    {
+      "category": "skill",
+      "en": "Defiance Aura",
+      "veces": 13
+    },
+    {
+      "category": "skill",
+      "en": "Fanaticism Aura",
+      "veces": 13
+    },
+    {
+      "category": "rune",
+      "en": "Hero of the Storm",
+      "veces": 13
+    },
+    {
+      "category": "skill",
+      "en": "Lightning Storm",
+      "veces": 13
+    },
+    {
+      "category": "rune",
+      "en": "Additional Strikes",
+      "veces": 12
+    },
+    {
+      "category": "skill",
+      "en": "Concealment",
+      "veces": 12
+    },
+    {
+      "category": "skill",
+      "en": "Ice Armor",
+      "veces": 12
+    },
+    {
+      "category": "rune",
+      "en": "Maximum Life",
+      "veces": 12
+    },
+    {
+      "category": "rune",
+      "en": "Permafrost",
+      "veces": 12
+    },
+    {
+      "category": "rune",
+      "en": "Rite of Vengeance",
+      "veces": 12
+    },
+    {
+      "category": "skill",
+      "en": "Teleport",
+      "veces": 12
+    },
+    {
+      "category": "skill",
+      "en": "Wolves",
+      "veces": 12
+    },
+    {
+      "category": "rune",
+      "en": "Attack Speed",
+      "veces": 11
+    },
+    {
+      "category": "rune",
+      "en": "Cast Speed",
+      "veces": 11
+    },
+    {
+      "category": "rune",
+      "en": "Cornered Beast",
+      "veces": 11
+    },
+    {
+      "category": "skill",
+      "en": "Cyclone Armor",
+      "veces": 11
+    },
+    {
+      "category": "rune",
+      "en": "Duration Increase",
+      "veces": 11
+    },
+    {
+      "category": "skill",
+      "en": "Grizzly Rage",
+      "veces": 11
+    },
+    {
+      "category": "rune",
+      "en": "Resistance",
+      "veces": 11
+    },
+    {
+      "category": "rune",
+      "en": "Rite of Might",
+      "veces": 11
+    },
+    {
+      "category": "rune",
+      "en": "Size Bonus",
+      "veces": 11
+    },
+    {
+      "category": "skill",
+      "en": "Toxic Skin",
+      "veces": 11
+    },
+    {
+      "category": "rune",
+      "en": "Calculation",
+      "veces": 10
+    },
+    {
+      "category": "rune",
+      "en": "Charges and Cooldown Reduction",
+      "veces": 10
+    },
+    {
+      "category": "skill",
+      "en": "Dash",
+      "veces": 10
+    },
+    {
+      "category": "rune",
+      "en": "Duration Bonus and Barrier",
+      "veces": 10
+    },
+    {
+      "category": "rune",
+      "en": "Fury Generation",
+      "veces": 10
+    },
+    {
+      "category": "rune",
+      "en": "Primer",
+      "veces": 10
+    },
+    {
+      "category": "skill",
+      "en": "Ravager",
+      "veces": 10
+    },
+    {
+      "category": "rune",
+      "en": "Thrill of the Hunt",
+      "veces": 10
+    },
+    {
+      "category": "skill",
+      "en": "Armored Hide",
+      "veces": 9
+    },
+    {
+      "category": "rune",
+      "en": "Berserking",
+      "veces": 9
+    },
+    {
+      "category": "rune",
+      "en": "Blocked Damage Reduction",
+      "veces": 9
+    },
+    {
+      "category": "rune",
+      "en": "Damage Reduction",
+      "veces": 9
+    },
+    {
+      "category": "rune",
+      "en": "Force of Nature",
+      "veces": 9
+    },
+    {
+      "category": "skill",
+      "en": "Scourge",
+      "veces": 9
+    },
+    {
+      "category": "skill",
+      "en": "Shadow Clone",
+      "veces": 9
+    },
+    {
+      "category": "skill",
+      "en": "Skeleton Warrior",
+      "veces": 9
+    },
+    {
+      "category": "rune",
+      "en": "Skuttle Bug",
+      "veces": 9
+    },
+    {
+      "category": "skill",
+      "en": "Smoke Grenade",
+      "veces": 9
+    },
+    {
+      "category": "rune",
+      "en": "Barrier",
+      "veces": 8
+    },
+    {
+      "category": "rune",
+      "en": "Blaze",
+      "veces": 8
+    },
+    {
+      "category": "rune",
+      "en": "Booming",
+      "veces": 8
+    },
+    {
+      "category": "rune",
+      "en": "Charge or Energy Cost Reduction",
+      "veces": 8
+    },
+    {
+      "category": "rune",
+      "en": "Crowd Control and Corpse Generation",
+      "veces": 8
+    },
+    {
+      "category": "skill",
+      "en": "Debilitating Roar",
+      "veces": 8
+    },
+    {
+      "category": "rune",
+      "en": "Flurry of Claws",
+      "veces": 8
+    },
+    {
+      "category": "rune",
+      "en": "Hive Mind",
+      "veces": 8
+    },
+    {
+      "category": "skill",
+      "en": "Hydra",
+      "veces": 8
+    },
+    {
+      "category": "rune",
+      "en": "Increased Duration",
+      "veces": 8
+    },
+    {
+      "category": "rune",
+      "en": "Increased Duration and Damage",
+      "veces": 8
+    },
+    {
+      "category": "rune",
+      "en": "Inexorable Reaper",
+      "veces": 8
+    },
+    {
+      "category": "skill",
+      "en": "Rallying Cry",
+      "veces": 8
+    },
+    {
+      "category": "skill",
+      "en": "Sever",
+      "veces": 8
+    },
+    {
+      "category": "rune",
+      "en": "Silhouette",
+      "veces": 8
+    },
+    {
+      "category": "skillVariant",
+      "en": "Teleport Blaze",
+      "veces": 8
+    },
+    {
+      "category": "skill",
+      "en": "Arbiter of Justice",
+      "veces": 7
+    },
+    {
+      "category": "rune",
+      "en": "Booming Roar",
+      "veces": 7
+    },
+    {
+      "category": "skill",
+      "en": "Challenging Shout",
+      "veces": 7
+    },
+    {
+      "category": "skill",
+      "en": "Cold Imbuement",
+      "veces": 7
+    },
+    {
+      "category": "skill",
+      "en": "Condemn",
+      "veces": 7
+    },
+    {
+      "category": "skill",
+      "en": "Corpse Tendrils",
+      "veces": 7
+    },
+    {
+      "category": "rune",
+      "en": "Damage Increase",
+      "veces": 7
+    },
+    {
+      "category": "skill",
+      "en": "Dark Shroud",
+      "veces": 7
+    },
+    {
+      "category": "rune",
+      "en": "Essence Generation",
+      "veces": 7
+    },
+    {
+      "category": "rune",
+      "en": "Execute",
+      "veces": 7
+    },
+    {
+      "category": "skill",
+      "en": "Familiar",
+      "veces": 7
+    },
+    {
+      "category": "rune",
+      "en": "Ferocity Maximum",
+      "veces": 7
+    },
+    {
+      "category": "rune",
+      "en": "Frigid Hydra",
+      "veces": 7
+    },
+    {
+      "category": "skillVariant",
+      "en": "Hydra Frigid Hydra",
+      "veces": 7
+    },
+    {
+      "category": "rune",
+      "en": "Relentless",
+      "veces": 7
+    },
+    {
+      "category": "skill",
+      "en": "The Hunter",
+      "veces": 7
+    },
+    {
+      "category": "rune",
+      "en": "Vigor Generation",
+      "veces": 7
+    },
+    {
+      "category": "skill",
+      "en": "War Cry",
+      "veces": 7
+    },
+    {
+      "category": "skill",
+      "en": "Wrath of the Berserker",
+      "veces": 7
+    },
+    {
+      "category": "rune",
+      "en": "Additional Maximum Resource",
+      "veces": 6
+    },
+    {
+      "category": "rune",
+      "en": "Bawl",
+      "veces": 6
+    },
+    {
+      "category": "skill",
+      "en": "Bone Prison",
+      "veces": 6
+    },
+    {
+      "category": "rune",
+      "en": "Bonus Healing",
+      "veces": 6
+    },
+    {
+      "category": "skill",
+      "en": "Consecration",
+      "veces": 6
+    },
+    {
+      "category": "rune",
+      "en": "Consume Chance",
+      "veces": 6
+    },
+    {
+      "category": "rune",
+      "en": "Critical Strike",
+      "veces": 6
+    },
+    {
+      "category": "rune",
+      "en": "Damage",
+      "veces": 6
+    },
+    {
+      "category": "rune",
+      "en": "Dominance",
+      "veces": 6
+    },
+    {
+      "category": "rune",
+      "en": "Extra Passive Stack",
+      "veces": 6
+    },
+    {
+      "category": "rune",
+      "en": "Frozen Heart",
+      "veces": 6
+    },
+    {
+      "category": "rune",
+      "en": "Gather the Guilty",
+      "veces": 6
+    },
+    {
+      "category": "rune",
+      "en": "Hallowed Ground",
+      "veces": 6
+    },
+    {
+      "category": "skill",
+      "en": "Inferno",
+      "veces": 6
+    },
+    {
+      "category": "rune",
+      "en": "Master of Puppets",
+      "veces": 6
+    },
+    {
+      "category": "rune",
+      "en": "Maximum Carnage",
+      "veces": 6
+    },
+    {
+      "category": "rune",
+      "en": "Relentless Pursuit",
+      "veces": 6
+    },
+    {
+      "category": "rune",
+      "en": "Reversal",
+      "veces": 6
+    },
+    {
+      "category": "rune",
+      "en": "Shadow Dancer",
+      "veces": 6
+    },
+    {
+      "category": "rune",
+      "en": "Size Increase",
+      "veces": 6
+    },
+    {
+      "category": "rune",
+      "en": "Additional Bounce",
       "veces": 5
+    },
+    {
+      "category": "skill",
+      "en": "Blood Wave",
+      "veces": 5
+    },
+    {
+      "category": "skillVariant",
+      "en": "Bone Prison Life Imprisonment",
+      "veces": 5
+    },
+    {
+      "category": "rune",
+      "en": "Charge",
+      "veces": 5
+    },
+    {
+      "category": "skill",
+      "en": "Earth Spike",
+      "veces": 5
+    },
+    {
+      "category": "skillVariant",
+      "en": "Familiar Fast As Lightning",
+      "veces": 5
+    },
+    {
+      "category": "rune",
+      "en": "Fast As Lightning",
+      "veces": 5
+    },
+    {
+      "category": "skill",
+      "en": "Flame Shield",
+      "veces": 5
+    },
+    {
+      "category": "rune",
+      "en": "Fury Gain",
+      "veces": 5
+    },
+    {
+      "category": "rune",
+      "en": "Get Over Here!",
+      "veces": 5
+    },
+    {
+      "category": "rune",
+      "en": "Greater Cyclone Armor",
+      "veces": 5
+    },
+    {
+      "category": "rune",
+      "en": "Hematolagnia",
+      "veces": 5
+    },
+    {
+      "category": "skill",
+      "en": "Holy Light Aura",
+      "veces": 5
+    },
+    {
+      "category": "rune",
+      "en": "Increased Radius",
+      "veces": 5
+    },
+    {
+      "category": "rune",
+      "en": "Life Imprisonment",
+      "veces": 5
+    },
+    {
+      "category": "rune",
+      "en": "Mighty Roar",
+      "veces": 5
+    },
+    {
+      "category": "rune",
+      "en": "Pull",
+      "veces": 5
+    },
+    {
+      "category": "rune",
+      "en": "Slow",
+      "veces": 5
+    },
+    {
+      "category": "rune",
+      "en": "Spirit",
+      "veces": 5
+    },
+    {
+      "category": "rune",
+      "en": "Armor",
+      "veces": 4
+    },
+    {
+      "category": "rune",
+      "en": "Artifice",
+      "veces": 4
+    },
+    {
+      "category": "skill",
+      "en": "Blessed Hammer",
+      "veces": 4
+    },
+    {
+      "category": "rune",
+      "en": "Damage Scaling",
+      "veces": 4
+    },
+    {
+      "category": "skill",
+      "en": "Dance of Knives",
+      "veces": 4
+    },
+    {
+      "category": "rune",
+      "en": "Derecho",
+      "veces": 4
+    },
+    {
+      "category": "skill",
+      "en": "Falling Star",
+      "veces": 4
+    },
+    {
+      "category": "skill",
+      "en": "Hurricane",
+      "veces": 4
+    },
+    {
+      "category": "skill",
+      "en": "Iron Skin",
+      "veces": 4
+    },
+    {
+      "category": "skill",
+      "en": "Metamorphosis",
+      "veces": 4
+    },
+    {
+      "category": "rune",
+      "en": "Minimum Strikes",
+      "veces": 4
+    },
+    {
+      "category": "skill",
+      "en": "Profane Sentinel",
+      "veces": 4
+    },
+    {
+      "category": "skill",
+      "en": "Rampage-v2",
+      "veces": 4
+    },
+    {
+      "category": "rune",
+      "en": "Resource Generation",
+      "veces": 4
+    },
+    {
+      "category": "rune",
+      "en": "Rite of Mercy",
+      "veces": 4
+    },
+    {
+      "category": "rune",
+      "en": "Seraph's Wings",
+      "veces": 4
+    },
+    {
+      "category": "skill",
+      "en": "Shadow Step",
+      "veces": 4
+    },
+    {
+      "category": "rune",
+      "en": "Shockwave",
+      "veces": 4
+    },
+    {
+      "category": "skill",
+      "en": "Sigil of Summons",
+      "veces": 4
+    },
+    {
+      "category": "skill",
+      "en": "Skeleton Mage",
+      "veces": 4
+    },
+    {
+      "category": "skill",
+      "en": "Unstable Currents",
+      "veces": 4
+    },
+    {
+      "category": "rune",
+      "en": "Weaken & Vulnerable",
+      "veces": 4
+    },
+    {
+      "category": "rune",
+      "en": "Wing Strike Recast",
+      "veces": 4
+    },
+    {
+      "category": "skill",
+      "en": "Apocalypse",
+      "veces": 3
+    },
+    {
+      "category": "skill",
+      "en": "Bone Storm",
+      "veces": 3
+    },
+    {
+      "category": "rune",
+      "en": "Channel Damage Bonus",
+      "veces": 3
+    },
+    {
+      "category": "skill",
+      "en": "Claw",
+      "veces": 3
+    },
+    {
+      "category": "rune",
+      "en": "Cost Damage Bonus",
+      "veces": 3
+    },
+    {
+      "category": "rune",
+      "en": "Coven",
+      "veces": 3
+    },
+    {
+      "category": "rune",
+      "en": "Crackling Energy",
+      "veces": 3
+    },
+    {
+      "category": "skillVariant",
+      "en": "Dance of Knives Star Shards",
+      "veces": 3
+    },
+    {
+      "category": "rune",
+      "en": "Dash",
+      "veces": 3
+    },
+    {
+      "category": "skill",
+      "en": "Decrepify",
+      "veces": 3
+    },
+    {
+      "category": "rune",
+      "en": "Demonic Grasp",
+      "veces": 3
+    },
+    {
+      "category": "rune",
+      "en": "Destruction Demon",
+      "veces": 3
+    },
+    {
+      "category": "rune",
+      "en": "Elite Hit Chance",
+      "veces": 3
+    },
+    {
+      "category": "rune",
+      "en": "Energy",
+      "veces": 3
+    },
+    {
+      "category": "rune",
+      "en": "Extra Bites",
+      "veces": 3
+    },
+    {
+      "category": "rune",
+      "en": "Ferocity, Resolve, or Overpower",
+      "veces": 3
+    },
+    {
+      "category": "rune",
+      "en": "Firebird",
+      "veces": 3
+    },
+    {
+      "category": "skill",
+      "en": "Fortress",
+      "veces": 3
+    },
+    {
+      "category": "skill",
+      "en": "Golem",
+      "veces": 3
+    },
+    {
+      "category": "rune",
+      "en": "Grasp Area",
+      "veces": 3
+    },
+    {
+      "category": "rune",
+      "en": "Killstreak Damage",
+      "veces": 3
+    },
+    {
+      "category": "rune",
+      "en": "Lifecoil",
+      "veces": 3
+    },
+    {
+      "category": "rune",
+      "en": "Living Bomb",
+      "veces": 3
+    },
+    {
+      "category": "skill",
+      "en": "Lunging Strike",
+      "veces": 3
+    },
+    {
+      "category": "skill",
+      "en": "Meteor",
+      "veces": 3
+    },
+    {
+      "category": "skill",
+      "en": "Nether Step",
+      "veces": 3
+    },
+    {
+      "category": "rune",
+      "en": "Pierce and Size",
+      "veces": 3
+    },
+    {
+      "category": "skill",
+      "en": "Poison Imbuement",
+      "veces": 3
+    },
+    {
+      "category": "rune",
+      "en": "Portals",
+      "veces": 3
+    },
+    {
+      "category": "skill",
+      "en": "Rally",
+      "veces": 3
+    },
+    {
+      "category": "rune",
+      "en": "Reach of the Law",
+      "veces": 3
+    },
+    {
+      "category": "rune",
+      "en": "Resolve Damage Bonus",
+      "veces": 3
+    },
+    {
+      "category": "rune",
+      "en": "Roll the Bones",
+      "veces": 3
+    },
+    {
+      "category": "rune",
+      "en": "Seismic Shift",
+      "veces": 3
+    },
+    {
+      "category": "rune",
+      "en": "Sentry",
+      "veces": 3
+    },
+    {
+      "category": "skill",
+      "en": "Sigil of Subversion",
+      "veces": 3
+    },
+    {
+      "category": "rune",
+      "en": "Slow and Movement Speed",
+      "veces": 3
+    },
+    {
+      "category": "rune",
+      "en": "Star Shards",
+      "veces": 3
+    },
+    {
+      "category": "skill",
+      "en": "Stone Burst",
+      "veces": 3
+    },
+    {
+      "category": "skill",
+      "en": "Summon Laalish",
+      "veces": 3
+    },
+    {
+      "category": "skill",
+      "en": "Terror Swarm",
+      "veces": 3
+    },
+    {
+      "category": "rune",
+      "en": "Toxic Touch",
+      "veces": 3
+    },
+    {
+      "category": "skill",
+      "en": "Tyrant's Grasp",
+      "veces": 3
+    },
+    {
+      "category": "rune",
+      "en": "Unstoppable Damage",
+      "veces": 3
+    },
+    {
+      "category": "skill",
+      "en": "Whirlwind",
+      "veces": 3
+    },
+    {
+      "category": "rune",
+      "en": "Wormhole",
+      "veces": 3
+    },
+    {
+      "category": "rune",
+      "en": "Wrath",
+      "veces": 3
+    },
+    {
+      "category": "rune",
+      "en": "Additional Demon",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Additional Hits",
+      "veces": 2
+    },
+    {
+      "category": "skill",
+      "en": "Aegis",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Ambush",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Annihilation",
+      "veces": 2
+    },
+    {
+      "category": "skill",
+      "en": "Army of the Dead",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Attack Speed and Damage Bonus",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Barricade",
+      "veces": 2
+    },
+    {
+      "category": "skill",
+      "en": "Blazing Scream",
+      "veces": 2
+    },
+    {
+      "category": "skillVariant",
+      "en": "Blessed Hammer Disciple's Halo",
+      "veces": 2
+    },
+    {
+      "category": "skill",
+      "en": "Blight",
+      "veces": 2
+    },
+    {
+      "category": "skill",
+      "en": "Blizzard",
+      "veces": 2
+    },
+    {
+      "category": "skill",
+      "en": "Blood Lance",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Blood Ritual",
+      "veces": 2
+    },
+    {
+      "category": "skill",
+      "en": "Bombardment",
+      "veces": 2
+    },
+    {
+      "category": "skill",
+      "en": "Call of the Ancients",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Cascading Dread",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Cast Range",
+      "veces": 2
+    },
+    {
+      "category": "skill",
+      "en": "Cataclysm",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Chain Aura",
+      "veces": 2
+    },
+    {
+      "category": "skillVariant",
+      "en": "Chain Aura",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Charge Increase",
+      "veces": 2
+    },
+    {
+      "category": "skill",
+      "en": "Clash",
+      "veces": 2
+    },
+    {
+      "category": "skill",
+      "en": "Command Fallen",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Contagion",
+      "veces": 2
+    },
+    {
+      "category": "skill",
+      "en": "Counterattack",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Crowd Control Damage",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Crowd Control Damage Bonus",
+      "veces": 2
+    },
+    {
+      "category": "skill",
+      "en": "Dark Prison",
+      "veces": 2
+    },
+    {
+      "category": "skillVariant",
+      "en": "Decrepify Life Tap",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Devouring Swarm",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Disciple's Halo",
+      "veces": 2
+    },
+    {
+      "category": "skill",
+      "en": "Doom",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Double Blast",
+      "veces": 2
+    },
+    {
+      "category": "skill",
+      "en": "Dread Claws",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Duration Damage Bonus",
+      "veces": 2
+    },
+    {
+      "category": "skill",
+      "en": "Earthen Bulwark",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Empowered",
+      "veces": 2
+    },
+    {
+      "category": "skillVariant",
+      "en": "Familiar Healing Flames",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Faster Than Light",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Focused Target",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Free Cast",
+      "veces": 2
+    },
+    {
+      "category": "skill",
+      "en": "Ground Stomp",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Growth Speed",
+      "veces": 2
+    },
+    {
+      "category": "skill",
+      "en": "Hammer of the Ancients",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Healing Flames",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Healthy Damage Bonus",
+      "veces": 2
+    },
+    {
+      "category": "skill",
+      "en": "Heartseeker",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Immobilize",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Impact Velocity",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Incarnate Duration",
+      "veces": 2
+    },
+    {
+      "category": "skill",
+      "en": "Incinerate",
+      "veces": 2
+    },
+    {
+      "category": "skillVariant",
+      "en": "Iron Skin Retaliation",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Juggernaut",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Korlic",
+      "veces": 2
+    },
+    {
+      "category": "skill",
+      "en": "Leap",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Lesser Demon Vulnerable",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Life Tap",
+      "veces": 2
+    },
+    {
+      "category": "skill",
+      "en": "Lightning Spear",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Litany of Death",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Living Stones",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Pierce",
+      "veces": 2
+    },
+    {
+      "category": "skill",
+      "en": "Quill Volley",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Ramping Currents",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Recuperate",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Resolve Generation",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Resolve, Overpower, or Ferocity",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Resource Regeneration",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Retaliation",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Reverse Polarity",
+      "veces": 2
+    },
+    {
+      "category": "skill",
+      "en": "Rock Splitter",
+      "veces": 2
+    },
+    {
+      "category": "skill",
+      "en": "Rushing Claw",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Seek and Duration Bonus",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Shattering Blow",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Shooting Star",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Skewer",
+      "veces": 2
+    },
+    {
+      "category": "skill",
+      "en": "Spear of the Heavens",
+      "veces": 2
+    },
+    {
+      "category": "skill",
+      "en": "Stinger",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Stomping Grounds",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Stronger Summons",
+      "veces": 2
+    },
+    {
+      "category": "skill",
+      "en": "Summon Ae'grom",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Summon Hellwyrm",
+      "veces": 2
+    },
+    {
+      "category": "skill",
+      "en": "Summon Vollach",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Survivor Damage",
+      "veces": 2
+    },
+    {
+      "category": "skill",
+      "en": "The Devourer",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Thorns",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Tornado",
+      "veces": 2
+    },
+    {
+      "category": "skill",
+      "en": "Umbral Chains",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Unhindered and Movement Speed",
+      "veces": 2
+    },
+    {
+      "category": "skillVariant",
+      "en": "War Cry Korlic",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Wide Beam",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Words of Rejuvenation",
+      "veces": 2
+    },
+    {
+      "category": "rune",
+      "en": "Abyssal Oppression",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Accumulating Strike",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Additional Fracture",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Additional Pillar",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Additional Raven",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Aftershock",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Air Burst",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Arc Lash",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Area Bonus",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Area Damage Bonus",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Area Increase",
+      "veces": 1
+    },
+    {
+      "category": "skillVariant",
+      "en": "Army of the Dead Dead Cold",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Assimilation",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Astral Projection",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Awakening",
+      "veces": 1
     },
     {
       "category": "skill",
@@ -25,7 +1560,77 @@
     },
     {
       "category": "rune",
+      "en": "Ballista",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Barrage",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Barrier Duration and Bonus",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Barrier Generation",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Bathed in Flame",
+      "veces": 1
+    },
+    {
+      "category": "rune",
       "en": "Battering Ram",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Bitter Harvest",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Bladedancer",
+      "veces": 1
+    },
+    {
+      "category": "skillVariant",
+      "en": "Blazing Scream Abyssal Oppression",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Blessed Shield",
+      "veces": 1
+    },
+    {
+      "category": "skillVariant",
+      "en": "Blessed Shield Shield of Retribution",
+      "veces": 1
+    },
+    {
+      "category": "skillVariant",
+      "en": "Blight Volatile Blood",
+      "veces": 1
+    },
+    {
+      "category": "skillVariant",
+      "en": "Blight Whirlpool",
+      "veces": 1
+    },
+    {
+      "category": "skillVariant",
+      "en": "Blizzard Static Field",
+      "veces": 1
+    },
+    {
+      "category": "skillVariant",
+      "en": "Blood Lance Festering Wound",
       "veces": 1
     },
     {
@@ -34,13 +1639,138 @@
       "veces": 1
     },
     {
+      "category": "rune",
+      "en": "Blood Orb",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Blood Seeker",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Blood Spear",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Blood Surge",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Blood Sworn",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Blood Transfusion",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Bloody Mess",
+      "veces": 1
+    },
+    {
+      "category": "skillVariant",
+      "en": "Bombardment Endless Barrage",
+      "veces": 1
+    },
+    {
+      "category": "skillVariant",
+      "en": "Bone Prison Plunging Darkness",
+      "veces": 1
+    },
+    {
       "category": "skill",
       "en": "Bone Spear",
       "veces": 1
     },
     {
+      "category": "skillVariant",
+      "en": "Bone Spear Blood Spear",
+      "veces": 1
+    },
+    {
       "category": "skill",
-      "en": "Challenging Shout",
+      "en": "Bone Spirit",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Bonus Feathers",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Boulder",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Boundless",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Brandish",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Breakneck Quiver",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Buffered Battery",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Canopy Shelter",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Capture Damage",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Chain Burst",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Chain Reaction",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Chain Whip",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Chain Whips",
+      "veces": 1
+    },
+    {
+      "category": "skillVariant",
+      "en": "Chain Whips",
+      "veces": 1
+    },
+    {
+      "category": "skillVariant",
+      "en": "Challenging Shout Talic",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Chance to Hit Twice",
       "veces": 1
     },
     {
@@ -54,8 +1784,178 @@
       "veces": 1
     },
     {
+      "category": "rune",
+      "en": "Cloudburst",
+      "veces": 1
+    },
+    {
       "category": "skill",
-      "en": "Corpse Tendrils",
+      "en": "Concussive Stomp",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Confluence",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Continental Shift",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Core Skill",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Corpse Explosion",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Corpse Generation",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Cost Reduction and Damage",
+      "veces": 1
+    },
+    {
+      "category": "skillVariant",
+      "en": "Counterattack Counterattack of the Swarm",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Counterattack of the Swarm",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Crashing Waves",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Crowd Controlled or Weakened",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Crowd Damage",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Crusader's March Effectiveness",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Crushing Hand",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Damage Bonus and Crowd Control",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Damage Bonus to Multiple",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Damage Bonus to Target",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Damage Increase and Execute",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Damage Over Time",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Damage Per Demon",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Damage to Sparking",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Dead Cold",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Death Blow",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Death From Above",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Death Trap",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Debilitate",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Demon Mangler",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Demon Masher",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Demon Turret",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Demonic Glare",
+      "veces": 1
+    },
+    {
+      "category": "skillVariant",
+      "en": "Demonic Glare",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Demonic Smash",
+      "veces": 1
+    },
+    {
+      "category": "skillVariant",
+      "en": "Demonic Smash",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Demonic Swipe-v2",
       "veces": 1
     },
     {
@@ -65,12 +1965,312 @@
     },
     {
       "category": "skill",
-      "en": "Firewall",
+      "en": "Divine Lance",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Dizzying Curse",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Dodge",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Dolmen's Will",
       "veces": 1
     },
     {
       "category": "skill",
-      "en": "Flame Shield",
+      "en": "Double Swing",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Echo",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Electrobolt",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Elite Damage",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Endemic",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Endless Barrage",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Enemy Damage Bonus",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Energy Cost Reduction",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Energy Gain",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Erupting Skin",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Eruption",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Evasive Swipe",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Evolving Claws",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Explosion Damage Bonus",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Explosive",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Explosive Death",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Explosive Tornado",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Explosive Trigger",
+      "veces": 1
+    },
+    {
+      "category": "skillVariant",
+      "en": "Falling Star Fanatic Descent",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Fanatic Descent",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Feeding Frenzy",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Fel Gluttony",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Festering Wound",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Fiend of Abaddon",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Fire Bolt",
+      "veces": 1
+    },
+    {
+      "category": "skillVariant",
+      "en": "Fire Bolt Shiver",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Fireball",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Firewall",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "First Hit Damage Bonus",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Fissure",
+      "veces": 1
+    },
+    {
+      "category": "skillVariant",
+      "en": "Flame Shield Flash",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Flamethrower",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Flash",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Flock of Feathers",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Flurry",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Focused Flame",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Focused Glare",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Focused Strike",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Forceful Arrow",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Fortify and Healing",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Frenzy",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Frenzy Stacks",
+      "veces": 1
+    },
+    {
+      "category": "skillVariant",
+      "en": "Frenzy Throwing",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Frost Nova",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Frostbite Trap",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Frozen and Chill",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Frozen Orb",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Full Throttle",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Gargantua",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Gift of Death",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Gravebloom",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Grenade Jumper",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Hailstorm",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Harvest",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Healing and Vulnerable",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Heaven's Fury",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Heavy Harpoon",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Heavy Impact Damage",
       "veces": 1
     },
     {
@@ -79,43 +2279,603 @@
       "veces": 1
     },
     {
-      "category": "skill",
-      "en": "Holy Aura",
+      "category": "rune",
+      "en": "Hellfire Aura",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Hit Damage Bonus",
       "veces": 1
     },
     {
       "category": "skill",
-      "en": "Ice Armor",
+      "en": "Holy Bolt",
       "veces": 1
     },
     {
       "category": "skill",
-      "en": "Iron Skin",
+      "en": "Ice Shards",
+      "veces": 1
+    },
+    {
+      "category": "skillVariant",
+      "en": "Ice Shards Thunderbolt",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Impunity",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Increased Cost and Damage",
       "veces": 1
     },
     {
       "category": "skill",
+      "en": "Infernal Breath",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Infiltration Trails",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Initial Damage Bonus",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Inner Ferocity",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Instantaneous Destruction",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Invigorating Strike",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Jaws of Death",
+      "veces": 1
+    },
+    {
+      "category": "rune",
       "en": "Judgement",
       "veces": 1
     },
     {
-      "category": "skill",
-      "en": "Pestilent Swarm",
+      "category": "rune",
+      "en": "Knock Down",
       "veces": 1
     },
     {
       "category": "skill",
-      "en": "Profane Sentinel",
+      "en": "Lacerate",
       "veces": 1
     },
     {
       "category": "skill",
-      "en": "Rallying Cry",
+      "en": "Landslide",
+      "veces": 1
+    },
+    {
+      "category": "skillVariant",
+      "en": "Leap Mosh",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Lesser Demon Wrath",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Lightning Dancer",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Long Range Slow",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Lucky Hit",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Lucky Hit Chance",
       "veces": 1
     },
     {
       "category": "skill",
-      "en": "Ravager",
+      "en": "Maul",
+      "veces": 1
+    },
+    {
+      "category": "skillVariant",
+      "en": "Maul Stone Fists",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Maximum Essence",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Meat Shields",
+      "veces": 1
+    },
+    {
+      "category": "skillVariant",
+      "en": "Meat Shields",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Mega Lunatic",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Megalith Stone",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Mightiest",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Mighty Throw",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Molten Bomb",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Mosh",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Multiple Corpses",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Multiple Projectiles",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Narrow Blast",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Nightmare",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Orbital",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Orbital Scream",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Overcharged",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Overflow",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Part the Heavens",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Passive Bonus",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Payback",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Penetrating Shot",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Pierce Damage Bonus",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Plunging Darkness",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Poison Trap",
+      "veces": 1
+    },
+    {
+      "category": "skillVariant",
+      "en": "Poison Trap Frostbite Trap",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Poisoning Duration",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Poisoning Speed",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Potent Sting",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Procession",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Projectile Speed",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Pulverize",
+      "veces": 1
+    },
+    {
+      "category": "skillVariant",
+      "en": "Pulverize Shockwave",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Punching Bag",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Punishment",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Quill Command",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Rabies",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Rain of Arrows",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Rake",
+      "veces": 1
+    },
+    {
+      "category": "skillVariant",
+      "en": "Rake Simian Swipe",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Rampart of Thorns",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Ramping Damage",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Ranged Damage",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Rapid Fire",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Raven Flock",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Ravens",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Razor Wings",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Reap",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Reconstruction",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Refund Charges",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Rend",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Resource Damage Bonus",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Returning Feathers",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Returning Light",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Ricochet",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Ring of Fire",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Rite of Humility",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Rite of Prayer",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Rite of Redemption",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Rite of Submission",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Rite of Thorns",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Roar of Resolve",
+      "veces": 1
+    },
+    {
+      "category": "skillVariant",
+      "en": "Rock Splitter Inner Ferocity",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Rumbling Stones",
+      "veces": 1
+    },
+    {
+      "category": "skillVariant",
+      "en": "Rushing Claw Evasive Swipe",
+      "veces": 1
+    },
+    {
+      "category": "skillVariant",
+      "en": "Scourge The Beast Within",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Seekers",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Seize Them",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Sermon of Steel",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Service and Sacrifice",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Severe Storm",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Shade Grenade",
+      "veces": 1
+    },
+    {
+      "category": "skillVariant",
+      "en": "Shadow Clone Sentry",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Shadow Imbuement",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Shatter",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Shattered Path",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Shattered Stone",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Shield of Retribution",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Shiver",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Shred",
+      "veces": 1
+    },
+    {
+      "category": "skillVariant",
+      "en": "Shred Storm Shred",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Sigil of Chaos",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Sigil of Lava",
+      "veces": 1
+    },
+    {
+      "category": "skillVariant",
+      "en": "Sigil of Lava",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Simian Swipe",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Single Target Damage",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Size",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Size and Damage Bonus",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Sky and Soil",
+      "veces": 1
+    },
+    {
+      "category": "skillVariant",
+      "en": "Smoke Grenade Shade Grenade",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Spark",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Spew Putrefaction",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Spiteful Enrage",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Stacking Damage",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Static Field",
       "veces": 1
     },
     {
@@ -124,28 +2884,283 @@
       "veces": 1
     },
     {
-      "category": "skill",
-      "en": "Teleport",
+      "category": "rune",
+      "en": "Stone Fists",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Storm Bolt",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Storm Shred",
       "veces": 1
     },
     {
       "category": "skill",
-      "en": "Unstable Currents",
+      "en": "Storm Strike",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Succession",
       "veces": 1
     },
     {
       "category": "skill",
-      "en": "Wall of Agony",
+      "en": "Summon Abodian",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Summon Succubus",
+      "veces": 1
+    },
+    {
+      "category": "skillVariant",
+      "en": "Summon Succubus",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Superinfection",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Tag Team",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Talic",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Tectonic Spikes",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Temperance Training",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Terror Demon",
+      "veces": 1
+    },
+    {
+      "category": "skillVariant",
+      "en": "Terror Demon",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "The Beast Within",
+      "veces": 1
+    },
+    {
+      "category": "skillVariant",
+      "en": "The Devourer Sky and Soil",
       "veces": 1
     },
     {
       "category": "skill",
-      "en": "War Cry",
+      "en": "The Protector",
       "veces": 1
     },
     {
       "category": "skill",
-      "en": "Whirlwind",
+      "en": "The Seeker",
+      "veces": 1
+    },
+    {
+      "category": "skillVariant",
+      "en": "The Seeker Tag Team",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Thorns Damage",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Throwing",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Thunder God",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Thunderbolt",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Thunderspike",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Tip of the Spear",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Tornado",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Tortured Wretch",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Transporter",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Travertine Bulwark",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Twister",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Twisting Blades",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Unleash the Swarm",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Unrelenting Assault",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Unyielding Commander",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Vacuum Swap",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Volatile Blood",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Volatility",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Volatility Duration",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Vulnerable Damage Bonus",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Vulnerable or Weakened",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Walk With The Light",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Weakened Damage Bonus",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Werewolf Pack",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Whirling",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Whirlpool",
+      "veces": 1
+    },
+    {
+      "category": "skillVariant",
+      "en": "Whirlwind Winding",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Winding",
+      "veces": 1
+    },
+    {
+      "category": "skillVariant",
+      "en": "Wolves Werewolf Pack",
+      "veces": 1
+    },
+    {
+      "category": "skillVariant",
+      "en": "Wrath of the Berserker Full Throttle",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Wrath of the Gorilla",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Wrath Refund",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "You And What Army?",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Zeal",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Zealot's Legacy",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Zenith",
       "veces": 1
     }
   ]

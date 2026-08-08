@@ -1,0 +1,475 @@
+{
+  "classId": "sorcerer",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Blizzard",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__blizzard",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Familiar",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__familiar",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Flame Shield",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__flame_shield",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Hydra",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__hydra",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Ice Armor",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__ice_armor",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Teleport",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__teleport",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__blizzard",
+        "label": {
+          "category": "skill",
+          "enUS": "Blizzard",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__blizzard",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:4b94b28d-fd5e-49a0-b8eb-f1144074b930:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__familiar",
+        "label": {
+          "category": "skill",
+          "enUS": "Familiar",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__familiar",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:4b94b28d-fd5e-49a0-b8eb-f1144074b930:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__flame_shield",
+        "label": {
+          "category": "skill",
+          "enUS": "Flame Shield",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__flame_shield",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:4b94b28d-fd5e-49a0-b8eb-f1144074b930:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__hydra",
+        "label": {
+          "category": "skill",
+          "enUS": "Hydra",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__hydra",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:4b94b28d-fd5e-49a0-b8eb-f1144074b930:0": 14
+        }
+      },
+      {
+        "key": "skill:skill__ice_armor",
+        "label": {
+          "category": "skill",
+          "enUS": "Ice Armor",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__ice_armor",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:4b94b28d-fd5e-49a0-b8eb-f1144074b930:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__teleport",
+        "label": {
+          "category": "skill",
+          "enUS": "Teleport",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__teleport",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:4b94b28d-fd5e-49a0-b8eb-f1144074b930:0": 1
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "sorcerer::skill__ice_armor::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "ice-spikes-sorcerer-endgame",
+  "primaryVariantId": "d4builds:4b94b28d-fd5e-49a0-b8eb-f1144074b930:0",
+  "ratings": {
+    "pitTier": 115,
+    "tierLabel": null,
+    "tierRank": null
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Ice Spikes",
+    "es": "Ice Spikes"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:4b94b28d-fd5e-49a0-b8eb-f1144074b930:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Teleport",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__teleport",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Weaken",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__weaken",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Blaze",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__blaze",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Ferocity",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ferocity",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Teleport Blaze",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__teleport_blaze",
+            "sno": null
+          }
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Ice Armor",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__ice_armor",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Cooldown Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown_reduction",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Permafrost",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__permafrost",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Duration Bonus and Barrier",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__duration_bonus_and_barrier",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Familiar",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__familiar",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Charge",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__charge",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Fast As Lightning",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__fast_as_lightning",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Duration Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__duration_bonus",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Familiar Fast As Lightning",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__familiar_fast_as_lightning",
+            "sno": null
+          }
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 14,
+          "ref": {
+            "category": "skill",
+            "enUS": "Hydra",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__hydra",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Overpower",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__overpower",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Frigid Hydra",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__frigid_hydra",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Cooldown Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown_reduction",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Hydra Frigid Hydra",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__hydra_frigid_hydra",
+            "sno": null
+          }
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Blizzard",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__blizzard",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Barrier",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__barrier",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Hailstorm",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__hailstorm",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Seek and Duration Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__seek_and_duration_bonus",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Flame Shield",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__flame_shield",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Cooldown Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown_reduction",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Firebird",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__firebird",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Overpower",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__overpower",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": null,
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "4b94b28d-fd5e-49a0-b8eb-f1144074b930",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "7e9e439fb9195b1091f7d84f0cd9236de9598beb75d50d74651955d425ef81c0",
+        "url": "https://d4builds.gg/builds/ice-spikes-sorcerer-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

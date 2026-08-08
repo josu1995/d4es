@@ -1,0 +1,438 @@
+{
+  "classId": "sorcerer",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Hydra",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__hydra",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Ice Armor",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__ice_armor",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Incinerate",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__incinerate",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Inferno",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__inferno",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Spark",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__spark",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Teleport",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__teleport",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__hydra",
+        "label": {
+          "category": "skill",
+          "enUS": "Hydra",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__hydra",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:d7e85144-9110-4f93-ac3c-8c79f2fdb2a8:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__ice_armor",
+        "label": {
+          "category": "skill",
+          "enUS": "Ice Armor",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__ice_armor",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:d7e85144-9110-4f93-ac3c-8c79f2fdb2a8:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__incinerate",
+        "label": {
+          "category": "skill",
+          "enUS": "Incinerate",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__incinerate",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:d7e85144-9110-4f93-ac3c-8c79f2fdb2a8:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__inferno",
+        "label": {
+          "category": "skill",
+          "enUS": "Inferno",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__inferno",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:d7e85144-9110-4f93-ac3c-8c79f2fdb2a8:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__spark",
+        "label": {
+          "category": "skill",
+          "enUS": "Spark",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__spark",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:d7e85144-9110-4f93-ac3c-8c79f2fdb2a8:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__teleport",
+        "label": {
+          "category": "skill",
+          "enUS": "Teleport",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__teleport",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:d7e85144-9110-4f93-ac3c-8c79f2fdb2a8:0": 1
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "sorcerer::skill__hydra::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "hydra-sorcerer-leveling",
+  "primaryVariantId": "d4builds:d7e85144-9110-4f93-ac3c-8c79f2fdb2a8:0",
+  "ratings": {
+    "pitTier": null,
+    "tierLabel": null,
+    "tierRank": 1
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "leveling"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Hydra",
+    "es": "Hydra"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:d7e85144-9110-4f93-ac3c-8c79f2fdb2a8:0",
+      "levelBand": "leveling",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Incinerate",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__incinerate",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Healthy Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__healthy_damage_bonus",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Focused Flame",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__focused_flame",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Execute",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__execute",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Teleport",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__teleport",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Movement Speed",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__movement_speed",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Wormhole",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__wormhole",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Ferocity",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ferocity",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Ice Armor",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__ice_armor",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Resource Regeneration",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__resource_regeneration",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Permafrost",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__permafrost",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Inferno",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__inferno",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Pull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__pull",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Living Bomb",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__living_bomb",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Cooldown Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown_reduction",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Spark",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__spark",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Additional Hits",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__additional_hits",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Overcharged",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__overcharged",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Additional Hits",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__additional_hits",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Hydra",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__hydra",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Healing",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__healing",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Bathed in Flame",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__bathed_in_flame",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": "Rob2628",
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "d7e85144-9110-4f93-ac3c-8c79f2fdb2a8",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "0bce4e71c18b43f2c606ff5d9e7d70df6e7e110d651cadc8213f6cd33a53c795",
+        "url": "https://d4builds.gg/builds/hydra-sorcerer-leveling/",
+        "variantIndex": 0,
+        "variantLabel": "Leveling"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

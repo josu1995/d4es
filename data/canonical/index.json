@@ -2,35 +2,119 @@
   "builds": [
     {
       "authors": [
-        "Northwar"
+        "Rob2628"
       ],
-      "classId": "sorcerer",
-      "classSlug": "hechicero",
+      "classId": "barbarian",
+      "classSlug": "barbaro",
       "completeness": 0.35,
       "content": [
         "endgame"
       ],
       "hasMythic": false,
-      "id": "ball-lightning-sorcerer-endgame",
+      "id": "ancients-barbarian-endgame",
       "pitTier": 150,
       "season": 14,
+      "skillIcons": [
+        "iron_skin",
+        "war_cry_korlic",
+        "challenging_shout_talic",
+        "rallying_cry",
+        "call_of_the_ancients",
+        "mighty_throw"
+      ],
       "skills": [
-        "Ball Lightning",
-        "Teleport",
-        "Ice Armor",
-        "Unstable Currents"
+        "Iron Skin",
+        "War Cry",
+        "Challenging Shout",
+        "Rallying Cry",
+        "Call of the Ancients",
+        "Mighty Throw"
       ],
       "sources": [
         "d4builds"
       ],
       "tierLabel": "A",
-      "title": "Ball Lightning",
-      "titleEn": "Ball Lightning",
-      "updatedAt": "2026-08-08T00:00:00.000Z"
+      "title": "Ancients",
+      "titleEn": "Ancients",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "warlock",
+      "classSlug": "brujo",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "apocalypse-warlock-endgame",
+      "pitTier": 145,
+      "season": 14,
+      "skillIcons": [
+        "chain_whips",
+        "sigil_of_lava",
+        "summon_vollach",
+        "chain_aura",
+        "apocalypse",
+        "bombardment_endless_barrage"
+      ],
+      "skills": [
+        "Umbral Chains",
+        "Sigil of Subversion",
+        "Summon Vollach",
+        "Dark Prison",
+        "Apocalypse",
+        "Bombardment"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": "B",
+      "title": "Apocalypse",
+      "titleEn": "Apocalypse",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
     },
     {
       "authors": [
-        "MacroBioBoi"
+        "Rob2628"
+      ],
+      "classId": "paladin",
+      "classSlug": "paladin",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "arbiter-wing-strike-paladin-endgame",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "aegis",
+        "fanaticism_aura",
+        "condemn",
+        "defiance_aura",
+        "arbiter_of_justice",
+        "consecration"
+      ],
+      "skills": [
+        "Aegis",
+        "Fanaticism Aura",
+        "Condemn",
+        "Defiance Aura",
+        "Arbiter of Justice",
+        "Consecration"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": "A",
+      "title": "Arbiter Wing Strike",
+      "titleEn": "Arbiter Wing Strike",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [
+        "Rob2628"
       ],
       "classId": "necromancer",
       "classSlug": "nigromante",
@@ -39,13 +123,464 @@
         "endgame"
       ],
       "hasMythic": false,
-      "id": "bone-spear-necromancer-endgame",
-      "pitTier": 130,
+      "id": "army-of-the-dead-necromancer-endgame",
+      "pitTier": 115,
       "season": 14,
+      "skillIcons": [
+        "skeleton_warrior",
+        "army_of_the_dead_dead_cold",
+        "blood_mist",
+        "corpse_explosion",
+        "skeleton_mage",
+        "golem"
+      ],
       "skills": [
-        "Bone Spear",
+        "Skeleton Warrior",
+        "Army of the Dead",
+        "Blood Mist",
+        "Corpse Explosion",
+        "Skeleton Mage",
+        "Golem"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Army of the Dead",
+      "titleEn": "Army of the Dead",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "rogue",
+      "classSlug": "picaro",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "arrow-storms-rogue-endgame",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "cold_imbuement",
+        "dash",
+        "concealment",
+        "smoke_grenade",
+        "barrage",
+        "forceful_arrow"
+      ],
+      "skills": [
+        "Cold Imbuement",
+        "Dash",
+        "Concealment",
+        "Smoke Grenade",
+        "Barrage",
+        "Forceful Arrow"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Arrow Storms",
+      "titleEn": "Arrow Storms",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [
+        "Rob2628"
+      ],
+      "classId": "paladin",
+      "classSlug": "paladin",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "auradin-paladin-endgame",
+      "pitTier": null,
+      "season": 13,
+      "skillIcons": [
+        "blessed_hammer",
+        "fanaticism_aura",
+        "holy_light_aura",
+        "defiance_aura",
+        "condemn",
+        "arbiter_of_justice"
+      ],
+      "skills": [
+        "Blessed Hammer",
+        "Fanaticism Aura",
+        "Holy Light Aura",
+        "Defiance Aura",
+        "Condemn",
+        "Arbiter of Justice"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Auradin",
+      "titleEn": "Auradin",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "sorcerer",
+      "classSlug": "hechicero",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "ball-lightning-sorcerer-endgame",
+      "pitTier": 125,
+      "season": 14,
+      "skillIcons": [
+        "unstable_currents",
+        "teleport_blaze",
+        "ice_armor",
+        "meteor",
+        "ball_lightning",
+        "hydra_frigid_hydra"
+      ],
+      "skills": [
+        "Unstable Currents",
+        "Teleport",
+        "Ice Armor",
+        "Meteor",
+        "Ball Lightning",
+        "Hydra"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": "B",
+      "title": "Ball Lightning",
+      "titleEn": "Ball Lightning",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [
+        "Rob2628"
+      ],
+      "classId": "paladin",
+      "classSlug": "paladin",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "blessed-hammer-paladin-endgame",
+      "pitTier": 120,
+      "season": 14,
+      "skillIcons": [
+        "blessed_hammer_disciple_s_halo",
+        "fanaticism_aura",
+        "defiance_aura",
+        "consecration",
+        "condemn",
+        "arbiter_of_justice"
+      ],
+      "skills": [
+        "Blessed Hammer",
+        "Fanaticism Aura",
+        "Defiance Aura",
+        "Consecration",
+        "Condemn",
+        "Arbiter of Justice"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Blessed Hammer",
+      "titleEn": "Blessed Hammer",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [
+        "Rob2628"
+      ],
+      "classId": "paladin",
+      "classSlug": "paladin",
+      "completeness": 0.35,
+      "content": [
+        "leveling"
+      ],
+      "hasMythic": false,
+      "id": "blessed-hammer-paladin-leveling",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "blessed_hammer_disciple_s_halo",
+        "defiance_aura",
+        "fanaticism_aura",
+        "arbiter_of_justice",
+        "holy_bolt",
+        "rally"
+      ],
+      "skills": [
+        "Blessed Hammer",
+        "Defiance Aura",
+        "Fanaticism Aura",
+        "Arbiter of Justice",
+        "Holy Bolt",
+        "Rally"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Blessed Hammer",
+      "titleEn": "Blessed Hammer",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "paladin",
+      "classSlug": "paladin",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "blessed-shield-paladin-endgame",
+      "pitTier": 135,
+      "season": 14,
+      "skillIcons": [
+        "fortress",
+        "fanaticism_aura",
+        "defiance_aura",
+        "aegis",
+        "blessed_shield_shield_of_retribution",
+        "clash"
+      ],
+      "skills": [
+        "Fortress",
+        "Fanaticism Aura",
+        "Defiance Aura",
+        "Aegis",
+        "Blessed Shield",
+        "Clash"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": "B",
+      "title": "Blessed Shield",
+      "titleEn": "Blessed Shield",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "necromancer",
+      "classSlug": "nigromante",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "blight-necromancer-endgame",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "skeleton_warrior",
+        "corpse_tendrils",
+        "bone_prison_life_imprisonment",
+        "blood_wave",
+        "blight_volatile_blood",
+        "sever"
+      ],
+      "skills": [
+        "Skeleton Warrior",
         "Corpse Tendrils",
-        "Blood Mist"
+        "Bone Prison",
+        "Blood Wave",
+        "Blight",
+        "Sever"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Blight",
+      "titleEn": "Blight",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "sorcerer",
+      "classSlug": "hechicero",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "blizzard-sorcerer-endgame",
+      "pitTier": 120,
+      "season": 14,
+      "skillIcons": [
+        "unstable_currents",
+        "teleport_blaze",
+        "ice_armor",
+        "flame_shield",
+        "blizzard_static_field",
+        "hydra_frigid_hydra"
+      ],
+      "skills": [
+        "Unstable Currents",
+        "Teleport",
+        "Ice Armor",
+        "Flame Shield",
+        "Blizzard",
+        "Hydra"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": "B",
+      "title": "Blizzard",
+      "titleEn": "Blizzard",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "necromancer",
+      "classSlug": "nigromante",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "blood-lance-necromancer-endgame",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "skeleton_warrior",
+        "corpse_tendrils",
+        "bone_prison_life_imprisonment",
+        "blood_wave",
+        "blood_lance",
+        "sever"
+      ],
+      "skills": [
+        "Skeleton Warrior",
+        "Corpse Tendrils",
+        "Bone Prison",
+        "Blood Wave",
+        "Blood Lance",
+        "Sever"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Blood Lance",
+      "titleEn": "Blood Lance",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "necromancer",
+      "classSlug": "nigromante",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "blood-surge-necromancer-endgame",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "skeleton_warrior",
+        "corpse_tendrils",
+        "bone_prison_life_imprisonment",
+        "blood_wave",
+        "blood_surge",
+        "sever"
+      ],
+      "skills": [
+        "Skeleton Warrior",
+        "Corpse Tendrils",
+        "Bone Prison",
+        "Blood Wave",
+        "Blood Surge",
+        "Sever"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Blood Surge",
+      "titleEn": "Blood Surge",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [
+        "Rob2628"
+      ],
+      "classId": "necromancer",
+      "classSlug": "nigromante",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "blood-wave-necromancer-endgame",
+      "pitTier": 135,
+      "season": 14,
+      "skillIcons": [
+        "sever",
+        "blood_lance_festering_wound",
+        "bone_prison_life_imprisonment",
+        "corpse_tendrils",
+        "decrepify_life_tap",
+        "blood_wave"
+      ],
+      "skills": [
+        "Sever",
+        "Blood Lance",
+        "Bone Prison",
+        "Corpse Tendrils",
+        "Decrepify",
+        "Blood Wave"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": "A",
+      "title": "Blood Wave",
+      "titleEn": "Blood Wave",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "necromancer",
+      "classSlug": "nigromante",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "bone-spear-necromancer-endgame",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "skeleton_warrior",
+        "corpse_tendrils",
+        "bone_prison_life_imprisonment",
+        "blood_wave",
+        "bone_spear_blood_spear",
+        "sever"
+      ],
+      "skills": [
+        "Skeleton Warrior",
+        "Corpse Tendrils",
+        "Bone Prison",
+        "Blood Wave",
+        "Bone Spear",
+        "Sever"
       ],
       "sources": [
         "d4builds"
@@ -53,7 +588,151 @@
       "tierLabel": "B",
       "title": "Bone Spear",
       "titleEn": "Bone Spear",
-      "updatedAt": "2026-08-08T00:00:00.000Z"
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "necromancer",
+      "classSlug": "nigromante",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "bone-spirit-necromancer-endgame",
+      "pitTier": 130,
+      "season": 14,
+      "skillIcons": [
+        "sever",
+        "corpse_tendrils",
+        "skeleton_warrior",
+        "skeleton_mage",
+        "bone_spirit",
+        "bone_storm"
+      ],
+      "skills": [
+        "Sever",
+        "Corpse Tendrils",
+        "Skeleton Warrior",
+        "Skeleton Mage",
+        "Bone Spirit",
+        "Bone Storm"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": "B",
+      "title": "Bone Spirit",
+      "titleEn": "Bone Spirit",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "druid",
+      "classSlug": "druida",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "boulder-druid-endgame",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "grizzly_rage",
+        "lightning_storm",
+        "wolves",
+        "cyclone_armor",
+        "boulder",
+        "claw"
+      ],
+      "skills": [
+        "Grizzly Rage",
+        "Lightning Storm",
+        "Wolves",
+        "Cyclone Armor",
+        "Boulder",
+        "Claw"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Boulder",
+      "titleEn": "Boulder",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "paladin",
+      "classSlug": "paladin",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "brandish-paladin-endgame",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "fanaticism_aura",
+        "defiance_aura",
+        "holy_light_aura",
+        "falling_star",
+        "brandish",
+        "fortress"
+      ],
+      "skills": [
+        "Fanaticism Aura",
+        "Defiance Aura",
+        "Holy Light Aura",
+        "Falling Star",
+        "Brandish",
+        "Fortress"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Brandish",
+      "titleEn": "Brandish",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "druid",
+      "classSlug": "druida",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "cataclysm-druid-endgame",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "lightning_storm",
+        "ravens",
+        "hurricane",
+        "cyclone_armor",
+        "cataclysm",
+        "earth_spike"
+      ],
+      "skills": [
+        "Lightning Storm",
+        "Ravens",
+        "Hurricane",
+        "Cyclone Armor",
+        "Cataclysm",
+        "Earth Spike"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Cataclysm",
+      "titleEn": "Cataclysm",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
     },
     {
       "authors": [
@@ -69,11 +748,21 @@
       "id": "charge-barbarian-endgame",
       "pitTier": 150,
       "season": 14,
+      "skillIcons": [
+        "iron_skin",
+        "war_cry",
+        "steel_grasp",
+        "rallying_cry",
+        "charge_battering_ram",
+        "wrath_of_the_berserker_full_throttle"
+      ],
       "skills": [
-        "Charge",
         "Iron Skin",
         "War Cry",
-        "Steel Grasp"
+        "Steel Grasp",
+        "Rallying Cry",
+        "Charge",
+        "Wrath of the Berserker"
       ],
       "sources": [
         "d4builds"
@@ -81,37 +770,893 @@
       "tierLabel": "S",
       "title": "Charge",
       "titleEn": "Charge",
-      "updatedAt": "2026-08-08T00:00:00.000Z"
+      "updatedAt": "2026-08-08T21:57:21.526Z"
     },
     {
-      "authors": [
-        "Northwar"
-      ],
-      "classId": "sorcerer",
-      "classSlug": "hechicero",
+      "authors": [],
+      "classId": "paladin",
+      "classSlug": "paladin",
       "completeness": 0.35,
       "content": [
-        "leveling"
+        "endgame"
       ],
       "hasMythic": false,
-      "id": "firewall-sorcerer-leveling",
-      "pitTier": 60,
+      "id": "clash-paladin-endgame",
+      "pitTier": 130,
       "season": 14,
+      "skillIcons": [
+        "fanaticism_aura",
+        "defiance_aura",
+        "holy_light_aura",
+        "consecration",
+        "clash",
+        "fortress"
+      ],
       "skills": [
-        "Firewall",
-        "Flame Shield"
+        "Fanaticism Aura",
+        "Defiance Aura",
+        "Holy Light Aura",
+        "Consecration",
+        "Clash",
+        "Fortress"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": "B",
+      "title": "Clash",
+      "titleEn": "Clash",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "warlock",
+      "classSlug": "brujo",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "command-fallen-warlock-endgame",
+      "pitTier": 140,
+      "season": 14,
+      "skillIcons": [
+        "metamorphosis",
+        "sigil_of_summons",
+        "summon_ae_grom",
+        "rampage_v2",
+        "command_fallen",
+        "tortured_wretch"
+      ],
+      "skills": [
+        "Metamorphosis",
+        "Sigil of Summons",
+        "Summon Ae'grom",
+        "Rampage-v2",
+        "Command Fallen",
+        "Tortured Wretch"
       ],
       "sources": [
         "d4builds"
       ],
       "tierLabel": null,
-      "title": "Firewall",
-      "titleEn": "Firewall",
-      "updatedAt": "2026-08-08T00:00:00.000Z"
+      "title": "Command Fallen",
+      "titleEn": "Command Fallen",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
     },
     {
       "authors": [
-        "Chronikz"
+        "Rob2628"
+      ],
+      "classId": "druid",
+      "classSlug": "druida",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "companion-druid-endgame",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "debilitating_roar",
+        "earthen_bulwark",
+        "cyclone_armor",
+        "grizzly_rage",
+        "claw",
+        "wolves_werewolf_pack"
+      ],
+      "skills": [
+        "Debilitating Roar",
+        "Earthen Bulwark",
+        "Cyclone Armor",
+        "Grizzly Rage",
+        "Claw",
+        "Wolves"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": "A",
+      "title": "Companion",
+      "titleEn": "Companion",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "sorcerer",
+      "classSlug": "hechicero",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "crackling-energy-sorcerer-endgame",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "teleport_blaze",
+        "flame_shield_flash",
+        "ice_armor",
+        "familiar_healing_flames",
+        "fire_bolt_shiver",
+        "unstable_currents"
+      ],
+      "skills": [
+        "Teleport",
+        "Flame Shield",
+        "Ice Armor",
+        "Familiar",
+        "Fire Bolt",
+        "Unstable Currents"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Crackling Energy",
+      "titleEn": "Crackling Energy",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "spiritborn",
+      "classSlug": "espiritista",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "crushing-hand-spiritborn-endgame",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "ravager",
+        "armored_hide",
+        "scourge",
+        "toxic_skin",
+        "crushing_hand",
+        "the_hunter"
+      ],
+      "skills": [
+        "Ravager",
+        "Armored Hide",
+        "Scourge",
+        "Toxic Skin",
+        "Crushing Hand",
+        "The Hunter"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": "B",
+      "title": "Crushing Hand",
+      "titleEn": "Crushing Hand",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "rogue",
+      "classSlug": "picaro",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "dance-of-knives-rogue-endgame",
+      "pitTier": 140,
+      "season": 14,
+      "skillIcons": [
+        "poison_imbuement",
+        "concealment",
+        "dash",
+        "dark_shroud",
+        "dance_of_knives_star_shards",
+        "shadow_clone"
+      ],
+      "skills": [
+        "Poison Imbuement",
+        "Concealment",
+        "Dash",
+        "Dark Shroud",
+        "Dance of Knives",
+        "Shadow Clone"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": "A",
+      "title": "Dance of Knives",
+      "titleEn": "Dance of Knives",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [
+        "Rob2628"
+      ],
+      "classId": "rogue",
+      "classSlug": "picaro",
+      "completeness": 0.35,
+      "content": [
+        "leveling"
+      ],
+      "hasMythic": false,
+      "id": "dance-of-knives-rogue-leveling",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "shadow_clone",
+        "shadow_imbuement",
+        "dark_shroud",
+        "concealment",
+        "invigorating_strike",
+        "dance_of_knives_star_shards"
+      ],
+      "skills": [
+        "Shadow Clone",
+        "Shadow Imbuement",
+        "Dark Shroud",
+        "Concealment",
+        "Invigorating Strike",
+        "Dance of Knives"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": "A",
+      "title": "Dance of Knives",
+      "titleEn": "Dance of Knives",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [
+        "Rob2628"
+      ],
+      "classId": "barbarian",
+      "classSlug": "barbaro",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "death-blow-barbarian-endgame",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "frenzy_throwing",
+        "death_blow",
+        "challenging_shout",
+        "rallying_cry",
+        "wrath_of_the_berserker",
+        "whirlwind_winding"
+      ],
+      "skills": [
+        "Frenzy",
+        "Death Blow",
+        "Challenging Shout",
+        "Rallying Cry",
+        "Wrath of the Berserker",
+        "Whirlwind"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": "B",
+      "title": "Death Blow",
+      "titleEn": "Death Blow",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "rogue",
+      "classSlug": "picaro",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "death-trap-rogue-endgame",
+      "pitTier": 115,
+      "season": 14,
+      "skillIcons": [
+        "dark_shroud",
+        "concealment",
+        "smoke_grenade",
+        "shadow_step",
+        "death_trap",
+        "dash"
+      ],
+      "skills": [
+        "Dark Shroud",
+        "Concealment",
+        "Smoke Grenade",
+        "Shadow Step",
+        "Death Trap",
+        "Dash"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": "A",
+      "title": "Death Trap",
+      "titleEn": "Death Trap",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [
+        "Rob2628"
+      ],
+      "classId": "paladin",
+      "classSlug": "paladin",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "divine-lance-paladin-endgame",
+      "pitTier": 130,
+      "season": 14,
+      "skillIcons": [
+        "divine_lance",
+        "fanaticism_aura",
+        "defiance_aura",
+        "consecration",
+        "condemn",
+        "arbiter_of_justice"
+      ],
+      "skills": [
+        "Divine Lance",
+        "Fanaticism Aura",
+        "Defiance Aura",
+        "Consecration",
+        "Condemn",
+        "Arbiter of Justice"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": "B",
+      "title": "Divine Lance",
+      "titleEn": "Divine Lance",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [
+        "Rob2628"
+      ],
+      "classId": "barbarian",
+      "classSlug": "barbaro",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "double-swing-barbarian-endgame",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "double_swing",
+        "challenging_shout",
+        "war_cry",
+        "rallying_cry",
+        "wrath_of_the_berserker",
+        "iron_skin_retaliation"
+      ],
+      "skills": [
+        "Double Swing",
+        "Challenging Shout",
+        "War Cry",
+        "Rallying Cry",
+        "Wrath of the Berserker",
+        "Iron Skin"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": "B",
+      "title": "Double Swing",
+      "titleEn": "Double Swing",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [
+        "Rob2628"
+      ],
+      "classId": "warlock",
+      "classSlug": "brujo",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "dread-claws-warlock-endgame",
+      "pitTier": 120,
+      "season": 14,
+      "skillIcons": [
+        "dread_claws",
+        "doom",
+        "profane_sentinel",
+        "terror_demon",
+        "summon_laalish",
+        "sigil_of_subversion"
+      ],
+      "skills": [
+        "Dread Claws",
+        "Doom",
+        "Profane Sentinel",
+        "Metamorphosis",
+        "Summon Laalish",
+        "Sigil of Subversion"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": "B",
+      "title": "Dread Claws",
+      "titleEn": "Dread Claws",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [
+        "Rob2628"
+      ],
+      "classId": "warlock",
+      "classSlug": "brujo",
+      "completeness": 0.35,
+      "content": [
+        "leveling"
+      ],
+      "hasMythic": false,
+      "id": "dread-claws-warlock-leveling",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "dread_claws",
+        "nether_step",
+        "rampage_v2",
+        "terror_swarm",
+        "summon_laalish",
+        "doom"
+      ],
+      "skills": [
+        "Dread Claws",
+        "Nether Step",
+        "Rampage-v2",
+        "Terror Swarm",
+        "Summon Laalish",
+        "Doom"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": "B",
+      "title": "Dread Claws",
+      "titleEn": "Dread Claws",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "druid",
+      "classSlug": "druida",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "earth-spike-druid-endgame",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "grizzly_rage",
+        "debilitating_roar",
+        "wolves",
+        "cyclone_armor",
+        "earth_spike",
+        "lightning_storm"
+      ],
+      "skills": [
+        "Grizzly Rage",
+        "Debilitating Roar",
+        "Wolves",
+        "Cyclone Armor",
+        "Earth Spike",
+        "Lightning Storm"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Earth Spike",
+      "titleEn": "Earth Spike",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "spiritborn",
+      "classSlug": "espiritista",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "evade-spiritborn-endgame",
+      "pitTier": null,
+      "season": 13,
+      "skillIcons": [
+        "concussive_stomp",
+        "toxic_skin",
+        "armored_hide",
+        "ravager",
+        "rushing_claw_evasive_swipe",
+        "the_seeker_tag_team"
+      ],
+      "skills": [
+        "Concussive Stomp",
+        "Toxic Skin",
+        "Armored Hide",
+        "Ravager",
+        "Rushing Claw",
+        "The Seeker"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Evade",
+      "titleEn": "Evade",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [
+        "Rob2628"
+      ],
+      "classId": "spiritborn",
+      "classSlug": "espiritista",
+      "completeness": 0.35,
+      "content": [
+        "leveling"
+      ],
+      "hasMythic": false,
+      "id": "evade-spiritborn-leveling",
+      "pitTier": null,
+      "season": 13,
+      "skillIcons": [
+        "thunderspike",
+        "armored_hide",
+        "toxic_skin",
+        "the_hunter",
+        "quill_volley",
+        "ravager"
+      ],
+      "skills": [
+        "Thunderspike",
+        "Armored Hide",
+        "Toxic Skin",
+        "The Hunter",
+        "Quill Volley",
+        "Ravager"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Evade",
+      "titleEn": "Evade",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "sorcerer",
+      "classSlug": "hechicero",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "fireball-sorcerer-endgame",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "teleport",
+        "ice_armor",
+        "familiar_fast_as_lightning",
+        "hydra_frigid_hydra",
+        "fireball",
+        "inferno"
+      ],
+      "skills": [
+        "Teleport",
+        "Ice Armor",
+        "Familiar",
+        "Hydra",
+        "Fireball",
+        "Inferno"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": "B",
+      "title": "Fireball",
+      "titleEn": "Fireball",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [
+        "Rob2628"
+      ],
+      "classId": "sorcerer",
+      "classSlug": "hechicero",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "firewall-sorcerer-endgame",
+      "pitTier": 145,
+      "season": 14,
+      "skillIcons": [
+        "teleport",
+        "ice_armor",
+        "frost_nova",
+        "lightning_spear",
+        "firewall",
+        "inferno"
+      ],
+      "skills": [
+        "Teleport",
+        "Ice Armor",
+        "Frost Nova",
+        "Lightning Spear",
+        "Firewall",
+        "Inferno"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": "S",
+      "title": "Firewall",
+      "titleEn": "Firewall",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "rogue",
+      "classSlug": "picaro",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "flurry-rogue-endgame",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "cold_imbuement",
+        "dash",
+        "smoke_grenade",
+        "concealment",
+        "flurry",
+        "shadow_clone"
+      ],
+      "skills": [
+        "Cold Imbuement",
+        "Dash",
+        "Smoke Grenade",
+        "Concealment",
+        "Flurry",
+        "Shadow Clone"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Flurry",
+      "titleEn": "Flurry",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "sorcerer",
+      "classSlug": "hechicero",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "frozen-orb-sorcerer-endgame",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "teleport_blaze",
+        "ice_armor",
+        "flame_shield",
+        "familiar_fast_as_lightning",
+        "frozen_orb",
+        "arc_lash"
+      ],
+      "skills": [
+        "Teleport",
+        "Ice Armor",
+        "Flame Shield",
+        "Familiar",
+        "Frozen Orb",
+        "Arc Lash"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Frozen Orb",
+      "titleEn": "Frozen Orb",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "necromancer",
+      "classSlug": "nigromante",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "golem-necromancer-endgame",
+      "pitTier": 130,
+      "season": 14,
+      "skillIcons": [
+        "sever",
+        "bone_prison_plunging_darkness",
+        "skeleton_warrior",
+        "bone_storm",
+        "golem",
+        "blight_whirlpool"
+      ],
+      "skills": [
+        "Sever",
+        "Bone Prison",
+        "Skeleton Warrior",
+        "Bone Storm",
+        "Golem",
+        "Blight"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": "B",
+      "title": "Golem",
+      "titleEn": "Golem",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "rogue",
+      "classSlug": "picaro",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "grenade-rogue-endgame",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "cold_imbuement",
+        "dark_shroud",
+        "concealment",
+        "smoke_grenade",
+        "dance_of_knives",
+        "shadow_clone"
+      ],
+      "skills": [
+        "Cold Imbuement",
+        "Dark Shroud",
+        "Concealment",
+        "Smoke Grenade",
+        "Dance of Knives",
+        "Shadow Clone"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Grenade",
+      "titleEn": "Grenade",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "rogue",
+      "classSlug": "picaro",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "heartseeker-rogue-endgame",
+      "pitTier": 115,
+      "season": 14,
+      "skillIcons": [
+        "cold_imbuement",
+        "smoke_grenade",
+        "concealment",
+        "dash",
+        "heartseeker",
+        "shadow_step"
+      ],
+      "skills": [
+        "Cold Imbuement",
+        "Smoke Grenade",
+        "Concealment",
+        "Dash",
+        "Heartseeker",
+        "Shadow Step"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Heartseeker",
+      "titleEn": "Heartseeker",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "paladin",
+      "classSlug": "paladin",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "heaven-s-fury-paladin-endgame",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "fanaticism_aura",
+        "defiance_aura",
+        "holy_light_aura",
+        "consecration",
+        "heaven_s_fury",
+        "falling_star"
+      ],
+      "skills": [
+        "Fanaticism Aura",
+        "Defiance Aura",
+        "Holy Light Aura",
+        "Consecration",
+        "Heaven's Fury",
+        "Falling Star"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Heaven's Fury",
+      "titleEn": "Heaven's Fury",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [
+        "Rob2628"
       ],
       "classId": "warlock",
       "classSlug": "brujo",
@@ -121,20 +1666,289 @@
       ],
       "hasMythic": false,
       "id": "hell-fracture-warlock-endgame",
-      "pitTier": 140,
-      "season": 14,
+      "pitTier": null,
+      "season": 13,
+      "skillIcons": [
+        "hell_fracture",
+        "nether_step",
+        "apocalypse",
+        "summon_abodian",
+        "sigil_of_chaos",
+        "tyrant_s_grasp"
+      ],
       "skills": [
         "Hell Fracture",
-        "Wall of Agony",
-        "Profane Sentinel"
+        "Nether Step",
+        "Apocalypse",
+        "Summon Abodian",
+        "Sigil of Chaos",
+        "Tyrant's Grasp"
       ],
       "sources": [
         "d4builds"
       ],
-      "tierLabel": "A",
+      "tierLabel": null,
       "title": "Hell Fracture",
       "titleEn": "Hell Fracture",
-      "updatedAt": "2026-08-08T00:00:00.000Z"
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [
+        "Rob2628"
+      ],
+      "classId": "barbarian",
+      "classSlug": "barbaro",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "hota-barbarian-endgame",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "hammer_of_the_ancients",
+        "challenging_shout",
+        "war_cry",
+        "rallying_cry",
+        "wrath_of_the_berserker",
+        "iron_skin_retaliation"
+      ],
+      "skills": [
+        "Hammer of the Ancients",
+        "Challenging Shout",
+        "War Cry",
+        "Rallying Cry",
+        "Wrath of the Berserker",
+        "Iron Skin"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "HotA",
+      "titleEn": "HotA",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [
+        "Rob2628"
+      ],
+      "classId": "barbarian",
+      "classSlug": "barbaro",
+      "completeness": 0.35,
+      "content": [
+        "leveling"
+      ],
+      "hasMythic": false,
+      "id": "hota-barbarian-leveling",
+      "pitTier": null,
+      "season": 13,
+      "skillIcons": [
+        "ground_stomp",
+        "war_cry_korlic",
+        "rallying_cry",
+        "wrath_of_the_berserker",
+        "lunging_strike",
+        "hammer_of_the_ancients"
+      ],
+      "skills": [
+        "Ground Stomp",
+        "War Cry",
+        "Rallying Cry",
+        "Wrath of the Berserker",
+        "Lunging Strike",
+        "Hammer of the Ancients"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "HotA",
+      "titleEn": "HotA",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "sorcerer",
+      "classSlug": "hechicero",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "hydra-sorcerer-endgame",
+      "pitTier": 110,
+      "season": 14,
+      "skillIcons": [
+        "teleport_blaze",
+        "ice_armor",
+        "lightning_spear",
+        "familiar_fast_as_lightning",
+        "hydra_frigid_hydra",
+        "inferno"
+      ],
+      "skills": [
+        "Teleport",
+        "Ice Armor",
+        "Lightning Spear",
+        "Familiar",
+        "Hydra",
+        "Inferno"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Hydra",
+      "titleEn": "Hydra",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [
+        "Rob2628"
+      ],
+      "classId": "sorcerer",
+      "classSlug": "hechicero",
+      "completeness": 0.35,
+      "content": [
+        "leveling"
+      ],
+      "hasMythic": false,
+      "id": "hydra-sorcerer-leveling",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "incinerate",
+        "teleport",
+        "ice_armor",
+        "inferno",
+        "spark",
+        "hydra"
+      ],
+      "skills": [
+        "Incinerate",
+        "Teleport",
+        "Ice Armor",
+        "Inferno",
+        "Spark",
+        "Hydra"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Hydra",
+      "titleEn": "Hydra",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "sorcerer",
+      "classSlug": "hechicero",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "ice-shards-sorcerer-endgame",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "unstable_currents",
+        "teleport_blaze",
+        "ice_armor",
+        "meteor",
+        "ice_shards_thunderbolt",
+        "hydra_frigid_hydra"
+      ],
+      "skills": [
+        "Unstable Currents",
+        "Teleport",
+        "Ice Armor",
+        "Meteor",
+        "Ice Shards",
+        "Hydra"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Ice Shards",
+      "titleEn": "Ice Shards",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "sorcerer",
+      "classSlug": "hechicero",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "ice-spikes-sorcerer-endgame",
+      "pitTier": 115,
+      "season": 14,
+      "skillIcons": [
+        "teleport_blaze",
+        "ice_armor",
+        "familiar_fast_as_lightning",
+        "hydra_frigid_hydra",
+        "blizzard",
+        "flame_shield"
+      ],
+      "skills": [
+        "Teleport",
+        "Ice Armor",
+        "Familiar",
+        "Hydra",
+        "Blizzard",
+        "Flame Shield"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Ice Spikes",
+      "titleEn": "Ice Spikes",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "sorcerer",
+      "classSlug": "hechicero",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "incinerate-sorcerer-endgame",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "teleport",
+        "ice_armor",
+        "familiar_fast_as_lightning",
+        "hydra_frigid_hydra",
+        "incinerate",
+        "inferno"
+      ],
+      "skills": [
+        "Teleport",
+        "Ice Armor",
+        "Familiar",
+        "Hydra",
+        "Incinerate",
+        "Inferno"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Incinerate",
+      "titleEn": "Incinerate",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
     },
     {
       "authors": [
@@ -148,24 +1962,482 @@
       ],
       "hasMythic": false,
       "id": "judgement-paladin-endgame",
-      "pitTier": 148,
-      "season": 14,
+      "pitTier": null,
+      "season": 13,
+      "skillIcons": [
+        "arbiter_of_justice",
+        "fanaticism_aura",
+        "blessed_hammer",
+        "defiance_aura",
+        "condemn",
+        "spear_of_the_heavens"
+      ],
       "skills": [
-        "Judgement",
-        "Holy Aura"
+        "Arbiter of Justice",
+        "Fanaticism Aura",
+        "Blessed Hammer",
+        "Defiance Aura",
+        "Condemn",
+        "Spear of the Heavens"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": "B",
+      "title": "Judgement",
+      "titleEn": "Judgement",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "druid",
+      "classSlug": "druida",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "lacerate-druid-endgame",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "lightning_storm",
+        "hurricane",
+        "wolves",
+        "cyclone_armor",
+        "lacerate",
+        "debilitating_roar"
+      ],
+      "skills": [
+        "Lightning Storm",
+        "Hurricane",
+        "Wolves",
+        "Cyclone Armor",
+        "Lacerate",
+        "Debilitating Roar"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Lacerate",
+      "titleEn": "Lacerate",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [
+        "Rob2628"
+      ],
+      "classId": "druid",
+      "classSlug": "druida",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "landslide-druid-endgame",
+      "pitTier": 125,
+      "season": 14,
+      "skillIcons": [
+        "wolves",
+        "cyclone_armor",
+        "lightning_storm",
+        "grizzly_rage",
+        "earth_spike",
+        "landslide"
+      ],
+      "skills": [
+        "Wolves",
+        "Cyclone Armor",
+        "Lightning Storm",
+        "Grizzly Rage",
+        "Earth Spike",
+        "Landslide"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": "A",
+      "title": "Landslide",
+      "titleEn": "Landslide",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [
+        "Rob2628"
+      ],
+      "classId": "barbarian",
+      "classSlug": "barbaro",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "leap-rend-barbarian-endgame",
+      "pitTier": 150,
+      "season": 14,
+      "skillIcons": [
+        "war_cry",
+        "rend",
+        "challenging_shout",
+        "rallying_cry",
+        "wrath_of_the_berserker",
+        "leap_mosh"
+      ],
+      "skills": [
+        "War Cry",
+        "Rend",
+        "Challenging Shout",
+        "Rallying Cry",
+        "Wrath of the Berserker",
+        "Leap"
       ],
       "sources": [
         "d4builds"
       ],
       "tierLabel": "S",
-      "title": "Judgement",
-      "titleEn": "Judgement",
-      "updatedAt": "2026-08-08T00:00:00.000Z"
+      "title": "Leap Rend",
+      "titleEn": "Leap Rend",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
     },
     {
       "authors": [
-        "Chronikz"
+        "Rob2628"
       ],
+      "classId": "druid",
+      "classSlug": "druida",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "lightning-storm-druid-endgame",
+      "pitTier": 135,
+      "season": 14,
+      "skillIcons": [
+        "grizzly_rage",
+        "stone_burst",
+        "wolves",
+        "debilitating_roar",
+        "lightning_storm",
+        "storm_strike"
+      ],
+      "skills": [
+        "Grizzly Rage",
+        "Stone Burst",
+        "Wolves",
+        "Debilitating Roar",
+        "Lightning Storm",
+        "Storm Strike"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": "A",
+      "title": "Lightning Storm",
+      "titleEn": "Lightning Storm",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [
+        "Rob2628"
+      ],
+      "classId": "druid",
+      "classSlug": "druida",
+      "completeness": 0.35,
+      "content": [
+        "leveling"
+      ],
+      "hasMythic": false,
+      "id": "lightning-storm-druid-leveling",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "earthen_bulwark",
+        "debilitating_roar",
+        "cyclone_armor",
+        "cataclysm",
+        "claw",
+        "lightning_storm"
+      ],
+      "skills": [
+        "Earthen Bulwark",
+        "Debilitating Roar",
+        "Cyclone Armor",
+        "Cataclysm",
+        "Claw",
+        "Lightning Storm"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": "A",
+      "title": "Lightning Storm",
+      "titleEn": "Lightning Storm",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "druid",
+      "classSlug": "druida",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "maul-druid-endgame",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "grizzly_rage",
+        "debilitating_roar",
+        "wolves",
+        "cyclone_armor",
+        "maul_stone_fists",
+        "lightning_storm"
+      ],
+      "skills": [
+        "Grizzly Rage",
+        "Debilitating Roar",
+        "Wolves",
+        "Cyclone Armor",
+        "Maul",
+        "Lightning Storm"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Maul",
+      "titleEn": "Maul",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [
+        "Rob2628"
+      ],
+      "classId": "warlock",
+      "classSlug": "brujo",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "metamorphosis-warlock-endgame",
+      "pitTier": null,
+      "season": 13,
+      "skillIcons": [
+        "demonic_smash",
+        "tyrant_s_grasp",
+        "metamorphosis",
+        "demonic_glare",
+        "molten_bomb",
+        "infernal_breath"
+      ],
+      "skills": [
+        "Rampage-v2",
+        "Tyrant's Grasp",
+        "Metamorphosis",
+        "Profane Sentinel",
+        "Molten Bomb",
+        "Infernal Breath"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Metamorphosis",
+      "titleEn": "Metamorphosis",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [
+        "Rob2628"
+      ],
+      "classId": "sorcerer",
+      "classSlug": "hechicero",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "meteor-sorcerer-endgame",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "teleport_blaze",
+        "ice_armor",
+        "familiar_healing_flames",
+        "flame_shield",
+        "meteor",
+        "inferno"
+      ],
+      "skills": [
+        "Teleport",
+        "Ice Armor",
+        "Familiar",
+        "Flame Shield",
+        "Meteor",
+        "Inferno"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": "A",
+      "title": "Meteor",
+      "titleEn": "Meteor",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [
+        "Rob2628"
+      ],
+      "classId": "necromancer",
+      "classSlug": "nigromante",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "minion-necromancer-endgame",
+      "pitTier": 135,
+      "season": 14,
+      "skillIcons": [
+        "skeleton_mage",
+        "bone_storm",
+        "sever",
+        "skeleton_warrior",
+        "decrepify_life_tap",
+        "golem"
+      ],
+      "skills": [
+        "Skeleton Mage",
+        "Bone Storm",
+        "Sever",
+        "Skeleton Warrior",
+        "Decrepify",
+        "Golem"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Minion",
+      "titleEn": "Minion",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [
+        "Rob2628"
+      ],
+      "classId": "necromancer",
+      "classSlug": "nigromante",
+      "completeness": 0.35,
+      "content": [
+        "leveling"
+      ],
+      "hasMythic": false,
+      "id": "minion-necromancer-leveling",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "decrepify",
+        "skeleton_warrior",
+        "corpse_tendrils",
+        "skeleton_mage",
+        "army_of_the_dead",
+        "reap"
+      ],
+      "skills": [
+        "Decrepify",
+        "Skeleton Warrior",
+        "Corpse Tendrils",
+        "Skeleton Mage",
+        "Army of the Dead",
+        "Reap"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Minion",
+      "titleEn": "Minion",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "spiritborn",
+      "classSlug": "espiritista",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "payback-spiritborn-endgame",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "ravager",
+        "armored_hide",
+        "scourge",
+        "toxic_skin",
+        "payback",
+        "the_hunter"
+      ],
+      "skills": [
+        "Ravager",
+        "Armored Hide",
+        "Scourge",
+        "Toxic Skin",
+        "Payback",
+        "The Hunter"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Payback",
+      "titleEn": "Payback",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "rogue",
+      "classSlug": "picaro",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "penetrating-shot-rogue-endgame",
+      "pitTier": 145,
+      "season": 14,
+      "skillIcons": [
+        "poison_imbuement",
+        "dash",
+        "smoke_grenade",
+        "concealment",
+        "penetrating_shot",
+        "shadow_clone_sentry"
+      ],
+      "skills": [
+        "Poison Imbuement",
+        "Dash",
+        "Smoke Grenade",
+        "Concealment",
+        "Penetrating Shot",
+        "Shadow Clone"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": "S",
+      "title": "Penetrating Shot",
+      "titleEn": "Penetrating Shot",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
       "classId": "spiritborn",
       "classSlug": "espiritista",
       "completeness": 0.35,
@@ -174,11 +2446,23 @@
       ],
       "hasMythic": false,
       "id": "pestilent-swarm-spiritborn-endgame",
-      "pitTier": 150,
+      "pitTier": 145,
       "season": 14,
+      "skillIcons": [
+        "toxic_skin",
+        "counterattack_counterattack_of_the_swarm",
+        "ravager",
+        "scourge",
+        "rushing_claw",
+        "the_devourer"
+      ],
       "skills": [
-        "Pestilent Swarm",
-        "Ravager"
+        "Toxic Skin",
+        "Counterattack",
+        "Ravager",
+        "Scourge",
+        "Rushing Claw",
+        "The Devourer"
       ],
       "sources": [
         "d4builds"
@@ -186,7 +2470,775 @@
       "tierLabel": "S",
       "title": "Pestilent Swarm",
       "titleEn": "Pestilent Swarm",
-      "updatedAt": "2026-08-08T00:00:00.000Z"
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "rogue",
+      "classSlug": "picaro",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "poison-trap-rogue-endgame",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "cold_imbuement",
+        "concealment",
+        "poison_trap_frostbite_trap",
+        "dark_shroud",
+        "dance_of_knives_star_shards",
+        "shadow_clone"
+      ],
+      "skills": [
+        "Cold Imbuement",
+        "Concealment",
+        "Poison Trap",
+        "Dark Shroud",
+        "Dance of Knives",
+        "Shadow Clone"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Poison Trap",
+      "titleEn": "Poison Trap",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "warlock",
+      "classSlug": "brujo",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "profane-sentinel-warlock-endgame",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "terror_swarm",
+        "summon_succubus",
+        "sigil_of_subversion",
+        "summon_laalish",
+        "profane_sentinel",
+        "blazing_scream_abyssal_oppression"
+      ],
+      "skills": [
+        "Terror Swarm",
+        "Sigil of Summons",
+        "Sigil of Subversion",
+        "Summon Laalish",
+        "Profane Sentinel",
+        "Blazing Scream"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Profane Sentinel",
+      "titleEn": "Profane Sentinel",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "druid",
+      "classSlug": "druida",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "pulverize-druid-endgame",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "grizzly_rage",
+        "lightning_storm",
+        "wolves",
+        "cyclone_armor",
+        "pulverize_shockwave",
+        "earth_spike"
+      ],
+      "skills": [
+        "Grizzly Rage",
+        "Lightning Storm",
+        "Wolves",
+        "Cyclone Armor",
+        "Pulverize",
+        "Earth Spike"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Pulverize",
+      "titleEn": "Pulverize",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "spiritborn",
+      "classSlug": "espiritista",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "quill-volley-spiritborn-endgame",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "ravager",
+        "armored_hide",
+        "scourge",
+        "toxic_skin",
+        "quill_volley",
+        "the_hunter"
+      ],
+      "skills": [
+        "Ravager",
+        "Armored Hide",
+        "Scourge",
+        "Toxic Skin",
+        "Quill Volley",
+        "The Hunter"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": "A",
+      "title": "Quill Volley",
+      "titleEn": "Quill Volley",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "druid",
+      "classSlug": "druida",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "rabies-druid-endgame",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "grizzly_rage",
+        "lightning_storm",
+        "wolves",
+        "cyclone_armor",
+        "rabies",
+        "stone_burst"
+      ],
+      "skills": [
+        "Grizzly Rage",
+        "Lightning Storm",
+        "Wolves",
+        "Cyclone Armor",
+        "Rabies",
+        "Stone Burst"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Rabies",
+      "titleEn": "Rabies",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "rogue",
+      "classSlug": "picaro",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "rain-of-arrows-rogue-endgame",
+      "pitTier": 145,
+      "season": 14,
+      "skillIcons": [
+        "cold_imbuement",
+        "concealment",
+        "dash",
+        "shadow_step",
+        "rain_of_arrows",
+        "heartseeker"
+      ],
+      "skills": [
+        "Cold Imbuement",
+        "Concealment",
+        "Dash",
+        "Shadow Step",
+        "Rain of Arrows",
+        "Heartseeker"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": "S",
+      "title": "Rain of Arrows",
+      "titleEn": "Rain of Arrows",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "spiritborn",
+      "classSlug": "espiritista",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "rake-spiritborn-endgame",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "ravager",
+        "armored_hide",
+        "scourge",
+        "toxic_skin",
+        "rake_simian_swipe",
+        "the_hunter"
+      ],
+      "skills": [
+        "Ravager",
+        "Armored Hide",
+        "Scourge",
+        "Toxic Skin",
+        "Rake",
+        "The Hunter"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": "B",
+      "title": "Rake",
+      "titleEn": "Rake",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "rogue",
+      "classSlug": "picaro",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "rapid-fire-rogue-endgame",
+      "pitTier": 115,
+      "season": 14,
+      "skillIcons": [
+        "cold_imbuement",
+        "dash",
+        "smoke_grenade",
+        "concealment",
+        "rapid_fire",
+        "shadow_clone"
+      ],
+      "skills": [
+        "Cold Imbuement",
+        "Dash",
+        "Smoke Grenade",
+        "Concealment",
+        "Rapid Fire",
+        "Shadow Clone"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Rapid Fire",
+      "titleEn": "Rapid Fire",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "spiritborn",
+      "classSlug": "espiritista",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "razor-wings-spiritborn-endgame",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "ravager",
+        "armored_hide",
+        "scourge",
+        "toxic_skin",
+        "razor_wings",
+        "the_hunter"
+      ],
+      "skills": [
+        "Ravager",
+        "Armored Hide",
+        "Scourge",
+        "Toxic Skin",
+        "Razor Wings",
+        "The Hunter"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Razor Wings",
+      "titleEn": "Razor Wings",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "spiritborn",
+      "classSlug": "espiritista",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "rock-splitter-spiritborn-endgame",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "ravager",
+        "armored_hide",
+        "scourge",
+        "toxic_skin",
+        "rock_splitter_inner_ferocity",
+        "the_hunter"
+      ],
+      "skills": [
+        "Ravager",
+        "Armored Hide",
+        "Scourge",
+        "Toxic Skin",
+        "Rock Splitter",
+        "The Hunter"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Rock Splitter",
+      "titleEn": "Rock Splitter",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [
+        "Rob2628"
+      ],
+      "classId": "druid",
+      "classSlug": "druida",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "shred-druid-endgame",
+      "pitTier": 145,
+      "season": 14,
+      "skillIcons": [
+        "lightning_storm",
+        "debilitating_roar",
+        "hurricane",
+        "grizzly_rage",
+        "wolves",
+        "shred_storm_shred"
+      ],
+      "skills": [
+        "Lightning Storm",
+        "Debilitating Roar",
+        "Hurricane",
+        "Grizzly Rage",
+        "Wolves",
+        "Shred"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": "S",
+      "title": "Shred",
+      "titleEn": "Shred",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "rogue",
+      "classSlug": "picaro",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "smoke-grenade-rogue-endgame",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "dash",
+        "shadow_step",
+        "concealment",
+        "dark_shroud",
+        "smoke_grenade_shade_grenade",
+        "shadow_clone"
+      ],
+      "skills": [
+        "Dash",
+        "Shadow Step",
+        "Concealment",
+        "Dark Shroud",
+        "Smoke Grenade",
+        "Shadow Clone"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Smoke Grenade",
+      "titleEn": "Smoke Grenade",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [
+        "Rob2628"
+      ],
+      "classId": "paladin",
+      "classSlug": "paladin",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "spear-of-the-heavens-paladin-endgame",
+      "pitTier": null,
+      "season": 13,
+      "skillIcons": [
+        "falling_star",
+        "fanaticism_aura",
+        "condemn",
+        "defiance_aura",
+        "rally",
+        "spear_of_the_heavens"
+      ],
+      "skills": [
+        "Falling Star",
+        "Fanaticism Aura",
+        "Condemn",
+        "Defiance Aura",
+        "Rally",
+        "Spear of the Heavens"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Spear of the Heavens",
+      "titleEn": "Spear of the Heavens",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "spiritborn",
+      "classSlug": "espiritista",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "stinger-spiritborn-endgame",
+      "pitTier": 140,
+      "season": 14,
+      "skillIcons": [
+        "ravager",
+        "armored_hide",
+        "scourge",
+        "toxic_skin",
+        "stinger",
+        "the_protector"
+      ],
+      "skills": [
+        "Ravager",
+        "Armored Hide",
+        "Scourge",
+        "Toxic Skin",
+        "Stinger",
+        "The Protector"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": "A",
+      "title": "Stinger",
+      "titleEn": "Stinger",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [
+        "Rob2628"
+      ],
+      "classId": "spiritborn",
+      "classSlug": "espiritista",
+      "completeness": 0.35,
+      "content": [
+        "leveling"
+      ],
+      "hasMythic": false,
+      "id": "stinger-spiritborn-leveling",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "stinger",
+        "counterattack",
+        "the_devourer_sky_and_soil",
+        "toxic_skin",
+        "rock_splitter",
+        "scourge_the_beast_within"
+      ],
+      "skills": [
+        "Stinger",
+        "Counterattack",
+        "The Devourer",
+        "Toxic Skin",
+        "Rock Splitter",
+        "Scourge"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": "A",
+      "title": "Stinger",
+      "titleEn": "Stinger",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "druid",
+      "classSlug": "druida",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "stone-burst-druid-endgame",
+      "pitTier": null,
+      "season": 13,
+      "skillIcons": [
+        "grizzly_rage",
+        "lightning_storm",
+        "wolves",
+        "cyclone_armor",
+        "stone_burst",
+        "earth_spike"
+      ],
+      "skills": [
+        "Grizzly Rage",
+        "Lightning Storm",
+        "Wolves",
+        "Cyclone Armor",
+        "Stone Burst",
+        "Earth Spike"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Stone Burst",
+      "titleEn": "Stone Burst",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [
+        "Rob2628"
+      ],
+      "classId": "warlock",
+      "classSlug": "brujo",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "summon-warlock-endgame",
+      "pitTier": null,
+      "season": 13,
+      "skillIcons": [
+        "summon_ae_grom",
+        "sigil_of_summons",
+        "rampage_v2",
+        "fiend_of_abaddon",
+        "meat_shields",
+        "bombardment"
+      ],
+      "skills": [
+        "Summon Ae'grom",
+        "Sigil of Summons",
+        "Rampage-v2",
+        "Fiend of Abaddon",
+        "Command Fallen",
+        "Bombardment"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Summon",
+      "titleEn": "Summon",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [
+        "Rob2628"
+      ],
+      "classId": "druid",
+      "classSlug": "druida",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "tornado-druid-endgame",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "lightning_storm",
+        "debilitating_roar",
+        "hurricane",
+        "grizzly_rage",
+        "wolves",
+        "tornado"
+      ],
+      "skills": [
+        "Lightning Storm",
+        "Debilitating Roar",
+        "Hurricane",
+        "Grizzly Rage",
+        "Wolves",
+        "Tornado"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Tornado",
+      "titleEn": "Tornado",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "rogue",
+      "classSlug": "picaro",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "twisting-blades-rogue-endgame",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "poison_imbuement",
+        "dash",
+        "smoke_grenade",
+        "dark_shroud",
+        "twisting_blades",
+        "shadow_clone"
+      ],
+      "skills": [
+        "Poison Imbuement",
+        "Dash",
+        "Smoke Grenade",
+        "Dark Shroud",
+        "Twisting Blades",
+        "Shadow Clone"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": "A",
+      "title": "Twisting Blades",
+      "titleEn": "Twisting Blades",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [
+        "Rob2628"
+      ],
+      "classId": "warlock",
+      "classSlug": "brujo",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "tyrant-s-grasp-warlock-endgame",
+      "pitTier": null,
+      "season": 13,
+      "skillIcons": [
+        "tyrant_s_grasp",
+        "nether_step",
+        "apocalypse",
+        "metamorphosis",
+        "demonic_swipe_v2",
+        "chain_aura"
+      ],
+      "skills": [
+        "Tyrant's Grasp",
+        "Nether Step",
+        "Apocalypse",
+        "Metamorphosis",
+        "Demonic Swipe-v2",
+        "Dark Prison"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Tyrant's Grasp",
+      "titleEn": "Tyrant's Grasp",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "warlock",
+      "classSlug": "brujo",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "umbral-chains-warlock-endgame",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "terror_swarm",
+        "sigil_of_summons",
+        "profane_sentinel",
+        "summon_vollach",
+        "umbral_chains",
+        "blazing_scream"
+      ],
+      "skills": [
+        "Terror Swarm",
+        "Sigil of Summons",
+        "Profane Sentinel",
+        "Summon Vollach",
+        "Umbral Chains",
+        "Blazing Scream"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Umbral Chains",
+      "titleEn": "Umbral Chains",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
     },
     {
       "authors": [
@@ -202,10 +3254,21 @@
       "id": "whirlwind-barbarian-endgame",
       "pitTier": 145,
       "season": 14,
+      "skillIcons": [
+        "lunging_strike",
+        "war_cry",
+        "challenging_shout",
+        "rallying_cry",
+        "wrath_of_the_berserker",
+        "whirlwind"
+      ],
       "skills": [
-        "Whirlwind",
+        "Lunging Strike",
+        "War Cry",
+        "Challenging Shout",
         "Rallying Cry",
-        "Challenging Shout"
+        "Wrath of the Berserker",
+        "Whirlwind"
       ],
       "sources": [
         "d4builds"
@@ -213,11 +3276,124 @@
       "tierLabel": "S",
       "title": "Whirlwind",
       "titleEn": "Whirlwind",
-      "updatedAt": "2026-08-08T00:00:00.000Z"
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [
+        "Rob2628"
+      ],
+      "classId": "barbarian",
+      "classSlug": "barbaro",
+      "completeness": 0.35,
+      "content": [
+        "leveling"
+      ],
+      "hasMythic": false,
+      "id": "whirlwind-barbarian-leveling",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "lunging_strike",
+        "ground_stomp",
+        "leap",
+        "call_of_the_ancients",
+        "challenging_shout",
+        "whirlwind"
+      ],
+      "skills": [
+        "Lunging Strike",
+        "Ground Stomp",
+        "Leap",
+        "Call of the Ancients",
+        "Challenging Shout",
+        "Whirlwind"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": "S",
+      "title": "Whirlwind",
+      "titleEn": "Whirlwind",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [
+        "Rob2628"
+      ],
+      "classId": "paladin",
+      "classSlug": "paladin",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "zeal-paladin-endgame",
+      "pitTier": 130,
+      "season": 14,
+      "skillIcons": [
+        "zeal",
+        "fanaticism_aura",
+        "condemn",
+        "defiance_aura",
+        "rally",
+        "arbiter_of_justice"
+      ],
+      "skills": [
+        "Zeal",
+        "Fanaticism Aura",
+        "Condemn",
+        "Defiance Aura",
+        "Rally",
+        "Arbiter of Justice"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": "A",
+      "title": "Zeal",
+      "titleEn": "Zeal",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
+    },
+    {
+      "authors": [],
+      "classId": "paladin",
+      "classSlug": "paladin",
+      "completeness": 0.35,
+      "content": [
+        "endgame"
+      ],
+      "hasMythic": false,
+      "id": "zenith-paladin-endgame",
+      "pitTier": null,
+      "season": 14,
+      "skillIcons": [
+        "fanaticism_aura",
+        "defiance_aura",
+        "holy_light_aura",
+        "consecration",
+        "zenith",
+        "falling_star_fanatic_descent"
+      ],
+      "skills": [
+        "Fanaticism Aura",
+        "Defiance Aura",
+        "Holy Light Aura",
+        "Consecration",
+        "Zenith",
+        "Falling Star"
+      ],
+      "sources": [
+        "d4builds"
+      ],
+      "tierLabel": null,
+      "title": "Zenith",
+      "titleEn": "Zenith",
+      "updatedAt": "2026-08-08T21:57:21.526Z"
     }
   ],
-  "count": 8,
-  "generatedAt": "2026-08-08T00:00:00.000Z",
+  "count": 92,
+  "generatedAt": "2026-08-08T21:57:21.526Z",
+  "origen": "real",
   "patch": "3.1.2",
   "season": 14
 }

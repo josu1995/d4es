@@ -1,0 +1,446 @@
+{
+  "classId": "paladin",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Consecration",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__consecration",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Defiance Aura",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__defiance_aura",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Falling Star",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__falling_star",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Fanaticism Aura",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__fanaticism_aura",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Heaven's Fury",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__heaven_s_fury",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Holy Light Aura",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__holy_light_aura",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__consecration",
+        "label": {
+          "category": "skill",
+          "enUS": "Consecration",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__consecration",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:adeb15ec-33a1-438d-9ef6-b5ac69762a33:0": 5
+        }
+      },
+      {
+        "key": "skill:skill__defiance_aura",
+        "label": {
+          "category": "skill",
+          "enUS": "Defiance Aura",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__defiance_aura",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:adeb15ec-33a1-438d-9ef6-b5ac69762a33:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__falling_star",
+        "label": {
+          "category": "skill",
+          "enUS": "Falling Star",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__falling_star",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:adeb15ec-33a1-438d-9ef6-b5ac69762a33:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__fanaticism_aura",
+        "label": {
+          "category": "skill",
+          "enUS": "Fanaticism Aura",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__fanaticism_aura",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:adeb15ec-33a1-438d-9ef6-b5ac69762a33:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__heaven_s_fury",
+        "label": {
+          "category": "skill",
+          "enUS": "Heaven's Fury",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__heaven_s_fury",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:adeb15ec-33a1-438d-9ef6-b5ac69762a33:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__holy_light_aura",
+        "label": {
+          "category": "skill",
+          "enUS": "Holy Light Aura",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__holy_light_aura",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:adeb15ec-33a1-438d-9ef6-b5ac69762a33:0": 1
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "paladin::skill__heaven_s_fury::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "heaven-s-fury-paladin-endgame",
+  "primaryVariantId": "d4builds:adeb15ec-33a1-438d-9ef6-b5ac69762a33:0",
+  "ratings": {
+    "pitTier": null,
+    "tierLabel": null,
+    "tierRank": null
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Heaven's Fury",
+    "es": "Heaven's Fury"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:adeb15ec-33a1-438d-9ef6-b5ac69762a33:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Fanaticism Aura",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__fanaticism_aura",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Extra Passive Stack",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__extra_passive_stack",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Rite of Vengeance",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__rite_of_vengeance",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Potency",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__potency",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Defiance Aura",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__defiance_aura",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Maximum Life",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__maximum_life",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Rite of Might",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__rite_of_might",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Bonus Healing",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__bonus_healing",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Holy Light Aura",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__holy_light_aura",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Additional Bounce",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__additional_bounce",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Rite of Mercy",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__rite_of_mercy",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 5,
+          "ref": {
+            "category": "skill",
+            "enUS": "Consecration",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__consecration",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Weaken",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__weaken",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Hallowed Ground",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__hallowed_ground",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Fortify",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__fortify",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Heaven's Fury",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__heaven_s_fury",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__damage_bonus",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Walk With The Light",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__walk_with_the_light",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Duration",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__duration",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Falling Star",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__falling_star",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Vulnerable",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__vulnerable",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Faster Than Light",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__faster_than_light",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Cooldown Reduction",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cooldown_reduction",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": null,
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "adeb15ec-33a1-438d-9ef6-b5ac69762a33",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "018ae6e8c40cb4ee28731fe8d81452f5f6c5f62dcae5e8000bee1e3a6e2edb42",
+        "url": "https://d4builds.gg/builds/heaven's-fury-paladin-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

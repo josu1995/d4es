@@ -1,0 +1,457 @@
+{
+  "classId": "warlock",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Apocalypse",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__apocalypse",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Bombardment",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__bombardment",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Dark Prison",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__dark_prison",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Sigil of Subversion",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__sigil_of_subversion",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Summon Vollach",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__summon_vollach",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Umbral Chains",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__umbral_chains",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__apocalypse",
+        "label": {
+          "category": "skill",
+          "enUS": "Apocalypse",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__apocalypse",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:c8c2a2fc-e327-4df5-8b02-c57407e76de7:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__bombardment",
+        "label": {
+          "category": "skill",
+          "enUS": "Bombardment",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__bombardment",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:c8c2a2fc-e327-4df5-8b02-c57407e76de7:0": 12
+        }
+      },
+      {
+        "key": "skill:skill__dark_prison",
+        "label": {
+          "category": "skill",
+          "enUS": "Dark Prison",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__dark_prison",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:c8c2a2fc-e327-4df5-8b02-c57407e76de7:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__sigil_of_subversion",
+        "label": {
+          "category": "skill",
+          "enUS": "Sigil of Subversion",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__sigil_of_subversion",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:c8c2a2fc-e327-4df5-8b02-c57407e76de7:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__summon_vollach",
+        "label": {
+          "category": "skill",
+          "enUS": "Summon Vollach",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__summon_vollach",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:c8c2a2fc-e327-4df5-8b02-c57407e76de7:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__umbral_chains",
+        "label": {
+          "category": "skill",
+          "enUS": "Umbral Chains",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__umbral_chains",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:c8c2a2fc-e327-4df5-8b02-c57407e76de7:0": 15
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "warlock::skill__apocalypse::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "apocalypse-warlock-endgame",
+  "primaryVariantId": "d4builds:c8c2a2fc-e327-4df5-8b02-c57407e76de7:0",
+  "ratings": {
+    "pitTier": 145,
+    "tierLabel": "B",
+    "tierRank": 1
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Apocalypse",
+    "es": "Apocalypse"
+  },
+  "updatedAt": "2026-08-08T21:57:21.526Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:c8c2a2fc-e327-4df5-8b02-c57407e76de7:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Umbral Chains",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__umbral_chains",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Long Range Slow",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__long_range_slow",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Wrath Refund",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__wrath_refund",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Chain Whips",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__chain_whips",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Chain Whips",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__chain_whips",
+            "sno": null
+          }
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Sigil of Subversion",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__sigil_of_subversion",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Movement Speed",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__movement_speed",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Sigil of Lava",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__sigil_of_lava",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Cast Range",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__cast_range",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Sigil of Lava",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__sigil_of_lava",
+            "sno": null
+          }
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Summon Vollach",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__summon_vollach",
+            "sno": null
+          },
+          "runes": [],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Dark Prison",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__dark_prison",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Weaken",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__weaken",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Chain Aura",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__chain_aura",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Fortify",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__fortify",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Chain Aura",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__chain_aura",
+            "sno": null
+          }
+        },
+        {
+          "category": "unknown",
+          "order": 4,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Apocalypse",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__apocalypse",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Survivor Damage",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__survivor_damage",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Annihilation",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__annihilation",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Double Blast",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__double_blast",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 5,
+          "rank": 12,
+          "ref": {
+            "category": "skill",
+            "enUS": "Bombardment",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__bombardment",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Additional Demon",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__additional_demon",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Endless Barrage",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__endless_barrage",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Focused Target",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__focused_target",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Bombardment Endless Barrage",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__bombardment_endless_barrage",
+            "sno": null
+          }
+        }
+      ],
+      "source": {
+        "author": null,
+        "capturedAt": "2026-08-08T21:57:21.526Z",
+        "externalId": "c8c2a2fc-e327-4df5-8b02-c57407e76de7",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "1d44916f6fb07e07c8c0c4982cb0f1d09c67aaf1f56ef5b1b3275fc2351ae9d0",
+        "url": "https://d4builds.gg/builds/apocalypse-warlock-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}
