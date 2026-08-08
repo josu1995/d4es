@@ -1,0 +1,190 @@
+{
+  "classId": "warlock",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Hell Fracture",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__hell_fracture",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Profane Sentinel",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__profane_sentinel",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Wall of Agony",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__wall_of_agony",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__hell_fracture",
+        "label": {
+          "category": "skill",
+          "enUS": "Hell Fracture",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__hell_fracture",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:0f0e0d0c-0b0a-0908-0706-050403020100:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__profane_sentinel",
+        "label": {
+          "category": "skill",
+          "enUS": "Profane Sentinel",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__profane_sentinel",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:0f0e0d0c-0b0a-0908-0706-050403020100:0": 6
+        }
+      },
+      {
+        "key": "skill:skill__wall_of_agony",
+        "label": {
+          "category": "skill",
+          "enUS": "Wall of Agony",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__wall_of_agony",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:0f0e0d0c-0b0a-0908-0706-050403020100:0": 8
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "warlock::skill__hell_fracture::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "hell-fracture-warlock-endgame",
+  "primaryVariantId": "d4builds:0f0e0d0c-0b0a-0908-0706-050403020100:0",
+  "ratings": {
+    "pitTier": 140,
+    "tierLabel": "A",
+    "tierRank": 2
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Hell Fracture",
+    "es": "Hell Fracture"
+  },
+  "updatedAt": "2026-08-08T00:00:00.000Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:0f0e0d0c-0b0a-0908-0706-050403020100:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Hell Fracture",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__hell_fracture",
+            "sno": null
+          },
+          "runes": [],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 8,
+          "ref": {
+            "category": "skill",
+            "enUS": "Wall of Agony",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__wall_of_agony",
+            "sno": null
+          },
+          "runes": [],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 6,
+          "ref": {
+            "category": "skill",
+            "enUS": "Profane Sentinel",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__profane_sentinel",
+            "sno": null
+          },
+          "runes": [],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": "Chronikz",
+        "capturedAt": "2026-08-08T00:00:00.000Z",
+        "externalId": "0f0e0d0c-0b0a-0908-0706-050403020100",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "6dbeafdb1fbf5561839b36101efce3264978524c7b982493064fbd6e9edcf870",
+        "url": "https://d4builds.gg/builds/hell-fracture-warlock-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+---
+import Base from '../layouts/Base.astro';
+import { loadDiccionario } from '../lib/data';
+
+const dict = loadDiccionario();
+const total = Object.values(dict.meta.counts).reduce((a, b) => a + b, 0);
+---
+
+<Base
+  titulo="Créditos y fuentes — D4es"
+  descripcion="De dónde sale cada dato de esta web, con qué licencia y cómo se atribuye. Aviso de no afiliación con Blizzard."
+>
+  <div class="mx-auto max-w-3xl px-4 py-10 space-y-8">
+    <div>
+      <h1 class="font-titulo text-3xl">Créditos y fuentes</h1>
+      <p class="mt-2 text-ceniza">
+        Este sitio no genera contenido de la nada: recoge, traduce y ordena trabajo de otros. Aquí está quién
+        hace qué.
+      </p>
+    </div>
+
+    <section class="grabado rounded-lg bg-piedra p-5">
+      <h2 class="font-titulo text-xl">Blizzard Entertainment</h2>
+      <p class="mt-2 text-sm text-ceniza">
+        Diablo IV, sus nombres, textos e imágenes son propiedad de Blizzard Entertainment, Inc. Este es un
+        sitio de fans <strong>sin ánimo de lucro</strong> y <strong>no está afiliado ni respaldado</strong>
+        por Blizzard.
+      </p>
+    </section>
+
+    <section class="grabado rounded-lg bg-piedra p-5">
+      <h2 class="font-titulo text-xl">Traducciones al castellano</h2>
+      <p class="mt-2 text-sm text-ceniza">
+        Los nombres en español salen de la <strong>localización oficial del juego</strong>, extraída por el
+        proyecto <a class="underline" href="https://github.com/josdemmers/Diablo4Companion" rel="noopener">
+          josdemmers/Diablo4Companion</a
+        > (licencia MIT). No traducimos nada a mano sin dejar constancia de la fuente, y jamás con traducción
+        automática.
+      </p>
+      <dl class="mt-4 space-y-1.5 text-sm">
+        <div class="flex gap-3">
+          <dt class="w-32 shrink-0 text-humo">Commit usado</dt>
+          <dd><code class="text-ceniza">{dict.meta.sourceSha}</code></dd>
+        </div>
+        <div class="flex gap-3">
+          <dt class="w-32 shrink-0 text-humo">Términos</dt>
+          <dd>{total} de la localización oficial</dd>
+        </div>
+      </dl>
+      <ul class="mt-4 grid gap-1 text-sm sm:grid-cols-2">
+        {
+          Object.entries(dict.meta.counts)
+            .sort()
+            .map(([cat, n]) => (
+              <li class="flex gap-3">
+                <span class="w-32 shrink-0 text-humo">{cat}</span>
+                <span>{n}</span>
+              </li>
+            ))
+        }
+      </ul>
+    </section>
+
+    <section class="grabado rounded-lg bg-piedra p-5">
+      <h2 class="font-titulo text-xl">Builds</h2>
+      <p class="mt-2 text-sm text-ceniza">
+        Las builds proceden del catálogo público de <a class="underline" href="https://d4builds.gg" rel="nofollow noopener">d4builds.gg</a>
+        y de sus creadores, que aparecen acreditados en cada ficha. Guardamos únicamente los
+        <strong>datos estructurados</strong> (clase, habilidades, rangos, runas): nunca copiamos el texto de
+        una guía. Cada ficha enlaza a la guía original, que es donde está el análisis del autor.
+      </p>
+      <p class="mt-3 text-sm text-ceniza">
+        <strong>maxroll.gg no se rastrea.</strong> Sus condiciones lo prohíben expresamente, así que nuestro
+        servidor no lo toca nunca. Cuando exista la herramienta de importación, será tu propio navegador
+        quien pida los datos, y no se guardará nada.
+      </p>
+    </section>
+
+    <section class="grabado rounded-lg bg-piedra p-5">
+      <h2 class="font-titulo text-xl">Retirada de contenido</h2>
+      <p class="mt-2 text-sm text-ceniza">
+        Si eres autor de una build o representas a una de las fuentes y quieres que retiremos algo, se retira
+        sin discusión y sin demora. Abre una incidencia en el repositorio del proyecto.
+      </p>
+    </section>
+  </div>
+</Base>

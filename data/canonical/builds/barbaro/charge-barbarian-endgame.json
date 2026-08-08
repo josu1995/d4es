@@ -1,0 +1,260 @@
+{
+  "classId": "barbarian",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Charge",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__charge",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Iron Skin",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__iron_skin",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Steel Grasp",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__steel_grasp",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "War Cry",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__war_cry",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__charge",
+        "label": {
+          "category": "skill",
+          "enUS": "Charge",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__charge",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ddaaaed4-6f3b-4c97-b65b-55b04aa2ae39:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__iron_skin",
+        "label": {
+          "category": "skill",
+          "enUS": "Iron Skin",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__iron_skin",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ddaaaed4-6f3b-4c97-b65b-55b04aa2ae39:0": 14
+        }
+      },
+      {
+        "key": "skill:skill__steel_grasp",
+        "label": {
+          "category": "skill",
+          "enUS": "Steel Grasp",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__steel_grasp",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ddaaaed4-6f3b-4c97-b65b-55b04aa2ae39:0": 1
+        }
+      },
+      {
+        "key": "skill:skill__war_cry",
+        "label": {
+          "category": "skill",
+          "enUS": "War Cry",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__war_cry",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ddaaaed4-6f3b-4c97-b65b-55b04aa2ae39:0": 15
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "barbarian::skill__charge::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "charge-barbarian-endgame",
+  "primaryVariantId": "d4builds:ddaaaed4-6f3b-4c97-b65b-55b04aa2ae39:0",
+  "ratings": {
+    "pitTier": 150,
+    "tierLabel": "S",
+    "tierRank": 1
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Charge",
+    "es": "Charge"
+  },
+  "updatedAt": "2026-08-08T00:00:00.000Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:ddaaaed4-6f3b-4c97-b65b-55b04aa2ae39:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Charge",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__charge",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Enemy Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__enemy_damage_bonus",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Battering Ram",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__battering_ram",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Distance Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__distance_damage_bonus",
+              "sno": null
+            }
+          ],
+          "skillVariant": {
+            "category": "skillVariant",
+            "enUS": "Charge Battering Ram",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skillVariant__charge_battering_ram",
+            "sno": null
+          }
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 14,
+          "ref": {
+            "category": "skill",
+            "enUS": "Iron Skin",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__iron_skin",
+            "sno": null
+          },
+          "runes": [],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "War Cry",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__war_cry",
+            "sno": null
+          },
+          "runes": [],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 1,
+          "ref": {
+            "category": "skill",
+            "enUS": "Steel Grasp",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__steel_grasp",
+            "sno": null
+          },
+          "runes": [],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": "Rob2628",
+        "capturedAt": "2026-08-08T00:00:00.000Z",
+        "externalId": "ddaaaed4-6f3b-4c97-b65b-55b04aa2ae39",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "f562f326b29163a2d1405193e3bc5c1344d0eddbb6112a25cf78456e3752de2a",
+        "url": "https://d4builds.gg/builds/charge-barbarian-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

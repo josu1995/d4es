@@ -1,0 +1,89 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+
+<Base
+  titulo="Refrescar datos — D4es"
+  descripcion="Lanzar a mano la ingesta de builds."
+  noindex={true}
+>
+  <div class="mx-auto max-w-2xl px-4 py-10">
+    <h1 class="font-titulo text-3xl">Refrescar los datos</h1>
+    <p class="mt-2 text-ceniza">
+      Normalmente no hace falta: la ingesta se ejecuta sola cada 6 horas. Esto sirve para cuando sabes que
+      acaba de salir algo y no quieres esperar.
+    </p>
+
+    <form id="form" class="mt-8 grabado rounded-lg bg-piedra p-5 space-y-4">
+      <div>
+        <label for="clave" class="block text-xs uppercase tracking-wider text-humo mb-1.5">
+          Clave de refresco
+        </label>
+        <input
+          id="clave"
+          type="password"
+          autocomplete="current-password"
+          class="w-full rounded bg-abismo grabado px-3 py-2 text-sm focus:border-oro-apagado"
+        />
+      </div>
+      <button
+        type="submit"
+        id="lanzar"
+        class="grabado grabado-hover rounded bg-brasa/20 border-brasa/50 px-5 py-2.5 text-sm font-medium hover:bg-brasa/30 disabled:opacity-50"
+      >
+        Lanzar la ingesta
+      </button>
+    </form>
+
+    <div id="resultado" class="mt-6 text-sm" role="status" aria-live="polite"></div>
+
+    <section class="mt-10 text-sm text-ceniza space-y-3">
+      <h2 class="font-titulo text-xl text-pergamino">Qué pasa al pulsar</h2>
+      <ol class="list-decimal pl-5 space-y-1.5">
+        <li>Se descarga el catálogo de la fuente, con caché condicional.</li>
+        <li>Se normaliza y se comprueba contra el esquema y los guardrails.</li>
+        <li>
+          Si los datos <strong>han cambiado</strong>, se guardan y la web se reconstruye. Si no, no se toca
+          nada: así no se gastan despliegues por gusto.
+        </li>
+        <li>Si la fuente ha cambiado de forma, o ha cambiado la temporada, se para y se abre una incidencia.</li>
+      </ol>
+    </section>
+  </div>
+</Base>
+
+<script>
+  const form = document.getElementById('form') as HTMLFormElement | null;
+  const clave = document.getElementById('clave') as HTMLInputElement | null;
+  const boton = document.getElementById('lanzar') as HTMLButtonElement | null;
+  const salida = document.getElementById('resultado');
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (!clave || !boton || !salida) return;
+
+    boton.disabled = true;
+    salida.textContent = 'Lanzando…';
+    salida.className = 'mt-6 text-sm text-ceniza';
+
+    try {
+      const res = await fetch('/api/refrescar', {
+        method: 'POST',
+        headers: { 'x-refresh-key': clave.value },
+      });
+      const datos = await res.json();
+      if (res.ok) {
+        salida.className = 'mt-6 text-sm grabado rounded-lg bg-piedra p-4';
+        salida.innerHTML = `${datos.mensaje} <a class="underline" target="_blank" rel="noopener" href="${datos.seguimiento}">Ver la ejecución</a>`;
+      } else {
+        salida.className = 'mt-6 text-sm grabado rounded-lg border-brasa/50 bg-brasa/10 p-4';
+        salida.textContent = datos.error ?? 'Ha fallado.';
+      }
+    } catch (err) {
+      salida.className = 'mt-6 text-sm grabado rounded-lg border-brasa/50 bg-brasa/10 p-4';
+      salida.textContent = `No se ha podido contactar con la función: ${String(err)}`;
+    } finally {
+      boton.disabled = false;
+    }
+  });
+</script>

@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci --no-audit --no-fund
+
+      - name: Tipos
+        run: npm run build:pkgs
+
+      - name: Tests
+        run: npm test
+
+      # Los datos publicados tienen que validar contra el esquema en cada PR: si alguien
+      # edita a mano un fichero de data/ y lo rompe, se entera aqui y no en produccion.
+      - name: Validar los datos publicados
+        run: node apps/scraper/dist/cli.js verify
+
+      - name: Construir la web
+        run: npm run build --workspace @d4es/web

@@ -1,0 +1,73 @@
+---
+import type { BuildIndexRow } from '@d4es/schema';
+import { buildUrl } from '../lib/data';
+
+interface Props {
+  build: BuildIndexRow;
+  claseEs: string;
+}
+
+const { build, claseEs } = Astro.props;
+
+const COLOR_TIER: Record<string, string> = {
+  S: 'text-rareza-mitico border-rareza-mitico/50 bg-rareza-mitico/10',
+  A: 'text-rareza-legendario border-rareza-legendario/50 bg-rareza-legendario/10',
+  B: 'text-rareza-raro border-rareza-raro/40 bg-rareza-raro/10',
+  C: 'text-rareza-magico border-rareza-magico/40 bg-rareza-magico/10',
+};
+const tierClase = build.tierLabel ? (COLOR_TIER[build.tierLabel[0] ?? ''] ?? '') : '';
+---
+
+<article
+  class="grabado grabado-hover rounded-lg bg-piedra p-4 h-full flex flex-col"
+  data-build
+  data-clase={build.classSlug}
+  data-contenido={build.content.join(' ')}
+  data-fuentes={build.sources.join(' ')}
+  data-pit={build.pitTier ?? 0}
+  data-tier={build.tierLabel ?? ''}
+  data-busqueda={`${build.title} ${build.titleEn} ${claseEs} ${build.authors.join(' ')} ${build.skills.join(' ')}`.toLowerCase()}
+>
+  <div class="flex items-start justify-between gap-3">
+    <div class="min-w-0">
+      <h3 class="font-titulo text-lg leading-tight truncate">
+        <a href={buildUrl(build)} class="hover:text-brasa-viva transition-colors">
+          {build.title}
+        </a>
+      </h3>
+      <p class="text-xs text-humo mt-0.5">
+        {claseEs}
+        {build.authors.length > 0 && <span> · por {build.authors.join(', ')}</span>}
+      </p>
+    </div>
+    {
+      build.tierLabel && (
+        <span
+          class={`shrink-0 rounded border px-2 py-0.5 text-xs font-semibold ${tierClase}`}
+          title="Posición en la tier list de la fuente"
+        >
+          {build.tierLabel}
+        </span>
+      )
+    }
+  </div>
+
+  {
+    build.skills.length > 0 && (
+      <ul class="mt-3 flex flex-wrap gap-1.5">
+        {build.skills.slice(0, 5).map((s) => (
+          <li class="rounded bg-piedra-alta border border-grabado px-1.5 py-0.5 text-[0.7rem] text-ceniza">
+            {s}
+          </li>
+        ))}
+      </ul>
+    )
+  }
+
+  <div class="mt-auto pt-3 flex items-center gap-3 text-xs text-humo">
+    {build.pitTier && <span title="Nivel de Fosa que aguanta según la fuente">Fosa {build.pitTier}</span>}
+    <span class="ml-auto flex gap-1">
+      {build.sources.map((s) => <span class="rounded border border-grabado px-1.5 py-0.5">{s}</span>)}
+    </span>
+  </div>
+</article>

@@ -1,0 +1,28 @@
+---
+import type { GameRef } from '@d4es/schema';
+
+interface Props {
+  ref: GameRef;
+  clase?: string;
+}
+
+const { ref, clase = '' } = Astro.props;
+---
+
+{
+  ref.esES ? (
+    <span class={clase} title={`En inglés: ${ref.enUS}`}>
+      {ref.esES}
+    </span>
+  ) : (
+    /*
+      Sin traducción oficial verificada. Se pinta el inglés con marca visible en vez de
+      inventar un nombre que el jugador no encontraría en su cliente del juego.
+      El atributo data-i18n-missing lo audita el test de cobertura.
+    */
+    <span class={clase} data-i18n-missing title="Sin traducción oficial verificada todavía">
+      {ref.enUS}
+      <span class="chip-en" aria-label="sin traducir">EN</span>
+    </span>
+  )
+}

@@ -1,0 +1,20 @@
+node_modules/
+dist/
+.astro/
+*.tsbuildinfo
+
+# Netlify
+.netlify/
+
+# Cuerpos crudos descargados: pesados y reproducibles.
+# El indice (_index.json), los fingerprints y los _meta.json SI se versionan.
+data/raw/**/bodies/
+
+# Diccionario compilado y vendor de Diablo4Companion: se regeneran con `npm run i18n:sync`
+packages/i18n-d4/vendor/
+packages/i18n-d4/dist-data/
+
+.env
+.env.local
+.DS_Store
+Thumbs.db

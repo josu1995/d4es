@@ -1,0 +1,161 @@
+{
+  "classId": "spiritborn",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Pestilent Swarm",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__pestilent_swarm",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Ravager",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__ravager",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__pestilent_swarm",
+        "label": {
+          "category": "skill",
+          "enUS": "Pestilent Swarm",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__pestilent_swarm",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:9c8b7a65-4321-0fed-cba9-876543210fed:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__ravager",
+        "label": {
+          "category": "skill",
+          "enUS": "Ravager",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__ravager",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:9c8b7a65-4321-0fed-cba9-876543210fed:0": 10
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "spiritborn::skill__pestilent_swarm::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "pestilent-swarm-spiritborn-endgame",
+  "primaryVariantId": "d4builds:9c8b7a65-4321-0fed-cba9-876543210fed:0",
+  "ratings": {
+    "pitTier": 150,
+    "tierLabel": "S",
+    "tierRank": 1
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Pestilent Swarm",
+    "es": "Pestilent Swarm"
+  },
+  "updatedAt": "2026-08-08T00:00:00.000Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:9c8b7a65-4321-0fed-cba9-876543210fed:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Pestilent Swarm",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__pestilent_swarm",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Enemy Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__enemy_damage_bonus",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 10,
+          "ref": {
+            "category": "skill",
+            "enUS": "Ravager",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__ravager",
+            "sno": null
+          },
+          "runes": [],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": "Chronikz",
+        "capturedAt": "2026-08-08T00:00:00.000Z",
+        "externalId": "9c8b7a65-4321-0fed-cba9-876543210fed",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "6645eb1fe32d4307439eee7fd8c4f3c4c124b1eca0c2ba12e3888efd3c1b8dc3",
+        "url": "https://d4builds.gg/builds/pestilent-swarm-spiritborn-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

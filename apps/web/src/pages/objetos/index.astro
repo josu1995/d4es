@@ -1,0 +1,109 @@
+---
+import Base from '../../layouts/Base.astro';
+import { porCategoria, loadDiccionario } from '../../lib/data';
+
+const dict = loadDiccionario();
+const unicos = porCategoria('unique');
+const aspectos = porCategoria('aspect');
+const glifos = porCategoria('glyph');
+const runas = porCategoria('rune');
+
+const secciones = [
+  { id: 'unicos', titulo: 'Únicos', entradas: unicos },
+  { id: 'aspectos', titulo: 'Aspectos', entradas: aspectos },
+  { id: 'glifos', titulo: 'Glifos', entradas: glifos },
+  { id: 'runas', titulo: 'Runas', entradas: runas },
+];
+const total = secciones.reduce((n, s) => n + s.entradas.length, 0);
+---
+
+<Base
+  titulo="Objetos de Diablo 4: únicos, aspectos, glifos y runas en español"
+  descripcion="Buscador bilingüe de únicos, aspectos, glifos y runas de Diablo 4. Escribe el nombre en inglés o en español y encuentra su equivalente oficial."
+>
+  <div class="mx-auto max-w-5xl px-4 py-10">
+    <h1 class="font-titulo text-3xl">Objetos</h1>
+    <p class="mt-2 max-w-2xl text-ceniza">
+      {total} términos con su nombre oficial en los dos idiomas. Sirve justo para lo que más duele: estás
+      leyendo una guía en inglés, no sabes cómo se llama eso en tu cliente del juego, lo escribes aquí y lo
+      encuentras. Funciona en ambos sentidos.
+    </p>
+
+    <div class="mt-6 sticky top-14 z-30 bg-abismo/95 backdrop-blur py-3">
+      <label for="q" class="sr-only">Buscar objeto</label>
+      <input
+        id="q"
+        type="search"
+        placeholder="Escribe en inglés o en español: Shako, Abuelo, Starless…"
+        class="w-full rounded bg-piedra grabado px-4 py-3 text-base placeholder:text-humo focus:border-oro-apagado"
+        autocomplete="off"
+      />
+      <p id="conteo" class="mt-2 text-xs text-humo" aria-live="polite">{total} términos</p>
+    </div>
+
+    {
+      secciones.map((s) => (
+        <section class="mt-8" data-seccion={s.id}>
+          <h2 class="font-titulo text-2xl">
+            {s.titulo} <span class="text-humo text-base">({s.entradas.length})</span>
+          </h2>
+          <ul class="mt-3 grabado rounded-lg bg-piedra divide-y divide-grabado overflow-hidden">
+            {s.entradas.map((e) => (
+              <li
+                class="flex flex-wrap items-baseline gap-x-3 px-4 py-2"
+                data-item
+                data-busqueda={`${e.es} ${e.en}`.toLowerCase()}
+              >
+                <span class="text-pergamino">{e.es}</span>
+                <span class="text-sm text-humo">{e.en}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+
+    <p id="vacio" class="mt-10 text-center text-ceniza hidden">
+      No hay ningún término que coincida.
+    </p>
+
+    <p class="mt-10 text-xs text-humo">
+      Nombres procedentes de la localización oficial del juego vía Diablo4Companion (MIT), commit
+      <code class="text-ceniza">{dict.meta.sourceSha.slice(0, 10)}</code>. Ver <a class="underline" href="/creditos">créditos</a>.
+    </p>
+  </div>
+</Base>
+
+<script>
+  const q = document.getElementById('q') as HTMLInputElement | null;
+  const conteo = document.getElementById('conteo');
+  const vacio = document.getElementById('vacio');
+
+  if (q && conteo && vacio) {
+    const items = Array.from(document.querySelectorAll<HTMLElement>('[data-item]'));
+    const secciones = Array.from(document.querySelectorAll<HTMLElement>('[data-seccion]'));
+
+    // Sin acentos en los dos lados: buscar "bardo" debe encontrar "Bárbaro".
+    const plano = (s: string) => s.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase();
+    const indice = items.map((el) => plano(el.dataset['busqueda'] ?? ''));
+
+    function aplicar() {
+      const texto = plano(q!.value.trim());
+      let visibles = 0;
+      items.forEach((el, i) => {
+        const visible = texto === '' || indice[i]!.includes(texto);
+        el.classList.toggle('hidden', !visible);
+        if (visible) visibles++;
+      });
+      // Una sección sin resultados solo estorba.
+      for (const seccion of secciones) {
+        const algo = seccion.querySelector('[data-item]:not(.hidden)') !== null;
+        seccion.classList.toggle('hidden', !algo);
+      }
+      conteo!.textContent = visibles === 1 ? '1 término' : `${visibles} términos`;
+      vacio!.classList.toggle('hidden', visibles > 0);
+    }
+
+    q.addEventListener('input', aplicar);
+  }
+</script>

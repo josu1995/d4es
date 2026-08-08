@@ -1,0 +1,237 @@
+{
+  "classId": "sorcerer",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Ball Lightning",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__ball_lightning",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Ice Armor",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__ice_armor",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Teleport",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__teleport",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Unstable Currents",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__unstable_currents",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__ball_lightning",
+        "label": {
+          "category": "skill",
+          "enUS": "Ball Lightning",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__ball_lightning",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:0e5a63c6-49fa-4992-a65c-33f50db9bd4e:0": 15
+        }
+      },
+      {
+        "key": "skill:skill__ice_armor",
+        "label": {
+          "category": "skill",
+          "enUS": "Ice Armor",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__ice_armor",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:0e5a63c6-49fa-4992-a65c-33f50db9bd4e:0": 5
+        }
+      },
+      {
+        "key": "skill:skill__teleport",
+        "label": {
+          "category": "skill",
+          "enUS": "Teleport",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__teleport",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:0e5a63c6-49fa-4992-a65c-33f50db9bd4e:0": 5
+        }
+      },
+      {
+        "key": "skill:skill__unstable_currents",
+        "label": {
+          "category": "skill",
+          "enUS": "Unstable Currents",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__unstable_currents",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:0e5a63c6-49fa-4992-a65c-33f50db9bd4e:0": 12
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "sorcerer::skill__ball_lightning::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "ball-lightning-sorcerer-endgame",
+  "primaryVariantId": "d4builds:0e5a63c6-49fa-4992-a65c-33f50db9bd4e:0",
+  "ratings": {
+    "pitTier": 150,
+    "tierLabel": "A",
+    "tierRank": 1
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Ball Lightning",
+    "es": "Ball Lightning"
+  },
+  "updatedAt": "2026-08-08T00:00:00.000Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:0e5a63c6-49fa-4992-a65c-33f50db9bd4e:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Ball Lightning",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__ball_lightning",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Enemy Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__enemy_damage_bonus",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 5,
+          "ref": {
+            "category": "skill",
+            "enUS": "Teleport",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__teleport",
+            "sno": null
+          },
+          "runes": [],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 2,
+          "rank": 5,
+          "ref": {
+            "category": "skill",
+            "enUS": "Ice Armor",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__ice_armor",
+            "sno": null
+          },
+          "runes": [],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 3,
+          "rank": 12,
+          "ref": {
+            "category": "skill",
+            "enUS": "Unstable Currents",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__unstable_currents",
+            "sno": null
+          },
+          "runes": [],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": "Northwar",
+        "capturedAt": "2026-08-08T00:00:00.000Z",
+        "externalId": "0e5a63c6-49fa-4992-a65c-33f50db9bd4e",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "cb051328171a858036716f7b63a8e6433a7d5c96264823e786d0fe211a500a3b",
+        "url": "https://d4builds.gg/builds/ball-lightning-sorcerer-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

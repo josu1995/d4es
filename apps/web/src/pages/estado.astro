@@ -1,0 +1,129 @@
+---
+import Base from '../layouts/Base.astro';
+import { loadIndex, loadEstado, loadCobertura, diasHastaFinDeTemporada } from '../lib/data';
+
+const indice = loadIndex();
+const estado = loadEstado();
+const cobertura = loadCobertura();
+const dias = diasHastaFinDeTemporada(estado, new Date());
+
+const fecha = (iso: string) =>
+  new Date(iso).toLocaleString('es-ES', { dateStyle: 'long', timeStyle: 'short' });
+
+const pctSinTraducir = cobertura ? Math.round(cobertura.resolucion.missRate * 100) : null;
+const pendientes = cobertura
+  ? Object.entries(cobertura.sinTraducir)
+      .map(([categoria, terminos]) => ({ categoria, total: terminos.length }))
+      .sort((a, b) => b.total - a.total)
+  : [];
+---
+
+<Base
+  titulo="Estado de los datos — D4es"
+  descripcion="Qué datos tiene la web, de cuándo son, qué está verificado y qué no. Transparencia sobre la frescura del contenido."
+>
+  <div class="mx-auto max-w-3xl px-4 py-10">
+    <h1 class="font-titulo text-3xl">Estado de los datos</h1>
+    <p class="mt-2 text-ceniza">
+      Una web de builds que no dice de cuándo son sus datos no sirve de nada. Aquí está todo lo que sabemos
+      sobre la frescura y las lagunas de este sitio, sin maquillar.
+    </p>
+
+    <section class="mt-8 grabado rounded-lg bg-piedra p-5">
+      <h2 class="font-titulo text-xl">Temporada</h2>
+      <dl class="mt-3 space-y-2 text-sm">
+        <div class="flex gap-3">
+          <dt class="w-40 shrink-0 text-humo">Expansión</dt>
+          <dd>{estado.expansion}</dd>
+        </div>
+        <div class="flex gap-3">
+          <dt class="w-40 shrink-0 text-humo">Temporada</dt>
+          <dd>{estado.temporadaActual} — {estado.temporadaNombreEs ?? estado.temporadaNombreEn}</dd>
+        </div>
+        <div class="flex gap-3">
+          <dt class="w-40 shrink-0 text-humo">Parche</dt>
+          <dd>{estado.parche}</dd>
+        </div>
+        <div class="flex gap-3">
+          <dt class="w-40 shrink-0 text-humo">Fin previsto</dt>
+          <dd>
+            {estado.finPrevisto}
+            <span class="text-humo">
+              {dias > 0 ? ` (quedan ~${dias} días)` : ' (ya vencido)'}
+            </span>
+          </dd>
+        </div>
+      </dl>
+      {
+        estado.verificacion.estado !== 'verificado' && (
+          <p class="mt-4 rounded border border-oro-apagado/40 bg-oro/5 p-3 text-sm">
+            <strong class="text-oro">Por confirmar.</strong>
+            <span class="text-ceniza"> {estado.verificacion.fuente}</span>
+          </p>
+        )
+      }
+    </section>
+
+    <section class="mt-6 grabado rounded-lg bg-piedra p-5">
+      <h2 class="font-titulo text-xl">Builds</h2>
+      <dl class="mt-3 space-y-2 text-sm">
+        <div class="flex gap-3">
+          <dt class="w-40 shrink-0 text-humo">Builds publicadas</dt>
+          <dd>{indice.count}</dd>
+        </div>
+        <div class="flex gap-3">
+          <dt class="w-40 shrink-0 text-humo">Último cambio</dt>
+          <dd>{fecha(indice.generatedAt)}</dd>
+        </div>
+        <div class="flex gap-3">
+          <dt class="w-40 shrink-0 text-humo">Fuentes</dt>
+          <dd>d4builds.gg (catálogo público)</dd>
+        </div>
+      </dl>
+      <p class="mt-4 text-sm text-ceniza">
+        Hoy solo tenemos <strong>habilidades y runas</strong>: el catálogo público de la fuente no incluye
+        equipo ni Paragón. Cada ficha lo dice y enlaza a la guía original del autor.
+      </p>
+    </section>
+
+    {
+      cobertura && (
+        <section class="mt-6 grabado rounded-lg bg-piedra p-5">
+          <h2 class="font-titulo text-xl">Traducciones</h2>
+          <p class="mt-3 text-sm text-ceniza">
+            El diccionario trae{' '}
+            {Object.values(cobertura.diccionario.counts).reduce((a, b) => a + b, 0)} términos de la
+            localización oficial del juego. Un{' '}
+            <strong class="text-pergamino">{pctSinTraducir}%</strong> de lo que aparece en las builds todavía
+            se ve en inglés, con el distintivo <span class="chip-en">EN</span>.
+          </p>
+          <p class="mt-3 text-sm text-ceniza">
+            El motivo es concreto: la fuente del diccionario no publica un fichero de habilidades, así que
+            los nombres de habilidad hay que meterlos a mano y con procedencia. Preferimos enseñar el inglés
+            marcado antes que inventar un nombre que no existiría en tu cliente del juego.
+          </p>
+          {pendientes.length > 0 && (
+            <ul class="mt-4 space-y-1 text-sm">
+              {pendientes.map((p) => (
+                <li class="flex gap-3">
+                  <span class="w-40 shrink-0 text-humo">{p.categoria}</span>
+                  <span>{p.total} términos pendientes</span>
+                </li>
+              ))}
+            </ul>
+          )}
+        </section>
+      )
+    }
+
+    <section class="mt-6 grabado rounded-lg bg-piedra p-5">
+      <h2 class="font-titulo text-xl">Cómo se actualiza</h2>
+      <p class="mt-3 text-sm text-ceniza">
+        Un proceso automático revisa la fuente cada 6 horas. Si de verdad ha cambiado algo, escribe los datos
+        nuevos y la web se reconstruye sola; si no ha cambiado nada, no toca nada. Cuando el origen empiece a
+        publicar una temporada nueva, el proceso se detiene a propósito y avisa, en vez de mezclar datos de
+        dos temporadas.
+      </p>
+    </section>
+  </div>
+</Base>

@@ -1,0 +1,117 @@
+---
+import Base from '../layouts/Base.astro';
+import TarjetaBuild from '../components/TarjetaBuild.astro';
+import { loadIndex, loadEstado, loadClasesEs, claseNombre, diasHastaFinDeTemporada } from '../lib/data';
+
+const indice = loadIndex();
+const estado = loadEstado();
+const clasesEs = loadClasesEs();
+const dias = diasHastaFinDeTemporada(estado, new Date());
+
+const destacadas = [...indice.builds]
+  .sort((a, b) => {
+    const orden = (t: string | null) => (t ? 'SABCDF'.indexOf(t[0] ?? 'F') : 9);
+    return orden(a.tierLabel) - orden(b.tierLabel) || (b.pitTier ?? 0) - (a.pitTier ?? 0);
+  })
+  .slice(0, 6);
+
+/*
+  Cosas que medio internet en español sigue dando por buenas y que Lord of Hatred se cargó.
+  Es el contenido más barato de escribir y el que más ayuda de verdad.
+*/
+const obsoleto = [
+  {
+    mito: 'El nivel máximo es 60',
+    realidad: 'Es 70 desde Lord of Hatred, y el Paragón se desbloquea al llegar.',
+  },
+  {
+    mito: 'Tormento IV es la dificultad máxima',
+    realidad: 'Ahora hay 16 dificultades, de las cuales 12 son de Tormento.',
+  },
+  {
+    mito: 'Farmea el aspecto X en la mazmorra Y',
+    realidad:
+      'El Códice ya no funciona así: los aspectos caen en legendarios de cualquier actividad y no se pueden buscar por mazmorra.',
+  },
+  {
+    mito: 'Llévate elixires e inciensos',
+    realidad: 'Se eliminaron del juego por completo.',
+  },
+  {
+    mito: 'Los materiales de maestría salen de la Fosa',
+    realidad: 'Ya no. Vienen de Mazmorras de Pesadilla, Ciudad Baja, Hordas Infernales y Marea Infernal.',
+  },
+];
+---
+
+<Base
+  titulo="D4es — Builds de Diablo 4 en castellano"
+  descripcion="Builds de Diablo 4 traducidas al español, con guías de crafteo de míticos, jefes y materiales. Temporada 14, parche 3.1.2."
+>
+  <section class="mx-auto max-w-6xl px-4 pt-16 pb-12">
+    <p class="text-xs uppercase tracking-[0.2em] text-oro-apagado">
+      {estado.expansion} · Temporada {estado.temporadaActual}
+    </p>
+    <h1 class="mt-3 font-titulo text-4xl sm:text-5xl leading-[1.05] max-w-3xl">
+      Las builds de Diablo 4, <span class="text-brasa-viva">en tu idioma</span>.
+    </h1>
+    <p class="mt-5 max-w-2xl text-ceniza leading-relaxed">
+      Reunimos las builds de la comunidad, las traducimos usando la localización oficial del juego y las
+      dejamos comparables entre sí. Y añadimos lo que no existe en castellano: cómo se craftean los
+      míticos, qué suelta cada jefe y dónde se farmea cada material.
+    </p>
+
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a
+        href="/builds"
+        class="grabado grabado-hover rounded bg-brasa/20 border-brasa/50 px-5 py-2.5 text-sm font-medium hover:bg-brasa/30"
+      >
+        Ver las {indice.count} builds
+      </a>
+      <a href="/guias" class="grabado grabado-hover rounded bg-piedra px-5 py-2.5 text-sm">
+        Guías de crafteo y jefes
+      </a>
+    </div>
+
+    <p class="mt-6 text-xs text-humo">
+      {
+        dias > 0
+          ? `Quedan unos ${dias} días de temporada (fin previsto: ${estado.finPrevisto}).`
+          : `Fin previsto de temporada: ${estado.finPrevisto}.`
+      }
+      Datos actualizados automáticamente desde las fuentes.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-4 py-10 border-t border-grabado">
+    <div class="flex items-baseline justify-between gap-4">
+      <h2 class="font-titulo text-2xl">Lo más fuerte ahora mismo</h2>
+      <a href="/builds" class="text-sm text-ceniza hover:text-pergamino">Ver todas →</a>
+    </div>
+    <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {
+        destacadas.map((b) => (
+          <TarjetaBuild build={b} claseEs={claseNombre(b.classId, clasesEs)} />
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-4 py-10 border-t border-grabado">
+    <h2 class="font-titulo text-2xl">Esto ya no es verdad</h2>
+    <p class="mt-2 text-ceniza max-w-2xl">
+      Lord of Hatred cambió tantas cosas que casi toda la información en español que hay por ahí está
+      obsoleta. Si una guía te dice algo de esta lista, es de antes de abril de 2026.
+    </p>
+    <ul class="mt-6 grid gap-3 sm:grid-cols-2">
+      {
+        obsoleto.map((o) => (
+          <li class="grabado rounded-lg bg-piedra p-4">
+            <p class="text-sm text-humo line-through decoration-brasa/60">{o.mito}</p>
+            <p class="mt-1.5 text-sm text-pergamino">{o.realidad}</p>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</Base>

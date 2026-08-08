@@ -1,0 +1,118 @@
+/* Ruta al fichero real y no al nombre del paquete: el postcss-import que trae Vite
+   resuelve los @import antes que Tailwind, y "tailwindcss" a secas no es un fichero. */
+@import 'tailwindcss/index.css';
+
+/*
+  Paleta "dark fantasy": negro con tinte calido (no gris neutro), brasa para lo que
+  acciona, oro apagado para jerarquia. Los colores de rareza son tokens para que un
+  legendario se vea igual en la ficha, en el tooltip y en el listado.
+*/
+@theme {
+  --color-abismo: #0b0908;
+  --color-piedra: #14100e;
+  --color-piedra-alta: #1c1613;
+  --color-grabado: #2c231d;
+  --color-grabado-vivo: #40332a;
+
+  --color-pergamino: #e9e1d5;
+  --color-ceniza: #a2968a;
+  --color-humo: #6d635b;
+
+  --color-brasa: #c8452f;
+  --color-brasa-viva: #e26a43;
+  --color-oro: #c9a227;
+  --color-oro-apagado: #8f7526;
+
+  --color-rareza-normal: #d8d0c4;
+  --color-rareza-magico: #7b96d6;
+  --color-rareza-raro: #d9c84f;
+  --color-rareza-legendario: #d98324;
+  --color-rareza-unico: #a4573a;
+  --color-rareza-mitico: #e3c37a;
+
+  --font-titulo: 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
+  --font-cuerpo:
+    ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-abismo);
+    color: var(--color-pergamino);
+    font-family: var(--font-cuerpo);
+    /* Textura de piedra a muy baja opacidad: da cuerpo sin cargar ninguna imagen. */
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% -10%, rgb(200 69 47 / 0.1), transparent),
+      repeating-linear-gradient(
+        45deg,
+        rgb(255 255 255 / 0.008) 0px,
+        rgb(255 255 255 / 0.008) 1px,
+        transparent 1px,
+        transparent 3px
+      );
+    background-attachment: fixed;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-titulo);
+    letter-spacing: -0.01em;
+  }
+
+  ::selection {
+    background: var(--color-brasa);
+    color: var(--color-pergamino);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-oro);
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  /* Borde de 1px tipo metal grabado: linea exterior mate + brillo interior. */
+  .grabado {
+    border: 1px solid var(--color-grabado);
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.04);
+  }
+
+  .grabado-hover {
+    transition:
+      border-color 150ms ease,
+      background-color 150ms ease,
+      transform 150ms ease;
+  }
+  .grabado-hover:hover {
+    border-color: var(--color-grabado-vivo);
+    background-color: var(--color-piedra-alta);
+  }
+
+  /* Chip "EN": marca un termino sin traduccion oficial verificada. */
+  .chip-en {
+    font-size: 0.6rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    padding: 0.05rem 0.25rem;
+    border-radius: 0.2rem;
+    border: 1px solid var(--color-grabado-vivo);
+    color: var(--color-humo);
+    vertical-align: super;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# La zona de administracion no aporta nada a un buscador.
+Disallow: /admin/
+
+Sitemap: https://d4es.netlify.app/sitemap-index.xml

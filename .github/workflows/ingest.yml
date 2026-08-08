@@ -1,0 +1,143 @@
+name: Ingesta de builds
+
+on:
+  schedule:
+    # Cada 6 horas. Solo hay commit (y por tanto deploy) si los datos cambian de verdad.
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+    inputs:
+      motivo:
+        description: 'Motivo del refresco manual'
+        required: false
+        default: 'refresco a mano'
+
+concurrency:
+  group: ingesta
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  actions: read
+  issues: write
+
+jobs:
+  ingesta:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci --no-audit --no-fund
+
+      - name: Compilar paquetes
+        run: npm run build:pkgs
+
+      # Los cuerpos crudos no van en git, pero se cachean para que el ETag condicional
+      # sirva de algo entre ejecuciones y no descarguemos lo mismo cada 6 horas.
+      - name: Restaurar cache de descargas
+        uses: actions/cache@v4
+        with:
+          path: data/raw/**/bodies
+          key: raw-bodies-${{ github.run_id }}
+          restore-keys: raw-bodies-
+
+      - name: Descargar catalogo
+        id: scrape
+        run: node apps/scraper/dist/cli.js scrape:catalog
+        continue-on-error: true
+
+      - name: Avisar de cambio de esquema
+        if: steps.scrape.outcome == 'failure'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const titulo = 'SCHEMA_DRIFT: d4builds ha cambiado la forma de su JSON';
+            const abiertas = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo,
+              state: 'open', labels: 'drift',
+            });
+            if (!abiertas.data.some(i => i.title === titulo)) {
+              await github.rest.issues.create({
+                owner: context.repo.owner, repo: context.repo.repo,
+                title: titulo, labels: ['drift'],
+                body: `La descarga fallo o detecto drift en la ejecucion ${context.runId}.\n\n`
+                    + `Revisa el log y actualiza \`packages/schema/src/raw-d4builds.ts\` si hace falta.\n`
+                    + `Los datos publicados NO se han tocado.`,
+              });
+            }
+
+      - name: Parar si fallo la descarga
+        if: steps.scrape.outcome == 'failure'
+        run: exit 1
+
+      # El CLI distingue por codigo de salida: 2 = guardrail, 3 = cambio de temporada.
+      # `continue-on-error` solo diria "failure", asi que se captura el codigo a mano.
+      - name: Normalizar
+        id: normalizar
+        run: |
+          set +e
+          node apps/scraper/dist/cli.js normalize
+          codigo=$?
+          echo "codigo=$codigo" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: Avisar si la ingesta se ha detenido
+        if: steps.normalizar.outputs.codigo != '0'
+        uses: actions/github-script@v7
+        env:
+          CODIGO: ${{ steps.normalizar.outputs.codigo }}
+        with:
+          script: |
+            const codigo = process.env.CODIGO;
+            const esTemporada = codigo === '3';
+            const titulo = esTemporada
+              ? 'Cambio de temporada detectado: hay que hacer el corte'
+              : 'La ingesta se ha detenido (guardrail)';
+            const abiertas = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo, state: 'open', labels: 'ingesta',
+            });
+            if (abiertas.data.some(i => i.title === titulo)) return;
+            const cuerpo = esTemporada
+              ? `El origen ya publica una temporada mayor que la configurada en `
+                + `\`data/curated/estado-juego.json\`. No se ha publicado nada, para no mezclar `
+                + `datos de dos temporadas.\n\n`
+                + `**Checklist de corte de temporada**\n`
+                + `- [ ] Actualizar \`data/curated/estado-juego.json\`\n`
+                + `- [ ] Revisar \`/guias/obsoleto\` con las notas del parche nuevo\n`
+                + `- [ ] Archivar el contenido de la temporada anterior\n`
+                + `- [ ] Volver a lanzar la ingesta`
+              : `Un guardrail ha parado la ingesta (ejecucion ${context.runId}). Los datos `
+                + `publicados no se han tocado.\n\nMira el log: normalmente significa que la `
+                + `fuente ha cambiado y estabamos a punto de publicar datos incompletos.`;
+            await github.rest.issues.create({
+              owner: context.repo.owner, repo: context.repo.repo,
+              title: titulo, labels: ['ingesta'], body: cuerpo,
+            });
+
+      - name: Parar si la normalizacion no dio luz verde
+        if: steps.normalizar.outputs.codigo != '0'
+        run: exit 1
+
+      - run: node apps/scraper/dist/cli.js correlate
+
+      - name: Verificar los datos antes de publicarlos
+        run: node apps/scraper/dist/cli.js verify
+
+      - name: Publicar si hay cambios
+        run: |
+          if [ -z "$(git status --porcelain data/)" ]; then
+            echo "Sin cambios en los datos: no se toca nada y no se gasta un deploy."
+            exit 0
+          fi
+          git config user.name "d4es-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/
+          git commit -m "datos: actualizacion automatica del catalogo
+
+          Motivo: ${{ github.event.inputs.motivo || 'cron' }}
+          Ejecucion: ${{ github.run_id }}"
+          git push

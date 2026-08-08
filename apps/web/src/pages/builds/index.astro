@@ -1,0 +1,183 @@
+---
+import Base from '../../layouts/Base.astro';
+import TarjetaBuild from '../../components/TarjetaBuild.astro';
+import { loadIndex, loadClasesEs, claseNombre } from '../../lib/data';
+import { CLASSES } from '@d4es/schema';
+
+const indice = loadIndex();
+const clasesEs = loadClasesEs();
+
+const conteoPorClase = new Map<string, number>();
+for (const b of indice.builds) conteoPorClase.set(b.classSlug, (conteoPorClase.get(b.classSlug) ?? 0) + 1);
+
+const clasesConBuilds = CLASSES.filter((c) => (conteoPorClase.get(c.slug) ?? 0) > 0);
+
+const CONTENIDOS = [
+  { id: 'endgame', etiqueta: 'Endgame' },
+  { id: 'leveling', etiqueta: 'Subida de nivel' },
+  { id: 'speedfarm', etiqueta: 'Farmeo rápido' },
+  { id: 'lair-boss', etiqueta: 'Jefes' },
+  { id: 'pit', etiqueta: 'La Fosa' },
+];
+const contenidosConBuilds = CONTENIDOS.filter((c) => indice.builds.some((b) => b.content.includes(c.id as never)));
+---
+
+<Base
+  titulo={`Builds de Diablo 4 en español — Temporada ${indice.season}`}
+  descripcion={`${indice.count} builds de Diablo 4 traducidas al castellano, filtrables por clase, contenido y nivel de Fosa. Temporada ${indice.season}, parche ${indice.patch}.`}
+>
+  <div class="mx-auto max-w-6xl px-4 py-10">
+    <h1 class="font-titulo text-3xl">Builds</h1>
+    <p class="mt-2 text-ceniza">
+      {indice.count} builds de la temporada {indice.season}. Los filtros se guardan en la dirección, así que
+      puedes compartir una búsqueda tal cual.
+    </p>
+
+    <form
+      id="filtros"
+      class="mt-8 grabado rounded-lg bg-piedra p-4 space-y-4"
+      aria-label="Filtros de builds"
+      onsubmit="return false"
+    >
+      <div>
+        <label for="q" class="block text-xs uppercase tracking-wider text-humo mb-1.5">Buscar</label>
+        <input
+          id="q"
+          name="q"
+          type="search"
+          placeholder="Nombre, habilidad o creador… (funciona en inglés y en español)"
+          class="w-full rounded bg-abismo grabado px-3 py-2 text-sm placeholder:text-humo focus:border-oro-apagado"
+          autocomplete="off"
+        />
+      </div>
+
+      <fieldset>
+        <legend class="text-xs uppercase tracking-wider text-humo mb-1.5">Clase</legend>
+        <div class="flex flex-wrap gap-1.5">
+          {
+            clasesConBuilds.map((c) => (
+              <label class="cursor-pointer">
+                <input type="checkbox" name="clase" value={c.slug} class="peer sr-only" />
+                <span class="inline-block rounded border border-grabado bg-abismo px-2.5 py-1 text-sm text-ceniza transition-colors hover:border-grabado-vivo peer-checked:border-brasa/60 peer-checked:bg-brasa/15 peer-checked:text-pergamino peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-oro">
+                  {claseNombre(c.id, clasesEs)}
+                  <span class="text-humo"> {conteoPorClase.get(c.slug)}</span>
+                </span>
+              </label>
+            ))
+          }
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend class="text-xs uppercase tracking-wider text-humo mb-1.5">Para qué</legend>
+        <div class="flex flex-wrap gap-1.5">
+          {
+            contenidosConBuilds.map((c) => (
+              <label class="cursor-pointer">
+                <input type="checkbox" name="contenido" value={c.id} class="peer sr-only" />
+                <span class="inline-block rounded border border-grabado bg-abismo px-2.5 py-1 text-sm text-ceniza transition-colors hover:border-grabado-vivo peer-checked:border-brasa/60 peer-checked:bg-brasa/15 peer-checked:text-pergamino">
+                  {c.etiqueta}
+                </span>
+              </label>
+            ))
+          }
+        </div>
+      </fieldset>
+
+      <div class="flex items-center justify-between gap-4 pt-1">
+        <p id="conteo" class="text-sm text-ceniza" aria-live="polite">{indice.count} builds</p>
+        <button
+          type="button"
+          id="limpiar"
+          class="text-sm text-humo hover:text-pergamino underline underline-offset-4"
+        >
+          Limpiar filtros
+        </button>
+      </div>
+    </form>
+
+    <div id="rejilla" class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {
+        indice.builds.map((b) => (
+          <TarjetaBuild build={b} claseEs={claseNombre(b.classId, clasesEs)} />
+        ))
+      }
+    </div>
+
+    <p id="vacio" class="mt-10 text-center text-ceniza hidden">
+      Ninguna build cumple esos filtros. Prueba a quitar alguno.
+    </p>
+  </div>
+</Base>
+
+<script>
+  /*
+    Filtrado en cliente sobre el DOM ya renderizado. Con un catálogo de este tamaño es
+    instantáneo y no necesita ni framework ni un segundo JSON: las tarjetas ya traen los
+    datos en atributos `data-`, así que la página funciona igual sin JS (se ven todas).
+  */
+  const form = document.getElementById('filtros') as HTMLFormElement | null;
+  const rejilla = document.getElementById('rejilla');
+  const conteo = document.getElementById('conteo');
+  const vacio = document.getElementById('vacio');
+  const limpiar = document.getElementById('limpiar');
+  const q = document.getElementById('q') as HTMLInputElement | null;
+
+  if (form && rejilla && conteo && vacio && q) {
+    const tarjetas = Array.from(rejilla.querySelectorAll<HTMLElement>('[data-build]'));
+
+    const marcados = (nombre: string) =>
+      new Set(
+        Array.from(form.querySelectorAll<HTMLInputElement>(`input[name="${nombre}"]:checked`)).map(
+          (i) => i.value,
+        ),
+      );
+
+    function aplicar(actualizarUrl = true) {
+      const texto = q!.value.trim().toLowerCase();
+      const clases = marcados('clase');
+      const contenidos = marcados('contenido');
+      let visibles = 0;
+
+      for (const tarjeta of tarjetas) {
+        const okClase = clases.size === 0 || clases.has(tarjeta.dataset['clase'] ?? '');
+        const suContenido = (tarjeta.dataset['contenido'] ?? '').split(' ');
+        const okContenido = contenidos.size === 0 || suContenido.some((c) => contenidos.has(c));
+        const okTexto = texto === '' || (tarjeta.dataset['busqueda'] ?? '').includes(texto);
+        const visible = okClase && okContenido && okTexto;
+        tarjeta.parentElement?.classList.toggle('hidden', !visible);
+        tarjeta.classList.toggle('hidden', !visible);
+        if (visible) visibles++;
+      }
+
+      conteo!.textContent = visibles === 1 ? '1 build' : `${visibles} builds`;
+      vacio!.classList.toggle('hidden', visibles > 0);
+
+      if (!actualizarUrl) return;
+      const params = new URLSearchParams();
+      if (texto) params.set('q', texto);
+      for (const c of clases) params.append('clase', c);
+      for (const c of contenidos) params.append('contenido', c);
+      const url = params.toString() ? `?${params}` : location.pathname;
+      history.replaceState(null, '', url);
+    }
+
+    // Estado inicial desde la URL, para que un enlace compartido abra con los filtros puestos.
+    const inicial = new URLSearchParams(location.search);
+    q.value = inicial.get('q') ?? '';
+    for (const nombre of ['clase', 'contenido']) {
+      const valores = new Set(inicial.getAll(nombre));
+      for (const input of form.querySelectorAll<HTMLInputElement>(`input[name="${nombre}"]`)) {
+        input.checked = valores.has(input.value);
+      }
+    }
+
+    form.addEventListener('input', () => aplicar());
+    limpiar?.addEventListener('click', () => {
+      form.reset();
+      q.value = '';
+      aplicar();
+    });
+    aplicar(false);
+  }
+</script>

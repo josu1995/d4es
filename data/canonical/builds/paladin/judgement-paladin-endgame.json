@@ -1,0 +1,161 @@
+{
+  "classId": "paladin",
+  "consensus": {
+    "coreSkills": [
+      {
+        "category": "skill",
+        "enUS": "Holy Aura",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__holy_aura",
+        "sno": null
+      },
+      {
+        "category": "skill",
+        "enUS": "Judgement",
+        "esES": null,
+        "i18n": "none",
+        "idName": "skill__judgement",
+        "sno": null
+      }
+    ],
+    "coreUniques": [],
+    "fields": [
+      {
+        "key": "skill:skill__holy_aura",
+        "label": {
+          "category": "skill",
+          "enUS": "Holy Aura",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__holy_aura",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:fedcba98-7654-3210-fedc-ba9876543210:0": 10
+        }
+      },
+      {
+        "key": "skill:skill__judgement",
+        "label": {
+          "category": "skill",
+          "enUS": "Judgement",
+          "esES": null,
+          "i18n": "none",
+          "idName": "skill__judgement",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:fedcba98-7654-3210-fedc-ba9876543210:0": 15
+        }
+      }
+    ],
+    "variantCount": 1
+  },
+  "correlationKey": "paladin::skill__judgement::generic",
+  "gameVersion": {
+    "patch": "3.1.2",
+    "season": 14
+  },
+  "id": "judgement-paladin-endgame",
+  "primaryVariantId": "d4builds:fedcba98-7654-3210-fedc-ba9876543210:0",
+  "ratings": {
+    "pitTier": 148,
+    "tierLabel": "S",
+    "tierRank": 1
+  },
+  "summary": {
+    "en": null,
+    "es": null
+  },
+  "tags": {
+    "content": [
+      "endgame"
+    ],
+    "element": [],
+    "playstyle": []
+  },
+  "title": {
+    "en": "Judgement",
+    "es": "Judgement"
+  },
+  "updatedAt": "2026-08-08T00:00:00.000Z",
+  "variants": [
+    {
+      "completeness": {
+        "hasGear": false,
+        "hasMercenary": false,
+        "hasParagon": false,
+        "hasSkills": true,
+        "hasTalisman": false,
+        "hasWarPlan": false,
+        "score": 0.35
+      },
+      "gear": {},
+      "id": "d4builds:fedcba98-7654-3210-fedc-ba9876543210:0",
+      "levelBand": "endgame",
+      "mercenary": null,
+      "paragon": {
+        "boards": [],
+        "level": null
+      },
+      "runewords": [],
+      "skills": [
+        {
+          "category": "unknown",
+          "order": 0,
+          "rank": 15,
+          "ref": {
+            "category": "skill",
+            "enUS": "Judgement",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__judgement",
+            "sno": null
+          },
+          "runes": [
+            {
+              "category": "rune",
+              "enUS": "Enemy Damage Bonus",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__enemy_damage_bonus",
+              "sno": null
+            }
+          ],
+          "skillVariant": null
+        },
+        {
+          "category": "unknown",
+          "order": 1,
+          "rank": 10,
+          "ref": {
+            "category": "skill",
+            "enUS": "Holy Aura",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__holy_aura",
+            "sno": null
+          },
+          "runes": [],
+          "skillVariant": null
+        }
+      ],
+      "source": {
+        "author": "Rob2628",
+        "capturedAt": "2026-08-08T00:00:00.000Z",
+        "externalId": "fedcba98-7654-3210-fedc-ba9876543210",
+        "provenance": "server-scrape",
+        "site": "d4builds",
+        "snapshotHash": "d4b1f4f0c0ce190fcf066b8a497d1ca2cd8c132968427c212a12f0cb9ffaf1d4",
+        "url": "https://d4builds.gg/builds/judgement-paladin-endgame/",
+        "variantIndex": 0,
+        "variantLabel": "Endgame"
+      },
+      "talisman": null,
+      "warPlan": null
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "d4es",
+  "private": true,
+  "type": "module",
+  "description": "Builds y guias de Diablo 4 en castellano",
+  "engines": {
+    "node": ">=22"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build:pkgs": "tsc -b packages/schema packages/i18n-d4 apps/scraper",
+    "clean:pkgs": "tsc -b --clean packages/schema packages/i18n-d4 apps/scraper",
+    "i18n:sync": "npm run build:pkgs && node apps/scraper/dist/cli.js i18n:sync",
+    "i18n:build": "npm run build:pkgs && node apps/scraper/dist/cli.js i18n:build",
+    "scrape:catalog": "node apps/scraper/dist/cli.js scrape:catalog",
+    "normalize": "node apps/scraper/dist/cli.js normalize",
+    "correlate": "node apps/scraper/dist/cli.js correlate",
+    "data:verify": "node apps/scraper/dist/cli.js verify",
+    "data:refresh": "npm run build:pkgs && npm run scrape:catalog && npm run normalize && npm run correlate && npm run data:verify",
+    "dev": "npm run dev --workspace @d4es/web",
+    "build": "npm run build:pkgs && node apps/scraper/dist/cli.js verify && npm run build --workspace @d4es/web",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc -b packages/schema packages/i18n-d4 apps/scraper --force"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}

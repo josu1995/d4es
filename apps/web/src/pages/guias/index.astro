@@ -1,0 +1,75 @@
+---
+import Base from '../../layouts/Base.astro';
+
+const publicadas = [
+  {
+    href: '/guias/obsoleto',
+    titulo: 'Lo que ya no existe en Diablo 4',
+    resumen:
+      'Todo lo que sigues leyendo por ahí y que Lord of Hatred se cargó: aspectos por mazmorra, elixires, Tormento IV como tope…',
+  },
+];
+
+/*
+  Se publica el plan a la vista. Prometer menos y cumplir es mejor que una web llena de
+  guías a medias, y el orden importa: primero lo que no caduca con la temporada.
+*/
+const enPreparacion = [
+  { titulo: 'Cómo conseguir míticos: las tres vías', nota: 'Cubo Horádrico, Joyero y Herrero, con calculadora de coste' },
+  { titulo: 'Qué suelta cada jefe', nota: 'Tabla completa de Lair Bosses y sus llaves' },
+  { titulo: 'Llaves de jefe y en qué orden usarlas', nota: 'Lair, Greater, Superior y Belial' },
+  { titulo: 'Fragmentos de Pandemónium: dónde farmearlos', nota: 'Las cuatro fuentes, comparadas' },
+  { titulo: 'Las 16 dificultades y los 12 Tormentos', nota: 'Qué desbloquea cada escalón' },
+  { titulo: 'Maestría: coste y materiales', nota: 'Y por qué la Fosa ya no los da' },
+  { titulo: 'Glifos hasta 150 y el umbral 51', nota: 'Cómo planificar las subidas en la Fosa' },
+  { titulo: 'Planes de guerra', nota: 'La Mesa de Mando y la regla de no salirte del plan activo' },
+];
+---
+
+<Base
+  titulo="Guías de Diablo 4 en español — D4es"
+  descripcion="Guías de Diablo 4 en castellano sobre crafteo de míticos, jefes, materiales y sistemas de Lord of Hatred."
+>
+  <div class="mx-auto max-w-3xl px-4 py-10">
+    <h1 class="font-titulo text-3xl">Guías</h1>
+    <p class="mt-2 text-ceniza">
+      Contenido escrito aquí, en castellano, sobre lo que de verdad no está explicado en nuestro idioma:
+      crafteo, jefes, materiales y los sistemas nuevos de Lord of Hatred.
+    </p>
+
+    <section class="mt-8">
+      <h2 class="font-titulo text-2xl">Publicadas</h2>
+      <ul class="mt-4 space-y-3">
+        {
+          publicadas.map((g) => (
+            <li class="grabado grabado-hover rounded-lg bg-piedra p-4">
+              <a href={g.href} class="block">
+                <h3 class="font-titulo text-lg text-pergamino">{g.titulo}</h3>
+                <p class="mt-1 text-sm text-ceniza">{g.resumen}</p>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="mt-10">
+      <h2 class="font-titulo text-2xl">En preparación</h2>
+      <p class="mt-2 text-sm text-ceniza">
+        En este orden, y por un motivo: son las guías que no caducan cuando cambie la temporada. Varias
+        dependen de comprobar datos dentro del juego (el coste exacto de la receta del Joyero, la llave de
+        Belial, las tablas de botín completas), y no se publican con cifras sin confirmar.
+      </p>
+      <ul class="mt-4 space-y-2">
+        {
+          enPreparacion.map((g) => (
+            <li class="flex gap-3 border-l-2 border-grabado pl-4 py-1">
+              <span class="text-pergamino">{g.titulo}</span>
+              <span class="text-sm text-humo">— {g.nota}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </div>
+</Base>

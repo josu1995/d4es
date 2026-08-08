@@ -1,0 +1,152 @@
+{
+  "_nota": [
+    "Diablo4Companion NO publica Skills.*.json, asi que las habilidades son el unico hueco",
+    "de traduccion del proyecto. Este fichero lo tapa A MANO.",
+    "",
+    "Regla innegociable: no se inventa ninguna traduccion. Cada entrada exige `sourceUrl`",
+    "(normalmente Wowhead en espanol: https://www.wowhead.com/diablo-4/es/skill/<slug>-<sno>)",
+    "y `verifiedAt`. Sin esos campos la entrada NO valida y no entra en el diccionario.",
+    "",
+    "Lo que aparezca en `pendientes` se pinta en la web en ingles con un chip 'EN'.",
+    "Eso es correcto y honesto: preferible a un nombre inventado que el jugador no",
+    "encontrara en su cliente del juego."
+  ],
+  "entradas": [],
+  "pendientes": [
+    {
+      "category": "rune",
+      "en": "Enemy Damage Bonus",
+      "veces": 5
+    },
+    {
+      "category": "skill",
+      "en": "Ball Lightning",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Battering Ram",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Blood Mist",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Bone Spear",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Challenging Shout",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Charge",
+      "veces": 1
+    },
+    {
+      "category": "skillVariant",
+      "en": "Charge Battering Ram",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Corpse Tendrils",
+      "veces": 1
+    },
+    {
+      "category": "rune",
+      "en": "Distance Damage Bonus",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Firewall",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Flame Shield",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Hell Fracture",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Holy Aura",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Ice Armor",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Iron Skin",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Judgement",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Pestilent Swarm",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Profane Sentinel",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Rallying Cry",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Ravager",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Steel Grasp",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Teleport",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Unstable Currents",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Wall of Agony",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "War Cry",
+      "veces": 1
+    },
+    {
+      "category": "skill",
+      "en": "Whirlwind",
+      "veces": 1
+    }
+  ]
+}
