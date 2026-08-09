@@ -1,0 +1,89 @@
+import { describe, expect, it } from 'vitest';
+import { Resolver } from './resolve.js';
+import { limpiarLocalisation, normalizeName, type Dictionary } from './types.js';
+
+function dict(entradas: { category: string; en: string; es: string }[]): Dictionary {
+  const d: Dictionary = {
+    meta: { generatedAt: '2026-08-09T00:00:00.000Z', sourceRepo: 't', sourceSha: 'x', counts: {}, curatedCounts: {} },
+    byIdName: {},
+    byEnglish: {},
+  };
+  for (const e of entradas) {
+    const item = { idName: e.en, sno: null, category: e.category, en: e.en, es: e.es, source: 'd4companion' as const };
+    d.byIdName[`${e.category}:${e.en}`] = item;
+    d.byEnglish[`${e.category}:${normalizeName(e.en)}`] = item;
+  }
+  return d;
+}
+
+describe('Resolver', () => {
+  const resolver = () =>
+    new Resolver(
+      dict([
+        { category: 'affix', en: 'Cooldown Reduction', es: 'de reducción de tiempo de reutilización' },
+        { category: 'affix', en: 'x Vulnerable Damage Multiplier', es: 'Multiplicador de daño por vulnerabilidad x' },
+        { category: 'skill', en: 'Whirlwind', es: 'Torbellino' },
+      ]),
+    );
+
+  it('traduce lo que encuentra y declara la procedencia', () => {
+    const ref = resolver().resolve('skill', 'Whirlwind');
+    expect(ref.esES).toBe('Torbellino');
+    expect(ref.i18n).toBe('d4companion');
+  });
+
+  it('no inventa: lo que no encuentra se queda en ingles y sin procedencia', () => {
+    const ref = resolver().resolve('skill', 'Habilidad Inexistente');
+    expect(ref.esES).toBeNull();
+    expect(ref.i18n).toBe('none');
+  });
+
+  // Los multiplicadores llevan una "x" en el texto del juego que las fuentes omiten.
+  it('reintenta los afijos multiplicativos con el prefijo x', () => {
+    const ref = resolver().resolve('affix', 'Vulnerable Damage Multiplier');
+    expect(ref.esES).toBe('Multiplicador de daño por vulnerabilidad x');
+  });
+
+  it('ese reintento es solo para afijos, no para otras categorias', () => {
+    const d = dict([{ category: 'skill', en: 'x Algo', es: 'Algo' }]);
+    expect(new Resolver(d).resolve('skill', 'Algo').esES).toBeNull();
+  });
+
+  it('ignora mayusculas y puntuacion al buscar', () => {
+    expect(resolver().resolve('affix', 'cooldown  reduction').esES).not.toBeNull();
+  });
+
+  it('lleva la cuenta de aciertos y fallos', () => {
+    const r = resolver();
+    r.resolve('skill', 'Whirlwind');
+    r.resolve('skill', 'Desconocida');
+    const s = r.stats();
+    expect(s.hits).toBe(1);
+    expect(s.misses).toBe(1);
+    expect(s.missRate).toBe(0.5);
+    expect(s.porCategoria['skill']?.[0]?.termino).toBe('Desconocida');
+  });
+});
+
+describe('limpiarLocalisation', () => {
+  it('conserva si el bonus es porcentual', () => {
+    expect(limpiarLocalisation('inflige un {c_random}[Affix_Value_1*100|x%|]{/c} mas')).toBe('inflige un X% mas');
+  });
+
+  it('sustituye por X las formulas sin formato', () => {
+    expect(limpiarLocalisation('inflige [(Owner.Weapon_Damage) * Affix_Value_0] de daño')).toBe(
+      'inflige X de daño',
+    );
+  });
+
+  it('quita condicionales y etiquetas de estilo', () => {
+    expect(limpiarLocalisation('{if:SF.IsMythic}{c_mythic}{/if}{c_important}Pisotón{/c} sube')).toBe(
+      'Pisotón sube',
+    );
+  });
+
+  it('no deja marcado suelto', () => {
+    const salida = limpiarLocalisation('{c_a}Uno{/c} [X|y%|] {u}dos{/u}');
+    expect(salida).not.toMatch(/[{}[\]|]/);
+  });
+});

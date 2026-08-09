@@ -24,7 +24,15 @@ export class Resolver {
       if (porId) return porId;
     }
     if (opts.enUS) {
-      return this.dict.byEnglish[`${category}:${normalizeName(opts.enUS)}`];
+      const directo = this.dict.byEnglish[`${category}:${normalizeName(opts.enUS)}`];
+      if (directo) return directo;
+
+      // Los multiplicadores llevan una "x" delante en el texto del juego ("x Vulnerable
+      // Damage Multiplier") que las fuentes de builds omiten. Es el MISMO afijo, asi que
+      // se reintenta con el prefijo antes de darlo por no encontrado.
+      if (category === 'affix') {
+        return this.dict.byEnglish[`affix:${normalizeName(`x ${opts.enUS}`)}`];
+      }
     }
     return undefined;
   }
