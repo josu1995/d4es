@@ -1,6 +1,6 @@
 {
   "buildId": "2a3b28c9-2b72-4111-9e35-8221a346a618",
-  "capturadoEn": "2026-08-09T09:27:24.181Z",
+  "capturadoEn": "2026-08-09T15:25:43.205Z",
   "pestanas": [
     "Gear & Skills",
     "Skill Tree",
@@ -173,28 +173,972 @@
         }
       ],
       "index": 0,
-      "mercenarios": [
-        {
-          "habilidades": [],
-          "icono": "https://sunderarmor.com/DIABLO4/Skills/VoH2/bloodthirst.png",
-          "nombre": "Bloodthirst",
-          "rol": "Mercenary"
-        },
-        {
-          "habilidades": [],
-          "icono": "https://sunderarmor.com/DIABLO4/Skills/VoH2/blessed_hammer.png",
-          "nombre": "Blessed Hammer",
-          "rol": "Reinforcement"
-        }
-      ],
+      "mercenarios": {
+        "etiquetas": [
+          "7",
+          "12",
+          "19",
+          "29"
+        ],
+        "nodos": [
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "large",
+              "after_bottom",
+              "skill__tree__item--active",
+              "seeker"
+            ],
+            "maximo": null,
+            "nombre": "Seeker",
+            "puntos": null,
+            "slug": "seeker",
+            "x": 1050,
+            "y": 230
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "large",
+              "after_bottom",
+              "skill__tree__item--active",
+              "seeker"
+            ],
+            "maximo": null,
+            "nombre": "Seeker",
+            "puntos": null,
+            "slug": "seeker",
+            "x": 1050,
+            "y": 230
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "large",
+              "after_bottom",
+              "skill__tree__item--active",
+              "seeker"
+            ],
+            "maximo": null,
+            "nombre": "Seeker",
+            "puntos": null,
+            "slug": "seeker",
+            "x": 1050,
+            "y": 230
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "large",
+              "after_bottom",
+              "skill__tree__item--active",
+              "skill__tree__item--fill",
+              "skill__tree__item--full",
+              "wire_trap"
+            ],
+            "maximo": 1,
+            "nombre": "Wire Trap",
+            "puntos": 1,
+            "slug": "wire_trap",
+            "x": 900,
+            "y": 350
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "large",
+              "after_bottom",
+              "skill__tree__item--active",
+              "skill__tree__item--fill",
+              "skill__tree__item--full",
+              "wire_trap"
+            ],
+            "maximo": 1,
+            "nombre": "Wire Trap",
+            "puntos": 1,
+            "slug": "wire_trap",
+            "x": 900,
+            "y": 350
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "large",
+              "after_bottom",
+              "skill__tree__item--active",
+              "skill__tree__item--fill",
+              "skill__tree__item--full",
+              "wire_trap"
+            ],
+            "maximo": 1,
+            "nombre": "Wire Trap",
+            "puntos": 1,
+            "slug": "wire_trap",
+            "x": 900,
+            "y": 350
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "large",
+              "after_bottom",
+              "molotov"
+            ],
+            "maximo": 1,
+            "nombre": "Molotov",
+            "puntos": 0,
+            "slug": "molotov",
+            "x": 1200,
+            "y": 350
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "large",
+              "after_bottom",
+              "molotov"
+            ],
+            "maximo": 1,
+            "nombre": "Molotov",
+            "puntos": 0,
+            "slug": "molotov",
+            "x": 1200,
+            "y": 350
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "large",
+              "after_bottom",
+              "molotov"
+            ],
+            "maximo": 1,
+            "nombre": "Molotov",
+            "puntos": 0,
+            "slug": "molotov",
+            "x": 1200,
+            "y": 350
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "skill__tree__item--active",
+              "skill__tree__item--fill",
+              "skill__tree__item--full",
+              "piercing_arrows"
+            ],
+            "maximo": 1,
+            "nombre": "Piercing Arrows",
+            "puntos": 1,
+            "slug": "piercing_arrows",
+            "x": 830,
+            "y": 470
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "ready_at_hand"
+            ],
+            "maximo": 1,
+            "nombre": "Ready At Hand",
+            "puntos": 0,
+            "slug": "ready_at_hand",
+            "x": 1010,
+            "y": 470
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "skill__tree__item--active",
+              "skill__tree__item--fill",
+              "skill__tree__item--full",
+              "piercing_arrows"
+            ],
+            "maximo": 1,
+            "nombre": "Piercing Arrows",
+            "puntos": 1,
+            "slug": "piercing_arrows",
+            "x": 830,
+            "y": 470
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "ready_at_hand"
+            ],
+            "maximo": 1,
+            "nombre": "Ready At Hand",
+            "puntos": 0,
+            "slug": "ready_at_hand",
+            "x": 1010,
+            "y": 470
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "skill__tree__item--active",
+              "skill__tree__item--fill",
+              "skill__tree__item--full",
+              "piercing_arrows"
+            ],
+            "maximo": 1,
+            "nombre": "Piercing Arrows",
+            "puntos": 1,
+            "slug": "piercing_arrows",
+            "x": 830,
+            "y": 470
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "ready_at_hand"
+            ],
+            "maximo": 1,
+            "nombre": "Ready At Hand",
+            "puntos": 0,
+            "slug": "ready_at_hand",
+            "x": 1010,
+            "y": 470
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "scorched_earth"
+            ],
+            "maximo": 1,
+            "nombre": "Scorched Earth",
+            "puntos": 0,
+            "slug": "scorched_earth",
+            "x": 1130,
+            "y": 470
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "share_a_drink"
+            ],
+            "maximo": 1,
+            "nombre": "Share a Drink",
+            "puntos": 0,
+            "slug": "share_a_drink",
+            "x": 1310,
+            "y": 470
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "scorched_earth"
+            ],
+            "maximo": 1,
+            "nombre": "Scorched Earth",
+            "puntos": 0,
+            "slug": "scorched_earth",
+            "x": 1130,
+            "y": 470
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "share_a_drink"
+            ],
+            "maximo": 1,
+            "nombre": "Share a Drink",
+            "puntos": 0,
+            "slug": "share_a_drink",
+            "x": 1310,
+            "y": 470
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "scorched_earth"
+            ],
+            "maximo": 1,
+            "nombre": "Scorched Earth",
+            "puntos": 0,
+            "slug": "scorched_earth",
+            "x": 1130,
+            "y": 470
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "share_a_drink"
+            ],
+            "maximo": 1,
+            "nombre": "Share a Drink",
+            "puntos": 0,
+            "slug": "share_a_drink",
+            "x": 1310,
+            "y": 470
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "large",
+              "before_left",
+              "after_bottom",
+              "skill__tree__item--active",
+              "skill__tree__item--fill",
+              "skill__tree__item--full",
+              "cover_fire"
+            ],
+            "maximo": 1,
+            "nombre": "Cover Fire",
+            "puntos": 1,
+            "slug": "cover_fire",
+            "x": 810,
+            "y": 590
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "large",
+              "before_left",
+              "after_bottom",
+              "skill__tree__item--active",
+              "skill__tree__item--fill",
+              "skill__tree__item--full",
+              "cover_fire"
+            ],
+            "maximo": 1,
+            "nombre": "Cover Fire",
+            "puntos": 1,
+            "slug": "cover_fire",
+            "x": 810,
+            "y": 590
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "large",
+              "before_left",
+              "after_bottom",
+              "skill__tree__item--active",
+              "skill__tree__item--fill",
+              "skill__tree__item--full",
+              "cover_fire"
+            ],
+            "maximo": 1,
+            "nombre": "Cover Fire",
+            "puntos": 1,
+            "slug": "cover_fire",
+            "x": 810,
+            "y": 590
+          },
+          {
+            "clases": [
+              "r2",
+              "c1",
+              "large",
+              "before_right",
+              "after_bottom",
+              "trip_mines"
+            ],
+            "maximo": 1,
+            "nombre": "Trip Mines",
+            "puntos": 0,
+            "slug": "trip_mines",
+            "x": 990,
+            "y": 590
+          },
+          {
+            "clases": [
+              "r2",
+              "c1",
+              "large",
+              "before_right",
+              "after_bottom",
+              "trip_mines"
+            ],
+            "maximo": 1,
+            "nombre": "Trip Mines",
+            "puntos": 0,
+            "slug": "trip_mines",
+            "x": 990,
+            "y": 590
+          },
+          {
+            "clases": [
+              "r2",
+              "c1",
+              "large",
+              "before_right",
+              "after_bottom",
+              "trip_mines"
+            ],
+            "maximo": 1,
+            "nombre": "Trip Mines",
+            "puntos": 0,
+            "slug": "trip_mines",
+            "x": 990,
+            "y": 590
+          },
+          {
+            "clases": [
+              "r3",
+              "c0",
+              "large",
+              "before_left",
+              "after_bottom",
+              "snipe"
+            ],
+            "maximo": 1,
+            "nombre": "Snipe",
+            "puntos": 0,
+            "slug": "snipe",
+            "x": 1110,
+            "y": 590
+          },
+          {
+            "clases": [
+              "r3",
+              "c0",
+              "large",
+              "before_left",
+              "after_bottom",
+              "snipe"
+            ],
+            "maximo": 1,
+            "nombre": "Snipe",
+            "puntos": 0,
+            "slug": "snipe",
+            "x": 1110,
+            "y": 590
+          },
+          {
+            "clases": [
+              "r3",
+              "c0",
+              "large",
+              "before_left",
+              "after_bottom",
+              "snipe"
+            ],
+            "maximo": 1,
+            "nombre": "Snipe",
+            "puntos": 0,
+            "slug": "snipe",
+            "x": 1110,
+            "y": 590
+          },
+          {
+            "clases": [
+              "r3",
+              "c2",
+              "large",
+              "before_right",
+              "after_bottom",
+              "explosive_charge"
+            ],
+            "maximo": 1,
+            "nombre": "Explosive Charge",
+            "puntos": 0,
+            "slug": "explosive_charge",
+            "x": 1290,
+            "y": 590
+          },
+          {
+            "clases": [
+              "r3",
+              "c2",
+              "large",
+              "before_right",
+              "after_bottom",
+              "explosive_charge"
+            ],
+            "maximo": 1,
+            "nombre": "Explosive Charge",
+            "puntos": 0,
+            "slug": "explosive_charge",
+            "x": 1290,
+            "y": 590
+          },
+          {
+            "clases": [
+              "r3",
+              "c2",
+              "large",
+              "before_right",
+              "after_bottom",
+              "explosive_charge"
+            ],
+            "maximo": 1,
+            "nombre": "Explosive Charge",
+            "puntos": 0,
+            "slug": "explosive_charge",
+            "x": 1290,
+            "y": 590
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "pin_cushion"
+            ],
+            "maximo": 1,
+            "nombre": "Pin Cushion",
+            "puntos": 0,
+            "slug": "pin_cushion",
+            "x": 740,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "skill__tree__item--active",
+              "skill__tree__item--fill",
+              "skill__tree__item--full",
+              "opening_fire"
+            ],
+            "maximo": 1,
+            "nombre": "Opening Fire",
+            "puntos": 1,
+            "slug": "opening_fire",
+            "x": 830,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "pin_cushion"
+            ],
+            "maximo": 1,
+            "nombre": "Pin Cushion",
+            "puntos": 0,
+            "slug": "pin_cushion",
+            "x": 740,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "skill__tree__item--active",
+              "skill__tree__item--fill",
+              "skill__tree__item--full",
+              "opening_fire"
+            ],
+            "maximo": 1,
+            "nombre": "Opening Fire",
+            "puntos": 1,
+            "slug": "opening_fire",
+            "x": 830,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "pin_cushion"
+            ],
+            "maximo": 1,
+            "nombre": "Pin Cushion",
+            "puntos": 0,
+            "slug": "pin_cushion",
+            "x": 740,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "skill__tree__item--active",
+              "skill__tree__item--fill",
+              "skill__tree__item--full",
+              "opening_fire"
+            ],
+            "maximo": 1,
+            "nombre": "Opening Fire",
+            "puntos": 1,
+            "slug": "opening_fire",
+            "x": 830,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "loaded_munitions"
+            ],
+            "maximo": 1,
+            "nombre": "Loaded Munitions",
+            "puntos": 0,
+            "slug": "loaded_munitions",
+            "x": 920,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "mastermind"
+            ],
+            "maximo": 1,
+            "nombre": "Mastermind",
+            "puntos": 0,
+            "slug": "mastermind",
+            "x": 1010,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "loaded_munitions"
+            ],
+            "maximo": 1,
+            "nombre": "Loaded Munitions",
+            "puntos": 0,
+            "slug": "loaded_munitions",
+            "x": 920,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "mastermind"
+            ],
+            "maximo": 1,
+            "nombre": "Mastermind",
+            "puntos": 0,
+            "slug": "mastermind",
+            "x": 1010,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "loaded_munitions"
+            ],
+            "maximo": 1,
+            "nombre": "Loaded Munitions",
+            "puntos": 0,
+            "slug": "loaded_munitions",
+            "x": 920,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "mastermind"
+            ],
+            "maximo": 1,
+            "nombre": "Mastermind",
+            "puntos": 0,
+            "slug": "mastermind",
+            "x": 1010,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "incendiary_bolt"
+            ],
+            "maximo": 1,
+            "nombre": "Incendiary Bolt",
+            "puntos": 0,
+            "slug": "incendiary_bolt",
+            "x": 1130,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "ambusher"
+            ],
+            "maximo": 1,
+            "nombre": "Ambusher",
+            "puntos": 0,
+            "slug": "ambusher",
+            "x": 1220,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "incendiary_bolt"
+            ],
+            "maximo": 1,
+            "nombre": "Incendiary Bolt",
+            "puntos": 0,
+            "slug": "incendiary_bolt",
+            "x": 1130,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "ambusher"
+            ],
+            "maximo": 1,
+            "nombre": "Ambusher",
+            "puntos": 0,
+            "slug": "ambusher",
+            "x": 1220,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "incendiary_bolt"
+            ],
+            "maximo": 1,
+            "nombre": "Incendiary Bolt",
+            "puntos": 0,
+            "slug": "incendiary_bolt",
+            "x": 1130,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "ambusher"
+            ],
+            "maximo": 1,
+            "nombre": "Ambusher",
+            "puntos": 0,
+            "slug": "ambusher",
+            "x": 1220,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "thrillseeker"
+            ],
+            "maximo": 1,
+            "nombre": "Thrillseeker",
+            "puntos": 0,
+            "slug": "thrillseeker",
+            "x": 1310,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "bargaining_chips"
+            ],
+            "maximo": 1,
+            "nombre": "Bargaining Chips",
+            "puntos": 0,
+            "slug": "bargaining_chips",
+            "x": 1400,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "thrillseeker"
+            ],
+            "maximo": 1,
+            "nombre": "Thrillseeker",
+            "puntos": 0,
+            "slug": "thrillseeker",
+            "x": 1310,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "bargaining_chips"
+            ],
+            "maximo": 1,
+            "nombre": "Bargaining Chips",
+            "puntos": 0,
+            "slug": "bargaining_chips",
+            "x": 1400,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "thrillseeker"
+            ],
+            "maximo": 1,
+            "nombre": "Thrillseeker",
+            "puntos": 0,
+            "slug": "thrillseeker",
+            "x": 1310,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "bargaining_chips"
+            ],
+            "maximo": 1,
+            "nombre": "Bargaining Chips",
+            "puntos": 0,
+            "slug": "bargaining_chips",
+            "x": 1400,
+            "y": 740
+          }
+        ]
+      },
       "paragon": [
         {
+          "casillas": [
+            "r2c10:Int",
+            "r2c11:Int",
+            "r2c12:Str",
+            "r3c10:Dex",
+            "r3c12:Will",
+            "r4c9:Will",
+            "r4c10:DamageToElite",
+            "r4c12:DamageToElite",
+            "r4c13:Int",
+            "r5c8:Will",
+            "r5c9:Will",
+            "r5c10:Damage",
+            "r5c12:DamageToElite",
+            "r5c13:Int",
+            "r5c14:Dex",
+            "r6c7:Int",
+            "r6c8:Str",
+            "r6c9:Damage",
+            "r6c10:Damage",
+            "r6c12:Damage",
+            "r6c13:Damage",
+            "r6c14:Will",
+            "r6c15:Str",
+            "r7c6:Str",
+            "r7c7:Str",
+            "r7c8:Str",
+            "r7c9:Int",
+            "r7c10:Dex",
+            "r7c11:Paragon Glyph",
+            "r7c12:Will",
+            "r7c13:Will",
+            "r7c14:Str",
+            "r7c15:Int",
+            "r7c16:Int",
+            "r8c7:Int",
+            "r8c8:Str",
+            "r8c9:Will",
+            "r8c10:Str",
+            "r8c11:Str",
+            "r8c12:Dex",
+            "r8c13:Str",
+            "r8c14:Int",
+            "r8c15:Int",
+            "r9c8:Str",
+            "r9c9:Will",
+            "r9c10:Str",
+            "r9c11:Will",
+            "r9c12:Int",
+            "r9c13:Str",
+            "r9c14:Dex",
+            "r10c9:Str",
+            "r10c10:Int",
+            "r10c12:Str",
+            "r10c13:Str",
+            "r11c9:HPPercent",
+            "r11c10:Str",
+            "r11c12:Will",
+            "r11c13:HPPercent",
+            "r12c8:Armor",
+            "r12c9:HPPercent",
+            "r12c10:HPPercent",
+            "r12c12:HPPercent",
+            "r12c13:Damage",
+            "r12c14:Damage",
+            "r13c9:Armor",
+            "r13c13:Damage",
+            "r14c9:Will",
+            "r14c10:Int",
+            "r14c11:Str:enabled",
+            "r14c12:Str",
+            "r14c13:Str",
+            "r15c10:Str:enabled",
+            "r15c11:Paragon Starting Node",
+            "r15c12:Int:enabled"
+          ],
+          "giro": 0,
           "glifo": null,
           "icono": null,
           "nivelGlifo": null,
           "tablero": "Starting Board"
         }
       ],
+      "paragonNivel": 336,
       "stats": [
         {
           "afijos": [
@@ -241,6 +1185,41 @@
             {
               "ga": 0,
               "templado": false,
+              "texto": "Critical Strike Chance"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Critical Strike Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Cooldown Reduction"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Arbiter of Justice Cooldown Reduction (Disciple Efficiency - Resource)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Ring 1"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Strength"
+            },
+            {
+              "ga": 0,
+              "templado": false,
               "texto": "Maximum Life"
             },
             {
@@ -265,6 +1244,76 @@
             }
           ],
           "slot": "Helm"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Critical Strike Chance"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Strength"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Critical Strike Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Cooldown Reduction"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Arbiter of Justice Cooldown Reduction (Disciple Efficiency - Resource)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Ring 2"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Strength"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Maximum Life"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Faith per Second"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Movement Speed"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Arbiter Duration (Disciple Innovation - Utility)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Boots"
         },
         {
           "afijos": [
@@ -321,41 +1370,6 @@
             {
               "ga": 0,
               "templado": false,
-              "texto": "Cooldown Reduction"
-            },
-            {
-              "ga": 0,
-              "templado": true,
-              "texto": "Arbiter of Justice Cooldown Reduction (Disciple Efficiency - Resource)"
-            },
-            {
-              "ga": 0,
-              "templado": true,
-              "texto": "Transfigure"
-            }
-          ],
-          "slot": "Ring 1"
-        },
-        {
-          "afijos": [
-            {
-              "ga": 0,
-              "templado": false,
-              "texto": "Strength"
-            },
-            {
-              "ga": 0,
-              "templado": false,
-              "texto": "Critical Strike Chance"
-            },
-            {
-              "ga": 0,
-              "templado": false,
-              "texto": "Critical Strike Damage Multiplier"
-            },
-            {
-              "ga": 0,
-              "templado": false,
               "texto": "All Damage Multipler"
             },
             {
@@ -381,6 +1395,11 @@
             {
               "ga": 0,
               "templado": false,
+              "texto": "Weapon Type"
+            },
+            {
+              "ga": 0,
+              "templado": false,
               "texto": "Strength"
             },
             {
@@ -391,57 +1410,17 @@
             {
               "ga": 0,
               "templado": false,
-              "texto": "Faith per Second"
+              "texto": "Critical Strike Chance"
             },
             {
               "ga": 0,
               "templado": false,
-              "texto": "Movement Speed"
+              "texto": "Damage Reduction"
             },
             {
               "ga": 0,
               "templado": true,
-              "texto": "Arbiter Duration (Disciple Innovation - Utility)"
-            },
-            {
-              "ga": 0,
-              "templado": true,
-              "texto": "Transfigure"
-            }
-          ],
-          "slot": "Boots"
-        },
-        {
-          "afijos": [
-            {
-              "ga": 0,
-              "templado": false,
-              "texto": "Weapon Type"
-            },
-            {
-              "ga": 0,
-              "templado": false,
-              "texto": "Stat 1"
-            },
-            {
-              "ga": 0,
-              "templado": false,
-              "texto": "Stat 2"
-            },
-            {
-              "ga": 0,
-              "templado": false,
-              "texto": "Stat 3"
-            },
-            {
-              "ga": 0,
-              "templado": false,
-              "texto": "Stat 4"
-            },
-            {
-              "ga": 0,
-              "templado": true,
-              "texto": "Tempering Stat 1"
+              "texto": "Critical Strike Damage (Worldly Finesse - Offensive)"
             },
             {
               "ga": 0,
@@ -449,7 +1428,7 @@
               "texto": "Transfigure"
             }
           ],
-          "slot": "Weapon"
+          "slot": "Offhand"
         },
         {
           "afijos": [
@@ -491,67 +1470,32 @@
             {
               "ga": 0,
               "templado": false,
-              "texto": "Critical Strike Chance"
-            },
-            {
-              "ga": 0,
-              "templado": false,
-              "texto": "Strength"
-            },
-            {
-              "ga": 0,
-              "templado": false,
-              "texto": "Critical Strike Damage Multiplier"
-            },
-            {
-              "ga": 0,
-              "templado": false,
-              "texto": "Cooldown Reduction"
-            },
-            {
-              "ga": 0,
-              "templado": true,
-              "texto": "Arbiter of Justice Cooldown Reduction (Disciple Efficiency - Resource)"
-            },
-            {
-              "ga": 0,
-              "templado": true,
-              "texto": "Transfigure"
-            }
-          ],
-          "slot": "Ring 2"
-        },
-        {
-          "afijos": [
-            {
-              "ga": 0,
-              "templado": false,
               "texto": "Weapon Type"
             },
             {
               "ga": 0,
               "templado": false,
-              "texto": "Strength"
+              "texto": "Stat 1"
             },
             {
               "ga": 0,
               "templado": false,
-              "texto": "Maximum Life"
+              "texto": "Stat 2"
             },
             {
               "ga": 0,
               "templado": false,
-              "texto": "Critical Strike Chance"
+              "texto": "Stat 3"
             },
             {
               "ga": 0,
               "templado": false,
-              "texto": "Damage Reduction"
+              "texto": "Stat 4"
             },
             {
               "ga": 0,
               "templado": true,
-              "texto": "Critical Strike Damage (Worldly Finesse - Offensive)"
+              "texto": "Tempering Stat 1"
             },
             {
               "ga": 0,
@@ -559,7 +1503,7 @@
               "texto": "Transfigure"
             }
           ],
-          "slot": "Offhand"
+          "slot": "Weapon"
         }
       ],
       "warPlans": [

@@ -1,6 +1,6 @@
 {
   "buildId": "123a45c5-5fa3-4527-afa7-c1a05d95d081",
-  "capturadoEn": "2026-08-09T09:24:15.603Z",
+  "capturadoEn": "2026-08-09T15:22:28.296Z",
   "pestanas": [
     "Gear & Skills",
     "Skill Tree",
@@ -179,90 +179,1686 @@
         }
       ],
       "index": 0,
-      "mercenarios": [
-        {
-          "habilidades": [],
-          "icono": "https://sunderarmor.com/DIABLO4/Skills/VoH2/field_of_languish.png",
-          "nombre": "Field of Languish",
-          "rol": "Mercenary"
-        },
-        {
-          "habilidades": [],
-          "icono": "https://sunderarmor.com/DIABLO4/Skills/VoH2/blessed_hammer.png",
-          "nombre": "Blessed Hammer",
-          "rol": "Reinforcement"
-        }
-      ],
+      "mercenarios": {
+        "etiquetas": [
+          "7",
+          "12",
+          "19",
+          "29"
+        ],
+        "nodos": [
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "large",
+              "after_bottom",
+              "skill__tree__item--active",
+              "seeker"
+            ],
+            "maximo": null,
+            "nombre": "Seeker",
+            "puntos": null,
+            "slug": "seeker",
+            "x": 1050,
+            "y": 230
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "large",
+              "after_bottom",
+              "skill__tree__item--active",
+              "seeker"
+            ],
+            "maximo": null,
+            "nombre": "Seeker",
+            "puntos": null,
+            "slug": "seeker",
+            "x": 1050,
+            "y": 230
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "large",
+              "after_bottom",
+              "skill__tree__item--active",
+              "seeker"
+            ],
+            "maximo": null,
+            "nombre": "Seeker",
+            "puntos": null,
+            "slug": "seeker",
+            "x": 1050,
+            "y": 230
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "large",
+              "after_bottom",
+              "skill__tree__item--active",
+              "skill__tree__item--fill",
+              "skill__tree__item--full",
+              "wire_trap"
+            ],
+            "maximo": 1,
+            "nombre": "Wire Trap",
+            "puntos": 1,
+            "slug": "wire_trap",
+            "x": 900,
+            "y": 350
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "large",
+              "after_bottom",
+              "skill__tree__item--active",
+              "skill__tree__item--fill",
+              "skill__tree__item--full",
+              "wire_trap"
+            ],
+            "maximo": 1,
+            "nombre": "Wire Trap",
+            "puntos": 1,
+            "slug": "wire_trap",
+            "x": 900,
+            "y": 350
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "large",
+              "after_bottom",
+              "skill__tree__item--active",
+              "skill__tree__item--fill",
+              "skill__tree__item--full",
+              "wire_trap"
+            ],
+            "maximo": 1,
+            "nombre": "Wire Trap",
+            "puntos": 1,
+            "slug": "wire_trap",
+            "x": 900,
+            "y": 350
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "large",
+              "after_bottom",
+              "molotov"
+            ],
+            "maximo": 1,
+            "nombre": "Molotov",
+            "puntos": 0,
+            "slug": "molotov",
+            "x": 1200,
+            "y": 350
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "large",
+              "after_bottom",
+              "molotov"
+            ],
+            "maximo": 1,
+            "nombre": "Molotov",
+            "puntos": 0,
+            "slug": "molotov",
+            "x": 1200,
+            "y": 350
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "large",
+              "after_bottom",
+              "molotov"
+            ],
+            "maximo": 1,
+            "nombre": "Molotov",
+            "puntos": 0,
+            "slug": "molotov",
+            "x": 1200,
+            "y": 350
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "skill__tree__item--active",
+              "skill__tree__item--fill",
+              "skill__tree__item--full",
+              "piercing_arrows"
+            ],
+            "maximo": 1,
+            "nombre": "Piercing Arrows",
+            "puntos": 1,
+            "slug": "piercing_arrows",
+            "x": 830,
+            "y": 470
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "ready_at_hand"
+            ],
+            "maximo": 1,
+            "nombre": "Ready At Hand",
+            "puntos": 0,
+            "slug": "ready_at_hand",
+            "x": 1010,
+            "y": 470
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "skill__tree__item--active",
+              "skill__tree__item--fill",
+              "skill__tree__item--full",
+              "piercing_arrows"
+            ],
+            "maximo": 1,
+            "nombre": "Piercing Arrows",
+            "puntos": 1,
+            "slug": "piercing_arrows",
+            "x": 830,
+            "y": 470
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "ready_at_hand"
+            ],
+            "maximo": 1,
+            "nombre": "Ready At Hand",
+            "puntos": 0,
+            "slug": "ready_at_hand",
+            "x": 1010,
+            "y": 470
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "skill__tree__item--active",
+              "skill__tree__item--fill",
+              "skill__tree__item--full",
+              "piercing_arrows"
+            ],
+            "maximo": 1,
+            "nombre": "Piercing Arrows",
+            "puntos": 1,
+            "slug": "piercing_arrows",
+            "x": 830,
+            "y": 470
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "ready_at_hand"
+            ],
+            "maximo": 1,
+            "nombre": "Ready At Hand",
+            "puntos": 0,
+            "slug": "ready_at_hand",
+            "x": 1010,
+            "y": 470
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "scorched_earth"
+            ],
+            "maximo": 1,
+            "nombre": "Scorched Earth",
+            "puntos": 0,
+            "slug": "scorched_earth",
+            "x": 1130,
+            "y": 470
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "share_a_drink"
+            ],
+            "maximo": 1,
+            "nombre": "Share a Drink",
+            "puntos": 0,
+            "slug": "share_a_drink",
+            "x": 1310,
+            "y": 470
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "scorched_earth"
+            ],
+            "maximo": 1,
+            "nombre": "Scorched Earth",
+            "puntos": 0,
+            "slug": "scorched_earth",
+            "x": 1130,
+            "y": 470
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "share_a_drink"
+            ],
+            "maximo": 1,
+            "nombre": "Share a Drink",
+            "puntos": 0,
+            "slug": "share_a_drink",
+            "x": 1310,
+            "y": 470
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "scorched_earth"
+            ],
+            "maximo": 1,
+            "nombre": "Scorched Earth",
+            "puntos": 0,
+            "slug": "scorched_earth",
+            "x": 1130,
+            "y": 470
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "share_a_drink"
+            ],
+            "maximo": 1,
+            "nombre": "Share a Drink",
+            "puntos": 0,
+            "slug": "share_a_drink",
+            "x": 1310,
+            "y": 470
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "large",
+              "before_left",
+              "after_bottom",
+              "skill__tree__item--active",
+              "skill__tree__item--fill",
+              "skill__tree__item--full",
+              "cover_fire"
+            ],
+            "maximo": 1,
+            "nombre": "Cover Fire",
+            "puntos": 1,
+            "slug": "cover_fire",
+            "x": 810,
+            "y": 590
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "large",
+              "before_left",
+              "after_bottom",
+              "skill__tree__item--active",
+              "skill__tree__item--fill",
+              "skill__tree__item--full",
+              "cover_fire"
+            ],
+            "maximo": 1,
+            "nombre": "Cover Fire",
+            "puntos": 1,
+            "slug": "cover_fire",
+            "x": 810,
+            "y": 590
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "large",
+              "before_left",
+              "after_bottom",
+              "skill__tree__item--active",
+              "skill__tree__item--fill",
+              "skill__tree__item--full",
+              "cover_fire"
+            ],
+            "maximo": 1,
+            "nombre": "Cover Fire",
+            "puntos": 1,
+            "slug": "cover_fire",
+            "x": 810,
+            "y": 590
+          },
+          {
+            "clases": [
+              "r2",
+              "c1",
+              "large",
+              "before_right",
+              "after_bottom",
+              "trip_mines"
+            ],
+            "maximo": 1,
+            "nombre": "Trip Mines",
+            "puntos": 0,
+            "slug": "trip_mines",
+            "x": 990,
+            "y": 590
+          },
+          {
+            "clases": [
+              "r2",
+              "c1",
+              "large",
+              "before_right",
+              "after_bottom",
+              "trip_mines"
+            ],
+            "maximo": 1,
+            "nombre": "Trip Mines",
+            "puntos": 0,
+            "slug": "trip_mines",
+            "x": 990,
+            "y": 590
+          },
+          {
+            "clases": [
+              "r2",
+              "c1",
+              "large",
+              "before_right",
+              "after_bottom",
+              "trip_mines"
+            ],
+            "maximo": 1,
+            "nombre": "Trip Mines",
+            "puntos": 0,
+            "slug": "trip_mines",
+            "x": 990,
+            "y": 590
+          },
+          {
+            "clases": [
+              "r3",
+              "c0",
+              "large",
+              "before_left",
+              "after_bottom",
+              "snipe"
+            ],
+            "maximo": 1,
+            "nombre": "Snipe",
+            "puntos": 0,
+            "slug": "snipe",
+            "x": 1110,
+            "y": 590
+          },
+          {
+            "clases": [
+              "r3",
+              "c0",
+              "large",
+              "before_left",
+              "after_bottom",
+              "snipe"
+            ],
+            "maximo": 1,
+            "nombre": "Snipe",
+            "puntos": 0,
+            "slug": "snipe",
+            "x": 1110,
+            "y": 590
+          },
+          {
+            "clases": [
+              "r3",
+              "c0",
+              "large",
+              "before_left",
+              "after_bottom",
+              "snipe"
+            ],
+            "maximo": 1,
+            "nombre": "Snipe",
+            "puntos": 0,
+            "slug": "snipe",
+            "x": 1110,
+            "y": 590
+          },
+          {
+            "clases": [
+              "r3",
+              "c2",
+              "large",
+              "before_right",
+              "after_bottom",
+              "explosive_charge"
+            ],
+            "maximo": 1,
+            "nombre": "Explosive Charge",
+            "puntos": 0,
+            "slug": "explosive_charge",
+            "x": 1290,
+            "y": 590
+          },
+          {
+            "clases": [
+              "r3",
+              "c2",
+              "large",
+              "before_right",
+              "after_bottom",
+              "explosive_charge"
+            ],
+            "maximo": 1,
+            "nombre": "Explosive Charge",
+            "puntos": 0,
+            "slug": "explosive_charge",
+            "x": 1290,
+            "y": 590
+          },
+          {
+            "clases": [
+              "r3",
+              "c2",
+              "large",
+              "before_right",
+              "after_bottom",
+              "explosive_charge"
+            ],
+            "maximo": 1,
+            "nombre": "Explosive Charge",
+            "puntos": 0,
+            "slug": "explosive_charge",
+            "x": 1290,
+            "y": 590
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "pin_cushion"
+            ],
+            "maximo": 1,
+            "nombre": "Pin Cushion",
+            "puntos": 0,
+            "slug": "pin_cushion",
+            "x": 740,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "skill__tree__item--active",
+              "skill__tree__item--fill",
+              "skill__tree__item--full",
+              "opening_fire"
+            ],
+            "maximo": 1,
+            "nombre": "Opening Fire",
+            "puntos": 1,
+            "slug": "opening_fire",
+            "x": 830,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "pin_cushion"
+            ],
+            "maximo": 1,
+            "nombre": "Pin Cushion",
+            "puntos": 0,
+            "slug": "pin_cushion",
+            "x": 740,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "skill__tree__item--active",
+              "skill__tree__item--fill",
+              "skill__tree__item--full",
+              "opening_fire"
+            ],
+            "maximo": 1,
+            "nombre": "Opening Fire",
+            "puntos": 1,
+            "slug": "opening_fire",
+            "x": 830,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "pin_cushion"
+            ],
+            "maximo": 1,
+            "nombre": "Pin Cushion",
+            "puntos": 0,
+            "slug": "pin_cushion",
+            "x": 740,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "skill__tree__item--active",
+              "skill__tree__item--fill",
+              "skill__tree__item--full",
+              "opening_fire"
+            ],
+            "maximo": 1,
+            "nombre": "Opening Fire",
+            "puntos": 1,
+            "slug": "opening_fire",
+            "x": 830,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "loaded_munitions"
+            ],
+            "maximo": 1,
+            "nombre": "Loaded Munitions",
+            "puntos": 0,
+            "slug": "loaded_munitions",
+            "x": 920,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "mastermind"
+            ],
+            "maximo": 1,
+            "nombre": "Mastermind",
+            "puntos": 0,
+            "slug": "mastermind",
+            "x": 1010,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "loaded_munitions"
+            ],
+            "maximo": 1,
+            "nombre": "Loaded Munitions",
+            "puntos": 0,
+            "slug": "loaded_munitions",
+            "x": 920,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "mastermind"
+            ],
+            "maximo": 1,
+            "nombre": "Mastermind",
+            "puntos": 0,
+            "slug": "mastermind",
+            "x": 1010,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "loaded_munitions"
+            ],
+            "maximo": 1,
+            "nombre": "Loaded Munitions",
+            "puntos": 0,
+            "slug": "loaded_munitions",
+            "x": 920,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "mastermind"
+            ],
+            "maximo": 1,
+            "nombre": "Mastermind",
+            "puntos": 0,
+            "slug": "mastermind",
+            "x": 1010,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "incendiary_bolt"
+            ],
+            "maximo": 1,
+            "nombre": "Incendiary Bolt",
+            "puntos": 0,
+            "slug": "incendiary_bolt",
+            "x": 1130,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "ambusher"
+            ],
+            "maximo": 1,
+            "nombre": "Ambusher",
+            "puntos": 0,
+            "slug": "ambusher",
+            "x": 1220,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "incendiary_bolt"
+            ],
+            "maximo": 1,
+            "nombre": "Incendiary Bolt",
+            "puntos": 0,
+            "slug": "incendiary_bolt",
+            "x": 1130,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "ambusher"
+            ],
+            "maximo": 1,
+            "nombre": "Ambusher",
+            "puntos": 0,
+            "slug": "ambusher",
+            "x": 1220,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "incendiary_bolt"
+            ],
+            "maximo": 1,
+            "nombre": "Incendiary Bolt",
+            "puntos": 0,
+            "slug": "incendiary_bolt",
+            "x": 1130,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "ambusher"
+            ],
+            "maximo": 1,
+            "nombre": "Ambusher",
+            "puntos": 0,
+            "slug": "ambusher",
+            "x": 1220,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "thrillseeker"
+            ],
+            "maximo": 1,
+            "nombre": "Thrillseeker",
+            "puntos": 0,
+            "slug": "thrillseeker",
+            "x": 1310,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "bargaining_chips"
+            ],
+            "maximo": 1,
+            "nombre": "Bargaining Chips",
+            "puntos": 0,
+            "slug": "bargaining_chips",
+            "x": 1400,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "thrillseeker"
+            ],
+            "maximo": 1,
+            "nombre": "Thrillseeker",
+            "puntos": 0,
+            "slug": "thrillseeker",
+            "x": 1310,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "bargaining_chips"
+            ],
+            "maximo": 1,
+            "nombre": "Bargaining Chips",
+            "puntos": 0,
+            "slug": "bargaining_chips",
+            "x": 1400,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "thrillseeker"
+            ],
+            "maximo": 1,
+            "nombre": "Thrillseeker",
+            "puntos": 0,
+            "slug": "thrillseeker",
+            "x": 1310,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "bargaining_chips"
+            ],
+            "maximo": 1,
+            "nombre": "Bargaining Chips",
+            "puntos": 0,
+            "slug": "bargaining_chips",
+            "x": 1400,
+            "y": 740
+          }
+        ]
+      },
       "paragon": [
         {
+          "casillas": [
+            "r2c10:Int:enabled",
+            "r2c11:Int:active:enabled",
+            "r2c12:Str:active:enabled",
+            "r3c10:Dex:enabled",
+            "r3c12:Will:active:enabled:radius",
+            "r4c9:Will:active:enabled:radius",
+            "r4c10:DamageToElite:active:enabled",
+            "r4c12:DamageToElite:active:enabled",
+            "r4c13:Int:enabled",
+            "r5c8:Will:active:enabled:radius",
+            "r5c9:Will:active:enabled:radius",
+            "r5c10:Damage:active:enabled",
+            "r5c12:DamageToElite:active:enabled",
+            "r5c13:Int:enabled",
+            "r5c14:Dex",
+            "r6c7:Int",
+            "r6c8:Str:enabled",
+            "r6c9:Damage:active:enabled",
+            "r6c10:Damage:active:enabled",
+            "r6c12:Damage:active:enabled",
+            "r6c13:Damage:enabled",
+            "r6c14:Will:radius",
+            "r6c15:Str",
+            "r7c6:Str",
+            "r7c7:Str",
+            "r7c8:Str",
+            "r7c9:Int:enabled",
+            "r7c10:Dex:active:enabled",
+            "r7c11:Glyph:active",
+            "r7c12:Will:active:enabled:radius",
+            "r7c13:Will:active:enabled:radius",
+            "r7c14:Str:enabled",
+            "r7c15:Int",
+            "r7c16:Int",
+            "r8c7:Int",
+            "r8c8:Str",
+            "r8c9:Will:radius",
+            "r8c10:Str:enabled",
+            "r8c11:Str:active:enabled",
+            "r8c12:Dex:enabled",
+            "r8c13:Str:enabled",
+            "r8c14:Int",
+            "r8c15:Int",
+            "r9c8:Str",
+            "r9c9:Will:radius",
+            "r9c10:Str:enabled",
+            "r9c11:Will:active:enabled:radius",
+            "r9c12:Int:active:enabled",
+            "r9c13:Str:enabled",
+            "r9c14:Dex",
+            "r10c9:Str",
+            "r10c10:Int",
+            "r10c12:Str:active:enabled",
+            "r10c13:Str:enabled",
+            "r11c9:HPPercent",
+            "r11c10:Str",
+            "r11c12:Will:active:enabled:radius",
+            "r11c13:HPPercent:active:enabled",
+            "r12c8:Armor",
+            "r12c9:HPPercent",
+            "r12c10:HPPercent",
+            "r12c12:HPPercent:active:enabled",
+            "r12c13:Damage:active:enabled",
+            "r12c14:Damage:enabled",
+            "r13c9:Armor",
+            "r13c13:Damage:active:enabled",
+            "r14c9:Will",
+            "r14c10:Int:enabled",
+            "r14c11:Str:active:enabled",
+            "r14c12:Str:active:enabled",
+            "r14c13:Str:active:enabled",
+            "r15c10:Str:enabled",
+            "r15c11:Paragon Starting Node",
+            "r15c12:Int:enabled"
+          ],
+          "giro": 0,
           "glifo": "Spirit",
           "icono": null,
           "nivelGlifo": null,
           "tablero": "Starting Board"
         },
         {
+          "casillas": [
+            "r1c16:Str",
+            "r2c11:Int:active:enabled",
+            "r2c12:Str:enabled",
+            "r2c13:Will",
+            "r2c14:Will",
+            "r2c15:DamagePhysical",
+            "r2c16:DamagePhysical",
+            "r2c17:Will:radius",
+            "r3c11:Str:active:enabled",
+            "r3c12:Will:enabled",
+            "r3c13:Will",
+            "r3c14:Str",
+            "r3c15:Int",
+            "r3c16:Strength",
+            "r3c17:DamagePhysical",
+            "r3c18:Str",
+            "r4c11:Str:active:enabled",
+            "r4c14:Int",
+            "r4c15:Int",
+            "r4c16:Int",
+            "r4c17:Will:radius",
+            "r4c19:Int:enabled",
+            "r5c11:Will:active:enabled",
+            "r5c12:Str:active:enabled",
+            "r5c13:Str:active:enabled",
+            "r5c14:Dex:enabled",
+            "r5c15:Str:enabled",
+            "r5c16:Str:enabled",
+            "r5c18:Str:enabled",
+            "r5c19:Armor:active:enabled",
+            "r5c20:Will:enabled:radius",
+            "r6c8:Str",
+            "r6c9:Str",
+            "r6c10:Int",
+            "r6c11:Int:enabled",
+            "r6c12:Str:enabled",
+            "r6c13:Will:active:enabled:radius",
+            "r6c14:Will:active:enabled:radius",
+            "r6c15:Str:active:enabled",
+            "r6c16:Glyph:active",
+            "r6c17:Will:active:enabled:radius",
+            "r6c18:Armor:active:enabled",
+            "r6c19:Damage:active:enabled",
+            "r6c20:Str:enabled",
+            "r6c21:Str",
+            "r7c7:DamageToCC",
+            "r7c8:Str",
+            "r7c9:Int",
+            "r7c10:Dex",
+            "r7c11:Str",
+            "r7c13:Will:active:enabled:radius",
+            "r7c14:Str:enabled",
+            "r7c16:Int:enabled",
+            "r7c17:Dex:enabled",
+            "r7c18:Str:enabled",
+            "r7c19:Will:active:enabled:radius",
+            "r7c20:Will:active:enabled:radius",
+            "r8c2:Int",
+            "r8c3:Str",
+            "r8c4:Str",
+            "r8c5:ResistanceAll",
+            "r8c6:CriticalDamageToCC",
+            "r8c7:DamageToCC",
+            "r8c13:Str:active:enabled",
+            "r8c15:Int",
+            "r8c16:Str",
+            "r8c17:Will:radius",
+            "r8c18:Int",
+            "r8c19:Int:enabled",
+            "r8c20:Str:active:enabled",
+            "r9c2:Str",
+            "r9c3:Str",
+            "r9c4:Int",
+            "r9c6:ResistanceAll",
+            "r9c7:DamageToCC",
+            "r9c8:Str",
+            "r9c9:Will:enabled",
+            "r9c10:Str:enabled",
+            "r9c12:HPPercent:active:enabled",
+            "r9c13:HPPercent:active:enabled",
+            "r9c14:Dex:enabled",
+            "r9c15:Str",
+            "r9c16:Str",
+            "r9c17:Int",
+            "r9c19:Will:enabled",
+            "r9c20:Will:active:enabled",
+            "r10c2:Will",
+            "r10c3:Int",
+            "r10c7:Int",
+            "r10c8:Str:enabled",
+            "r10c9:Will:active:enabled",
+            "r10c10:Int:active:enabled",
+            "r10c11:Armor:active:enabled",
+            "r10c12:Armor:active:enabled",
+            "r10c13:HPPercent:active:enabled",
+            "r10c16:Str",
+            "r10c17:Will:radius",
+            "r10c19:Int:enabled",
+            "r10c20:Str:active:enabled",
+            "r11c2:Dex:enabled",
+            "r11c9:Int:active:enabled",
+            "r11c12:Armor:active:enabled",
+            "r11c15:Int",
+            "r11c16:Int",
+            "r11c17:Dex",
+            "r11c18:Str",
+            "r11c19:Str:enabled",
+            "r11c20:Str:active:enabled",
+            "r12c2:Int",
+            "r12c7:Int:enabled",
+            "r12c8:Str:active:enabled",
+            "r12c9:Str:active:enabled",
+            "r12c10:Str:enabled",
+            "r12c12:Dex:enabled",
+            "r12c13:Str",
+            "r12c15:Int",
+            "r12c16:Str",
+            "r13c2:Str",
+            "r13c3:Str",
+            "r13c7:Will:active:enabled",
+            "r13c8:Str:active:enabled",
+            "r13c10:Dex",
+            "r13c11:Will",
+            "r13c12:Will",
+            "r13c13:Str",
+            "r13c15:Str",
+            "r13c16:Str",
+            "r14c2:Will",
+            "r14c3:Int",
+            "r14c6:Will:enabled",
+            "r14c7:Int:active:enabled",
+            "r14c9:Will",
+            "r14c10:Int",
+            "r14c12:Str",
+            "r14c13:Str",
+            "r14c15:Str",
+            "r14c16:Str",
+            "r15c2:Dex",
+            "r15c3:Int",
+            "r15c6:Str:active:enabled",
+            "r15c7:Str:active:enabled",
+            "r15c8:Will:enabled",
+            "r15c9:Int",
+            "r15c10:Str",
+            "r15c12:Int",
+            "r15c13:DamagePhysical",
+            "r15c14:DamagePhysical",
+            "r15c15:DamageToCC",
+            "r16c2:Int",
+            "r16c3:Str",
+            "r16c5:Will:enabled",
+            "r16c6:Paladin:active:enabled",
+            "r16c7:Int:enabled",
+            "r16c8:Str",
+            "r16c13:DamagePhysical",
+            "r16c14:Damage",
+            "r17c3:Str",
+            "r17c4:Int",
+            "r17c5:Int",
+            "r17c6:Str:enabled",
+            "r17c14:DamageToCC",
+            "r18c3:ResistanceAll",
+            "r18c4:Armor",
+            "r18c5:Will",
+            "r18c13:Str",
+            "r18c14:Will",
+            "r19c2:ResistanceAll",
+            "r19c3:Armor",
+            "r19c4:Armor",
+            "r19c5:Dex",
+            "r19c6:Str",
+            "r19c7:Str",
+            "r19c8:Will",
+            "r19c9:Int",
+            "r19c12:Int",
+            "r19c13:Will",
+            "r19c14:Dex",
+            "r20c3:Armor",
+            "r20c6:Int",
+            "r20c7:Int",
+            "r20c8:Str",
+            "r20c9:Str",
+            "r20c10:Str",
+            "r20c11:Int:enabled",
+            "r20c12:Dex",
+            "r20c13:Will",
+            "r20c14:Int"
+          ],
+          "giro": 90,
           "glifo": "Arbiter",
           "icono": null,
           "nivelGlifo": null,
           "tablero": "Castle"
         },
         {
+          "casillas": [
+            "r2c11:Int:enabled",
+            "r2c12:Str",
+            "r3c9:Int",
+            "r3c10:Dex",
+            "r3c11:Str",
+            "r3c12:Will",
+            "r3c13:Will",
+            "r3c15:HPPercent",
+            "r4c9:Will",
+            "r4c11:Str",
+            "r4c12:Dex",
+            "r4c13:Str",
+            "r4c14:HPPercent",
+            "r4c15:Armor",
+            "r4c16:Armor",
+            "r5c7:Armor:active:enabled",
+            "r5c8:Will:enabled",
+            "r5c9:Will",
+            "r5c13:Str",
+            "r5c14:Armor",
+            "r5c15:Armor",
+            "r6c5:DamagePhysical:enabled",
+            "r6c6:DamagePhysical:active:enabled",
+            "r6c7:Armor:active:enabled",
+            "r6c8:Str:active:enabled",
+            "r6c9:Str:enabled",
+            "r6c13:Will:enabled",
+            "r6c14:Will",
+            "r7c5:DamagePhysical",
+            "r7c6:DamagePhysical:enabled",
+            "r7c8:Str:active:enabled",
+            "r7c9:Int:active:enabled",
+            "r7c10:Dex:active:enabled",
+            "r7c11:Str:active:enabled",
+            "r7c12:Will:active:enabled",
+            "r7c13:Will:active:enabled",
+            "r7c14:Str:enabled",
+            "r8c5:Will",
+            "r8c6:Int",
+            "r8c7:Int",
+            "r8c9:Will:active:enabled",
+            "r8c13:Str:active:enabled:radius",
+            "r9c3:Str",
+            "r9c4:Int",
+            "r9c5:Int",
+            "r9c6:Str",
+            "r9c7:Will",
+            "r9c8:Str:enabled",
+            "r9c9:Will:active:enabled",
+            "r9c10:Str:active:enabled",
+            "r9c12:DamagePhysical:enabled",
+            "r9c13:DamagePhysical:active:enabled",
+            "r9c14:Dex:enabled",
+            "r10c3:Int",
+            "r10c7:Int",
+            "r10c9:Will:enabled",
+            "r10c10:Paladin:active:enabled",
+            "r10c12:DamagePhysical:enabled",
+            "r10c13:Strength:active:enabled:radius",
+            "r10c14:Int:enabled",
+            "r10c15:Str:radius",
+            "r11c2:Dex:enabled",
+            "r11c3:Int",
+            "r11c4:Str",
+            "r11c7:Str",
+            "r11c11:Str:radius",
+            "r11c12:Will:enabled",
+            "r11c13:Will:active:enabled",
+            "r11c14:Str:enabled:radius",
+            "r11c15:Int",
+            "r11c17:Dex:active:enabled",
+            "r11c18:Str:active:enabled",
+            "r11c19:Str:active:enabled",
+            "r11c20:Str:active:enabled",
+            "r12c2:Int",
+            "r12c3:Str",
+            "r12c4:Str",
+            "r12c7:Int",
+            "r12c9:MinionDamage",
+            "r12c10:MinionDamage:enabled",
+            "r12c11:Int:enabled",
+            "r12c12:Dex:enabled",
+            "r12c13:Str:active:enabled:radius",
+            "r12c14:Int:enabled",
+            "r12c15:Int:enabled",
+            "r12c16:Str:active:enabled:radius",
+            "r12c17:Will:active:enabled",
+            "r12c18:Int:enabled",
+            "r12c20:Str:enabled",
+            "r13c3:Str",
+            "r13c4:Int",
+            "r13c5:Int",
+            "r13c6:Str",
+            "r13c7:Will",
+            "r13c8:Str:radius",
+            "r13c9:MinionDamage:enabled",
+            "r13c10:Damage:active:enabled:radius",
+            "r13c11:Int:active:enabled",
+            "r13c12:Will:active:enabled",
+            "r13c13:Glyph:active",
+            "r13c14:Dex:active:enabled",
+            "r13c15:Str:active:enabled:radius",
+            "r13c16:Str:active:enabled:radius",
+            "r13c17:Int:enabled",
+            "r13c19:Will",
+            "r13c20:Will",
+            "r14c4:DamageToCC",
+            "r14c5:DamageToCC",
+            "r14c6:Will",
+            "r14c7:Int",
+            "r14c9:Will:enabled",
+            "r14c10:Will:active:enabled",
+            "r14c11:Str:enabled:radius",
+            "r14c12:Str:enabled:radius",
+            "r14c13:Str:enabled:radius",
+            "r14c15:Str:enabled:radius",
+            "r14c16:Str:active:enabled:radius",
+            "r14c17:Will:enabled",
+            "r14c18:Will",
+            "r14c19:Int",
+            "r14c20:Str",
+            "r15c3:Damage",
+            "r15c4:DamageHBludgeoning",
+            "r15c5:DamageToCC",
+            "r15c10:Str:enabled:radius",
+            "r15c11:Str:radius",
+            "r15c12:Int",
+            "r15c13:Will",
+            "r15c14:Dex:enabled",
+            "r15c16:Int:active:enabled",
+            "r15c18:Str:enabled",
+            "r16c4:Damage",
+            "r16c12:Dex:enabled",
+            "r16c13:Will:enabled",
+            "r16c14:Int:active:enabled",
+            "r16c15:Str:active:enabled:radius",
+            "r16c16:Str:active:enabled",
+            "r16c17:Will:active:enabled",
+            "r16c18:HPPercent:active:enabled",
+            "r17c11:Will:active:enabled",
+            "r17c12:Int:active:enabled",
+            "r17c13:Str:active:enabled:radius",
+            "r17c14:Str:active:enabled:radius",
+            "r17c16:Int:enabled",
+            "r17c17:HPPercent:active:enabled",
+            "r17c18:MinionDamage:active:enabled",
+            "r18c11:Str:active:enabled",
+            "r18c12:Str:enabled",
+            "r18c14:Will:enabled",
+            "r18c15:Int",
+            "r18c16:MinionDamage",
+            "r18c17:MinionDamage:enabled",
+            "r18c18:Damage:active:enabled",
+            "r19c11:Str:active:enabled",
+            "r19c13:Will",
+            "r19c14:Dex",
+            "r20c11:Int:active:enabled",
+            "r20c12:Dex:enabled",
+            "r20c13:Will",
+            "r20c14:Int"
+          ],
+          "giro": 180,
           "glifo": "Law",
           "icono": null,
           "nivelGlifo": null,
           "tablero": "Shield Bearer"
         },
         {
+          "casillas": [
+            "r2c10:Int:enabled",
+            "r2c11:Int:active:enabled",
+            "r2c12:Str:enabled",
+            "r3c10:Dex:enabled",
+            "r3c11:Str:active:enabled",
+            "r3c12:Will:enabled",
+            "r4c10:Str:enabled",
+            "r4c11:Str:active:enabled",
+            "r4c12:Dex:active:enabled",
+            "r5c10:Str:enabled",
+            "r5c12:Int:active:enabled:radius",
+            "r6c9:Str:active:enabled",
+            "r6c10:Int:active:enabled:radius",
+            "r6c11:Int:active:enabled:radius",
+            "r6c12:Str:active:enabled",
+            "r6c13:Will:enabled",
+            "r7c8:Str:enabled",
+            "r7c9:Int:active:enabled:radius",
+            "r7c10:Dex:enabled",
+            "r7c11:Str:enabled",
+            "r7c12:Will:enabled",
+            "r7c13:Will",
+            "r7c14:Str:enabled",
+            "r8c7:Int:active:enabled:radius",
+            "r8c8:Will:enabled",
+            "r8c9:Will:active:enabled",
+            "r8c11:Str:enabled",
+            "r8c13:Str:enabled",
+            "r8c14:AttackSpeed:active:enabled",
+            "r8c15:Int:active:enabled:radius",
+            "r9c6:Str:enabled",
+            "r9c7:HPPercent:active:enabled",
+            "r9c8:HPPercent:active:enabled",
+            "r9c9:Int:active:enabled:radius",
+            "r9c10:Str:active:enabled",
+            "r9c11:Glyph:active",
+            "r9c12:Int:active:enabled:radius",
+            "r9c13:AttackSpeed:active:enabled",
+            "r9c14:AttackSpeed:active:enabled",
+            "r9c15:AttackSpeed:active:enabled",
+            "r9c16:Str:enabled",
+            "r10c5:Will:enabled",
+            "r10c6:Will:enabled",
+            "r10c7:HPPercent:active:enabled",
+            "r10c8:HPPercent:active:enabled",
+            "r10c10:Int:active:enabled:radius",
+            "r10c11:Int:active:enabled:radius",
+            "r10c12:Str:enabled",
+            "r10c14:Will:enabled",
+            "r10c15:Int:active:enabled:radius",
+            "r10c16:Str:enabled",
+            "r10c17:Will",
+            "r11c2:Dex:active:enabled",
+            "r11c3:Int:active:enabled",
+            "r11c4:Str:active:enabled",
+            "r11c5:Dex:active:enabled",
+            "r11c6:Str:active:enabled",
+            "r11c7:Str:active:enabled",
+            "r11c8:Will:enabled",
+            "r11c9:Int:active:enabled:radius",
+            "r11c10:Str:active:enabled",
+            "r11c11:Str:enabled",
+            "r11c12:Will",
+            "r11c13:Will",
+            "r11c14:Str",
+            "r11c15:Int:enabled",
+            "r11c16:Int",
+            "r11c17:Dex",
+            "r11c18:Str",
+            "r11c19:Str",
+            "r11c20:Str:enabled",
+            "r12c2:Int:enabled",
+            "r12c3:Str:enabled",
+            "r12c4:Str:active:enabled",
+            "r12c10:Str:active:enabled",
+            "r12c11:Int:active:enabled:radius",
+            "r12c12:Dex:enabled",
+            "r12c18:Int",
+            "r12c19:Int",
+            "r12c20:Str",
+            "r13c3:Str:enabled",
+            "r13c4:Int:active:enabled",
+            "r13c5:HPPercent:active:enabled",
+            "r13c6:Str:enabled",
+            "r13c7:Will",
+            "r13c8:Str",
+            "r13c9:Will:enabled",
+            "r13c10:Dex:active:enabled",
+            "r13c12:Will",
+            "r13c13:Str",
+            "r13c14:Dex",
+            "r13c15:Str",
+            "r13c16:Str",
+            "r13c17:BonusFortify",
+            "r13c18:Str",
+            "r13c19:Will",
+            "r14c4:HealingBonus:active:enabled",
+            "r14c5:HPPercent:active:enabled",
+            "r14c6:Will:enabled",
+            "r14c7:Int",
+            "r14c8:Str",
+            "r14c9:Will:enabled",
+            "r14c10:Int:active:enabled",
+            "r14c11:Str:enabled",
+            "r14c12:Str:enabled",
+            "r14c13:Str:enabled",
+            "r14c14:Will",
+            "r14c15:Str",
+            "r14c16:Str",
+            "r14c17:BonusFortify",
+            "r14c18:BonusFortify",
+            "r15c3:HealingBonus:enabled",
+            "r15c4:HealingBonus:active:enabled",
+            "r15c5:HealingBonus:enabled",
+            "r15c8:Will",
+            "r15c9:Int:enabled",
+            "r15c10:Str:active:enabled",
+            "r15c11:Str:active:enabled",
+            "r15c12:Int:active:enabled",
+            "r15c13:Will:active:enabled",
+            "r15c14:Dex:enabled",
+            "r15c17:HPPercent",
+            "r15c18:DamageWhileFortified",
+            "r15c19:HPPercent",
+            "r16c7:DamageWhileFortified",
+            "r16c9:Str",
+            "r16c11:Paladin:active:enabled",
+            "r16c13:Will:active:enabled",
+            "r16c15:ResistanceAll:enabled",
+            "r17c6:DamageWhileFortified",
+            "r17c7:DamageWhileFortified",
+            "r17c8:DamageWhileHealthy",
+            "r17c9:Will",
+            "r17c13:Str:active:enabled",
+            "r17c14:ResistanceAll:active:enabled",
+            "r17c15:ResistanceAll:active:enabled",
+            "r17c16:ResistanceAll:enabled",
+            "r18c7:DamageWhileFortified",
+            "r18c8:DamageWhileHealthy",
+            "r18c9:Will",
+            "r18c13:Str:enabled",
+            "r18c14:AttackSpeed:active:enabled",
+            "r18c15:AttackSpeed:active:enabled",
+            "r19c8:Will",
+            "r19c9:Int",
+            "r19c10:Str",
+            "r19c12:Int",
+            "r19c13:Will",
+            "r19c14:Dex:enabled",
+            "r20c8:Str",
+            "r20c9:Str",
+            "r20c10:Str",
+            "r20c11:Int:enabled",
+            "r20c12:Dex",
+            "r20c13:Will",
+            "r20c14:Int"
+          ],
+          "giro": 270,
           "glifo": "Canny",
           "icono": null,
           "nivelGlifo": null,
           "tablero": "Preacher"
         },
         {
+          "casillas": [
+            "r2c8:Str",
+            "r2c9:Str",
+            "r2c10:Int:enabled",
+            "r2c11:Int:active:enabled:radius",
+            "r2c12:Str:active:enabled",
+            "r2c13:Will:active:enabled",
+            "r2c14:Will:active:enabled",
+            "r3c8:Str",
+            "r3c11:Str:enabled",
+            "r3c14:Str:active:enabled",
+            "r4c8:Str",
+            "r4c9:Will:enabled",
+            "r4c10:Str",
+            "r4c12:Dex:enabled",
+            "r4c13:Str:enabled",
+            "r4c14:Int:active:enabled",
+            "r5c8:Will:enabled",
+            "r5c9:Damage:active:enabled",
+            "r5c10:Str:enabled",
+            "r5c11:Will:enabled",
+            "r5c12:Int:active:enabled:radius",
+            "r5c13:Spirit:enabled",
+            "r5c14:Int:active:enabled:radius",
+            "r6c7:Int:active:enabled:radius",
+            "r6c8:Damage:active:enabled",
+            "r6c9:Damage:active:enabled",
+            "r6c10:Int:active:enabled:radius",
+            "r6c11:Int:active:enabled:radius",
+            "r6c12:Str:active:enabled",
+            "r6c13:Spirit:active:enabled",
+            "r6c14:HealingBonus:active:enabled",
+            "r6c15:Str:enabled",
+            "r7c6:Str:enabled",
+            "r7c7:Damage:active:enabled",
+            "r7c8:Will:enabled",
+            "r7c9:Int:active:enabled:radius",
+            "r7c10:Dex:enabled",
+            "r7c11:Glyph:active",
+            "r7c12:Will:enabled",
+            "r7c13:Will:enabled",
+            "r7c14:Int:active:enabled:radius",
+            "r7c15:Spirit:active:enabled",
+            "r7c16:Int:active:enabled:radius",
+            "r8c7:Int:active:enabled:radius",
+            "r8c8:Str:enabled",
+            "r8c9:Will:enabled",
+            "r8c10:Str",
+            "r8c11:Str:enabled",
+            "r8c12:Dex:enabled",
+            "r8c13:Str:active:enabled",
+            "r8c14:Int:active:enabled:radius",
+            "r8c15:Int:active:enabled:radius",
+            "r9c2:Str",
+            "r9c3:Str",
+            "r9c4:Int",
+            "r9c5:Int",
+            "r9c6:Str",
+            "r9c7:Will:enabled",
+            "r9c8:Str",
+            "r9c9:Will",
+            "r9c13:Int:active:enabled:radius",
+            "r9c14:Dex:enabled",
+            "r9c15:Str:active:enabled",
+            "r9c16:Str:active:enabled",
+            "r9c17:Int:enabled",
+            "r9c18:Str",
+            "r9c19:Will",
+            "r9c20:Will",
+            "r10c2:Will",
+            "r10c3:Int",
+            "r10c5:ResistanceAll",
+            "r10c6:HPPercent",
+            "r10c8:Str",
+            "r10c9:Will",
+            "r10c11:Int:active:enabled:radius",
+            "r10c13:Str:active:enabled",
+            "r10c14:Will:enabled",
+            "r10c16:AttackSpeed:active:enabled",
+            "r10c17:CriticalDamage:active:enabled",
+            "r10c19:Int",
+            "r10c20:Str",
+            "r11c2:Dex:enabled",
+            "r11c3:Int",
+            "r11c5:ResistanceAll",
+            "r11c6:ResistanceAll",
+            "r11c9:Int",
+            "r11c10:Str:enabled",
+            "r11c11:Str:active:enabled",
+            "r11c12:Will:active:enabled",
+            "r11c13:Will:active:enabled",
+            "r11c16:CriticalDamage:active:enabled",
+            "r11c17:CriticalDamage:active:enabled",
+            "r11c19:Str",
+            "r11c20:Str:enabled",
+            "r12c2:Int",
+            "r12c3:Str",
+            "r12c5:ResistanceAll",
+            "r12c6:HPPercent",
+            "r12c7:Int",
+            "r12c8:Str",
+            "r12c9:Str",
+            "r12c10:Str:enabled",
+            "r12c11:Int:active:enabled:radius",
+            "r12c12:Dex:enabled",
+            "r12c13:Str:enabled",
+            "r12c14:Int",
+            "r12c15:Int:enabled",
+            "r12c16:AttackSpeed:active:enabled",
+            "r12c17:CriticalDamage:active:enabled",
+            "r12c19:Int",
+            "r12c20:Str",
+            "r13c2:Str",
+            "r13c3:Str",
+            "r13c4:Int",
+            "r13c5:Int",
+            "r13c6:Str",
+            "r13c7:Will",
+            "r13c8:Str",
+            "r13c9:Will",
+            "r13c11:Will:active:enabled",
+            "r13c13:Str",
+            "r13c14:Dex",
+            "r13c15:Str",
+            "r13c16:Str:enabled",
+            "r13c17:Int:enabled",
+            "r13c18:Str",
+            "r13c19:Will",
+            "r13c20:Will",
+            "r14c9:Will",
+            "r14c11:Paladin:active:enabled",
+            "r14c13:Str",
+            "r15c7:Armor:active:enabled",
+            "r15c8:Damage:active:enabled",
+            "r15c9:Int:enabled",
+            "r15c11:Str:active:enabled",
+            "r15c13:Will:enabled",
+            "r15c14:Armor:enabled",
+            "r15c15:Armor",
+            "r16c7:Damage:active:enabled",
+            "r16c8:Armor:active:enabled",
+            "r16c9:Str:active:enabled",
+            "r16c10:Str:active:enabled",
+            "r16c11:Int:active:enabled",
+            "r16c12:Dex:active:enabled",
+            "r16c13:Will:active:enabled",
+            "r16c14:Armor:active:enabled",
+            "r16c15:Armor:enabled",
+            "r17c7:Armor:active:enabled",
+            "r17c8:Armor:active:enabled",
+            "r17c9:Will:enabled",
+            "r17c10:Dex:enabled",
+            "r17c11:Will:enabled",
+            "r17c12:Will:enabled",
+            "r17c13:Str:enabled",
+            "r17c14:Armor:enabled",
+            "r17c15:Armor",
+            "r18c9:Will",
+            "r18c13:Str",
+            "r19c9:Int",
+            "r19c10:Str",
+            "r19c12:Int",
+            "r19c13:Will",
+            "r20c9:Str",
+            "r20c10:Str",
+            "r20c11:Int:enabled",
+            "r20c12:Dex",
+            "r20c13:Will"
+          ],
+          "giro": 90,
           "glifo": "Judicator",
           "icono": null,
           "nivelGlifo": null,
           "tablero": "Beacon"
         }
       ],
+      "paragonNivel": 236,
       "stats": [
         {
           "afijos": [
             {
-              "ga": 1,
-              "templado": false,
-              "texto": "Strength"
-            },
-            {
               "ga": 0,
               "templado": false,
-              "texto": "Faith per Second"
+              "texto": "Critical Strike Chance"
             },
-            {
-              "ga": 0,
-              "templado": false,
-              "texto": "Maximum Life"
-            },
-            {
-              "ga": 0,
-              "templado": false,
-              "texto": "Resistance to All Elements"
-            },
-            {
-              "ga": 1,
-              "templado": true,
-              "texto": "Holy Light Aura Potency (Aura Innovation - Utility)"
-            },
-            {
-              "ga": 0,
-              "templado": true,
-              "texto": "Transfigure"
-            }
-          ],
-          "slot": "Chest Armor"
-        },
-        {
-          "afijos": [
             {
               "ga": 0,
               "templado": false,
@@ -276,15 +1872,10 @@
             {
               "ga": 1,
               "templado": false,
-              "texto": "Ranks to All Skills"
+              "texto": "Attack Speed"
             },
             {
-              "ga": 0,
-              "templado": false,
-              "texto": "Vulnerable Damage Multiplier"
-            },
-            {
-              "ga": 0,
+              "ga": 1,
               "templado": true,
               "texto": "Holy Light Aura Potency (Aura Innovation - Utility)"
             },
@@ -292,14 +1883,9 @@
               "ga": 0,
               "templado": true,
               "texto": "Transfigure"
-            },
-            {
-              "ga": 0,
-              "templado": true,
-              "texto": "Transfigure"
             }
           ],
-          "slot": "Amulet"
+          "slot": "Gloves"
         },
         {
           "afijos": [
@@ -344,9 +1930,9 @@
               "texto": "Strength"
             },
             {
-              "ga": 1,
+              "ga": 0,
               "templado": false,
-              "texto": "Critical Strike Damage Multiplier"
+              "texto": "Faith per Second"
             },
             {
               "ga": 0,
@@ -356,42 +1942,7 @@
             {
               "ga": 0,
               "templado": false,
-              "texto": "Vulnerable Damage Multiplier"
-            },
-            {
-              "ga": 0,
-              "templado": true,
-              "texto": "Critical Strike Damage (Worldly Finesse - Offensive)"
-            },
-            {
-              "ga": 0,
-              "templado": true,
-              "texto": "Transfigure"
-            }
-          ],
-          "slot": "Weapon"
-        },
-        {
-          "afijos": [
-            {
-              "ga": 0,
-              "templado": false,
-              "texto": "Critical Strike Chance"
-            },
-            {
-              "ga": 0,
-              "templado": false,
-              "texto": "Strength"
-            },
-            {
-              "ga": 1,
-              "templado": false,
-              "texto": "Critical Strike Damage Multiplier"
-            },
-            {
-              "ga": 1,
-              "templado": false,
-              "texto": "Attack Speed"
+              "texto": "Resistance to All Elements"
             },
             {
               "ga": 1,
@@ -404,7 +1955,32 @@
               "texto": "Transfigure"
             }
           ],
-          "slot": "Gloves"
+          "slot": "Chest Armor"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "242 Primary Core Stat"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "26.25% Attack Speed"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Casting Justice Skills Restores Primary Resource (Judicator Efficiency - Resource)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Ring 1"
         },
         {
           "afijos": [
@@ -446,31 +2022,6 @@
             {
               "ga": 1,
               "templado": false,
-              "texto": "242 Primary Core Stat"
-            },
-            {
-              "ga": 1,
-              "templado": false,
-              "texto": "26.25% Attack Speed"
-            },
-            {
-              "ga": 0,
-              "templado": true,
-              "texto": "Casting Justice Skills Restores Primary Resource (Judicator Efficiency - Resource)"
-            },
-            {
-              "ga": 0,
-              "templado": true,
-              "texto": "Transfigure"
-            }
-          ],
-          "slot": "Ring 1"
-        },
-        {
-          "afijos": [
-            {
-              "ga": 1,
-              "templado": false,
               "texto": "Critical Strike Damage Multiplier"
             },
             {
@@ -500,6 +2051,106 @@
             }
           ],
           "slot": "Ring 2"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Strength"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Critical Strike Damage Multiplier"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Ranks to All Skills"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Vulnerable Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Holy Light Aura Potency (Aura Innovation - Utility)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Amulet"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Strength"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Critical Strike Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Maximum Life"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Vulnerable Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Critical Strike Damage (Worldly Finesse - Offensive)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Weapon"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "242 Primary Core Stat"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "25% Movement Speed"
+            },
+            {
+              "ga": 1,
+              "templado": true,
+              "texto": "Holy Light Aura Potency (Aura Innovation - Utility)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Helm"
         },
         {
           "afijos": [
@@ -540,31 +2191,6 @@
             }
           ],
           "slot": "Offhand"
-        },
-        {
-          "afijos": [
-            {
-              "ga": 1,
-              "templado": false,
-              "texto": "242 Primary Core Stat"
-            },
-            {
-              "ga": 0,
-              "templado": false,
-              "texto": "25% Movement Speed"
-            },
-            {
-              "ga": 1,
-              "templado": true,
-              "texto": "Holy Light Aura Potency (Aura Innovation - Utility)"
-            },
-            {
-              "ga": 0,
-              "templado": true,
-              "texto": "Transfigure"
-            }
-          ],
-          "slot": "Helm"
         }
       ],
       "warPlans": [
