@@ -11,9 +11,9 @@ on:
       modo:
         description: 'probe (reconocimiento del DOM) o scrape (extraccion real)'
         required: false
-        default: 'probe'
+        default: 'scrape'
       objetivo:
-        description: 'uuid de build concreto (vacio = el de referencia / todas)'
+        description: 'uuid concreto, o --limite=N, o vacio para todas'
         required: false
         default: ''
   push:
@@ -54,11 +54,12 @@ jobs:
         id: ejecutar
         run: |
           set +e
-          MODO="${{ github.event.inputs.modo || 'probe' }}"
-          if [ "$MODO" = "scrape" ]; then
-            node apps/scraper/dist/cli.js scrape:pages ${{ github.event.inputs.objetivo }}
+          MODO="${{ github.event.inputs.modo || 'scrape' }}"
+          OBJETIVO="${{ github.event.inputs.objetivo }}"
+          if [ "$MODO" = "probe" ]; then
+            node apps/scraper/dist/cli.js probe:page $OBJETIVO
           else
-            node apps/scraper/dist/cli.js probe:page ${{ github.event.inputs.objetivo }}
+            node apps/scraper/dist/cli.js scrape:pages $OBJETIVO
           fi
           echo "codigo=$?" >> "$GITHUB_OUTPUT"
           exit 0

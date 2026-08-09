@@ -95,6 +95,57 @@ async function cmdProbePage(): Promise<number> {
   return EXIT.ok;
 }
 
+/**
+ * Extrae equipo, arbol, Paragon y mercenarios de las paginas de build. Solo funciona
+ * donde d4builds sea alcanzable y haya navegador: en la practica, GitHub Actions.
+ */
+async function cmdScrapePages(): Promise<number> {
+  const { runScrapePages } = await import('./sources/d4builds/scrape-pages.js');
+  const args = process.argv.slice(3);
+  const forzar = args.includes('--forzar');
+  const limiteArg = args.find((a) => a.startsWith('--limite='));
+  const limite = limiteArg ? Number(limiteArg.split('=')[1]) : Infinity;
+  const explicitos = args.filter((a) => !a.startsWith('-'));
+
+  let ids: string[] = explicitos;
+  if (ids.length === 0) {
+    const builds = await leerExternalIds();
+    ids = builds.slice(0, Number.isFinite(limite) ? limite : undefined);
+  }
+  if (ids.length === 0) {
+    process.stderr.write('No hay builds que procesar (falta data/canonical).\n');
+    return EXIT.error;
+  }
+
+  process.stdout.write(`Extrayendo ${ids.length} paginas de build...\n`);
+  const resumen = await runScrapePages(ids, { forzar });
+  process.stdout.write(
+    `\n${resumen.total} paginas | equipo: ${resumen.conEquipo} | paragon: ${resumen.conParagon} | ` +
+      `arbol: ${resumen.conArbol} | mercenarios: ${resumen.conMercenarios} | fallos: ${resumen.fallos.length}\n`,
+  );
+  // Los fallos no tumban el workflow: se anotan y se reintentan en la siguiente pasada.
+  return EXIT.ok;
+}
+
+/** Los uuid de d4builds viven en el `externalId` de cada variante ya normalizada. */
+async function leerExternalIds(): Promise<string[]> {
+  const { readdir, readFile } = await import('node:fs/promises');
+  const { existsSync } = await import('node:fs');
+  if (!existsSync(PATHS.canonicalBuilds)) return [];
+  const entradas = await readdir(PATHS.canonicalBuilds, { withFileTypes: true, recursive: true });
+  const ids = new Set<string>();
+  for (const e of entradas) {
+    if (!e.isFile() || !e.name.endsWith('.json')) continue;
+    const raw = JSON.parse(await readFile(join(e.parentPath ?? e.path, e.name), 'utf8')) as {
+      variants?: { source?: { site?: string; externalId?: string } }[];
+    };
+    for (const v of raw.variants ?? []) {
+      if (v.source?.site === 'd4builds' && v.source.externalId) ids.add(v.source.externalId);
+    }
+  }
+  return [...ids].sort();
+}
+
 async function cmdScrapeCatalog(): Promise<number> {
   process.stdout.write('Descargando el catalogo de d4builds...\n');
   const informe = await scrapeD4BuildsCatalog({ now: new Date() });
@@ -159,6 +210,7 @@ const COMANDOS: Record<string, () => Promise<number>> = {
   'i18n:skills:scaffold': cmdSkillsScaffold,
   'scrape:catalog': cmdScrapeCatalog,
   'probe:page': cmdProbePage,
+  'scrape:pages': cmdScrapePages,
   normalize: cmdNormalize,
   correlate: cmdCorrelate,
   verify: cmdVerify,
