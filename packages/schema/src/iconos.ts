@@ -16,7 +16,14 @@ import { skillIconSlug } from './skills-dataset.js';
 export const ICONO_CDN = 'https://sunderarmor.com/DIABLO4';
 
 /** Carpeta local por familia. La ruta publica final es `/iconos/<familia>/<fichero>`. */
-export type FamiliaIcono = 'habilidades' | 'clases' | 'unicos' | 'ranuras' | 'planes' | 'actividades';
+export type FamiliaIcono =
+  | 'habilidades'
+  | 'clases'
+  | 'unicos'
+  | 'ranuras'
+  | 'planes'
+  | 'actividades'
+  | 'codex';
 
 export interface Icono {
   /** URL de origen. */
@@ -59,4 +66,26 @@ export function iconoDeNodoPlan(slug: string): Icono {
 
 export function iconoDeActividadPlan(slug: string): Icono {
   return icono('actividades', 'WarPlans', slug);
+}
+
+/**
+ * Categorias del codice con que la fuente pinta las piezas legendarias (una pieza con
+ * aspecto no tiene objeto base con nombre, asi que su "imagen" es la categoria de su
+ * aspecto). Son cuatro ficheros fijos.
+ */
+export const CODEX_CATEGORIAS = ['offensive', 'defensive', 'utility', 'mobility'] as const;
+export type CodexCategoria = (typeof CODEX_CATEGORIAS)[number];
+
+export function iconoDeCodex(categoria: CodexCategoria): Icono {
+  return icono('codex', 'Codex/1', categoria);
+}
+
+/**
+ * Extrae la categoria del codice de la URL de icono que publica la fuente para una pieza
+ * (".../Codex/1/offensive.png" -> "offensive"). null para unicos y miticos, cuya imagen
+ * es la del propio objeto.
+ */
+export function codexDeIcono(url: string | null | undefined): CodexCategoria | null {
+  const m = url?.match(/\/Codex\/\d+\/(offensive|defensive|utility|mobility)\.png$/i);
+  return (m?.[1]?.toLowerCase() as CodexCategoria | undefined) ?? null;
 }

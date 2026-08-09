@@ -1,7 +1,7 @@
 ---
 import type { SkillEntry } from '@d4es/schema';
 import { iconoSkill, colorCategoria } from '../lib/iconos';
-import { skillInfo } from '../lib/data';
+import { skillInfo, skillDescEs } from '../lib/data';
 
 /**
  * Un slot de habilidad como el de d4builds: icono circular con borde por categoria,
@@ -20,6 +20,11 @@ const sinTraducir = skill.ref.esES === null;
 const nombreIcono = skill.skillVariant?.enUS ?? skill.ref.enUS;
 const info = skillInfo(skill.ref.enUS);
 const color = colorCategoria(info?.category ?? null);
+
+// La descripcion en castellano manda cuando la cosecha de Wowhead la trajo; si no, se
+// pinta la del dataset en ingles y se dice que lo esta.
+const descEs = skillDescEs(skill.ref.enUS);
+const descripcion = descEs ?? info?.description ?? null;
 
 // Las "mejoras" son las elecciones de rama del arbol. La fuente las llama runas, pero
 // no lo son: las runas de verdad se engarzan en el equipo.
@@ -101,7 +106,7 @@ const mejoras = skill.runes.map((r) => ({
     )
   }
   {skill.skillVariant && <div class="tt-variante">Variante: {skill.skillVariant.esES ?? skill.skillVariant.enUS}</div>}
-  {info?.description && <p class="tt-descripcion">{info.description}</p>}
+  {descripcion && <p class="tt-descripcion">{descripcion}</p>}
   {info?.extra.map((e) => <p class="tt-extra">{e}</p>)}
   {
     mejoras.length > 0 && (
@@ -115,7 +120,7 @@ const mejoras = skill.runes.map((r) => ({
       </div>
     )
   }
-  {info?.description && <p class="tt-idioma">Descripción original en inglés</p>}
+  {!descEs && info?.description && <p class="tt-idioma">Descripción original en inglés</p>}
 </template>
 
 {

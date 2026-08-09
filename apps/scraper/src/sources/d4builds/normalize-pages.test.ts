@@ -437,4 +437,63 @@ describe('mercenario', () => {
     const { build } = enriquecerConPagina(buildBase, pagina(), new Resolver(dict), duenos);
     expect(build.variants[0]!.paragon.level).toBe(287);
   });
+
+  it('deduplica las habilidades: el DOM trae cada nodo por triplicado', () => {
+    const p = pagina();
+    const nodos = p.porVariante[0]!.mercenarios.nodos;
+    const activo = nodos[0]!;
+    // Tres copias identicas del mismo nodo cogido, como en el DOM real (57 = 19 x 3).
+    nodos.unshift({ ...activo }, { ...activo });
+    const { build } = enriquecerConPagina(buildBase, p, new Resolver(dict), duenos);
+    expect(build.variants[0]!.mercenary!.skills.map((s) => s.enUS)).toEqual(['Ground Slam']);
+  });
+});
+
+describe('paragon: giro y casillas', () => {
+  const conCasillas = () =>
+    pagina({
+      paragon: [
+        {
+          tablero: 'Blood Drinker',
+          glifo: 'Might',
+          nivelGlifo: null,
+          icono: null,
+          giro: 540,
+          casillas: [
+            'r2c10:Will:common:enabled',
+            'r2c11:Will:common:active:enabled',
+            'r3c11:Glyph:rare:active',
+            'r7c6:Int:magic',
+          ],
+        },
+      ],
+    });
+
+  it('normaliza el giro acumulado de la fuente y lo publica', () => {
+    const { build } = enriquecerConPagina(buildBase, conCasillas(), new Resolver(dict), duenos);
+    expect(build.variants[0]!.paragon.boards[0]!.rotation).toBe(180);
+  });
+
+  it('publica solo las casillas que la build recorre, compactas', () => {
+    const { build } = enriquecerConPagina(buildBase, conCasillas(), new Resolver(dict), duenos);
+    expect(build.variants[0]!.paragon.boards[0]!.tiles).toEqual(['r2c11', 'r3c11']);
+  });
+
+  it('tolera un crudo antiguo sin giro ni casillas', () => {
+    const { build } = enriquecerConPagina(buildBase, pagina(), new Resolver(dict), duenos);
+    const board = build.variants[0]!.paragon.boards[0]!;
+    expect(board.rotation).toBeNull();
+    expect(board.tiles).toEqual([]);
+  });
+});
+
+describe('previsualizacion de equipo', () => {
+  it('conserva la imagen con que la fuente pinta la pieza', () => {
+    const { build } = enriquecerConPagina(buildBase, pagina(), new Resolver(dict), duenos);
+    expect(build.variants[0]!.gear['helm']!.icon).toBe(
+      'https://sunderarmor.com/DIABLO4/Uniques/2/tuskhelm.png',
+    );
+    // Y tolera piezas sin imagen (crudos antiguos o fallos de la fuente).
+    expect(build.variants[0]!.gear['boots']!.icon).toBeNull();
+  });
 });

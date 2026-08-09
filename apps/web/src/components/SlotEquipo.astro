@@ -1,12 +1,18 @@
 ---
 import type { GearItem } from '@d4es/schema';
-import { iconoUnico, iconoRanura, COLOR_CALIDAD } from '../lib/iconos';
+import { iconoUnico, iconoRanura, iconoCodex, codexDeIcono, COLOR_CALIDAD, CODEX_ES } from '../lib/iconos';
+import { NOMBRE_SLOT, CALIDAD_ES } from '../lib/etiquetas';
 import { loadDiccionario } from '../lib/data';
 
 /**
  * Una pieza de equipo, con el mismo reparto de informacion que el planificador de
  * d4builds: icono, nombre coloreado por calidad, aspecto, afijos con marca de superior
  * y de templado, y engarces. El detalle largo va al tooltip.
+ *
+ * Las piezas legendarias no tienen objeto base con nombre (solo su aspecto), asi que su
+ * previsualizacion es el icono generico de la ranura —el "pantalon basico", como en
+ * maxroll— mas la categoria del codice del aspecto (ofensivo/defensivo/utilidad), que es
+ * la imagen con que la propia fuente las pinta.
  */
 interface Props {
   item: GearItem;
@@ -28,6 +34,9 @@ const colorNombre = item.mythic.isMythic ? 'text-rareza-mitico' : (COLOR_CALIDAD
 const icono = item.item ? iconoUnico(item.item.enUS) : iconoRanura(item.slot);
 const esGenerico = item.item === null;
 
+// La categoria del codice sale de la imagen que publica la fuente (Codex/1/offensive.png).
+const categoriaCodex = codexDeIcono(item.icon);
+
 // Descripcion del poder del unico o del aspecto, en castellano, para el tooltip.
 const claveDesc = item.item
   ? `unique:${item.item.idName}`
@@ -36,22 +45,8 @@ const claveDesc = item.item
     : null;
 const descripcion = claveDesc ? (dict.byIdName[claveDesc]?.desc ?? null) : null;
 
-const NOMBRE_SLOT: Record<string, string> = {
-  helm: 'Yelmo',
-  chest: 'Pechera',
-  gloves: 'Guantes',
-  pants: 'Pantalones',
-  boots: 'Botas',
-  amulet: 'Amuleto',
-  ring1: 'Anillo 1',
-  ring2: 'Anillo 2',
-  weapon: 'Arma',
-  weapon2: 'Arma 2',
-  weapon3: 'Arma 3',
-  weapon4: 'Arma 4',
-  offhand: 'Mano izquierda',
-};
 const etiquetaSlot = NOMBRE_SLOT[item.slot] ?? item.slot;
+const etiquetaCalidad = item.mythic.isMythic ? 'Mítico' : (CALIDAD_ES[item.quality] ?? item.quality);
 ---
 
 <div class:list={['flex items-start gap-3', derecha && 'flex-row-reverse text-right']}>
@@ -69,7 +64,24 @@ const etiquetaSlot = NOMBRE_SLOT[item.slot] ?? item.slot;
           width="56"
           height="56"
           loading="lazy"
-          class:list={['h-full w-full rounded object-cover', esGenerico && 'opacity-70']}
+          class:list={['h-full w-full rounded object-cover', esGenerico && 'opacity-80']}
+          onerror="this.style.display='none'"
+        />
+      )
+    }
+    {
+      categoriaCodex && (
+        <img
+          src={iconoCodex(categoriaCodex)}
+          alt=""
+          width="20"
+          height="20"
+          loading="lazy"
+          title={`Categoría del códice: ${CODEX_ES[categoriaCodex]}`}
+          class:list={[
+            'absolute -top-1.5 h-5 w-5 rounded-full border border-grabado-vivo bg-abismo p-0.5',
+            derecha ? 'right-0' : 'left-0',
+          ]}
           onerror="this.style.display='none'"
         />
       )
@@ -102,6 +114,7 @@ const etiquetaSlot = NOMBRE_SLOT[item.slot] ?? item.slot;
             <li class="text-[0.7rem] leading-tight text-ceniza">
               {a.greater && <span class="text-oro" title="Afijo superior">★ </span>}
               <span class={a.tempered ? 'text-rareza-magico' : ''}>{a.ref.esES ?? a.ref.enUS}</span>
+              {a.ref.esES === null && <span class="chip-en" data-i18n-missing>EN</span>}
               {a.tempered && <span class="text-humo" title="Afijo templado"> ⚒</span>}
             </li>
           ))}
@@ -115,8 +128,20 @@ const etiquetaSlot = NOMBRE_SLOT[item.slot] ?? item.slot;
   <div class="tt-titulo">{nombre}</div>
   <div class="tt-meta">
     <span>{etiquetaSlot}</span>
-    {item.mythic.isMythic ? <span>Mítico</span> : <span>{item.quality}</span>}
+    <span>{etiquetaCalidad}</span>
+    {categoriaCodex && <span>{CODEX_ES[categoriaCodex]}</span>}
   </div>
+  {
+    icono && (
+      <img
+        src={icono}
+        alt=""
+        width="72"
+        height="72"
+        class="mt-2 h-18 w-18 rounded border border-grabado-vivo bg-piedra-alta object-cover"
+      />
+    )
+  }
   {descripcion && <p class="tt-descripcion">{descripcion}</p>}
   {
     item.affixes.length > 0 && (
@@ -126,6 +151,7 @@ const etiquetaSlot = NOMBRE_SLOT[item.slot] ?? item.slot;
             <span class="tt-runa-nombre">
               {a.greater ? '★' : '·'} {a.ref.esES ?? a.ref.enUS}
             </span>
+            {a.ref.esES === null && <span class="chip-en">EN</span>}
             {a.tempered && <span class="tt-runa-desc"> (templado)</span>}
           </div>
         ))}
@@ -138,6 +164,7 @@ const etiquetaSlot = NOMBRE_SLOT[item.slot] ?? item.slot;
         {item.sockets.map((s) => (
           <div>
             <span class="tt-runa-nombre">◆ {s.esES ?? s.enUS}</span>
+            {s.esES === null && <span class="chip-en">EN</span>}
           </div>
         ))}
       </div>

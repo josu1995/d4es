@@ -3,8 +3,10 @@ import { existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import {
   CLASSES,
+  CODEX_CATEGORIAS,
   iconoDeActividadPlan,
   iconoDeClase,
+  iconoDeCodex,
   iconoDeNodoPlan,
   iconoDeRanura,
   iconoDeUnico,
@@ -83,6 +85,7 @@ export async function reunirIconos(): Promise<Icono[]> {
 
   for (const c of CLASSES) anadir(iconoDeClase(c.id));
   for (const r of RANURAS) anadir(iconoDeRanura(r));
+  for (const c of CODEX_CATEGORIAS) anadir(iconoDeCodex(c));
 
   const dataset = await readJsonIfExists<{ byName: Record<string, { name: string; class: string | null }> }>(
     join(PATHS.canonical, 'skills-dataset.json'),

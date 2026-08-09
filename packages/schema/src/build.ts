@@ -58,6 +58,12 @@ export const GearItem = z.object({
   affixes: z.array(GearAffix).max(8),
   sockets: z.array(GameRef).max(3),
   minItemPower: z.number().int().positive().nullable(),
+  /**
+   * URL de la imagen con que la fuente pinta la pieza. Es la unica previsualizacion
+   * posible para las legendarias, que no tienen objeto base con nombre. `default` para
+   * que los canonicos escritos antes de este campo sigan parseando.
+   */
+  icon: z.string().nullable().default(null),
 });
 export type GearItem = z.infer<typeof GearItem>;
 
@@ -72,6 +78,14 @@ export const ParagonBoard = z.object({
       rank: z.number().int().min(1).max(MAX_GLYPH_RANK).nullable(),
     })
     .nullable(),
+  /**
+   * Casillas que la build recorre en este tablero, compactas ("r2c11") y en la rejilla
+   * logica SIN girar. La forma completa del tablero (tipo y rareza de cada casilla) vive
+   * una sola vez en `paragon-boards-dataset.json`, indexada por clase + nombre; la ficha
+   * cruza ambas cosas para dibujar el tablero con el camino encendido. `default` para que
+   * los canonicos escritos antes de este campo sigan parseando.
+   */
+  tiles: z.array(z.string().regex(/^r\d+c\d+$/)).default([]),
 });
 
 export const Completeness = z.object({

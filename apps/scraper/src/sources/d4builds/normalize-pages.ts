@@ -14,6 +14,7 @@ import { Resolver, normalizeName } from '@d4es/i18n';
 import type { GearItemRaw, PaginaRaw, StatsSlotRaw, VarianteRaw } from './scrape-pages.js';
 import type { PlanGuerraRaw } from './warplans.js';
 import type { MercenariosRaw } from './mercenarios.js';
+import { normalizarGiro, parseCasilla } from './paragon-casillas.js';
 import { hashOf } from '../../util/stable-json.js';
 
 /**
@@ -134,17 +135,26 @@ export function nombreDesdeSlug(slug: string): string {
  * contratado; si aparece un segundo dueño, es el refuerzo.
  *
  * Solo cuentan los nodos cogidos (`skill__tree__item--active`): el arbol se publica
- * entero, con las 57 habilidades disponibles, y sin filtrar saldrian todas como si la
- * build las llevara.
+ * entero con todas las habilidades disponibles, y sin filtrar saldrian todas como si la
+ * build las llevara. Y cada nodo viene TRIPLICADO en el DOM (57 nodos = 19 unicos; 15
+ * activos = 5 unicos), asi que se deduplica por slug: sin eso cada habilidad se
+ * publicaria tres veces.
  */
 function normalizarMercenario(
   crudo: MercenariosRaw | undefined,
   resolver: Resolver,
   mercenarioPorHabilidad: ReadonlyMap<string, string>,
 ): BuildVariant['mercenary'] {
-  const cogidos = (crudo?.nodos ?? []).filter(
-    (n) => n.clases.includes('skill__tree__item--active') && (n.puntos === null || n.puntos > 0),
-  );
+  const vistos = new Set<string>();
+  const cogidos = (crudo?.nodos ?? []).filter((n) => {
+    if (!n.clases.includes('skill__tree__item--active') || (n.puntos !== null && n.puntos <= 0)) {
+      return false;
+    }
+    const clave = n.slug || normalizeName(n.nombre);
+    if (vistos.has(clave)) return false;
+    vistos.add(clave);
+    return true;
+  });
   if (cogidos.length === 0) return null;
 
   const porDueno = new Map<string, typeof cogidos>();
@@ -300,6 +310,9 @@ function construirGear(
       // donde no estan: 701 apariciones sin traducir por una etiqueta mal puesta.
       .map((e) => resolver.resolve(esGema(e) ? 'gem' : 'rune', e.nombre)),
     minItemPower: null,
+    // La imagen con que la fuente pinta la pieza: la unica previsualizacion posible para
+    // las legendarias, que no tienen objeto base con nombre.
+    icon: crudo.icono ?? null,
   };
 }
 
@@ -334,7 +347,7 @@ function construirVariante(
     .map((b, i) => ({
       ref: resolver.resolve('paragonBoard', b.tablero),
       order: i,
-      rotation: null,
+      rotation: normalizarGiro(b.giro),
       glyph: b.glifo
         ? {
             ref: resolver.resolve('glyph', b.glifo),
@@ -342,6 +355,12 @@ function construirVariante(
             rank: b.nivelGlifo === null ? null : Math.min(Math.max(b.nivelGlifo, 1), 150),
           }
         : null,
+      // Solo las casillas que la build recorre; la forma completa del tablero vive en el
+      // catalogo compartido (paragon-boards-dataset.json), indexado por clase + nombre.
+      tiles: (b.casillas ?? [])
+        .map(parseCasilla)
+        .filter((c): c is NonNullable<typeof c> => c !== null && c.activa)
+        .map((c) => `r${c.row}c${c.col}`),
     }));
 
   const mercenary = normalizarMercenario(crudo.mercenarios, resolver, mercenarioPorHabilidad);

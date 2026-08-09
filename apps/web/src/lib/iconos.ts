@@ -2,12 +2,15 @@ import { existsSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import {
   ICONO_CDN,
+  codexDeIcono,
   iconoDeActividadPlan,
   iconoDeClase,
+  iconoDeCodex,
   iconoDeNodoPlan,
   iconoDeRanura,
   iconoDeUnico,
   iconoHabilidad,
+  type CodexCategoria,
   type Icono,
 } from '@d4es/schema';
 import { ROOT } from './data';
@@ -108,6 +111,24 @@ export function iconoRanura(slot: string): string | null {
   const nombre = RANURA_CDN[slot];
   return nombre ? servir(iconoDeRanura(nombre)) : null;
 }
+
+/**
+ * Categoria del codice de una pieza legendaria (la "imagen" con que la fuente pinta las
+ * piezas con aspecto). Etiquetas en castellano compuestas en la interfaz: son rotulos de
+ * la propia fuente, no terminos del juego, igual que "Tablero inicial".
+ */
+export function iconoCodex(categoria: CodexCategoria): string {
+  return servir(iconoDeCodex(categoria));
+}
+
+export { codexDeIcono };
+
+export const CODEX_ES: Record<CodexCategoria, string> = {
+  offensive: 'Ofensivo',
+  defensive: 'Defensivo',
+  utility: 'Utilidad',
+  mobility: 'Movilidad',
+};
 
 /** Cuantos iconos se sirven ya desde casa: lo pinta la pagina de estado de los datos. */
 export function iconosAutoHospedados(): number {

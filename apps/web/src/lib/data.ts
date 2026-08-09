@@ -4,11 +4,13 @@ import { fileURLToPath } from 'node:url';
 import {
   BuildIndex,
   CanonicalBuild,
+  ParagonBoardsDataset,
   SkillsDataset,
   WarPlansDataset,
   classById,
   skillNameKey,
   type BuildIndexRow,
+  type ParagonBoardLayout,
   type SkillInfo,
   type WarPlanActivityLayout,
 } from '@d4es/schema';
@@ -74,6 +76,17 @@ export function skillInfo(nombreEn: string): SkillInfo | null {
   return dataset?.byName[skillNameKey(nombreEn)] ?? null;
 }
 
+/**
+ * Descripcion de una habilidad en castellano, si la cosecha de fichas de Wowhead la
+ * trajo (con procedencia). Si no, null y el tooltip se queda con la descripcion en
+ * ingles del dataset, marcada como tal. Se busca por nombre ingles: `skillNameKey` es
+ * la misma normalizacion con que el diccionario construye `byEnglish`.
+ */
+export function skillDescEs(nombreEn: string): string | null {
+  const dict = loadDiccionario();
+  return dict.byEnglish[`skill:${skillNameKey(nombreEn)}`]?.desc ?? null;
+}
+
 let cachePlanes: WarPlansDataset | null = null;
 
 /**
@@ -91,6 +104,29 @@ export function loadWarPlansDataset(): WarPlansDataset | null {
 
 export function layoutPlan(slug: string): WarPlanActivityLayout | null {
   return loadWarPlansDataset()?.activities.find((a) => a.slug === slug) ?? null;
+}
+
+let cacheParagon: ParagonBoardsDataset | null = null;
+
+/**
+ * Forma de los tableros de Paragon (que casilla hay en cada posicion, con tipo y
+ * rareza). Como los planes de guerra, va en un fichero aparte porque la forma de un
+ * tablero es la misma en todas las builds que lo montan; aqui se indexa por clase +
+ * nombre porque los tableros son por clase y "Starting Board" se repite en las cinco.
+ * Devuelve null mientras no se haya extraido, y la ficha se queda con la lista.
+ */
+export function loadParagonDataset(): ParagonBoardsDataset | null {
+  if (cacheParagon) return cacheParagon;
+  const path = join(DATA, 'canonical', 'paragon-boards-dataset.json');
+  if (!existsSync(path)) return null;
+  cacheParagon = ParagonBoardsDataset.parse(JSON.parse(readFileSync(path, 'utf8')));
+  return cacheParagon;
+}
+
+export function layoutTablero(claseSlug: string, nombreEn: string): ParagonBoardLayout | null {
+  return (
+    loadParagonDataset()?.boards.find((b) => b.clase === claseSlug && b.name === nombreEn) ?? null
+  );
 }
 
 export interface CategoriaArbol {
@@ -177,6 +213,9 @@ export interface EntradaDiccionario {
   en: string;
   es: string;
   source: string;
+  /** Descripcion en castellano. Solo la traen aspectos, unicos y (desde la cosecha de
+   * fichas de Wowhead) algunas habilidades; el resto de categorias no la tienen. */
+  desc?: string;
 }
 
 export interface Diccionario {

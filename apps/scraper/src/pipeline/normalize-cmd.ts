@@ -21,6 +21,7 @@ import { readSnapshot } from '../sources/d4builds/scrape.js';
 import { normalizeD4BuildsCatalog } from '../sources/d4builds/normalize.js';
 import { enriquecerConPagina } from '../sources/d4builds/normalize-pages.js';
 import { construirLayoutPlanes } from '../sources/d4builds/warplans-layout.js';
+import { construirLayoutParagon } from '../sources/d4builds/paragon-layout.js';
 import type { PaginaRaw } from '../sources/d4builds/scrape-pages.js';
 import { readJsonIfExists, stableStringify, writeIfChanged } from '../util/stable-json.js';
 import { evaluarGuardrails } from './guardrails.js';
@@ -222,9 +223,12 @@ export async function runNormalize(): Promise<NormalizeResultado> {
   const nombreDeNodo = (slug: string): string | null =>
     nombreDeNodoPlan.get(skillNameKey(decodeURIComponent(slug).replace(/_/g, ' '))) ?? null;
   const dirPaginas = join(PATHS.raw, 'd4builds', 'pages');
-  // Se van guardando para construir despues, de una vez, el catalogo con la forma de los
-  // arboles de planes de guerra (que es la misma en todas las builds).
+  // Se van guardando para construir despues, de una vez, los catalogos con la forma de
+  // los arboles de planes de guerra (la misma en todas las builds) y de los tableros de
+  // Paragon (la misma por tablero; se necesita la clase porque los tableros son por
+  // clase y "Starting Board" se repite en las cinco con casillas distintas).
   const paginasLeidas: PaginaRaw[] = [];
+  const paginasConClase: { clase: string; pagina: PaginaRaw }[] = [];
   if (existsSync(dirPaginas)) {
     for (let i = 0; i < builds.length; i++) {
       const build = builds[i]!;
@@ -233,6 +237,7 @@ export async function runNormalize(): Promise<NormalizeResultado> {
       const pagina = await readJsonIfExists<PaginaRaw>(join(dirPaginas, `${externalId}.json`));
       if (!pagina) continue;
       paginasLeidas.push(pagina);
+      paginasConClase.push({ clase: classById(build.classId)?.slug ?? build.classId, pagina });
       relleno.paginas++;
       const res = enriquecerConPagina(build, pagina, resolver, mercenarioPorHabilidad, nombreDeNodo);
       builds[i] = res.build;
@@ -319,6 +324,21 @@ export async function runNormalize(): Promise<NormalizeResultado> {
       const nodos = layout.dataset.activities.reduce((n, a) => n + a.nodes.length, 0);
       process.stdout.write(
         `  planes de guerra: ${layout.dataset.activities.length} actividades, ${nodos} nodos de forma\n`,
+      );
+    }
+  }
+
+  // La forma de los tableros de Paragon, una sola vez por tablero: con ella la ficha
+  // dibuja el tablero entero y enciende solo las casillas que la build recorre.
+  if (paginasConClase.length > 0) {
+    const layout = construirLayoutParagon(paginasConClase, catalogo.meta.lastChangedAt);
+    avisos.push(...layout.avisos);
+    if (layout.dataset.boards.length > 0) {
+      const path = join(PATHS.canonical, 'paragon-boards-dataset.json');
+      if (await writeIfChanged(path, stableStringify(layout.dataset))) tocados++;
+      const casillas = layout.dataset.boards.reduce((n, b) => n + b.tiles.length, 0);
+      process.stdout.write(
+        `  paragon: ${layout.dataset.boards.length} tableros de forma, ${casillas} casillas\n`,
       );
     }
   }

@@ -1,0 +1,132 @@
+---
+import type { ParagonBoardLayout } from '@d4es/schema';
+
+/**
+ * Un tablero de Paragón dibujado entero, con el camino de la build encendido.
+ *
+ * La fuente lo pinta en su web con CSS (una rejilla de botones r/c girada con
+ * `transform: rotate(...)`); aquí se dibuja en SVG con el mismo patrón que
+ * `ArbolPlanGuerra.astro`: la forma sale del catálogo compartido
+ * (`paragon-boards-dataset.json`, una vez por clase + tablero) y la build solo aporta
+ * qué casillas recorre y con qué giro monta el tablero.
+ *
+ * El giro se aplica TRANSFORMANDO las coordenadas (fila, columna), no con un rotate del
+ * SVG: así el dibujo queda girado como en el juego pero cualquier texto o marca queda
+ * derecho.
+ *
+ * Las casillas no llevan imagen a propósito: serían ~800 <image> por ficha para repetir
+ * lo que el color ya dice. La rareza colorea (común/mágico/raro/legendario, los mismos
+ * tokens que el equipo), el engarce de glifo va como rombo, y el tipo exacto de cada
+ * casilla viaja en su <title>.
+ */
+interface Props {
+  layout: ParagonBoardLayout;
+  /** Giro con que esta build monta el tablero (dato de la build, no de la forma). */
+  rotation: 0 | 90 | 180 | 270 | null;
+  /** Casillas que la build recorre, compactas ("r2c11"), en la rejilla SIN girar. */
+  tiles: Set<string>;
+  /** Nombre del glifo engarzado (para el título de la casilla del glifo). */
+  glifo?: string | null;
+}
+
+const { layout, rotation, tiles, glifo = null } = Astro.props;
+
+/** Lado de una casilla y hueco entre ellas, en unidades del viewBox. */
+const LADO = 22;
+const HUECO = 4;
+const PASO = LADO + HUECO;
+
+const rot = rotation ?? 0;
+const { rows, cols } = layout;
+
+/** Gira (fila, col) de la rejilla lógica a la rejilla dibujada, en sentido horario. */
+function girar(row: number, col: number): { r: number; c: number } {
+  if (rot === 90) return { r: col, c: rows + 1 - row };
+  if (rot === 180) return { r: rows + 1 - row, c: cols + 1 - col };
+  if (rot === 270) return { r: cols + 1 - col, c: row };
+  return { r: row, c: col };
+}
+
+const dibujadas = layout.tiles.map((t) => {
+  const { r, c } = girar(t.row, t.col);
+  return {
+    ...t,
+    activa: tiles.has(`r${t.row}c${t.col}`),
+    esGlifo: t.type === 'Glyph',
+    x: (c - 1) * PASO,
+    y: (r - 1) * PASO,
+  };
+});
+
+const anchoRejilla = (rot === 90 || rot === 270 ? rows : cols) * PASO - HUECO;
+const altoRejilla = (rot === 90 || rot === 270 ? cols : rows) * PASO - HUECO;
+
+const COLOR_RAREZA: Record<string, string> = {
+  common: 'var(--color-grabado-vivo)',
+  magic: 'var(--color-rareza-magico)',
+  rare: 'var(--color-rareza-raro)',
+  legendary: 'var(--color-rareza-legendario)',
+};
+
+const RAREZA_ES: Record<string, string> = {
+  common: 'común',
+  magic: 'mágica',
+  rare: 'rara',
+  legendary: 'legendaria',
+};
+
+function tituloDe(t: (typeof dibujadas)[number]): string {
+  if (t.esGlifo) return glifo ? `Engarce de glifo: ${glifo}` : 'Engarce de glifo';
+  const rareza = t.rarity ? ` (casilla ${RAREZA_ES[t.rarity] ?? t.rarity})` : '';
+  return `${t.type}${rareza}${t.activa ? '' : ' — no recorrida'}`;
+}
+---
+
+<figure class="mt-3">
+  <svg
+    viewBox={`${-HUECO} ${-HUECO} ${anchoRejilla + HUECO * 2} ${altoRejilla + HUECO * 2}`}
+    class="mx-auto h-auto w-full max-w-md"
+    role="img"
+    aria-label={`Tablero de Paragón ${layout.name}`}
+  >
+    {
+      dibujadas.map((t) => {
+        const borde = t.activa
+          ? 'var(--color-brasa-viva)'
+          : (COLOR_RAREZA[t.rarity ?? 'common'] ?? 'var(--color-grabado-vivo)');
+        const relleno = t.activa ? 'rgb(200 69 47 / 0.35)' : 'var(--color-piedra)';
+        const cx = t.x + LADO / 2;
+        const cy = t.y + LADO / 2;
+        return (
+          <g opacity={t.activa ? '1' : '0.45'}>
+            <title>{tituloDe(t)}</title>
+            {t.esGlifo ? (
+              <rect
+                x={t.x + 2}
+                y={t.y + 2}
+                width={LADO - 4}
+                height={LADO - 4}
+                rx="3"
+                transform={`rotate(45 ${cx} ${cy})`}
+                fill={t.activa ? 'rgb(201 162 39 / 0.35)' : 'var(--color-piedra)'}
+                stroke={t.activa ? 'var(--color-oro)' : 'var(--color-oro-apagado)'}
+                stroke-width="2.5"
+              />
+            ) : (
+              <rect
+                x={t.x}
+                y={t.y}
+                width={LADO}
+                height={LADO}
+                rx="3"
+                fill={relleno}
+                stroke={borde}
+                stroke-width={t.rarity && t.rarity !== 'common' ? 2.5 : 1.5}
+              />
+            )}
+          </g>
+        );
+      })
+    }
+  </svg>
+</figure>

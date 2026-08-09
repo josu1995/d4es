@@ -1,6 +1,6 @@
 ---
 import type { SkillEntry } from '@d4es/schema';
-import { arbolDeClase, skillInfo } from '../lib/data';
+import { arbolDeClase, skillInfo, skillDescEs } from '../lib/data';
 import { iconoSkill, colorCategoria } from '../lib/iconos';
 
 /**
@@ -87,6 +87,7 @@ const totalPuntos = asignadas.reduce((n, s) => n + s.rank, 0);
               {cat.habilidades.map((h) => {
                 const usada = porNombre.get(normal(h.name));
                 const info = skillInfo(h.name);
+                const descEs = skillDescEs(h.name);
                 const nombre = usada ? (usada.ref.esES ?? usada.ref.enUS) : h.name;
                 const idTt = `${idBase}-arb-${normal(h.name).replace(/ /g, '-')}`;
                 return (
@@ -129,7 +130,12 @@ const totalPuntos = asignadas.reduce((n, s) => n + s.rank, 0);
                         {usada ? <span>Rango {usada.rank}</span> : <span>Sin puntos en esta build</span>}
                         {info?.cost && <span>{info.cost}</span>}
                       </div>
-                      {info?.description && <p class="tt-descripcion">{info.description}</p>}
+                      {(descEs ?? info?.description) && (
+                        <p class="tt-descripcion">{descEs ?? info?.description}</p>
+                      )}
+                      {!descEs && info?.description && (
+                        <p class="tt-idioma">Descripción original en inglés</p>
+                      )}
                       {usada && usada.runes.length > 0 && (
                         <div class="tt-runas">
                           {usada.runes.map((r) => (

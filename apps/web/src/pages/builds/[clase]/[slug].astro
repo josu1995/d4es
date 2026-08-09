@@ -5,8 +5,10 @@ import SlotEquipo from '../../../components/SlotEquipo.astro';
 import ArbolHabilidades from '../../../components/ArbolHabilidades.astro';
 import Termino from '../../../components/Termino.astro';
 import ArbolPlanGuerra from '../../../components/ArbolPlanGuerra.astro';
-import { loadBuilds, loadClasesEs, claseNombre, skillInfo, layoutPlan } from '../../../lib/data';
-import { iconoClase, iconoActividadPlan } from '../../../lib/iconos';
+import TableroParagon from '../../../components/TableroParagon.astro';
+import { loadBuilds, loadClasesEs, claseNombre, skillInfo, layoutPlan, layoutTablero } from '../../../lib/data';
+import { iconoClase, iconoActividadPlan, iconoSkill } from '../../../lib/iconos';
+import { NOMBRE_SLOT } from '../../../lib/etiquetas';
 import {
   MAX_WARPLAN_POINTS,
   classById,
@@ -29,6 +31,7 @@ interface Props {
 const { build } = Astro.props;
 const clasesEs = loadClasesEs();
 const nombreClase = claseNombre(build.classId, clasesEs);
+const claseSlug = classById(build.classId)?.slug ?? build.classId;
 
 const principal = build.variants.find((v) => v.id === build.primaryVariantId) ?? build.variants[0]!;
 const hayVariasFuentes = build.variants.length > 1;
@@ -212,6 +215,57 @@ function disponible(v: (typeof build.variants)[number], id: string): boolean {
                     afijo templado · <span class="inline-block h-2 w-2 rotate-45 border border-oro-apagado/70 align-middle" />{' '}
                     engarce
                   </p>
+
+                  {/* Las "Gear Stats" de d4builds: la lista priorizada de afijos por pieza.
+                      El orden es el de la fuente, y ES la prioridad. */}
+                  {[...izq, ...der].some((it) => it.affixes.length > 0) && (
+                    <>
+                      <h3 class="mt-8 font-titulo text-lg">Prioridad de afijos por pieza</h3>
+                      <p class="mt-1 text-xs text-humo">
+                        En el orden que publica la guía: lo primero de cada lista es lo que hay que
+                        buscar primero al elegir o templar la pieza.
+                      </p>
+                      <div class="mt-3 grid gap-3 sm:grid-cols-2">
+                        {[...izq, ...der]
+                          .filter((it) => it.affixes.length > 0)
+                          .map((it) => (
+                            <div class="grabado rounded bg-abismo p-3">
+                              <p class="text-[0.65rem] uppercase tracking-wider text-humo">
+                                {NOMBRE_SLOT[it.slot] ?? it.slot}
+                              </p>
+                              <ol class="mt-1.5 space-y-1">
+                                {it.affixes.map((a, j) => (
+                                  <li class="flex gap-2 text-xs leading-snug text-ceniza">
+                                    <span class="w-4 shrink-0 text-right font-mono text-humo">{j + 1}</span>
+                                    <span>
+                                      {a.greater && (
+                                        <span class="text-oro" title="Afijo superior">
+                                          ★{' '}
+                                        </span>
+                                      )}
+                                      <span class={a.tempered ? 'text-rareza-magico' : ''}>
+                                        {a.ref.esES ?? a.ref.enUS}
+                                      </span>
+                                      {a.ref.esES === null && (
+                                        <span class="chip-en" data-i18n-missing>
+                                          EN
+                                        </span>
+                                      )}
+                                      {a.tempered && (
+                                        <span class="text-humo" title="Afijo templado">
+                                          {' '}
+                                          ⚒
+                                        </span>
+                                      )}
+                                    </span>
+                                  </li>
+                                ))}
+                              </ol>
+                            </div>
+                          ))}
+                      </div>
+                    </>
+                  )}
                 </>
               ) : (
                 <div class="rounded border border-oro-apagado/40 bg-oro/5 p-4 text-sm">
@@ -271,27 +325,90 @@ function disponible(v: (typeof build.variants)[number], id: string): boolean {
               {v.paragon.boards.length > 0 ? (
                 <>
                   <p class="mt-1 text-sm text-ceniza">
-                    En el orden en que se encajan, con el glifo de cada uno. Recuerda que los glifos solo
-                    suben en la Fosa y que el salto importante está en el nivel 51.
+                    En el orden en que se encajan, con el glifo de cada uno. Despliega un tablero para
+                    ver el camino que recorre la build. Recuerda que los glifos solo suben en la Fosa
+                    y que el salto importante está en el nivel 51.
                   </p>
                   <ol class="mt-4 space-y-2">
-                    {v.paragon.boards.map((b, i) => (
-                      <li class="grabado flex flex-wrap items-center gap-3 rounded bg-abismo px-4 py-3">
-                        <span class="font-mono text-sm text-humo">{i + 1}</span>
-                        <span class="text-pergamino">{b.ref.esES ?? b.ref.enUS}</span>
-                        {b.glyph && (
-                          <span class="ml-auto flex items-center gap-2 text-sm">
-                            <span class="text-oro">{b.glyph.ref.esES ?? b.glyph.ref.enUS}</span>
-                            {b.glyph.rank !== null && (
-                              <span class="rounded border border-grabado px-1.5 py-0.5 font-mono text-xs text-ceniza">
-                                {b.glyph.rank}
+                    {v.paragon.boards.map((b, i) => {
+                      const forma = layoutTablero(claseSlug, b.ref.enUS);
+                      // "Starting Board" es un rotulo de la fuente, no el nombre del tablero en
+                      // el juego (cada clase tiene el suyo y d4builds no lo publica): se compone
+                      // en la interfaz, como los skillVariant.
+                      const esInicial = b.ref.enUS === 'Starting Board';
+                      const nombreTablero = esInicial ? 'Tablero inicial' : (b.ref.esES ?? b.ref.enUS);
+                      const glifoNombre = b.glyph ? (b.glyph.ref.esES ?? b.glyph.ref.enUS) : null;
+                      return (
+                        <li class="grabado rounded bg-abismo">
+                          <details open={i === 0}>
+                            <summary class="flex cursor-pointer flex-wrap items-center gap-3 px-4 py-3 [&::-webkit-details-marker]:hidden">
+                              <span class="font-mono text-sm text-humo">{i + 1}</span>
+                              <span class="text-pergamino">
+                                {nombreTablero}
+                                {!esInicial && b.ref.esES === null && (
+                                  <span class="chip-en" data-i18n-missing>EN</span>
+                                )}
                               </span>
+                              {b.rotation !== null && b.rotation !== 0 && (
+                                <span class="text-xs text-humo" title="Giro con que se encaja el tablero">
+                                  ⟳ {b.rotation}°
+                                </span>
+                              )}
+                              {glifoNombre && (
+                                <span class="ml-auto flex items-center gap-2 text-sm">
+                                  <span class="inline-block h-2 w-2 rotate-45 border border-oro bg-oro/20" />
+                                  <span class="text-oro">
+                                    {glifoNombre}
+                                    {b.glyph!.ref.esES === null && (
+                                      <span class="chip-en" data-i18n-missing>EN</span>
+                                    )}
+                                  </span>
+                                  {b.glyph!.rank !== null && (
+                                    <span class="rounded border border-grabado px-1.5 py-0.5 font-mono text-xs text-ceniza">
+                                      {b.glyph!.rank}
+                                    </span>
+                                  )}
+                                </span>
+                              )}
+                              <span class="text-humo" aria-hidden="true">▾</span>
+                            </summary>
+                            {forma ? (
+                              <div class="border-t border-grabado px-4 pb-4">
+                                <TableroParagon
+                                  layout={forma}
+                                  rotation={b.rotation}
+                                  tiles={new Set(b.tiles)}
+                                  glifo={glifoNombre}
+                                />
+                                {b.tiles.length > 0 && (
+                                  <p class="text-center text-xs text-humo">
+                                    {b.tiles.length} casillas recorridas
+                                  </p>
+                                )}
+                              </div>
+                            ) : (
+                              <p class="border-t border-grabado px-4 py-3 text-sm text-ceniza">
+                                La forma de este tablero todavía no está extraída; de momento, solo el
+                                nombre y el glifo.
+                              </p>
                             )}
-                          </span>
-                        )}
-                      </li>
-                    ))}
+                          </details>
+                        </li>
+                      );
+                    })}
                   </ol>
+                  <p class="mt-4 text-xs text-humo">
+                    <span class="inline-block h-2.5 w-2.5 rounded-sm border-2 border-brasa-viva bg-brasa/35 align-middle" />{' '}
+                    camino de la build ·{' '}
+                    <span class="inline-block h-2.5 w-2.5 rounded-sm border-2 border-rareza-magico align-middle" />{' '}
+                    casilla mágica ·{' '}
+                    <span class="inline-block h-2.5 w-2.5 rounded-sm border-2 border-rareza-raro align-middle" />{' '}
+                    rara ·{' '}
+                    <span class="inline-block h-2.5 w-2.5 rounded-sm border-2 border-rareza-legendario align-middle" />{' '}
+                    legendaria ·{' '}
+                    <span class="inline-block h-2.5 w-2.5 rotate-45 border border-oro bg-oro/20 align-middle" />{' '}
+                    engarce de glifo
+                  </p>
                 </>
               ) : (
                 <p class="mt-2 text-ceniza">
@@ -312,15 +429,41 @@ function disponible(v: (typeof build.variants)[number], id: string): boolean {
                     <p class="text-xs uppercase tracking-wider text-humo">Contratado</p>
                     <p class="mt-1 text-lg text-pergamino">
                       {v.mercenary.ref.esES ?? v.mercenary.ref.enUS}
+                      {v.mercenary.ref.esES === null && (
+                        <span class="chip-en" data-i18n-missing>EN</span>
+                      )}
                     </p>
                     {v.mercenary.skills.length > 0 && (
-                      <ul class="mt-2 flex flex-wrap gap-1.5">
-                        {v.mercenary.skills.map((s) => (
-                          <li class="rounded border border-grabado px-1.5 py-0.5 text-xs text-ceniza">
-                            {s.esES ?? s.enUS}
-                          </li>
-                        ))}
-                      </ul>
+                      <>
+                        <p class="mt-3 text-xs uppercase tracking-wider text-humo">
+                          Habilidades elegidas
+                        </p>
+                        <ul class="mt-1.5 flex flex-wrap gap-1.5">
+                          {v.mercenary.skills.map((s) => {
+                            const info = skillInfo(s.enUS);
+                            return (
+                              <li
+                                class="flex items-center gap-1.5 rounded border border-grabado px-2 py-1 text-xs text-ceniza"
+                                title={info?.description ?? undefined}
+                              >
+                                <img
+                                  src={iconoSkill(s.enUS)}
+                                  alt=""
+                                  width="20"
+                                  height="20"
+                                  loading="lazy"
+                                  class="h-5 w-5 rounded-sm"
+                                  onerror="this.style.display='none'"
+                                />
+                                {s.esES ?? s.enUS}
+                                {s.esES === null && (
+                                  <span class="chip-en" data-i18n-missing>EN</span>
+                                )}
+                              </li>
+                            );
+                          })}
+                        </ul>
+                      </>
                     )}
                   </div>
                   {v.mercenary.reinforcement && (
@@ -328,6 +471,9 @@ function disponible(v: (typeof build.variants)[number], id: string): boolean {
                       <p class="text-xs uppercase tracking-wider text-humo">Refuerzo</p>
                       <p class="mt-1 text-lg text-pergamino">
                         {v.mercenary.reinforcement.esES ?? v.mercenary.reinforcement.enUS}
+                        {v.mercenary.reinforcement.esES === null && (
+                          <span class="chip-en" data-i18n-missing>EN</span>
+                        )}
                       </p>
                     </div>
                   )}
