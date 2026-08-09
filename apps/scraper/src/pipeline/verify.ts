@@ -6,6 +6,7 @@ import {
   CanonicalBuild,
   MATCH_AUTO_THRESHOLD,
   MATCH_REVIEW_THRESHOLD,
+  WarPlansDataset,
   assertBuildInvariants,
   classifyMatch,
   matchScore,
@@ -90,6 +91,41 @@ export async function runVerify(): Promise<VerifyResultado> {
   if (refs > 0) {
     const pct = (sinTraducir / refs) * 100;
     avisos.push(`terminos sin traduccion verificada: ${sinTraducir}/${refs} (${pct.toFixed(1)}%)`);
+  }
+
+  // Los planes de guerra viven en dos sitios: los nodos que invierte cada build y el
+  // catalogo con la forma del arbol. Se cruzan por slug, y si la fuente renombra el
+  // fichero de un icono el cruce se rompe en silencio: la ficha pintaria el arbol con
+  // ese nodo apagado, como si la build no lo cogiera. Esto lo caza.
+  const layout = await readJsonIfExists<unknown>(join(PATHS.canonical, 'warplans-dataset.json'));
+  if (layout !== null) {
+    const parsed = WarPlansDataset.safeParse(layout);
+    if (!parsed.success) {
+      errores.push(`warplans-dataset.json no valida: ${parsed.error.issues[0]?.message}`);
+    } else {
+      const conocidos = new Map(
+        parsed.data.activities.map((a) => [a.slug, new Set(a.nodes.map((n) => n.slug))]),
+      );
+      const huerfanos = new Set<string>();
+      for (const b of builds) {
+        for (const v of b.variants) {
+          for (const a of v.warPlan?.activities ?? []) {
+            const nodos = conocidos.get(a.slug);
+            if (!nodos) {
+              huerfanos.add(`actividad "${a.slug}"`);
+              continue;
+            }
+            for (const n of a.nodes) if (!nodos.has(n.slug)) huerfanos.add(`${a.slug}/${n.slug}`);
+          }
+        }
+      }
+      if (huerfanos.size > 0) {
+        errores.push(
+          `planes de guerra: ${huerfanos.size} nodos invertidos que no estan en el catalogo de la ` +
+            `forma del arbol (${[...huerfanos].slice(0, 5).join(', ')}) — ¿renombro la fuente sus iconos?`,
+        );
+      }
+    }
   }
 
   return { ok: errores.length === 0, builds: builds.length, errores, avisos };
