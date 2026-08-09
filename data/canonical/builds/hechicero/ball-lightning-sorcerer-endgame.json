@@ -387,21 +387,113 @@
     "en": "Ball Lightning",
     "es": "Bola de rayos"
   },
-  "updatedAt": "2026-08-09T05:55:46.859Z",
+  "updatedAt": "2026-08-09T07:00:46.583Z",
   "variants": [
     {
       "completeness": {
         "hasGear": true,
-        "hasMercenary": false,
+        "hasMercenary": true,
         "hasParagon": true,
         "hasSkills": true,
         "hasTalisman": false,
         "hasWarPlan": false,
-        "score": 0.85
+        "score": 0.9
       },
       "gear": {
         "amulet": {
-          "affixes": [],
+          "affixes": [
+            {
+              "greater": false,
+              "order": 0,
+              "ref": {
+                "category": "affix",
+                "enUS": "Intelligence",
+                "esES": "de inteligencia",
+                "i18n": "d4companion",
+                "idName": "CoreStat_Intelligence;CoreStat_IntelligencePercent;CoreStat_Intelligence_Weapon;S04_CoreStat_Intelligence;S04_CoreStat_IntelligencePercent;S11_CoreStat_Intelligence_Greater;Talisman_Charm_Affix_UNIQUE_CoreStat_Intelligence_Higher;Talisman_SealAffix_Normal_CoreStat_IntelligencePercent;UNIQUE_CoreStat_IntelligencePercent_Higher;UNIQUE_CoreStat_IntelligencePercent_HigherHigher;UNIQUE_CoreStat_IntelligencePercent_HigherHigherHigher;UNIQUE_CoreStat_Intelligence_Higher;UNIQUE_CoreStat_Intelligence_HigherHigher;UNIQUE_CoreStat_Intelligence_HigherHigherHigher;X2_CoreStat_Intelligence_Greater;X2_Transfiguration_CoreStat_Intelligence;X2_Transfiguration_CoreStat_IntelligencePercent;X2_Transfiguration_CoreStat_Intelligence_Lesser",
+                "sno": 1083642
+              },
+              "tempered": false
+            },
+            {
+              "greater": true,
+              "order": 1,
+              "ref": {
+                "category": "affix",
+                "enUS": "x Vulnerable Damage Multiplier",
+                "esES": "Multiplicador de daño por vulnerabilidad x",
+                "i18n": "d4companion",
+                "idName": "S04_Damage_to_Vulnerable;X2_Damage_to_Vulnerable_Greater",
+                "sno": 1834112
+              },
+              "tempered": false
+            },
+            {
+              "greater": true,
+              "order": 2,
+              "ref": {
+                "category": "affix",
+                "enUS": "x Critical Strike Damage Multiplier",
+                "esES": "Multiplicador de daño de golpe crítico x",
+                "i18n": "d4companion",
+                "idName": "S04_CritDamage;X2_CritDamage_Greater",
+                "sno": 1829586
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 3,
+              "ref": {
+                "category": "affix",
+                "enUS": "x All Damage Multiplier",
+                "esES": "Multiplicador de todo el daño x",
+                "i18n": "d4companion",
+                "idName": "S04_Damage_All;X2_Damage_All_Greater;X2_UBERUNIQUE_Damage_All",
+                "sno": 1829588
+              },
+              "tempered": false
+            },
+            {
+              "greater": true,
+              "order": 4,
+              "ref": {
+                "category": "affix",
+                "enUS": "Lucky Hit: Up to a 15% Chance to Restore X Primary Resource (Worldly Stability - Resource)",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__lucky_hit_up_to_a_15_chance_to_restore_x_primary_resource_worldly_stability_resource",
+                "sno": null
+              },
+              "tempered": true
+            },
+            {
+              "greater": false,
+              "order": 5,
+              "ref": {
+                "category": "affix",
+                "enUS": "Aspect of Shredding Blades",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__aspect_of_shredding_blades",
+                "sno": null
+              },
+              "tempered": true
+            },
+            {
+              "greater": false,
+              "order": 6,
+              "ref": {
+                "category": "affix",
+                "enUS": "Transfigure",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__transfigure",
+                "sno": null
+              },
+              "tempered": true
+            }
+          ],
           "aspect": {
             "category": "aspect",
             "enUS": "Aspect of Elemental Constellation",
@@ -430,7 +522,86 @@
           ]
         },
         "boots": {
-          "affixes": [],
+          "affixes": [
+            {
+              "greater": true,
+              "order": 0,
+              "ref": {
+                "category": "affix",
+                "enUS": "Intelligence",
+                "esES": "de inteligencia",
+                "i18n": "d4companion",
+                "idName": "CoreStat_Intelligence;CoreStat_IntelligencePercent;CoreStat_Intelligence_Weapon;S04_CoreStat_Intelligence;S04_CoreStat_IntelligencePercent;S11_CoreStat_Intelligence_Greater;Talisman_Charm_Affix_UNIQUE_CoreStat_Intelligence_Higher;Talisman_SealAffix_Normal_CoreStat_IntelligencePercent;UNIQUE_CoreStat_IntelligencePercent_Higher;UNIQUE_CoreStat_IntelligencePercent_HigherHigher;UNIQUE_CoreStat_IntelligencePercent_HigherHigherHigher;UNIQUE_CoreStat_Intelligence_Higher;UNIQUE_CoreStat_Intelligence_HigherHigher;UNIQUE_CoreStat_Intelligence_HigherHigherHigher;X2_CoreStat_Intelligence_Greater;X2_Transfiguration_CoreStat_Intelligence;X2_Transfiguration_CoreStat_IntelligencePercent;X2_Transfiguration_CoreStat_Intelligence_Lesser",
+                "sno": 1083642
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 1,
+              "ref": {
+                "category": "affix",
+                "enUS": "Movement Speed",
+                "esES": "de velocidad de movimiento",
+                "i18n": "d4companion",
+                "idName": "Movement_Speed;Movement_Speed_Lesser;Movement_Speed_UBERUNIQUE;S04_Movement_Speed;Talisman_Charm_Affix_Movement_Speed;Talisman_Charm_Affix_UNIQUE_Movement_Speed_Lesser;Talisman_Charm_Movement_Speed;Talisman_Charm_Movement_Speed_MagicOnly;Tempered_MovementSpeed_Generic_Tier1;Tempered_MovementSpeed_Generic_Tier2;Tempered_MovementSpeed_Generic_Tier3;Tempered_PaladinMoveSpeed_Tier1;Tempered_PaladinMoveSpeed_Tier2;Tempered_PaladinMoveSpeed_Tier3;UBERUNIQUE_Movement_Speed_Ahavarion;UBERUNIQUE_Movement_Speed_HeirOfPerdition;UBERUNIQUE_Movement_Speed_MeltedHeartofSelig;UBERUNIQUE_Movement_Speed_TyraelsMight;UNIQUE_INHERENT_MovementSpeed_High;UNIQUE_Movement_Speed_High;UNIQUE_Movement_Speed_Higher;UNIQUE_Movement_Speed_Lesser;UNIQUE_Movement_Speed_LesserLesser;X2_Transfiguration_Movement_Speed;X2_Transfiguration_Movement_Speed_Lesser",
+                "sno": 1439265
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 2,
+              "ref": {
+                "category": "affix",
+                "enUS": "Maximum Life",
+                "esES": "de vida máxima",
+                "i18n": "d4companion",
+                "idName": "Life;LifePercent;LifePercent_Double_UBERUNIQUE;Life_Flat_Quadruple_UBERUNIQUE;Life_Greater;S04_Life;Talisman_Charm_Affix_Life;Talisman_Charm_MaxLife_Percent;Talisman_Charm_MaxLife_Percent_MagicOnly;Talisman_Charm_Virtue_Vitality;Talisman_SealAffix_Normal_LifePercent;Tempered_Generic_LifeMax_Tier1;Tempered_Generic_LifeMax_Tier2;Tempered_Generic_LifeMax_Tier3;UBERUNIQUE_FlatLife_Grandfather;UBERUNIQUE_FlatLife_Greater;UBERUNIQUE_FlatLife_NesekemTheHerald;UBERUNIQUE_LifeFlat_HarlequinCrest;UBERUNIQUE_LifeFlat_ShroudOfFalseDeath;UBERUNIQUE_LifePercent_Doombringer;UNIQUE_LifeFlat_Higher;UNIQUE_LifeFlat_HigherHigher;UNIQUE_LifePercent;UNIQUE_LifePercent_Higher;UNIQUE_LifePercent_Higher_Necro;UNIQUE_LifePercent_LessHigher;UNIQUE_LifePercent_Lesser;X2_Life_Greater;X2_Transfiguration_LifePercent;X2_Transfiguration_LifePercent_Lesser",
+                "sno": 1227911
+              },
+              "tempered": false
+            },
+            {
+              "greater": true,
+              "order": 3,
+              "ref": {
+                "category": "affix",
+                "enUS": "Ball Lightning",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__ball_lightning",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 4,
+              "ref": {
+                "category": "affix",
+                "enUS": "Movement Speed (Natural Motion - Mobility)",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__movement_speed_natural_motion_mobility",
+                "sno": null
+              },
+              "tempered": true
+            },
+            {
+              "greater": false,
+              "order": 5,
+              "ref": {
+                "category": "affix",
+                "enUS": "Transfigure",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__transfigure",
+                "sno": null
+              },
+              "tempered": true
+            }
+          ],
           "aspect": null,
           "item": {
             "category": "unique",
@@ -450,7 +621,86 @@
           "sockets": []
         },
         "chest": {
-          "affixes": [],
+          "affixes": [
+            {
+              "greater": true,
+              "order": 0,
+              "ref": {
+                "category": "affix",
+                "enUS": "Intelligence",
+                "esES": "de inteligencia",
+                "i18n": "d4companion",
+                "idName": "CoreStat_Intelligence;CoreStat_IntelligencePercent;CoreStat_Intelligence_Weapon;S04_CoreStat_Intelligence;S04_CoreStat_IntelligencePercent;S11_CoreStat_Intelligence_Greater;Talisman_Charm_Affix_UNIQUE_CoreStat_Intelligence_Higher;Talisman_SealAffix_Normal_CoreStat_IntelligencePercent;UNIQUE_CoreStat_IntelligencePercent_Higher;UNIQUE_CoreStat_IntelligencePercent_HigherHigher;UNIQUE_CoreStat_IntelligencePercent_HigherHigherHigher;UNIQUE_CoreStat_Intelligence_Higher;UNIQUE_CoreStat_Intelligence_HigherHigher;UNIQUE_CoreStat_Intelligence_HigherHigherHigher;X2_CoreStat_Intelligence_Greater;X2_Transfiguration_CoreStat_Intelligence;X2_Transfiguration_CoreStat_IntelligencePercent;X2_Transfiguration_CoreStat_Intelligence_Lesser",
+                "sno": 1083642
+              },
+              "tempered": false
+            },
+            {
+              "greater": true,
+              "order": 1,
+              "ref": {
+                "category": "affix",
+                "enUS": "Maximum Life",
+                "esES": "de vida máxima",
+                "i18n": "d4companion",
+                "idName": "Life;LifePercent;LifePercent_Double_UBERUNIQUE;Life_Flat_Quadruple_UBERUNIQUE;Life_Greater;S04_Life;Talisman_Charm_Affix_Life;Talisman_Charm_MaxLife_Percent;Talisman_Charm_MaxLife_Percent_MagicOnly;Talisman_Charm_Virtue_Vitality;Talisman_SealAffix_Normal_LifePercent;Tempered_Generic_LifeMax_Tier1;Tempered_Generic_LifeMax_Tier2;Tempered_Generic_LifeMax_Tier3;UBERUNIQUE_FlatLife_Grandfather;UBERUNIQUE_FlatLife_Greater;UBERUNIQUE_FlatLife_NesekemTheHerald;UBERUNIQUE_LifeFlat_HarlequinCrest;UBERUNIQUE_LifeFlat_ShroudOfFalseDeath;UBERUNIQUE_LifePercent_Doombringer;UNIQUE_LifeFlat_Higher;UNIQUE_LifeFlat_HigherHigher;UNIQUE_LifePercent;UNIQUE_LifePercent_Higher;UNIQUE_LifePercent_Higher_Necro;UNIQUE_LifePercent_LessHigher;UNIQUE_LifePercent_Lesser;X2_Life_Greater;X2_Transfiguration_LifePercent;X2_Transfiguration_LifePercent_Lesser",
+                "sno": 1227911
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 2,
+              "ref": {
+                "category": "affix",
+                "enUS": "Armor",
+                "esES": "de armadura",
+                "i18n": "d4companion",
+                "idName": "S04_Armor;Tempered_Generic_Armor_Tier1;Tempered_Generic_Armor_Tier2;Tempered_Generic_Armor_Tier3;UBERUNIQUE_FlatArmor_HarlequinCrest;UNIQUE_Armor_GIGA_SpecialScaling;UNIQUE_Armor_Higher;UNIQUE_INHERENT_Armor;UNIQUE_INHERENT_Resistance_Ring_Armor_Triple;X2_Armor_Greater",
+                "sno": 1829554
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 3,
+              "ref": {
+                "category": "affix",
+                "enUS": "Mana Regeneration",
+                "esES": "Maná de regeneración",
+                "i18n": "d4companion",
+                "idName": "S04_Resource_Per_Second_Mana",
+                "sno": 1924662
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 4,
+              "ref": {
+                "category": "affix",
+                "enUS": "Maximum Life (Worldly Endurance - Defensive)",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__maximum_life_worldly_endurance_defensive",
+                "sno": null
+              },
+              "tempered": true
+            },
+            {
+              "greater": false,
+              "order": 5,
+              "ref": {
+                "category": "affix",
+                "enUS": "Transfigure",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__transfigure",
+                "sno": null
+              },
+              "tempered": true
+            }
+          ],
           "aspect": null,
           "item": {
             "category": "unique",
@@ -487,7 +737,86 @@
           ]
         },
         "gloves": {
-          "affixes": [],
+          "affixes": [
+            {
+              "greater": true,
+              "order": 0,
+              "ref": {
+                "category": "affix",
+                "enUS": "x Critical Strike Damage Multiplier",
+                "esES": "Multiplicador de daño de golpe crítico x",
+                "i18n": "d4companion",
+                "idName": "S04_CritDamage;X2_CritDamage_Greater",
+                "sno": 1829586
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 1,
+              "ref": {
+                "category": "affix",
+                "enUS": "Critical Strike Chance",
+                "esES": "de probabilidad de golpe crítico",
+                "i18n": "d4companion",
+                "idName": "CritChance;CritChanceJewelry;CritChanceJewelry_UBERUNIQUE;CritChance_UBERUNIQUE;S04_CritChance;S04_CritChanceJewelry;Talisman_Charm_Affix_CritChance;Talisman_SealAffix_Normal_CritChance;Tempered_Generic_CritChance_BarbRogue_Tier1;Tempered_Generic_CritChance_BarbRogue_Tier2;Tempered_Generic_CritChance_BarbRogue_Tier3;Tempered_Generic_CritChance_Tier1;Tempered_Generic_CritChance_Tier2;Tempered_Generic_CritChance_Tier3;UBERUNIQUE_CritChance_HeirOfPerdition;UBERUNIQUE_CritChance_RingofStarlessSkies;UNIQUE_CritChance_HighVariance;UNIQUE_CritChance_Higher;UNIQUE_CritChance_HigherHigher;X2_Transfiguration_CritChance",
+                "sno": 1193845
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 2,
+              "ref": {
+                "category": "affix",
+                "enUS": "x All Damage Multiplier",
+                "esES": "Multiplicador de todo el daño x",
+                "i18n": "d4companion",
+                "idName": "S04_Damage_All;X2_Damage_All_Greater;X2_UBERUNIQUE_Damage_All",
+                "sno": 1829588
+              },
+              "tempered": false
+            },
+            {
+              "greater": true,
+              "order": 3,
+              "ref": {
+                "category": "affix",
+                "enUS": "x Vulnerable Damage Multiplier",
+                "esES": "Multiplicador de daño por vulnerabilidad x",
+                "i18n": "d4companion",
+                "idName": "S04_Damage_to_Vulnerable;X2_Damage_to_Vulnerable_Greater",
+                "sno": 1834112
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 4,
+              "ref": {
+                "category": "affix",
+                "enUS": "Critical Strike Damage (Worldly Finesse - Offensive)",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__critical_strike_damage_worldly_finesse_offensive",
+                "sno": null
+              },
+              "tempered": true
+            },
+            {
+              "greater": false,
+              "order": 5,
+              "ref": {
+                "category": "affix",
+                "enUS": "Transfigure",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__transfigure",
+                "sno": null
+              },
+              "tempered": true
+            }
+          ],
           "aspect": {
             "category": "aspect",
             "enUS": "Storm Splitter's Aspect",
@@ -507,7 +836,86 @@
           "sockets": []
         },
         "helm": {
-          "affixes": [],
+          "affixes": [
+            {
+              "greater": true,
+              "order": 0,
+              "ref": {
+                "category": "affix",
+                "enUS": "Intelligence",
+                "esES": "de inteligencia",
+                "i18n": "d4companion",
+                "idName": "CoreStat_Intelligence;CoreStat_IntelligencePercent;CoreStat_Intelligence_Weapon;S04_CoreStat_Intelligence;S04_CoreStat_IntelligencePercent;S11_CoreStat_Intelligence_Greater;Talisman_Charm_Affix_UNIQUE_CoreStat_Intelligence_Higher;Talisman_SealAffix_Normal_CoreStat_IntelligencePercent;UNIQUE_CoreStat_IntelligencePercent_Higher;UNIQUE_CoreStat_IntelligencePercent_HigherHigher;UNIQUE_CoreStat_IntelligencePercent_HigherHigherHigher;UNIQUE_CoreStat_Intelligence_Higher;UNIQUE_CoreStat_Intelligence_HigherHigher;UNIQUE_CoreStat_Intelligence_HigherHigherHigher;X2_CoreStat_Intelligence_Greater;X2_Transfiguration_CoreStat_Intelligence;X2_Transfiguration_CoreStat_IntelligencePercent;X2_Transfiguration_CoreStat_Intelligence_Lesser",
+                "sno": 1083642
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 1,
+              "ref": {
+                "category": "affix",
+                "enUS": "Maximum Life",
+                "esES": "de vida máxima",
+                "i18n": "d4companion",
+                "idName": "Life;LifePercent;LifePercent_Double_UBERUNIQUE;Life_Flat_Quadruple_UBERUNIQUE;Life_Greater;S04_Life;Talisman_Charm_Affix_Life;Talisman_Charm_MaxLife_Percent;Talisman_Charm_MaxLife_Percent_MagicOnly;Talisman_Charm_Virtue_Vitality;Talisman_SealAffix_Normal_LifePercent;Tempered_Generic_LifeMax_Tier1;Tempered_Generic_LifeMax_Tier2;Tempered_Generic_LifeMax_Tier3;UBERUNIQUE_FlatLife_Grandfather;UBERUNIQUE_FlatLife_Greater;UBERUNIQUE_FlatLife_NesekemTheHerald;UBERUNIQUE_LifeFlat_HarlequinCrest;UBERUNIQUE_LifeFlat_ShroudOfFalseDeath;UBERUNIQUE_LifePercent_Doombringer;UNIQUE_LifeFlat_Higher;UNIQUE_LifeFlat_HigherHigher;UNIQUE_LifePercent;UNIQUE_LifePercent_Higher;UNIQUE_LifePercent_Higher_Necro;UNIQUE_LifePercent_LessHigher;UNIQUE_LifePercent_Lesser;X2_Life_Greater;X2_Transfiguration_LifePercent;X2_Transfiguration_LifePercent_Lesser",
+                "sno": 1227911
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 2,
+              "ref": {
+                "category": "affix",
+                "enUS": "Resource Generation",
+                "esES": "de generación de recursos",
+                "i18n": "d4companion",
+                "idName": "ResourceGain;ResourceGain_Greater_UNIQUE;ResourceGain_UBERUNIQUE;S04_ResourceGain;Talisman_Charm_Affix_ResourceGain;Talisman_Charm_Virtue_Clarity;Tempered_Generic_ResourceGain_Tier1;Tempered_Generic_ResourceGain_Tier2;Tempered_Generic_ResourceGain_Tier3;UBERUNIQUE_ResourceGain_MeltedHeartofSelig;UBERUNIQUE_ResourceGain_ShroudOfFalseDeath;UNIQUE_ResourceGain_GIGA;UNIQUE_ResourceGain_Higher;UNIQUE_ResourceGain_ULTRA_GIGA_AxialConduit",
+                "sno": 1341724
+              },
+              "tempered": false
+            },
+            {
+              "greater": true,
+              "order": 3,
+              "ref": {
+                "category": "affix",
+                "enUS": "Cooldown Reduction",
+                "esES": "de reducción de tiempo de reutilización",
+                "i18n": "d4companion",
+                "idName": "CooldownReductionCDR;CooldownReductionCDR_UBERUNIQUE;INHERENT_CooldownReductionCDR;INHERENT_Resource_Cost_Reduction_Druid;S04_CooldownReductionCDR;Talisman_Charm_Affix_CooldownReductionCDR;Talisman_Charm_Virtue_Elegance;Talisman_SealAffix_Normal_CooldownCDR;Tempered_Generic_CDR_Tier1;Tempered_Generic_CDR_Tier2;Tempered_Generic_CDR_Tier3;UBERUNIQUE_CooldownReductionCDR_HarlequinCrest;UNIQUE_CooldownReductionCDR_Higher;X2_Transfiguration_CooldownReductionCDR",
+                "sno": 1234186
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 4,
+              "ref": {
+                "category": "affix",
+                "enUS": "Maximum Life (Worldly Endurance - Defensive)",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__maximum_life_worldly_endurance_defensive",
+                "sno": null
+              },
+              "tempered": true
+            },
+            {
+              "greater": false,
+              "order": 5,
+              "ref": {
+                "category": "affix",
+                "enUS": "Transfigure",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__transfigure",
+                "sno": null
+              },
+              "tempered": true
+            }
+          ],
           "aspect": {
             "category": "aspect",
             "enUS": "Mage-Lord's Aspect",
@@ -544,7 +952,86 @@
           ]
         },
         "offhand": {
-          "affixes": [],
+          "affixes": [
+            {
+              "greater": true,
+              "order": 0,
+              "ref": {
+                "category": "affix",
+                "enUS": "x Critical Strike Damage Multiplier",
+                "esES": "Multiplicador de daño de golpe crítico x",
+                "i18n": "d4companion",
+                "idName": "S04_CritDamage;X2_CritDamage_Greater",
+                "sno": 1829586
+              },
+              "tempered": false
+            },
+            {
+              "greater": true,
+              "order": 1,
+              "ref": {
+                "category": "affix",
+                "enUS": "x All Damage Multiplier",
+                "esES": "Multiplicador de todo el daño x",
+                "i18n": "d4companion",
+                "idName": "S04_Damage_All;X2_Damage_All_Greater;X2_UBERUNIQUE_Damage_All",
+                "sno": 1829588
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 2,
+              "ref": {
+                "category": "affix",
+                "enUS": "Critical Strike Chance",
+                "esES": "de probabilidad de golpe crítico",
+                "i18n": "d4companion",
+                "idName": "CritChance;CritChanceJewelry;CritChanceJewelry_UBERUNIQUE;CritChance_UBERUNIQUE;S04_CritChance;S04_CritChanceJewelry;Talisman_Charm_Affix_CritChance;Talisman_SealAffix_Normal_CritChance;Tempered_Generic_CritChance_BarbRogue_Tier1;Tempered_Generic_CritChance_BarbRogue_Tier2;Tempered_Generic_CritChance_BarbRogue_Tier3;Tempered_Generic_CritChance_Tier1;Tempered_Generic_CritChance_Tier2;Tempered_Generic_CritChance_Tier3;UBERUNIQUE_CritChance_HeirOfPerdition;UBERUNIQUE_CritChance_RingofStarlessSkies;UNIQUE_CritChance_HighVariance;UNIQUE_CritChance_Higher;UNIQUE_CritChance_HigherHigher;X2_Transfiguration_CritChance",
+                "sno": 1193845
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 3,
+              "ref": {
+                "category": "affix",
+                "enUS": "Cooldown Reduction",
+                "esES": "de reducción de tiempo de reutilización",
+                "i18n": "d4companion",
+                "idName": "CooldownReductionCDR;CooldownReductionCDR_UBERUNIQUE;INHERENT_CooldownReductionCDR;INHERENT_Resource_Cost_Reduction_Druid;S04_CooldownReductionCDR;Talisman_Charm_Affix_CooldownReductionCDR;Talisman_Charm_Virtue_Elegance;Talisman_SealAffix_Normal_CooldownCDR;Tempered_Generic_CDR_Tier1;Tempered_Generic_CDR_Tier2;Tempered_Generic_CDR_Tier3;UBERUNIQUE_CooldownReductionCDR_HarlequinCrest;UNIQUE_CooldownReductionCDR_Higher;X2_Transfiguration_CooldownReductionCDR",
+                "sno": 1234186
+              },
+              "tempered": false
+            },
+            {
+              "greater": true,
+              "order": 4,
+              "ref": {
+                "category": "affix",
+                "enUS": "Critical Strike Chance (Worldly Destruction - Weapons)",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__critical_strike_chance_worldly_destruction_weapons",
+                "sno": null
+              },
+              "tempered": true
+            },
+            {
+              "greater": false,
+              "order": 5,
+              "ref": {
+                "category": "affix",
+                "enUS": "Transfigure",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__transfigure",
+                "sno": null
+              },
+              "tempered": true
+            }
+          ],
           "aspect": null,
           "item": {
             "category": "unique",
@@ -573,7 +1060,86 @@
           ]
         },
         "pants": {
-          "affixes": [],
+          "affixes": [
+            {
+              "greater": true,
+              "order": 0,
+              "ref": {
+                "category": "affix",
+                "enUS": "Primary Core Stat",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__primary_core_stat",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": true,
+              "order": 1,
+              "ref": {
+                "category": "affix",
+                "enUS": "Maximum Life",
+                "esES": "de vida máxima",
+                "i18n": "d4companion",
+                "idName": "Life;LifePercent;LifePercent_Double_UBERUNIQUE;Life_Flat_Quadruple_UBERUNIQUE;Life_Greater;S04_Life;Talisman_Charm_Affix_Life;Talisman_Charm_MaxLife_Percent;Talisman_Charm_MaxLife_Percent_MagicOnly;Talisman_Charm_Virtue_Vitality;Talisman_SealAffix_Normal_LifePercent;Tempered_Generic_LifeMax_Tier1;Tempered_Generic_LifeMax_Tier2;Tempered_Generic_LifeMax_Tier3;UBERUNIQUE_FlatLife_Grandfather;UBERUNIQUE_FlatLife_Greater;UBERUNIQUE_FlatLife_NesekemTheHerald;UBERUNIQUE_LifeFlat_HarlequinCrest;UBERUNIQUE_LifeFlat_ShroudOfFalseDeath;UBERUNIQUE_LifePercent_Doombringer;UNIQUE_LifeFlat_Higher;UNIQUE_LifeFlat_HigherHigher;UNIQUE_LifePercent;UNIQUE_LifePercent_Higher;UNIQUE_LifePercent_Higher_Necro;UNIQUE_LifePercent_LessHigher;UNIQUE_LifePercent_Lesser;X2_Life_Greater;X2_Transfiguration_LifePercent;X2_Transfiguration_LifePercent_Lesser",
+                "sno": 1227911
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 2,
+              "ref": {
+                "category": "affix",
+                "enUS": "Armor",
+                "esES": "de armadura",
+                "i18n": "d4companion",
+                "idName": "S04_Armor;Tempered_Generic_Armor_Tier1;Tempered_Generic_Armor_Tier2;Tempered_Generic_Armor_Tier3;UBERUNIQUE_FlatArmor_HarlequinCrest;UNIQUE_Armor_GIGA_SpecialScaling;UNIQUE_Armor_Higher;UNIQUE_INHERENT_Armor;UNIQUE_INHERENT_Resistance_Ring_Armor_Triple;X2_Armor_Greater",
+                "sno": 1829554
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 3,
+              "ref": {
+                "category": "affix",
+                "enUS": "Mana Regeneration",
+                "esES": "Maná de regeneración",
+                "i18n": "d4companion",
+                "idName": "S04_Resource_Per_Second_Mana",
+                "sno": 1924662
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 4,
+              "ref": {
+                "category": "affix",
+                "enUS": "Maximum Life (Worldly Endurance - Defensive)",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__maximum_life_worldly_endurance_defensive",
+                "sno": null
+              },
+              "tempered": true
+            },
+            {
+              "greater": false,
+              "order": 5,
+              "ref": {
+                "category": "affix",
+                "enUS": "Transfigure",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__transfigure",
+                "sno": null
+              },
+              "tempered": true
+            }
+          ],
           "aspect": null,
           "item": {
             "category": "unique",
@@ -610,7 +1176,86 @@
           ]
         },
         "ring1": {
-          "affixes": [],
+          "affixes": [
+            {
+              "greater": false,
+              "order": 0,
+              "ref": {
+                "category": "affix",
+                "enUS": "x Vulnerable Damage Multiplier",
+                "esES": "Multiplicador de daño por vulnerabilidad x",
+                "i18n": "d4companion",
+                "idName": "S04_Damage_to_Vulnerable;X2_Damage_to_Vulnerable_Greater",
+                "sno": 1834112
+              },
+              "tempered": false
+            },
+            {
+              "greater": true,
+              "order": 1,
+              "ref": {
+                "category": "affix",
+                "enUS": "Ranks to Shock Skills",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__ranks_to_shock_skills",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": true,
+              "order": 2,
+              "ref": {
+                "category": "affix",
+                "enUS": "x Critical Strike Damage Multiplier",
+                "esES": "Multiplicador de daño de golpe crítico x",
+                "i18n": "d4companion",
+                "idName": "S04_CritDamage;X2_CritDamage_Greater",
+                "sno": 1829586
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 3,
+              "ref": {
+                "category": "affix",
+                "enUS": "Cooldown Reduction",
+                "esES": "de reducción de tiempo de reutilización",
+                "i18n": "d4companion",
+                "idName": "CooldownReductionCDR;CooldownReductionCDR_UBERUNIQUE;INHERENT_CooldownReductionCDR;INHERENT_Resource_Cost_Reduction_Druid;S04_CooldownReductionCDR;Talisman_Charm_Affix_CooldownReductionCDR;Talisman_Charm_Virtue_Elegance;Talisman_SealAffix_Normal_CooldownCDR;Tempered_Generic_CDR_Tier1;Tempered_Generic_CDR_Tier2;Tempered_Generic_CDR_Tier3;UBERUNIQUE_CooldownReductionCDR_HarlequinCrest;UNIQUE_CooldownReductionCDR_Higher;X2_Transfiguration_CooldownReductionCDR",
+                "sno": 1234186
+              },
+              "tempered": false
+            },
+            {
+              "greater": true,
+              "order": 4,
+              "ref": {
+                "category": "affix",
+                "enUS": "Cooldown Reduction (Worldly Stability - Resource)",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__cooldown_reduction_worldly_stability_resource",
+                "sno": null
+              },
+              "tempered": true
+            },
+            {
+              "greater": false,
+              "order": 5,
+              "ref": {
+                "category": "affix",
+                "enUS": "Transfigure",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__transfigure",
+                "sno": null
+              },
+              "tempered": true
+            }
+          ],
           "aspect": null,
           "item": {
             "category": "unique",
@@ -639,7 +1284,86 @@
           ]
         },
         "ring2": {
-          "affixes": [],
+          "affixes": [
+            {
+              "greater": false,
+              "order": 0,
+              "ref": {
+                "category": "affix",
+                "enUS": "Cooldown Reduction",
+                "esES": "de reducción de tiempo de reutilización",
+                "i18n": "d4companion",
+                "idName": "CooldownReductionCDR;CooldownReductionCDR_UBERUNIQUE;INHERENT_CooldownReductionCDR;INHERENT_Resource_Cost_Reduction_Druid;S04_CooldownReductionCDR;Talisman_Charm_Affix_CooldownReductionCDR;Talisman_Charm_Virtue_Elegance;Talisman_SealAffix_Normal_CooldownCDR;Tempered_Generic_CDR_Tier1;Tempered_Generic_CDR_Tier2;Tempered_Generic_CDR_Tier3;UBERUNIQUE_CooldownReductionCDR_HarlequinCrest;UNIQUE_CooldownReductionCDR_Higher;X2_Transfiguration_CooldownReductionCDR",
+                "sno": 1234186
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 1,
+              "ref": {
+                "category": "affix",
+                "enUS": "x Lightning Damage Multiplier",
+                "esES": "Multiplicador de daño de Rayos x",
+                "i18n": "d4companion",
+                "idName": "X2_DamageType_Lightning;X2_DamageType_Lightning_Greater",
+                "sno": 2558717
+              },
+              "tempered": false
+            },
+            {
+              "greater": true,
+              "order": 2,
+              "ref": {
+                "category": "affix",
+                "enUS": "x All Damage Multiplier",
+                "esES": "Multiplicador de todo el daño x",
+                "i18n": "d4companion",
+                "idName": "S04_Damage_All;X2_Damage_All_Greater;X2_UBERUNIQUE_Damage_All",
+                "sno": 1829588
+              },
+              "tempered": false
+            },
+            {
+              "greater": true,
+              "order": 3,
+              "ref": {
+                "category": "affix",
+                "enUS": "x Critical Strike Damage Multiplier",
+                "esES": "Multiplicador de daño de golpe crítico x",
+                "i18n": "d4companion",
+                "idName": "S04_CritDamage;X2_CritDamage_Greater",
+                "sno": 1829586
+              },
+              "tempered": false
+            },
+            {
+              "greater": true,
+              "order": 4,
+              "ref": {
+                "category": "affix",
+                "enUS": "Cooldown Reduction (Worldly Stability - Resource)",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__cooldown_reduction_worldly_stability_resource",
+                "sno": null
+              },
+              "tempered": true
+            },
+            {
+              "greater": false,
+              "order": 5,
+              "ref": {
+                "category": "affix",
+                "enUS": "Transfigure",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__transfigure",
+                "sno": null
+              },
+              "tempered": true
+            }
+          ],
           "aspect": null,
           "item": {
             "category": "unique",
@@ -668,7 +1392,99 @@
           ]
         },
         "weapon": {
-          "affixes": [],
+          "affixes": [
+            {
+              "greater": false,
+              "order": 0,
+              "ref": {
+                "category": "affix",
+                "enUS": "Weapon Type",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__weapon_type",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": true,
+              "order": 1,
+              "ref": {
+                "category": "affix",
+                "enUS": "x Critical Strike Damage Multiplier",
+                "esES": "Multiplicador de daño de golpe crítico x",
+                "i18n": "d4companion",
+                "idName": "S04_CritDamage;X2_CritDamage_Greater",
+                "sno": 1829586
+              },
+              "tempered": false
+            },
+            {
+              "greater": true,
+              "order": 2,
+              "ref": {
+                "category": "affix",
+                "enUS": "x All Damage Multiplier",
+                "esES": "Multiplicador de todo el daño x",
+                "i18n": "d4companion",
+                "idName": "S04_Damage_All;X2_Damage_All_Greater;X2_UBERUNIQUE_Damage_All",
+                "sno": 1829588
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 3,
+              "ref": {
+                "category": "affix",
+                "enUS": "Weapon Damage",
+                "esES": "de daño de arma",
+                "i18n": "d4companion",
+                "idName": "X2_Fast_Weapon_Damage_1HAxe;X2_Fast_Weapon_Damage_1HMace;X2_Fast_Weapon_Damage_1HScythe;X2_Fast_Weapon_Damage_1HSword;X2_Fast_Weapon_Damage_1HTotem;X2_Fast_Weapon_Damage_2HBow;X2_Fast_Weapon_Damage_2HQuarterstaff;X2_Slow_Weapon_Damage_2HAxe;X2_Slow_Weapon_Damage_2HCrossbow;X2_Slow_Weapon_Damage_2HMace;X2_Slow_Weapon_Damage_2HPolearm;X2_Slow_Weapon_Damage_2HScythe;X2_VeryFast_Weapon_Damage_1HDagger;X2_VeryFast_Weapon_Damage_1HFlail;X2_VeryFast_Weapon_Damage_1HFocus;X2_VeryFast_Weapon_Damage_1HWand;X2_Weapon_Damage_2HGlaive;X2_Weapon_Damage_2HStaff;X2_Weapon_Damage_2HSword",
+                "sno": 2620563
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 4,
+              "ref": {
+                "category": "affix",
+                "enUS": "Intelligence",
+                "esES": "de inteligencia",
+                "i18n": "d4companion",
+                "idName": "CoreStat_Intelligence;CoreStat_IntelligencePercent;CoreStat_Intelligence_Weapon;S04_CoreStat_Intelligence;S04_CoreStat_IntelligencePercent;S11_CoreStat_Intelligence_Greater;Talisman_Charm_Affix_UNIQUE_CoreStat_Intelligence_Higher;Talisman_SealAffix_Normal_CoreStat_IntelligencePercent;UNIQUE_CoreStat_IntelligencePercent_Higher;UNIQUE_CoreStat_IntelligencePercent_HigherHigher;UNIQUE_CoreStat_IntelligencePercent_HigherHigherHigher;UNIQUE_CoreStat_Intelligence_Higher;UNIQUE_CoreStat_Intelligence_HigherHigher;UNIQUE_CoreStat_Intelligence_HigherHigherHigher;X2_CoreStat_Intelligence_Greater;X2_Transfiguration_CoreStat_Intelligence;X2_Transfiguration_CoreStat_IntelligencePercent;X2_Transfiguration_CoreStat_Intelligence_Lesser",
+                "sno": 1083642
+              },
+              "tempered": false
+            },
+            {
+              "greater": true,
+              "order": 5,
+              "ref": {
+                "category": "affix",
+                "enUS": "Critical Strike Chance (Worldly Destruction - Weapons)",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__critical_strike_chance_worldly_destruction_weapons",
+                "sno": null
+              },
+              "tempered": true
+            },
+            {
+              "greater": false,
+              "order": 6,
+              "ref": {
+                "category": "affix",
+                "enUS": "Transfigure",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__transfigure",
+                "sno": null
+              },
+              "tempered": true
+            }
+          ],
           "aspect": {
             "category": "aspect",
             "enUS": "Aspect of Overwhelming Currents",
@@ -707,7 +1523,25 @@
       },
       "id": "d4builds:0e5a63c6-49fa-4992-a65c-33f50db9bd4e:0",
       "levelBand": "endgame",
-      "mercenary": null,
+      "mercenary": {
+        "ref": {
+          "category": "mercenary",
+          "enUS": "Bloodthirst",
+          "esES": null,
+          "i18n": "none",
+          "idName": "mercenary__bloodthirst",
+          "sno": null
+        },
+        "reinforcement": {
+          "category": "mercenary",
+          "enUS": "Skill Cast",
+          "esES": null,
+          "i18n": "none",
+          "idName": "mercenary__skill_cast",
+          "sno": null
+        },
+        "skills": []
+      },
       "paragon": {
         "boards": [
           {
@@ -1087,11 +1921,11 @@
       ],
       "source": {
         "author": null,
-        "capturedAt": "2026-08-09T05:55:46.859Z",
+        "capturedAt": "2026-08-09T07:00:46.583Z",
         "externalId": "0e5a63c6-49fa-4992-a65c-33f50db9bd4e",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "0213901758265d3a17a7fac68d0d22cafff6294ea8763526d313af99dace7f64",
+        "snapshotHash": "d0eca8fa47a0c6a39fac2bd9fd716940c8a0094fc9eff8491663118a45b514ac",
         "url": "https://d4builds.gg/builds/0e5a63c6-49fa-4992-a65c-33f50db9bd4e/?var=0",
         "variantIndex": 0,
         "variantLabel": "Standard Build"

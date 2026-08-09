@@ -173,314 +173,24 @@
     "en": "Dance of Knives",
     "es": "Danza de cuchillos"
   },
-  "updatedAt": "2026-08-09T06:23:25.577Z",
+  "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
     {
       "completeness": {
-        "hasGear": true,
+        "hasGear": false,
         "hasMercenary": false,
-        "hasParagon": true,
+        "hasParagon": false,
         "hasSkills": true,
         "hasTalisman": false,
         "hasWarPlan": false,
-        "score": 0.85
+        "score": 0.35
       },
-      "gear": {
-        "amulet": {
-          "affixes": [],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Edgemaster's Aspect",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__edgemaster_s_aspect",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "amulet",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Skull",
-              "esES": null,
-              "i18n": "none",
-              "idName": "rune__skull",
-              "sno": null
-            }
-          ]
-        },
-        "boots": {
-          "affixes": [],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Aspect of Nebulous Brews",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_nebulous_brews",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "boots",
-          "sockets": []
-        },
-        "chest": {
-          "affixes": [],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Aspect of the Protector",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_the_protector",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "chest",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Cem",
-              "esES": "Cem",
-              "i18n": "d4companion",
-              "idName": "Item_Rune_Condition_OnEvade",
-              "sno": 1968096
-            },
-            {
-              "category": "rune",
-              "enUS": "Kry",
-              "esES": "Kry",
-              "i18n": "d4companion",
-              "idName": "Item_Rune_Effect_Spiritborn_Vortex",
-              "sno": 2039678
-            }
-          ]
-        },
-        "gloves": {
-          "affixes": [],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Aspect of Elemental Fate",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_elemental_fate",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "gloves",
-          "sockets": []
-        },
-        "helm": {
-          "affixes": [],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Aspect of Disobedience",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_disobedience",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "helm",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Emerald",
-              "esES": null,
-              "i18n": "none",
-              "idName": "rune__emerald",
-              "sno": null
-            },
-            {
-              "category": "rune",
-              "enUS": "Emerald",
-              "esES": null,
-              "i18n": "none",
-              "idName": "rune__emerald",
-              "sno": null
-            }
-          ]
-        },
-        "pants": {
-          "affixes": [],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Enshrouding Aspect",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__enshrouding_aspect",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "pants",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Noc",
-              "esES": "Noc",
-              "i18n": "d4companion",
-              "idName": "Item_Rune_Condition_OnCCEnemy",
-              "sno": 2089874
-            },
-            {
-              "category": "rune",
-              "enUS": "Wat",
-              "esES": "Wat",
-              "i18n": "d4companion",
-              "idName": "Item_Rune_Effect_Necromancer_Decrepify",
-              "sno": 2004862
-            }
-          ]
-        },
-        "ring1": {
-          "affixes": [],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Aspect of the Expectant",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_the_expectant",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "ring1",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Skull",
-              "esES": null,
-              "i18n": "none",
-              "idName": "rune__skull",
-              "sno": null
-            }
-          ]
-        },
-        "ring2": {
-          "affixes": [],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Aspect of Malice",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_malice",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "ring2",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Skull",
-              "esES": null,
-              "i18n": "none",
-              "idName": "rune__skull",
-              "sno": null
-            }
-          ]
-        },
-        "weapon": {
-          "affixes": [],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Aspect of Channeling",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_channeling",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "weapon",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Sapphire",
-              "esES": null,
-              "i18n": "none",
-              "idName": "rune__sapphire",
-              "sno": null
-            },
-            {
-              "category": "rune",
-              "enUS": "Sapphire",
-              "esES": null,
-              "i18n": "none",
-              "idName": "rune__sapphire",
-              "sno": null
-            }
-          ]
-        }
-      },
+      "gear": {},
       "id": "d4builds:9479f69b-b519-40ab-8340-047efb206b3e:0",
       "levelBand": "leveling",
       "mercenary": null,
       "paragon": {
-        "boards": [
-          {
-            "glyph": null,
-            "order": 0,
-            "ref": {
-              "category": "paragonBoard",
-              "enUS": "Starting Board",
-              "esES": null,
-              "i18n": "none",
-              "idName": "paragonBoard__starting_board",
-              "sno": null
-            },
-            "rotation": null
-          }
-        ],
+        "boards": [],
         "level": null
       },
       "runewords": [],
@@ -735,14 +445,14 @@
       ],
       "source": {
         "author": "Rob2628",
-        "capturedAt": "2026-08-09T06:23:25.577Z",
+        "capturedAt": "2026-08-09T02:30:41.994Z",
         "externalId": "9479f69b-b519-40ab-8340-047efb206b3e",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "ad9aad20a3d1e7067c81417de685bbc9b04bf659e86134a735d44c9c1bc4a30a",
-        "url": "https://d4builds.gg/builds/9479f69b-b519-40ab-8340-047efb206b3e/?var=0",
+        "snapshotHash": "18c723b7e32a7020dd65d122fb629cf75e99706ac143d85eae1918100d18ebb2",
+        "url": "https://d4builds.gg/builds/dance-of-knives-rogue-leveling/",
         "variantIndex": 0,
-        "variantLabel": "Standard Build"
+        "variantLabel": "Leveling"
       },
       "talisman": null,
       "warPlan": null

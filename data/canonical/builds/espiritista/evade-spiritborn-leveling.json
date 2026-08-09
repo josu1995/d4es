@@ -142,21 +142,6 @@
         "values": {
           "d4builds:5951dece-9c35-4527-a1bf-bdced9bc75b9:0": 1
         }
-      },
-      {
-        "key": "glyph:Rare_Dex_Generic",
-        "label": {
-          "category": "glyph",
-          "enUS": "Headhunter",
-          "esES": "Cazacabezas",
-          "i18n": "d4companion",
-          "idName": "Rare_Dex_Generic",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:5951dece-9c35-4527-a1bf-bdced9bc75b9:0": "presente"
-        }
       }
     ],
     "variantCount": 1
@@ -188,313 +173,24 @@
     "en": "Evade",
     "es": "Perforatrueno"
   },
-  "updatedAt": "2026-08-09T06:09:04.548Z",
+  "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
     {
       "completeness": {
-        "hasGear": true,
+        "hasGear": false,
         "hasMercenary": false,
-        "hasParagon": true,
+        "hasParagon": false,
         "hasSkills": true,
         "hasTalisman": false,
         "hasWarPlan": false,
-        "score": 0.85
+        "score": 0.35
       },
-      "gear": {
-        "amulet": {
-          "affixes": [],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Aspect of Unyielding Hits",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_unyielding_hits",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "amulet",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Skull",
-              "esES": null,
-              "i18n": "none",
-              "idName": "rune__skull",
-              "sno": null
-            }
-          ]
-        },
-        "boots": {
-          "affixes": [],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Duelist's Aspect",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__duelist_s_aspect",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "boots",
-          "sockets": []
-        },
-        "chest": {
-          "affixes": [],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Aspect of Layered Wards",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_layered_wards",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "chest",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Neo",
-              "esES": "Neo",
-              "i18n": "d4companion",
-              "idName": "Item_Rune_Condition_OnAvoidDamage",
-              "sno": 2063987
-            },
-            {
-              "category": "rune",
-              "enUS": "Que",
-              "esES": "Que",
-              "i18n": "d4companion",
-              "idName": "Item_Rune_Effect_Druid_EarthenBulwark",
-              "sno": 2004804
-            }
-          ]
-        },
-        "gloves": {
-          "affixes": [],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Rebounding Aspect",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__rebounding_aspect",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "gloves",
-          "sockets": []
-        },
-        "helm": {
-          "affixes": [],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Aspect of Might",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_might",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "helm",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Cem",
-              "esES": "Cem",
-              "i18n": "d4companion",
-              "idName": "Item_Rune_Condition_OnEvade",
-              "sno": 1968096
-            },
-            {
-              "category": "rune",
-              "enUS": "Gar",
-              "esES": "Gar",
-              "i18n": "d4companion",
-              "idName": "Item_Rune_Effect_CritBuff",
-              "sno": 1969098
-            }
-          ]
-        },
-        "pants": {
-          "affixes": [],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Aspect of Disobedience",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_disobedience",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "pants",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Emerald",
-              "esES": null,
-              "i18n": "none",
-              "idName": "rune__emerald",
-              "sno": null
-            },
-            {
-              "category": "rune",
-              "enUS": "Emerald",
-              "esES": null,
-              "i18n": "none",
-              "idName": "rune__emerald",
-              "sno": null
-            }
-          ]
-        },
-        "ring1": {
-          "affixes": [],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Conceited Aspect",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__conceited_aspect",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "ring1",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Skull",
-              "esES": null,
-              "i18n": "none",
-              "idName": "rune__skull",
-              "sno": null
-            }
-          ]
-        },
-        "ring2": {
-          "affixes": [],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Aspect of the Moonrise",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_the_moonrise",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "ring2",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Skull",
-              "esES": null,
-              "i18n": "none",
-              "idName": "rune__skull",
-              "sno": null
-            }
-          ]
-        }
-      },
+      "gear": {},
       "id": "d4builds:5951dece-9c35-4527-a1bf-bdced9bc75b9:0",
       "levelBand": "leveling",
       "mercenary": null,
       "paragon": {
-        "boards": [
-          {
-            "glyph": {
-              "rank": null,
-              "ref": {
-                "category": "glyph",
-                "enUS": "Headhunter",
-                "esES": "Cazacabezas",
-                "i18n": "d4companion",
-                "idName": "Rare_Dex_Generic",
-                "sno": null
-              }
-            },
-            "order": 0,
-            "ref": {
-              "category": "paragonBoard",
-              "enUS": "Starting Board",
-              "esES": null,
-              "i18n": "none",
-              "idName": "paragonBoard__starting_board",
-              "sno": null
-            },
-            "rotation": null
-          },
-          {
-            "glyph": null,
-            "order": 1,
-            "ref": {
-              "category": "paragonBoard",
-              "enUS": "Prodigy's Tempo",
-              "esES": "Ritmo prodigioso",
-              "i18n": "d4companion",
-              "idName": "Paragon_Spirit_08",
-              "sno": null
-            },
-            "rotation": null
-          },
-          {
-            "glyph": null,
-            "order": 2,
-            "ref": {
-              "category": "paragonBoard",
-              "enUS": "Drive",
-              "esES": "Brío",
-              "i18n": "d4companion",
-              "idName": "Paragon_Spirit_06",
-              "sno": null
-            },
-            "rotation": null
-          }
-        ],
+        "boards": [],
         "level": null
       },
       "runewords": [],
@@ -667,14 +363,14 @@
       ],
       "source": {
         "author": "Rob2628",
-        "capturedAt": "2026-08-09T06:09:04.548Z",
+        "capturedAt": "2026-08-09T02:30:41.994Z",
         "externalId": "5951dece-9c35-4527-a1bf-bdced9bc75b9",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "7c979e1abf981b7b1e1419a974d7c9098963e9450d40c8027340e0d4d135dfbd",
-        "url": "https://d4builds.gg/builds/5951dece-9c35-4527-a1bf-bdced9bc75b9/?var=0",
+        "snapshotHash": "9cf72f545d2baaf0404c9515ee4841bcd76d948e1a9cf57f094a51193173f088",
+        "url": "https://d4builds.gg/builds/evade-spiritborn-leveling/",
         "variantIndex": 0,
-        "variantLabel": "Standard Build"
+        "variantLabel": "Leveling"
       },
       "talisman": null,
       "warPlan": null

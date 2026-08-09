@@ -51,40 +51,7 @@
         "sno": null
       }
     ],
-    "coreUniques": [
-      {
-        "category": "unique",
-        "enUS": "Seed of Horazon",
-        "esES": "Semilla de Horazón",
-        "i18n": "d4companion",
-        "idName": "Amulet_Unique_Warlock_001",
-        "sno": 2559896
-      },
-      {
-        "category": "unique",
-        "enUS": "Soulbrand",
-        "esES": "Marcaalmas",
-        "i18n": "d4companion",
-        "idName": "Chest_Unique_Generic_101",
-        "sno": 1559452
-      },
-      {
-        "category": "unique",
-        "enUS": "Heir of Perdition",
-        "esES": "Heredero de la perdición",
-        "i18n": "d4companion",
-        "idName": "Helm_Unique_Generic_004;S14_Helm_Unique_Generic_004",
-        "sno": 2105794
-      },
-      {
-        "category": "unique",
-        "enUS": "El'druin, Sword of Justice",
-        "esES": null,
-        "i18n": "none",
-        "idName": "unique__el_druin_sword_of_justice",
-        "sno": null
-      }
-    ],
+    "coreUniques": [],
     "fields": [
       {
         "key": "skill:curated_infernal_breath",
@@ -175,66 +142,6 @@
         "values": {
           "d4builds:7e1956ea-90b2-48c5-b144-ebce6f75ef75:0": 15
         }
-      },
-      {
-        "key": "unique:Amulet_Unique_Warlock_001",
-        "label": {
-          "category": "unique",
-          "enUS": "Seed of Horazon",
-          "esES": "Semilla de Horazón",
-          "i18n": "d4companion",
-          "idName": "Amulet_Unique_Warlock_001",
-          "sno": 2559896
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:7e1956ea-90b2-48c5-b144-ebce6f75ef75:0": "si"
-        }
-      },
-      {
-        "key": "unique:Chest_Unique_Generic_101",
-        "label": {
-          "category": "unique",
-          "enUS": "Soulbrand",
-          "esES": "Marcaalmas",
-          "i18n": "d4companion",
-          "idName": "Chest_Unique_Generic_101",
-          "sno": 1559452
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:7e1956ea-90b2-48c5-b144-ebce6f75ef75:0": "si"
-        }
-      },
-      {
-        "key": "unique:Helm_Unique_Generic_004;S14_Helm_Unique_Generic_004",
-        "label": {
-          "category": "unique",
-          "enUS": "Heir of Perdition",
-          "esES": "Heredero de la perdición",
-          "i18n": "d4companion",
-          "idName": "Helm_Unique_Generic_004;S14_Helm_Unique_Generic_004",
-          "sno": 2105794
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:7e1956ea-90b2-48c5-b144-ebce6f75ef75:0": "si"
-        }
-      },
-      {
-        "key": "unique:unique__el_druin_sword_of_justice",
-        "label": {
-          "category": "unique",
-          "enUS": "El'druin, Sword of Justice",
-          "esES": null,
-          "i18n": "none",
-          "idName": "unique__el_druin_sword_of_justice",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:7e1956ea-90b2-48c5-b144-ebce6f75ef75:0": "si"
-        }
       }
     ],
     "variantCount": 1
@@ -266,335 +173,24 @@
     "en": "Metamorphosis",
     "es": "Metamorfosis"
   },
-  "updatedAt": "2026-08-09T06:17:34.756Z",
+  "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
     {
       "completeness": {
-        "hasGear": true,
+        "hasGear": false,
         "hasMercenary": false,
-        "hasParagon": true,
+        "hasParagon": false,
         "hasSkills": true,
         "hasTalisman": false,
         "hasWarPlan": false,
-        "score": 0.85
+        "score": 0.35
       },
-      "gear": {
-        "amulet": {
-          "affixes": [],
-          "aspect": null,
-          "item": {
-            "category": "unique",
-            "enUS": "Seed of Horazon",
-            "esES": "Semilla de Horazón",
-            "i18n": "d4companion",
-            "idName": "Amulet_Unique_Warlock_001",
-            "sno": 2559896
-          },
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "unique",
-          "slot": "amulet",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Diamond",
-              "esES": null,
-              "i18n": "none",
-              "idName": "rune__diamond",
-              "sno": null
-            }
-          ]
-        },
-        "boots": {
-          "affixes": [],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Aspect of Impetus",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_impetus",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "boots",
-          "sockets": []
-        },
-        "chest": {
-          "affixes": [],
-          "aspect": null,
-          "item": {
-            "category": "unique",
-            "enUS": "Soulbrand",
-            "esES": "Marcaalmas",
-            "i18n": "d4companion",
-            "idName": "Chest_Unique_Generic_101",
-            "sno": 1559452
-          },
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "unique",
-          "slot": "chest",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Cir",
-              "esES": "Cir",
-              "i18n": "d4companion",
-              "idName": "Item_Rune_Condition_CastRepeatSkill",
-              "sno": 2060617
-            },
-            {
-              "category": "rune",
-              "enUS": "Que",
-              "esES": "Que",
-              "i18n": "d4companion",
-              "idName": "Item_Rune_Effect_Druid_EarthenBulwark",
-              "sno": 2004804
-            }
-          ]
-        },
-        "gloves": {
-          "affixes": [],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Aspect of Peril",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_peril",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "gloves",
-          "sockets": []
-        },
-        "helm": {
-          "affixes": [],
-          "aspect": null,
-          "item": {
-            "category": "unique",
-            "enUS": "Heir of Perdition",
-            "esES": "Heredero de la perdición",
-            "i18n": "d4companion",
-            "idName": "Helm_Unique_Generic_004;S14_Helm_Unique_Generic_004",
-            "sno": 2105794
-          },
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": true
-          },
-          "quality": "unique",
-          "slot": "helm",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Moni",
-              "esES": "Moni",
-              "i18n": "d4companion",
-              "idName": "Item_Rune_Condition_OnStutterStep",
-              "sno": 2063886
-            },
-            {
-              "category": "rune",
-              "enUS": "Mot",
-              "esES": "Mot",
-              "i18n": "d4companion",
-              "idName": "Item_Rune_Effect_Rogue_DarkShroud",
-              "sno": 2089934
-            }
-          ]
-        },
-        "offhand": {
-          "affixes": [],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Vehement Brawler's Aspect",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__vehement_brawler_s_aspect",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "offhand",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Ruby",
-              "esES": null,
-              "i18n": "none",
-              "idName": "rune__ruby",
-              "sno": null
-            }
-          ]
-        },
-        "pants": {
-          "affixes": [],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Aspect of Might",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_might",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "pants",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Sapphire",
-              "esES": null,
-              "i18n": "none",
-              "idName": "rune__sapphire",
-              "sno": null
-            },
-            {
-              "category": "rune",
-              "enUS": "Sapphire",
-              "esES": null,
-              "i18n": "none",
-              "idName": "rune__sapphire",
-              "sno": null
-            }
-          ]
-        },
-        "ring1": {
-          "affixes": [],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Malicious Aspect",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__malicious_aspect",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "ring1",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Diamond",
-              "esES": null,
-              "i18n": "none",
-              "idName": "rune__diamond",
-              "sno": null
-            }
-          ]
-        },
-        "ring2": {
-          "affixes": [],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Aspect of Inner Calm",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_inner_calm",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "ring2",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Diamond",
-              "esES": null,
-              "i18n": "none",
-              "idName": "rune__diamond",
-              "sno": null
-            }
-          ]
-        },
-        "weapon": {
-          "affixes": [],
-          "aspect": null,
-          "item": {
-            "category": "unique",
-            "enUS": "El'druin, Sword of Justice",
-            "esES": null,
-            "i18n": "none",
-            "idName": "unique__el_druin_sword_of_justice",
-            "sno": null
-          },
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": true
-          },
-          "quality": "unique",
-          "slot": "weapon",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Ruby",
-              "esES": null,
-              "i18n": "none",
-              "idName": "rune__ruby",
-              "sno": null
-            }
-          ]
-        }
-      },
+      "gear": {},
       "id": "d4builds:7e1956ea-90b2-48c5-b144-ebce6f75ef75:0",
       "levelBand": "endgame",
       "mercenary": null,
       "paragon": {
-        "boards": [
-          {
-            "glyph": null,
-            "order": 0,
-            "ref": {
-              "category": "paragonBoard",
-              "enUS": "Starting Board",
-              "esES": null,
-              "i18n": "none",
-              "idName": "paragonBoard__starting_board",
-              "sno": null
-            },
-            "rotation": null
-          }
-        ],
+        "boards": [],
         "level": null
       },
       "runewords": [],
@@ -856,14 +452,14 @@
       ],
       "source": {
         "author": "Rob2628",
-        "capturedAt": "2026-08-09T06:17:34.756Z",
+        "capturedAt": "2026-08-09T02:30:41.994Z",
         "externalId": "7e1956ea-90b2-48c5-b144-ebce6f75ef75",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "8fef4f3afd6e7ec8c9189a841448dc94efa0092b4782a3ccf3b2804c1128a0f9",
-        "url": "https://d4builds.gg/builds/7e1956ea-90b2-48c5-b144-ebce6f75ef75/?var=0",
+        "snapshotHash": "3346e55988a9a74731d939f6944157e70d9d58912bfb053555cbf0c66be61444",
+        "url": "https://d4builds.gg/builds/metamorphosis-warlock-endgame/",
         "variantIndex": 0,
-        "variantLabel": "Standard Build"
+        "variantLabel": "Endgame"
       },
       "talisman": null,
       "warPlan": null

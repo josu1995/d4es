@@ -142,21 +142,6 @@
         "values": {
           "d4builds:62257b37-e7e6-4287-a10c-e7d304eff794:0": 15
         }
-      },
-      {
-        "key": "glyph:Rare_028_Strength_Main",
-        "label": {
-          "category": "glyph",
-          "enUS": "Marshal",
-          "esES": "Mariscal",
-          "i18n": "d4companion",
-          "idName": "Rare_028_Strength_Main",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:62257b37-e7e6-4287-a10c-e7d304eff794:0": "presente"
-        }
       }
     ],
     "variantCount": 1
@@ -188,395 +173,24 @@
     "en": "HotA",
     "es": "Grito de guerra"
   },
-  "updatedAt": "2026-08-09T06:12:15.723Z",
+  "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
     {
       "completeness": {
-        "hasGear": true,
+        "hasGear": false,
         "hasMercenary": false,
-        "hasParagon": true,
+        "hasParagon": false,
         "hasSkills": true,
         "hasTalisman": false,
         "hasWarPlan": false,
-        "score": 0.85
+        "score": 0.35
       },
-      "gear": {
-        "amulet": {
-          "affixes": [],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Aspect of Adaptability",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_adaptability",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "amulet",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Diamond",
-              "esES": null,
-              "i18n": "none",
-              "idName": "rune__diamond",
-              "sno": null
-            }
-          ]
-        },
-        "boots": {
-          "affixes": [],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Hectic Aspect",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__hectic_aspect",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "boots",
-          "sockets": []
-        },
-        "chest": {
-          "affixes": [],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Aspect of Disobedience",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_disobedience",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "chest",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Ruby",
-              "esES": null,
-              "i18n": "none",
-              "idName": "rune__ruby",
-              "sno": null
-            },
-            {
-              "category": "rune",
-              "enUS": "Ruby",
-              "esES": null,
-              "i18n": "none",
-              "idName": "rune__ruby",
-              "sno": null
-            }
-          ]
-        },
-        "gloves": {
-          "affixes": [],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Aspect of the Moonrise",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_the_moonrise",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "gloves",
-          "sockets": []
-        },
-        "helm": {
-          "affixes": [],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Aspect of Might",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_might",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "helm",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Ruby",
-              "esES": null,
-              "i18n": "none",
-              "idName": "rune__ruby",
-              "sno": null
-            },
-            {
-              "category": "rune",
-              "enUS": "Ruby",
-              "esES": null,
-              "i18n": "none",
-              "idName": "rune__ruby",
-              "sno": null
-            }
-          ]
-        },
-        "pants": {
-          "affixes": [],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Aspect of Numbing Wrath",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_numbing_wrath",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "pants",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Cir",
-              "esES": "Cir",
-              "i18n": "d4companion",
-              "idName": "Item_Rune_Condition_CastRepeatSkill",
-              "sno": 2060617
-            },
-            {
-              "category": "rune",
-              "enUS": "Gar",
-              "esES": "Gar",
-              "i18n": "d4companion",
-              "idName": "Item_Rune_Effect_CritBuff",
-              "sno": 1969098
-            }
-          ]
-        },
-        "ring1": {
-          "affixes": [],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Bold Chieftain's Aspect",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__bold_chieftain_s_aspect",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "ring1",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Diamond",
-              "esES": null,
-              "i18n": "none",
-              "idName": "rune__diamond",
-              "sno": null
-            }
-          ]
-        },
-        "ring2": {
-          "affixes": [],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Aspect of Inner Calm",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_inner_calm",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "ring2",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Diamond",
-              "esES": null,
-              "i18n": "none",
-              "idName": "rune__diamond",
-              "sno": null
-            }
-          ]
-        },
-        "weapon": {
-          "affixes": [],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Aspect of Ancestral Force",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_ancestral_force",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "weapon",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Moni",
-              "esES": "Moni",
-              "i18n": "d4companion",
-              "idName": "Item_Rune_Condition_OnStutterStep",
-              "sno": 2063886
-            },
-            {
-              "category": "rune",
-              "enUS": "Thul",
-              "esES": "Thul",
-              "i18n": "d4companion",
-              "idName": "Item_Rune_Effect_Sorcerer_FrostNova",
-              "sno": 1969845
-            }
-          ]
-        },
-        "weapon2": {
-          "affixes": [],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Edgemaster's Aspect",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__edgemaster_s_aspect",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "weapon2",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Amethyst",
-              "esES": null,
-              "i18n": "none",
-              "idName": "rune__amethyst",
-              "sno": null
-            }
-          ]
-        },
-        "weapon3": {
-          "affixes": [],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Aspect of Anger Management",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_anger_management",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "weapon3",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Amethyst",
-              "esES": null,
-              "i18n": "none",
-              "idName": "rune__amethyst",
-              "sno": null
-            }
-          ]
-        }
-      },
+      "gear": {},
       "id": "d4builds:62257b37-e7e6-4287-a10c-e7d304eff794:0",
       "levelBand": "leveling",
       "mercenary": null,
       "paragon": {
-        "boards": [
-          {
-            "glyph": {
-              "rank": null,
-              "ref": {
-                "category": "glyph",
-                "enUS": "Marshal",
-                "esES": "Mariscal",
-                "i18n": "d4companion",
-                "idName": "Rare_028_Strength_Main",
-                "sno": null
-              }
-            },
-            "order": 0,
-            "ref": {
-              "category": "paragonBoard",
-              "enUS": "Starting Board",
-              "esES": null,
-              "i18n": "none",
-              "idName": "paragonBoard__starting_board",
-              "sno": null
-            },
-            "rotation": null
-          },
-          {
-            "glyph": null,
-            "order": 1,
-            "ref": {
-              "category": "paragonBoard",
-              "enUS": "Hemorrhage",
-              "esES": "Hemorragia",
-              "i18n": "d4companion",
-              "idName": "Paragon_Barb_01",
-              "sno": null
-            },
-            "rotation": null
-          }
-        ],
+        "boards": [],
         "level": null
       },
       "runewords": [],
@@ -831,14 +445,14 @@
       ],
       "source": {
         "author": "Rob2628",
-        "capturedAt": "2026-08-09T06:12:15.723Z",
+        "capturedAt": "2026-08-09T02:30:41.994Z",
         "externalId": "62257b37-e7e6-4287-a10c-e7d304eff794",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "51d7e2cc95738e6d4257532dbb91f11455803d67500efca6a1352aaee1e05670",
-        "url": "https://d4builds.gg/builds/62257b37-e7e6-4287-a10c-e7d304eff794/?var=0",
+        "snapshotHash": "6488e1b713bbc32d5ad755f8c9092b335813ab002b99a7b7422c68c38817f786",
+        "url": "https://d4builds.gg/builds/hota-barbarian-leveling/",
         "variantIndex": 0,
-        "variantLabel": "Standard Build"
+        "variantLabel": "Leveling"
       },
       "talisman": null,
       "warPlan": null

@@ -203,21 +203,113 @@
     "en": "Whirlwind",
     "es": "Torbellino"
   },
-  "updatedAt": "2026-08-09T06:00:02.148Z",
+  "updatedAt": "2026-08-09T07:05:01.643Z",
   "variants": [
     {
       "completeness": {
         "hasGear": true,
-        "hasMercenary": false,
+        "hasMercenary": true,
         "hasParagon": true,
         "hasSkills": true,
         "hasTalisman": false,
         "hasWarPlan": false,
-        "score": 0.85
+        "score": 0.9
       },
       "gear": {
         "amulet": {
-          "affixes": [],
+          "affixes": [
+            {
+              "greater": false,
+              "order": 0,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 1",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_1",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 1,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 2",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_2",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 2,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 3",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_3",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 3,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 4",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_4",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 4,
+              "ref": {
+                "category": "affix",
+                "enUS": "Tempering Stat 1",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__tempering_stat_1",
+                "sno": null
+              },
+              "tempered": true
+            },
+            {
+              "greater": false,
+              "order": 5,
+              "ref": {
+                "category": "affix",
+                "enUS": "Transfigure",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__transfigure",
+                "sno": null
+              },
+              "tempered": true
+            },
+            {
+              "greater": false,
+              "order": 6,
+              "ref": {
+                "category": "affix",
+                "enUS": "Transfigure",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__transfigure",
+                "sno": null
+              },
+              "tempered": true
+            }
+          ],
           "aspect": {
             "category": "aspect",
             "enUS": "Aspect of Heavenly Strength",
@@ -246,7 +338,86 @@
           ]
         },
         "boots": {
-          "affixes": [],
+          "affixes": [
+            {
+              "greater": false,
+              "order": 0,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 1",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_1",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 1,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 2",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_2",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 2,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 3",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_3",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 3,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 4",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_4",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 4,
+              "ref": {
+                "category": "affix",
+                "enUS": "Tempering Stat 1",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__tempering_stat_1",
+                "sno": null
+              },
+              "tempered": true
+            },
+            {
+              "greater": false,
+              "order": 5,
+              "ref": {
+                "category": "affix",
+                "enUS": "Transfigure",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__transfigure",
+                "sno": null
+              },
+              "tempered": true
+            }
+          ],
           "aspect": {
             "category": "aspect",
             "enUS": "Aspect of Anger Management",
@@ -266,7 +437,86 @@
           "sockets": []
         },
         "chest": {
-          "affixes": [],
+          "affixes": [
+            {
+              "greater": false,
+              "order": 0,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 1",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_1",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 1,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 2",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_2",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 2,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 3",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_3",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 3,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 4",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_4",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 4,
+              "ref": {
+                "category": "affix",
+                "enUS": "Tempering Stat 1",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__tempering_stat_1",
+                "sno": null
+              },
+              "tempered": true
+            },
+            {
+              "greater": false,
+              "order": 5,
+              "ref": {
+                "category": "affix",
+                "enUS": "Transfigure",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__transfigure",
+                "sno": null
+              },
+              "tempered": true
+            }
+          ],
           "aspect": {
             "category": "aspect",
             "enUS": "Aspect of Disobedience",
@@ -303,7 +553,86 @@
           ]
         },
         "gloves": {
-          "affixes": [],
+          "affixes": [
+            {
+              "greater": false,
+              "order": 0,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 1",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_1",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 1,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 2",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_2",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 2,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 3",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_3",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 3,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 4",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_4",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 4,
+              "ref": {
+                "category": "affix",
+                "enUS": "Tempering Stat 1",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__tempering_stat_1",
+                "sno": null
+              },
+              "tempered": true
+            },
+            {
+              "greater": false,
+              "order": 5,
+              "ref": {
+                "category": "affix",
+                "enUS": "Transfigure",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__transfigure",
+                "sno": null
+              },
+              "tempered": true
+            }
+          ],
           "aspect": {
             "category": "aspect",
             "enUS": "Aspect of Channeling",
@@ -323,7 +652,86 @@
           "sockets": []
         },
         "helm": {
-          "affixes": [],
+          "affixes": [
+            {
+              "greater": false,
+              "order": 0,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 1",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_1",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 1,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 2",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_2",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 2,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 3",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_3",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 3,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 4",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_4",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 4,
+              "ref": {
+                "category": "affix",
+                "enUS": "Tempering Stat 1",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__tempering_stat_1",
+                "sno": null
+              },
+              "tempered": true
+            },
+            {
+              "greater": false,
+              "order": 5,
+              "ref": {
+                "category": "affix",
+                "enUS": "Transfigure",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__transfigure",
+                "sno": null
+              },
+              "tempered": true
+            }
+          ],
           "aspect": {
             "category": "aspect",
             "enUS": "Juggernaut's Aspect",
@@ -360,7 +768,86 @@
           ]
         },
         "pants": {
-          "affixes": [],
+          "affixes": [
+            {
+              "greater": false,
+              "order": 0,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 1",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_1",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 1,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 2",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_2",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 2,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 3",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_3",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 3,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 4",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_4",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 4,
+              "ref": {
+                "category": "affix",
+                "enUS": "Tempering Stat 1",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__tempering_stat_1",
+                "sno": null
+              },
+              "tempered": true
+            },
+            {
+              "greater": false,
+              "order": 5,
+              "ref": {
+                "category": "affix",
+                "enUS": "Transfigure",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__transfigure",
+                "sno": null
+              },
+              "tempered": true
+            }
+          ],
           "aspect": {
             "category": "aspect",
             "enUS": "Irrepressible Aspect",
@@ -397,7 +884,86 @@
           ]
         },
         "ring1": {
-          "affixes": [],
+          "affixes": [
+            {
+              "greater": false,
+              "order": 0,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 1",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_1",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 1,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 2",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_2",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 2,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 3",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_3",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 3,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 4",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_4",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 4,
+              "ref": {
+                "category": "affix",
+                "enUS": "Tempering Stat 1",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__tempering_stat_1",
+                "sno": null
+              },
+              "tempered": true
+            },
+            {
+              "greater": false,
+              "order": 5,
+              "ref": {
+                "category": "affix",
+                "enUS": "Transfigure",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__transfigure",
+                "sno": null
+              },
+              "tempered": true
+            }
+          ],
           "aspect": {
             "category": "aspect",
             "enUS": "Aspect of Berserk Fury",
@@ -426,7 +992,86 @@
           ]
         },
         "ring2": {
-          "affixes": [],
+          "affixes": [
+            {
+              "greater": false,
+              "order": 0,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 1",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_1",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 1,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 2",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_2",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 2,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 3",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_3",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 3,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 4",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_4",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 4,
+              "ref": {
+                "category": "affix",
+                "enUS": "Tempering Stat 1",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__tempering_stat_1",
+                "sno": null
+              },
+              "tempered": true
+            },
+            {
+              "greater": false,
+              "order": 5,
+              "ref": {
+                "category": "affix",
+                "enUS": "Transfigure",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__transfigure",
+                "sno": null
+              },
+              "tempered": true
+            }
+          ],
           "aspect": {
             "category": "aspect",
             "enUS": "Aspect of the Expectant",
@@ -455,7 +1100,99 @@
           ]
         },
         "weapon": {
-          "affixes": [],
+          "affixes": [
+            {
+              "greater": false,
+              "order": 0,
+              "ref": {
+                "category": "affix",
+                "enUS": "Weapon Type",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__weapon_type",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 1,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 1",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_1",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 2,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 2",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_2",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 3,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 3",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_3",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 4,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 4",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_4",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 5,
+              "ref": {
+                "category": "affix",
+                "enUS": "Tempering Stat 1",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__tempering_stat_1",
+                "sno": null
+              },
+              "tempered": true
+            },
+            {
+              "greater": false,
+              "order": 6,
+              "ref": {
+                "category": "affix",
+                "enUS": "Transfigure",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__transfigure",
+                "sno": null
+              },
+              "tempered": true
+            }
+          ],
           "aspect": {
             "category": "aspect",
             "enUS": "Crushing Aspect",
@@ -484,7 +1221,99 @@
           ]
         },
         "weapon2": {
-          "affixes": [],
+          "affixes": [
+            {
+              "greater": false,
+              "order": 0,
+              "ref": {
+                "category": "affix",
+                "enUS": "Weapon Type",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__weapon_type",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 1,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 1",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_1",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 2,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 2",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_2",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 3,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 3",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_3",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 4,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 4",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_4",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 5,
+              "ref": {
+                "category": "affix",
+                "enUS": "Tempering Stat 1",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__tempering_stat_1",
+                "sno": null
+              },
+              "tempered": true
+            },
+            {
+              "greater": false,
+              "order": 6,
+              "ref": {
+                "category": "affix",
+                "enUS": "Transfigure",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__transfigure",
+                "sno": null
+              },
+              "tempered": true
+            }
+          ],
           "aspect": {
             "category": "aspect",
             "enUS": "Edgemaster's Aspect",
@@ -521,7 +1350,99 @@
           ]
         },
         "weapon3": {
-          "affixes": [],
+          "affixes": [
+            {
+              "greater": false,
+              "order": 0,
+              "ref": {
+                "category": "affix",
+                "enUS": "Weapon Type",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__weapon_type",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 1,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 1",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_1",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 2,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 2",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_2",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 3,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 3",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_3",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 4,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 4",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_4",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 5,
+              "ref": {
+                "category": "affix",
+                "enUS": "Tempering Stat 1",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__tempering_stat_1",
+                "sno": null
+              },
+              "tempered": true
+            },
+            {
+              "greater": false,
+              "order": 6,
+              "ref": {
+                "category": "affix",
+                "enUS": "Transfigure",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__transfigure",
+                "sno": null
+              },
+              "tempered": true
+            }
+          ],
           "aspect": {
             "category": "aspect",
             "enUS": "Aspect of Walloping",
@@ -552,7 +1473,25 @@
       },
       "id": "d4builds:2c273831-6609-4414-8486-6da72c903e83:0",
       "levelBand": "leveling",
-      "mercenary": null,
+      "mercenary": {
+        "ref": {
+          "category": "mercenary",
+          "enUS": "Field of Languish",
+          "esES": null,
+          "i18n": "none",
+          "idName": "mercenary__field_of_languish",
+          "sno": null
+        },
+        "reinforcement": {
+          "category": "mercenary",
+          "enUS": "Whirlwind",
+          "esES": null,
+          "i18n": "none",
+          "idName": "mercenary__whirlwind",
+          "sno": null
+        },
+        "skills": []
+      },
       "paragon": {
         "boards": [
           {
@@ -888,11 +1827,11 @@
       ],
       "source": {
         "author": "Rob2628",
-        "capturedAt": "2026-08-09T06:00:02.148Z",
+        "capturedAt": "2026-08-09T07:05:01.643Z",
         "externalId": "2c273831-6609-4414-8486-6da72c903e83",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "0213b71d7ad4e4dae21ba1f9dbf4b93c56dba76e9c444fd529d0e821b3deb92d",
+        "snapshotHash": "fe8aa2572f41d3f1f531509119f75dfdae109dcd00a4292fa68b8afcf369908a",
         "url": "https://d4builds.gg/builds/2c273831-6609-4414-8486-6da72c903e83/?var=0",
         "variantIndex": 0,
         "variantLabel": "Standard Build"

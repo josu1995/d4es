@@ -173,277 +173,24 @@
     "en": "Stinger",
     "es": "Stinger"
   },
-  "updatedAt": "2026-08-09T06:26:05.304Z",
+  "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
     {
       "completeness": {
-        "hasGear": true,
+        "hasGear": false,
         "hasMercenary": false,
-        "hasParagon": true,
+        "hasParagon": false,
         "hasSkills": true,
         "hasTalisman": false,
         "hasWarPlan": false,
-        "score": 0.85
+        "score": 0.35
       },
-      "gear": {
-        "amulet": {
-          "affixes": [],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Aspect of Unyielding Hits",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_unyielding_hits",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "amulet",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Topaz",
-              "esES": null,
-              "i18n": "none",
-              "idName": "rune__topaz",
-              "sno": null
-            }
-          ]
-        },
-        "boots": {
-          "affixes": [],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Aspect of Haste",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_haste",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "boots",
-          "sockets": []
-        },
-        "chest": {
-          "affixes": [],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Aspect of Debilitating Toxins",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_debilitating_toxins",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "chest",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Cem",
-              "esES": "Cem",
-              "i18n": "d4companion",
-              "idName": "Item_Rune_Condition_OnEvade",
-              "sno": 1968096
-            },
-            {
-              "category": "rune",
-              "enUS": "Qua",
-              "esES": "Qua",
-              "i18n": "d4companion",
-              "idName": "Item_Rune_Effect_MobilityBuff",
-              "sno": 2043181
-            }
-          ]
-        },
-        "gloves": {
-          "affixes": [],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Tormentor's Aspect",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__tormentor_s_aspect",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "gloves",
-          "sockets": []
-        },
-        "helm": {
-          "affixes": [],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Aspect of Might",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_might",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "helm",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Cir",
-              "esES": "Cir",
-              "i18n": "d4companion",
-              "idName": "Item_Rune_Condition_CastRepeatSkill",
-              "sno": 2060617
-            },
-            {
-              "category": "rune",
-              "enUS": "Gar",
-              "esES": "Gar",
-              "i18n": "d4companion",
-              "idName": "Item_Rune_Effect_CritBuff",
-              "sno": 1969098
-            }
-          ]
-        },
-        "pants": {
-          "affixes": [],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Aspect of Disobedience",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_disobedience",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "pants",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Emerald",
-              "esES": null,
-              "i18n": "none",
-              "idName": "rune__emerald",
-              "sno": null
-            },
-            {
-              "category": "rune",
-              "enUS": "Emerald",
-              "esES": null,
-              "i18n": "none",
-              "idName": "rune__emerald",
-              "sno": null
-            }
-          ]
-        },
-        "ring1": {
-          "affixes": [],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Conceited Aspect",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__conceited_aspect",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "ring1",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Ruby",
-              "esES": null,
-              "i18n": "none",
-              "idName": "rune__ruby",
-              "sno": null
-            }
-          ]
-        },
-        "ring2": {
-          "affixes": [],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Aspect of the Moonrise",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_the_moonrise",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "ring2",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Diamond",
-              "esES": null,
-              "i18n": "none",
-              "idName": "rune__diamond",
-              "sno": null
-            }
-          ]
-        }
-      },
+      "gear": {},
       "id": "d4builds:a46f8eee-efa6-49e6-bd04-65ed29ba3a25:0",
       "levelBand": "leveling",
       "mercenary": null,
       "paragon": {
-        "boards": [
-          {
-            "glyph": null,
-            "order": 0,
-            "ref": {
-              "category": "paragonBoard",
-              "enUS": "Starting Board",
-              "esES": null,
-              "i18n": "none",
-              "idName": "paragonBoard__starting_board",
-              "sno": null
-            },
-            "rotation": null
-          }
-        ],
+        "boards": [],
         "level": null
       },
       "runewords": [],
@@ -672,14 +419,14 @@
       ],
       "source": {
         "author": "Rob2628",
-        "capturedAt": "2026-08-09T06:26:05.304Z",
+        "capturedAt": "2026-08-09T02:30:41.994Z",
         "externalId": "a46f8eee-efa6-49e6-bd04-65ed29ba3a25",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "d2b2747f6f6ce24afc017058481ef664c01124b7ae74063323a356100d8c056e",
-        "url": "https://d4builds.gg/builds/a46f8eee-efa6-49e6-bd04-65ed29ba3a25/?var=0",
+        "snapshotHash": "6192ea6201ab1f6691f1b366169b0e927e4bcc5d13779e98e066c958104193d4",
+        "url": "https://d4builds.gg/builds/stinger-spiritborn-leveling/",
         "variantIndex": 0,
-        "variantLabel": "Standard Build"
+        "variantLabel": "Leveling"
       },
       "talisman": null,
       "warPlan": null
