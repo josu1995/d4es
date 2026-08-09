@@ -38,4 +38,5 @@ export const PATHS = {
   vendor: join(REPO_ROOT, 'packages', 'i18n-d4', 'vendor'),
   estadoJuego: join(REPO_ROOT, 'data', 'curated', 'estado-juego.json'),
   fixtures: join(REPO_ROOT, 'apps', 'scraper', 'fixtures'),
+  webPublic: join(REPO_ROOT, 'apps', 'web', 'public'),
 } as const;

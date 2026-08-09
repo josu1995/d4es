@@ -1,37 +1,81 @@
-import { skillIconSlug } from '@d4es/schema';
+import { existsSync, readdirSync } from 'node:fs';
+import { join } from 'node:path';
+import {
+  ICONO_CDN,
+  iconoDeActividadPlan,
+  iconoDeClase,
+  iconoDeNodoPlan,
+  iconoDeRanura,
+  iconoDeUnico,
+  iconoHabilidad,
+  type Icono,
+} from '@d4es/schema';
+import { ROOT } from './data';
 
 /**
- * Iconos del juego servidos por el CDN de d4builds (sunderarmor.com). Es el mismo origen
- * que usa su web; son assets del juego (Blizzard), no arte propio de d4builds. Patron
- * verificado el 8-ago-2026 contra las paginas renderizadas:
- *   Skills/VoH2/charge_battering_ram.png · Classes/2/barbarian.png
+ * Iconos del juego. Son assets de Blizzard servidos por el CDN de d4builds
+ * (sunderarmor.com), el mismo origen que usa su web.
  *
- * Fragilidad conocida: si cambian de carpeta (VoH2 -> otra), los iconos caen al
- * placeholder con la inicial; la web sigue funcionando. El plan a medio plazo es
- * auto-hospedarlos descargandolos en la ingesta de CI.
+ * Se prefieren los AUTO-HOSPEDADOS en `public/iconos`, que descarga el workflow
+ * `iconos.yml` en CI (desde la red de trabajo el CDN esta bloqueado). Y se cae al CDN
+ * para los que todavia no esten: asi la migracion no rompe nada mientras se completa, y
+ * cada pasada del workflow deja mas iconos servidos por nosotros.
+ *
+ * La URL de origen y la ruta local se construyen en `@d4es/schema`, que es lo que usa
+ * tambien el descargador: si cada lado llevara su copia, el dia que cambien de carpeta se
+ * arreglaria uno y el otro seguiria pidiendo ficheros que ya nadie usa.
  */
-const CDN = 'https://sunderarmor.com/DIABLO4';
+
+const PUBLICO = join(ROOT, 'apps', 'web', 'public');
+
+/** Se lista una vez: son cientos de ficheros y miles de llamadas. */
+let cacheLocales: Set<string> | null = null;
+
+function locales(): Set<string> {
+  if (cacheLocales) return cacheLocales;
+  const encontrados = new Set<string>();
+  const raiz = join(PUBLICO, 'iconos');
+  if (existsSync(raiz)) {
+    for (const familia of readdirSync(raiz, { withFileTypes: true })) {
+      if (!familia.isDirectory()) continue;
+      for (const f of readdirSync(join(raiz, familia.name))) {
+        encontrados.add(`/iconos/${familia.name}/${f}`);
+      }
+    }
+  }
+  cacheLocales = encontrados;
+  return encontrados;
+}
+
+/** Ruta local si ya esta descargado; si no, la del CDN. */
+function servir(icono: Icono): string {
+  return locales().has(decodeURI(icono.ruta)) ? icono.ruta : icono.url;
+}
 
 export function iconoSkill(nombreEn: string): string {
-  return `${CDN}/Skills/VoH2/${skillIconSlug(nombreEn)}.png`;
+  return servir(iconoHabilidad(nombreEn));
 }
 
 export function iconoClase(classId: string): string {
-  return `${CDN}/Classes/2/${classId}.png`;
+  return servir(iconoDeClase(classId));
 }
 
-/** Patron verificado en el DOM real: Uniques/2/tuskhelm_of_joritz_the_mighty.png */
 export function iconoUnico(nombreEn: string): string {
-  return `${CDN}/Uniques/2/${skillIconSlug(nombreEn)}.png`;
+  return servir(iconoDeUnico(nombreEn));
+}
+
+export function iconoActividadPlan(slug: string): string {
+  return servir(iconoDeActividadPlan(slug));
+}
+
+export function iconoNodoPlan(slug: string): string {
+  return servir(iconoDeNodoPlan(slug));
 }
 
 /**
  * Icono generico de ranura, para las piezas que no son unicas ni miticas (un legendario
- * con su aspecto). Es el mismo que usa la fuente en su lista de estadisticas:
- * Uniques/ring_1.png, Uniques/chest_armor.png...
- *
- * Los aspectos no tienen icono propio en el CDN (la carpeta Codex solo trae iconos de
- * categoria), asi que sin esto esas piezas salian sin imagen.
+ * con su aspecto). Los aspectos no tienen icono propio en el CDN, asi que sin esto esas
+ * piezas salian sin imagen.
  */
 const RANURA_CDN: Record<string, string> = {
   helm: 'helm',
@@ -51,25 +95,15 @@ const RANURA_CDN: Record<string, string> = {
 
 export function iconoRanura(slot: string): string | null {
   const nombre = RANURA_CDN[slot];
-  return nombre ? `${CDN}/Uniques/${nombre}.png` : null;
+  return nombre ? servir(iconoDeRanura(nombre)) : null;
 }
 
-/**
- * Icono de una actividad de plan de guerra. El slug es el que publica la propia fuente en
- * el fichero de su solapa: WarPlans/whispers.png, WarPlans/boss_lairs.png...
- */
-export function iconoActividadPlan(slug: string): string {
-  return `${CDN}/WarPlans/${slug}.png`;
+/** Cuantos iconos se sirven ya desde casa: lo pinta la pagina de estado de los datos. */
+export function iconosAutoHospedados(): number {
+  return locales().size;
 }
 
-/**
- * Icono de un nodo de plan de guerra. El slug ya viene del propio fichero que publica la
- * fuente, asi que aqui NO se pasa por skillIconSlug: eso se comeria el apostrofe de
- * "choron's_haste" y dejaria el icono roto.
- */
-export function iconoNodoPlan(slug: string): string {
-  return `${CDN}/Skills/VoH2/${encodeURIComponent(slug)}.png`;
-}
+export { ICONO_CDN };
 
 /** Color del nombre segun la calidad, como en el juego. */
 export const COLOR_CALIDAD: Record<string, string> = {

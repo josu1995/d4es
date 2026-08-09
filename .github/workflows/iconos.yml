@@ -1,0 +1,54 @@
+name: Iconos auto-hospedados
+
+# Los iconos se cargaban en caliente del CDN de d4builds. Funciona, pero es un hotlink: el
+# dia que cambien de carpeta (ya paso una vez, VoH2 -> ...) la ficha se queda sin un solo
+# icono, y ademas se le carga el trafico a un tercero en cada visita.
+#
+# Desde la red de trabajo el CDN esta bloqueado, asi que la descarga vive aqui, como el
+# extractor de paginas. Se descarga SOLO lo que los datos canonicos referencian.
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Semanal. En regimen normal no descarga nada: solo los iconos de builds nuevas.
+    - cron: '17 4 * * 1'
+
+concurrency:
+  group: iconos
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  iconos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci --no-audit --no-fund
+      - run: npm run build:pkgs
+
+      - name: Descargar los iconos que faltan
+        run: node apps/scraper/dist/cli.js iconos:descargar
+
+      - name: Publicar
+        run: |
+          if [ -n "$(git status --porcelain apps/web/public/iconos data/reports/iconos.json)" ]; then
+            git config user.name "d4es-bot"
+            git config user.email "bot@users.noreply.github.com"
+            git add apps/web/public/iconos data/reports/iconos.json
+            nuevos=$(git diff --cached --name-only --diff-filter=A -- apps/web/public/iconos | wc -l)
+            peso=$(du -sh apps/web/public/iconos | cut -f1)
+            git commit -m "iconos: $nuevos nuevos (total $peso) [run ${{ github.run_id }}]"
+            git pull --rebase --autostash && git push
+            echo "$nuevos iconos nuevos, $peso en total." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "Nada que descargar: ya estaban todos." >> "$GITHUB_STEP_SUMMARY"
+          fi

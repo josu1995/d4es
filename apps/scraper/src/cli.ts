@@ -170,6 +170,56 @@ async function cmdSkillsWowhead(): Promise<number> {
   return EXIT.ok;
 }
 
+/**
+ * Rellena las traducciones de las MEJORAS DE RAMA del arbol, que son el mayor agujero de
+ * traduccion del proyecto. Como esas mejoras no llevan identificador propio en la pagina,
+ * se emparejan por posicion dentro de la misma ficha y se exige que todas las habilidades
+ * donde aparece un termino lo traduzcan igual.
+ */
+async function cmdUpgradesWowhead(): Promise<number> {
+  const { cosecharUpgradesEs } = await import('./sources/wowhead/upgrades-es.js');
+  const hoy = new Date().toISOString().slice(0, 10);
+  const arg = process.argv.slice(3).find((a) => a.startsWith('--fichas='));
+  const maxFichas = arg ? Number(arg.split('=')[1]) : 400;
+
+  process.stdout.write(`Cosechando mejoras de rama en castellano (hasta ${maxFichas} fichas)...\n`);
+  const res = await cosecharUpgradesEs(hoy, maxFichas);
+  process.stdout.write(`\n${res.fichas} fichas pedidas | ${res.total} traducciones (${res.nuevas} nuevas)\n`);
+  if (res.descuadradas.length > 0) {
+    process.stdout.write(`${res.descuadradas.length} habilidades descartadas por descuadre de listas:\n`);
+    for (const d of res.descuadradas.slice(0, 10)) process.stdout.write(`  ${d}\n`);
+  }
+  if (res.contradictorios.length > 0) {
+    process.stdout.write(`${res.contradictorios.length} terminos con traducciones contradictorias (no se publican):\n`);
+    for (const c of res.contradictorios.slice(0, 10)) process.stdout.write(`  ${c}\n`);
+  }
+  process.stdout.write('Ejecuta ahora: i18n:build && normalize\n');
+  return EXIT.ok;
+}
+
+/**
+ * Descarga los iconos que la web referencia y los deja auto-hospedados. Solo funciona
+ * donde el CDN sea alcanzable: en la practica, GitHub Actions.
+ */
+async function cmdIconos(): Promise<number> {
+  const { runIconos } = await import('./pipeline/iconos-cmd.js');
+  process.stdout.write('Descargando iconos...\n');
+  const res = await runIconos();
+  process.stdout.write(
+    `  ${res.referenciados} referenciados | ya estaban: ${res.yaEstaban} | nuevos: ${res.descargados} ` +
+      `(${(res.bytes / 1024 / 1024).toFixed(1)} MB)\n`,
+  );
+  if (res.fallidos.length > 0) {
+    process.stdout.write(`  ${res.fallidos.length} sin descargar (ver data/reports/iconos.json):\n`);
+    for (const f of res.fallidos.slice(0, 8)) process.stdout.write(`    ${f.ruta}: ${f.motivo}\n`);
+  }
+  if (res.parado) {
+    process.stderr.write('  PARADO: se alcanzo el tope de tamano de una pasada. Revisa antes de seguir.\n');
+    return EXIT.guardrail;
+  }
+  return EXIT.ok;
+}
+
 async function cmdScrapeCatalog(): Promise<number> {
   process.stdout.write('Descargando el catalogo de d4builds...\n');
   const informe = await scrapeD4BuildsCatalog({ now: new Date() });
@@ -233,6 +283,8 @@ const COMANDOS: Record<string, () => Promise<number>> = {
   'i18n:build': cmdI18nBuild,
   'i18n:skills:scaffold': cmdSkillsScaffold,
   'i18n:skills:wowhead': cmdSkillsWowhead,
+  'i18n:upgrades:wowhead': cmdUpgradesWowhead,
+  'iconos:descargar': cmdIconos,
   'scrape:catalog': cmdScrapeCatalog,
   'probe:page': cmdProbePage,
   'scrape:pages': cmdScrapePages,
