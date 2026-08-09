@@ -9,6 +9,14 @@ name: Iconos auto-hospedados
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    # Tocar el descargador es la forma de pedir una pasada: no hace falta esperar al
+    # lunes ni dispararlo a mano. Es barato, porque solo baja lo que falta.
+    paths:
+      - '.github/workflows/iconos.yml'
+      - 'apps/scraper/src/pipeline/iconos-cmd.ts'
+      - 'packages/schema/src/iconos.ts'
   schedule:
     # Semanal. En regimen normal no descarga nada: solo los iconos de builds nuevas.
     - cron: '17 4 * * 1'
