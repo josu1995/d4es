@@ -148,13 +148,29 @@ function fila(build: CanonicalBuild): BuildIndexRow {
   };
 }
 
-/** Si la mayoria del catalogo ya declara una temporada mayor, es que ha cambiado la season. */
-function detectarTemporada(builds: readonly CanonicalBuild[], actual: number): number | null {
+/**
+ * Cuando una parte suficiente del catalogo declara una temporada MAYOR que la
+ * configurada, es que ha cambiado la season: la ingesta se para sola y abre incidencia
+ * con el checklist, en vez de publicar builds de dos temporadas mezcladas.
+ *
+ * El umbral no es capricho. Unas pocas builds adelantadas al PTR no son un cambio de
+ * temporada, y pararse por ellas dejaria el sitio congelado sin motivo; pero esperar a la
+ * mayoria llegaria tarde y ya habriamos publicado la mezcla. Un quinto del catalogo es el
+ * punto donde ya no es ruido.
+ *
+ * Se exporta para poder probarlo: es la unica pieza que impide publicar datos de dos
+ * temporadas, se dispara una vez cada tres meses y, si se rompe, se rompe en silencio.
+ */
+export const UMBRAL_CAMBIO_TEMPORADA = 0.2;
+
+export function detectarTemporada(builds: readonly CanonicalBuild[], actual: number): number | null {
   if (builds.length === 0) return null;
   const conteo = new Map<number, number>();
   for (const b of builds) conteo.set(b.gameVersion.season, (conteo.get(b.gameVersion.season) ?? 0) + 1);
-  for (const [temporada, veces] of conteo) {
-    if (temporada > actual && veces / builds.length > 0.2) return temporada;
+  // De mayor a menor: si el origen ya publica dos temporadas por delante, manda la mayor.
+  const candidatas = [...conteo.entries()].sort((a, b) => b[0] - a[0]);
+  for (const [temporada, veces] of candidatas) {
+    if (temporada > actual && veces / builds.length > UMBRAL_CAMBIO_TEMPORADA) return temporada;
   }
   return null;
 }

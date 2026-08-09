@@ -106,9 +106,16 @@ jobs:
                 + `\`data/curated/estado-juego.json\`. No se ha publicado nada, para no mezclar `
                 + `datos de dos temporadas.\n\n`
                 + `**Checklist de corte de temporada**\n`
-                + `- [ ] Actualizar \`data/curated/estado-juego.json\`\n`
+                + `- [ ] Actualizar \`data/curated/estado-juego.json\` (temporada, parche, fin previsto)\n`
                 + `- [ ] Revisar \`/guias/obsoleto\` con las notas del parche nuevo\n`
                 + `- [ ] Archivar el contenido de la temporada anterior\n`
+                + `- [ ] Repasar \`/estado/verificar\`: un dato verificado contra el parche viejo `
+                + `vuelve a ser dudoso, y el listado lo saca de los propios ficheros\n`
+                + `- [ ] Re-extraer las paginas con \`scrape-pages.yml\` y \`forzar: true\`: `
+                + `equipo, Paragon y planes de guerra cambian de temporada a temporada\n`
+                + `- [ ] Borrar \`data/canonical/warplans-dataset.json\` si el arbol de planes `
+                + `de guerra cambia de forma; se regenera solo al normalizar\n`
+                + `- [ ] Lanzar \`iconos.yml\` para traerse los iconos del contenido nuevo\n`
                 + `- [ ] Volver a lanzar la ingesta`
               : `Un guardrail ha parado la ingesta (ejecucion ${context.runId}). Los datos `
                 + `publicados no se han tocado.\n\nMira el log: normalmente significa que la `

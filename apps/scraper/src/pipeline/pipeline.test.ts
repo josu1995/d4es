@@ -2,6 +2,8 @@ import { describe, expect, it } from 'vitest';
 import { diffShape, fingerprint, shapePaths } from './fingerprint.js';
 import { evaluarGuardrails, type GuardrailContext } from './guardrails.js';
 import { hashOf, stableStringify } from '../util/stable-json.js';
+import { detectarTemporada, UMBRAL_CAMBIO_TEMPORADA } from './normalize-cmd.js';
+import type { CanonicalBuild } from '@d4es/schema';
 
 describe('fingerprint de forma', () => {
   it('ignora los cambios de valor', () => {
@@ -96,5 +98,57 @@ describe('guardrails', () => {
 
   it('etiqueta el drift para que no se mergee solo', () => {
     expect(evaluarGuardrails({ ...sano, driftDetectado: true }).etiquetas).toContain('drift');
+  });
+});
+
+/**
+ * El corte de temporada. Es la unica pieza que impide publicar builds de dos temporadas
+ * mezcladas, se dispara una vez cada tres meses y hasta ahora no tenia ni una prueba: si
+ * dejara de funcionar, nadie se enteraria hasta ver el destrozo publicado.
+ */
+describe('detectarTemporada', () => {
+  const build = (season: number, i: number) =>
+    ({ id: `b${i}`, gameVersion: { season, patch: '3.1.2' } }) as unknown as CanonicalBuild;
+
+  const catalogo = (reparto: Record<number, number>) => {
+    const salida: CanonicalBuild[] = [];
+    let i = 0;
+    for (const [season, n] of Object.entries(reparto)) {
+      for (let k = 0; k < n; k++) salida.push(build(Number(season), i++));
+    }
+    return salida;
+  };
+
+  it('no ve cambio mientras el catalogo sigue en la temporada configurada', () => {
+    expect(detectarTemporada(catalogo({ 14: 92 }), 14)).toBeNull();
+  });
+
+  it('aguanta unas pocas builds adelantadas sin parar la ingesta', () => {
+    // 9 de 101 son del PTR: ruido, no un cambio de temporada.
+    expect(detectarTemporada(catalogo({ 14: 92, 15: 9 }), 14)).toBeNull();
+  });
+
+  it('para en cuanto una parte seria del catalogo ya es de la temporada siguiente', () => {
+    expect(detectarTemporada(catalogo({ 14: 60, 15: 32 }), 14)).toBe(15);
+  });
+
+  it('si el origen va dos temporadas por delante, manda la mayor', () => {
+    expect(detectarTemporada(catalogo({ 14: 40, 15: 26, 16: 26 }), 14)).toBe(16);
+  });
+
+  it('nunca retrocede: una temporada anterior no es un cambio', () => {
+    expect(detectarTemporada(catalogo({ 13: 50, 14: 42 }), 14)).toBeNull();
+  });
+
+  it('sin catalogo no inventa un cambio', () => {
+    expect(detectarTemporada([], 14)).toBeNull();
+  });
+
+  it('el umbral es el declarado, no un numero suelto por ahi', () => {
+    const justoPorDebajo = catalogo({ 14: 80, 15: 20 });
+    const justoPorEncima = catalogo({ 14: 79, 15: 21 });
+    expect(UMBRAL_CAMBIO_TEMPORADA).toBe(0.2);
+    expect(detectarTemporada(justoPorDebajo, 14)).toBeNull();
+    expect(detectarTemporada(justoPorEncima, 14)).toBe(15);
   });
 });

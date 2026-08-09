@@ -1,0 +1,109 @@
+---
+import Base from '../../layouts/Base.astro';
+import { pendientesDeVerificar, pendientesPorFichero } from '../../lib/verificaciones';
+import { loadEstado } from '../../lib/data';
+
+/**
+ * Lista de comprobación de lo que falta por verificar DENTRO del juego.
+ *
+ * La regla del proyecto es que un dato dudoso se marca y no se esconde, y cada ficha ya
+ * pinta su aviso. Pero repartidos por el sitio no se pueden ir tachando: para saber qué
+ * queda había que abrir los JSON a mano. Esta página lo reúne, sale de los propios datos
+ * y por tanto nunca se queda vieja: en cuanto un campo pasa a `verificado`, desaparece.
+ */
+const estado = loadEstado();
+const todos = pendientesDeVerificar();
+const grupos = pendientesPorFichero();
+
+const ETIQUETA: Record<string, string> = {
+  'por-verificar': 'Por verificar',
+  inferido: 'Deducido',
+  comunidad: 'De la comunidad',
+};
+const COLOR: Record<string, string> = {
+  'por-verificar': 'border-brasa/50 text-brasa-viva',
+  inferido: 'border-oro-apagado/50 text-oro-apagado',
+  comunidad: 'border-grabado-vivo text-ceniza',
+};
+
+const FICHERO_ES: Record<string, string> = {
+  'jefes.json': 'Jefes y su botín',
+  'llaves.json': 'Llaves e invocaciones',
+  'materiales.json': 'Materiales',
+  'recetas-miticos.json': 'Recetas de míticos',
+  'estado-juego.json': 'Estado de la temporada',
+  'jerga.json': 'Glosario de jerga',
+};
+---
+
+<Base
+  titulo="Qué falta por verificar en el juego — D4es"
+  descripcion="Lista de comprobación de los datos que todavía no se han contrastado dentro del cliente de Diablo 4, con su procedencia y dónde vive cada uno."
+>
+  <div class="mx-auto max-w-3xl px-4 py-10">
+    <nav aria-label="Migas de pan" class="text-xs text-humo">
+      <a href="/estado" class="hover:text-pergamino">Estado de los datos</a>
+      <span> / </span>
+      <span>Por verificar</span>
+    </nav>
+
+    <h1 class="mt-4 font-titulo text-3xl">Qué falta por verificar en el juego</h1>
+    <p class="mt-2 text-ceniza">
+      {todos.length} datos del contenido propio salen de guías y de la comunidad, no del cliente en
+      español. Están marcados como tales en su ficha; aquí se reúnen para poder recorrerlos con el
+      juego abierto. Cada línea dice de dónde salió el dato y en qué fichero y ruta vive, para
+      corregirlo sin buscarlo.
+    </p>
+    <p class="mt-2 text-sm text-humo">
+      Parche de referencia: {estado.parche} · temporada {estado.temporadaActual}. Un dato verificado
+      contra un parche anterior vuelve a ser dudoso: por eso cada uno guarda el suyo.
+    </p>
+
+    {
+      todos.length === 0 && (
+        <p class="mt-8 grabado rounded-lg bg-piedra p-5 text-ceniza">
+          No queda nada por verificar. Si acabas de cambiar de temporada, esto debería llenarse solo
+          en cuanto se revisen los parches de los datos curados.
+        </p>
+      )
+    }
+
+    {
+      grupos.map((g) => (
+        <section class="mt-8 grabado rounded-lg bg-piedra p-5">
+          <h2 class="font-titulo text-xl">
+            {FICHERO_ES[g.fichero] ?? g.fichero}
+            <span class="ml-2 text-sm font-normal text-humo">{g.items.length}</span>
+          </h2>
+          <p class="mt-1 text-xs text-humo">data/curated/{g.fichero}</p>
+
+          <ul class="mt-4 space-y-3">
+            {g.items.map((p) => (
+              <li class="grabado rounded bg-abismo p-3">
+                <div class="flex flex-wrap items-baseline gap-2">
+                  <span class="text-pergamino">{p.titulo}</span>
+                  <span class={`rounded border px-1.5 py-0.5 text-xs ${COLOR[p.estado] ?? ''}`}>
+                    {ETIQUETA[p.estado] ?? p.estado}
+                  </span>
+                  {p.parche && <span class="text-xs text-humo">parche {p.parche}</span>}
+                </div>
+                <p class="mt-1 text-sm text-ceniza">{p.fuente}</p>
+                <p class="mt-1 font-mono text-xs text-humo break-all">{p.ruta}</p>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+
+    <section class="mt-8 grabado rounded-lg bg-piedra p-5">
+      <h2 class="font-titulo text-xl">Sobre el botín de los jefes</h2>
+      <p class="mt-2 text-sm text-ceniza">
+        De cada jefe solo se publican sus únicos «firma», los que lo identifican. La tabla completa
+        de botín no está: no hay ninguna fuente que la publique de forma fiable y contrastable, y
+        rellenarla a ojo sería justo lo que este proyecto no hace. Mientras no aparezca una fuente
+        que se pueda citar, se queda incompleta y dicho.
+      </p>
+    </section>
+  </div>
+</Base>
