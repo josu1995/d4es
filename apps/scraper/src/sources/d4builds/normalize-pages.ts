@@ -1,5 +1,7 @@
 import {
+  MAX_WARPLAN_POINTS,
   SLOT_IDS,
+  WARPLAN_ACTIVITIES,
   computeCompletenessScore,
   computeConsensus,
   pickPrimaryVariant,
@@ -10,6 +12,7 @@ import {
 } from '@d4es/schema';
 import { Resolver, normalizeName } from '@d4es/i18n';
 import type { GearItemRaw, PaginaRaw, StatsSlotRaw, VarianteRaw } from './scrape-pages.js';
+import type { PlanGuerraRaw } from './warplans.js';
 import { hashOf } from '../../util/stable-json.js';
 
 /**
@@ -87,6 +90,89 @@ export function limpiarNombreTablero(texto: string): string {
     .trim();
 }
 
+/**
+ * Fondos que la fuente pinta detras del icono del nodo. No son el nodo: hay que
+ * descartarlos para quedarse con el fichero que SI lleva su nombre.
+ */
+const FONDOS_DE_NODO = new Set([
+  'passive_active',
+  'passive_inactive',
+  'skill_minor_active',
+  'skill_minor_inactive',
+  'category_active',
+  'category_inactive',
+]);
+
+/** El nombre del nodo viaja en el fichero de su icono: .../Skills/VoH2/corrupted_roots.png */
+export function slugDeNodo(iconos: readonly string[]): string | null {
+  const propios = iconos.filter((i) => !FONDOS_DE_NODO.has(i) && !i.startsWith('category_'));
+  return propios[propios.length - 1] ?? null;
+}
+
+/**
+ * De `corrupted_roots` a "Corrupted Roots". Solo es el ultimo recurso: el nombre bueno
+ * sale del catalogo, que publica los 100 nodos con su nombre y su descripcion. Esto no
+ * inventa traduccion ninguna (sigue siendo ingles), solo presenta el identificador de la
+ * fuente de forma legible mientras el dataset no este disponible.
+ */
+export function nombreDesdeSlug(slug: string): string {
+  return slug
+    .replace(/_/g, ' ')
+    .split(' ')
+    .map((p) => (p.length > 0 ? p[0]!.toUpperCase() + p.slice(1) : p))
+    .join(' ')
+    .trim();
+}
+
+/**
+ * Los planes de guerra de la fuente: siete actividades, cada una con SU bolsa de 7
+ * puntos. Un nodo cuenta como invertido cuando la fuente le pone la clase `allocated`
+ * (y entonces, y solo entonces, pinta su contador "1/1"); `available` y `locked` son
+ * nodos que la build no ha cogido. Los `category` no son nodos: son el icono de la
+ * actividad.
+ *
+ * Se guardan solo los invertidos, que es lo que la build recomienda de verdad. La forma
+ * completa del arbol es identica en todas las builds y repetirla 92 veces solo engordaria
+ * el repositorio.
+ */
+function normalizarPlanes(
+  planes: readonly PlanGuerraRaw[],
+  resolver: Resolver,
+  nombreDeNodo: (slug: string) => string | null,
+): BuildVariant['warPlan'] {
+  const actividades = planes
+    .map((plan) => {
+      const invertidos = plan.nodos.filter((n) => n.clases.includes('allocated') && !n.clases.includes('category'));
+      const nodes = invertidos
+        .map((n) => {
+          const slug = slugDeNodo(n.iconos);
+          if (!slug) return null;
+          return {
+            ref: resolver.resolve('warPlanNode', nombreDeNodo(slug) ?? nombreDesdeSlug(slug)),
+            // Los rombos son los nodos menores del arbol; los circulos, los mayores.
+            minor: n.clases.includes('diamond'),
+          };
+        })
+        .filter((n): n is NonNullable<typeof n> => n !== null)
+        .slice(0, MAX_WARPLAN_POINTS);
+
+      const actividad = plan.actividad.trim() || nombreDesdeSlug(plan.slug);
+      return {
+        ref: resolver.resolve('warPlanNode', actividad),
+        slug: plan.slug || normalizeName(actividad).replace(/\s+/g, '_'),
+        spent: nodes.length,
+        remaining:
+          plan.restantes === null ? null : Math.min(Math.max(plan.restantes, 0), MAX_WARPLAN_POINTS),
+        nodes,
+      };
+    })
+    // Una actividad sin puntos es una actividad para la que esta build no propone plan.
+    .filter((a) => a.nodes.length > 0 && a.slug.length > 0);
+
+  if (actividades.length === 0) return null;
+  return { activities: actividades.slice(0, WARPLAN_ACTIVITIES), inferred: false };
+}
+
 /** Un afijo templado o con estrellas no es "otro afijo": es el mismo con mas informacion. */
 function construirGear(
   crudo: GearItemRaw,
@@ -142,6 +228,7 @@ function construirVariante(
   resolver: Resolver,
   etiqueta: string | null,
   mercenarioPorHabilidad: ReadonlyMap<string, string>,
+  nombreDeNodo: (slug: string) => string | null,
 ): BuildVariant {
   const slots = asignarSlots(crudo.gear);
   const gear: Record<string, GearItem> = {};
@@ -187,13 +274,15 @@ function construirVariante(
       }
     : null;
 
+  const warPlan = normalizarPlanes(crudo.warPlans, resolver, nombreDeNodo);
+
   const flags = {
     hasSkills: base.skills.length > 0,
     hasGear: Object.keys(gear).length > 0,
     hasParagon: boards.length > 0,
     hasTalisman: false,
     hasMercenary: mercenary !== null,
-    hasWarPlan: crudo.warPlans.length > 0,
+    hasWarPlan: warPlan !== null,
   };
 
   return {
@@ -210,14 +299,7 @@ function construirVariante(
     gear,
     paragon: { level: null, boards },
     mercenary,
-    warPlan:
-      crudo.warPlans.length > 0
-        ? {
-            route: crudo.warPlans.slice(0, 5).map((w) => resolver.resolve('warPlanNode', w.nombre)),
-            trees: [],
-            inferred: false,
-          }
-        : null,
+    warPlan,
     completeness: { ...flags, score: computeCompletenessScore(flags) },
   };
 }
@@ -233,12 +315,26 @@ export function enriquecerConPagina(
   resolver: Resolver,
   /** habilidad de mercenario (normalizada) -> mercenario al que pertenece. */
   mercenarioPorHabilidad: ReadonlyMap<string, string> = new Map(),
+  /**
+   * slug del icono de un nodo de plan de guerra -> su nombre publicado. Sale del dataset
+   * del catalogo, que trae los 100 nodos con nombre y descripcion. Sin el, se cae al
+   * nombre deducido del propio slug.
+   */
+  nombreDeNodo: (slug: string) => string | null = () => null,
 ): EnriquecerResultado {
   const base = build.variants.find((v) => v.source.site === 'd4builds') ?? build.variants[0]!;
 
   const variantes = pagina.porVariante.map((crudo) => {
     const etiqueta = pagina.variantes.find((v) => v.index === crudo.index)?.etiqueta ?? null;
-    return construirVariante(base, crudo, pagina.capturadoEn, resolver, etiqueta, mercenarioPorHabilidad);
+    return construirVariante(
+      base,
+      crudo,
+      pagina.capturadoEn,
+      resolver,
+      etiqueta,
+      mercenarioPorHabilidad,
+      nombreDeNodo,
+    );
   });
 
   // Las variantes distintas de la primera no traen habilidades propias todavia: la fuente

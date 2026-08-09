@@ -21,6 +21,14 @@ export const MAX_CHARMS = 6;
 export const MAX_PARAGON_BOARDS = 9;
 export const MAX_SKILL_BAR = 12;
 
+/**
+ * Puntos por plan de guerra. Son SIETE POR ACTIVIDAD, no siete en total: cada una de las
+ * siete actividades tiene su propia bolsa. Verificado en la fuente, donde los invertidos
+ * y los que quedan suman exactamente 7 en las siete solapas de la misma build.
+ */
+export const MAX_WARPLAN_POINTS = 7;
+export const WARPLAN_ACTIVITIES = 7;
+
 export const TORMENT_TIERS = 12;
 export const DIFFICULTY_COUNT = 16;
 

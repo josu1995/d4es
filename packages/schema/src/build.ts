@@ -1,7 +1,15 @@
 import { z } from 'zod';
 import { GameRef } from './gameref.js';
 import { ClassId, ContentTag, SkillCategory, SlotId, SourceSite } from './primitives.js';
-import { MAX_CHARMS, MAX_GLYPH_RANK, MAX_PARAGON_BOARDS, MAX_SKILL_BAR, MAX_SKILL_RANK } from './constants.js';
+import {
+  MAX_CHARMS,
+  MAX_GLYPH_RANK,
+  MAX_PARAGON_BOARDS,
+  MAX_SKILL_BAR,
+  MAX_SKILL_RANK,
+  MAX_WARPLAN_POINTS,
+  WARPLAN_ACTIVITIES,
+} from './constants.js';
 
 /** De donde vino exactamente esta variante y con que se puede auditar. */
 export const SourceRef = z.object({
@@ -108,10 +116,31 @@ export const BuildVariant = z.object({
       reinforcement: GameRef.nullable(),
     })
     .nullable(),
+  /**
+   * Planes de guerra. La fuente publica SIETE arboles independientes, uno por actividad
+   * (Susurros, Mazmorras de pesadilla, Mareas infernales, Subciudad, Guaridas de jefe,
+   * Hordas infernales y la Fosa), y cada uno tiene su propia bolsa de 7 puntos: por eso
+   * `spent + remaining === MAX_WARPLAN_POINTS` en todas las actividades.
+   *
+   * Solo se guardan los nodos invertidos, que es lo que la build recomienda. La forma
+   * completa del arbol es la MISMA en todas las builds, asi que pintarla entera pide un
+   * catalogo compartido aparte, no repetirla 92 veces.
+   */
   warPlan: z
     .object({
-      route: z.array(GameRef).max(5),
-      trees: z.array(z.object({ ref: GameRef, nodes: z.array(GameRef) })).max(7),
+      activities: z
+        .array(
+          z.object({
+            ref: GameRef,
+            /** Slug estable que publica la fuente: whispers, boss_lairs, pits... */
+            slug: z.string().min(1),
+            spent: z.number().int().min(0).max(MAX_WARPLAN_POINTS),
+            remaining: z.number().int().min(0).max(MAX_WARPLAN_POINTS).nullable(),
+            /** Nodos con puntos invertidos, en el orden en que los pinta la fuente. */
+            nodes: z.array(z.object({ ref: GameRef, minor: z.boolean() })).max(MAX_WARPLAN_POINTS),
+          }),
+        )
+        .max(WARPLAN_ACTIVITIES),
       /** true = propuesta nuestra, no de la fuente. Se marca en la UI. */
       inferred: z.boolean(),
     })

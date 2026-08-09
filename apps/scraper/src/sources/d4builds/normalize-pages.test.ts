@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { Resolver, type Dictionary } from '@d4es/i18n';
 import { CanonicalBuild, untranslatedRef, type BuildVariant } from '@d4es/schema';
-import { enriquecerConPagina, limpiarNombreTablero } from './normalize-pages.js';
+import { enriquecerConPagina, limpiarNombreTablero, nombreDesdeSlug, slugDeNodo } from './normalize-pages.js';
 import type { PaginaRaw } from './scrape-pages.js';
 
 function diccionario(entradas: { category: string; en: string; es: string }[]): Dictionary {
@@ -234,5 +234,93 @@ describe('enriquecerConPagina', () => {
     p.porVariante[0]!.gear.push({ slot: 'Ranura Inventada', nombre: 'Algo', calidad: null, icono: null, engarces: [] });
     const { build } = enriquecerConPagina(buildBase, p, new Resolver(dict), duenos);
     expect(Object.keys(build.variants[0]!.gear)).toHaveLength(3);
+  });
+});
+
+/**
+ * Nodos reales de la solapa de Susurros, copiados de la sonda del DOM
+ * (data/reports/probe): un nodo de categoria, tres circulos invertidos, rombos sin
+ * contador y circulos sin coger. Es la mezcla exacta que publica la fuente.
+ */
+const PLAN_SUSURROS = {
+  actividad: 'Whispers',
+  slug: 'whispers',
+  icono: 'https://sunderarmor.com/DIABLO4/WarPlans/whispers.png',
+  restantes: 4,
+  nodos: [
+    { clases: ['category', 'unlocked'], iconos: ['category_active', 'category_whispers'], texto: null, x: 580, y: 154 },
+    { clases: ['large-circle', 'allocated'], iconos: ['passive_active', 'corrupted_roots'], texto: '1/1', x: 380, y: 213 },
+    { clases: ['large-circle', 'allocated'], iconos: ['passive_active', 'roots_of_power'], texto: '1/1', x: 279, y: 317 },
+    { clases: ['diamond', 'allocated'], iconos: ['skill_minor_active', 'tree_of_plenty'], texto: '1/1', x: 498, y: 316 },
+    { clases: ['diamond', 'locked'], iconos: ['skill_minor_inactive', 'fortune_or_famine'], texto: null, x: 429, y: 489 },
+    { clases: ['large-circle', 'available'], iconos: ['passive_inactive', 'grim_mysteries'], texto: '0/1', x: 505, y: 647 },
+  ],
+};
+
+describe('planes de guerra', () => {
+  const nombres = new Map([
+    ['corrupted roots', 'Corrupted Roots'],
+    ['roots of power', 'Roots of Power'],
+    ['tree of plenty', 'Tree of Plenty'],
+  ]);
+  const nombreDeNodo = (slug: string) => nombres.get(slug.replace(/_/g, ' ')) ?? null;
+
+  function conPlanes(planes: unknown[]) {
+    const p = pagina();
+    p.porVariante[0]!.warPlans = planes as PaginaRaw['porVariante'][number]['warPlans'];
+    return enriquecerConPagina(buildBase, p, new Resolver(dict), duenos, nombreDeNodo);
+  }
+
+  it('coge solo los nodos invertidos: ni categoria, ni disponibles, ni bloqueados', () => {
+    const { build } = conPlanes([PLAN_SUSURROS]);
+    const plan = build.variants[0]!.warPlan!;
+    expect(plan.activities).toHaveLength(1);
+    expect(plan.activities[0]!.nodes.map((n) => n.ref.enUS)).toEqual([
+      'Corrupted Roots',
+      'Roots of Power',
+      'Tree of Plenty',
+    ]);
+    expect(plan.activities[0]!.spent).toBe(3);
+    expect(plan.activities[0]!.remaining).toBe(4);
+  });
+
+  it('distingue el rombo (nodo menor) del circulo (nodo mayor)', () => {
+    const { build } = conPlanes([PLAN_SUSURROS]);
+    expect(build.variants[0]!.warPlan!.activities[0]!.nodes.map((n) => n.minor)).toEqual([false, false, true]);
+  });
+
+  it('descarta el fondo del icono y se queda con el fichero que lleva el nombre', () => {
+    expect(slugDeNodo(['passive_active', 'corrupted_roots'])).toBe('corrupted_roots');
+    expect(slugDeNodo(['skill_minor_inactive', 'fortune_or_famine'])).toBe('fortune_or_famine');
+    expect(slugDeNodo(['category_active', 'category_whispers'])).toBeNull();
+  });
+
+  it('sin dataset cae al nombre deducido del slug, siempre en ingles', () => {
+    const p = pagina();
+    p.porVariante[0]!.warPlans = [PLAN_SUSURROS] as PaginaRaw['porVariante'][number]['warPlans'];
+    const { build } = enriquecerConPagina(buildBase, p, new Resolver(dict), duenos);
+    const nodos = build.variants[0]!.warPlan!.activities[0]!.nodes;
+    expect(nodos[0]!.ref.enUS).toBe('Corrupted Roots');
+    expect(nodos[0]!.ref.esES).toBeNull();
+    expect(nodos[0]!.ref.i18n).toBe('none');
+    expect(nombreDesdeSlug('choron\'s_haste')).toBe("Choron's Haste");
+  });
+
+  it('una actividad sin puntos invertidos no se publica', () => {
+    const vacia = { ...PLAN_SUSURROS, slug: 'pits', restantes: 7, nodos: [PLAN_SUSURROS.nodos[0], PLAN_SUSURROS.nodos[5]] };
+    const { build } = conPlanes([PLAN_SUSURROS, vacia]);
+    expect(build.variants[0]!.warPlan!.activities.map((a) => a.slug)).toEqual(['whispers']);
+  });
+
+  it('sin ningun punto en ninguna actividad no hay plan que publicar', () => {
+    const vacia = { ...PLAN_SUSURROS, restantes: 7, nodos: [PLAN_SUSURROS.nodos[0]] };
+    const { build } = conPlanes([vacia]);
+    expect(build.variants[0]!.warPlan).toBeNull();
+    expect(build.variants[0]!.completeness.hasWarPlan).toBe(false);
+  });
+
+  it('el plan extraido sigue validando contra el esquema canonico', () => {
+    const { build } = conPlanes([PLAN_SUSURROS]);
+    expect(CanonicalBuild.safeParse(build).success).toBe(true);
   });
 });

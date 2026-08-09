@@ -54,6 +54,14 @@ export function iconoRanura(slot: string): string | null {
   return nombre ? `${CDN}/Uniques/${nombre}.png` : null;
 }
 
+/**
+ * Icono de una actividad de plan de guerra. El slug es el que publica la propia fuente en
+ * el fichero de su solapa: WarPlans/whispers.png, WarPlans/boss_lairs.png...
+ */
+export function iconoActividadPlan(slug: string): string {
+  return `${CDN}/WarPlans/${slug}.png`;
+}
+
 /** Color del nombre segun la calidad, como en el juego. */
 export const COLOR_CALIDAD: Record<string, string> = {
   unique: 'text-rareza-unico',

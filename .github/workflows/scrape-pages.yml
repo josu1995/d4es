@@ -47,7 +47,9 @@ jobs:
     runs-on: ubuntu-latest
     # Generoso a proposito: son ~92 paginas con varias pestanas cada una. El scraper
     # lleva su propio presupuesto de tiempo mas corto para salir limpiamente y publicar.
-    timeout-minutes: 120
+    # Desde los planes de guerra cada pagina cuesta ~10 s mas (siete solapas que hay que
+    # pulsar una a una), asi que caben ocho lotes de 14 min y sobra margen.
+    timeout-minutes: 150
     steps:
       - uses: actions/checkout@v4
 
@@ -105,7 +107,7 @@ jobs:
             rm -rf data/raw/d4builds/pages
           fi
 
-          for lote in 1 2 3 4 5 6; do
+          for lote in 1 2 3 4 5 6 7 8; do
             echo "::group::Lote $lote"
             node apps/scraper/dist/cli.js scrape:pages --minutos=14 ${{ github.event.inputs.objetivo }} || true
             echo "::endgroup::"

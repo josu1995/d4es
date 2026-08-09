@@ -4,6 +4,7 @@ import { join } from 'node:path';
 import { chromium, type Browser, type Page } from 'playwright';
 import { PATHS } from '../../paths.js';
 import { stableStringify } from '../../util/stable-json.js';
+import { extraerPlanesDeGuerra, type PlanGuerraRaw } from './warplans.js';
 
 /**
  * Extractor de la pagina de cada build. Es la unica via para el equipo y el Paragon:
@@ -80,7 +81,8 @@ export interface VarianteRaw {
   arbolEsCanvas?: boolean;
   paragon: { tablero: string; glifo: string | null; nivelGlifo: number | null; icono: string | null }[];
   mercenarios: { nombre: string; rol: string | null; habilidades: string[]; icono: string | null }[];
-  warPlans: { nombre: string; detalle: string | null }[];
+  /** Una entrada por actividad, con sus nodos tal cual los publica la fuente. */
+  warPlans: PlanGuerraRaw[];
   /** Descripcion cruda de las pestanas cuyo parser aun no esta afinado. */
   debug: Record<string, DebugZona>;
 }
@@ -245,18 +247,6 @@ async function extraerMercenarios(page: Page): Promise<VarianteRaw['mercenarios'
   });
 }
 
-async function extraerWarPlans(page: Page): Promise<VarianteRaw['warPlans']> {
-  return page.evaluate(() => {
-    const limpiar = (s: string) => s.replace(/\s+/g, ' ').trim();
-    return Array.from(document.querySelectorAll('[class*="warplan"], [class*="war__plan"]'))
-      .map((w) => ({
-        nombre: limpiar(w.querySelector('[class*="name"], [class*="title"]')?.textContent ?? ''),
-        detalle: limpiar(w.textContent ?? '').slice(0, 200) || null,
-      }))
-      .filter((w) => w.nombre.length > 0);
-  });
-}
-
 async function extraerVariante(page: Page, index: number, etiqueta: string | null): Promise<VarianteRaw> {
   const debug: Record<string, DebugZona> = {};
 
@@ -280,9 +270,11 @@ async function extraerVariante(page: Page, index: number, etiqueta: string | nul
   const mercenarios = await extraerMercenarios(page);
   if (mercenarios.length === 0) debug['mercenarios'] = await describirZona(page, '.builder__content > *');
 
-  await abrirPestana(page, 'War Plans');
-  const warPlans = await extraerWarPlans(page);
-  if (warPlans.length === 0) debug['warplans'] = await describirZona(page, '.builder__content > *');
+  // Este extractor abre la pestana y recorre las siete solapas por su cuenta.
+  const warPlans = await extraerPlanesDeGuerra(page);
+  if (warPlans.every((p) => p.nodos.length === 0)) {
+    debug['warplans'] = await describirZona(page, '.builder__content > *');
+  }
 
   return { index, etiqueta, gear, stats, arbol: [], arbolEsCanvas, paragon, mercenarios, warPlans, debug };
 }
