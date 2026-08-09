@@ -20,6 +20,7 @@ import { loadEstadoJuego } from '../estado-juego.js';
 import { readSnapshot } from '../sources/d4builds/scrape.js';
 import { normalizeD4BuildsCatalog } from '../sources/d4builds/normalize.js';
 import { enriquecerConPagina } from '../sources/d4builds/normalize-pages.js';
+import { construirLayoutPlanes } from '../sources/d4builds/warplans-layout.js';
 import type { PaginaRaw } from '../sources/d4builds/scrape-pages.js';
 import { readJsonIfExists, stableStringify, writeIfChanged } from '../util/stable-json.js';
 import { evaluarGuardrails } from './guardrails.js';
@@ -205,6 +206,9 @@ export async function runNormalize(): Promise<NormalizeResultado> {
   const nombreDeNodo = (slug: string): string | null =>
     nombreDeNodoPlan.get(skillNameKey(decodeURIComponent(slug).replace(/_/g, ' '))) ?? null;
   const dirPaginas = join(PATHS.raw, 'd4builds', 'pages');
+  // Se van guardando para construir despues, de una vez, el catalogo con la forma de los
+  // arboles de planes de guerra (que es la misma en todas las builds).
+  const paginasLeidas: PaginaRaw[] = [];
   if (existsSync(dirPaginas)) {
     for (let i = 0; i < builds.length; i++) {
       const build = builds[i]!;
@@ -212,6 +216,7 @@ export async function runNormalize(): Promise<NormalizeResultado> {
       if (!externalId) continue;
       const pagina = await readJsonIfExists<PaginaRaw>(join(dirPaginas, `${externalId}.json`));
       if (!pagina) continue;
+      paginasLeidas.push(pagina);
       relleno.paginas++;
       const res = enriquecerConPagina(build, pagina, resolver, mercenarioPorHabilidad, nombreDeNodo);
       builds[i] = res.build;
@@ -285,6 +290,22 @@ export async function runNormalize(): Promise<NormalizeResultado> {
     builds: builds.map(fila),
   };
   if (await writeIfChanged(PATHS.buildIndex, stableStringify(BuildIndex.parse(indice)))) tocados++;
+
+  // La forma de los arboles de planes de guerra. Una sola vez para las 92 builds: es
+  // identica en todas, y asi la ficha puede pintar el arbol entero, no solo los nodos
+  // que coge cada build.
+  if (paginasLeidas.length > 0) {
+    const layout = construirLayoutPlanes(paginasLeidas, nombreDeNodo, catalogo.meta.lastChangedAt);
+    avisos.push(...layout.avisos);
+    if (layout.dataset.activities.length > 0) {
+      const path = join(PATHS.canonical, 'warplans-dataset.json');
+      if (await writeIfChanged(path, stableStringify(layout.dataset))) tocados++;
+      const nodos = layout.dataset.activities.reduce((n, a) => n + a.nodes.length, 0);
+      process.stdout.write(
+        `  planes de guerra: ${layout.dataset.activities.length} actividades, ${nodos} nodos de forma\n`,
+      );
+    }
+  }
 
   // El dataset de habilidades (tooltips y arbol): viene de regalo en el mismo catalogo.
   const dataset = extraerDataset(catalogo.body, catalogo.meta.lastChangedAt);

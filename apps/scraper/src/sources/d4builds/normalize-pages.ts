@@ -149,6 +149,7 @@ function normalizarPlanes(
           if (!slug) return null;
           return {
             ref: resolver.resolve('warPlanNode', nombreDeNodo(slug) ?? nombreDesdeSlug(slug)),
+            slug,
             // Los rombos son los nodos menores del arbol; los circulos, los mayores.
             minor: n.clases.includes('diamond'),
           };

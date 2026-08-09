@@ -62,6 +62,15 @@ export function iconoActividadPlan(slug: string): string {
   return `${CDN}/WarPlans/${slug}.png`;
 }
 
+/**
+ * Icono de un nodo de plan de guerra. El slug ya viene del propio fichero que publica la
+ * fuente, asi que aqui NO se pasa por skillIconSlug: eso se comeria el apostrofe de
+ * "choron's_haste" y dejaria el icono roto.
+ */
+export function iconoNodoPlan(slug: string): string {
+  return `${CDN}/Skills/VoH2/${encodeURIComponent(slug)}.png`;
+}
+
 /** Color del nombre segun la calidad, como en el juego. */
 export const COLOR_CALIDAD: Record<string, string> = {
   unique: 'text-rareza-unico',

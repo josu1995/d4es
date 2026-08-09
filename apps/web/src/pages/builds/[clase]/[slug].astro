@@ -4,7 +4,8 @@ import SlotSkill from '../../../components/SlotSkill.astro';
 import SlotEquipo from '../../../components/SlotEquipo.astro';
 import ArbolHabilidades from '../../../components/ArbolHabilidades.astro';
 import Termino from '../../../components/Termino.astro';
-import { loadBuilds, loadClasesEs, claseNombre, skillInfo } from '../../../lib/data';
+import ArbolPlanGuerra from '../../../components/ArbolPlanGuerra.astro';
+import { loadBuilds, loadClasesEs, claseNombre, skillInfo, layoutPlan } from '../../../lib/data';
 import { iconoClase, iconoActividadPlan } from '../../../lib/iconos';
 import {
   MAX_WARPLAN_POINTS,
@@ -343,7 +344,9 @@ function disponible(v: (typeof build.variants)[number], id: string): boolean {
                     esta build invierte en cada una.
                   </p>
                   <div class="mt-4 space-y-3">
-                    {v.warPlan.activities.map((a) => (
+                    {v.warPlan.activities.map((a) => {
+                      const forma = layoutPlan(a.slug);
+                      return (
                       <div class="grabado rounded bg-abismo p-4">
                         <div class="flex items-center gap-3">
                           <img
@@ -362,6 +365,12 @@ function disponible(v: (typeof build.variants)[number], id: string): boolean {
                             {a.spent}/{MAX_WARPLAN_POINTS} puntos
                           </span>
                         </div>
+                        {forma && (
+                          <ArbolPlanGuerra
+                            layout={forma}
+                            invertidos={new Set(a.nodes.map((n) => n.slug))}
+                          />
+                        )}
                         <ul class="mt-3 space-y-1.5">
                           {a.nodes.map((n) => {
                             const info = skillInfo(n.ref.enUS);
@@ -382,7 +391,8 @@ function disponible(v: (typeof build.variants)[number], id: string): boolean {
                           })}
                         </ul>
                       </div>
-                    ))}
+                      );
+                    })}
                   </div>
                 </>
               ) : (

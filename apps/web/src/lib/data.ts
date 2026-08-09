@@ -5,10 +5,12 @@ import {
   BuildIndex,
   CanonicalBuild,
   SkillsDataset,
+  WarPlansDataset,
   classById,
   skillNameKey,
   type BuildIndexRow,
   type SkillInfo,
+  type WarPlanActivityLayout,
 } from '@d4es/schema';
 
 function repoRoot(): string {
@@ -70,6 +72,25 @@ export function loadSkillsDataset(): SkillsDataset | null {
 export function skillInfo(nombreEn: string): SkillInfo | null {
   const dataset = loadSkillsDataset();
   return dataset?.byName[skillNameKey(nombreEn)] ?? null;
+}
+
+let cachePlanes: WarPlansDataset | null = null;
+
+/**
+ * Forma de los arboles de planes de guerra. Es la misma en todas las builds, asi que va
+ * en un fichero aparte; devuelve null mientras no se haya extraido, y entonces la ficha
+ * se queda con la lista de nodos en vez del arbol dibujado.
+ */
+export function loadWarPlansDataset(): WarPlansDataset | null {
+  if (cachePlanes) return cachePlanes;
+  const path = join(DATA, 'canonical', 'warplans-dataset.json');
+  if (!existsSync(path)) return null;
+  cachePlanes = WarPlansDataset.parse(JSON.parse(readFileSync(path, 'utf8')));
+  return cachePlanes;
+}
+
+export function layoutPlan(slug: string): WarPlanActivityLayout | null {
+  return loadWarPlansDataset()?.activities.find((a) => a.slug === slug) ?? null;
 }
 
 export interface CategoriaArbol {

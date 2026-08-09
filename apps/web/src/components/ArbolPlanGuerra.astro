@@ -1,0 +1,110 @@
+---
+import type { WarPlanActivityLayout } from '@d4es/schema';
+import { skillInfo } from '../lib/data';
+import { iconoNodoPlan, iconoActividadPlan } from '../lib/iconos';
+
+/**
+ * Árbol de una actividad de plan de guerra.
+ *
+ * Aquí sí se puede copiar la forma real: al contrario que el árbol de habilidades, este
+ * visor no es un canvas, así que la fuente publica la posición de cada nodo y las aristas
+ * que los unen. Se guardan una sola vez en `warplans-dataset.json` (son idénticas en las
+ * 92 builds) y cada ficha las cruza con los nodos que su build ha invertido: esos salen
+ * encendidos y los demás apagados, para que se vea qué había y no se cogió.
+ *
+ * Las coordenadas son las de la fuente, sin tocar: van al `viewBox` y escala el navegador.
+ */
+interface Props {
+  layout: WarPlanActivityLayout;
+  /** Slugs de los nodos que esta build invierte. */
+  invertidos: Set<string>;
+}
+
+const { layout, invertidos } = Astro.props;
+const { viewBox: vb } = layout;
+
+/** Radio del nodo mayor. El menor (rombo) va algo más pequeño, como en el juego. */
+const R_MAYOR = 30;
+const R_MENOR = 22;
+---
+
+<figure class="mt-3">
+  <svg
+    viewBox={`${vb.x} ${vb.y} ${vb.w} ${vb.h}`}
+    class="w-full h-auto"
+    role="img"
+    aria-label={`Árbol del plan de guerra de ${layout.name}`}
+  >
+    {
+      layout.edges.map((e) => (
+        <line
+          x1={e.x1}
+          y1={e.y1}
+          x2={e.x2}
+          y2={e.y2}
+          stroke="var(--color-grabado-vivo)"
+          stroke-width="4"
+          stroke-linecap="round"
+        />
+      ))
+    }
+
+    {
+      layout.center && (
+        <image
+          href={iconoActividadPlan(layout.slug)}
+          x={layout.center.x - 26}
+          y={layout.center.y - 26}
+          width="52"
+          height="52"
+          opacity="0.85"
+        />
+      )
+    }
+
+    {
+      layout.nodes.map((n) => {
+        const dentro = invertidos.has(n.slug);
+        const r = n.minor ? R_MENOR : R_MAYOR;
+        const info = skillInfo(n.name);
+        return (
+          <g
+            opacity={dentro ? '1' : '0.3'}
+            transform={n.minor ? `rotate(45 ${n.x} ${n.y})` : undefined}
+          >
+            <title>{`${n.name}${dentro ? '' : ' (no invertido)'}${info?.description ? ` — ${info.description}` : ''}`}</title>
+            {n.minor ? (
+              <rect
+                x={n.x - r}
+                y={n.y - r}
+                width={r * 2}
+                height={r * 2}
+                rx="6"
+                fill="var(--color-abismo)"
+                stroke={dentro ? 'var(--color-brasa)' : 'var(--color-grabado-vivo)'}
+                stroke-width="3"
+              />
+            ) : (
+              <circle
+                cx={n.x}
+                cy={n.y}
+                r={r}
+                fill="var(--color-abismo)"
+                stroke={dentro ? 'var(--color-brasa)' : 'var(--color-grabado-vivo)'}
+                stroke-width="3"
+              />
+            )}
+            <image
+              href={iconoNodoPlan(n.slug)}
+              x={n.x - r + 6}
+              y={n.y - r + 6}
+              width={(r - 6) * 2}
+              height={(r - 6) * 2}
+              transform={n.minor ? `rotate(-45 ${n.x} ${n.y})` : undefined}
+            />
+          </g>
+        );
+      })
+    }
+  </svg>
+</figure>

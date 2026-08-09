@@ -5,4 +5,5 @@ export * from './build.js';
 export * from './correlate.js';
 export * from './raw-d4builds.js';
 export * from './skills-dataset.js';
+export * from './warplans-dataset.js';
 export * from './contenido.js';

@@ -136,8 +136,15 @@ export const BuildVariant = z.object({
             slug: z.string().min(1),
             spent: z.number().int().min(0).max(MAX_WARPLAN_POINTS),
             remaining: z.number().int().min(0).max(MAX_WARPLAN_POINTS).nullable(),
-            /** Nodos con puntos invertidos, en el orden en que los pinta la fuente. */
-            nodes: z.array(z.object({ ref: GameRef, minor: z.boolean() })).max(MAX_WARPLAN_POINTS),
+            /**
+             * Nodos con puntos invertidos, en el orden en que los pinta la fuente. El
+             * `slug` es la clave con la que se cruzan con el catalogo de la forma del
+             * arbol: el nombre no vale, porque los apostrofes ("Choron's Haste") no
+             * sobreviven a la normalizacion y dejarian nodos sin casar.
+             */
+            nodes: z
+              .array(z.object({ ref: GameRef, slug: z.string().min(1), minor: z.boolean() }))
+              .max(MAX_WARPLAN_POINTS),
           }),
         )
         .max(WARPLAN_ACTIVITIES),
