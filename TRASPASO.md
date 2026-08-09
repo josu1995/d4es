@@ -1,6 +1,6 @@
 # d4es — Traspaso de sesión
 
-Última actualización: **9 de agosto de 2026**. Último commit: `a4de021`. Árbol limpio, todo subido.
+Última actualización: **9 de agosto de 2026**. Último commit: `c1d6bc2`. Árbol limpio, todo subido.
 
 Documento para retomar el proyecto en una conversación nueva. Léelo entero antes de tocar nada:
 la mitad de lo que hay aquí costó horas de averiguar y no es deducible del código.
@@ -31,7 +31,7 @@ la mitad de lo que hay aquí costó horas de averiguar y no es deducible del có
 | Árbol de habilidades | ✅ reconstruido (ver §4) |
 | Paragón | ✅ 92/92 con tableros y glifos en castellano |
 | Mercenarios | ✅ 85/92 |
-| Planes de guerra | ❌ **vacío** — pendiente, ver §6 |
+| Planes de guerra | ✅ resuelto (ver §4). Código completo; los datos llegan con la re-extracción |
 | Notas del autor | ✅ enlaza al original, no se copia su texto |
 
 **Contenido propio**: guía de crafteo de míticos con calculadora de intentos, guía de jefes y llaves
@@ -86,6 +86,21 @@ lo reintentes.** Se reconstruye con la categoría de cada habilidad + `skillTree
 es una fila, las habilidades de la build salen encendidas y las demás apagadas. Las pasivas se
 cuentan pero **no se nombran**, porque sus nombres no están publicados.
 
+**Los planes de guerra NO son un canvas**, al contrario que el árbol. Comparten el mismo visor
+(`.skill-tree-viewer`), pero aquí los nodos son DOM de verdad (`.viewer-node`, colocados con
+`left`/`top`). Comprobado: `document.querySelector('.skill-tree-viewer canvas') === null`.
+
+**Son siete actividades independientes, con 7 puntos cada una** (no 7 en total): Whispers, Nightmare
+Dungeons, Helltides, Undercity, Boss Lairs, Infernal Hordes y Pits. `invertidos + restantes === 7`
+en las siete solapas de la misma build. Cada solapa se monta **al pulsarla**: sin clic no hay DOM.
+
+**El nombre de un nodo no está en el texto del DOM**: solo en el fichero de su icono
+(`Skills/VoH2/corrupted_roots.png`) y en el tooltip. Y no hace falta pasar el ratón por los 100
+nodos: **el catálogo público ya los trae**, como las 103 entradas *sin clase* del dataset `skills`,
+con nombre y descripción. Se cruzan por `skillNameKey(slug.replace(/_/g,' '))`. El estado lo da la
+clase `allocated` (los `available` y `locked` no están cogidos; los `category` no son nodos, son el
+icono de la actividad; los rombos son nodos menores y solo pintan contador cuando están invertidos).
+
 **La pestaña de mercenarios muestra habilidades, no el mercenario.** Se deduce el dueño desde el
 dataset (la `class` de una habilidad de mercenario es el propio mercenario).
 
@@ -105,10 +120,14 @@ importador corre entero en el navegador del usuario.
 | `scrape-pages.yml` | diario + push al scraper | extrae páginas **por lotes**, publicando cada ~14 min |
 | `ci.yml` | push y PR | tipos, tests, verificación de datos y build |
 
-Dos trampas ya pagadas, **no las reintroduzcas**:
+Tres trampas ya pagadas, **no las reintroduzcas**:
 - El commit ocurría solo al final: una cancelación tiraba 40 minutos. Ahora publica por lotes.
 - `cancel-in-progress: true` hacía que cualquier push al scraper matase una extracción en curso.
   Ahora las pasadas **se encolan**.
+- Cualquier push a la sonda borraba las 92 páginas y relanzaba la extracción entera, aunque el
+  parser no hubiera cambiado. Ahora el workflow mira **qué ficheros trae el push**: solo
+  `scrape-pages.ts` dispara la re-extracción; tocar `probe-page.ts` o `warplans.ts` ejecuta la
+  sonda y no toca los datos. Iterar sobre el DOM vuelve a costar 5 minutos en vez de 90.
 
 Para re-extraer tras arreglar un parser: lanzar `scrape-pages.yml` con `forzar: true` (borra las
 páginas y empieza de cero; si no, el checkpoint las salta y sigues con los datos malos).
@@ -117,8 +136,11 @@ páginas y empieza de cero; si no, el checkpoint las salta y sigues con los dato
 
 ## 6. Qué queda pendiente
 
-1. **Planes de guerra**: la pestaña sale vacía. No he investigado si expone datos en el DOM o es
-   otro canvas. Es lo único de la ficha sin resolver.
+1. **Árbol completo de los planes de guerra**: hoy se publican solo los nodos invertidos. La forma
+   del árbol (posiciones, aristas y nodos no cogidos) es **idéntica en las 92 builds**, así que
+   pintarlo entero pide un catálogo compartido (`warplans-dataset.json`) generado una sola vez
+   desde el crudo, no repetirlo build a build. El crudo ya guarda `x`/`y` y la forma de cada nodo
+   pensando en esto.
 2. **Traducciones**: 54% de términos en inglés en las builds. Casi todo son mejoras de rama. La vía
    sería cosechar de las fichas de habilidad de Wowhead (una petición por habilidad, ~400).
 3. **Tablas de botín por jefe**: solo están los únicos «firma» de cada uno, marcados como
