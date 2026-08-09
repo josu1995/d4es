@@ -22,13 +22,13 @@
     {
       "lineas": [
         "Gear Stats",
-        "Dual-Wield Weapon 2Weapon TypeDamage Over Time MultiplierAll Damage MultiplierStrengthMaximum LifeDamage Over Time (Worldly Finesse - Offensive)Fire Damage",
-        "Dual-Wield Weapon 2"
+        "GlovesPrimary Core StatVulnerable Damage MultiplierDamage Over Time MultiplierCooldown ReductionDamage Over Time (Worldly Finesse - Offensive)Transfigure",
+        "Gloves"
       ],
       "selector": "[class*=\"stat\"]"
     }
   ],
-  "capturadoEn": "2026-08-09T08:52:39.665Z",
+  "capturadoEn": "2026-08-09T09:10:19.496Z",
   "clasesGlobales": {
     "0": 39,
     "1": 10,
@@ -267,6 +267,116 @@
       {
         "actividad": "Whispers",
         "icono": "https://sunderarmor.com/DIABLO4/WarPlans/whispers.png",
+        "lineas": [
+          {
+            "x1": 380,
+            "x2": 580,
+            "y1": 213,
+            "y2": 154
+          },
+          {
+            "x1": 279,
+            "x2": 380,
+            "y1": 317,
+            "y2": 213
+          },
+          {
+            "x1": 281,
+            "x2": 279,
+            "y1": 642,
+            "y2": 317
+          },
+          {
+            "x1": 498,
+            "x2": 580,
+            "y1": 316,
+            "y2": 154
+          },
+          {
+            "x1": 429,
+            "x2": 498,
+            "y1": 489,
+            "y2": 316
+          },
+          {
+            "x1": 661,
+            "x2": 580,
+            "y1": 315,
+            "y2": 154
+          },
+          {
+            "x1": 579,
+            "x2": 498,
+            "y1": 486,
+            "y2": 316
+          },
+          {
+            "x1": 579,
+            "x2": 661,
+            "y1": 486,
+            "y2": 315
+          },
+          {
+            "x1": 731,
+            "x2": 661,
+            "y1": 485,
+            "y2": 315
+          },
+          {
+            "x1": 505,
+            "x2": 429,
+            "y1": 647,
+            "y2": 489
+          },
+          {
+            "x1": 505,
+            "x2": 579,
+            "y1": 647,
+            "y2": 486
+          },
+          {
+            "x1": 655,
+            "x2": 579,
+            "y1": 645,
+            "y2": 486
+          },
+          {
+            "x1": 655,
+            "x2": 731,
+            "y1": 645,
+            "y2": 485
+          },
+          {
+            "x1": 580,
+            "x2": 505,
+            "y1": 823,
+            "y2": 647
+          },
+          {
+            "x1": 580,
+            "x2": 655,
+            "y1": 823,
+            "y2": 645
+          },
+          {
+            "x1": 778,
+            "x2": 580,
+            "y1": 214,
+            "y2": 154
+          },
+          {
+            "x1": 877,
+            "x2": 778,
+            "y1": 316,
+            "y2": 214
+          },
+          {
+            "x1": 877,
+            "x2": 877,
+            "y1": 645,
+            "y2": 316
+          }
+        ],
         "nodos": [
           {
             "clases": [
@@ -470,6 +580,86 @@
       {
         "actividad": "Nightmare Dungeons",
         "icono": "https://sunderarmor.com/DIABLO4/WarPlans/nightmare_dungeons.png",
+        "lineas": [
+          {
+            "x1": 248,
+            "x2": 325,
+            "y1": 247,
+            "y2": 170
+          },
+          {
+            "x1": 175,
+            "x2": 248,
+            "y1": 288,
+            "y2": 247
+          },
+          {
+            "x1": 103,
+            "x2": 175,
+            "y1": 409,
+            "y2": 288
+          },
+          {
+            "x1": 248,
+            "x2": 175,
+            "y1": 408,
+            "y2": 288
+          },
+          {
+            "x1": 175,
+            "x2": 175,
+            "y1": 570,
+            "y2": 288
+          },
+          {
+            "x1": 319,
+            "x2": 325,
+            "y1": 327,
+            "y2": 170
+          },
+          {
+            "x1": 319,
+            "x2": 319,
+            "y1": 490,
+            "y2": 327
+          },
+          {
+            "x1": 319,
+            "x2": 319,
+            "y1": 650,
+            "y2": 490
+          },
+          {
+            "x1": 390,
+            "x2": 325,
+            "y1": 247,
+            "y2": 170
+          },
+          {
+            "x1": 463,
+            "x2": 390,
+            "y1": 288,
+            "y2": 247
+          },
+          {
+            "x1": 463,
+            "x2": 463,
+            "y1": 569,
+            "y2": 288
+          },
+          {
+            "x1": 391,
+            "x2": 463,
+            "y1": 409,
+            "y2": 288
+          },
+          {
+            "x1": 535,
+            "x2": 463,
+            "y1": 409,
+            "y2": 288
+          }
+        ],
         "nodos": [
           {
             "clases": [
@@ -660,6 +850,110 @@
       {
         "actividad": "Helltides",
         "icono": "https://sunderarmor.com/DIABLO4/WarPlans/helltides.png",
+        "lineas": [
+          {
+            "x1": 257,
+            "x2": 329,
+            "y1": 298,
+            "y2": 229
+          },
+          {
+            "x1": 184,
+            "x2": 257,
+            "y1": 393,
+            "y2": 298
+          },
+          {
+            "x1": 59,
+            "x2": 184,
+            "y1": 465,
+            "y2": 393
+          },
+          {
+            "x1": 131,
+            "x2": 184,
+            "y1": 555,
+            "y2": 393
+          },
+          {
+            "x1": 187,
+            "x2": 184,
+            "y1": 633,
+            "y2": 393
+          },
+          {
+            "x1": 328,
+            "x2": 329,
+            "y1": 392,
+            "y2": 229
+          },
+          {
+            "x1": 257,
+            "x2": 328,
+            "y1": 555,
+            "y2": 392
+          },
+          {
+            "x1": 328,
+            "x2": 328,
+            "y1": 555,
+            "y2": 392
+          },
+          {
+            "x1": 401,
+            "x2": 328,
+            "y1": 556,
+            "y2": 392
+          },
+          {
+            "x1": 255,
+            "x2": 257,
+            "y1": 720,
+            "y2": 555
+          },
+          {
+            "x1": 328,
+            "x2": 328,
+            "y1": 719,
+            "y2": 555
+          },
+          {
+            "x1": 400,
+            "x2": 401,
+            "y1": 720,
+            "y2": 556
+          },
+          {
+            "x1": 400,
+            "x2": 329,
+            "y1": 299,
+            "y2": 229
+          },
+          {
+            "x1": 470,
+            "x2": 400,
+            "y1": 394,
+            "y2": 299
+          },
+          {
+            "x1": 598,
+            "x2": 470,
+            "y1": 467,
+            "y2": 394
+          },
+          {
+            "x1": 525,
+            "x2": 470,
+            "y1": 556,
+            "y2": 394
+          },
+          {
+            "x1": 470,
+            "x2": 470,
+            "y1": 636,
+            "y2": 394
+          }
+        ],
         "nodos": [
           {
             "clases": [
@@ -902,6 +1196,74 @@
       {
         "actividad": "Undercity",
         "icono": "https://sunderarmor.com/DIABLO4/WarPlans/undercity.png",
+        "lineas": [
+          {
+            "x1": 241,
+            "x2": 310,
+            "y1": 294,
+            "y2": 217
+          },
+          {
+            "x1": 172,
+            "x2": 241,
+            "y1": 373,
+            "y2": 294
+          },
+          {
+            "x1": 103,
+            "x2": 172,
+            "y1": 451,
+            "y2": 373
+          },
+          {
+            "x1": 172,
+            "x2": 103,
+            "y1": 530,
+            "y2": 451
+          },
+          {
+            "x1": 311,
+            "x2": 310,
+            "y1": 373,
+            "y2": 217
+          },
+          {
+            "x1": 312,
+            "x2": 311,
+            "y1": 528,
+            "y2": 373
+          },
+          {
+            "x1": 311,
+            "x2": 312,
+            "y1": 684,
+            "y2": 528
+          },
+          {
+            "x1": 381,
+            "x2": 310,
+            "y1": 294,
+            "y2": 217
+          },
+          {
+            "x1": 451,
+            "x2": 381,
+            "y1": 373,
+            "y2": 294
+          },
+          {
+            "x1": 520,
+            "x2": 451,
+            "y1": 450,
+            "y2": 373
+          },
+          {
+            "x1": 450,
+            "x2": 520,
+            "y1": 528,
+            "y2": 450
+          }
+        ],
         "nodos": [
           {
             "clases": [
@@ -1066,6 +1428,134 @@
       {
         "actividad": "Boss Lairs",
         "icono": "https://sunderarmor.com/DIABLO4/WarPlans/boss_lairs.png",
+        "lineas": [
+          {
+            "x1": 55,
+            "x2": 325,
+            "y1": 250,
+            "y2": 170
+          },
+          {
+            "x1": 54,
+            "x2": 55,
+            "y1": 573,
+            "y2": 250
+          },
+          {
+            "x1": 145,
+            "x2": 325,
+            "y1": 330,
+            "y2": 170
+          },
+          {
+            "x1": 143,
+            "x2": 145,
+            "y1": 492,
+            "y2": 330
+          },
+          {
+            "x1": 235,
+            "x2": 325,
+            "y1": 412,
+            "y2": 170
+          },
+          {
+            "x1": 235,
+            "x2": 235,
+            "y1": 572,
+            "y2": 412
+          },
+          {
+            "x1": 145,
+            "x2": 54,
+            "y1": 653,
+            "y2": 573
+          },
+          {
+            "x1": 145,
+            "x2": 143,
+            "y1": 653,
+            "y2": 492
+          },
+          {
+            "x1": 145,
+            "x2": 235,
+            "y1": 653,
+            "y2": 572
+          },
+          {
+            "x1": 325,
+            "x2": 325,
+            "y1": 331,
+            "y2": 170
+          },
+          {
+            "x1": 326,
+            "x2": 325,
+            "y1": 492,
+            "y2": 331
+          },
+          {
+            "x1": 326,
+            "x2": 326,
+            "y1": 653,
+            "y2": 492
+          },
+          {
+            "x1": 595,
+            "x2": 325,
+            "y1": 249,
+            "y2": 170
+          },
+          {
+            "x1": 593,
+            "x2": 595,
+            "y1": 572,
+            "y2": 249
+          },
+          {
+            "x1": 503,
+            "x2": 325,
+            "y1": 330,
+            "y2": 170
+          },
+          {
+            "x1": 505,
+            "x2": 503,
+            "y1": 491,
+            "y2": 330
+          },
+          {
+            "x1": 414,
+            "x2": 325,
+            "y1": 411,
+            "y2": 170
+          },
+          {
+            "x1": 414,
+            "x2": 414,
+            "y1": 572,
+            "y2": 411
+          },
+          {
+            "x1": 503,
+            "x2": 593,
+            "y1": 654,
+            "y2": 572
+          },
+          {
+            "x1": 503,
+            "x2": 505,
+            "y1": 654,
+            "y2": 491
+          },
+          {
+            "x1": 503,
+            "x2": 414,
+            "y1": 654,
+            "y2": 572
+          }
+        ],
         "nodos": [
           {
             "clases": [
@@ -1308,6 +1798,104 @@
       {
         "actividad": "Infernal Hordes",
         "icono": "https://sunderarmor.com/DIABLO4/WarPlans/infernal_hordes.png",
+        "lineas": [
+          {
+            "x1": 179,
+            "x2": 323,
+            "y1": 170,
+            "y2": 168
+          },
+          {
+            "x1": 107,
+            "x2": 179,
+            "y1": 250,
+            "y2": 170
+          },
+          {
+            "x1": 251,
+            "x2": 107,
+            "y1": 249,
+            "y2": 250
+          },
+          {
+            "x1": 179,
+            "x2": 107,
+            "y1": 330,
+            "y2": 250
+          },
+          {
+            "x1": 107,
+            "x2": 107,
+            "y1": 413,
+            "y2": 250
+          },
+          {
+            "x1": 322,
+            "x2": 323,
+            "y1": 330,
+            "y2": 168
+          },
+          {
+            "x1": 250,
+            "x2": 322,
+            "y1": 411,
+            "y2": 330
+          },
+          {
+            "x1": 394,
+            "x2": 322,
+            "y1": 411,
+            "y2": 330
+          },
+          {
+            "x1": 250,
+            "x2": 250,
+            "y1": 574,
+            "y2": 411
+          },
+          {
+            "x1": 393,
+            "x2": 394,
+            "y1": 574,
+            "y2": 411
+          },
+          {
+            "x1": 321,
+            "x2": 322,
+            "y1": 492,
+            "y2": 330
+          },
+          {
+            "x1": 321,
+            "x2": 250,
+            "y1": 654,
+            "y2": 574
+          },
+          {
+            "x1": 321,
+            "x2": 393,
+            "y1": 654,
+            "y2": 574
+          },
+          {
+            "x1": 465,
+            "x2": 323,
+            "y1": 170,
+            "y2": 168
+          },
+          {
+            "x1": 537,
+            "x2": 465,
+            "y1": 251,
+            "y2": 170
+          },
+          {
+            "x1": 537,
+            "x2": 537,
+            "y1": 412,
+            "y2": 251
+          }
+        ],
         "nodos": [
           {
             "clases": [
@@ -1524,6 +2112,86 @@
       {
         "actividad": "Pits",
         "icono": "https://sunderarmor.com/DIABLO4/WarPlans/pits.png",
+        "lineas": [
+          {
+            "x1": 142,
+            "x2": 442,
+            "y1": 185,
+            "y2": 73
+          },
+          {
+            "x1": 68,
+            "x2": 142,
+            "y1": 467,
+            "y2": 185
+          },
+          {
+            "x1": 231,
+            "x2": 142,
+            "y1": 464,
+            "y2": 185
+          },
+          {
+            "x1": 142,
+            "x2": 142,
+            "y1": 748,
+            "y2": 185
+          },
+          {
+            "x1": 442,
+            "x2": 442,
+            "y1": 184,
+            "y2": 73
+          },
+          {
+            "x1": 442,
+            "x2": 442,
+            "y1": 384,
+            "y2": 184
+          },
+          {
+            "x1": 442,
+            "x2": 442,
+            "y1": 582,
+            "y2": 384
+          },
+          {
+            "x1": 343,
+            "x2": 442,
+            "y1": 745,
+            "y2": 582
+          },
+          {
+            "x1": 543,
+            "x2": 442,
+            "y1": 746,
+            "y2": 582
+          },
+          {
+            "x1": 742,
+            "x2": 442,
+            "y1": 186,
+            "y2": 73
+          },
+          {
+            "x1": 655,
+            "x2": 742,
+            "y1": 465,
+            "y2": 186
+          },
+          {
+            "x1": 816,
+            "x2": 742,
+            "y1": 468,
+            "y2": 186
+          },
+          {
+            "x1": 742,
+            "x2": 742,
+            "y1": 748,
+            "y2": 186
+          }
+        ],
         "nodos": [
           {
             "clases": [
@@ -1828,43 +2496,43 @@
     },
     "stats": {
       "clasesInternas": {
-        "0": 66,
-        "1": 17,
-        "Dual-WieldWeapon2": 2,
-        "Helm": 1,
-        "barbarian": 132,
-        "builder__stat": 132,
-        "builder__stats__group": 3,
+        "0": 72,
+        "1": 19,
+        "Dual-WieldWeapon1": 2,
+        "Gloves": 2,
+        "barbarian": 129,
+        "builder__stat": 131,
+        "builder__stats__group": 4,
         "builder__stats__list": 1,
-        "builder__stats__priority": 12,
-        "builder__stats__slot": 13,
-        "builder__stats__slot__icon": 21,
+        "builder__stats__priority": 14,
+        "builder__stats__slot": 14,
+        "builder__stats__slot__icon": 23,
         "builder__stats__title": 1,
-        "dropdown": 132,
-        "dropdown__button": 132,
+        "dropdown": 129,
+        "dropdown__button": 129,
         "dropdown__button__tempering": 44,
-        "dropdown__button__wrapper": 132,
-        "filled": 113,
-        "greater__affix__button": 105,
-        "greater__affix__button--filled": 59,
-        "greater__affix__img": 105,
-        "null": 18,
-        "stat__dropdown": 132,
-        "stat__dropdown__wrapper": 132,
-        "undefined": 31
+        "dropdown__button__wrapper": 129,
+        "filled": 112,
+        "greater__affix__button": 107,
+        "greater__affix__button--filled": 57,
+        "greater__affix__img": 106,
+        "null": 8,
+        "stat__dropdown": 129,
+        "stat__dropdown__wrapper": 130,
+        "undefined": 30
       },
       "encontrados": 51,
-      "muestraHtml": "<div class=\"builder__stats__section\"><div class=\"builder__stats__title\">Gear Stats</div><div class=\"builder__stats__list\"><div class=\"builder__stats__group Dual-WieldWeapon2\"><div class=\"builder__stats__slot\"><img class=\"builder__stats__slot__icon\" src=\"https://sunderarmor.com/DIABLO4/Uniques/dual-wield_weapon_2.png\" alt=\"Dual-Wield Weapon 2\">Dual-Wield Weapon 2</div><div class=\"builder__stats__priority\"><div class=\"builder__stat\" style=\"order: -1;\"><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n      \n      0\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Weapon Type</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button greater__affix__button--filled\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      1\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Damage Over Time Multiplier</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button greater__affix__button--filled\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      0\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>All Damage Multiplier</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      0\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Strength</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      0\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__",
+      "muestraHtml": "<div class=\"builder__stats__section\"><div class=\"builder__stats__title\">Gear Stats</div><div class=\"builder__stats__list\"><div class=\"builder__stats__group Gloves\"><div class=\"builder__stats__slot\"><img class=\"builder__stats__slot__icon\" src=\"https://sunderarmor.com/DIABLO4/Uniques/gloves.png\" alt=\"Gloves\">Gloves</div><div class=\"builder__stats__priority\"><div class=\"builder__stat\"><button class=\"greater__affix__button greater__affix__button--filled\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      0\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Primary Core Stat</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button greater__affix__button--filled\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      1\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Vulnerable Damage Multiplier</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      0\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Damage Over Time Multiplier</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      0\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Cooldown Reduction</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button greater__affix__button--filled\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__drop",
       "selector": "[class*=\"builder__stats\"]",
       "textos": [
         "Gear Stats",
-        "Dual-Wield Weapon 2Weapon TypeDamage Over Time MultiplierAll Damage MultiplierStrengthMaximum LifeDamage Over Time (Worldly Finesse - Offensive)Fire Damage",
-        "Dual-Wield Weapon 2",
-        "Weapon TypeDamage Over Time MultiplierAll Damage MultiplierStrengthMaximum LifeDamage Over Time (Worldly Finesse - Offensive)Fire Damage",
-        "HelmStrengthMaximum LifeMaximum ResourceCooldown ReductionMaximum Life (Worldly Endurance - Defensive)Transfigure",
-        "Helm",
-        "StrengthMaximum LifeMaximum ResourceCooldown ReductionMaximum Life (Worldly Endurance - Defensive)Transfigure",
-        "AmuletDamage Over Time MultiplierVulnerable Damage MultiplierFire Damage MultiplierAll SkillsCooldown Reduction (Worldly Stability - Resource)Battle-Mad AspectTransfigure"
+        "GlovesPrimary Core StatVulnerable Damage MultiplierDamage Over Time MultiplierCooldown ReductionDamage Over Time (Worldly Finesse - Offensive)Transfigure",
+        "Gloves",
+        "Primary Core StatVulnerable Damage MultiplierDamage Over Time MultiplierCooldown ReductionDamage Over Time (Worldly Finesse - Offensive)Transfigure",
+        "Dual-Wield Weapon 1All Damage MultiplierMaximum ResourceStrengthMaximum LifeDamage Over Time (Worldly Finesse - Offensive)Fire Damage",
+        "Dual-Wield Weapon 1",
+        "All Damage MultiplierMaximum ResourceStrengthMaximum LifeDamage Over Time (Worldly Finesse - Offensive)Fire Damage",
+        "Ring 1Damage Over Time MultiplierVulnerable Damage MultiplierAttack SpeedCooldown ReductionCooldown Reduction (Worldly Stability - Resource)Transfigure"
       ]
     },
     "variantes": {
