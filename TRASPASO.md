@@ -101,6 +101,12 @@ con nombre y descripción. Se cruzan por `skillNameKey(slug.replace(/_/g,' '))`.
 clase `allocated` (los `available` y `locked` no están cogidos; los `category` no son nodos, son el
 icono de la actividad; los rombos son nodos menores y solo pintan contador cuando están invertidos).
 
+**La forma del árbol de planes de guerra NO depende de la build**: mismos nodos, mismas
+coordenadas y mismas figuras en las siete actividades (verificado nodo a nodo entre builds
+distintas). Por eso vive una sola vez en `data/canonical/warplans-dataset.json` y cada build solo
+guarda qué nodos invierte. El cruce se hace por **slug**, no por nombre: el apóstrofo de
+«Choron's Haste» no sobrevive a la normalización y dejaría nodos sin casar.
+
 **La pestaña de mercenarios muestra habilidades, no el mercenario.** Se deduce el dueño desde el
 dataset (la `class` de una habilidad de mercenario es el propio mercenario).
 
@@ -125,9 +131,14 @@ Tres trampas ya pagadas, **no las reintroduzcas**:
 - `cancel-in-progress: true` hacía que cualquier push al scraper matase una extracción en curso.
   Ahora las pasadas **se encolan**.
 - Cualquier push a la sonda borraba las 92 páginas y relanzaba la extracción entera, aunque el
-  parser no hubiera cambiado. Ahora el workflow mira **qué ficheros trae el push**: solo
-  `scrape-pages.ts` dispara la re-extracción; tocar `probe-page.ts` o `warplans.ts` ejecuta la
-  sonda y no toca los datos. Iterar sobre el DOM vuelve a costar 5 minutos en vez de 90.
+  parser no hubiera cambiado. Ahora el workflow mira **qué ficheros trae el push**: `scrape-pages.ts`
+  o `warplans.ts` (el parser) disparan la re-extracción; `probe-page.ts` solo ejecuta la sonda.
+  Iterar sobre el DOM vuelve a costar 5 minutos en vez de 90.
+- Esa decisión **no se saca del payload del evento**, y no es por gusto: `join(commits.*.modified,
+  ',')` devuelve vacío (es un array de arrays) y buscar la ruta en `toJSON(commits)` tampoco casó.
+  Las dos veces el workflow se fue a sonda en silencio y se comió una ronda de CI. Ahora se decide
+  con `git diff --name-only` y **queda escrito en `data/reports/ultimo-disparo.json`**, para poder
+  ver qué decidió sin abrir los logs. Si tocas eso, mantén la traza.
 
 Para re-extraer tras arreglar un parser: lanzar `scrape-pages.yml` con `forzar: true` (borra las
 páginas y empieza de cero; si no, el checkpoint las salta y sigues con los datos malos).
@@ -136,19 +147,15 @@ páginas y empieza de cero; si no, el checkpoint las salta y sigues con los dato
 
 ## 6. Qué queda pendiente
 
-1. **Árbol completo de los planes de guerra**: hoy se publican solo los nodos invertidos. La forma
-   del árbol (posiciones, aristas y nodos no cogidos) es **idéntica en las 92 builds**, así que
-   pintarlo entero pide un catálogo compartido (`warplans-dataset.json`) generado una sola vez
-   desde el crudo, no repetirlo build a build. El crudo ya guarda `x`/`y` y la forma de cada nodo
-   pensando en esto.
-2. **Traducciones**: 54% de términos en inglés en las builds. Casi todo son mejoras de rama. La vía
-   sería cosechar de las fichas de habilidad de Wowhead (una petición por habilidad, ~400).
-3. **Tablas de botín por jefe**: solo están los únicos «firma» de cada uno, marcados como
+1. **Traducciones**: 54% de términos en inglés en las builds. Casi todo son mejoras de rama, y ahora
+   se suman los ~100 nodos de plan de guerra y los 7 nombres de actividad. La vía sería cosechar de
+   las fichas de habilidad de Wowhead (una petición por habilidad, ~400).
+2. **Tablas de botín por jefe**: solo están los únicos «firma» de cada uno, marcados como
    pendientes de confirmar.
-4. **Datos por verificar dentro del juego**: coste exacto de la receta del Joyero, llave de Belial,
+3. **Datos por verificar dentro del juego**: coste exacto de la receta del Joyero, llave de Belial,
    si sigue el límite de un mítico crafteado equipado, tabla Fosa↔nivel de glifo.
-5. **Iconos auto-hospedados**: hoy se cargan del CDN de d4builds con respaldo. ~600 ficheros.
-6. **Corte de temporada**: la T14 acaba hacia el **15 de septiembre de 2026**. El pipeline lo
+4. **Iconos auto-hospedados**: hoy se cargan del CDN de d4builds con respaldo. ~600 ficheros.
+5. **Corte de temporada**: la T14 acaba hacia el **15 de septiembre de 2026**. El pipeline lo
    detecta solo, se para y abre incidencia con checklist. **El corte hay que hacerlo a mano.**
 
 ---
