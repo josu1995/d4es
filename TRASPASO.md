@@ -1,6 +1,6 @@
 # d4es — Traspaso de sesión
 
-Última actualización: **9 de agosto de 2026**. Último commit: `c1d6bc2`. Árbol limpio, todo subido.
+Última actualización: **9 de agosto de 2026**. Árbol limpio, todo subido.
 
 Documento para retomar el proyecto en una conversación nueva. Léelo entero antes de tocar nada:
 la mitad de lo que hay aquí costó horas de averiguar y no es deducible del código.
@@ -31,7 +31,7 @@ la mitad de lo que hay aquí costó horas de averiguar y no es deducible del có
 | Árbol de habilidades | ✅ reconstruido (ver §4) |
 | Paragón | ✅ 92/92 con tableros y glifos en castellano |
 | Mercenarios | ✅ 85/92 |
-| Planes de guerra | ✅ resuelto (ver §4). Código completo; los datos llegan con la re-extracción |
+| Planes de guerra | ✅ 66/92 con plan (las otras 26 no invierten puntos), árbol dibujado entero |
 | Notas del autor | ✅ enlaza al original, no se copia su texto |
 
 **Contenido propio**: guía de crafteo de míticos con calculadora de intentos, guía de jefes y llaves
@@ -169,16 +169,29 @@ páginas y empieza de cero; si no, el checkpoint las salta y sigues con los dato
 > los datos no están publicados en ninguna parte contrastable: en su lugar quedan listas de trabajo
 > generadas de los propios ficheros, en `/estado/verificar`.
 
-1. **Traducciones**: 54% de términos en inglés en las builds. Casi todo son mejoras de rama, y ahora
-   se suman los ~100 nodos de plan de guerra y los 7 nombres de actividad. La vía sería cosechar de
-   las fichas de habilidad de Wowhead (una petición por habilidad, ~400).
-2. **Tablas de botín por jefe**: solo están los únicos «firma» de cada uno, marcados como
-   pendientes de confirmar.
-3. **Datos por verificar dentro del juego**: coste exacto de la receta del Joyero, llave de Belial,
-   si sigue el límite de un mítico crafteado equipado, tabla Fosa↔nivel de glifo.
-4. **Iconos auto-hospedados**: hoy se cargan del CDN de d4builds con respaldo. ~600 ficheros.
-5. **Corte de temporada**: la T14 acaba hacia el **15 de septiembre de 2026**. El pipeline lo
-   detecta solo, se para y abre incidencia con checklist. **El corte hay que hacerlo a mano.**
+1. **Traducciones — lo que queda.** Las mejoras de rama pasaron de 414 pendientes a **99**
+   (cosecha de Wowhead, ver §4). Quedan tres bolsas:
+   - **~100 nodos de plan de guerra y 7 actividades, todos en inglés.** No están en Wowhead como
+     habilidades, así que el cosechador actual no los ve; habría que encontrar dónde los publica.
+   - **`affix` y `aspect`** (162 y 138): el diccionario oficial SÍ los trae, así que casi seguro es
+     un problema de que los nombres no casan, no de que falten. Mirar ahí antes de cosechar nada
+     es probablemente la mejor relación esfuerzo/resultado que queda.
+   - **`skillVariant`** (52): son «habilidad + mejora» pegadas (`Teleport Blaze`); se podrían
+     componer de las dos traducciones que ya tenemos.
+2. **Tablas de botín por jefe**: sin resolver **a propósito**. De cada jefe solo están sus únicos
+   «firma»; no hay fuente contrastable que publique la tabla completa y rellenarla a ojo va contra
+   la regla 4. Lo que sí hay es la lista priorizada de los **119 únicos que las builds equipan y no
+   sabemos de dónde salen**, en `/estado/verificar`.
+3. **Datos por verificar dentro del juego**: 49 datos, listados uno a uno con su procedencia y la
+   ruta exacta del campo en `/estado/verificar`. Solo se pueden cerrar con el juego delante.
+4. **Iconos auto-hospedados**: ✅ hechos. ~570 ficheros (14 MB) servidos desde `public/iconos`, con
+   caída al CDN para lo que falte. Quedan ~80 sin descargar: los `*_v2` son duplicados del PTR que
+   no existen en el CDN, y el resto son nombres que no casan (ver `data/reports/iconos.json`).
+5. **Corte de temporada**: la T14 acaba hacia el **15 de septiembre de 2026**. **No se ha ejecutado
+   a propósito**: hacerlo ahora archivaría una temporada viva. Lo que sí se ha cubierto es lo que lo
+   dispara — `detectarTemporada` ya está exportada, con el umbral documentado y **siete pruebas**,
+   incluidos los bordes — y el checklist de la incidencia se ha completado con lo que el proyecto
+   tiene hoy (re-extraer páginas, regenerar el árbol de planes, iconos, `/estado/verificar`).
 
 ---
 
