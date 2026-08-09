@@ -57,6 +57,12 @@ jobs:
           # Historia completa. El repo pesa ~7 MB, asi que es gratis, y hace falta para
           # saber que ficheros trae el push mirando el diff de verdad.
           fetch-depth: 0
+          # El TIP de main, no el commit que disparo el run. Las pasadas se ENCOLAN
+          # (concurrency sin cancelar), asi que cuando esta arranca, main puede llevar
+          # lotes que el commit disparador no tenia; partir del commit viejo hizo que la
+          # primera publicacion chocara al rebasar y el run 31323290074 perdiera 44 min
+          # de extraccion entera. El diff de decision usa github.event.before igualmente.
+          ref: main
 
       - uses: actions/setup-node@v4
         with:
@@ -139,6 +145,25 @@ jobs:
             rm -rf data/raw/d4builds/pages
           fi
 
+          # Publica el lote y FALLA EN ROJO si no puede. La version anterior hacia
+          # `git pull --rebase && git push` a secas: un conflicto al rebasar (paso en el
+          # run 31323290074, con data/reports/scrape-pages.json) dejaba el repo a medio
+          # rebase, los lotes siguientes commiteaban en detached HEAD, ningun push
+          # llegaba a main y el paso terminaba "success" habiendo perdido 44 minutos de
+          # extraccion. `-X theirs` resuelve a favor de lo recien extraido (en rebase,
+          # "theirs" es NUESTRO commit replayado), que para las paginas y el informe es
+          # siempre lo mas nuevo.
+          publicar() {
+            for intento in 1 2 3; do
+              if git pull --rebase --autostash -X theirs && git push; then
+                return 0
+              fi
+              git rebase --abort 2>/dev/null || true
+              sleep 5
+            done
+            return 1
+          }
+
           for lote in 1 2 3 4 5 6 7 8; do
             echo "::group::Lote $lote"
             node apps/scraper/dist/cli.js scrape:pages --minutos=14 ${{ github.event.inputs.objetivo }} || true
@@ -147,7 +172,11 @@ jobs:
             if [ -n "$(git status --porcelain data/)" ]; then
               git add data/
               git commit -m "paginas: lote $lote (run ${{ github.run_id }}) [skip netlify]"
-              git pull --rebase --autostash && git push
+              if ! publicar; then
+                echo "::error::El lote $lote no se pudo publicar (rebase/push): se corta aqui para no seguir en un estado roto."
+                echo "Lote $lote SIN PUBLICAR: el paso falla a proposito." >> "$GITHUB_STEP_SUMMARY"
+                exit 1
+              fi
               echo "Lote $lote publicado." >> "$GITHUB_STEP_SUMMARY"
             else
               echo "Lote $lote sin cambios: no queda nada por extraer." >> "$GITHUB_STEP_SUMMARY"
