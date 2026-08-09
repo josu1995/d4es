@@ -22,13 +22,13 @@
     {
       "lineas": [
         "Gear Stats",
-        "PantsStrengthMaximum LifeFury RegenerationResistance to All ElementsMaximum Life (Worldly Endurance - Defensive)Physical Damage",
-        "Pants"
+        "Ring 2Attack SpeedCritical Strike ChanceCritical Strike Damage MultiplierVulnerable Damage MultiplierLucky Hit: Up to a 15% Chance to Restore X Primary Resource (Worldly Stability - Resource)All Skills",
+        "Ring 2"
       ],
       "selector": "[class*=\"stat\"]"
     }
   ],
-  "capturadoEn": "2026-08-09T08:32:42.929Z",
+  "capturadoEn": "2026-08-09T08:41:04.800Z",
   "clasesGlobales": {
     "0": 40,
     "1": 11,
@@ -223,8 +223,8 @@
       "https://sunderarmor.com/DIABLO4/Uniques/2/ring_of_starless_skies.png",
       "https://sunderarmor.com/DIABLO4/Uniques/2/the_grandfather.png",
       "https://sunderarmor.com/DIABLO4/Uniques/bludgeoning_weapon.png",
-      "https://sunderarmor.com/DIABLO4/Uniques/pants.png",
-      "https://sunderarmor.com/DIABLO4/Uniques/bludgeoning_weapon.png"
+      "https://sunderarmor.com/DIABLO4/Uniques/ring_2.png",
+      "https://sunderarmor.com/DIABLO4/Uniques/chest_armor.png"
     ],
     "otros": [
       "https://img.youtube.com/vi/z9ZidNzZABE/mqdefault.jpg",
@@ -258,1405 +258,1455 @@
   ],
   "warPlans": {
     "abierta": true,
+    "censo": null,
     "esCanvasReal": false,
-    "solapas": [
+    "planes": [
       {
-        "activa": true,
         "actividad": "Whispers",
-        "atributos": [
-          "alt",
-          "autocomplete",
-          "class",
-          "d",
-          "fill",
-          "id",
-          "placeholder",
-          "src",
-          "stroke",
-          "stroke-linecap",
-          "stroke-width",
-          "style",
-          "tabindex",
-          "type",
-          "value"
-        ],
-        "clases": {
-          "--noPoints": 7,
-          "active": 10,
-          "allocated": 7,
-          "alt": 1,
-          "available": 2,
-          "category": 1,
-          "category-icon": 1,
-          "category-icon-bg": 1,
-          "diamond": 5,
-          "filters__btn": 1,
-          "game__filters__btn": 1,
-          "game__filters__btn__icon": 1,
-          "game__filters__list": 1,
-          "large-circle": 9,
-          "locked": 5,
-          "node-bg": 14,
-          "node-icon": 14,
-          "node-icon--circle": 9,
-          "node-icon--diamond": 5,
-          "node-rank-badge": 11,
-          "searchbar": 1,
-          "searchbar-close": 1,
-          "searchbar-close-img": 1,
-          "searchbar-icon": 1,
-          "searchbar-input": 1,
-          "skill-line-active-base": 7,
-          "skill-line-active-inner": 7,
-          "skill-line-base": 18,
-          "skill-line-inner": 18,
-          "skill-tree-viewer__content": 1,
-          "skill__tree__header": 1,
-          "skill__tree__header__wrapper": 1,
-          "skill__tree__remaining": 1,
-          "skill__tree__remaining__total": 1,
-          "skill__tree__total": 1,
-          "unlocked": 1,
-          "viewer-canvas": 1,
-          "viewer-lines": 1,
-          "viewer-main": 1,
-          "viewer-node": 15,
-          "warplan-tab": 7,
-          "warplan-tab__icon": 7,
-          "warplan-tabs": 1
-        },
         "icono": "https://sunderarmor.com/DIABLO4/WarPlans/whispers.png",
-        "imagenes": [
-          "https://sunderarmor.com/search-icon.svg",
-          "https://sunderarmor.com/close-icon.svg",
-          "https://sunderarmor.com/DIABLO4/UI/fullscreen_icon.svg",
-          "https://sunderarmor.com/DIABLO4/WarPlans/whispers.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/nightmare_dungeons.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/helltides.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/undercity.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/boss_lairs.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/infernal_hordes.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/pits.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/category_active.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/category_whispers.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/passive_active.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/corrupted_roots.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/roots_of_power.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/headrotten_feast.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/skill_minor_active.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/tree_of_plenty.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/skill_minor_inactive.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/fortune_or_famine.png"
+        "nodos": [
+          {
+            "clases": [
+              "category",
+              "unlocked"
+            ],
+            "iconos": [
+              "category_active",
+              "category_whispers"
+            ],
+            "texto": null,
+            "x": 580,
+            "y": 154
+          },
+          {
+            "clases": [
+              "large-circle",
+              "allocated"
+            ],
+            "iconos": [
+              "passive_active",
+              "corrupted_roots"
+            ],
+            "texto": "1/1",
+            "x": 380,
+            "y": 213
+          },
+          {
+            "clases": [
+              "large-circle",
+              "allocated"
+            ],
+            "iconos": [
+              "passive_active",
+              "roots_of_power"
+            ],
+            "texto": "1/1",
+            "x": 279,
+            "y": 317
+          },
+          {
+            "clases": [
+              "large-circle",
+              "allocated"
+            ],
+            "iconos": [
+              "passive_active",
+              "headrotten_feast"
+            ],
+            "texto": "1/1",
+            "x": 281,
+            "y": 642
+          },
+          {
+            "clases": [
+              "diamond",
+              "allocated"
+            ],
+            "iconos": [
+              "skill_minor_active",
+              "tree_of_plenty"
+            ],
+            "texto": "1/1",
+            "x": 498,
+            "y": 316
+          },
+          {
+            "clases": [
+              "diamond",
+              "locked"
+            ],
+            "iconos": [
+              "skill_minor_inactive",
+              "fortune_or_famine"
+            ],
+            "texto": null,
+            "x": 429,
+            "y": 489
+          },
+          {
+            "clases": [
+              "diamond",
+              "locked"
+            ],
+            "iconos": [
+              "skill_minor_inactive",
+              "simple_gifts"
+            ],
+            "texto": null,
+            "x": 661,
+            "y": 315
+          },
+          {
+            "clases": [
+              "diamond",
+              "allocated"
+            ],
+            "iconos": [
+              "skill_minor_active",
+              "wisdom_of_whispers"
+            ],
+            "texto": "1/1",
+            "x": 579,
+            "y": 486
+          },
+          {
+            "clases": [
+              "diamond",
+              "locked"
+            ],
+            "iconos": [
+              "skill_minor_inactive",
+              "material_wealth"
+            ],
+            "texto": null,
+            "x": 731,
+            "y": 485
+          },
+          {
+            "clases": [
+              "large-circle",
+              "available"
+            ],
+            "iconos": [
+              "passive_inactive",
+              "grim_mysteries"
+            ],
+            "texto": "0/1",
+            "x": 505,
+            "y": 647
+          },
+          {
+            "clases": [
+              "large-circle",
+              "allocated"
+            ],
+            "iconos": [
+              "passive_active",
+              "chaotic_favor"
+            ],
+            "texto": "1/1",
+            "x": 655,
+            "y": 645
+          },
+          {
+            "clases": [
+              "large-circle",
+              "allocated"
+            ],
+            "iconos": [
+              "passive_active",
+              "resplendent_favor"
+            ],
+            "texto": "1/1",
+            "x": 580,
+            "y": 823
+          },
+          {
+            "clases": [
+              "large-circle",
+              "available"
+            ],
+            "iconos": [
+              "passive_inactive",
+              "grim_retribution"
+            ],
+            "texto": "0/1",
+            "x": 778,
+            "y": 214
+          },
+          {
+            "clases": [
+              "large-circle",
+              "locked"
+            ],
+            "iconos": [
+              "passive_inactive",
+              "colossal_foe"
+            ],
+            "texto": "0/1",
+            "x": 877,
+            "y": 316
+          },
+          {
+            "clases": [
+              "large-circle",
+              "locked"
+            ],
+            "iconos": [
+              "passive_inactive",
+              "malignant_invasion"
+            ],
+            "texto": "0/1",
+            "x": 877,
+            "y": 645
+          }
         ],
-        "muestras": [
-          "<div class=\"viewer-node     category unlocked\" style=\"left: 580px; top: 154px; transform: translate(-50%, -50%) rotate(45deg);\"><img class=\"category-icon-bg\" src=\"https://sunderarmor.com/DIABLO4/SkillTree/category_active.png\" alt=\"Category Background\"><img src=\"https://sunderarmor.com/DIABLO4/SkillTree/category_whispers.png\" alt=\"Category 1\" class=\"category-icon\"></div>",
-          "<div class=\"viewer-node  large-circle   allocated\" style=\"left: 380px; top: 213px; transform: translate(-50%, -50%);\"><img src=\"https://sunderarmor.com/DIABLO4/SkillTree/passive_active.png\" alt=\"\" class=\"node-bg\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/corrupted_roots.png\" alt=\"Corrupted Roots\" class=\"node-icon  node-icon--circle   active \"><div class=\"node-rank-badge\">1/1</div></div>",
-          "<div class=\"viewer-node  large-circle   allocated\" style=\"left: 279px; top: 317px; transform: translate(-50%, -50%);\"><img src=\"https://sunderarmor.com/DIABLO4/SkillTree/passive_active.png\" alt=\"\" class=\"node-bg\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/roots_of_power.png\" alt=\"Roots of Power\" class=\"node-icon  node-icon--circle   active \"><div class=\"node-rank-badge\">1/1</div></div>"
-        ],
-        "restantes": "0",
-        "textos": [
-          "0",
-          "1/1",
-          "0/1"
-        ]
+        "restantes": 0,
+        "slug": "whispers"
       },
       {
-        "activa": false,
-        "actividad": "",
-        "atributos": [
-          "alt",
-          "autocomplete",
-          "class",
-          "d",
-          "fill",
-          "id",
-          "placeholder",
-          "src",
-          "stroke",
-          "stroke-linecap",
-          "stroke-width",
-          "style",
-          "tabindex",
-          "type",
-          "value"
-        ],
-        "clases": {
-          "--noPoints": 7,
-          "active": 10,
-          "allocated": 7,
-          "alt": 1,
-          "available": 2,
-          "category": 1,
-          "category-icon": 1,
-          "category-icon-bg": 1,
-          "diamond": 5,
-          "filters__btn": 1,
-          "game__filters__btn": 1,
-          "game__filters__btn__icon": 1,
-          "game__filters__list": 1,
-          "large-circle": 9,
-          "locked": 5,
-          "node-bg": 14,
-          "node-icon": 14,
-          "node-icon--circle": 9,
-          "node-icon--diamond": 5,
-          "node-rank-badge": 11,
-          "searchbar": 1,
-          "searchbar-close": 1,
-          "searchbar-close-img": 1,
-          "searchbar-icon": 1,
-          "searchbar-input": 1,
-          "skill-line-active-base": 7,
-          "skill-line-active-inner": 7,
-          "skill-line-base": 18,
-          "skill-line-inner": 18,
-          "skill-tree-viewer__content": 1,
-          "skill__tree__header": 1,
-          "skill__tree__header__wrapper": 1,
-          "skill__tree__remaining": 1,
-          "skill__tree__remaining__total": 1,
-          "skill__tree__total": 1,
-          "unlocked": 1,
-          "viewer-canvas": 1,
-          "viewer-lines": 1,
-          "viewer-main": 1,
-          "viewer-node": 15,
-          "warplan-tab": 7,
-          "warplan-tab__icon": 7,
-          "warplan-tabs": 1
-        },
-        "icono": null,
-        "imagenes": [
-          "https://sunderarmor.com/search-icon.svg",
-          "https://sunderarmor.com/close-icon.svg",
-          "https://sunderarmor.com/DIABLO4/UI/fullscreen_icon.svg",
-          "https://sunderarmor.com/DIABLO4/WarPlans/whispers.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/nightmare_dungeons.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/helltides.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/undercity.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/boss_lairs.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/infernal_hordes.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/pits.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/category_active.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/category_whispers.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/passive_active.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/corrupted_roots.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/roots_of_power.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/headrotten_feast.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/skill_minor_active.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/tree_of_plenty.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/skill_minor_inactive.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/fortune_or_famine.png"
-        ],
-        "muestras": [
-          "<div class=\"viewer-node     category unlocked\" style=\"left: 580px; top: 154px; transform: translate(-50%, -50%) rotate(45deg);\"><img class=\"category-icon-bg\" src=\"https://sunderarmor.com/DIABLO4/SkillTree/category_active.png\" alt=\"Category Background\"><img src=\"https://sunderarmor.com/DIABLO4/SkillTree/category_whispers.png\" alt=\"Category 1\" class=\"category-icon\"></div>",
-          "<div class=\"viewer-node  large-circle   allocated\" style=\"left: 380px; top: 213px; transform: translate(-50%, -50%);\"><img src=\"https://sunderarmor.com/DIABLO4/SkillTree/passive_active.png\" alt=\"\" class=\"node-bg\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/corrupted_roots.png\" alt=\"Corrupted Roots\" class=\"node-icon  node-icon--circle   active \"><div class=\"node-rank-badge\">1/1</div></div>",
-          "<div class=\"viewer-node  large-circle   allocated\" style=\"left: 279px; top: 317px; transform: translate(-50%, -50%);\"><img src=\"https://sunderarmor.com/DIABLO4/SkillTree/passive_active.png\" alt=\"\" class=\"node-bg\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/roots_of_power.png\" alt=\"Roots of Power\" class=\"node-icon  node-icon--circle   active \"><div class=\"node-rank-badge\">1/1</div></div>"
-        ],
-        "restantes": "0",
-        "textos": [
-          "0",
-          "1/1",
-          "0/1"
-        ]
-      },
-      {
-        "activa": true,
         "actividad": "Nightmare Dungeons",
-        "atributos": [
-          "alt",
-          "aria-describedby",
-          "autocomplete",
-          "class",
-          "d",
-          "fill",
-          "id",
-          "placeholder",
-          "src",
-          "stroke",
-          "stroke-linecap",
-          "stroke-width",
-          "style",
-          "tabindex",
-          "type",
-          "value"
-        ],
-        "clases": {
-          "--noPoints": 6,
-          "active": 12,
-          "allocated": 7,
-          "alt": 1,
-          "available": 4,
-          "category": 1,
-          "category-icon": 1,
-          "category-icon-bg": 1,
-          "diamond": 2,
-          "filters__btn": 1,
-          "game__filters__btn": 1,
-          "game__filters__btn__icon": 1,
-          "game__filters__list": 1,
-          "large-circle": 11,
-          "locked": 2,
-          "node-bg": 13,
-          "node-icon": 13,
-          "node-icon--circle": 11,
-          "node-icon--diamond": 2,
-          "node-rank-badge": 11,
-          "searchbar": 1,
-          "searchbar-close": 1,
-          "searchbar-close-img": 1,
-          "searchbar-icon": 1,
-          "searchbar-input": 1,
-          "skill-line-active-base": 7,
-          "skill-line-active-inner": 7,
-          "skill-line-base": 13,
-          "skill-line-inner": 13,
-          "skill-tree-viewer__content": 1,
-          "skill__tree__header": 1,
-          "skill__tree__header__wrapper": 1,
-          "skill__tree__remaining": 1,
-          "skill__tree__remaining__total": 1,
-          "skill__tree__total": 1,
-          "unlocked": 1,
-          "viewer-canvas": 1,
-          "viewer-lines": 1,
-          "viewer-main": 1,
-          "viewer-node": 14,
-          "warplan-tab": 7,
-          "warplan-tab__icon": 7,
-          "warplan-tabs": 1
-        },
         "icono": "https://sunderarmor.com/DIABLO4/WarPlans/nightmare_dungeons.png",
-        "imagenes": [
-          "https://sunderarmor.com/search-icon.svg",
-          "https://sunderarmor.com/close-icon.svg",
-          "https://sunderarmor.com/DIABLO4/UI/fullscreen_icon.svg",
-          "https://sunderarmor.com/DIABLO4/WarPlans/whispers.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/nightmare_dungeons.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/helltides.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/undercity.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/boss_lairs.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/infernal_hordes.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/pits.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/category_active.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/category_nightmare_dungeons.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/passive_active.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/waking_spoils.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/gauntlet.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/nemesis.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/passive_inactive.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/rewarded_faith.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/fearless_conviction.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/dread_revival.png"
+        "nodos": [
+          {
+            "clases": [
+              "category",
+              "unlocked"
+            ],
+            "iconos": [
+              "category_active",
+              "category_nightmare_dungeons"
+            ],
+            "texto": null,
+            "x": 325,
+            "y": 170
+          },
+          {
+            "clases": [
+              "large-circle",
+              "allocated"
+            ],
+            "iconos": [
+              "passive_active",
+              "waking_spoils"
+            ],
+            "texto": "1/1",
+            "x": 248,
+            "y": 247
+          },
+          {
+            "clases": [
+              "large-circle",
+              "allocated"
+            ],
+            "iconos": [
+              "passive_active",
+              "gauntlet"
+            ],
+            "texto": "1/1",
+            "x": 175,
+            "y": 288
+          },
+          {
+            "clases": [
+              "large-circle",
+              "allocated"
+            ],
+            "iconos": [
+              "passive_active",
+              "nemesis"
+            ],
+            "texto": "1/1",
+            "x": 103,
+            "y": 409
+          },
+          {
+            "clases": [
+              "large-circle",
+              "available"
+            ],
+            "iconos": [
+              "passive_inactive",
+              "rewarded_faith"
+            ],
+            "texto": "0/1",
+            "x": 248,
+            "y": 408
+          },
+          {
+            "clases": [
+              "large-circle",
+              "allocated"
+            ],
+            "iconos": [
+              "passive_active",
+              "fearless_conviction"
+            ],
+            "texto": "1/1",
+            "x": 175,
+            "y": 570
+          },
+          {
+            "clases": [
+              "large-circle",
+              "available"
+            ],
+            "iconos": [
+              "passive_inactive",
+              "dread_revival"
+            ],
+            "texto": "0/1",
+            "x": 319,
+            "y": 327
+          },
+          {
+            "clases": [
+              "large-circle",
+              "locked"
+            ],
+            "iconos": [
+              "passive_inactive",
+              "recurring_nightmare"
+            ],
+            "texto": "0/1",
+            "x": 319,
+            "y": 490
+          },
+          {
+            "clases": [
+              "large-circle",
+              "locked"
+            ],
+            "iconos": [
+              "passive_inactive",
+              "branching_pathways"
+            ],
+            "texto": "0/1",
+            "x": 319,
+            "y": 650
+          },
+          {
+            "clases": [
+              "large-circle",
+              "allocated"
+            ],
+            "iconos": [
+              "passive_active",
+              "goblinfall"
+            ],
+            "texto": "1/1",
+            "x": 390,
+            "y": 247
+          },
+          {
+            "clases": [
+              "large-circle",
+              "allocated"
+            ],
+            "iconos": [
+              "passive_active",
+              "horadric_hunter"
+            ],
+            "texto": "1/1",
+            "x": 463,
+            "y": 288
+          },
+          {
+            "clases": [
+              "large-circle",
+              "allocated"
+            ],
+            "iconos": [
+              "passive_active",
+              "greed_is_good"
+            ],
+            "texto": "1/1",
+            "x": 463,
+            "y": 569
+          },
+          {
+            "clases": [
+              "diamond",
+              "available"
+            ],
+            "iconos": [
+              "skill_minor_inactive",
+              "cipher_maps"
+            ],
+            "texto": null,
+            "x": 391,
+            "y": 409
+          },
+          {
+            "clases": [
+              "diamond",
+              "available"
+            ],
+            "iconos": [
+              "skill_minor_inactive",
+              "altar_of_avarice"
+            ],
+            "texto": null,
+            "x": 535,
+            "y": 409
+          }
         ],
-        "muestras": [
-          "<div class=\"viewer-node     category unlocked\" style=\"left: 325px; top: 170px; transform: translate(-50%, -50%) rotate(45deg);\"><img class=\"category-icon-bg\" src=\"https://sunderarmor.com/DIABLO4/SkillTree/category_active.png\" alt=\"Category Background\"><img src=\"https://sunderarmor.com/DIABLO4/SkillTree/category_nightmare_dungeons.png\" alt=\"Category 1\" class=\"category-icon\"></div>",
-          "<div class=\"viewer-node  large-circle   allocated\" style=\"left: 248px; top: 247px; transform: translate(-50%, -50%);\"><img src=\"https://sunderarmor.com/DIABLO4/SkillTree/passive_active.png\" alt=\"\" class=\"node-bg\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/waking_spoils.png\" alt=\"Waking Spoils\" class=\"node-icon  node-icon--circle   active \"><div class=\"node-rank-badge\">1/1</div></div>",
-          "<div class=\"viewer-node  large-circle   allocated\" style=\"left: 175px; top: 288px; transform: translate(-50%, -50%);\"><img src=\"https://sunderarmor.com/DIABLO4/SkillTree/passive_active.png\" alt=\"\" class=\"node-bg\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/gauntlet.png\" alt=\"Gauntlet\" class=\"node-icon  node-icon--circle   active \"><div class=\"node-rank-badge\">1/1</div></div>"
-        ],
-        "restantes": "0",
-        "textos": [
-          "0",
-          "1/1",
-          "0/1"
-        ]
+        "restantes": 0,
+        "slug": "nightmare_dungeons"
       },
       {
-        "activa": false,
-        "actividad": "",
-        "atributos": [
-          "alt",
-          "autocomplete",
-          "class",
-          "d",
-          "fill",
-          "id",
-          "placeholder",
-          "src",
-          "stroke",
-          "stroke-linecap",
-          "stroke-width",
-          "style",
-          "tabindex",
-          "type",
-          "value"
-        ],
-        "clases": {
-          "--noPoints": 6,
-          "active": 12,
-          "allocated": 7,
-          "alt": 1,
-          "available": 4,
-          "category": 1,
-          "category-icon": 1,
-          "category-icon-bg": 1,
-          "diamond": 2,
-          "filters__btn": 1,
-          "game__filters__btn": 1,
-          "game__filters__btn__icon": 1,
-          "game__filters__list": 1,
-          "large-circle": 11,
-          "locked": 2,
-          "node-bg": 13,
-          "node-icon": 13,
-          "node-icon--circle": 11,
-          "node-icon--diamond": 2,
-          "node-rank-badge": 11,
-          "searchbar": 1,
-          "searchbar-close": 1,
-          "searchbar-close-img": 1,
-          "searchbar-icon": 1,
-          "searchbar-input": 1,
-          "skill-line-active-base": 7,
-          "skill-line-active-inner": 7,
-          "skill-line-base": 13,
-          "skill-line-inner": 13,
-          "skill-tree-viewer__content": 1,
-          "skill__tree__header": 1,
-          "skill__tree__header__wrapper": 1,
-          "skill__tree__remaining": 1,
-          "skill__tree__remaining__total": 1,
-          "skill__tree__total": 1,
-          "unlocked": 1,
-          "viewer-canvas": 1,
-          "viewer-lines": 1,
-          "viewer-main": 1,
-          "viewer-node": 14,
-          "warplan-tab": 7,
-          "warplan-tab__icon": 7,
-          "warplan-tabs": 1
-        },
-        "icono": null,
-        "imagenes": [
-          "https://sunderarmor.com/search-icon.svg",
-          "https://sunderarmor.com/close-icon.svg",
-          "https://sunderarmor.com/DIABLO4/UI/fullscreen_icon.svg",
-          "https://sunderarmor.com/DIABLO4/WarPlans/whispers.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/nightmare_dungeons.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/helltides.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/undercity.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/boss_lairs.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/infernal_hordes.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/pits.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/category_active.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/category_nightmare_dungeons.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/passive_active.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/waking_spoils.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/gauntlet.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/nemesis.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/passive_inactive.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/rewarded_faith.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/fearless_conviction.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/dread_revival.png"
-        ],
-        "muestras": [
-          "<div class=\"viewer-node     category unlocked\" style=\"left: 325px; top: 170px; transform: translate(-50%, -50%) rotate(45deg);\"><img class=\"category-icon-bg\" src=\"https://sunderarmor.com/DIABLO4/SkillTree/category_active.png\" alt=\"Category Background\"><img src=\"https://sunderarmor.com/DIABLO4/SkillTree/category_nightmare_dungeons.png\" alt=\"Category 1\" class=\"category-icon\"></div>",
-          "<div class=\"viewer-node  large-circle   allocated\" style=\"left: 248px; top: 247px; transform: translate(-50%, -50%);\"><img src=\"https://sunderarmor.com/DIABLO4/SkillTree/passive_active.png\" alt=\"\" class=\"node-bg\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/waking_spoils.png\" alt=\"Waking Spoils\" class=\"node-icon  node-icon--circle   active \"><div class=\"node-rank-badge\">1/1</div></div>",
-          "<div class=\"viewer-node  large-circle   allocated\" style=\"left: 175px; top: 288px; transform: translate(-50%, -50%);\"><img src=\"https://sunderarmor.com/DIABLO4/SkillTree/passive_active.png\" alt=\"\" class=\"node-bg\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/gauntlet.png\" alt=\"Gauntlet\" class=\"node-icon  node-icon--circle   active \"><div class=\"node-rank-badge\">1/1</div></div>"
-        ],
-        "restantes": "0",
-        "textos": [
-          "0",
-          "1/1",
-          "0/1"
-        ]
-      },
-      {
-        "activa": true,
         "actividad": "Helltides",
-        "atributos": [
-          "alt",
-          "aria-describedby",
-          "autocomplete",
-          "class",
-          "d",
-          "fill",
-          "id",
-          "placeholder",
-          "src",
-          "stroke",
-          "stroke-linecap",
-          "stroke-width",
-          "style",
-          "tabindex",
-          "type",
-          "value"
-        ],
-        "clases": {
-          "--noPoints": 10,
-          "active": 13,
-          "allocated": 7,
-          "alt": 1,
-          "available": 5,
-          "category": 1,
-          "category-icon": 1,
-          "category-icon-bg": 1,
-          "diamond": 7,
-          "filters__btn": 1,
-          "game__filters__btn": 1,
-          "game__filters__btn__icon": 1,
-          "game__filters__list": 1,
-          "large-circle": 10,
-          "locked": 5,
-          "node-bg": 17,
-          "node-icon": 17,
-          "node-icon--circle": 10,
-          "node-icon--diamond": 7,
-          "node-rank-badge": 12,
-          "searchbar": 1,
-          "searchbar-close": 1,
-          "searchbar-close-img": 1,
-          "searchbar-icon": 1,
-          "searchbar-input": 1,
-          "skill-line-active-base": 7,
-          "skill-line-active-inner": 7,
-          "skill-line-base": 17,
-          "skill-line-inner": 17,
-          "skill-tree-viewer__content": 1,
-          "skill__tree__header": 1,
-          "skill__tree__header__wrapper": 1,
-          "skill__tree__remaining": 1,
-          "skill__tree__remaining__total": 1,
-          "skill__tree__total": 1,
-          "unlocked": 1,
-          "viewer-canvas": 1,
-          "viewer-lines": 1,
-          "viewer-main": 1,
-          "viewer-node": 18,
-          "warplan-tab": 7,
-          "warplan-tab__icon": 7,
-          "warplan-tabs": 1
-        },
         "icono": "https://sunderarmor.com/DIABLO4/WarPlans/helltides.png",
-        "imagenes": [
-          "https://sunderarmor.com/search-icon.svg",
-          "https://sunderarmor.com/close-icon.svg",
-          "https://sunderarmor.com/DIABLO4/UI/fullscreen_icon.svg",
-          "https://sunderarmor.com/DIABLO4/WarPlans/whispers.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/nightmare_dungeons.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/helltides.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/undercity.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/boss_lairs.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/infernal_hordes.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/pits.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/category_active.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/category_helltides.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/passive_active.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/tainted_shrines.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/hated_foe.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/skill_minor_active.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/meat_brothers.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/skill_minor_inactive.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/infernal_rite.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/passive_inactive.png"
+        "nodos": [
+          {
+            "clases": [
+              "category",
+              "unlocked"
+            ],
+            "iconos": [
+              "category_active",
+              "category_helltides"
+            ],
+            "texto": null,
+            "x": 329,
+            "y": 229
+          },
+          {
+            "clases": [
+              "large-circle",
+              "allocated"
+            ],
+            "iconos": [
+              "passive_active",
+              "tainted_shrines"
+            ],
+            "texto": "1/1",
+            "x": 257,
+            "y": 298
+          },
+          {
+            "clases": [
+              "large-circle",
+              "allocated"
+            ],
+            "iconos": [
+              "passive_active",
+              "hated_foe"
+            ],
+            "texto": "1/1",
+            "x": 184,
+            "y": 393
+          },
+          {
+            "clases": [
+              "diamond",
+              "allocated"
+            ],
+            "iconos": [
+              "skill_minor_active",
+              "meat_brothers"
+            ],
+            "texto": "1/1",
+            "x": 59,
+            "y": 465
+          },
+          {
+            "clases": [
+              "diamond",
+              "locked"
+            ],
+            "iconos": [
+              "skill_minor_inactive",
+              "infernal_rite"
+            ],
+            "texto": null,
+            "x": 131,
+            "y": 555
+          },
+          {
+            "clases": [
+              "large-circle",
+              "available"
+            ],
+            "iconos": [
+              "passive_inactive",
+              "night_terrors"
+            ],
+            "texto": "0/1",
+            "x": 187,
+            "y": 633
+          },
+          {
+            "clases": [
+              "large-circle",
+              "allocated"
+            ],
+            "iconos": [
+              "passive_active",
+              "hellmouth"
+            ],
+            "texto": "1/1",
+            "x": 328,
+            "y": 392
+          },
+          {
+            "clases": [
+              "diamond",
+              "locked"
+            ],
+            "iconos": [
+              "skill_minor_inactive",
+              "planar_tremors"
+            ],
+            "texto": null,
+            "x": 257,
+            "y": 555
+          },
+          {
+            "clases": [
+              "diamond",
+              "allocated"
+            ],
+            "iconos": [
+              "skill_minor_active",
+              "writhe_and_rot"
+            ],
+            "texto": "1/1",
+            "x": 328,
+            "y": 555
+          },
+          {
+            "clases": [
+              "diamond",
+              "locked"
+            ],
+            "iconos": [
+              "skill_minor_inactive",
+              "crimson_scent"
+            ],
+            "texto": null,
+            "x": 401,
+            "y": 556
+          },
+          {
+            "clases": [
+              "large-circle",
+              "locked"
+            ],
+            "iconos": [
+              "passive_inactive",
+              "chaotic_echoes"
+            ],
+            "texto": "0/1",
+            "x": 255,
+            "y": 720
+          },
+          {
+            "clases": [
+              "large-circle",
+              "available"
+            ],
+            "iconos": [
+              "passive_inactive",
+              "bursting_brood"
+            ],
+            "texto": "0/1",
+            "x": 328,
+            "y": 719
+          },
+          {
+            "clases": [
+              "large-circle",
+              "locked"
+            ],
+            "iconos": [
+              "passive_inactive",
+              "bound_by_blood"
+            ],
+            "texto": "0/1",
+            "x": 400,
+            "y": 720
+          },
+          {
+            "clases": [
+              "large-circle",
+              "allocated"
+            ],
+            "iconos": [
+              "passive_active",
+              "wretched_vermin"
+            ],
+            "texto": "1/1",
+            "x": 400,
+            "y": 299
+          },
+          {
+            "clases": [
+              "large-circle",
+              "allocated"
+            ],
+            "iconos": [
+              "passive_active",
+              "fall_of_the_fell"
+            ],
+            "texto": "1/1",
+            "x": 470,
+            "y": 394
+          },
+          {
+            "clases": [
+              "diamond",
+              "available"
+            ],
+            "iconos": [
+              "skill_minor_inactive",
+              "undying_embers"
+            ],
+            "texto": null,
+            "x": 598,
+            "y": 467
+          },
+          {
+            "clases": [
+              "diamond",
+              "available"
+            ],
+            "iconos": [
+              "skill_minor_inactive",
+              "ashes_to_ashes"
+            ],
+            "texto": null,
+            "x": 525,
+            "y": 556
+          },
+          {
+            "clases": [
+              "large-circle",
+              "available"
+            ],
+            "iconos": [
+              "passive_inactive",
+              "hell's_prize"
+            ],
+            "texto": "0/1",
+            "x": 470,
+            "y": 636
+          }
         ],
-        "muestras": [
-          "<div class=\"viewer-node     category unlocked\" style=\"left: 329px; top: 229px; transform: translate(-50%, -50%) rotate(45deg);\"><img class=\"category-icon-bg\" src=\"https://sunderarmor.com/DIABLO4/SkillTree/category_active.png\" alt=\"Category Background\"><img src=\"https://sunderarmor.com/DIABLO4/SkillTree/category_helltides.png\" alt=\"Category 1\" class=\"category-icon\"></div>",
-          "<div class=\"viewer-node  large-circle   allocated\" style=\"left: 257px; top: 298px; transform: translate(-50%, -50%);\"><img src=\"https://sunderarmor.com/DIABLO4/SkillTree/passive_active.png\" alt=\"\" class=\"node-bg\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/tainted_shrines.png\" alt=\"Tainted Shrines\" class=\"node-icon  node-icon--circle   active \"><div class=\"node-rank-badge\">1/1</div></div>",
-          "<div class=\"viewer-node  large-circle   allocated\" style=\"left: 184px; top: 393px; transform: translate(-50%, -50%);\"><img src=\"https://sunderarmor.com/DIABLO4/SkillTree/passive_active.png\" alt=\"\" class=\"node-bg\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/hated_foe.png\" alt=\"Hated Foe\" class=\"node-icon  node-icon--circle   active \"><div class=\"node-rank-badge\">1/1</div></div>"
-        ],
-        "restantes": "0",
-        "textos": [
-          "0",
-          "1/1",
-          "0/1"
-        ]
+        "restantes": 0,
+        "slug": "helltides"
       },
       {
-        "activa": false,
-        "actividad": "",
-        "atributos": [
-          "alt",
-          "autocomplete",
-          "class",
-          "d",
-          "fill",
-          "id",
-          "placeholder",
-          "src",
-          "stroke",
-          "stroke-linecap",
-          "stroke-width",
-          "style",
-          "tabindex",
-          "type",
-          "value"
-        ],
-        "clases": {
-          "--noPoints": 10,
-          "active": 13,
-          "allocated": 7,
-          "alt": 1,
-          "available": 5,
-          "category": 1,
-          "category-icon": 1,
-          "category-icon-bg": 1,
-          "diamond": 7,
-          "filters__btn": 1,
-          "game__filters__btn": 1,
-          "game__filters__btn__icon": 1,
-          "game__filters__list": 1,
-          "large-circle": 10,
-          "locked": 5,
-          "node-bg": 17,
-          "node-icon": 17,
-          "node-icon--circle": 10,
-          "node-icon--diamond": 7,
-          "node-rank-badge": 12,
-          "searchbar": 1,
-          "searchbar-close": 1,
-          "searchbar-close-img": 1,
-          "searchbar-icon": 1,
-          "searchbar-input": 1,
-          "skill-line-active-base": 7,
-          "skill-line-active-inner": 7,
-          "skill-line-base": 17,
-          "skill-line-inner": 17,
-          "skill-tree-viewer__content": 1,
-          "skill__tree__header": 1,
-          "skill__tree__header__wrapper": 1,
-          "skill__tree__remaining": 1,
-          "skill__tree__remaining__total": 1,
-          "skill__tree__total": 1,
-          "unlocked": 1,
-          "viewer-canvas": 1,
-          "viewer-lines": 1,
-          "viewer-main": 1,
-          "viewer-node": 18,
-          "warplan-tab": 7,
-          "warplan-tab__icon": 7,
-          "warplan-tabs": 1
-        },
-        "icono": null,
-        "imagenes": [
-          "https://sunderarmor.com/search-icon.svg",
-          "https://sunderarmor.com/close-icon.svg",
-          "https://sunderarmor.com/DIABLO4/UI/fullscreen_icon.svg",
-          "https://sunderarmor.com/DIABLO4/WarPlans/whispers.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/nightmare_dungeons.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/helltides.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/undercity.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/boss_lairs.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/infernal_hordes.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/pits.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/category_active.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/category_helltides.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/passive_active.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/tainted_shrines.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/hated_foe.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/skill_minor_active.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/meat_brothers.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/skill_minor_inactive.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/infernal_rite.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/passive_inactive.png"
-        ],
-        "muestras": [
-          "<div class=\"viewer-node     category unlocked\" style=\"left: 329px; top: 229px; transform: translate(-50%, -50%) rotate(45deg);\"><img class=\"category-icon-bg\" src=\"https://sunderarmor.com/DIABLO4/SkillTree/category_active.png\" alt=\"Category Background\"><img src=\"https://sunderarmor.com/DIABLO4/SkillTree/category_helltides.png\" alt=\"Category 1\" class=\"category-icon\"></div>",
-          "<div class=\"viewer-node  large-circle   allocated\" style=\"left: 257px; top: 298px; transform: translate(-50%, -50%);\"><img src=\"https://sunderarmor.com/DIABLO4/SkillTree/passive_active.png\" alt=\"\" class=\"node-bg\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/tainted_shrines.png\" alt=\"Tainted Shrines\" class=\"node-icon  node-icon--circle   active \"><div class=\"node-rank-badge\">1/1</div></div>",
-          "<div class=\"viewer-node  large-circle   allocated\" style=\"left: 184px; top: 393px; transform: translate(-50%, -50%);\"><img src=\"https://sunderarmor.com/DIABLO4/SkillTree/passive_active.png\" alt=\"\" class=\"node-bg\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/hated_foe.png\" alt=\"Hated Foe\" class=\"node-icon  node-icon--circle   active \"><div class=\"node-rank-badge\">1/1</div></div>"
-        ],
-        "restantes": "0",
-        "textos": [
-          "0",
-          "1/1",
-          "0/1"
-        ]
-      },
-      {
-        "activa": true,
         "actividad": "Undercity",
-        "atributos": [
-          "alt",
-          "aria-describedby",
-          "autocomplete",
-          "class",
-          "d",
-          "fill",
-          "id",
-          "placeholder",
-          "src",
-          "stroke",
-          "stroke-linecap",
-          "stroke-width",
-          "style",
-          "tabindex",
-          "type",
-          "value"
-        ],
-        "clases": {
-          "--noPoints": 4,
-          "active": 10,
-          "allocated": 7,
-          "alt": 1,
-          "available": 2,
-          "category": 1,
-          "category-icon": 1,
-          "category-icon-bg": 1,
-          "filters__btn": 1,
-          "game__filters__btn": 1,
-          "game__filters__btn__icon": 1,
-          "game__filters__list": 1,
-          "large-circle": 11,
-          "locked": 2,
-          "node-bg": 11,
-          "node-icon": 11,
-          "node-icon--circle": 11,
-          "node-rank-badge": 11,
-          "searchbar": 1,
-          "searchbar-close": 1,
-          "searchbar-close-img": 1,
-          "searchbar-icon": 1,
-          "searchbar-input": 1,
-          "skill-line-active-base": 7,
-          "skill-line-active-inner": 7,
-          "skill-line-base": 11,
-          "skill-line-inner": 11,
-          "skill-tree-viewer__content": 1,
-          "skill__tree__header": 1,
-          "skill__tree__header__wrapper": 1,
-          "skill__tree__remaining": 1,
-          "skill__tree__remaining__total": 1,
-          "skill__tree__total": 1,
-          "unlocked": 1,
-          "viewer-canvas": 1,
-          "viewer-lines": 1,
-          "viewer-main": 1,
-          "viewer-node": 12,
-          "warplan-tab": 7,
-          "warplan-tab__icon": 7,
-          "warplan-tabs": 1
-        },
         "icono": "https://sunderarmor.com/DIABLO4/WarPlans/undercity.png",
-        "imagenes": [
-          "https://sunderarmor.com/search-icon.svg",
-          "https://sunderarmor.com/close-icon.svg",
-          "https://sunderarmor.com/DIABLO4/UI/fullscreen_icon.svg",
-          "https://sunderarmor.com/DIABLO4/WarPlans/whispers.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/nightmare_dungeons.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/helltides.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/undercity.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/boss_lairs.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/infernal_hordes.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/pits.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/category_active.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/category_undercity.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/passive_active.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/endless_swarm.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/unfortunate_souls.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/gutter_filth.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/passive_inactive.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/trials_and_tributes.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/last_gasp.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/bauble_day.png"
+        "nodos": [
+          {
+            "clases": [
+              "category",
+              "unlocked"
+            ],
+            "iconos": [
+              "category_active",
+              "category_undercity"
+            ],
+            "texto": null,
+            "x": 310,
+            "y": 217
+          },
+          {
+            "clases": [
+              "large-circle",
+              "allocated"
+            ],
+            "iconos": [
+              "passive_active",
+              "endless_swarm"
+            ],
+            "texto": "1/1",
+            "x": 241,
+            "y": 294
+          },
+          {
+            "clases": [
+              "large-circle",
+              "allocated"
+            ],
+            "iconos": [
+              "passive_active",
+              "unfortunate_souls"
+            ],
+            "texto": "1/1",
+            "x": 172,
+            "y": 373
+          },
+          {
+            "clases": [
+              "large-circle",
+              "allocated"
+            ],
+            "iconos": [
+              "passive_active",
+              "gutter_filth"
+            ],
+            "texto": "1/1",
+            "x": 103,
+            "y": 451
+          },
+          {
+            "clases": [
+              "large-circle",
+              "available"
+            ],
+            "iconos": [
+              "passive_inactive",
+              "trials_and_tributes"
+            ],
+            "texto": "0/1",
+            "x": 172,
+            "y": 530
+          },
+          {
+            "clases": [
+              "large-circle",
+              "allocated"
+            ],
+            "iconos": [
+              "passive_active",
+              "last_gasp"
+            ],
+            "texto": "1/1",
+            "x": 311,
+            "y": 373
+          },
+          {
+            "clases": [
+              "large-circle",
+              "allocated"
+            ],
+            "iconos": [
+              "passive_active",
+              "bauble_day"
+            ],
+            "texto": "1/1",
+            "x": 312,
+            "y": 528
+          },
+          {
+            "clases": [
+              "large-circle",
+              "allocated"
+            ],
+            "iconos": [
+              "passive_active",
+              "idols_of_war"
+            ],
+            "texto": "1/1",
+            "x": 311,
+            "y": 684
+          },
+          {
+            "clases": [
+              "large-circle",
+              "allocated"
+            ],
+            "iconos": [
+              "passive_active",
+              "jade_epiphany"
+            ],
+            "texto": "1/1",
+            "x": 381,
+            "y": 294
+          },
+          {
+            "clases": [
+              "large-circle",
+              "available"
+            ],
+            "iconos": [
+              "passive_inactive",
+              "finely_tuned"
+            ],
+            "texto": "0/1",
+            "x": 451,
+            "y": 373
+          },
+          {
+            "clases": [
+              "large-circle",
+              "locked"
+            ],
+            "iconos": [
+              "passive_inactive",
+              "pathfinder"
+            ],
+            "texto": "0/1",
+            "x": 520,
+            "y": 450
+          },
+          {
+            "clases": [
+              "large-circle",
+              "locked"
+            ],
+            "iconos": [
+              "passive_inactive",
+              "initiative"
+            ],
+            "texto": "0/1",
+            "x": 450,
+            "y": 528
+          }
         ],
-        "muestras": [
-          "<div class=\"viewer-node     category unlocked\" style=\"left: 310px; top: 217px; transform: translate(-50%, -50%) rotate(45deg);\"><img class=\"category-icon-bg\" src=\"https://sunderarmor.com/DIABLO4/SkillTree/category_active.png\" alt=\"Category Background\"><img src=\"https://sunderarmor.com/DIABLO4/SkillTree/category_undercity.png\" alt=\"Category 1\" class=\"category-icon\"></div>",
-          "<div class=\"viewer-node  large-circle   allocated\" style=\"left: 241px; top: 294px; transform: translate(-50%, -50%);\"><img src=\"https://sunderarmor.com/DIABLO4/SkillTree/passive_active.png\" alt=\"\" class=\"node-bg\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/endless_swarm.png\" alt=\"Endless Swarm\" class=\"node-icon  node-icon--circle   active \"><div class=\"node-rank-badge\">1/1</div></div>",
-          "<div class=\"viewer-node  large-circle   allocated\" style=\"left: 172px; top: 373px; transform: translate(-50%, -50%);\"><img src=\"https://sunderarmor.com/DIABLO4/SkillTree/passive_active.png\" alt=\"\" class=\"node-bg\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/unfortunate_souls.png\" alt=\"Unfortunate Souls\" class=\"node-icon  node-icon--circle   active \"><div class=\"node-rank-badge\">1/1</div></div>"
-        ],
-        "restantes": "0",
-        "textos": [
-          "0",
-          "1/1",
-          "0/1"
-        ]
+        "restantes": 0,
+        "slug": "undercity"
       },
       {
-        "activa": false,
-        "actividad": "",
-        "atributos": [
-          "alt",
-          "autocomplete",
-          "class",
-          "d",
-          "fill",
-          "id",
-          "placeholder",
-          "src",
-          "stroke",
-          "stroke-linecap",
-          "stroke-width",
-          "style",
-          "tabindex",
-          "type",
-          "value"
-        ],
-        "clases": {
-          "--noPoints": 4,
-          "active": 10,
-          "allocated": 7,
-          "alt": 1,
-          "available": 2,
-          "category": 1,
-          "category-icon": 1,
-          "category-icon-bg": 1,
-          "filters__btn": 1,
-          "game__filters__btn": 1,
-          "game__filters__btn__icon": 1,
-          "game__filters__list": 1,
-          "large-circle": 11,
-          "locked": 2,
-          "node-bg": 11,
-          "node-icon": 11,
-          "node-icon--circle": 11,
-          "node-rank-badge": 11,
-          "searchbar": 1,
-          "searchbar-close": 1,
-          "searchbar-close-img": 1,
-          "searchbar-icon": 1,
-          "searchbar-input": 1,
-          "skill-line-active-base": 7,
-          "skill-line-active-inner": 7,
-          "skill-line-base": 11,
-          "skill-line-inner": 11,
-          "skill-tree-viewer__content": 1,
-          "skill__tree__header": 1,
-          "skill__tree__header__wrapper": 1,
-          "skill__tree__remaining": 1,
-          "skill__tree__remaining__total": 1,
-          "skill__tree__total": 1,
-          "unlocked": 1,
-          "viewer-canvas": 1,
-          "viewer-lines": 1,
-          "viewer-main": 1,
-          "viewer-node": 12,
-          "warplan-tab": 7,
-          "warplan-tab__icon": 7,
-          "warplan-tabs": 1
-        },
-        "icono": null,
-        "imagenes": [
-          "https://sunderarmor.com/search-icon.svg",
-          "https://sunderarmor.com/close-icon.svg",
-          "https://sunderarmor.com/DIABLO4/UI/fullscreen_icon.svg",
-          "https://sunderarmor.com/DIABLO4/WarPlans/whispers.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/nightmare_dungeons.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/helltides.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/undercity.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/boss_lairs.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/infernal_hordes.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/pits.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/category_active.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/category_undercity.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/passive_active.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/endless_swarm.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/unfortunate_souls.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/gutter_filth.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/passive_inactive.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/trials_and_tributes.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/last_gasp.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/bauble_day.png"
-        ],
-        "muestras": [
-          "<div class=\"viewer-node     category unlocked\" style=\"left: 310px; top: 217px; transform: translate(-50%, -50%) rotate(45deg);\"><img class=\"category-icon-bg\" src=\"https://sunderarmor.com/DIABLO4/SkillTree/category_active.png\" alt=\"Category Background\"><img src=\"https://sunderarmor.com/DIABLO4/SkillTree/category_undercity.png\" alt=\"Category 1\" class=\"category-icon\"></div>",
-          "<div class=\"viewer-node  large-circle   allocated\" style=\"left: 241px; top: 294px; transform: translate(-50%, -50%);\"><img src=\"https://sunderarmor.com/DIABLO4/SkillTree/passive_active.png\" alt=\"\" class=\"node-bg\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/endless_swarm.png\" alt=\"Endless Swarm\" class=\"node-icon  node-icon--circle   active \"><div class=\"node-rank-badge\">1/1</div></div>",
-          "<div class=\"viewer-node  large-circle   allocated\" style=\"left: 172px; top: 373px; transform: translate(-50%, -50%);\"><img src=\"https://sunderarmor.com/DIABLO4/SkillTree/passive_active.png\" alt=\"\" class=\"node-bg\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/unfortunate_souls.png\" alt=\"Unfortunate Souls\" class=\"node-icon  node-icon--circle   active \"><div class=\"node-rank-badge\">1/1</div></div>"
-        ],
-        "restantes": "0",
-        "textos": [
-          "0",
-          "1/1",
-          "0/1"
-        ]
-      },
-      {
-        "activa": true,
         "actividad": "Boss Lairs",
-        "atributos": [
-          "alt",
-          "aria-describedby",
-          "autocomplete",
-          "class",
-          "d",
-          "fill",
-          "id",
-          "placeholder",
-          "src",
-          "stroke",
-          "stroke-linecap",
-          "stroke-width",
-          "style",
-          "tabindex",
-          "type",
-          "value"
-        ],
-        "clases": {
-          "--noPoints": 10,
-          "active": 13,
-          "allocated": 7,
-          "alt": 1,
-          "available": 5,
-          "category": 1,
-          "category-icon": 1,
-          "category-icon-bg": 1,
-          "filters__btn": 1,
-          "game__filters__btn": 1,
-          "game__filters__btn__icon": 1,
-          "game__filters__list": 1,
-          "large-circle": 17,
-          "locked": 5,
-          "node-bg": 17,
-          "node-icon": 17,
-          "node-icon--circle": 17,
-          "node-rank-badge": 17,
-          "searchbar": 1,
-          "searchbar-close": 1,
-          "searchbar-close-img": 1,
-          "searchbar-icon": 1,
-          "searchbar-input": 1,
-          "skill-line-active-base": 8,
-          "skill-line-active-inner": 8,
-          "skill-line-base": 21,
-          "skill-line-inner": 21,
-          "skill-tree-viewer__content": 1,
-          "skill__tree__header": 1,
-          "skill__tree__header__wrapper": 1,
-          "skill__tree__remaining": 1,
-          "skill__tree__remaining__total": 1,
-          "skill__tree__total": 1,
-          "unlocked": 1,
-          "viewer-canvas": 1,
-          "viewer-lines": 1,
-          "viewer-main": 1,
-          "viewer-node": 18,
-          "warplan-tab": 7,
-          "warplan-tab__icon": 7,
-          "warplan-tabs": 1
-        },
         "icono": "https://sunderarmor.com/DIABLO4/WarPlans/boss_lairs.png",
-        "imagenes": [
-          "https://sunderarmor.com/search-icon.svg",
-          "https://sunderarmor.com/close-icon.svg",
-          "https://sunderarmor.com/DIABLO4/UI/fullscreen_icon.svg",
-          "https://sunderarmor.com/DIABLO4/WarPlans/whispers.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/nightmare_dungeons.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/helltides.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/undercity.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/boss_lairs.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/infernal_hordes.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/pits.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/category_active.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/category_boss_lairs.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/passive_active.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/lair_of_runes.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/lair_of_plenty.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/grigoire's_gambit.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/duriel's_invasion.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/passive_inactive.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/children_of_zir.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/embers_of_anguish.png"
+        "nodos": [
+          {
+            "clases": [
+              "category",
+              "unlocked"
+            ],
+            "iconos": [
+              "category_active",
+              "category_boss_lairs"
+            ],
+            "texto": null,
+            "x": 325,
+            "y": 170
+          },
+          {
+            "clases": [
+              "large-circle",
+              "allocated"
+            ],
+            "iconos": [
+              "passive_active",
+              "lair_of_runes"
+            ],
+            "texto": "1/1",
+            "x": 55,
+            "y": 250
+          },
+          {
+            "clases": [
+              "large-circle",
+              "allocated"
+            ],
+            "iconos": [
+              "passive_active",
+              "lair_of_plenty"
+            ],
+            "texto": "1/1",
+            "x": 54,
+            "y": 573
+          },
+          {
+            "clases": [
+              "large-circle",
+              "allocated"
+            ],
+            "iconos": [
+              "passive_active",
+              "grigoire's_gambit"
+            ],
+            "texto": "1/1",
+            "x": 145,
+            "y": 330
+          },
+          {
+            "clases": [
+              "large-circle",
+              "allocated"
+            ],
+            "iconos": [
+              "passive_active",
+              "duriel's_invasion"
+            ],
+            "texto": "1/1",
+            "x": 143,
+            "y": 492
+          },
+          {
+            "clases": [
+              "large-circle",
+              "available"
+            ],
+            "iconos": [
+              "passive_inactive",
+              "children_of_zir"
+            ],
+            "texto": "0/1",
+            "x": 235,
+            "y": 412
+          },
+          {
+            "clases": [
+              "large-circle",
+              "locked"
+            ],
+            "iconos": [
+              "passive_inactive",
+              "embers_of_anguish"
+            ],
+            "texto": "0/1",
+            "x": 235,
+            "y": 572
+          },
+          {
+            "clases": [
+              "large-circle",
+              "allocated"
+            ],
+            "iconos": [
+              "passive_active",
+              "golden_hoard"
+            ],
+            "texto": "1/1",
+            "x": 145,
+            "y": 653
+          },
+          {
+            "clases": [
+              "large-circle",
+              "allocated"
+            ],
+            "iconos": [
+              "passive_active",
+              "two_by_two"
+            ],
+            "texto": "1/1",
+            "x": 325,
+            "y": 331
+          },
+          {
+            "clases": [
+              "large-circle",
+              "allocated"
+            ],
+            "iconos": [
+              "passive_active",
+              "greater_nemesis"
+            ],
+            "texto": "1/1",
+            "x": 326,
+            "y": 492
+          },
+          {
+            "clases": [
+              "large-circle",
+              "available"
+            ],
+            "iconos": [
+              "passive_inactive",
+              "ultimate_nemesis"
+            ],
+            "texto": "0/1",
+            "x": 326,
+            "y": 653
+          },
+          {
+            "clases": [
+              "large-circle",
+              "available"
+            ],
+            "iconos": [
+              "passive_inactive",
+              "nemesis_tides"
+            ],
+            "texto": "0/1",
+            "x": 595,
+            "y": 249
+          },
+          {
+            "clases": [
+              "large-circle",
+              "locked"
+            ],
+            "iconos": [
+              "passive_inactive",
+              "infernal_deception"
+            ],
+            "texto": "0/1",
+            "x": 593,
+            "y": 572
+          },
+          {
+            "clases": [
+              "large-circle",
+              "available"
+            ],
+            "iconos": [
+              "passive_inactive",
+              "varshan's_vengeance"
+            ],
+            "texto": "0/1",
+            "x": 503,
+            "y": 330
+          },
+          {
+            "clases": [
+              "large-circle",
+              "locked"
+            ],
+            "iconos": [
+              "passive_inactive",
+              "blood_of_bartuc"
+            ],
+            "texto": "0/1",
+            "x": 505,
+            "y": 491
+          },
+          {
+            "clases": [
+              "large-circle",
+              "available"
+            ],
+            "iconos": [
+              "passive_inactive",
+              "out_of_the_cold"
+            ],
+            "texto": "0/1",
+            "x": 414,
+            "y": 411
+          },
+          {
+            "clases": [
+              "large-circle",
+              "locked"
+            ],
+            "iconos": [
+              "passive_inactive",
+              "dog_of_astaroth"
+            ],
+            "texto": "0/1",
+            "x": 414,
+            "y": 572
+          },
+          {
+            "clases": [
+              "large-circle",
+              "locked"
+            ],
+            "iconos": [
+              "passive_inactive",
+              "exotic_armory"
+            ],
+            "texto": "0/1",
+            "x": 503,
+            "y": 654
+          }
         ],
-        "muestras": [
-          "<div class=\"viewer-node     category unlocked\" style=\"left: 325px; top: 170px; transform: translate(-50%, -50%) rotate(45deg);\"><img class=\"category-icon-bg\" src=\"https://sunderarmor.com/DIABLO4/SkillTree/category_active.png\" alt=\"Category Background\"><img src=\"https://sunderarmor.com/DIABLO4/SkillTree/category_boss_lairs.png\" alt=\"Category 1\" class=\"category-icon\"></div>",
-          "<div class=\"viewer-node  large-circle   allocated\" style=\"left: 55px; top: 250px; transform: translate(-50%, -50%);\"><img src=\"https://sunderarmor.com/DIABLO4/SkillTree/passive_active.png\" alt=\"\" class=\"node-bg\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/lair_of_runes.png\" alt=\"Lair of Runes\" class=\"node-icon  node-icon--circle   active \"><div class=\"node-rank-badge\">1/1</div></div>",
-          "<div class=\"viewer-node  large-circle   allocated\" style=\"left: 54px; top: 573px; transform: translate(-50%, -50%);\"><img src=\"https://sunderarmor.com/DIABLO4/SkillTree/passive_active.png\" alt=\"\" class=\"node-bg\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/lair_of_plenty.png\" alt=\"Lair of Plenty\" class=\"node-icon  node-icon--circle   active \"><div class=\"node-rank-badge\">1/1</div></div>"
-        ],
-        "restantes": "0",
-        "textos": [
-          "0",
-          "1/1",
-          "0/1"
-        ]
+        "restantes": 0,
+        "slug": "boss_lairs"
       },
       {
-        "activa": false,
-        "actividad": "",
-        "atributos": [
-          "alt",
-          "autocomplete",
-          "class",
-          "d",
-          "fill",
-          "id",
-          "placeholder",
-          "src",
-          "stroke",
-          "stroke-linecap",
-          "stroke-width",
-          "style",
-          "tabindex",
-          "type",
-          "value"
-        ],
-        "clases": {
-          "--noPoints": 10,
-          "active": 13,
-          "allocated": 7,
-          "alt": 1,
-          "available": 5,
-          "category": 1,
-          "category-icon": 1,
-          "category-icon-bg": 1,
-          "filters__btn": 1,
-          "game__filters__btn": 1,
-          "game__filters__btn__icon": 1,
-          "game__filters__list": 1,
-          "large-circle": 17,
-          "locked": 5,
-          "node-bg": 17,
-          "node-icon": 17,
-          "node-icon--circle": 17,
-          "node-rank-badge": 17,
-          "searchbar": 1,
-          "searchbar-close": 1,
-          "searchbar-close-img": 1,
-          "searchbar-icon": 1,
-          "searchbar-input": 1,
-          "skill-line-active-base": 8,
-          "skill-line-active-inner": 8,
-          "skill-line-base": 21,
-          "skill-line-inner": 21,
-          "skill-tree-viewer__content": 1,
-          "skill__tree__header": 1,
-          "skill__tree__header__wrapper": 1,
-          "skill__tree__remaining": 1,
-          "skill__tree__remaining__total": 1,
-          "skill__tree__total": 1,
-          "unlocked": 1,
-          "viewer-canvas": 1,
-          "viewer-lines": 1,
-          "viewer-main": 1,
-          "viewer-node": 18,
-          "warplan-tab": 7,
-          "warplan-tab__icon": 7,
-          "warplan-tabs": 1
-        },
-        "icono": null,
-        "imagenes": [
-          "https://sunderarmor.com/search-icon.svg",
-          "https://sunderarmor.com/close-icon.svg",
-          "https://sunderarmor.com/DIABLO4/UI/fullscreen_icon.svg",
-          "https://sunderarmor.com/DIABLO4/WarPlans/whispers.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/nightmare_dungeons.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/helltides.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/undercity.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/boss_lairs.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/infernal_hordes.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/pits.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/category_active.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/category_boss_lairs.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/passive_active.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/lair_of_runes.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/lair_of_plenty.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/grigoire's_gambit.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/duriel's_invasion.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/passive_inactive.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/children_of_zir.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/embers_of_anguish.png"
-        ],
-        "muestras": [
-          "<div class=\"viewer-node     category unlocked\" style=\"left: 325px; top: 170px; transform: translate(-50%, -50%) rotate(45deg);\"><img class=\"category-icon-bg\" src=\"https://sunderarmor.com/DIABLO4/SkillTree/category_active.png\" alt=\"Category Background\"><img src=\"https://sunderarmor.com/DIABLO4/SkillTree/category_boss_lairs.png\" alt=\"Category 1\" class=\"category-icon\"></div>",
-          "<div class=\"viewer-node  large-circle   allocated\" style=\"left: 55px; top: 250px; transform: translate(-50%, -50%);\"><img src=\"https://sunderarmor.com/DIABLO4/SkillTree/passive_active.png\" alt=\"\" class=\"node-bg\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/lair_of_runes.png\" alt=\"Lair of Runes\" class=\"node-icon  node-icon--circle   active \"><div class=\"node-rank-badge\">1/1</div></div>",
-          "<div class=\"viewer-node  large-circle   allocated\" style=\"left: 54px; top: 573px; transform: translate(-50%, -50%);\"><img src=\"https://sunderarmor.com/DIABLO4/SkillTree/passive_active.png\" alt=\"\" class=\"node-bg\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/lair_of_plenty.png\" alt=\"Lair of Plenty\" class=\"node-icon  node-icon--circle   active \"><div class=\"node-rank-badge\">1/1</div></div>"
-        ],
-        "restantes": "0",
-        "textos": [
-          "0",
-          "1/1",
-          "0/1"
-        ]
-      },
-      {
-        "activa": true,
         "actividad": "Infernal Hordes",
-        "atributos": [
-          "alt",
-          "aria-describedby",
-          "autocomplete",
-          "class",
-          "d",
-          "fill",
-          "id",
-          "placeholder",
-          "src",
-          "stroke",
-          "stroke-linecap",
-          "stroke-width",
-          "style",
-          "tabindex",
-          "type",
-          "value"
-        ],
-        "clases": {
-          "--noPoints": 8,
-          "active": 10,
-          "allocated": 7,
-          "alt": 1,
-          "available": 2,
-          "category": 1,
-          "category-icon": 1,
-          "category-icon-bg": 1,
-          "diamond": 6,
-          "filters__btn": 1,
-          "game__filters__btn": 1,
-          "game__filters__btn__icon": 1,
-          "game__filters__list": 1,
-          "large-circle": 9,
-          "locked": 6,
-          "node-bg": 15,
-          "node-icon": 15,
-          "node-icon--circle": 9,
-          "node-icon--diamond": 6,
-          "node-rank-badge": 11,
-          "searchbar": 1,
-          "searchbar-close": 1,
-          "searchbar-close-img": 1,
-          "searchbar-icon": 1,
-          "searchbar-input": 1,
-          "skill-line-active-base": 7,
-          "skill-line-active-inner": 7,
-          "skill-line-base": 16,
-          "skill-line-inner": 16,
-          "skill-tree-viewer__content": 1,
-          "skill__tree__header": 1,
-          "skill__tree__header__wrapper": 1,
-          "skill__tree__remaining": 1,
-          "skill__tree__remaining__total": 1,
-          "skill__tree__total": 1,
-          "unlocked": 1,
-          "viewer-canvas": 1,
-          "viewer-lines": 1,
-          "viewer-main": 1,
-          "viewer-node": 16,
-          "warplan-tab": 7,
-          "warplan-tab__icon": 7,
-          "warplan-tabs": 1
-        },
         "icono": "https://sunderarmor.com/DIABLO4/WarPlans/infernal_hordes.png",
-        "imagenes": [
-          "https://sunderarmor.com/search-icon.svg",
-          "https://sunderarmor.com/close-icon.svg",
-          "https://sunderarmor.com/DIABLO4/UI/fullscreen_icon.svg",
-          "https://sunderarmor.com/DIABLO4/WarPlans/whispers.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/nightmare_dungeons.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/helltides.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/undercity.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/boss_lairs.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/infernal_hordes.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/pits.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/category_active.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/category_infernal_hordes.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/passive_inactive.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/exalted_council.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/council_coffers.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/skill_minor_inactive.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/forged_in_flame.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/flawless_find.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/infernal_hoard.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/passive_active.png"
+        "nodos": [
+          {
+            "clases": [
+              "category",
+              "unlocked"
+            ],
+            "iconos": [
+              "category_active",
+              "category_infernal_hordes"
+            ],
+            "texto": null,
+            "x": 323,
+            "y": 168
+          },
+          {
+            "clases": [
+              "large-circle",
+              "available"
+            ],
+            "iconos": [
+              "passive_inactive",
+              "exalted_council"
+            ],
+            "texto": "0/1",
+            "x": 179,
+            "y": 170
+          },
+          {
+            "clases": [
+              "large-circle",
+              "locked"
+            ],
+            "iconos": [
+              "passive_inactive",
+              "council_coffers"
+            ],
+            "texto": "0/1",
+            "x": 107,
+            "y": 250
+          },
+          {
+            "clases": [
+              "diamond",
+              "locked"
+            ],
+            "iconos": [
+              "skill_minor_inactive",
+              "forged_in_flame"
+            ],
+            "texto": null,
+            "x": 251,
+            "y": 249
+          },
+          {
+            "clases": [
+              "diamond",
+              "locked"
+            ],
+            "iconos": [
+              "skill_minor_inactive",
+              "flawless_find"
+            ],
+            "texto": null,
+            "x": 179,
+            "y": 330
+          },
+          {
+            "clases": [
+              "large-circle",
+              "locked"
+            ],
+            "iconos": [
+              "passive_inactive",
+              "infernal_hoard"
+            ],
+            "texto": "0/1",
+            "x": 107,
+            "y": 413
+          },
+          {
+            "clases": [
+              "large-circle",
+              "allocated"
+            ],
+            "iconos": [
+              "passive_active",
+              "method_and_madness"
+            ],
+            "texto": "1/1",
+            "x": 322,
+            "y": 330
+          },
+          {
+            "clases": [
+              "diamond",
+              "locked"
+            ],
+            "iconos": [
+              "skill_minor_inactive",
+              "reign_in_hell"
+            ],
+            "texto": null,
+            "x": 250,
+            "y": 411
+          },
+          {
+            "clases": [
+              "diamond",
+              "allocated"
+            ],
+            "iconos": [
+              "skill_minor_active",
+              "total_chaos"
+            ],
+            "texto": "1/1",
+            "x": 394,
+            "y": 411
+          },
+          {
+            "clases": [
+              "diamond",
+              "locked"
+            ],
+            "iconos": [
+              "skill_minor_inactive",
+              "pulse_of_aether"
+            ],
+            "texto": null,
+            "x": 250,
+            "y": 574
+          },
+          {
+            "clases": [
+              "diamond",
+              "allocated"
+            ],
+            "iconos": [
+              "skill_minor_active",
+              "bedlam"
+            ],
+            "texto": "1/1",
+            "x": 393,
+            "y": 574
+          },
+          {
+            "clases": [
+              "large-circle",
+              "available"
+            ],
+            "iconos": [
+              "passive_inactive",
+              "impending_doom"
+            ],
+            "texto": "0/1",
+            "x": 321,
+            "y": 492
+          },
+          {
+            "clases": [
+              "large-circle",
+              "allocated"
+            ],
+            "iconos": [
+              "passive_active",
+              "the_black_pact"
+            ],
+            "texto": "1/1",
+            "x": 321,
+            "y": 654
+          },
+          {
+            "clases": [
+              "large-circle",
+              "allocated"
+            ],
+            "iconos": [
+              "passive_active",
+              "cult_of_annihilation"
+            ],
+            "texto": "1/1",
+            "x": 465,
+            "y": 170
+          },
+          {
+            "clases": [
+              "large-circle",
+              "allocated"
+            ],
+            "iconos": [
+              "passive_active",
+              "scale_of_tathamet"
+            ],
+            "texto": "1/1",
+            "x": 537,
+            "y": 251
+          },
+          {
+            "clases": [
+              "large-circle",
+              "allocated"
+            ],
+            "iconos": [
+              "passive_active",
+              "devil's_deal"
+            ],
+            "texto": "1/1",
+            "x": 537,
+            "y": 412
+          }
         ],
-        "muestras": [
-          "<div class=\"viewer-node     category unlocked\" style=\"left: 323px; top: 168px; transform: translate(-50%, -50%) rotate(45deg);\"><img class=\"category-icon-bg\" src=\"https://sunderarmor.com/DIABLO4/SkillTree/category_active.png\" alt=\"Category Background\"><img src=\"https://sunderarmor.com/DIABLO4/SkillTree/category_infernal_hordes.png\" alt=\"Category 1\" class=\"category-icon\"></div>",
-          "<div class=\"viewer-node  large-circle   available\" style=\"left: 179px; top: 170px; transform: translate(-50%, -50%);\"><img src=\"https://sunderarmor.com/DIABLO4/SkillTree/passive_inactive.png\" alt=\"\" class=\"node-bg\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/exalted_council.png\" alt=\"Exalted Council\" class=\"node-icon  node-icon--circle   active --noPoints\"><div class=\"node-rank-badge\">0/1</div></div>",
-          "<div class=\"viewer-node  large-circle   locked\" style=\"left: 107px; top: 250px; transform: translate(-50%, -50%);\"><img src=\"https://sunderarmor.com/DIABLO4/SkillTree/passive_inactive.png\" alt=\"\" class=\"node-bg\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/council_coffers.png\" alt=\"Council Coffers\" class=\"node-icon  node-icon--circle    --noPoints\"><div class=\"node-rank-badge\">0/1</div></div>"
-        ],
-        "restantes": "0",
-        "textos": [
-          "0",
-          "0/1",
-          "1/1"
-        ]
+        "restantes": 0,
+        "slug": "infernal_hordes"
       },
       {
-        "activa": false,
-        "actividad": "",
-        "atributos": [
-          "alt",
-          "autocomplete",
-          "class",
-          "d",
-          "fill",
-          "id",
-          "placeholder",
-          "src",
-          "stroke",
-          "stroke-linecap",
-          "stroke-width",
-          "style",
-          "tabindex",
-          "type",
-          "value"
-        ],
-        "clases": {
-          "--noPoints": 8,
-          "active": 10,
-          "allocated": 7,
-          "alt": 1,
-          "available": 2,
-          "category": 1,
-          "category-icon": 1,
-          "category-icon-bg": 1,
-          "diamond": 6,
-          "filters__btn": 1,
-          "game__filters__btn": 1,
-          "game__filters__btn__icon": 1,
-          "game__filters__list": 1,
-          "large-circle": 9,
-          "locked": 6,
-          "node-bg": 15,
-          "node-icon": 15,
-          "node-icon--circle": 9,
-          "node-icon--diamond": 6,
-          "node-rank-badge": 11,
-          "searchbar": 1,
-          "searchbar-close": 1,
-          "searchbar-close-img": 1,
-          "searchbar-icon": 1,
-          "searchbar-input": 1,
-          "skill-line-active-base": 7,
-          "skill-line-active-inner": 7,
-          "skill-line-base": 16,
-          "skill-line-inner": 16,
-          "skill-tree-viewer__content": 1,
-          "skill__tree__header": 1,
-          "skill__tree__header__wrapper": 1,
-          "skill__tree__remaining": 1,
-          "skill__tree__remaining__total": 1,
-          "skill__tree__total": 1,
-          "unlocked": 1,
-          "viewer-canvas": 1,
-          "viewer-lines": 1,
-          "viewer-main": 1,
-          "viewer-node": 16,
-          "warplan-tab": 7,
-          "warplan-tab__icon": 7,
-          "warplan-tabs": 1
-        },
-        "icono": null,
-        "imagenes": [
-          "https://sunderarmor.com/search-icon.svg",
-          "https://sunderarmor.com/close-icon.svg",
-          "https://sunderarmor.com/DIABLO4/UI/fullscreen_icon.svg",
-          "https://sunderarmor.com/DIABLO4/WarPlans/whispers.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/nightmare_dungeons.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/helltides.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/undercity.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/boss_lairs.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/infernal_hordes.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/pits.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/category_active.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/category_infernal_hordes.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/passive_inactive.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/exalted_council.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/council_coffers.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/skill_minor_inactive.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/forged_in_flame.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/flawless_find.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/infernal_hoard.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/passive_active.png"
-        ],
-        "muestras": [
-          "<div class=\"viewer-node     category unlocked\" style=\"left: 323px; top: 168px; transform: translate(-50%, -50%) rotate(45deg);\"><img class=\"category-icon-bg\" src=\"https://sunderarmor.com/DIABLO4/SkillTree/category_active.png\" alt=\"Category Background\"><img src=\"https://sunderarmor.com/DIABLO4/SkillTree/category_infernal_hordes.png\" alt=\"Category 1\" class=\"category-icon\"></div>",
-          "<div class=\"viewer-node  large-circle   available\" style=\"left: 179px; top: 170px; transform: translate(-50%, -50%);\"><img src=\"https://sunderarmor.com/DIABLO4/SkillTree/passive_inactive.png\" alt=\"\" class=\"node-bg\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/exalted_council.png\" alt=\"Exalted Council\" class=\"node-icon  node-icon--circle   active --noPoints\"><div class=\"node-rank-badge\">0/1</div></div>",
-          "<div class=\"viewer-node  large-circle   locked\" style=\"left: 107px; top: 250px; transform: translate(-50%, -50%);\"><img src=\"https://sunderarmor.com/DIABLO4/SkillTree/passive_inactive.png\" alt=\"\" class=\"node-bg\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/council_coffers.png\" alt=\"Council Coffers\" class=\"node-icon  node-icon--circle    --noPoints\"><div class=\"node-rank-badge\">0/1</div></div>"
-        ],
-        "restantes": "0",
-        "textos": [
-          "0",
-          "0/1",
-          "1/1"
-        ]
-      },
-      {
-        "activa": true,
         "actividad": "Pits",
-        "atributos": [
-          "alt",
-          "aria-describedby",
-          "autocomplete",
-          "class",
-          "d",
-          "fill",
-          "id",
-          "placeholder",
-          "src",
-          "stroke",
-          "stroke-linecap",
-          "stroke-width",
-          "style",
-          "tabindex",
-          "type",
-          "value"
-        ],
-        "clases": {
-          "--noPoints": 6,
-          "active": 10,
-          "allocated": 7,
-          "alt": 1,
-          "available": 2,
-          "category": 1,
-          "category-icon": 1,
-          "category-icon-bg": 1,
-          "diamond": 2,
-          "filters__btn": 1,
-          "game__filters__btn": 1,
-          "game__filters__btn__icon": 1,
-          "game__filters__list": 1,
-          "large-circle": 11,
-          "locked": 4,
-          "node-bg": 13,
-          "node-icon": 13,
-          "node-icon--circle": 11,
-          "node-icon--diamond": 2,
-          "node-rank-badge": 12,
-          "searchbar": 1,
-          "searchbar-close": 1,
-          "searchbar-close-img": 1,
-          "searchbar-icon": 1,
-          "searchbar-input": 1,
-          "skill-line-active-base": 7,
-          "skill-line-active-inner": 7,
-          "skill-line-base": 13,
-          "skill-line-inner": 13,
-          "skill-tree-viewer__content": 1,
-          "skill__tree__header": 1,
-          "skill__tree__header__wrapper": 1,
-          "skill__tree__remaining": 1,
-          "skill__tree__remaining__total": 1,
-          "skill__tree__total": 1,
-          "unlocked": 1,
-          "viewer-canvas": 1,
-          "viewer-lines": 1,
-          "viewer-main": 1,
-          "viewer-node": 14,
-          "warplan-tab": 7,
-          "warplan-tab__icon": 7,
-          "warplan-tabs": 1
-        },
         "icono": "https://sunderarmor.com/DIABLO4/WarPlans/pits.png",
-        "imagenes": [
-          "https://sunderarmor.com/search-icon.svg",
-          "https://sunderarmor.com/close-icon.svg",
-          "https://sunderarmor.com/DIABLO4/UI/fullscreen_icon.svg",
-          "https://sunderarmor.com/DIABLO4/WarPlans/whispers.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/nightmare_dungeons.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/helltides.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/undercity.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/boss_lairs.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/infernal_hordes.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/pits.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/category_active.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/category_pits.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/passive_active.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/choron's_haste.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/passive_inactive.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/choron's_shortcut.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/heart_of_stone.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/damned_thieves.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/choron's_blessing.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/pit_butcher.png"
+        "nodos": [
+          {
+            "clases": [
+              "category",
+              "unlocked"
+            ],
+            "iconos": [
+              "category_active",
+              "category_pits"
+            ],
+            "texto": null,
+            "x": 442,
+            "y": 73
+          },
+          {
+            "clases": [
+              "large-circle",
+              "allocated"
+            ],
+            "iconos": [
+              "passive_active",
+              "choron's_haste"
+            ],
+            "texto": "1/1",
+            "x": 142,
+            "y": 185
+          },
+          {
+            "clases": [
+              "large-circle",
+              "available"
+            ],
+            "iconos": [
+              "passive_inactive",
+              "choron's_shortcut"
+            ],
+            "texto": "0/1",
+            "x": 68,
+            "y": 467
+          },
+          {
+            "clases": [
+              "large-circle",
+              "allocated"
+            ],
+            "iconos": [
+              "passive_active",
+              "heart_of_stone"
+            ],
+            "texto": "1/1",
+            "x": 231,
+            "y": 464
+          },
+          {
+            "clases": [
+              "large-circle",
+              "allocated"
+            ],
+            "iconos": [
+              "passive_active",
+              "damned_thieves"
+            ],
+            "texto": "1/1",
+            "x": 142,
+            "y": 748
+          },
+          {
+            "clases": [
+              "large-circle",
+              "allocated"
+            ],
+            "iconos": [
+              "passive_active",
+              "choron's_blessing"
+            ],
+            "texto": "1/1",
+            "x": 442,
+            "y": 184
+          },
+          {
+            "clases": [
+              "large-circle",
+              "allocated"
+            ],
+            "iconos": [
+              "passive_active",
+              "pit_butcher"
+            ],
+            "texto": "1/1",
+            "x": 442,
+            "y": 384
+          },
+          {
+            "clases": [
+              "large-circle",
+              "allocated"
+            ],
+            "iconos": [
+              "passive_active",
+              "choron's_favor"
+            ],
+            "texto": "1/1",
+            "x": 442,
+            "y": 582
+          },
+          {
+            "clases": [
+              "diamond",
+              "allocated"
+            ],
+            "iconos": [
+              "skill_minor_active",
+              "choron's_soul"
+            ],
+            "texto": "1/1",
+            "x": 343,
+            "y": 745
+          },
+          {
+            "clases": [
+              "diamond",
+              "locked"
+            ],
+            "iconos": [
+              "skill_minor_inactive",
+              "choron's_flesh"
+            ],
+            "texto": null,
+            "x": 543,
+            "y": 746
+          },
+          {
+            "clases": [
+              "large-circle",
+              "available"
+            ],
+            "iconos": [
+              "passive_inactive",
+              "choron's_wager"
+            ],
+            "texto": "0/1",
+            "x": 742,
+            "y": 186
+          },
+          {
+            "clases": [
+              "large-circle",
+              "locked"
+            ],
+            "iconos": [
+              "passive_inactive",
+              "cursed_merchant"
+            ],
+            "texto": "0/1",
+            "x": 655,
+            "y": 465
+          },
+          {
+            "clases": [
+              "large-circle",
+              "locked"
+            ],
+            "iconos": [
+              "passive_inactive",
+              "cursed_rituals"
+            ],
+            "texto": "0/1",
+            "x": 816,
+            "y": 468
+          },
+          {
+            "clases": [
+              "large-circle",
+              "locked"
+            ],
+            "iconos": [
+              "passive_inactive",
+              "cursed_offerings"
+            ],
+            "texto": "0/1",
+            "x": 742,
+            "y": 748
+          }
         ],
-        "muestras": [
-          "<div class=\"viewer-node     category unlocked\" style=\"left: 442px; top: 73px; transform: translate(-50%, -50%) rotate(45deg);\"><img class=\"category-icon-bg\" src=\"https://sunderarmor.com/DIABLO4/SkillTree/category_active.png\" alt=\"Category Background\"><img src=\"https://sunderarmor.com/DIABLO4/SkillTree/category_pits.png\" alt=\"Category 1\" class=\"category-icon\"></div>",
-          "<div class=\"viewer-node  large-circle   allocated\" style=\"left: 142px; top: 185px; transform: translate(-50%, -50%);\"><img src=\"https://sunderarmor.com/DIABLO4/SkillTree/passive_active.png\" alt=\"\" class=\"node-bg\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/choron's_haste.png\" alt=\"Choron's Haste\" class=\"node-icon  node-icon--circle   active \"><div class=\"node-rank-badge\">1/1</div></div>",
-          "<div class=\"viewer-node  large-circle   available\" style=\"left: 68px; top: 467px; transform: translate(-50%, -50%);\"><img src=\"https://sunderarmor.com/DIABLO4/SkillTree/passive_inactive.png\" alt=\"\" class=\"node-bg\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/choron's_shortcut.png\" alt=\"Choron's Shortcut\" class=\"node-icon  node-icon--circle   active --noPoints\"><div class=\"node-rank-badge\">0/1</div></div>"
-        ],
-        "restantes": "0",
-        "textos": [
-          "0",
-          "1/1",
-          "0/1"
-        ]
-      },
-      {
-        "activa": false,
-        "actividad": "",
-        "atributos": [
-          "alt",
-          "autocomplete",
-          "class",
-          "d",
-          "fill",
-          "id",
-          "placeholder",
-          "src",
-          "stroke",
-          "stroke-linecap",
-          "stroke-width",
-          "style",
-          "tabindex",
-          "type",
-          "value"
-        ],
-        "clases": {
-          "--noPoints": 6,
-          "active": 10,
-          "allocated": 7,
-          "alt": 1,
-          "available": 2,
-          "category": 1,
-          "category-icon": 1,
-          "category-icon-bg": 1,
-          "diamond": 2,
-          "filters__btn": 1,
-          "game__filters__btn": 1,
-          "game__filters__btn__icon": 1,
-          "game__filters__list": 1,
-          "large-circle": 11,
-          "locked": 4,
-          "node-bg": 13,
-          "node-icon": 13,
-          "node-icon--circle": 11,
-          "node-icon--diamond": 2,
-          "node-rank-badge": 12,
-          "searchbar": 1,
-          "searchbar-close": 1,
-          "searchbar-close-img": 1,
-          "searchbar-icon": 1,
-          "searchbar-input": 1,
-          "skill-line-active-base": 7,
-          "skill-line-active-inner": 7,
-          "skill-line-base": 13,
-          "skill-line-inner": 13,
-          "skill-tree-viewer__content": 1,
-          "skill__tree__header": 1,
-          "skill__tree__header__wrapper": 1,
-          "skill__tree__remaining": 1,
-          "skill__tree__remaining__total": 1,
-          "skill__tree__total": 1,
-          "unlocked": 1,
-          "viewer-canvas": 1,
-          "viewer-lines": 1,
-          "viewer-main": 1,
-          "viewer-node": 14,
-          "warplan-tab": 7,
-          "warplan-tab__icon": 7,
-          "warplan-tabs": 1
-        },
-        "icono": null,
-        "imagenes": [
-          "https://sunderarmor.com/search-icon.svg",
-          "https://sunderarmor.com/close-icon.svg",
-          "https://sunderarmor.com/DIABLO4/UI/fullscreen_icon.svg",
-          "https://sunderarmor.com/DIABLO4/WarPlans/whispers.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/nightmare_dungeons.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/helltides.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/undercity.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/boss_lairs.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/infernal_hordes.png",
-          "https://sunderarmor.com/DIABLO4/WarPlans/pits.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/category_active.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/category_pits.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/passive_active.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/choron's_haste.png",
-          "https://sunderarmor.com/DIABLO4/SkillTree/passive_inactive.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/choron's_shortcut.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/heart_of_stone.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/damned_thieves.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/choron's_blessing.png",
-          "https://sunderarmor.com/DIABLO4/Skills/VoH2/pit_butcher.png"
-        ],
-        "muestras": [
-          "<div class=\"viewer-node     category unlocked\" style=\"left: 442px; top: 73px; transform: translate(-50%, -50%) rotate(45deg);\"><img class=\"category-icon-bg\" src=\"https://sunderarmor.com/DIABLO4/SkillTree/category_active.png\" alt=\"Category Background\"><img src=\"https://sunderarmor.com/DIABLO4/SkillTree/category_pits.png\" alt=\"Category 1\" class=\"category-icon\"></div>",
-          "<div class=\"viewer-node  large-circle   allocated\" style=\"left: 142px; top: 185px; transform: translate(-50%, -50%);\"><img src=\"https://sunderarmor.com/DIABLO4/SkillTree/passive_active.png\" alt=\"\" class=\"node-bg\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/choron's_haste.png\" alt=\"Choron's Haste\" class=\"node-icon  node-icon--circle   active \"><div class=\"node-rank-badge\">1/1</div></div>",
-          "<div class=\"viewer-node  large-circle   available\" style=\"left: 68px; top: 467px; transform: translate(-50%, -50%);\"><img src=\"https://sunderarmor.com/DIABLO4/SkillTree/passive_inactive.png\" alt=\"\" class=\"node-bg\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/choron's_shortcut.png\" alt=\"Choron's Shortcut\" class=\"node-icon  node-icon--circle   active --noPoints\"><div class=\"node-rank-badge\">0/1</div></div>"
-        ],
-        "restantes": "0",
-        "textos": [
-          "0",
-          "1/1",
-          "0/1"
-        ]
+        "restantes": 0,
+        "slug": "pits"
       }
     ],
     "tooltip": "<div class=\"skill__tooltip skill__tooltip--noScroll scroll-hint\"><div class=\"skill__tooltip__header\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/choron's_haste.png\" class=\"skill__tooltip__icon\" alt=\"Choron's Haste\"><div class=\"skill__tooltip__name\">Choron's Haste<b>Rank 1</b></div></div><div class=\"skill__tooltip__resources\"></div><div class=\"skill__tooltip__description\"><div class=\"skill__tooltip__description__item\">The Pit gains the Haste <span class=\"filter__value\">Mastery</span> objective.</div><div class=\"skill__tooltip__description__item\">When you kill the Guardian gain +1 Glyph Upgrade Chance for every 5 minutes left on the Timer.</div></div> </div>"
@@ -1775,43 +1825,43 @@
     },
     "stats": {
       "clasesInternas": {
-        "0": 73,
+        "0": 69,
         "1": 19,
-        "BludgeoningWeapon": 2,
-        "Pants": 2,
-        "barbarian": 133,
-        "builder__stat": 134,
+        "ChestArmor": 2,
+        "Ring2": 2,
+        "barbarian": 130,
+        "builder__stat": 132,
         "builder__stats__group": 4,
         "builder__stats__list": 1,
         "builder__stats__priority": 14,
         "builder__stats__slot": 14,
         "builder__stats__slot__icon": 23,
         "builder__stats__title": 1,
-        "dropdown": 133,
-        "dropdown__button": 133,
-        "dropdown__button__tempering": 44,
-        "dropdown__button__wrapper": 132,
-        "filled": 133,
-        "greater__affix__button": 105,
-        "greater__affix__button--filled": 44,
-        "greater__affix__img": 105,
+        "dropdown": 130,
+        "dropdown__button": 130,
+        "dropdown__button__tempering": 42,
+        "dropdown__button__wrapper": 130,
+        "filled": 130,
+        "greater__affix__button": 107,
+        "greater__affix__button--filled": 45,
+        "greater__affix__img": 106,
         "null": 10,
-        "stat__dropdown": 133,
-        "stat__dropdown__wrapper": 134,
-        "undefined": 31
+        "stat__dropdown": 130,
+        "stat__dropdown__wrapper": 131,
+        "undefined": 32
       },
       "encontrados": 51,
-      "muestraHtml": "<div class=\"builder__stats__section\"><div class=\"builder__stats__title\">Gear Stats</div><div class=\"builder__stats__list\"><div class=\"builder__stats__group Pants\"><div class=\"builder__stats__slot\"><img class=\"builder__stats__slot__icon\" src=\"https://sunderarmor.com/DIABLO4/Uniques/pants.png\" alt=\"Pants\">Pants</div><div class=\"builder__stats__priority\"><div class=\"builder__stat\"><button class=\"greater__affix__button\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      0\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Strength</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      0\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Maximum Life</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button greater__affix__button--filled\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      1\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Fury Regeneration</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button greater__affix__button--filled\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      0\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Resistance to All Elements</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      0\" disabled",
+      "muestraHtml": "<div class=\"builder__stats__section\"><div class=\"builder__stats__title\">Gear Stats</div><div class=\"builder__stats__list\"><div class=\"builder__stats__group Ring2\"><div class=\"builder__stats__slot\"><img class=\"builder__stats__slot__icon\" src=\"https://sunderarmor.com/DIABLO4/Uniques/ring_2.png\" alt=\"Ring 2\">Ring 2</div><div class=\"builder__stats__priority\"><div class=\"builder__stat\"><button class=\"greater__affix__button\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      0\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Attack Speed</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button greater__affix__button--filled\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      1\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Critical Strike Chance</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      0\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Critical Strike Damage Multiplier</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      0\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Vulnerable Damage Multiplier</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      undefin",
       "selector": "[class*=\"builder__stats\"]",
       "textos": [
         "Gear Stats",
-        "PantsStrengthMaximum LifeFury RegenerationResistance to All ElementsMaximum Life (Worldly Endurance - Defensive)Physical Damage",
-        "Pants",
-        "StrengthMaximum LifeFury RegenerationResistance to All ElementsMaximum Life (Worldly Endurance - Defensive)Physical Damage",
-        "Bludgeoning Weapon2h Mace: 392.7% Overpower DamagePhysical Damage MultiplierCritical Strike Damage MultiplierWeapon DamageMaximum LifeCritical Strike Chance (Worldly Destruction - Weapons)Physical Damage",
-        "Bludgeoning Weapon",
-        "2h Mace: 392.7% Overpower DamagePhysical Damage MultiplierCritical Strike Damage MultiplierWeapon DamageMaximum LifeCritical Strike Chance (Worldly Destruction - Weapons)Physical Damage",
-        "Dual-Wield Weapon 21h MaceWeapon DamageStrengthCritical Strike Damage MultiplierMaximum LifeCritical Strike Chance (Worldly Destruction - Weapons)Physical Damage"
+        "Ring 2Attack SpeedCritical Strike ChanceCritical Strike Damage MultiplierVulnerable Damage MultiplierLucky Hit: Up to a 15% Chance to Restore X Primary Resource (Worldly Stability - Resource)All Skills",
+        "Ring 2",
+        "Attack SpeedCritical Strike ChanceCritical Strike Damage MultiplierVulnerable Damage MultiplierLucky Hit: Up to a 15% Chance to Restore X Primary Resource (Worldly Stability - Resource)All Skills",
+        "Chest ArmorStrengthMaximum ResourceFury RegenerationResistance to All ElementsMaximum Life (Worldly Endurance - Defensive)Maximum Resource",
+        "Chest Armor",
+        "StrengthMaximum ResourceFury RegenerationResistance to All ElementsMaximum Life (Worldly Endurance - Defensive)Maximum Resource",
+        "Bludgeoning Weapon2h Mace: 392.7% Overpower DamagePhysical Damage MultiplierCritical Strike Damage MultiplierWeapon DamageMaximum LifeCritical Strike Chance (Worldly Destruction - Weapons)Physical Damage"
       ]
     },
     "variantes": {
