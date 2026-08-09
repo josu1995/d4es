@@ -5,6 +5,9 @@
 Documento para retomar el proyecto en una conversación nueva. Léelo entero antes de tocar nada:
 la mitad de lo que hay aquí costó horas de averiguar y no es deducible del código.
 
+> Si tienes prisa, empieza por [`COSAS-A-TENER-EN-CUENTA.md`](COSAS-A-TENER-EN-CUENTA.md): es la
+> versión corta, con las reglas que no se rompen y las trampas que cuestan una tarde.
+
 ---
 
 ## 1. Qué es y dónde está
