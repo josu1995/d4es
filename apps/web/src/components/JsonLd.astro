@@ -1,0 +1,15 @@
+---
+/**
+ * Datos estructurados para buscadores. Regla del sitio: aqui NO entra ningun dato
+ * marcado como pendiente de verificar. Publicar como estructurado algo que puede ser
+ * falso es peor que no publicarlo, porque un buscador lo toma al pie de la letra.
+ */
+interface Props {
+  datos: Record<string, unknown>;
+}
+
+const { datos } = Astro.props;
+const json = JSON.stringify({ '@context': 'https://schema.org', ...datos });
+---
+
+<script type="application/ld+json" is:inline set:html={json} />

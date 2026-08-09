@@ -6,9 +6,11 @@ interface Props {
   titulo: string;
   descripcion: string;
   noindex?: boolean;
+  /** Migas de pan para los datos estructurados: [{nombre, url}]. */
+  migas?: { nombre: string; url: string }[];
 }
 
-const { titulo, descripcion, noindex = false } = Astro.props;
+const { titulo, descripcion, noindex = false, migas = [] } = Astro.props;
 const estado = loadEstado();
 const dias = diasHastaFinDeTemporada(estado, new Date());
 const canonical = new URL(Astro.url.pathname, Astro.site ?? 'https://d4es.netlify.app');
@@ -35,6 +37,25 @@ const nav = [
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="es_ES" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="alternate" type="application/rss+xml" title="Cambios en D4es" href="/rss.xml" />
+    {
+      migas.length > 0 && (
+        <script
+          type="application/ld+json"
+          is:inline
+          set:html={JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: migas.map((m, i) => ({
+              '@type': 'ListItem',
+              position: i + 1,
+              name: m.nombre,
+              item: new URL(m.url, canonical).href,
+            })),
+          })}
+        />
+      )
+    }
   </head>
   <body class="min-h-screen flex flex-col">
     <a
