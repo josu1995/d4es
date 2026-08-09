@@ -203,7 +203,7 @@
     "en": "Whirlwind",
     "es": "Torbellino"
   },
-  "updatedAt": "2026-08-09T07:05:01.643Z",
+  "updatedAt": "2026-08-09T09:28:02.013Z",
   "variants": [
     {
       "completeness": {
@@ -212,8 +212,8 @@
         "hasParagon": true,
         "hasSkills": true,
         "hasTalisman": false,
-        "hasWarPlan": false,
-        "score": 0.9
+        "hasWarPlan": true,
+        "score": 0.95
       },
       "gear": {
         "amulet": {
@@ -1602,25 +1602,25 @@
             {
               "category": "skillUpgrade",
               "enUS": "Healing",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__healing",
+              "esES": "Curación",
+              "i18n": "wowhead-es",
+              "idName": "curated_healing",
               "sno": null
             },
             {
               "category": "skillUpgrade",
               "enUS": "Skewer",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__skewer",
+              "esES": "Ensarte",
+              "i18n": "wowhead-es",
+              "idName": "curated_skewer",
               "sno": null
             },
             {
               "category": "skillUpgrade",
               "enUS": "Fury Generation",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__fury_generation",
+              "esES": "Generación de furia",
+              "i18n": "wowhead-es",
+              "idName": "curated_fury_generation",
               "sno": null
             }
           ],
@@ -1642,9 +1642,9 @@
             {
               "category": "skillUpgrade",
               "enUS": "Fury Generation",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__fury_generation",
+              "esES": "Generación de furia",
+              "i18n": "wowhead-es",
+              "idName": "curated_fury_generation",
               "sno": null
             },
             {
@@ -1658,9 +1658,9 @@
             {
               "category": "skillUpgrade",
               "enUS": "Size Bonus",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__size_bonus",
+              "esES": "Bonus de tamaño",
+              "i18n": "wowhead-es",
+              "idName": "curated_size_bonus",
               "sno": null
             }
           ],
@@ -1682,25 +1682,25 @@
             {
               "category": "skillUpgrade",
               "enUS": "Pull",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__pull",
+              "esES": "Atraer",
+              "i18n": "wowhead-es",
+              "idName": "curated_pull",
               "sno": null
             },
             {
               "category": "skillUpgrade",
               "enUS": "Death From Above",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__death_from_above",
+              "esES": "Muerte desde el cielo",
+              "i18n": "wowhead-es",
+              "idName": "curated_death_from_above",
               "sno": null
             },
             {
               "category": "skillUpgrade",
               "enUS": "Fury Generation",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__fury_generation",
+              "esES": "Generación de furia",
+              "i18n": "wowhead-es",
+              "idName": "curated_fury_generation",
               "sno": null
             }
           ],
@@ -1722,25 +1722,25 @@
             {
               "category": "skillUpgrade",
               "enUS": "Damage Bonus",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__damage_bonus",
+              "esES": "Bonus de daño",
+              "i18n": "wowhead-es",
+              "idName": "curated_damage_bonus",
               "sno": null
             },
             {
               "category": "skillUpgrade",
               "enUS": "Empowered",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__empowered",
+              "esES": "Potenciados",
+              "i18n": "wowhead-es",
+              "idName": "curated_empowered",
               "sno": null
             },
             {
               "category": "skillUpgrade",
               "enUS": "Attack Speed and Damage Bonus",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__attack_speed_and_damage_bonus",
+              "esES": "Bonus de daño y velocidad de ataque",
+              "i18n": "wowhead-es",
+              "idName": "curated_attack_speed_and_damage_bonus",
               "sno": null
             }
           ],
@@ -1762,25 +1762,25 @@
             {
               "category": "skillUpgrade",
               "enUS": "Duration Bonus",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__duration_bonus",
+              "esES": "Bonus de duración",
+              "i18n": "wowhead-es",
+              "idName": "curated_duration_bonus",
               "sno": null
             },
             {
               "category": "skillUpgrade",
               "enUS": "Bawl",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__bawl",
+              "esES": "Berreo",
+              "i18n": "wowhead-es",
+              "idName": "curated_bawl",
               "sno": null
             },
             {
               "category": "skillUpgrade",
               "enUS": "Damage Bonus",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__damage_bonus",
+              "esES": "Bonus de daño",
+              "i18n": "wowhead-es",
+              "idName": "curated_damage_bonus",
               "sno": null
             }
           ],
@@ -1802,9 +1802,9 @@
             {
               "category": "skillUpgrade",
               "enUS": "Cost Damage Bonus",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__cost_damage_bonus",
+              "esES": "Bonus de daño de coste",
+              "i18n": "wowhead-es",
+              "idName": "curated_cost_damage_bonus",
               "sno": null
             },
             {
@@ -1818,9 +1818,9 @@
             {
               "category": "skillUpgrade",
               "enUS": "Channel Damage Bonus",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__channel_damage_bonus",
+              "esES": "Bonus de daño de canalización",
+              "i18n": "wowhead-es",
+              "idName": "curated_channel_damage_bonus",
               "sno": null
             }
           ],
@@ -1829,17 +1829,426 @@
       ],
       "source": {
         "author": "Rob2628",
-        "capturedAt": "2026-08-09T07:05:01.643Z",
+        "capturedAt": "2026-08-09T09:28:02.013Z",
         "externalId": "2c273831-6609-4414-8486-6da72c903e83",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "fe8aa2572f41d3f1f531509119f75dfdae109dcd00a4292fa68b8afcf369908a",
+        "snapshotHash": "6c38ef15f0b9dbe1afb3454a5dafbe4478287f409a7468ad2a8bb453a66dde71",
         "url": "https://d4builds.gg/builds/2c273831-6609-4414-8486-6da72c903e83/?var=0",
         "variantIndex": 0,
         "variantLabel": "Standard Build"
       },
       "talisman": null,
-      "warPlan": null
+      "warPlan": {
+        "activities": [
+          {
+            "nodes": [
+              {
+                "minor": false,
+                "ref": {
+                  "category": "warPlanNode",
+                  "enUS": "Corrupted Roots",
+                  "esES": null,
+                  "i18n": "none",
+                  "idName": "warPlanNode__corrupted_roots",
+                  "sno": null
+                },
+                "slug": "corrupted_roots"
+              },
+              {
+                "minor": true,
+                "ref": {
+                  "category": "warPlanNode",
+                  "enUS": "Tree of Plenty",
+                  "esES": null,
+                  "i18n": "none",
+                  "idName": "warPlanNode__tree_of_plenty",
+                  "sno": null
+                },
+                "slug": "tree_of_plenty"
+              },
+              {
+                "minor": true,
+                "ref": {
+                  "category": "warPlanNode",
+                  "enUS": "Fortune or Famine",
+                  "esES": null,
+                  "i18n": "none",
+                  "idName": "warPlanNode__fortune_or_famine",
+                  "sno": null
+                },
+                "slug": "fortune_or_famine"
+              }
+            ],
+            "ref": {
+              "category": "warPlanNode",
+              "enUS": "Whispers",
+              "esES": null,
+              "i18n": "none",
+              "idName": "warPlanNode__whispers",
+              "sno": null
+            },
+            "remaining": 4,
+            "slug": "whispers",
+            "spent": 3
+          },
+          {
+            "nodes": [
+              {
+                "minor": false,
+                "ref": {
+                  "category": "warPlanNode",
+                  "enUS": "Waking Spoils",
+                  "esES": null,
+                  "i18n": "none",
+                  "idName": "warPlanNode__waking_spoils",
+                  "sno": null
+                },
+                "slug": "waking_spoils"
+              },
+              {
+                "minor": false,
+                "ref": {
+                  "category": "warPlanNode",
+                  "enUS": "Gauntlet",
+                  "esES": null,
+                  "i18n": "none",
+                  "idName": "warPlanNode__gauntlet",
+                  "sno": null
+                },
+                "slug": "gauntlet"
+              },
+              {
+                "minor": false,
+                "ref": {
+                  "category": "warPlanNode",
+                  "enUS": "Nemesis",
+                  "esES": null,
+                  "i18n": "none",
+                  "idName": "warPlanNode__nemesis",
+                  "sno": null
+                },
+                "slug": "nemesis"
+              }
+            ],
+            "ref": {
+              "category": "warPlanNode",
+              "enUS": "Nightmare Dungeons",
+              "esES": null,
+              "i18n": "none",
+              "idName": "warPlanNode__nightmare_dungeons",
+              "sno": null
+            },
+            "remaining": 4,
+            "slug": "nightmare_dungeons",
+            "spent": 3
+          },
+          {
+            "nodes": [
+              {
+                "minor": false,
+                "ref": {
+                  "category": "warPlanNode",
+                  "enUS": "Tainted Shrines",
+                  "esES": null,
+                  "i18n": "none",
+                  "idName": "warPlanNode__tainted_shrines",
+                  "sno": null
+                },
+                "slug": "tainted_shrines"
+              },
+              {
+                "minor": false,
+                "ref": {
+                  "category": "warPlanNode",
+                  "enUS": "Hated Foe",
+                  "esES": null,
+                  "i18n": "none",
+                  "idName": "warPlanNode__hated_foe",
+                  "sno": null
+                },
+                "slug": "hated_foe"
+              },
+              {
+                "minor": true,
+                "ref": {
+                  "category": "warPlanNode",
+                  "enUS": "Meat Brothers",
+                  "esES": null,
+                  "i18n": "none",
+                  "idName": "warPlanNode__meat_brothers",
+                  "sno": null
+                },
+                "slug": "meat_brothers"
+              },
+              {
+                "minor": false,
+                "ref": {
+                  "category": "warPlanNode",
+                  "enUS": "Hellmouth",
+                  "esES": null,
+                  "i18n": "none",
+                  "idName": "warPlanNode__hellmouth",
+                  "sno": null
+                },
+                "slug": "hellmouth"
+              },
+              {
+                "minor": true,
+                "ref": {
+                  "category": "warPlanNode",
+                  "enUS": "Writhe and Rot",
+                  "esES": null,
+                  "i18n": "none",
+                  "idName": "warPlanNode__writhe_and_rot",
+                  "sno": null
+                },
+                "slug": "writhe_and_rot"
+              },
+              {
+                "minor": false,
+                "ref": {
+                  "category": "warPlanNode",
+                  "enUS": "Bursting Brood",
+                  "esES": null,
+                  "i18n": "none",
+                  "idName": "warPlanNode__bursting_brood",
+                  "sno": null
+                },
+                "slug": "bursting_brood"
+              }
+            ],
+            "ref": {
+              "category": "warPlanNode",
+              "enUS": "Helltides",
+              "esES": null,
+              "i18n": "none",
+              "idName": "warPlanNode__helltides",
+              "sno": null
+            },
+            "remaining": 1,
+            "slug": "helltides",
+            "spent": 6
+          },
+          {
+            "nodes": [
+              {
+                "minor": false,
+                "ref": {
+                  "category": "warPlanNode",
+                  "enUS": "Endless Swarm",
+                  "esES": null,
+                  "i18n": "none",
+                  "idName": "warPlanNode__endless_swarm",
+                  "sno": null
+                },
+                "slug": "endless_swarm"
+              },
+              {
+                "minor": false,
+                "ref": {
+                  "category": "warPlanNode",
+                  "enUS": "Unfortunate Souls",
+                  "esES": null,
+                  "i18n": "none",
+                  "idName": "warPlanNode__unfortunate_souls",
+                  "sno": null
+                },
+                "slug": "unfortunate_souls"
+              },
+              {
+                "minor": false,
+                "ref": {
+                  "category": "warPlanNode",
+                  "enUS": "Gutter Filth",
+                  "esES": null,
+                  "i18n": "none",
+                  "idName": "warPlanNode__gutter_filth",
+                  "sno": null
+                },
+                "slug": "gutter_filth"
+              },
+              {
+                "minor": false,
+                "ref": {
+                  "category": "warPlanNode",
+                  "enUS": "Trials and Tributes",
+                  "esES": null,
+                  "i18n": "none",
+                  "idName": "warPlanNode__trials_and_tributes",
+                  "sno": null
+                },
+                "slug": "trials_and_tributes"
+              },
+              {
+                "minor": false,
+                "ref": {
+                  "category": "warPlanNode",
+                  "enUS": "Jade Epiphany",
+                  "esES": null,
+                  "i18n": "none",
+                  "idName": "warPlanNode__jade_epiphany",
+                  "sno": null
+                },
+                "slug": "jade_epiphany"
+              }
+            ],
+            "ref": {
+              "category": "warPlanNode",
+              "enUS": "Undercity",
+              "esES": null,
+              "i18n": "none",
+              "idName": "warPlanNode__undercity",
+              "sno": null
+            },
+            "remaining": 2,
+            "slug": "undercity",
+            "spent": 5
+          },
+          {
+            "nodes": [
+              {
+                "minor": false,
+                "ref": {
+                  "category": "warPlanNode",
+                  "enUS": "Grigoire's Gambit",
+                  "esES": null,
+                  "i18n": "none",
+                  "idName": "warPlanNode__grigoire_s_gambit",
+                  "sno": null
+                },
+                "slug": "grigoire's_gambit"
+              },
+              {
+                "minor": false,
+                "ref": {
+                  "category": "warPlanNode",
+                  "enUS": "Two by Two",
+                  "esES": null,
+                  "i18n": "none",
+                  "idName": "warPlanNode__two_by_two",
+                  "sno": null
+                },
+                "slug": "two_by_two"
+              },
+              {
+                "minor": false,
+                "ref": {
+                  "category": "warPlanNode",
+                  "enUS": "Greater Nemesis",
+                  "esES": null,
+                  "i18n": "none",
+                  "idName": "warPlanNode__greater_nemesis",
+                  "sno": null
+                },
+                "slug": "greater_nemesis"
+              },
+              {
+                "minor": false,
+                "ref": {
+                  "category": "warPlanNode",
+                  "enUS": "Ultimate Nemesis",
+                  "esES": null,
+                  "i18n": "none",
+                  "idName": "warPlanNode__ultimate_nemesis",
+                  "sno": null
+                },
+                "slug": "ultimate_nemesis"
+              }
+            ],
+            "ref": {
+              "category": "warPlanNode",
+              "enUS": "Boss Lairs",
+              "esES": null,
+              "i18n": "none",
+              "idName": "warPlanNode__boss_lairs",
+              "sno": null
+            },
+            "remaining": 3,
+            "slug": "boss_lairs",
+            "spent": 4
+          },
+          {
+            "nodes": [
+              {
+                "minor": false,
+                "ref": {
+                  "category": "warPlanNode",
+                  "enUS": "Method and Madness",
+                  "esES": null,
+                  "i18n": "none",
+                  "idName": "warPlanNode__method_and_madness",
+                  "sno": null
+                },
+                "slug": "method_and_madness"
+              },
+              {
+                "minor": false,
+                "ref": {
+                  "category": "warPlanNode",
+                  "enUS": "Impending Doom",
+                  "esES": null,
+                  "i18n": "none",
+                  "idName": "warPlanNode__impending_doom",
+                  "sno": null
+                },
+                "slug": "impending_doom"
+              }
+            ],
+            "ref": {
+              "category": "warPlanNode",
+              "enUS": "Infernal Hordes",
+              "esES": null,
+              "i18n": "none",
+              "idName": "warPlanNode__infernal_hordes",
+              "sno": null
+            },
+            "remaining": 5,
+            "slug": "infernal_hordes",
+            "spent": 2
+          },
+          {
+            "nodes": [
+              {
+                "minor": false,
+                "ref": {
+                  "category": "warPlanNode",
+                  "enUS": "Choron's Haste",
+                  "esES": null,
+                  "i18n": "none",
+                  "idName": "warPlanNode__choron_s_haste",
+                  "sno": null
+                },
+                "slug": "choron's_haste"
+              },
+              {
+                "minor": false,
+                "ref": {
+                  "category": "warPlanNode",
+                  "enUS": "Heart of Stone",
+                  "esES": null,
+                  "i18n": "none",
+                  "idName": "warPlanNode__heart_of_stone",
+                  "sno": null
+                },
+                "slug": "heart_of_stone"
+              }
+            ],
+            "ref": {
+              "category": "warPlanNode",
+              "enUS": "Pits",
+              "esES": null,
+              "i18n": "none",
+              "idName": "warPlanNode__pits",
+              "sno": null
+            },
+            "remaining": 5,
+            "slug": "pits",
+            "spent": 2
+          }
+        ],
+        "inferred": false
+      }
     }
   ]
 }

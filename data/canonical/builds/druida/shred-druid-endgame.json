@@ -410,7 +410,7 @@
     "en": "Shred",
     "es": "Despedazar"
   },
-  "updatedAt": "2026-08-09T07:09:48.046Z",
+  "updatedAt": "2026-08-09T09:33:41.398Z",
   "variants": [
     {
       "completeness": {
@@ -1684,17 +1684,17 @@
             {
               "category": "skillUpgrade",
               "enUS": "Hero of the Storm",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__hero_of_the_storm",
+              "esES": "Tormenta heroica",
+              "i18n": "wowhead-es",
+              "idName": "curated_hero_of_the_storm",
               "sno": null
             },
             {
               "category": "skillUpgrade",
               "enUS": "Additional Strikes",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__additional_strikes",
+              "esES": "Golpes adicionales",
+              "i18n": "wowhead-es",
+              "idName": "curated_additional_strikes",
               "sno": null
             }
           ],
@@ -1716,25 +1716,25 @@
             {
               "category": "skillUpgrade",
               "enUS": "Increased Duration",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__increased_duration",
+              "esES": "Duración aumentada",
+              "i18n": "wowhead-es",
+              "idName": "curated_increased_duration",
               "sno": null
             },
             {
               "category": "skillUpgrade",
               "enUS": "Booming Roar",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__booming_roar",
+              "esES": "Rugido estridente",
+              "i18n": "wowhead-es",
+              "idName": "curated_booming_roar",
               "sno": null
             },
             {
               "category": "skillUpgrade",
               "enUS": "Maximum Life",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__maximum_life",
+              "esES": "Vida máxima",
+              "i18n": "wowhead-es",
+              "idName": "curated_maximum_life",
               "sno": null
             }
           ],
@@ -1764,9 +1764,9 @@
             {
               "category": "skillUpgrade",
               "enUS": "Weaken",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__weaken",
+              "esES": "Debilitar",
+              "i18n": "wowhead-es",
+              "idName": "curated_weaken",
               "sno": null
             }
           ],
@@ -1788,25 +1788,25 @@
             {
               "category": "skillUpgrade",
               "enUS": "Fortify",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__fortify",
+              "esES": "Fortificación",
+              "i18n": "wowhead-es",
+              "idName": "curated_fortify",
               "sno": null
             },
             {
               "category": "skillUpgrade",
               "enUS": "Cornered Beast",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__cornered_beast",
+              "esES": "Bestia acorralada",
+              "i18n": "wowhead-es",
+              "idName": "curated_cornered_beast",
               "sno": null
             },
             {
               "category": "skillUpgrade",
               "enUS": "Cooldown Reduction",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__cooldown_reduction",
+              "esES": "Reducción de tiempo de reutilización",
+              "i18n": "wowhead-es",
+              "idName": "curated_cooldown_reduction",
               "sno": null
             }
           ],
@@ -1828,17 +1828,17 @@
             {
               "category": "skillUpgrade",
               "enUS": "Thrill of the Hunt",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__thrill_of_the_hunt",
+              "esES": "Furor de la caza",
+              "i18n": "wowhead-es",
+              "idName": "curated_thrill_of_the_hunt",
               "sno": null
             },
             {
               "category": "skillUpgrade",
               "enUS": "Attack Speed",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__attack_speed",
+              "esES": "Velocidad de ataque",
+              "i18n": "wowhead-es",
+              "idName": "curated_attack_speed",
               "sno": null
             }
           ],
@@ -1860,25 +1860,25 @@
             {
               "category": "skillUpgrade",
               "enUS": "Cast Speed",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__cast_speed",
+              "esES": "Velocidad de lanzamiento",
+              "i18n": "wowhead-es",
+              "idName": "curated_cast_speed",
               "sno": null
             },
             {
               "category": "skillUpgrade",
               "enUS": "Storm Shred",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__storm_shred",
+              "esES": "Tormenta despedazadora",
+              "i18n": "wowhead-es",
+              "idName": "curated_storm_shred",
               "sno": null
             },
             {
               "category": "skillUpgrade",
               "enUS": "Healing",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__healing",
+              "esES": "Curación",
+              "i18n": "wowhead-es",
+              "idName": "curated_healing",
               "sno": null
             }
           ],
@@ -1894,11 +1894,11 @@
       ],
       "source": {
         "author": "Rob2628",
-        "capturedAt": "2026-08-09T07:09:48.046Z",
+        "capturedAt": "2026-08-09T09:33:41.398Z",
         "externalId": "43003e89-bb97-4963-b172-ecc41cf33417",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "0366bd0b5ed3ea0f2d0be5ddbe1e3322b01c3ec849560785feef05a50640a27b",
+        "snapshotHash": "f8cbf4db99a35a3033d0702ee525067751cf525673c4870bba069186ed9fdc2f",
         "url": "https://d4builds.gg/builds/43003e89-bb97-4963-b172-ecc41cf33417/?var=0",
         "variantIndex": 0,
         "variantLabel": "Standard Build"

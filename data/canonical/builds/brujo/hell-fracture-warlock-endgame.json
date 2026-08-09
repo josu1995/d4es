@@ -51,40 +51,7 @@
         "sno": null
       }
     ],
-    "coreUniques": [
-      {
-        "category": "unique",
-        "enUS": "Spine of Tathamet",
-        "esES": "Espina de Tathamet",
-        "i18n": "d4companion",
-        "idName": "1HMace_Unique_Warlock_001",
-        "sno": 2559883
-      },
-      {
-        "category": "unique",
-        "enUS": "Soulbrand",
-        "esES": "Marcaalmas",
-        "i18n": "d4companion",
-        "idName": "Chest_Unique_Generic_101",
-        "sno": 1559452
-      },
-      {
-        "category": "unique",
-        "enUS": "Heir of Perdition",
-        "esES": "Heredero de la perdición",
-        "i18n": "d4companion",
-        "idName": "Helm_Unique_Generic_004;S14_Helm_Unique_Generic_004",
-        "sno": 2105794
-      },
-      {
-        "category": "unique",
-        "enUS": "Ring of Starless Skies",
-        "esES": null,
-        "i18n": "none",
-        "idName": "unique__ring_of_starless_skies",
-        "sno": null
-      }
-    ],
+    "coreUniques": [],
     "fields": [
       {
         "key": "skill:curated_apocalypse",
@@ -175,141 +142,6 @@
         "values": {
           "d4builds:7fe32f34-83cd-42b9-b574-005041d2985b:0": 1
         }
-      },
-      {
-        "key": "unique:1HMace_Unique_Warlock_001",
-        "label": {
-          "category": "unique",
-          "enUS": "Spine of Tathamet",
-          "esES": "Espina de Tathamet",
-          "i18n": "d4companion",
-          "idName": "1HMace_Unique_Warlock_001",
-          "sno": 2559883
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:7fe32f34-83cd-42b9-b574-005041d2985b:0": "si"
-        }
-      },
-      {
-        "key": "unique:Chest_Unique_Generic_101",
-        "label": {
-          "category": "unique",
-          "enUS": "Soulbrand",
-          "esES": "Marcaalmas",
-          "i18n": "d4companion",
-          "idName": "Chest_Unique_Generic_101",
-          "sno": 1559452
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:7fe32f34-83cd-42b9-b574-005041d2985b:0": "si"
-        }
-      },
-      {
-        "key": "unique:Helm_Unique_Generic_004;S14_Helm_Unique_Generic_004",
-        "label": {
-          "category": "unique",
-          "enUS": "Heir of Perdition",
-          "esES": "Heredero de la perdición",
-          "i18n": "d4companion",
-          "idName": "Helm_Unique_Generic_004;S14_Helm_Unique_Generic_004",
-          "sno": 2105794
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:7fe32f34-83cd-42b9-b574-005041d2985b:0": "si"
-        }
-      },
-      {
-        "key": "unique:unique__ring_of_starless_skies",
-        "label": {
-          "category": "unique",
-          "enUS": "Ring of Starless Skies",
-          "esES": null,
-          "i18n": "none",
-          "idName": "unique__ring_of_starless_skies",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:7fe32f34-83cd-42b9-b574-005041d2985b:0": "si"
-        }
-      },
-      {
-        "key": "glyph:Rare_019_Dexterity_Side",
-        "label": {
-          "category": "glyph",
-          "enUS": "Destruction",
-          "esES": "Destrucción",
-          "i18n": "d4companion",
-          "idName": "Rare_019_Dexterity_Side",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:7fe32f34-83cd-42b9-b574-005041d2985b:0": "presente"
-        }
-      },
-      {
-        "key": "glyph:Rare_116_Intelligence_Side",
-        "label": {
-          "category": "glyph",
-          "enUS": "Hellforge",
-          "esES": "Fragua del Infierno",
-          "i18n": "d4companion",
-          "idName": "Rare_116_Intelligence_Side",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:7fe32f34-83cd-42b9-b574-005041d2985b:0": "presente"
-        }
-      },
-      {
-        "key": "glyph:Rare_120_Willpower_Main",
-        "label": {
-          "category": "glyph",
-          "enUS": "Eldritch Sight",
-          "esES": "Visión sobrenatural",
-          "i18n": "d4companion",
-          "idName": "Rare_120_Willpower_Main",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:7fe32f34-83cd-42b9-b574-005041d2985b:0": "presente"
-        }
-      },
-      {
-        "key": "glyph:Rare_121_Intelligence_Side",
-        "label": {
-          "category": "glyph",
-          "enUS": "Entropy",
-          "esES": "Entropía",
-          "i18n": "d4companion",
-          "idName": "Rare_121_Intelligence_Side",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:7fe32f34-83cd-42b9-b574-005041d2985b:0": "presente"
-        }
-      },
-      {
-        "key": "glyph:Rare_Dex_Generic",
-        "label": {
-          "category": "glyph",
-          "enUS": "Headhunter",
-          "esES": "Cazacabezas",
-          "i18n": "d4companion",
-          "idName": "Rare_Dex_Generic",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:7fe32f34-83cd-42b9-b574-005041d2985b:0": "presente"
-        }
       }
     ],
     "variantCount": 1
@@ -341,1188 +173,24 @@
     "en": "Hell Fracture",
     "es": "Fractura infernal"
   },
-  "updatedAt": "2026-08-09T07:23:37.476Z",
+  "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
     {
       "completeness": {
-        "hasGear": true,
+        "hasGear": false,
         "hasMercenary": false,
-        "hasParagon": true,
+        "hasParagon": false,
         "hasSkills": true,
         "hasTalisman": false,
         "hasWarPlan": false,
-        "score": 0.85
+        "score": 0.35
       },
-      "gear": {
-        "amulet": {
-          "affixes": [
-            {
-              "greater": false,
-              "order": 0,
-              "ref": {
-                "category": "affix",
-                "enUS": "Willpower",
-                "esES": "de voluntad",
-                "i18n": "d4companion",
-                "idName": "CoreStat_Willpower;CoreStat_WillpowerPercent;CoreStat_WillpowerPercent_Greater_Unique;CoreStat_Willpower_Weapon;S04_CoreStat_Willpower;S04_CoreStat_WillpowerPercent;S11_CoreStat_Willpower_Greater;Talisman_Charm_Affix_UNIQUE_CoreStat_Willpower_Higher;Talisman_SealAffix_Normal_CoreStat_WillpowerPercent;UNIQUE_CoreStat_WillpowerPercent_Higher;UNIQUE_CoreStat_WillpowerPercent_HigherHigher;UNIQUE_CoreStat_WillpowerPercent_HigherHigherHigher;UNIQUE_CoreStat_Willpower_Higher;UNIQUE_CoreStat_Willpower_HigherHigher;UNIQUE_CoreStat_Willpower_HigherHigherHigher;X2_CoreStat_Willpower_Greater;X2_Transfiguration_CoreStat_Willpower;X2_Transfiguration_CoreStat_WillpowerPercent;X2_Transfiguration_CoreStat_Willpower_Lesser",
-                "sno": 1083645
-              },
-              "tempered": false
-            },
-            {
-              "greater": false,
-              "order": 1,
-              "ref": {
-                "category": "affix",
-                "enUS": "All Damage Multipler",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__all_damage_multipler",
-                "sno": null
-              },
-              "tempered": false
-            },
-            {
-              "greater": true,
-              "order": 2,
-              "ref": {
-                "category": "affix",
-                "enUS": "Ranks to All Skills",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__ranks_to_all_skills",
-                "sno": null
-              },
-              "tempered": false
-            },
-            {
-              "greater": false,
-              "order": 3,
-              "ref": {
-                "category": "affix",
-                "enUS": "x Critical Strike Damage Multiplier",
-                "esES": "Multiplicador de daño de golpe crítico x",
-                "i18n": "d4companion",
-                "idName": "S04_CritDamage;X2_CritDamage_Greater",
-                "sno": 1829586
-              },
-              "tempered": false
-            },
-            {
-              "greater": false,
-              "order": 4,
-              "ref": {
-                "category": "affix",
-                "enUS": "Fire Damage (Elemental Finesse: Day - Offensive)",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__fire_damage_elemental_finesse_day_offensive",
-                "sno": null
-              },
-              "tempered": true
-            },
-            {
-              "greater": false,
-              "order": 5,
-              "ref": {
-                "category": "affix",
-                "enUS": "Transfigure",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__transfigure",
-                "sno": null
-              },
-              "tempered": true
-            },
-            {
-              "greater": false,
-              "order": 6,
-              "ref": {
-                "category": "affix",
-                "enUS": "Transfigure",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__transfigure",
-                "sno": null
-              },
-              "tempered": true
-            }
-          ],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Aspect of Inner Calm",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_inner_calm",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "amulet",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Diamond",
-              "esES": null,
-              "i18n": "none",
-              "idName": "rune__diamond",
-              "sno": null
-            }
-          ]
-        },
-        "boots": {
-          "affixes": [
-            {
-              "greater": false,
-              "order": 0,
-              "ref": {
-                "category": "affix",
-                "enUS": "Willpower",
-                "esES": "de voluntad",
-                "i18n": "d4companion",
-                "idName": "CoreStat_Willpower;CoreStat_WillpowerPercent;CoreStat_WillpowerPercent_Greater_Unique;CoreStat_Willpower_Weapon;S04_CoreStat_Willpower;S04_CoreStat_WillpowerPercent;S11_CoreStat_Willpower_Greater;Talisman_Charm_Affix_UNIQUE_CoreStat_Willpower_Higher;Talisman_SealAffix_Normal_CoreStat_WillpowerPercent;UNIQUE_CoreStat_WillpowerPercent_Higher;UNIQUE_CoreStat_WillpowerPercent_HigherHigher;UNIQUE_CoreStat_WillpowerPercent_HigherHigherHigher;UNIQUE_CoreStat_Willpower_Higher;UNIQUE_CoreStat_Willpower_HigherHigher;UNIQUE_CoreStat_Willpower_HigherHigherHigher;X2_CoreStat_Willpower_Greater;X2_Transfiguration_CoreStat_Willpower;X2_Transfiguration_CoreStat_WillpowerPercent;X2_Transfiguration_CoreStat_Willpower_Lesser",
-                "sno": 1083645
-              },
-              "tempered": false
-            },
-            {
-              "greater": false,
-              "order": 1,
-              "ref": {
-                "category": "affix",
-                "enUS": "Maximum Life",
-                "esES": "de vida máxima",
-                "i18n": "d4companion",
-                "idName": "Life;LifePercent;LifePercent_Double_UBERUNIQUE;Life_Flat_Quadruple_UBERUNIQUE;Life_Greater;S04_Life;Talisman_Charm_Affix_Life;Talisman_Charm_MaxLife_Percent;Talisman_Charm_MaxLife_Percent_MagicOnly;Talisman_Charm_Virtue_Vitality;Talisman_SealAffix_Normal_LifePercent;Tempered_Generic_LifeMax_Tier1;Tempered_Generic_LifeMax_Tier2;Tempered_Generic_LifeMax_Tier3;UBERUNIQUE_FlatLife_Grandfather;UBERUNIQUE_FlatLife_Greater;UBERUNIQUE_FlatLife_NesekemTheHerald;UBERUNIQUE_LifeFlat_HarlequinCrest;UBERUNIQUE_LifeFlat_ShroudOfFalseDeath;UBERUNIQUE_LifePercent_Doombringer;UNIQUE_LifeFlat_Higher;UNIQUE_LifeFlat_HigherHigher;UNIQUE_LifePercent;UNIQUE_LifePercent_Higher;UNIQUE_LifePercent_Higher_Necro;UNIQUE_LifePercent_LessHigher;UNIQUE_LifePercent_Lesser;X2_Life_Greater;X2_Transfiguration_LifePercent;X2_Transfiguration_LifePercent_Lesser",
-                "sno": 1227911
-              },
-              "tempered": false
-            },
-            {
-              "greater": true,
-              "order": 2,
-              "ref": {
-                "category": "affix",
-                "enUS": "Wrath Regeneration",
-                "esES": "Cólera de regeneración",
-                "i18n": "d4companion",
-                "idName": "S04_Resource_Per_Second_Wrath",
-                "sno": 2532220
-              },
-              "tempered": false
-            },
-            {
-              "greater": false,
-              "order": 3,
-              "ref": {
-                "category": "affix",
-                "enUS": "Dodge Chance",
-                "esES": "de probabilidad de esquivar",
-                "i18n": "d4companion",
-                "idName": "Dodge;Dodge_Additive;Dodge_Greater_UNIQUE;S04_Dodge;Tempered_Generic_Dodge_Tier1;Tempered_Generic_Dodge_Tier2;Tempered_Generic_Dodge_Tier3;Test_Dodge",
-                "sno": 1341869
-              },
-              "tempered": false
-            },
-            {
-              "greater": false,
-              "order": 4,
-              "ref": {
-                "category": "affix",
-                "enUS": "Movement Speed (Natural Motion - Mobility)",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__movement_speed_natural_motion_mobility",
-                "sno": null
-              },
-              "tempered": true
-            },
-            {
-              "greater": false,
-              "order": 5,
-              "ref": {
-                "category": "affix",
-                "enUS": "Transfigure",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__transfigure",
-                "sno": null
-              },
-              "tempered": true
-            }
-          ],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Aspect of Impetus",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_impetus",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "boots",
-          "sockets": []
-        },
-        "chest": {
-          "affixes": [
-            {
-              "greater": false,
-              "order": 0,
-              "ref": {
-                "category": "affix",
-                "enUS": "Willpower",
-                "esES": "de voluntad",
-                "i18n": "d4companion",
-                "idName": "CoreStat_Willpower;CoreStat_WillpowerPercent;CoreStat_WillpowerPercent_Greater_Unique;CoreStat_Willpower_Weapon;S04_CoreStat_Willpower;S04_CoreStat_WillpowerPercent;S11_CoreStat_Willpower_Greater;Talisman_Charm_Affix_UNIQUE_CoreStat_Willpower_Higher;Talisman_SealAffix_Normal_CoreStat_WillpowerPercent;UNIQUE_CoreStat_WillpowerPercent_Higher;UNIQUE_CoreStat_WillpowerPercent_HigherHigher;UNIQUE_CoreStat_WillpowerPercent_HigherHigherHigher;UNIQUE_CoreStat_Willpower_Higher;UNIQUE_CoreStat_Willpower_HigherHigher;UNIQUE_CoreStat_Willpower_HigherHigherHigher;X2_CoreStat_Willpower_Greater;X2_Transfiguration_CoreStat_Willpower;X2_Transfiguration_CoreStat_WillpowerPercent;X2_Transfiguration_CoreStat_Willpower_Lesser",
-                "sno": 1083645
-              },
-              "tempered": false
-            },
-            {
-              "greater": false,
-              "order": 1,
-              "ref": {
-                "category": "affix",
-                "enUS": "Maximum Life",
-                "esES": "de vida máxima",
-                "i18n": "d4companion",
-                "idName": "Life;LifePercent;LifePercent_Double_UBERUNIQUE;Life_Flat_Quadruple_UBERUNIQUE;Life_Greater;S04_Life;Talisman_Charm_Affix_Life;Talisman_Charm_MaxLife_Percent;Talisman_Charm_MaxLife_Percent_MagicOnly;Talisman_Charm_Virtue_Vitality;Talisman_SealAffix_Normal_LifePercent;Tempered_Generic_LifeMax_Tier1;Tempered_Generic_LifeMax_Tier2;Tempered_Generic_LifeMax_Tier3;UBERUNIQUE_FlatLife_Grandfather;UBERUNIQUE_FlatLife_Greater;UBERUNIQUE_FlatLife_NesekemTheHerald;UBERUNIQUE_LifeFlat_HarlequinCrest;UBERUNIQUE_LifeFlat_ShroudOfFalseDeath;UBERUNIQUE_LifePercent_Doombringer;UNIQUE_LifeFlat_Higher;UNIQUE_LifeFlat_HigherHigher;UNIQUE_LifePercent;UNIQUE_LifePercent_Higher;UNIQUE_LifePercent_Higher_Necro;UNIQUE_LifePercent_LessHigher;UNIQUE_LifePercent_Lesser;X2_Life_Greater;X2_Transfiguration_LifePercent;X2_Transfiguration_LifePercent_Lesser",
-                "sno": 1227911
-              },
-              "tempered": false
-            },
-            {
-              "greater": true,
-              "order": 2,
-              "ref": {
-                "category": "affix",
-                "enUS": "Wrath Regeneration",
-                "esES": "Cólera de regeneración",
-                "i18n": "d4companion",
-                "idName": "S04_Resource_Per_Second_Wrath",
-                "sno": 2532220
-              },
-              "tempered": false
-            },
-            {
-              "greater": false,
-              "order": 3,
-              "ref": {
-                "category": "affix",
-                "enUS": "Armor",
-                "esES": "de armadura",
-                "i18n": "d4companion",
-                "idName": "S04_Armor;Tempered_Generic_Armor_Tier1;Tempered_Generic_Armor_Tier2;Tempered_Generic_Armor_Tier3;UBERUNIQUE_FlatArmor_HarlequinCrest;UNIQUE_Armor_GIGA_SpecialScaling;UNIQUE_Armor_Higher;UNIQUE_INHERENT_Armor;UNIQUE_INHERENT_Resistance_Ring_Armor_Triple;X2_Armor_Greater",
-                "sno": 1829554
-              },
-              "tempered": false
-            },
-            {
-              "greater": false,
-              "order": 4,
-              "ref": {
-                "category": "affix",
-                "enUS": "Maximum Life (Worldly Endurance - Defensive)",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__maximum_life_worldly_endurance_defensive",
-                "sno": null
-              },
-              "tempered": true
-            },
-            {
-              "greater": false,
-              "order": 5,
-              "ref": {
-                "category": "affix",
-                "enUS": "Transfigure",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__transfigure",
-                "sno": null
-              },
-              "tempered": true
-            }
-          ],
-          "aspect": null,
-          "item": {
-            "category": "unique",
-            "enUS": "Soulbrand",
-            "esES": "Marcaalmas",
-            "i18n": "d4companion",
-            "idName": "Chest_Unique_Generic_101",
-            "sno": 1559452
-          },
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "unique",
-          "slot": "chest",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Igni",
-              "esES": "Igni",
-              "i18n": "d4companion",
-              "idName": "Item_Rune_Condition_Bomb",
-              "sno": 2165976
-            },
-            {
-              "category": "rune",
-              "enUS": "Que",
-              "esES": "Que",
-              "i18n": "d4companion",
-              "idName": "Item_Rune_Effect_Druid_EarthenBulwark",
-              "sno": 2004804
-            }
-          ]
-        },
-        "gloves": {
-          "affixes": [
-            {
-              "greater": false,
-              "order": 0,
-              "ref": {
-                "category": "affix",
-                "enUS": "Willpower",
-                "esES": "de voluntad",
-                "i18n": "d4companion",
-                "idName": "CoreStat_Willpower;CoreStat_WillpowerPercent;CoreStat_WillpowerPercent_Greater_Unique;CoreStat_Willpower_Weapon;S04_CoreStat_Willpower;S04_CoreStat_WillpowerPercent;S11_CoreStat_Willpower_Greater;Talisman_Charm_Affix_UNIQUE_CoreStat_Willpower_Higher;Talisman_SealAffix_Normal_CoreStat_WillpowerPercent;UNIQUE_CoreStat_WillpowerPercent_Higher;UNIQUE_CoreStat_WillpowerPercent_HigherHigher;UNIQUE_CoreStat_WillpowerPercent_HigherHigherHigher;UNIQUE_CoreStat_Willpower_Higher;UNIQUE_CoreStat_Willpower_HigherHigher;UNIQUE_CoreStat_Willpower_HigherHigherHigher;X2_CoreStat_Willpower_Greater;X2_Transfiguration_CoreStat_Willpower;X2_Transfiguration_CoreStat_WillpowerPercent;X2_Transfiguration_CoreStat_Willpower_Lesser",
-                "sno": 1083645
-              },
-              "tempered": false
-            },
-            {
-              "greater": false,
-              "order": 1,
-              "ref": {
-                "category": "affix",
-                "enUS": "Critical Strike Chance",
-                "esES": "de probabilidad de golpe crítico",
-                "i18n": "d4companion",
-                "idName": "CritChance;CritChanceJewelry;CritChanceJewelry_UBERUNIQUE;CritChance_UBERUNIQUE;S04_CritChance;S04_CritChanceJewelry;Talisman_Charm_Affix_CritChance;Talisman_SealAffix_Normal_CritChance;Tempered_Generic_CritChance_BarbRogue_Tier1;Tempered_Generic_CritChance_BarbRogue_Tier2;Tempered_Generic_CritChance_BarbRogue_Tier3;Tempered_Generic_CritChance_Tier1;Tempered_Generic_CritChance_Tier2;Tempered_Generic_CritChance_Tier3;UBERUNIQUE_CritChance_HeirOfPerdition;UBERUNIQUE_CritChance_RingofStarlessSkies;UNIQUE_CritChance_HighVariance;UNIQUE_CritChance_Higher;UNIQUE_CritChance_HigherHigher;X2_Transfiguration_CritChance",
-                "sno": 1193845
-              },
-              "tempered": false
-            },
-            {
-              "greater": true,
-              "order": 2,
-              "ref": {
-                "category": "affix",
-                "enUS": "x Critical Strike Damage Multiplier",
-                "esES": "Multiplicador de daño de golpe crítico x",
-                "i18n": "d4companion",
-                "idName": "S04_CritDamage;X2_CritDamage_Greater",
-                "sno": 1829586
-              },
-              "tempered": false
-            },
-            {
-              "greater": false,
-              "order": 3,
-              "ref": {
-                "category": "affix",
-                "enUS": "Attack Speed",
-                "esES": "de velocidad de ataque",
-                "i18n": "d4companion",
-                "idName": "AttackSpeed;AttackSpeed_Greater;AttackSpeed_UBERUNIQUE;S04_AttackSpeed;Talisman_Charm_Affix_AttackSpeed;Talisman_Charm_Affix_UNIQUE_AttackSpeed_Higher;Talisman_SealAffix_Normal_AttackSpeed;Tempered_Generic_AttackSpeed_BarbRogue_Tier1;Tempered_Generic_AttackSpeed_BarbRogue_Tier2;Tempered_Generic_AttackSpeed_BarbRogue_Tier3;Tempered_Generic_AttackSpeed_Tier1;Tempered_Generic_AttackSpeed_Tier2;Tempered_Generic_AttackSpeed_Tier3;UBERUNIQUE_AttackSpeed_AndarielsVisage;UBERUNIQUE_AttackSpeed_HeirOfPerdition;UBERUNIQUE_AttackSpeed_RingofStarlessSkies;UBERUNIQUE_AttackSpeed_TyraelsMight;UNIQUE_AttackSpeed_GIGA;UNIQUE_AttackSpeed_HighVariance;UNIQUE_AttackSpeed_Higher;UNIQUE_INHERENT_AttackSpeed;X2_Transfiguration_AttackSpeed",
-                "sno": 1341731
-              },
-              "tempered": false
-            },
-            {
-              "greater": false,
-              "order": 4,
-              "ref": {
-                "category": "affix",
-                "enUS": "Fire Damage (Elemental Finesse: Day - Offensive)",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__fire_damage_elemental_finesse_day_offensive",
-                "sno": null
-              },
-              "tempered": true
-            },
-            {
-              "greater": false,
-              "order": 5,
-              "ref": {
-                "category": "affix",
-                "enUS": "Transfigure",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__transfigure",
-                "sno": null
-              },
-              "tempered": true
-            }
-          ],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Aspect of Scorching Heat",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_scorching_heat",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "gloves",
-          "sockets": []
-        },
-        "helm": {
-          "affixes": [
-            {
-              "greater": false,
-              "order": 0,
-              "ref": {
-                "category": "affix",
-                "enUS": "151 Primary Core Stat",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__151_primary_core_stat",
-                "sno": null
-              },
-              "tempered": false
-            },
-            {
-              "greater": false,
-              "order": 1,
-              "ref": {
-                "category": "affix",
-                "enUS": "25% Movement Speed",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__25_movement_speed",
-                "sno": null
-              },
-              "tempered": false
-            },
-            {
-              "greater": false,
-              "order": 2,
-              "ref": {
-                "category": "affix",
-                "enUS": "Tempering Stat 1",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__tempering_stat_1",
-                "sno": null
-              },
-              "tempered": true
-            },
-            {
-              "greater": false,
-              "order": 3,
-              "ref": {
-                "category": "affix",
-                "enUS": "Transfigure",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__transfigure",
-                "sno": null
-              },
-              "tempered": true
-            }
-          ],
-          "aspect": null,
-          "item": {
-            "category": "unique",
-            "enUS": "Heir of Perdition",
-            "esES": "Heredero de la perdición",
-            "i18n": "d4companion",
-            "idName": "Helm_Unique_Generic_004;S14_Helm_Unique_Generic_004",
-            "sno": 2105794
-          },
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": true
-          },
-          "quality": "unique",
-          "slot": "helm",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Cir",
-              "esES": "Cir",
-              "i18n": "d4companion",
-              "idName": "Item_Rune_Condition_CastRepeatSkill",
-              "sno": 2060617
-            },
-            {
-              "category": "rune",
-              "enUS": "Thul",
-              "esES": "Thul",
-              "i18n": "d4companion",
-              "idName": "Item_Rune_Effect_Sorcerer_FrostNova",
-              "sno": 1969845
-            }
-          ]
-        },
-        "offhand": {
-          "affixes": [
-            {
-              "greater": false,
-              "order": 0,
-              "ref": {
-                "category": "affix",
-                "enUS": "Stat 1",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__stat_1",
-                "sno": null
-              },
-              "tempered": false
-            },
-            {
-              "greater": false,
-              "order": 1,
-              "ref": {
-                "category": "affix",
-                "enUS": "Stat 2",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__stat_2",
-                "sno": null
-              },
-              "tempered": false
-            },
-            {
-              "greater": true,
-              "order": 2,
-              "ref": {
-                "category": "affix",
-                "enUS": "Stat 3",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__stat_3",
-                "sno": null
-              },
-              "tempered": false
-            },
-            {
-              "greater": false,
-              "order": 3,
-              "ref": {
-                "category": "affix",
-                "enUS": "Stat 4",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__stat_4",
-                "sno": null
-              },
-              "tempered": false
-            },
-            {
-              "greater": false,
-              "order": 4,
-              "ref": {
-                "category": "affix",
-                "enUS": "Fire Damage (Elemental Finesse: Day - Offensive)",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__fire_damage_elemental_finesse_day_offensive",
-                "sno": null
-              },
-              "tempered": true
-            },
-            {
-              "greater": false,
-              "order": 5,
-              "ref": {
-                "category": "affix",
-                "enUS": "Transfigure",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__transfigure",
-                "sno": null
-              },
-              "tempered": true
-            }
-          ],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Aspect of Lava",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_lava",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "offhand",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Ruby",
-              "esES": null,
-              "i18n": "none",
-              "idName": "rune__ruby",
-              "sno": null
-            }
-          ]
-        },
-        "pants": {
-          "affixes": [
-            {
-              "greater": false,
-              "order": 0,
-              "ref": {
-                "category": "affix",
-                "enUS": "Willpower",
-                "esES": "de voluntad",
-                "i18n": "d4companion",
-                "idName": "CoreStat_Willpower;CoreStat_WillpowerPercent;CoreStat_WillpowerPercent_Greater_Unique;CoreStat_Willpower_Weapon;S04_CoreStat_Willpower;S04_CoreStat_WillpowerPercent;S11_CoreStat_Willpower_Greater;Talisman_Charm_Affix_UNIQUE_CoreStat_Willpower_Higher;Talisman_SealAffix_Normal_CoreStat_WillpowerPercent;UNIQUE_CoreStat_WillpowerPercent_Higher;UNIQUE_CoreStat_WillpowerPercent_HigherHigher;UNIQUE_CoreStat_WillpowerPercent_HigherHigherHigher;UNIQUE_CoreStat_Willpower_Higher;UNIQUE_CoreStat_Willpower_HigherHigher;UNIQUE_CoreStat_Willpower_HigherHigherHigher;X2_CoreStat_Willpower_Greater;X2_Transfiguration_CoreStat_Willpower;X2_Transfiguration_CoreStat_WillpowerPercent;X2_Transfiguration_CoreStat_Willpower_Lesser",
-                "sno": 1083645
-              },
-              "tempered": false
-            },
-            {
-              "greater": false,
-              "order": 1,
-              "ref": {
-                "category": "affix",
-                "enUS": "Maximum Life",
-                "esES": "de vida máxima",
-                "i18n": "d4companion",
-                "idName": "Life;LifePercent;LifePercent_Double_UBERUNIQUE;Life_Flat_Quadruple_UBERUNIQUE;Life_Greater;S04_Life;Talisman_Charm_Affix_Life;Talisman_Charm_MaxLife_Percent;Talisman_Charm_MaxLife_Percent_MagicOnly;Talisman_Charm_Virtue_Vitality;Talisman_SealAffix_Normal_LifePercent;Tempered_Generic_LifeMax_Tier1;Tempered_Generic_LifeMax_Tier2;Tempered_Generic_LifeMax_Tier3;UBERUNIQUE_FlatLife_Grandfather;UBERUNIQUE_FlatLife_Greater;UBERUNIQUE_FlatLife_NesekemTheHerald;UBERUNIQUE_LifeFlat_HarlequinCrest;UBERUNIQUE_LifeFlat_ShroudOfFalseDeath;UBERUNIQUE_LifePercent_Doombringer;UNIQUE_LifeFlat_Higher;UNIQUE_LifeFlat_HigherHigher;UNIQUE_LifePercent;UNIQUE_LifePercent_Higher;UNIQUE_LifePercent_Higher_Necro;UNIQUE_LifePercent_LessHigher;UNIQUE_LifePercent_Lesser;X2_Life_Greater;X2_Transfiguration_LifePercent;X2_Transfiguration_LifePercent_Lesser",
-                "sno": 1227911
-              },
-              "tempered": false
-            },
-            {
-              "greater": true,
-              "order": 2,
-              "ref": {
-                "category": "affix",
-                "enUS": "Wrath Regeneration",
-                "esES": "Cólera de regeneración",
-                "i18n": "d4companion",
-                "idName": "S04_Resource_Per_Second_Wrath",
-                "sno": 2532220
-              },
-              "tempered": false
-            },
-            {
-              "greater": false,
-              "order": 3,
-              "ref": {
-                "category": "affix",
-                "enUS": "Dodge Chance",
-                "esES": "de probabilidad de esquivar",
-                "i18n": "d4companion",
-                "idName": "Dodge;Dodge_Additive;Dodge_Greater_UNIQUE;S04_Dodge;Tempered_Generic_Dodge_Tier1;Tempered_Generic_Dodge_Tier2;Tempered_Generic_Dodge_Tier3;Test_Dodge",
-                "sno": 1341869
-              },
-              "tempered": false
-            },
-            {
-              "greater": false,
-              "order": 4,
-              "ref": {
-                "category": "affix",
-                "enUS": "Maximum Life (Worldly Endurance - Defensive)",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__maximum_life_worldly_endurance_defensive",
-                "sno": null
-              },
-              "tempered": true
-            },
-            {
-              "greater": false,
-              "order": 5,
-              "ref": {
-                "category": "affix",
-                "enUS": "Transfigure",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__transfigure",
-                "sno": null
-              },
-              "tempered": true
-            }
-          ],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Aspect of Might",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_might",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "pants",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Sapphire",
-              "esES": null,
-              "i18n": "none",
-              "idName": "rune__sapphire",
-              "sno": null
-            },
-            {
-              "category": "rune",
-              "enUS": "Sapphire",
-              "esES": null,
-              "i18n": "none",
-              "idName": "rune__sapphire",
-              "sno": null
-            }
-          ]
-        },
-        "ring1": {
-          "affixes": [
-            {
-              "greater": false,
-              "order": 0,
-              "ref": {
-                "category": "affix",
-                "enUS": "Willpower",
-                "esES": "de voluntad",
-                "i18n": "d4companion",
-                "idName": "CoreStat_Willpower;CoreStat_WillpowerPercent;CoreStat_WillpowerPercent_Greater_Unique;CoreStat_Willpower_Weapon;S04_CoreStat_Willpower;S04_CoreStat_WillpowerPercent;S11_CoreStat_Willpower_Greater;Talisman_Charm_Affix_UNIQUE_CoreStat_Willpower_Higher;Talisman_SealAffix_Normal_CoreStat_WillpowerPercent;UNIQUE_CoreStat_WillpowerPercent_Higher;UNIQUE_CoreStat_WillpowerPercent_HigherHigher;UNIQUE_CoreStat_WillpowerPercent_HigherHigherHigher;UNIQUE_CoreStat_Willpower_Higher;UNIQUE_CoreStat_Willpower_HigherHigher;UNIQUE_CoreStat_Willpower_HigherHigherHigher;X2_CoreStat_Willpower_Greater;X2_Transfiguration_CoreStat_Willpower;X2_Transfiguration_CoreStat_WillpowerPercent;X2_Transfiguration_CoreStat_Willpower_Lesser",
-                "sno": 1083645
-              },
-              "tempered": false
-            },
-            {
-              "greater": false,
-              "order": 1,
-              "ref": {
-                "category": "affix",
-                "enUS": "Critical Strike Chance",
-                "esES": "de probabilidad de golpe crítico",
-                "i18n": "d4companion",
-                "idName": "CritChance;CritChanceJewelry;CritChanceJewelry_UBERUNIQUE;CritChance_UBERUNIQUE;S04_CritChance;S04_CritChanceJewelry;Talisman_Charm_Affix_CritChance;Talisman_SealAffix_Normal_CritChance;Tempered_Generic_CritChance_BarbRogue_Tier1;Tempered_Generic_CritChance_BarbRogue_Tier2;Tempered_Generic_CritChance_BarbRogue_Tier3;Tempered_Generic_CritChance_Tier1;Tempered_Generic_CritChance_Tier2;Tempered_Generic_CritChance_Tier3;UBERUNIQUE_CritChance_HeirOfPerdition;UBERUNIQUE_CritChance_RingofStarlessSkies;UNIQUE_CritChance_HighVariance;UNIQUE_CritChance_Higher;UNIQUE_CritChance_HigherHigher;X2_Transfiguration_CritChance",
-                "sno": 1193845
-              },
-              "tempered": false
-            },
-            {
-              "greater": true,
-              "order": 2,
-              "ref": {
-                "category": "affix",
-                "enUS": "x Critical Strike Damage Multiplier",
-                "esES": "Multiplicador de daño de golpe crítico x",
-                "i18n": "d4companion",
-                "idName": "S04_CritDamage;X2_CritDamage_Greater",
-                "sno": 1829586
-              },
-              "tempered": false
-            },
-            {
-              "greater": false,
-              "order": 3,
-              "ref": {
-                "category": "affix",
-                "enUS": "Attack Speed",
-                "esES": "de velocidad de ataque",
-                "i18n": "d4companion",
-                "idName": "AttackSpeed;AttackSpeed_Greater;AttackSpeed_UBERUNIQUE;S04_AttackSpeed;Talisman_Charm_Affix_AttackSpeed;Talisman_Charm_Affix_UNIQUE_AttackSpeed_Higher;Talisman_SealAffix_Normal_AttackSpeed;Tempered_Generic_AttackSpeed_BarbRogue_Tier1;Tempered_Generic_AttackSpeed_BarbRogue_Tier2;Tempered_Generic_AttackSpeed_BarbRogue_Tier3;Tempered_Generic_AttackSpeed_Tier1;Tempered_Generic_AttackSpeed_Tier2;Tempered_Generic_AttackSpeed_Tier3;UBERUNIQUE_AttackSpeed_AndarielsVisage;UBERUNIQUE_AttackSpeed_HeirOfPerdition;UBERUNIQUE_AttackSpeed_RingofStarlessSkies;UBERUNIQUE_AttackSpeed_TyraelsMight;UNIQUE_AttackSpeed_GIGA;UNIQUE_AttackSpeed_HighVariance;UNIQUE_AttackSpeed_Higher;UNIQUE_INHERENT_AttackSpeed;X2_Transfiguration_AttackSpeed",
-                "sno": 1341731
-              },
-              "tempered": false
-            },
-            {
-              "greater": false,
-              "order": 4,
-              "ref": {
-                "category": "affix",
-                "enUS": "Fire Damage (Elemental Finesse: Day - Offensive)",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__fire_damage_elemental_finesse_day_offensive",
-                "sno": null
-              },
-              "tempered": true
-            },
-            {
-              "greater": false,
-              "order": 5,
-              "ref": {
-                "category": "affix",
-                "enUS": "Transfigure",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__transfigure",
-                "sno": null
-              },
-              "tempered": true
-            }
-          ],
-          "aspect": {
-            "category": "aspect",
-            "enUS": "Aspect of Ritual Synthesis",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_ritual_synthesis",
-            "sno": null
-          },
-          "item": null,
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "legendary",
-          "slot": "ring1",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Ruby",
-              "esES": null,
-              "i18n": "none",
-              "idName": "rune__ruby",
-              "sno": null
-            }
-          ]
-        },
-        "ring2": {
-          "affixes": [
-            {
-              "greater": true,
-              "order": 0,
-              "ref": {
-                "category": "affix",
-                "enUS": "182 Primary Core Stat",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__182_primary_core_stat",
-                "sno": null
-              },
-              "tempered": false
-            },
-            {
-              "greater": true,
-              "order": 1,
-              "ref": {
-                "category": "affix",
-                "enUS": "26.25% Attack Speed",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__26_25_attack_speed",
-                "sno": null
-              },
-              "tempered": false
-            },
-            {
-              "greater": false,
-              "order": 2,
-              "ref": {
-                "category": "affix",
-                "enUS": "Tempering Stat 1",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__tempering_stat_1",
-                "sno": null
-              },
-              "tempered": true
-            },
-            {
-              "greater": false,
-              "order": 3,
-              "ref": {
-                "category": "affix",
-                "enUS": "Transfigure",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__transfigure",
-                "sno": null
-              },
-              "tempered": true
-            }
-          ],
-          "aspect": null,
-          "item": {
-            "category": "unique",
-            "enUS": "Ring of Starless Skies",
-            "esES": null,
-            "i18n": "none",
-            "idName": "unique__ring_of_starless_skies",
-            "sno": null
-          },
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": true
-          },
-          "quality": "unique",
-          "slot": "ring2",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Ruby",
-              "esES": null,
-              "i18n": "none",
-              "idName": "rune__ruby",
-              "sno": null
-            }
-          ]
-        },
-        "weapon": {
-          "affixes": [
-            {
-              "greater": false,
-              "order": 0,
-              "ref": {
-                "category": "affix",
-                "enUS": "Willpower",
-                "esES": "de voluntad",
-                "i18n": "d4companion",
-                "idName": "CoreStat_Willpower;CoreStat_WillpowerPercent;CoreStat_WillpowerPercent_Greater_Unique;CoreStat_Willpower_Weapon;S04_CoreStat_Willpower;S04_CoreStat_WillpowerPercent;S11_CoreStat_Willpower_Greater;Talisman_Charm_Affix_UNIQUE_CoreStat_Willpower_Higher;Talisman_SealAffix_Normal_CoreStat_WillpowerPercent;UNIQUE_CoreStat_WillpowerPercent_Higher;UNIQUE_CoreStat_WillpowerPercent_HigherHigher;UNIQUE_CoreStat_WillpowerPercent_HigherHigherHigher;UNIQUE_CoreStat_Willpower_Higher;UNIQUE_CoreStat_Willpower_HigherHigher;UNIQUE_CoreStat_Willpower_HigherHigherHigher;X2_CoreStat_Willpower_Greater;X2_Transfiguration_CoreStat_Willpower;X2_Transfiguration_CoreStat_WillpowerPercent;X2_Transfiguration_CoreStat_Willpower_Lesser",
-                "sno": 1083645
-              },
-              "tempered": false
-            },
-            {
-              "greater": false,
-              "order": 1,
-              "ref": {
-                "category": "affix",
-                "enUS": "Maximum Life",
-                "esES": "de vida máxima",
-                "i18n": "d4companion",
-                "idName": "Life;LifePercent;LifePercent_Double_UBERUNIQUE;Life_Flat_Quadruple_UBERUNIQUE;Life_Greater;S04_Life;Talisman_Charm_Affix_Life;Talisman_Charm_MaxLife_Percent;Talisman_Charm_MaxLife_Percent_MagicOnly;Talisman_Charm_Virtue_Vitality;Talisman_SealAffix_Normal_LifePercent;Tempered_Generic_LifeMax_Tier1;Tempered_Generic_LifeMax_Tier2;Tempered_Generic_LifeMax_Tier3;UBERUNIQUE_FlatLife_Grandfather;UBERUNIQUE_FlatLife_Greater;UBERUNIQUE_FlatLife_NesekemTheHerald;UBERUNIQUE_LifeFlat_HarlequinCrest;UBERUNIQUE_LifeFlat_ShroudOfFalseDeath;UBERUNIQUE_LifePercent_Doombringer;UNIQUE_LifeFlat_Higher;UNIQUE_LifeFlat_HigherHigher;UNIQUE_LifePercent;UNIQUE_LifePercent_Higher;UNIQUE_LifePercent_Higher_Necro;UNIQUE_LifePercent_LessHigher;UNIQUE_LifePercent_Lesser;X2_Life_Greater;X2_Transfiguration_LifePercent;X2_Transfiguration_LifePercent_Lesser",
-                "sno": 1227911
-              },
-              "tempered": false
-            },
-            {
-              "greater": true,
-              "order": 2,
-              "ref": {
-                "category": "affix",
-                "enUS": "x Critical Strike Damage Multiplier",
-                "esES": "Multiplicador de daño de golpe crítico x",
-                "i18n": "d4companion",
-                "idName": "S04_CritDamage;X2_CritDamage_Greater",
-                "sno": 1829586
-              },
-              "tempered": false
-            },
-            {
-              "greater": false,
-              "order": 3,
-              "ref": {
-                "category": "affix",
-                "enUS": "x Fire Damage Multiplier",
-                "esES": "Multiplicador de daño de Fuego x",
-                "i18n": "d4companion",
-                "idName": "X2_DamageType_Fire;X2_DamageType_Fire_Greater",
-                "sno": 2558711
-              },
-              "tempered": false
-            },
-            {
-              "greater": false,
-              "order": 4,
-              "ref": {
-                "category": "affix",
-                "enUS": "Fire Damage (Elemental Finesse: Day - Offensive)",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__fire_damage_elemental_finesse_day_offensive",
-                "sno": null
-              },
-              "tempered": true
-            },
-            {
-              "greater": false,
-              "order": 5,
-              "ref": {
-                "category": "affix",
-                "enUS": "Transfigure",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__transfigure",
-                "sno": null
-              },
-              "tempered": true
-            }
-          ],
-          "aspect": null,
-          "item": {
-            "category": "unique",
-            "enUS": "Spine of Tathamet",
-            "esES": "Espina de Tathamet",
-            "i18n": "d4companion",
-            "idName": "1HMace_Unique_Warlock_001",
-            "sno": 2559883
-          },
-          "minItemPower": null,
-          "mythic": {
-            "craftPath": null,
-            "isMythic": false
-          },
-          "quality": "unique",
-          "slot": "weapon",
-          "sockets": [
-            {
-              "category": "rune",
-              "enUS": "Ruby",
-              "esES": null,
-              "i18n": "none",
-              "idName": "rune__ruby",
-              "sno": null
-            }
-          ]
-        }
-      },
+      "gear": {},
       "id": "d4builds:7fe32f34-83cd-42b9-b574-005041d2985b:0",
       "levelBand": "endgame",
       "mercenary": null,
       "paragon": {
-        "boards": [
-          {
-            "glyph": {
-              "rank": null,
-              "ref": {
-                "category": "glyph",
-                "enUS": "Hellforge",
-                "esES": "Fragua del Infierno",
-                "i18n": "d4companion",
-                "idName": "Rare_116_Intelligence_Side",
-                "sno": null
-              }
-            },
-            "order": 0,
-            "ref": {
-              "category": "paragonBoard",
-              "enUS": "Starting Board",
-              "esES": null,
-              "i18n": "none",
-              "idName": "paragonBoard__starting_board",
-              "sno": null
-            },
-            "rotation": null
-          },
-          {
-            "glyph": {
-              "rank": null,
-              "ref": {
-                "category": "glyph",
-                "enUS": "Destruction",
-                "esES": "Destrucción",
-                "i18n": "d4companion",
-                "idName": "Rare_019_Dexterity_Side",
-                "sno": null
-              }
-            },
-            "order": 1,
-            "ref": {
-              "category": "paragonBoard",
-              "enUS": "Pyrosis",
-              "esES": "Pirosis",
-              "i18n": "d4companion",
-              "idName": "Paragon_Warlock_04",
-              "sno": null
-            },
-            "rotation": null
-          },
-          {
-            "glyph": {
-              "rank": null,
-              "ref": {
-                "category": "glyph",
-                "enUS": "Headhunter",
-                "esES": "Cazacabezas",
-                "i18n": "d4companion",
-                "idName": "Rare_Dex_Generic",
-                "sno": null
-              }
-            },
-            "order": 2,
-            "ref": {
-              "category": "paragonBoard",
-              "enUS": "Ritualism",
-              "esES": "Ritualismo",
-              "i18n": "d4companion",
-              "idName": "Paragon_Warlock_07",
-              "sno": null
-            },
-            "rotation": null
-          },
-          {
-            "glyph": {
-              "rank": null,
-              "ref": {
-                "category": "glyph",
-                "enUS": "Entropy",
-                "esES": "Entropía",
-                "i18n": "d4companion",
-                "idName": "Rare_121_Intelligence_Side",
-                "sno": null
-              }
-            },
-            "order": 3,
-            "ref": {
-              "category": "paragonBoard",
-              "enUS": "Greater Hex",
-              "esES": "Embrujo superior",
-              "i18n": "d4companion",
-              "idName": "Paragon_Warlock_06",
-              "sno": null
-            },
-            "rotation": null
-          },
-          {
-            "glyph": {
-              "rank": null,
-              "ref": {
-                "category": "glyph",
-                "enUS": "Eldritch Sight",
-                "esES": "Visión sobrenatural",
-                "i18n": "d4companion",
-                "idName": "Rare_120_Willpower_Main",
-                "sno": null
-              }
-            },
-            "order": 4,
-            "ref": {
-              "category": "paragonBoard",
-              "enUS": "Dynamism",
-              "esES": "Dinamismo",
-              "i18n": "d4companion",
-              "idName": "Paragon_Warlock_03",
-              "sno": null
-            },
-            "rotation": null
-          }
-        ],
+        "boards": [],
         "level": null
       },
       "runewords": [],
@@ -1543,25 +211,25 @@
             {
               "category": "skillUpgrade",
               "enUS": "Volatility",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__volatility",
+              "esES": "Volatilidad",
+              "i18n": "wowhead-es",
+              "idName": "curated_volatility",
               "sno": null
             },
             {
               "category": "skillUpgrade",
               "enUS": "Eruption",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__eruption",
+              "esES": "Erupción",
+              "i18n": "wowhead-es",
+              "idName": "curated_eruption",
               "sno": null
             },
             {
               "category": "skillUpgrade",
               "enUS": "Additional Fracture",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__additional_fracture",
+              "esES": "Fractura adicional",
+              "i18n": "wowhead-es",
+              "idName": "curated_additional_fracture",
               "sno": null
             }
           ],
@@ -1583,25 +251,25 @@
             {
               "category": "skillUpgrade",
               "enUS": "Damage Reduction",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__damage_reduction",
+              "esES": "Reducción de daño",
+              "i18n": "wowhead-es",
+              "idName": "curated_damage_reduction",
               "sno": null
             },
             {
               "category": "skillUpgrade",
               "enUS": "Portals",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__portals",
+              "esES": "Portales",
+              "i18n": "wowhead-es",
+              "idName": "curated_portals",
               "sno": null
             },
             {
               "category": "skillUpgrade",
               "enUS": "Movement Speed",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__movement_speed",
+              "esES": "Velocidad de movimiento",
+              "i18n": "wowhead-es",
+              "idName": "curated_movement_speed",
               "sno": null
             }
           ],
@@ -1623,25 +291,25 @@
             {
               "category": "skillUpgrade",
               "enUS": "Survivor Damage",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__survivor_damage",
+              "esES": "Daño de superviviente",
+              "i18n": "wowhead-es",
+              "idName": "curated_survivor_damage",
               "sno": null
             },
             {
               "category": "skillUpgrade",
               "enUS": "Annihilation",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__annihilation",
+              "esES": "Aniquilación",
+              "i18n": "wowhead-es",
+              "idName": "curated_annihilation",
               "sno": null
             },
             {
               "category": "skillUpgrade",
               "enUS": "Double Blast",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__double_blast",
+              "esES": "Explosión doble",
+              "i18n": "wowhead-es",
+              "idName": "curated_double_blast",
               "sno": null
             }
           ],
@@ -1678,25 +346,25 @@
             {
               "category": "skillUpgrade",
               "enUS": "Volatility Duration",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__volatility_duration",
+              "esES": "Duración de volatilidad",
+              "i18n": "wowhead-es",
+              "idName": "curated_volatility_duration",
               "sno": null
             },
             {
               "category": "skillUpgrade",
               "enUS": "Hellfire Aura",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__hellfire_aura",
+              "esES": "Aura de fuego infernal",
+              "i18n": "wowhead-es",
+              "idName": "curated_hellfire_aura",
               "sno": null
             },
             {
               "category": "skillUpgrade",
               "enUS": "Chain Reaction",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__chain_reaction",
+              "esES": "Reacción en cadena",
+              "i18n": "wowhead-es",
+              "idName": "curated_chain_reaction",
               "sno": null
             }
           ],
@@ -1718,25 +386,25 @@
             {
               "category": "skillUpgrade",
               "enUS": "Unstoppable Damage",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__unstoppable_damage",
+              "esES": "Daño imparable",
+              "i18n": "wowhead-es",
+              "idName": "curated_unstoppable_damage",
               "sno": null
             },
             {
               "category": "skillUpgrade",
               "enUS": "Demonic Grasp",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__demonic_grasp",
+              "esES": "Agarre demoníaco.",
+              "i18n": "wowhead-es",
+              "idName": "curated_demonic_grasp",
               "sno": null
             },
             {
               "category": "skillUpgrade",
               "enUS": "Grasp Area",
-              "esES": null,
-              "i18n": "none",
-              "idName": "skillUpgrade__grasp_area",
+              "esES": "Zona de agarre",
+              "i18n": "wowhead-es",
+              "idName": "curated_grasp_area",
               "sno": null
             }
           ],
@@ -1745,14 +413,14 @@
       ],
       "source": {
         "author": "Rob2628",
-        "capturedAt": "2026-08-09T07:23:37.476Z",
+        "capturedAt": "2026-08-09T02:30:41.994Z",
         "externalId": "7fe32f34-83cd-42b9-b574-005041d2985b",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "e6546ccd00ee3fe24b10f01c412426cd2c39688ef0426622285e99003ac906ce",
-        "url": "https://d4builds.gg/builds/7fe32f34-83cd-42b9-b574-005041d2985b/?var=0",
+        "snapshotHash": "d2434b9096567ab13d9c944a60fa56f54bba8a2e3b42afd62ff6e39c40930a20",
+        "url": "https://d4builds.gg/builds/hell-fracture-warlock-endgame/",
         "variantIndex": 0,
-        "variantLabel": "Standard Build"
+        "variantLabel": "Endgame"
       },
       "talisman": null,
       "warPlan": null

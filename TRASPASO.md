@@ -121,6 +121,14 @@ dataset (la `class` de una habilidad de mercenario es el propio mercenario).
 **Lo que d4builds llama «runas» dentro de una habilidad NO son runas**: son mejoras de rama del
 árbol. Las runas de verdad se engarzan en el equipo. Tienen categoría propia (`skillUpgrade`).
 
+**Wowhead publica las mejoras de rama, pero sin identificador.** Las habilidades llevan su SNO en la
+URL y se cruzan por ahí; las mejoras son filas dentro de la ficha (`data-skill-type="upgrade"` →
+`whtt-name`) y **no tienen id**. Solo se pueden emparejar EN↔ES **por posición**, así que el
+cosechador descarta la habilidad entera si las dos listas no miden lo mismo, y exige que todas las
+habilidades donde aparece un término lo traduzcan igual (`Weaken` sale en 48). Lo que se publica está
+corroborado por varias páginas. Ojo: `r.jina.ai` **corta con 429**; hay reintento con espera, y la
+cosecha se puede repetir tantas veces como haga falta porque continúa donde lo dejó.
+
 **maxroll.gg no se rastrea nunca.** Su robots.txt (Ziff Davis) lo prohíbe expresamente. El
 importador corre entero en el navegador del usuario.
 
@@ -133,6 +141,7 @@ importador corre entero en el navegador del usuario.
 | `ingest.yml` | cada 6 h | catálogo → normaliza → verifica → commit **solo si cambió algo** |
 | `scrape-pages.yml` | diario + push al scraper | extrae páginas **por lotes**, publicando cada ~14 min |
 | `ci.yml` | push y PR | tipos, tests, verificación de datos y build |
+| `iconos.yml` | semanal + manual | descarga los iconos que faltan y los auto-hospeda |
 
 Tres trampas ya pagadas, **no las reintroduzcas**:
 - El commit ocurría solo al final: una cancelación tiraba 40 minutos. Ahora publica por lotes.
@@ -154,6 +163,11 @@ páginas y empieza de cero; si no, el checkpoint las salta y sigues con los dato
 ---
 
 ## 6. Qué queda pendiente
+
+> Los cinco pendientes de la sesión anterior se atacaron en cascada. Tres se cerraron
+> (traducciones, iconos, corte de temporada) y dos **no se pueden cerrar escribiendo datos**, porque
+> los datos no están publicados en ninguna parte contrastable: en su lugar quedan listas de trabajo
+> generadas de los propios ficheros, en `/estado/verificar`.
 
 1. **Traducciones**: 54% de términos en inglés en las builds. Casi todo son mejoras de rama, y ahora
    se suman los ~100 nodos de plan de guerra y los 7 nombres de actividad. La vía sería cosechar de
