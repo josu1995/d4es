@@ -192,7 +192,13 @@ function construirGear(
   const aspect = esAspecto ? resolver.resolve('aspect', nombre) : null;
 
   const bloque = afijosDeSlot(stats, crudo.slot);
-  const afijos = (bloque?.afijos ?? []).map((a, i) => ({
+  const afijos = (bloque?.afijos ?? [])
+    // "Stat 1", "Tempering Stat 1"... no son afijos: es el hueco vacio del formulario de
+    // la fuente cuando el autor no ha elegido ninguno. Publicarlos llenaba la ficha de
+    // 483 lineas que decian "Stat 3" en ingles y con distintivo de sin traducir, como si
+    // fuera un afijo del juego que no supieramos traducir.
+    .filter((a) => !/^(tempering\s+)?stat\s*\d+$/i.test(a.texto.trim()))
+    .map((a, i) => ({
     ref: resolver.resolve('affix', a.texto),
     greater: a.ga > 0,
     tempered: a.templado,

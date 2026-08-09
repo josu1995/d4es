@@ -31,10 +31,59 @@ export class Resolver {
       // Damage Multiplier") que las fuentes de builds omiten. Es el MISMO afijo, asi que
       // se reintenta con el prefijo antes de darlo por no encontrado.
       if (category === 'affix') {
-        return this.dict.byEnglish[`affix:${normalizeName(`x ${opts.enUS}`)}`];
+        const conX = this.dict.byEnglish[`affix:${normalizeName(`x ${opts.enUS}`)}`];
+        if (conX) return conX;
+
+        // La pagina de la build pega el grupo de templado al nombre del afijo:
+        // "Maximum Life (Worldly Endurance - Defensive)". El afijo es el mismo; el
+        // parentesis dice de que grupo lo sacas, no que afijo es.
+        const sinGrupo = opts.enUS.replace(/\s*\([^)]*\)\s*$/, '').trim();
+        if (sinGrupo !== opts.enUS && sinGrupo.length > 0) {
+          return (
+            this.dict.byEnglish[`affix:${normalizeName(sinGrupo)}`] ??
+            this.dict.byEnglish[`affix:${normalizeName(`x ${sinGrupo}`)}`]
+          );
+        }
+        return undefined;
       }
+
+      if (category === 'aspect') return this.lookupAspecto(opts.enUS);
     }
     return undefined;
+  }
+
+  /**
+   * Los aspectos se guardan en el diccionario SIN la palabra "Aspect": "Crushing Aspect"
+   * esta como `crushing` ("aplastante") y "Aspect of Glynn's Anvil" como
+   * `of glynn s anvil` ("del yunque de Glynn"). Se busca sin esa palabra y se recompone.
+   *
+   * Y se recompone con "RASGO", no con "Aspecto": asi se llaman en el cliente espanol.
+   * Eso no es una suposicion — se comprobo contra el listado de Wowhead en castellano,
+   * cruzando por el identificador interno del juego: 36 de 36 nombres compuestos salen
+   * identicos a los que publica la fuente ("Rasgo aplastante", "Rasgo del yunque de
+   * Glynn"). Incluido el detalle raro de que el propio juego escribe "Rasgo abrumadora",
+   * con el adjetivo en femenino: se reproduce tal cual, porque el nombre es ese y no nos
+   * toca a nosotros arreglarle la concordancia al juego.
+   *
+   * Sigue siendo una COMPOSICION nuestra de dos piezas oficiales, y por eso queda dicho
+   * aqui: si algun dia el diccionario trae el nombre entero, esto sobra.
+   *
+   * Sin esto, los 153 aspectos que aparecen en las builds salian TODOS en ingles pese a
+   * estar los 522 en el diccionario.
+   */
+  private lookupAspecto(enUS: string): DictionaryEntry | undefined {
+    const sinPalabra = enUS.replace(/\baspects?\b/gi, ' ').replace(/\s+/g, ' ').trim();
+    if (sinPalabra === '' || sinPalabra.length === enUS.length) return undefined;
+
+    const entrada = this.dict.byEnglish[`aspect:${normalizeName(sinPalabra)}`];
+    if (!entrada) return undefined;
+
+    return {
+      ...entrada,
+      // El ingles que se publica es el de la fuente, no el fragmento del diccionario.
+      en: enUS,
+      es: `Rasgo ${entrada.es}`,
+    };
   }
 
   /**

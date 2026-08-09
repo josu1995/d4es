@@ -474,10 +474,10 @@
           "aspect": {
             "category": "aspect",
             "enUS": "Aspect of Celestial Strife",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_celestial_strife",
-            "sno": null
+            "esES": "Rasgo de conflicto celestial",
+            "i18n": "d4companion",
+            "idName": "legendary_paladin_005",
+            "sno": 2419796
           },
           "item": null,
           "minItemPower": null,
@@ -557,11 +557,11 @@
               "order": 4,
               "ref": {
                 "category": "affix",
-                "enUS": "Arbiter Duration (Disciple Innovation - Utility)",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__arbiter_duration_disciple_innovation_utility",
-                "sno": null
+                "enUS": "Arbiter Duration",
+                "esES": "de duración de Árbitro",
+                "i18n": "d4companion",
+                "idName": "Tempered_Duration_Paladin_Arbiter_Tier1;Tempered_Duration_Paladin_Arbiter_Tier2;Tempered_Duration_Paladin_Arbiter_Tier3",
+                "sno": 2485221
               },
               "tempered": true
             },
@@ -582,10 +582,10 @@
           "aspect": {
             "category": "aspect",
             "enUS": "Aspect of the Arbiter's Zephyr",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_the_arbiter_s_zephyr",
-            "sno": null
+            "esES": "Rasgo del céfiro del árbitro",
+            "i18n": "d4companion",
+            "idName": "legendary_paladin_071",
+            "sno": 2465855
           },
           "item": null,
           "minItemPower": null,
@@ -654,19 +654,6 @@
             {
               "greater": false,
               "order": 4,
-              "ref": {
-                "category": "affix",
-                "enUS": "Tempering Stat 1",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__tempering_stat_1",
-                "sno": null
-              },
-              "tempered": true
-            },
-            {
-              "greater": false,
-              "order": 5,
               "ref": {
                 "category": "affix",
                 "enUS": "Transfigure",
@@ -797,10 +784,10 @@
           "aspect": {
             "category": "aspect",
             "enUS": "Aspect of Holy Punishment",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_holy_punishment",
-            "sno": null
+            "esES": "Rasgo de castigo sagrado",
+            "i18n": "d4companion",
+            "idName": "legendary_paladin_082",
+            "sno": 2470741
           },
           "item": null,
           "minItemPower": null,
@@ -815,73 +802,8 @@
         "helm": {
           "affixes": [
             {
-              "greater": true,
+              "greater": false,
               "order": 0,
-              "ref": {
-                "category": "affix",
-                "enUS": "Stat 1",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__stat_1",
-                "sno": null
-              },
-              "tempered": false
-            },
-            {
-              "greater": true,
-              "order": 1,
-              "ref": {
-                "category": "affix",
-                "enUS": "Stat 2",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__stat_2",
-                "sno": null
-              },
-              "tempered": false
-            },
-            {
-              "greater": false,
-              "order": 2,
-              "ref": {
-                "category": "affix",
-                "enUS": "Stat 3",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__stat_3",
-                "sno": null
-              },
-              "tempered": false
-            },
-            {
-              "greater": false,
-              "order": 3,
-              "ref": {
-                "category": "affix",
-                "enUS": "Stat 4",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__stat_4",
-                "sno": null
-              },
-              "tempered": false
-            },
-            {
-              "greater": false,
-              "order": 4,
-              "ref": {
-                "category": "affix",
-                "enUS": "Tempering Stat 1",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__tempering_stat_1",
-                "sno": null
-              },
-              "tempered": true
-            },
-            {
-              "greater": false,
-              "order": 5,
               "ref": {
                 "category": "affix",
                 "enUS": "Transfigure",
@@ -985,19 +907,6 @@
             {
               "greater": false,
               "order": 4,
-              "ref": {
-                "category": "affix",
-                "enUS": "Tempering Stat 1",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__tempering_stat_1",
-                "sno": null
-              },
-              "tempered": true
-            },
-            {
-              "greater": false,
-              "order": 5,
               "ref": {
                 "category": "affix",
                 "enUS": "Transfigure",
@@ -1120,10 +1029,10 @@
           "aspect": {
             "category": "aspect",
             "enUS": "Aspect of the Indomitable",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_the_indomitable",
-            "sno": null
+            "esES": "Rasgo del indomable",
+            "i18n": "d4companion",
+            "idName": "legendary_paladin_020",
+            "sno": 2439349
           },
           "item": null,
           "minItemPower": null,
@@ -1211,11 +1120,11 @@
               "order": 4,
               "ref": {
                 "category": "affix",
-                "enUS": "Valor Cooldown Reduction (Juggernaut Efficiency - Resource)",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__valor_cooldown_reduction_juggernaut_efficiency_resource",
-                "sno": null
+                "enUS": "Valor Cooldown Reduction",
+                "esES": "de reducción de tiempo de reutilización de Valor",
+                "i18n": "d4companion",
+                "idName": "Tempered_Resource_CDR_Valor_Tier1;Tempered_Resource_CDR_Valor_Tier2;Tempered_Resource_CDR_Valor_Tier3",
+                "sno": 2481192
               },
               "tempered": true
             },
@@ -1236,10 +1145,10 @@
           "aspect": {
             "category": "aspect",
             "enUS": "Aspect of Ascension",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_ascension",
-            "sno": null
+            "esES": "Rasgo de ascensión",
+            "i18n": "d4companion",
+            "idName": "legendary_paladin_047",
+            "sno": 2448316
           },
           "item": null,
           "minItemPower": null,
@@ -1319,11 +1228,11 @@
               "order": 4,
               "ref": {
                 "category": "affix",
-                "enUS": "Casting Valor Skills Restores Primary Resource (Zealot Efficiency - Resource)",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__casting_valor_skills_restores_primary_resource_zealot_efficiency_resource",
-                "sno": null
+                "enUS": "Casting Valor Skills Restores Primary Resource",
+                "esES": "Lanzar habilidades de categoría Valor restaura de recurso primario",
+                "i18n": "d4companion",
+                "idName": "Tempered_Resource_After_Tag_Paladin_Valor_Tier1;Tempered_Resource_After_Tag_Paladin_Valor_Tier2;Tempered_Resource_After_Tag_Paladin_Valor_Tier3",
+                "sno": 2481507
               },
               "tempered": true
             },
@@ -1427,11 +1336,11 @@
               "order": 4,
               "ref": {
                 "category": "affix",
-                "enUS": "Chance for Arbiter to Deal Double Damage (Disciple Augments - Weapons)",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__chance_for_arbiter_to_deal_double_damage_disciple_augments_weapons",
-                "sno": null
+                "enUS": "Chance for Arbiter to Deal Double Damage",
+                "esES": "de probabilidad de que Árbitro inflija el doble de daño",
+                "i18n": "d4companion",
+                "idName": "Talisman_Charm_Affix_UNIQUE_Double_Damage_Skill_Pal_WingStrike;Tempered_Damage_Subpower_ArbiterWings_Tier1;Tempered_Damage_Subpower_ArbiterWings_Tier2;Tempered_Damage_Subpower_ArbiterWings_Tier3",
+                "sno": 2503040
               },
               "tempered": true
             },

@@ -87,3 +87,72 @@ describe('limpiarLocalisation', () => {
     expect(salida).not.toMatch(/[{}[\]|]/);
   });
 });
+
+/**
+ * El diccionario oficial guarda los aspectos SIN la palabra "Aspect" y el nombre completo
+ * en castellano se forma con "Rasgo" delante. Sin esto, los 153 aspectos que salen en las
+ * builds aparecian todos en ingles teniendo los 522 en el diccionario.
+ */
+describe('aspectos: se recompone el nombre completo', () => {
+  const r = () =>
+    new Resolver(
+      dict([
+        { category: 'aspect', en: 'Crushing', es: 'aplastante' },
+        { category: 'aspect', en: "of Glynn's Anvil", es: 'del yunque de Glynn' },
+        { category: 'aspect', en: "Edgemaster's", es: 'de maestro de filos' },
+        { category: 'aspect', en: 'Overwhelming', es: 'abrumadora' },
+      ]),
+    );
+
+  it('resuelve el adjetivo delante: "Crushing Aspect"', () => {
+    expect(r().resolve('aspect', 'Crushing Aspect').esES).toBe('Rasgo aplastante');
+  });
+
+  it('resuelve el complemento detras: "Aspect of Glynn\'s Anvil"', () => {
+    expect(r().resolve('aspect', "Aspect of Glynn's Anvil").esES).toBe('Rasgo del yunque de Glynn');
+  });
+
+  it('resuelve el posesivo: "Edgemaster\'s Aspect"', () => {
+    expect(r().resolve('aspect', "Edgemaster's Aspect").esES).toBe('Rasgo de maestro de filos');
+  });
+
+  it('reproduce la concordancia rara del propio juego, no la "arregla"', () => {
+    // El cliente espanol dice literalmente "Rasgo abrumadora". Es su nombre, no una errata
+    // nuestra: comprobado contra Wowhead en castellano cruzando por el id del juego.
+    expect(r().resolve('aspect', 'Overwhelming Aspect').esES).toBe('Rasgo abrumadora');
+  });
+
+  it('conserva el ingles de la FUENTE, no el fragmento del diccionario', () => {
+    expect(r().resolve('aspect', 'Crushing Aspect').enUS).toBe('Crushing Aspect');
+  });
+
+  it('un aspecto que no esta sigue sin traducirse: no se inventa el prefijo', () => {
+    const ref = r().resolve('aspect', 'Aspect of Nothing At All');
+    expect(ref.esES).toBeNull();
+    expect(ref.i18n).toBe('none');
+  });
+});
+
+describe('afijos: el grupo de templado no cambia el afijo', () => {
+  const r = () =>
+    new Resolver(
+      dict([
+        { category: 'affix', en: 'Maximum Life', es: 'de vida máxima' },
+        { category: 'affix', en: 'x Vulnerable Damage', es: 'Daño por vulnerabilidad x' },
+      ]),
+    );
+
+  it('quita el parentesis que pega la fuente', () => {
+    expect(r().resolve('affix', 'Maximum Life (Worldly Endurance - Defensive)').esES).toBe('de vida máxima');
+  });
+
+  it('el parentesis tampoco estorba al reintento con la "x" de multiplicador', () => {
+    expect(r().resolve('affix', 'Vulnerable Damage (Worldly Destruction - Weapons)').esES).toBe(
+      'Daño por vulnerabilidad x',
+    );
+  });
+
+  it('sin parentesis sigue funcionando igual', () => {
+    expect(r().resolve('affix', 'Maximum Life').esES).toBe('de vida máxima');
+  });
+});

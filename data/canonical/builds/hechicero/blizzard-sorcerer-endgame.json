@@ -390,11 +390,11 @@
               "order": 4,
               "ref": {
                 "category": "affix",
-                "enUS": "Cooldown Reduction (Worldly Stability - Resource)",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__cooldown_reduction_worldly_stability_resource",
-                "sno": null
+                "enUS": "Cooldown Reduction",
+                "esES": "de reducción de tiempo de reutilización",
+                "i18n": "d4companion",
+                "idName": "CooldownReductionCDR;CooldownReductionCDR_UBERUNIQUE;INHERENT_CooldownReductionCDR;INHERENT_Resource_Cost_Reduction_Druid;S04_CooldownReductionCDR;Talisman_Charm_Affix_CooldownReductionCDR;Talisman_Charm_Virtue_Elegance;Talisman_SealAffix_Normal_CooldownCDR;Tempered_Generic_CDR_Tier1;Tempered_Generic_CDR_Tier2;Tempered_Generic_CDR_Tier3;UBERUNIQUE_CooldownReductionCDR_HarlequinCrest;UNIQUE_CooldownReductionCDR_Higher;X2_Transfiguration_CooldownReductionCDR",
+                "sno": 1234186
               },
               "tempered": true
             },
@@ -428,10 +428,10 @@
           "aspect": {
             "category": "aspect",
             "enUS": "Aspect of Elemental Constellation",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_elemental_constellation",
-            "sno": null
+            "esES": "Rasgo de constelación elemental",
+            "i18n": "d4companion",
+            "idName": "x1_legendary_sorc_141_x2",
+            "sno": 2574612
           },
           "item": null,
           "minItemPower": null,
@@ -511,11 +511,11 @@
               "order": 4,
               "ref": {
                 "category": "affix",
-                "enUS": "Movement Speed (Natural Motion - Mobility)",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__movement_speed_natural_motion_mobility",
-                "sno": null
+                "enUS": "Movement Speed",
+                "esES": "de velocidad de movimiento",
+                "i18n": "d4companion",
+                "idName": "Movement_Speed;Movement_Speed_Lesser;Movement_Speed_UBERUNIQUE;S04_Movement_Speed;Talisman_Charm_Affix_Movement_Speed;Talisman_Charm_Affix_UNIQUE_Movement_Speed_Lesser;Talisman_Charm_Movement_Speed;Talisman_Charm_Movement_Speed_MagicOnly;Tempered_MovementSpeed_Generic_Tier1;Tempered_MovementSpeed_Generic_Tier2;Tempered_MovementSpeed_Generic_Tier3;Tempered_PaladinMoveSpeed_Tier1;Tempered_PaladinMoveSpeed_Tier2;Tempered_PaladinMoveSpeed_Tier3;UBERUNIQUE_Movement_Speed_Ahavarion;UBERUNIQUE_Movement_Speed_HeirOfPerdition;UBERUNIQUE_Movement_Speed_MeltedHeartofSelig;UBERUNIQUE_Movement_Speed_TyraelsMight;UNIQUE_INHERENT_MovementSpeed_High;UNIQUE_Movement_Speed_High;UNIQUE_Movement_Speed_Higher;UNIQUE_Movement_Speed_Lesser;UNIQUE_Movement_Speed_LesserLesser;X2_Transfiguration_Movement_Speed;X2_Transfiguration_Movement_Speed_Lesser",
+                "sno": 1439265
               },
               "tempered": true
             },
@@ -536,10 +536,10 @@
           "aspect": {
             "category": "aspect",
             "enUS": "Great Storm Aspect",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__great_storm_aspect",
-            "sno": null
+            "esES": "Rasgo de tormenta tremenda",
+            "i18n": "d4companion",
+            "idName": "legendary_druid_059_x2",
+            "sno": 2540447
           },
           "item": null,
           "minItemPower": null,
@@ -610,11 +610,11 @@
               "order": 4,
               "ref": {
                 "category": "affix",
-                "enUS": "Maximum Life (Worldly Endurance - Defensive)",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__maximum_life_worldly_endurance_defensive",
-                "sno": null
+                "enUS": "Maximum Life",
+                "esES": "de vida máxima",
+                "i18n": "d4companion",
+                "idName": "Life;LifePercent;LifePercent_Double_UBERUNIQUE;Life_Flat_Quadruple_UBERUNIQUE;Life_Greater;S04_Life;Talisman_Charm_Affix_Life;Talisman_Charm_MaxLife_Percent;Talisman_Charm_MaxLife_Percent_MagicOnly;Talisman_Charm_Virtue_Vitality;Talisman_SealAffix_Normal_LifePercent;Tempered_Generic_LifeMax_Tier1;Tempered_Generic_LifeMax_Tier2;Tempered_Generic_LifeMax_Tier3;UBERUNIQUE_FlatLife_Grandfather;UBERUNIQUE_FlatLife_Greater;UBERUNIQUE_FlatLife_NesekemTheHerald;UBERUNIQUE_LifeFlat_HarlequinCrest;UBERUNIQUE_LifeFlat_ShroudOfFalseDeath;UBERUNIQUE_LifePercent_Doombringer;UNIQUE_LifeFlat_Higher;UNIQUE_LifeFlat_HigherHigher;UNIQUE_LifePercent;UNIQUE_LifePercent_Higher;UNIQUE_LifePercent_Higher_Necro;UNIQUE_LifePercent_LessHigher;UNIQUE_LifePercent_Lesser;X2_Life_Greater;X2_Transfiguration_LifePercent;X2_Transfiguration_LifePercent_Lesser",
+                "sno": 1227911
               },
               "tempered": true
             },
@@ -726,11 +726,11 @@
               "order": 4,
               "ref": {
                 "category": "affix",
-                "enUS": "Damage Over Time (Worldly Finesse - Offensive)",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__damage_over_time_worldly_finesse_offensive",
-                "sno": null
+                "enUS": "Damage Over Time",
+                "esES": "de daño en el tiempo",
+                "i18n": "d4companion",
+                "idName": "Damage_DoT;Damage_DoT_Double_UNIQUE;INHERENT_Damage_Over_Time;Talisman_Charm_Affix_UNIQUE_Damage_DoT_Higher;Talisman_Charm_Virtue_Malice;Tempered_Damage_Generic_to_DoT_Tier1;Tempered_Damage_Generic_to_DoT_Tier2;Tempered_Damage_Generic_to_DoT_Tier3;UBERUNIQUE_Damage_DoT_ShatteredVow;UNIQUE_Damage_DoT_Higher",
+                "sno": 1087749
               },
               "tempered": true
             },
@@ -751,10 +751,10 @@
           "aspect": {
             "category": "aspect",
             "enUS": "Storm Splitter's Aspect",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__storm_splitter_s_aspect",
-            "sno": null
+            "esES": "Rasgo del rompetormentas",
+            "i18n": "d4companion",
+            "idName": "legendary_sorc_124_x2",
+            "sno": 2574571
           },
           "item": null,
           "minItemPower": null,
@@ -825,11 +825,11 @@
               "order": 4,
               "ref": {
                 "category": "affix",
-                "enUS": "Maximum Life (Worldly Endurance - Defensive)",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__maximum_life_worldly_endurance_defensive",
-                "sno": null
+                "enUS": "Maximum Life",
+                "esES": "de vida máxima",
+                "i18n": "d4companion",
+                "idName": "Life;LifePercent;LifePercent_Double_UBERUNIQUE;Life_Flat_Quadruple_UBERUNIQUE;Life_Greater;S04_Life;Talisman_Charm_Affix_Life;Talisman_Charm_MaxLife_Percent;Talisman_Charm_MaxLife_Percent_MagicOnly;Talisman_Charm_Virtue_Vitality;Talisman_SealAffix_Normal_LifePercent;Tempered_Generic_LifeMax_Tier1;Tempered_Generic_LifeMax_Tier2;Tempered_Generic_LifeMax_Tier3;UBERUNIQUE_FlatLife_Grandfather;UBERUNIQUE_FlatLife_Greater;UBERUNIQUE_FlatLife_NesekemTheHerald;UBERUNIQUE_LifeFlat_HarlequinCrest;UBERUNIQUE_LifeFlat_ShroudOfFalseDeath;UBERUNIQUE_LifePercent_Doombringer;UNIQUE_LifeFlat_Higher;UNIQUE_LifeFlat_HigherHigher;UNIQUE_LifePercent;UNIQUE_LifePercent_Higher;UNIQUE_LifePercent_Higher_Necro;UNIQUE_LifePercent_LessHigher;UNIQUE_LifePercent_Lesser;X2_Life_Greater;X2_Transfiguration_LifePercent;X2_Transfiguration_LifePercent_Lesser",
+                "sno": 1227911
               },
               "tempered": true
             },
@@ -850,10 +850,10 @@
           "aspect": {
             "category": "aspect",
             "enUS": "Mage-Lord's Aspect",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__mage_lord_s_aspect",
-            "sno": null
+            "esES": "Rasgo de señor mago",
+            "i18n": "d4companion",
+            "idName": "legendary_sorc_120_x2",
+            "sno": 2576064
           },
           "item": null,
           "minItemPower": null,
@@ -941,11 +941,11 @@
               "order": 4,
               "ref": {
                 "category": "affix",
-                "enUS": "Maximum Life (Worldly Endurance - Defensive)",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__maximum_life_worldly_endurance_defensive",
-                "sno": null
+                "enUS": "Maximum Life",
+                "esES": "de vida máxima",
+                "i18n": "d4companion",
+                "idName": "Life;LifePercent;LifePercent_Double_UBERUNIQUE;Life_Flat_Quadruple_UBERUNIQUE;Life_Greater;S04_Life;Talisman_Charm_Affix_Life;Talisman_Charm_MaxLife_Percent;Talisman_Charm_MaxLife_Percent_MagicOnly;Talisman_Charm_Virtue_Vitality;Talisman_SealAffix_Normal_LifePercent;Tempered_Generic_LifeMax_Tier1;Tempered_Generic_LifeMax_Tier2;Tempered_Generic_LifeMax_Tier3;UBERUNIQUE_FlatLife_Grandfather;UBERUNIQUE_FlatLife_Greater;UBERUNIQUE_FlatLife_NesekemTheHerald;UBERUNIQUE_LifeFlat_HarlequinCrest;UBERUNIQUE_LifeFlat_ShroudOfFalseDeath;UBERUNIQUE_LifePercent_Doombringer;UNIQUE_LifeFlat_Higher;UNIQUE_LifeFlat_HigherHigher;UNIQUE_LifePercent;UNIQUE_LifePercent_Higher;UNIQUE_LifePercent_Higher_Necro;UNIQUE_LifePercent_LessHigher;UNIQUE_LifePercent_Lesser;X2_Life_Greater;X2_Transfiguration_LifePercent;X2_Transfiguration_LifePercent_Lesser",
+                "sno": 1227911
               },
               "tempered": true
             },
@@ -1057,11 +1057,11 @@
               "order": 4,
               "ref": {
                 "category": "affix",
-                "enUS": "Cooldown Reduction (Worldly Stability - Resource)",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__cooldown_reduction_worldly_stability_resource",
-                "sno": null
+                "enUS": "Cooldown Reduction",
+                "esES": "de reducción de tiempo de reutilización",
+                "i18n": "d4companion",
+                "idName": "CooldownReductionCDR;CooldownReductionCDR_UBERUNIQUE;INHERENT_CooldownReductionCDR;INHERENT_Resource_Cost_Reduction_Druid;S04_CooldownReductionCDR;Talisman_Charm_Affix_CooldownReductionCDR;Talisman_Charm_Virtue_Elegance;Talisman_SealAffix_Normal_CooldownCDR;Tempered_Generic_CDR_Tier1;Tempered_Generic_CDR_Tier2;Tempered_Generic_CDR_Tier3;UBERUNIQUE_CooldownReductionCDR_HarlequinCrest;UNIQUE_CooldownReductionCDR_Higher;X2_Transfiguration_CooldownReductionCDR",
+                "sno": 1234186
               },
               "tempered": true
             },
@@ -1082,10 +1082,10 @@
           "aspect": {
             "category": "aspect",
             "enUS": "Aspect of Elemental Attunement",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_elemental_attunement",
-            "sno": null
+            "esES": "Rasgo de armonía elemental",
+            "i18n": "d4companion",
+            "idName": "legendary_sorc_126_x2",
+            "sno": 2577075
           },
           "item": null,
           "minItemPower": null,
@@ -1165,11 +1165,11 @@
               "order": 4,
               "ref": {
                 "category": "affix",
-                "enUS": "Cooldown Reduction (Worldly Stability - Resource)",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__cooldown_reduction_worldly_stability_resource",
-                "sno": null
+                "enUS": "Cooldown Reduction",
+                "esES": "de reducción de tiempo de reutilización",
+                "i18n": "d4companion",
+                "idName": "CooldownReductionCDR;CooldownReductionCDR_UBERUNIQUE;INHERENT_CooldownReductionCDR;INHERENT_Resource_Cost_Reduction_Druid;S04_CooldownReductionCDR;Talisman_Charm_Affix_CooldownReductionCDR;Talisman_Charm_Virtue_Elegance;Talisman_SealAffix_Normal_CooldownCDR;Tempered_Generic_CDR_Tier1;Tempered_Generic_CDR_Tier2;Tempered_Generic_CDR_Tier3;UBERUNIQUE_CooldownReductionCDR_HarlequinCrest;UNIQUE_CooldownReductionCDR_Higher;X2_Transfiguration_CooldownReductionCDR",
+                "sno": 1234186
               },
               "tempered": true
             },
@@ -1219,10 +1219,10 @@
           "aspect": {
             "category": "aspect",
             "enUS": "Aspect of Splintering Energy",
-            "esES": null,
-            "i18n": "none",
-            "idName": "aspect__aspect_of_splintering_energy",
-            "sno": null
+            "esES": "Rasgo de energía astillada",
+            "i18n": "d4companion",
+            "idName": "legendary_sorc_121_x2",
+            "sno": 2574634
           },
           "item": null,
           "minItemPower": null,
