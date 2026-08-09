@@ -119,7 +119,8 @@ function pagina(overrides: Partial<PaginaRaw['porVariante'][number]> = {}): Pagi
         ],
         arbol: [],
         paragon: [{ tablero: 'Blood Drinker', glifo: 'Might', nivelGlifo: 100, icono: null }],
-        mercenarios: [{ nombre: 'Raheir', rol: 'Shieldbearer', habilidades: ['Ground Slam'], icono: null }],
+        // La fuente muestra HABILIDADES de mercenario, no el mercenario en si.
+        mercenarios: [{ nombre: 'Ground Slam', rol: 'Mercenary', habilidades: [], icono: null }],
         warPlans: [],
         debug: {},
         ...overrides,
@@ -127,6 +128,9 @@ function pagina(overrides: Partial<PaginaRaw['porVariante'][number]> = {}): Pagi
     ],
   };
 }
+
+/** habilidad de mercenario -> mercenario al que pertenece, como en el dataset real. */
+const duenos = new Map([['ground slam', 'Raheir, The Shieldbearer']]);
 
 const dict = diccionario([
   { category: 'unique', en: 'Tuskhelm of Joritz the Mighty', es: 'Yelmo colmillado de Joritz el Poderoso' },
@@ -149,14 +153,14 @@ describe('limpiarNombreTablero', () => {
 
 describe('enriquecerConPagina', () => {
   it('coloca cada pieza en su ranura', () => {
-    const { build } = enriquecerConPagina(buildBase, pagina(), new Resolver(dict));
+    const { build } = enriquecerConPagina(buildBase, pagina(), new Resolver(dict), duenos);
     const gear = build.variants[0]!.gear;
     expect(Object.keys(gear).sort()).toEqual(['boots', 'helm', 'ring1']);
     expect(gear['helm']?.item?.esES).toBe('Yelmo colmillado de Joritz el Poderoso');
   });
 
   it('distingue un aspecto de un objeto unico', () => {
-    const { build } = enriquecerConPagina(buildBase, pagina(), new Resolver(dict));
+    const { build } = enriquecerConPagina(buildBase, pagina(), new Resolver(dict), duenos);
     const botas = build.variants[0]!.gear['boots']!;
     expect(botas.item).toBeNull();
     expect(botas.aspect?.esES).toBe('Aspecto de sobrecalentamiento');
@@ -164,14 +168,14 @@ describe('enriquecerConPagina', () => {
   });
 
   it('marca la calidad mitica sin confundirla con la rareza', () => {
-    const { build } = enriquecerConPagina(buildBase, pagina(), new Resolver(dict));
+    const { build } = enriquecerConPagina(buildBase, pagina(), new Resolver(dict), duenos);
     const anillo = build.variants[0]!.gear['ring1']!;
     expect(anillo.mythic.isMythic).toBe(true);
     expect(anillo.quality).toBe('unique');
   });
 
   it('conserva afijo superior y templado', () => {
-    const { build } = enriquecerConPagina(buildBase, pagina(), new Resolver(dict));
+    const { build } = enriquecerConPagina(buildBase, pagina(), new Resolver(dict), duenos);
     const afijos = build.variants[0]!.gear['helm']!.affixes;
     expect(afijos[0]?.greater).toBe(true);
     expect(afijos[0]?.ref.esES).toBe('de reducción de tiempo de reutilización');
@@ -179,12 +183,12 @@ describe('enriquecerConPagina', () => {
   });
 
   it('trae los engarces', () => {
-    const { build } = enriquecerConPagina(buildBase, pagina(), new Resolver(dict));
+    const { build } = enriquecerConPagina(buildBase, pagina(), new Resolver(dict), duenos);
     expect(build.variants[0]!.gear['helm']!.sockets).toHaveLength(1);
   });
 
   it('trae el tablero de paragon con su glifo traducido', () => {
-    const { build } = enriquecerConPagina(buildBase, pagina(), new Resolver(dict));
+    const { build } = enriquecerConPagina(buildBase, pagina(), new Resolver(dict), duenos);
     const boards = build.variants[0]!.paragon.boards;
     expect(boards).toHaveLength(1);
     expect(boards[0]?.ref.esES).toBe('Bebedor de sangre');
@@ -193,13 +197,13 @@ describe('enriquecerConPagina', () => {
   });
 
   it('conserva las habilidades del catalogo: la pagina no las pisa', () => {
-    const { build } = enriquecerConPagina(buildBase, pagina(), new Resolver(dict));
+    const { build } = enriquecerConPagina(buildBase, pagina(), new Resolver(dict), duenos);
     expect(build.variants[0]!.skills).toHaveLength(1);
     expect(build.variants[0]!.skills[0]?.rank).toBe(15);
   });
 
   it('sube la completitud al aportar equipo, paragon y mercenario', () => {
-    const { build } = enriquecerConPagina(buildBase, pagina(), new Resolver(dict));
+    const { build } = enriquecerConPagina(buildBase, pagina(), new Resolver(dict), duenos);
     const c = build.variants[0]!.completeness;
     expect(c.hasGear).toBe(true);
     expect(c.hasParagon).toBe(true);
@@ -208,18 +212,18 @@ describe('enriquecerConPagina', () => {
   });
 
   it('el resultado sigue validando contra el esquema canonico', () => {
-    const { build } = enriquecerConPagina(buildBase, pagina(), new Resolver(dict));
+    const { build } = enriquecerConPagina(buildBase, pagina(), new Resolver(dict), duenos);
     expect(CanonicalBuild.safeParse(build).success).toBe(true);
   });
 
   it('es determinista', () => {
-    const a = enriquecerConPagina(buildBase, pagina(), new Resolver(dict)).build;
-    const b = enriquecerConPagina(buildBase, pagina(), new Resolver(dict)).build;
+    const a = enriquecerConPagina(buildBase, pagina(), new Resolver(dict), duenos).build;
+    const b = enriquecerConPagina(buildBase, pagina(), new Resolver(dict), duenos).build;
     expect(JSON.stringify(a)).toBe(JSON.stringify(b));
   });
 
   it('sin diccionario no inventa: todo queda en ingles y sin procedencia', () => {
-    const { build } = enriquecerConPagina(buildBase, pagina(), new Resolver(diccionario([])));
+    const { build } = enriquecerConPagina(buildBase, pagina(), new Resolver(diccionario([])), duenos);
     const casco = build.variants[0]!.gear['helm']!;
     expect(casco.item?.esES).toBeNull();
     expect(casco.item?.i18n).toBe('none');
@@ -228,7 +232,7 @@ describe('enriquecerConPagina', () => {
   it('omite una pieza cuya ranura no reconoce en vez de colocarla a ciegas', () => {
     const p = pagina();
     p.porVariante[0]!.gear.push({ slot: 'Ranura Inventada', nombre: 'Algo', calidad: null, icono: null, engarces: [] });
-    const { build } = enriquecerConPagina(buildBase, p, new Resolver(dict));
+    const { build } = enriquecerConPagina(buildBase, p, new Resolver(dict), duenos);
     expect(Object.keys(build.variants[0]!.gear)).toHaveLength(3);
   });
 });

@@ -1090,21 +1090,23 @@
       "mercenary": {
         "ref": {
           "category": "mercenary",
-          "enUS": "Bloodthirst",
+          "enUS": "Varyana, The Berserker Crone",
           "esES": null,
           "i18n": "none",
-          "idName": "mercenary__bloodthirst",
+          "idName": "mercenary__varyana_the_berserker_crone",
           "sno": null
         },
-        "reinforcement": {
-          "category": "mercenary",
-          "enUS": "Lightning Storm",
-          "esES": null,
-          "i18n": "none",
-          "idName": "mercenary__lightning_storm",
-          "sno": null
-        },
-        "skills": []
+        "reinforcement": null,
+        "skills": [
+          {
+            "category": "skill",
+            "enUS": "Bloodthirst",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__bloodthirst",
+            "sno": null
+          }
+        ]
       },
       "paragon": {
         "boards": [

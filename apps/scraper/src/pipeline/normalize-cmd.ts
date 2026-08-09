@@ -182,6 +182,21 @@ export async function runNormalize(): Promise<NormalizeResultado> {
 
   // Enriquecimiento con lo extraido de las paginas: equipo, Paragon y mercenarios.
   const relleno = { conGear: 0, conParagon: 0, conMercenario: 0, paginas: 0 };
+
+  // La pagina muestra habilidades de mercenario, no el mercenario. Este mapa permite
+  // deducir de quien son: el dataset trae la clase de cada habilidad, y para las de
+  // mercenario esa clase es el propio mercenario ("Varyana, The Berserker Crone").
+  const mercenarioPorHabilidad = new Map<string, string>();
+  {
+    const dsPrevio = await readJsonIfExists<{ byName?: Record<string, { name: string; class: string | null }> }>(
+      join(PATHS.canonical, 'skills-dataset.json'),
+    );
+    for (const s of Object.values(dsPrevio?.byName ?? {})) {
+      if (s.class && /Raheir|Varyana|Subo|Aldkin/.test(s.class)) {
+        mercenarioPorHabilidad.set(skillNameKey(s.name), s.class);
+      }
+    }
+  }
   const dirPaginas = join(PATHS.raw, 'd4builds', 'pages');
   if (existsSync(dirPaginas)) {
     for (let i = 0; i < builds.length; i++) {
@@ -191,7 +206,7 @@ export async function runNormalize(): Promise<NormalizeResultado> {
       const pagina = await readJsonIfExists<PaginaRaw>(join(dirPaginas, `${externalId}.json`));
       if (!pagina) continue;
       relleno.paginas++;
-      const res = enriquecerConPagina(build, pagina, resolver);
+      const res = enriquecerConPagina(build, pagina, resolver, mercenarioPorHabilidad);
       builds[i] = res.build;
       if (res.relleno.gear > 0) relleno.conGear++;
       if (res.relleno.paragon > 0) relleno.conParagon++;

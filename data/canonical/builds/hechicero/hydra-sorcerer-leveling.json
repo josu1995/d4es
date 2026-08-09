@@ -173,24 +173,1050 @@
     "en": "Hydra",
     "es": "Hidra"
   },
-  "updatedAt": "2026-08-09T02:30:41.994Z",
+  "updatedAt": "2026-08-09T07:35:54.054Z",
   "variants": [
     {
       "completeness": {
-        "hasGear": false,
-        "hasMercenary": false,
-        "hasParagon": false,
+        "hasGear": true,
+        "hasMercenary": true,
+        "hasParagon": true,
         "hasSkills": true,
         "hasTalisman": false,
         "hasWarPlan": false,
-        "score": 0.35
+        "score": 0.9
       },
-      "gear": {},
+      "gear": {
+        "amulet": {
+          "affixes": [
+            {
+              "greater": false,
+              "order": 0,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 1",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_1",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 1,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 2",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_2",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 2,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 3",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_3",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 3,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 4",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_4",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 4,
+              "ref": {
+                "category": "affix",
+                "enUS": "Tempering Stat 1",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__tempering_stat_1",
+                "sno": null
+              },
+              "tempered": true
+            },
+            {
+              "greater": false,
+              "order": 5,
+              "ref": {
+                "category": "affix",
+                "enUS": "Transfigure",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__transfigure",
+                "sno": null
+              },
+              "tempered": true
+            },
+            {
+              "greater": false,
+              "order": 6,
+              "ref": {
+                "category": "affix",
+                "enUS": "Transfigure",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__transfigure",
+                "sno": null
+              },
+              "tempered": true
+            }
+          ],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Channeling",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_channeling",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "amulet",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Skull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__skull",
+              "sno": null
+            }
+          ]
+        },
+        "boots": {
+          "affixes": [
+            {
+              "greater": false,
+              "order": 0,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 1",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_1",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 1,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 2",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_2",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 2,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 3",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_3",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 3,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 4",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_4",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 4,
+              "ref": {
+                "category": "affix",
+                "enUS": "Tempering Stat 1",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__tempering_stat_1",
+                "sno": null
+              },
+              "tempered": true
+            },
+            {
+              "greater": false,
+              "order": 5,
+              "ref": {
+                "category": "affix",
+                "enUS": "Transfigure",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__transfigure",
+                "sno": null
+              },
+              "tempered": true
+            }
+          ],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Nebulous Brews",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_nebulous_brews",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "boots",
+          "sockets": []
+        },
+        "chest": {
+          "affixes": [
+            {
+              "greater": false,
+              "order": 0,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 1",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_1",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 1,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 2",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_2",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 2,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 3",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_3",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 3,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 4",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_4",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 4,
+              "ref": {
+                "category": "affix",
+                "enUS": "Tempering Stat 1",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__tempering_stat_1",
+                "sno": null
+              },
+              "tempered": true
+            },
+            {
+              "greater": false,
+              "order": 5,
+              "ref": {
+                "category": "affix",
+                "enUS": "Transfigure",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__transfigure",
+                "sno": null
+              },
+              "tempered": true
+            }
+          ],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Juggernaut's Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__juggernaut_s_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "chest",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Neo",
+              "esES": "Neo",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Condition_OnAvoidDamage",
+              "sno": 2063987
+            },
+            {
+              "category": "rune",
+              "enUS": "Ceh",
+              "esES": "Ceh",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Effect_SummonSpiritWolf",
+              "sno": 2057115
+            }
+          ]
+        },
+        "gloves": {
+          "affixes": [
+            {
+              "greater": false,
+              "order": 0,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 1",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_1",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 1,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 2",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_2",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 2,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 3",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_3",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 3,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 4",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_4",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 4,
+              "ref": {
+                "category": "affix",
+                "enUS": "Tempering Stat 1",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__tempering_stat_1",
+                "sno": null
+              },
+              "tempered": true
+            },
+            {
+              "greater": false,
+              "order": 5,
+              "ref": {
+                "category": "affix",
+                "enUS": "Transfigure",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__transfigure",
+                "sno": null
+              },
+              "tempered": true
+            }
+          ],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Edgemaster's Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__edgemaster_s_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "gloves",
+          "sockets": []
+        },
+        "helm": {
+          "affixes": [
+            {
+              "greater": false,
+              "order": 0,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 1",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_1",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 1,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 2",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_2",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 2,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 3",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_3",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 3,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 4",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_4",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 4,
+              "ref": {
+                "category": "affix",
+                "enUS": "Tempering Stat 1",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__tempering_stat_1",
+                "sno": null
+              },
+              "tempered": true
+            },
+            {
+              "greater": false,
+              "order": 5,
+              "ref": {
+                "category": "affix",
+                "enUS": "Transfigure",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__transfigure",
+                "sno": null
+              },
+              "tempered": true
+            }
+          ],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Concentration",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_concentration",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "helm",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Topaz",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__topaz",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Topaz",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__topaz",
+              "sno": null
+            }
+          ]
+        },
+        "offhand": {
+          "affixes": [
+            {
+              "greater": false,
+              "order": 0,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 1",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_1",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 1,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 2",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_2",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 2,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 3",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_3",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 3,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 4",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_4",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 4,
+              "ref": {
+                "category": "affix",
+                "enUS": "Tempering Stat 1",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__tempering_stat_1",
+                "sno": null
+              },
+              "tempered": true
+            },
+            {
+              "greater": false,
+              "order": 5,
+              "ref": {
+                "category": "affix",
+                "enUS": "Transfigure",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__transfigure",
+                "sno": null
+              },
+              "tempered": true
+            }
+          ],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Inner Calm",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_inner_calm",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "offhand",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Ruby",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ruby",
+              "sno": null
+            }
+          ]
+        },
+        "pants": {
+          "affixes": [
+            {
+              "greater": false,
+              "order": 0,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 1",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_1",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 1,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 2",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_2",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 2,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 3",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_3",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 3,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 4",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_4",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 4,
+              "ref": {
+                "category": "affix",
+                "enUS": "Tempering Stat 1",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__tempering_stat_1",
+                "sno": null
+              },
+              "tempered": true
+            },
+            {
+              "greater": false,
+              "order": 5,
+              "ref": {
+                "category": "affix",
+                "enUS": "Transfigure",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__transfigure",
+                "sno": null
+              },
+              "tempered": true
+            }
+          ],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Might",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_might",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "pants",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Cir",
+              "esES": "Cir",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Condition_CastRepeatSkill",
+              "sno": 2060617
+            },
+            {
+              "category": "rune",
+              "enUS": "Thul",
+              "esES": "Thul",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Effect_Sorcerer_FrostNova",
+              "sno": 1969845
+            }
+          ]
+        },
+        "ring1": {
+          "affixes": [
+            {
+              "greater": false,
+              "order": 0,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 1",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_1",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 1,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 2",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_2",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 2,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 3",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_3",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 3,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 4",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_4",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 4,
+              "ref": {
+                "category": "affix",
+                "enUS": "Tempering Stat 1",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__tempering_stat_1",
+                "sno": null
+              },
+              "tempered": true
+            },
+            {
+              "greater": false,
+              "order": 5,
+              "ref": {
+                "category": "affix",
+                "enUS": "Transfigure",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__transfigure",
+                "sno": null
+              },
+              "tempered": true
+            }
+          ],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Battle Caster's Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__battle_caster_s_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "ring1",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Skull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__skull",
+              "sno": null
+            }
+          ]
+        },
+        "ring2": {
+          "affixes": [
+            {
+              "greater": false,
+              "order": 0,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 1",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_1",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 1,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 2",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_2",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 2,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 3",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_3",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 3,
+              "ref": {
+                "category": "affix",
+                "enUS": "Stat 4",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__stat_4",
+                "sno": null
+              },
+              "tempered": false
+            },
+            {
+              "greater": false,
+              "order": 4,
+              "ref": {
+                "category": "affix",
+                "enUS": "Tempering Stat 1",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__tempering_stat_1",
+                "sno": null
+              },
+              "tempered": true
+            },
+            {
+              "greater": false,
+              "order": 5,
+              "ref": {
+                "category": "affix",
+                "enUS": "Transfigure",
+                "esES": null,
+                "i18n": "none",
+                "idName": "affix__transfigure",
+                "sno": null
+              },
+              "tempered": true
+            }
+          ],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Conceited Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__conceited_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "ring2",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Skull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__skull",
+              "sno": null
+            }
+          ]
+        }
+      },
       "id": "d4builds:d7e85144-9110-4f93-ac3c-8c79f2fdb2a8:0",
       "levelBand": "leveling",
-      "mercenary": null,
+      "mercenary": {
+        "ref": {
+          "category": "mercenary",
+          "enUS": "Raheir, The Shieldbearer",
+          "esES": null,
+          "i18n": "none",
+          "idName": "mercenary__raheir_the_shieldbearer",
+          "sno": null
+        },
+        "reinforcement": null,
+        "skills": [
+          {
+            "category": "skill",
+            "enUS": "Bastion-v2",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__bastion_v2",
+            "sno": null
+          }
+        ]
+      },
       "paragon": {
-        "boards": [],
+        "boards": [
+          {
+            "glyph": null,
+            "order": 0,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "Starting Board",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__starting_board",
+              "sno": null
+            },
+            "rotation": null
+          }
+        ],
         "level": null
       },
       "runewords": [],
@@ -422,14 +1448,14 @@
       ],
       "source": {
         "author": "Rob2628",
-        "capturedAt": "2026-08-09T02:30:41.994Z",
+        "capturedAt": "2026-08-09T07:35:54.054Z",
         "externalId": "d7e85144-9110-4f93-ac3c-8c79f2fdb2a8",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "0bce4e71c18b43f2c606ff5d9e7d70df6e7e110d651cadc8213f6cd33a53c795",
-        "url": "https://d4builds.gg/builds/hydra-sorcerer-leveling/",
+        "snapshotHash": "8a35533af8757beda8e1a97b0190bfa136083b992f38ef24afae5611189d26bc",
+        "url": "https://d4builds.gg/builds/d7e85144-9110-4f93-ac3c-8c79f2fdb2a8/?var=0",
         "variantIndex": 0,
-        "variantLabel": "Leveling"
+        "variantLabel": "Standard Build"
       },
       "talisman": null,
       "warPlan": null

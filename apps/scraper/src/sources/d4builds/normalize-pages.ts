@@ -141,6 +141,7 @@ function construirVariante(
   capturadoEn: string,
   resolver: Resolver,
   etiqueta: string | null,
+  mercenarioPorHabilidad: ReadonlyMap<string, string>,
 ): BuildVariant {
   const slots = asignarSlots(crudo.gear);
   const gear: Record<string, GearItem> = {};
@@ -168,12 +169,21 @@ function construirVariante(
         : null,
     }));
 
-  const merc = crudo.mercenarios[0];
-  const mercenary = merc
+  // La pestaña de mercenarios muestra iconos de HABILIDADES, no del mercenario. Sin esto
+  // publicabamos "Bloodthirst" como si fuera un mercenario, cuando es una habilidad de
+  // Varyana. Se deduce el dueño de cada habilidad y ese es el mercenario de verdad.
+  const duenos: string[] = [];
+  for (const m of crudo.mercenarios) {
+    const dueno = mercenarioPorHabilidad.get(normalizeName(m.nombre));
+    if (dueno && !duenos.includes(dueno)) duenos.push(dueno);
+  }
+  const mercenary = duenos[0]
     ? {
-        ref: resolver.resolve('mercenary', merc.nombre),
-        skills: merc.habilidades.filter(Boolean).map((h) => resolver.resolve('skill', h)),
-        reinforcement: crudo.mercenarios[1] ? resolver.resolve('mercenary', crudo.mercenarios[1].nombre) : null,
+        ref: resolver.resolve('mercenary', duenos[0]),
+        skills: crudo.mercenarios
+          .filter((m) => mercenarioPorHabilidad.get(normalizeName(m.nombre)) === duenos[0])
+          .map((m) => resolver.resolve('skill', m.nombre)),
+        reinforcement: duenos[1] ? resolver.resolve('mercenary', duenos[1]) : null,
       }
     : null;
 
@@ -221,12 +231,14 @@ export function enriquecerConPagina(
   build: CanonicalBuild,
   pagina: PaginaRaw,
   resolver: Resolver,
+  /** habilidad de mercenario (normalizada) -> mercenario al que pertenece. */
+  mercenarioPorHabilidad: ReadonlyMap<string, string> = new Map(),
 ): EnriquecerResultado {
   const base = build.variants.find((v) => v.source.site === 'd4builds') ?? build.variants[0]!;
 
   const variantes = pagina.porVariante.map((crudo) => {
     const etiqueta = pagina.variantes.find((v) => v.index === crudo.index)?.etiqueta ?? null;
-    return construirVariante(base, crudo, pagina.capturadoEn, resolver, etiqueta);
+    return construirVariante(base, crudo, pagina.capturadoEn, resolver, etiqueta, mercenarioPorHabilidad);
   });
 
   // Las variantes distintas de la primera no traen habilidades propias todavia: la fuente

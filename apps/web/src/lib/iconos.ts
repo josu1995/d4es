@@ -26,13 +26,32 @@ export function iconoUnico(nombreEn: string): string {
 }
 
 /**
- * Los aspectos NO tienen icono propio en el CDN: la carpeta Codex solo trae iconos de
- * categoria (offensive, defensive, utility) y no sabemos a cual pertenece cada aspecto.
- * Devolver null evita cientos de peticiones rotas por pagina; la pieza se pinta igual
- * con su nombre y sus afijos, que es lo que se lee de verdad.
+ * Icono generico de ranura, para las piezas que no son unicas ni miticas (un legendario
+ * con su aspecto). Es el mismo que usa la fuente en su lista de estadisticas:
+ * Uniques/ring_1.png, Uniques/chest_armor.png...
+ *
+ * Los aspectos no tienen icono propio en el CDN (la carpeta Codex solo trae iconos de
+ * categoria), asi que sin esto esas piezas salian sin imagen.
  */
-export function iconoAspecto(): null {
-  return null;
+const RANURA_CDN: Record<string, string> = {
+  helm: 'helm',
+  chest: 'chest_armor',
+  gloves: 'gloves',
+  pants: 'pants',
+  boots: 'boots',
+  amulet: 'amulet',
+  ring1: 'ring_1',
+  ring2: 'ring_2',
+  weapon: 'weapon',
+  weapon2: 'weapon',
+  weapon3: 'weapon',
+  weapon4: 'weapon',
+  offhand: 'offhand',
+};
+
+export function iconoRanura(slot: string): string | null {
+  const nombre = RANURA_CDN[slot];
+  return nombre ? `${CDN}/Uniques/${nombre}.png` : null;
 }
 
 /** Color del nombre segun la calidad, como en el juego. */

@@ -1439,21 +1439,23 @@
       "mercenary": {
         "ref": {
           "category": "mercenary",
-          "enUS": "Bastion-v2",
+          "enUS": "Raheir, The Shieldbearer",
           "esES": null,
           "i18n": "none",
-          "idName": "mercenary__bastion_v2",
+          "idName": "mercenary__raheir_the_shieldbearer",
           "sno": null
         },
-        "reinforcement": {
-          "category": "mercenary",
-          "enUS": "Blood Wave",
-          "esES": null,
-          "i18n": "none",
-          "idName": "mercenary__blood_wave",
-          "sno": null
-        },
-        "skills": []
+        "reinforcement": null,
+        "skills": [
+          {
+            "category": "skill",
+            "enUS": "Bastion-v2",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__bastion_v2",
+            "sno": null
+          }
+        ]
       },
       "paragon": {
         "boards": [

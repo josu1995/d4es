@@ -1647,21 +1647,23 @@
       "mercenary": {
         "ref": {
           "category": "mercenary",
-          "enUS": "Field of Languish",
+          "enUS": "Aldkin, The Cursed Child",
           "esES": null,
           "i18n": "none",
-          "idName": "mercenary__field_of_languish",
+          "idName": "mercenary__aldkin_the_cursed_child",
           "sno": null
         },
-        "reinforcement": {
-          "category": "mercenary",
-          "enUS": "Skill Cast",
-          "esES": null,
-          "i18n": "none",
-          "idName": "mercenary__skill_cast",
-          "sno": null
-        },
-        "skills": []
+        "reinforcement": null,
+        "skills": [
+          {
+            "category": "skill",
+            "enUS": "Field of Languish",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__field_of_languish",
+            "sno": null
+          }
+        ]
       },
       "paragon": {
         "boards": [

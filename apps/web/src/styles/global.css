@@ -23,12 +23,14 @@
   --color-oro: #c9a227;
   --color-oro-apagado: #8f7526;
 
-  --color-rareza-normal: #d8d0c4;
+  /* Colores por calidad de objeto. Unicos en blanco y miticos en morado, que es como
+     se piden aqui para distinguirlos de un vistazo. */
+  --color-rareza-normal: #b4aca0;
   --color-rareza-magico: #7b96d6;
   --color-rareza-raro: #d9c84f;
   --color-rareza-legendario: #d98324;
-  --color-rareza-unico: #a4573a;
-  --color-rareza-mitico: #e3c37a;
+  --color-rareza-unico: #f5f0e8;
+  --color-rareza-mitico: #b57ce0;
 
   --font-titulo: 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
   --font-cuerpo:
