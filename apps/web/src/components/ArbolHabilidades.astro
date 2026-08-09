@@ -1,0 +1,214 @@
+---
+import type { SkillEntry } from '@d4es/schema';
+import { arbolDeClase, skillInfo } from '../lib/data';
+import { iconoSkill, colorCategoria } from '../lib/iconos';
+
+/**
+ * Representación del árbol de habilidades.
+ *
+ * d4builds dibuja el suyo en un canvas, así que no hay forma de copiarlo. Pero sí publica
+ * la categoría de cada habilidad y el tamaño de cada anillo del árbol, y con eso se puede
+ * reconstruir: cada categoría es una fila, con sus habilidades en el orden real. Las que
+ * la build ha cogido salen encendidas y con su rango; las demás, apagadas, para que se
+ * vea qué había disponible y no se cogió.
+ *
+ * Las pasivas se cuentan pero no se nombran: sus nombres no están publicados en ninguna
+ * parte y no se van a inventar.
+ */
+interface Props {
+  claseEnUS: string;
+  /** Habilidades que la build ha asignado, del catálogo. */
+  asignadas: SkillEntry[];
+  idBase: string;
+}
+
+const { claseEnUS, asignadas, idBase } = Astro.props;
+
+const arbol = arbolDeClase(claseEnUS);
+
+const normal = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+const porNombre = new Map(asignadas.map((s) => [normal(s.ref.enUS), s]));
+
+const CATEGORIA_ES: Record<string, string> = {
+  Basic: 'Básicas',
+  Core: 'Fundamentales',
+  Defensive: 'Defensivas',
+  Brawling: 'Pelea',
+  'Weapon Mastery': 'Maestría de armas',
+  Ultimate: 'Definitivas',
+  Companion: 'Compañeros',
+  Wrath: 'Ira',
+  Macabre: 'Macabras',
+  Curse: 'Maldiciones',
+  Corpse: 'Cadáveres',
+  Subterfuge: 'Subterfugio',
+  Agility: 'Agilidad',
+  Imbuement: 'Imbuición',
+  Conjuration: 'Conjuración',
+  Mastery: 'Maestría',
+  Focus: 'Concentración',
+  Potency: 'Potencia',
+  Aura: 'Auras',
+  Valor: 'Valor',
+  Justice: 'Justicia',
+  Archfiend: 'Archidemonio',
+  Sigil: 'Sigilos',
+  'Soul Shard': 'Fragmentos de alma',
+};
+
+const totalPuntos = asignadas.reduce((n, s) => n + s.rank, 0);
+---
+
+<div class="arbol">
+  <p class="text-sm text-ceniza">
+    Las habilidades encendidas son las que usa esta build. Las apagadas estaban disponibles en esa rama y
+    no se han cogido. Pasa el ratón por encima de cualquiera para ver qué hace.
+  </p>
+
+  <div class="mt-5 space-y-1">
+    {
+      arbol.map((cat, i) => (
+        <section class="relative">
+          {/* Conector vertical entre ramas, como en el árbol del juego. */}
+          {i > 0 && <span class="absolute -top-1 left-6 h-2 w-px bg-grabado-vivo" aria-hidden="true" />}
+
+          <div class="grabado rounded-lg bg-abismo/60 p-4">
+            <div class="flex flex-wrap items-baseline gap-x-3">
+              <h3 class="font-titulo text-lg" style={`color: ${colorCategoria(cat.categoria)}`}>
+                {CATEGORIA_ES[cat.categoria] ?? cat.categoria}
+              </h3>
+              <span class="text-xs text-humo">
+                {cat.habilidades.length} habilidades
+                {cat.pasivas > 0 && ` · ${cat.pasivas} pasivas`}
+              </span>
+            </div>
+
+            <div class="mt-3 flex flex-wrap gap-3">
+              {cat.habilidades.map((h) => {
+                const usada = porNombre.get(normal(h.name));
+                const info = skillInfo(h.name);
+                const nombre = usada ? (usada.ref.esES ?? usada.ref.enUS) : h.name;
+                const idTt = `${idBase}-arb-${normal(h.name).replace(/ /g, '-')}`;
+                return (
+                  <div class="flex w-20 flex-col items-center gap-1">
+                    <button
+                      type="button"
+                      class:list={['nodo', usada ? 'nodo--activo' : 'nodo--inactivo']}
+                      style={`--anillo: ${colorCategoria(cat.categoria)}`}
+                      data-tooltip={idTt}
+                      aria-describedby={idTt}
+                    >
+                      <img
+                        src={iconoSkill(usada?.skillVariant?.enUS ?? h.name)}
+                        alt=""
+                        width="48"
+                        height="48"
+                        loading="lazy"
+                        class="h-full w-full rounded-full object-cover"
+                        onerror="this.style.visibility='hidden'"
+                      />
+                      {usada && usada.rank > 0 && (
+                        <span class="absolute -bottom-1 -right-1 min-w-5 rounded-full border border-grabado-vivo bg-abismo px-1 text-center font-mono text-[0.65rem] text-oro">
+                          {usada.rank}
+                        </span>
+                      )}
+                    </button>
+                    <span
+                      class:list={[
+                        'text-center text-[0.65rem] leading-tight',
+                        usada ? 'text-pergamino' : 'text-humo',
+                      ]}
+                    >
+                      {nombre}
+                    </span>
+
+                    <template id={idTt}>
+                      <div class="tt-titulo">{nombre}</div>
+                      <div class="tt-meta">
+                        <span>{CATEGORIA_ES[cat.categoria] ?? cat.categoria}</span>
+                        {usada ? <span>Rango {usada.rank}</span> : <span>Sin puntos en esta build</span>}
+                        {info?.cost && <span>{info.cost}</span>}
+                      </div>
+                      {info?.description && <p class="tt-descripcion">{info.description}</p>}
+                      {usada && usada.runes.length > 0 && (
+                        <div class="tt-runas">
+                          {usada.runes.map((r) => (
+                            <div>
+                              <span class="tt-runa-nombre">◆ {r.esES ?? r.enUS}</span>
+                              {info?.runes[r.enUS] && <span class="tt-runa-desc"> — {info.runes[r.enUS]}</span>}
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                    </template>
+                  </div>
+                );
+              })}
+
+              {cat.pasivas > 0 &&
+                Array.from({ length: cat.pasivas }, () => (
+                  <div class="flex w-20 flex-col items-center gap-1">
+                    <span
+                      class="nodo nodo--pasiva"
+                      title="Nodo pasivo: la fuente no publica su nombre"
+                      aria-label="Nodo pasivo sin nombre publicado"
+                    />
+                    <span class="text-center text-[0.65rem] leading-tight text-humo">pasiva</span>
+                  </div>
+                ))}
+            </div>
+          </div>
+        </section>
+      ))
+    }
+  </div>
+
+  <p class="mt-4 text-xs text-humo">
+    Total de puntos en habilidades de la barra: <span class="text-ceniza">{totalPuntos}</span>. Los nodos
+    marcados como «pasiva» existen en el árbol pero su nombre no está publicado en ninguna fuente, así que
+    se cuentan sin nombrarlos en vez de inventarlos.
+  </p>
+</div>
+
+<style>
+  .nodo {
+    position: relative;
+    display: block;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 9999px;
+    border: 2px solid var(--anillo, var(--color-grabado-vivo));
+    background: var(--color-piedra-alta);
+    box-shadow: inset 0 0 10px rgb(0 0 0 / 0.6);
+    transition:
+      transform 120ms ease,
+      filter 120ms ease,
+      opacity 120ms ease;
+  }
+  .nodo--activo {
+    box-shadow:
+      inset 0 0 10px rgb(0 0 0 / 0.6),
+      0 0 10px color-mix(in srgb, var(--anillo) 45%, transparent);
+  }
+  /* Lo no cogido se apaga en vez de esconderse: enseña lo que habia disponible. */
+  .nodo--inactivo {
+    opacity: 0.35;
+    filter: grayscale(1);
+    border-color: var(--color-grabado);
+  }
+  .nodo--inactivo:hover,
+  .nodo--inactivo:focus-visible {
+    opacity: 0.7;
+    filter: grayscale(0.3);
+  }
+  .nodo--pasiva {
+    border-style: dashed;
+    border-color: var(--color-grabado);
+    opacity: 0.4;
+    cursor: default;
+  }
+  .nodo:hover,
+  .nodo:focus-visible {
+    transform: scale(1.08);
+  }
+</style>

@@ -50,6 +50,23 @@ async function idsExistentes(): Promise<Map<string, string>> {
  * Extrae el dataset de habilidades que el catalogo trae de regalo en pageContext.skills:
  * categoria, descripcion y descripciones de runas. Es la materia prima de los tooltips.
  */
+/**
+ * Tamaño de cada anillo del arbol por clase. Es lo unico que la fuente publica sobre la
+ * forma del arbol (el resto lo dibuja en un canvas), y basta para representarlo.
+ */
+function extraerAnillos(estructura: unknown): Record<string, number[]> {
+  const raiz = (estructura as { result?: { pageContext?: { skillTreeStructure?: unknown } } }).result?.pageContext
+    ?.skillTreeStructure;
+  if (!raiz || typeof raiz !== 'object') return {};
+  const salida: Record<string, number[]> = {};
+  for (const [clase, valor] of Object.entries(raiz as Record<string, unknown>)) {
+    if (Array.isArray(valor) && valor.every((n) => typeof n === 'number')) {
+      salida[clase] = valor as number[];
+    }
+  }
+  return salida;
+}
+
 function extraerDataset(catalogo: unknown, generatedAt: string): SkillsDataset {
   const pc = (catalogo as { result?: { pageContext?: { skills?: unknown } } }).result?.pageContext;
   const crudas = Array.isArray(pc?.skills) ? (pc.skills as Record<string, unknown>[]) : [];
@@ -59,7 +76,7 @@ function extraerDataset(catalogo: unknown, generatedAt: string): SkillsDataset {
   const lineas = (v: unknown): string[] =>
     Array.isArray(v) ? v.filter((x): x is string => typeof x === 'string').map(unwrapTemplates) : [];
 
-  for (const s of crudas) {
+  for (const [indice, s] of crudas.entries()) {
     const name = texto(s['name']);
     if (!name) continue;
     const tags = Array.isArray(s['tags']) ? (s['tags'] as unknown[]).filter((t): t is string => typeof t === 'string') : [];
@@ -80,6 +97,8 @@ function extraerDataset(catalogo: unknown, generatedAt: string): SkillsDataset {
     byName[skillNameKey(name)] = {
       name,
       class: texto(s['class']),
+      // El orden del listado de origen conserva el orden real del arbol.
+      orden: indice,
       category: tags[0] ?? null,
       tags,
       description: lineas(s['description']).join(' ') || null,
@@ -95,6 +114,7 @@ function extraerDataset(catalogo: unknown, generatedAt: string): SkillsDataset {
     source: 'd4builds pageContext.skills',
     count: Object.keys(byName).length,
     byName,
+    anillosPorClase: {},
   };
 }
 
@@ -244,8 +264,10 @@ export async function runNormalize(): Promise<NormalizeResultado> {
   };
   if (await writeIfChanged(PATHS.buildIndex, stableStringify(BuildIndex.parse(indice)))) tocados++;
 
-  // El dataset de habilidades (tooltips): viene de regalo en el mismo catalogo.
+  // El dataset de habilidades (tooltips y arbol): viene de regalo en el mismo catalogo.
   const dataset = extraerDataset(catalogo.body, catalogo.meta.lastChangedAt);
+  const estructura = await readSnapshot('treeStructure').catch(() => null);
+  if (estructura) dataset.anillosPorClase = extraerAnillos(estructura.body);
   if (dataset.count > 0) {
     const datasetPath = join(PATHS.canonical, 'skills-dataset.json');
     if (await writeIfChanged(datasetPath, stableStringify(SkillsDataset.parse(dataset)))) tocados++;

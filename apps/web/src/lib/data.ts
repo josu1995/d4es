@@ -72,6 +72,55 @@ export function skillInfo(nombreEn: string): SkillInfo | null {
   return dataset?.byName[skillNameKey(nombreEn)] ?? null;
 }
 
+export interface CategoriaArbol {
+  categoria: string;
+  habilidades: SkillInfo[];
+  /** Nodos del anillo que no son habilidades activas: son pasivas sin nombre publicado. */
+  pasivas: number;
+}
+
+/**
+ * Reconstruye el arbol de una clase: sus categorias en el orden real, con las
+ * habilidades activas de cada una y cuantas pasivas la acompanan.
+ *
+ * La fuente dibuja su arbol en un canvas, asi que no se puede copiar; pero si publica el
+ * tamano de cada anillo y la categoria de cada habilidad, y con eso se puede representar
+ * sin inventar nada. Las pasivas se cuentan pero no se nombran, porque sus nombres no
+ * estan publicados en ninguna parte.
+ */
+export function arbolDeClase(claseEnUS: string): CategoriaArbol[] {
+  const dataset = loadSkillsDataset();
+  if (!dataset) return [];
+
+  const deLaClase = Object.values(dataset.byName)
+    .filter((s) => s.class === claseEnUS && s.category !== null)
+    // Las maestrias de arma (1h Axe, 2h Sword...) no son nodos del arbol.
+    .filter((s) => !/^\dh |^polearm$/i.test(s.name))
+    .sort((a, b) => a.orden - b.orden);
+
+  const orden: string[] = [];
+  const porCategoria = new Map<string, SkillInfo[]>();
+  for (const s of deLaClase) {
+    const cat = s.category!;
+    if (!porCategoria.has(cat)) {
+      porCategoria.set(cat, []);
+      orden.push(cat);
+    }
+    porCategoria.get(cat)!.push(s);
+  }
+
+  const anillos = dataset.anillosPorClase[claseEnUS] ?? [];
+  return orden.map((categoria, i) => {
+    const habilidades = porCategoria.get(categoria) ?? [];
+    const tamanoAnillo = anillos[i];
+    return {
+      categoria,
+      habilidades,
+      pasivas: tamanoAnillo !== undefined ? Math.max(0, tamanoAnillo - habilidades.length) : 0,
+    };
+  });
+}
+
 export interface EstadoJuego {
   expansion: string;
   temporadaActual: number;

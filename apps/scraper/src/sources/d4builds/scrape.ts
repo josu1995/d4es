@@ -23,6 +23,12 @@ export const FUENTE = 'd4builds';
 export const ENDPOINTS = {
   catalog: 'https://d4builds.gg/page-data/index/page-data.json',
   tierlist: 'https://d4builds.gg/page-data/tierlist/page-data.json',
+  /**
+   * Cualquier pagina de build sirve: su pageContext trae datos de juego GLOBALES, entre
+   * ellos `skillTreeStructure`, que da el tamaño de cada anillo del arbol por clase. Es
+   * lo que permite dibujar el arbol sin depender del canvas que usa la fuente.
+   */
+  treeStructure: 'https://d4builds.gg/page-data/builds/charge-barbarian-endgame/page-data.json',
 } as const;
 
 export interface SnapshotMeta {

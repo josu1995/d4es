@@ -10,6 +10,8 @@ export const SkillInfo = z.object({
   /** Nombre en ingles tal como lo usa la fuente ("Whirlwind"). */
   name: z.string(),
   class: z.string().nullable(),
+  /** Posicion en el listado de origen: conserva el orden real del arbol. */
+  orden: z.number().int().min(0).default(0),
   /** Primer tag de la fuente ("Core", "Brawling"...). Solo para mostrar. */
   category: z.string().nullable(),
   tags: z.array(z.string()),
@@ -31,6 +33,13 @@ export const SkillsDataset = z.object({
   count: z.number().int(),
   /** clave: nombre normalizado (minusculas, alfanumerico y espacios). */
   byName: z.record(z.string(), SkillInfo),
+  /**
+   * Tamaño de cada anillo del arbol por clase, tal como lo publica la fuente
+   * (Barbaro: [4,8,7,7,8,6,5]). La diferencia con las habilidades activas con nombre
+   * son las pasivas, cuyos nombres NO publica: se representan sin nombre en vez de
+   * inventarlos.
+   */
+  anillosPorClase: z.record(z.string(), z.array(z.number().int())).default({}),
 });
 export type SkillsDataset = z.infer<typeof SkillsDataset>;
 

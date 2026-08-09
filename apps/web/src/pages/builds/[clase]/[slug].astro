@@ -2,6 +2,7 @@
 import Base from '../../../layouts/Base.astro';
 import SlotSkill from '../../../components/SlotSkill.astro';
 import SlotEquipo from '../../../components/SlotEquipo.astro';
+import ArbolHabilidades from '../../../components/ArbolHabilidades.astro';
 import { loadBuilds, loadClasesEs, claseNombre } from '../../../lib/data';
 import { iconoClase } from '../../../lib/iconos';
 import { classById, type CanonicalBuild, type GearItem, type SlotId } from '@d4es/schema';
@@ -236,29 +237,11 @@ function disponible(v: (typeof build.variants)[number], id: string): boolean {
             >
               <h2 class="font-titulo text-xl">Árbol de habilidades</h2>
               {v.skills.length > 0 ? (
-                <>
-                  <p class="mt-1 text-sm text-ceniza">
-                    Puntos invertidos en cada habilidad de la barra, con las mejoras elegidas en cada rama.
-                  </p>
-                  <ul class="mt-4 divide-y divide-grabado grabado rounded-lg bg-abismo overflow-hidden">
-                    {v.skills.map((s) => (
-                      <li class="flex flex-wrap items-baseline gap-x-3 px-4 py-2.5">
-                        <span class="w-8 shrink-0 text-right font-mono text-sm text-oro">{s.rank}</span>
-                        <span class="text-pergamino">{s.ref.esES ?? s.ref.enUS}</span>
-                        {s.skillVariant && (
-                          <span class="text-sm text-rareza-mitico">
-                            {s.skillVariant.esES ?? s.skillVariant.enUS}
-                          </span>
-                        )}
-                        {s.runes.length > 0 && (
-                          <span class="text-xs text-humo">
-                            {s.runes.map((r) => r.esES ?? r.enUS).join(' · ')}
-                          </span>
-                        )}
-                      </li>
-                    ))}
-                  </ul>
-                </>
+                <ArbolHabilidades
+                  claseEnUS={classById(build.classId)?.enUS ?? ''}
+                  asignadas={v.skills}
+                  idBase={`v${v.source.variantIndex}`}
+                />
               ) : (
                 <p class="mt-2 text-ceniza">Esta variante no publica el árbol.</p>
               )}

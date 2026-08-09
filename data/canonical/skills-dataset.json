@@ -1,4 +1,69 @@
 {
+  "anillosPorClase": {
+    "Barbarian": [
+      4,
+      8,
+      7,
+      7,
+      8,
+      6,
+      5
+    ],
+    "Druid": [
+      5,
+      8,
+      6,
+      8,
+      8,
+      8,
+      7
+    ],
+    "Necromancer": [
+      4,
+      6,
+      8,
+      7,
+      6,
+      6,
+      5
+    ],
+    "Paladin": [
+      4,
+      8,
+      4,
+      7,
+      8,
+      6,
+      4
+    ],
+    "Rogue": [
+      5,
+      8,
+      7,
+      6,
+      7,
+      8,
+      6
+    ],
+    "Sorcerer": [
+      4,
+      9,
+      7,
+      8,
+      7,
+      8,
+      7
+    ],
+    "Spiritborn": [
+      4,
+      6,
+      6,
+      7,
+      9,
+      5,
+      4
+    ]
+  },
   "byName": {
     "1h axe": {
       "category": null,
@@ -8,6 +73,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "1h Axe",
+      "orden": 201,
       "runes": {},
       "tags": []
     },
@@ -19,6 +85,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "1h Mace",
+      "orden": 202,
       "runes": {},
       "tags": []
     },
@@ -30,6 +97,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "1h Sword",
+      "orden": 203,
       "runes": {},
       "tags": []
     },
@@ -41,6 +109,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "2h Axe",
+      "orden": 204,
       "runes": {},
       "tags": []
     },
@@ -52,6 +121,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "2h Mace",
+      "orden": 207,
       "runes": {},
       "tags": []
     },
@@ -63,6 +133,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "2h Sword",
+      "orden": 206,
       "runes": {},
       "tags": []
     },
@@ -74,6 +145,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Abyssal Fragment",
+      "orden": 42,
       "runes": {},
       "tags": []
     },
@@ -87,6 +159,7 @@
       ],
       "luckyHit": "14%",
       "name": "Advance",
+      "orden": 48,
       "runes": {
         "Critical Strike Chance": "Advance grants +5% Critical Strike Chance for 8 seconds.",
         "Flash of the Blade": "Advance becomes a Disciple Skill and has a 10 second cooldown. Advance becomes a dash that cuts through enemies, applying Vulnerable and dealing 230 damage.",
@@ -110,6 +183,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Advantageous Beast",
+      "orden": 211,
       "runes": {},
       "tags": []
     },
@@ -121,6 +195,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Aegis",
+      "orden": 58,
       "runes": {
         "Block Damage Reduction": "Casting Aegis increases your Block Damage Reduction by 15% while active.",
         "Cooldown Reduction": "Reduce Aegis's cooldown by 4 seconds.",
@@ -144,6 +219,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Altar of Avarice",
+      "orden": 412,
       "runes": {},
       "tags": []
     },
@@ -155,6 +231,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Ambusher",
+      "orden": 327,
       "runes": {},
       "tags": []
     },
@@ -166,6 +243,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Amplified Suffering",
+      "orden": 306,
       "runes": {},
       "tags": []
     },
@@ -179,6 +257,7 @@
       ],
       "luckyHit": null,
       "name": "Ancient Harpoons",
+      "orden": 284,
       "runes": {},
       "tags": [
         "Mercenary Iconic"
@@ -192,6 +271,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Annihilator",
+      "orden": 291,
       "runes": {},
       "tags": []
     },
@@ -205,6 +285,7 @@
       ],
       "luckyHit": "50%",
       "name": "Apocalypse",
+      "orden": 22,
       "runes": {
         "Annihilation": "Apocalypse launches a hellfire blast with at least 20 Stacks that deals 33 damage. Hellfire Skill hits generate up to 100 Stacks, each Stack increases the blast's explosion size and damage by x40%.",
         "Armageddon Ritual": "You can now Channel Apocalypse for up to 6.66 seconds to build up the final explosion and rain down Brimstones which deal 666 damage. Each second increases the final damage, up to 666 bonus damage.",
@@ -228,6 +309,7 @@
       "extra": [],
       "luckyHit": "16%",
       "name": "Arbiter of Justice",
+      "orden": 68,
       "runes": {
         "Cooldown Reduction": "Reduce Arbiter of Justice's Cooldown by 20 seconds.",
         "Divine Intervention": "Arbiter of Justice ascends for an additional 2 seconds and rains Blessed Spears on the battlefield. Upon landing, Arbiter of Justice bombards the battlefield with 10 additional Blessed Spears, applying Vulnerable for 4 seconds.",
@@ -253,6 +335,7 @@
       ],
       "luckyHit": "14%",
       "name": "Arc Lash",
+      "orden": 170,
       "runes": {
         "Damage Bonus": "Arc Lash deals x50% increased damage to Crowd Controlled enemies.",
         "Ferocity": "Arc Lash grants 1 stack of Ferocity.",
@@ -277,6 +360,7 @@
       ],
       "luckyHit": "30%",
       "name": "Armored Hide",
+      "orden": 236,
       "runes": {
         "Barrier": "Armored Hide also grants a Barrier for 20% of your Maximum Life for 3 seconds.",
         "Blocked Damage Reduction": "While Armored Hide is active, gain +15% Blocked Damage Reduction.",
@@ -302,6 +386,7 @@
       ],
       "luckyHit": "64%",
       "name": "Army of the Dead",
+      "orden": 142,
       "runes": {
         "Cooldown Reduction": "Army of the Dead's Cooldown is reduced by 20 seconds.",
         "Corpse Generation": "Army of the Dead has a 50% chance to form a Corpse.",
@@ -324,6 +409,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Ashes to Ashes",
+      "orden": 399,
       "runes": {},
       "tags": []
     },
@@ -335,6 +421,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Avian Wrath",
+      "orden": 215,
       "runes": {},
       "tags": []
     },
@@ -348,6 +435,7 @@
       ],
       "luckyHit": "5%",
       "name": "Ball Lightning",
+      "orden": 191,
       "runes": {
         "Attraction": "Ball Lightning now deals 204 damage per second. The ball's speed is greatly increased while it is not near enemies.",
         "Crackling Energy": "Ball Lightning forms 3 Crackling Energy when it dissipates.",
@@ -371,6 +459,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Bargaining Chips",
+      "orden": 329,
       "runes": {},
       "tags": []
     },
@@ -385,6 +474,7 @@
       ],
       "luckyHit": "40%",
       "name": "Barrage",
+      "orden": 151,
       "runes": {
         "Broadside": "Barrage no longer pierces and fires 2 less arrows. Its arrows each drop 1 Stun Grenade that deals 25 damage.",
         "Cast Speed": "Barrage gains +20% increased Cast Speed.",
@@ -412,6 +502,7 @@
       ],
       "luckyHit": "50%",
       "name": "Bash",
+      "orden": 73,
       "runes": {
         "Atomic Blast": "Clobbering an enemy with Bash causes a fiery explosion that deals 113 Fire damage.",
         "Clobbering": "Reduces Bash's Clobber threshold by 2.",
@@ -437,6 +528,7 @@
       ],
       "luckyHit": null,
       "name": "Bastion-v2",
+      "orden": 264,
       "runes": {},
       "tags": [
         "Mercenary Iconic"
@@ -450,6 +542,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Bauble Day",
+      "orden": 378,
       "runes": {},
       "tags": []
     },
@@ -461,6 +554,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Bedlam",
+      "orden": 354,
       "runes": {},
       "tags": []
     },
@@ -475,6 +569,7 @@
       ],
       "luckyHit": "50%",
       "name": "Blade Shift",
+      "orden": 146,
       "runes": {
         "Energy": "When you move through an enemy, gain 4 Energy.",
         "Grenade Shift": "Blade Shift now deals 56 damage and while Unhindered by Blade Shift, you drop 2 Stun Grenades that each deal 11 damage on the enemies you pass through.",
@@ -499,6 +594,7 @@
       ],
       "luckyHit": null,
       "name": "Blasphemous Fate",
+      "orden": 293,
       "runes": {},
       "tags": [
         "Mercenary Perk"
@@ -512,6 +608,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Blasphemous Fragment",
+      "orden": 39,
       "runes": {},
       "tags": []
     },
@@ -525,6 +622,7 @@
       ],
       "luckyHit": "25%",
       "name": "Blazing Scream",
+      "orden": 8,
       "runes": {
         "Abyssal Oppression": "Blazing Scream becomes an Abyss Recast Summon Skill, seeking your target location for 5 seconds and Knocking Down enemies the first time it hits them. Enemies near the skull take 227 damage and become Vulnerable. Channeling redirects the skull and refreshes the duration.",
         "Brimstone Hunger": "Blazing Scream's primary skills instantly detonate Brimstone as they travel, increasing that skull's damage by 5% per Brimstone, up to 25%.",
@@ -551,6 +649,7 @@
       ],
       "luckyHit": "24%",
       "name": "Blessed Hammer",
+      "orden": 51,
       "runes": {
         "Cast Speed": "Blessed Hammer gains +15% increased Cast Speed and its hammers travel +25% faster.",
         "Cost Reduction": "Casting Blessed Hammer reduces its cost by 5% for 2 seconds, up to 5 times.",
@@ -575,6 +674,7 @@
       ],
       "luckyHit": "30%",
       "name": "Blessed Shield",
+      "orden": 50,
       "runes": {
         "Armor and Block Chance Bonus": "Blessed Shield increases your Armor by +2% and Block Chance by +2% for 6 seconds each time it hits an enemy.",
         "Cast Speed": "Blessed Shield gains +20% increased Cast Speed.",
@@ -599,6 +699,7 @@
       ],
       "luckyHit": "40%",
       "name": "Blight",
+      "orden": 127,
       "runes": {
         "Area Damage Bonus": "Blight's defiled area deals x40% increased damage.",
         "Crowd Control Damage Bonus": "Blight deals x30% increased damage to Crowd Controlled enemies.",
@@ -623,6 +724,7 @@
       ],
       "luckyHit": "33%",
       "name": "Blizzard",
+      "orden": 188,
       "runes": {
         "Barrier": "Blizzard grants you a Barrier that absorbs 0.5% of your Maximum Life for 4 seconds every second for each affected enemy.",
         "Damage Bonus": "Blizzard deals x30% increased damage to Crowd Controlled enemies.",
@@ -646,6 +748,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Blood Howl",
+      "orden": 108,
       "runes": {
         "Berserking Howl": "Blood Howl grants Berserking to yourself and allies for 5 seconds and an additional x10% increased damage to other Players for the duration. In addition, you deal 80 Poisoning damage over 4 seconds while Blood Howl is active.",
         "Dodge Chance": "Blood Howl increases your Dodge Chance by 20% for 5 seconds.",
@@ -672,6 +775,7 @@
       ],
       "luckyHit": "50%",
       "name": "Blood Lance",
+      "orden": 129,
       "runes": {
         "Blood Seeker": "Blood Lance deals x45% increased damage to its primary target per lanced enemy.",
         "Cost Reduction": "Blood Lance's Essence cost is reduced by 3.",
@@ -696,6 +800,7 @@
       ],
       "luckyHit": "9%",
       "name": "Blood Mist",
+      "orden": 133,
       "runes": {
         "Blood Rush": "Blood Mist additonally becomes a Mobility Skill and its Cooldown is reduced to 8 seconds. Instead of dispersing you into a bloody mist, Blood Mist consumes a nearby corpse to teleport you to the target location and grants Unstoppable for value2 seconds.",
         "Blood Transfusion": "Blood Mist Fortifies you for 30% of your Maximum Life over its duration and forms a Blood Orb every second.",
@@ -718,6 +823,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Blood of Bartuc",
+      "orden": 369,
       "runes": {},
       "tags": []
     },
@@ -731,6 +837,7 @@
       ],
       "luckyHit": "12%",
       "name": "Blood Surge",
+      "orden": 130,
       "runes": {
         "Bloodbath": "Blood Surge's nova echoes again after a short delay, dealing 100 damage.",
         "Damage Bonus": "Blood Surge deals x25% increased damage while you are Healthy.",
@@ -755,6 +862,7 @@
       ],
       "luckyHit": "50%",
       "name": "Blood Wave",
+      "orden": 143,
       "runes": {
         "Blood Orb": "Blood Wave forms up to 2 Blood Orbs as it travels.",
         "Damage Bonus": "Blood Wave deals x30% increased damage while you are Fortified.",
@@ -777,6 +885,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Bloodlust",
+      "orden": 286,
       "runes": {},
       "tags": []
     },
@@ -790,6 +899,7 @@
       ],
       "luckyHit": null,
       "name": "Bloodthirst",
+      "orden": 281,
       "runes": {},
       "tags": [
         "Mercenary Iconic"
@@ -803,6 +913,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Bolster",
+      "orden": 222,
       "runes": {},
       "tags": []
     },
@@ -816,6 +927,7 @@
       ],
       "luckyHit": "3%",
       "name": "Bombardment",
+      "orden": 5,
       "runes": {
         "Additional Demon": "Bombardment throws 1 additional demon.",
         "Brutality": "Each cast of Bombardment within 3 seconds of the last calls down more demons, up to 4 additional.",
@@ -839,6 +951,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Bone Prison",
+      "orden": 135,
       "runes": {
         "Bramble": "You gain X Thorns for each enemy trapped by Bone Prison. When a segment of Bone Prison is destroyed or expires, it deals 100% of your Thorns around itself.",
         "Cooldown Reduction": "Bone Prison reduces your active Cooldowns by 0.5 seconds for each enemy trapped, up to 5 seconds.",
@@ -863,6 +976,7 @@
       ],
       "luckyHit": "50%",
       "name": "Bone Spear",
+      "orden": 131,
       "runes": {
         "Blood Spear": "Bone Spear becomes a Blood Skill that deals 130 damage. Casting Bone Spear consumes a nearby Corpse and conjures a second Bone Spear from it, dealing 100% of normal damage.",
         "Bone Spikes": "Bone Spear breaks into 3 piercing bone shards when it is destroyed, dealing 43 damage each.",
@@ -887,6 +1001,7 @@
       ],
       "luckyHit": "33%",
       "name": "Bone Spirit",
+      "orden": 136,
       "runes": {
         "Astral Projection": "Bone Spirit no longer seeks enemies and instead spirals around you, piercing through enemies and exploding for 100 damage when it hits them.",
         "Charges": "Bone Spirit gains 1 additional Charge and its Charge Cooldown is reduced by 2 seconds.",
@@ -911,6 +1026,7 @@
       ],
       "luckyHit": "30%",
       "name": "Bone Splinters",
+      "orden": 123,
       "runes": {
         "Bloody Splinter": "Bone Splinters becomes a Blood Skill that deals 30 damage and pierces 1 time. Each time a splinter hits an enemy you Heal for value1 of your Maximum Life.",
         "Bouncing Spines": "Bone Splinters now deals 45 damage with each splinter, bounces off walls, and travels further.",
@@ -935,6 +1051,7 @@
       ],
       "luckyHit": "40%",
       "name": "Bone Storm",
+      "orden": 144,
       "runes": {
         "Barrier": "Casting Bone Storm grants a Barrier for 50% of your Maximum Life for 10 seconds.",
         "Damage Reduction": "Bone Storm increases your Damage Reduction by 10%.",
@@ -959,6 +1076,7 @@
       ],
       "luckyHit": "4%",
       "name": "Boulder",
+      "orden": 115,
       "runes": {
         "Additional Boulder": "Boulder has a 20% chance to launch an additional Boulder for free.",
         "Critical Strike Chance": "Boulder gains +10% Critical Strike Chance. Additionally, Boulder gains an extra +1%increased Critical Strike Chance per stack of Resolve active.",
@@ -983,6 +1101,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Bound by Blood",
+      "orden": 395,
       "runes": {},
       "tags": []
     },
@@ -994,6 +1113,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Branching Pathways",
+      "orden": 408,
       "runes": {},
       "tags": []
     },
@@ -1007,6 +1127,7 @@
       ],
       "luckyHit": "20%",
       "name": "Brandish",
+      "orden": 45,
       "runes": {
         "Cast Speed": "Brandish has +20% increased Cast Speed.",
         "Cross Strike": "Brandish unleashes 2 additional arcs, dealing 120 damage.",
@@ -1029,6 +1150,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Burning Chaos",
+      "orden": 310,
       "runes": {},
       "tags": []
     },
@@ -1040,6 +1162,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Bursting Brood",
+      "orden": 394,
       "runes": {},
       "tags": []
     },
@@ -1051,6 +1174,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Calamity",
+      "orden": 223,
       "runes": {},
       "tags": []
     },
@@ -1062,6 +1186,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Call of the Ancients",
+      "orden": 94,
       "runes": {
         "Ancient Attack Speed": "Your Ancients attack +25% faster.",
         "Attack Speed and Damage Bonus": "When you Cast Call of the Ancients, gain +5% Attack Speed and x5% increased damage for each Ancient Summoned for 6 seconds.",
@@ -1086,6 +1211,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Calm Before the Storm",
+      "orden": 219,
       "runes": {},
       "tags": []
     },
@@ -1099,6 +1225,7 @@
       ],
       "luckyHit": "25%",
       "name": "Caltrops",
+      "orden": 160,
       "runes": {
         "Catch Cold": "Caltrops now deals Cold damage and Chills enemies for value2 per second.",
         "Critical Strike": "You now have +10% Critical Strike Chance against enemies inside your Caltrops. Double this amount against Vulnerable enemies.",
@@ -1123,6 +1250,7 @@
       ],
       "luckyHit": "62%",
       "name": "Cataclysm",
+      "orden": 119,
       "runes": {
         "Duration": "Cataclysm's duration is increased by 4 seconds.",
         "Ferocity": "Casting Cataclysm grants 4 stacks of Ferocity.",
@@ -1146,6 +1274,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Centipede",
+      "orden": 251,
       "runes": {},
       "tags": []
     },
@@ -1159,6 +1288,7 @@
       ],
       "luckyHit": "25%",
       "name": "Chain Lightning",
+      "orden": 174,
       "runes": {
         "Additional Chains": "Chain Lightning gains 1 additional chains.",
         "Chain Whipping": "Chain Lightning gains +20% Cast Speed and its number of chains is doubled.",
@@ -1184,6 +1314,7 @@
       ],
       "luckyHit": null,
       "name": "Chain of Souls",
+      "orden": 301,
       "runes": {},
       "tags": [
         "Mercenary Iconic"
@@ -1197,6 +1328,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Challenging Shout",
+      "orden": 82,
       "runes": {
         "Bawl": "Challenging Shout's grants an additional 20% Damage Reduction that decays over its duration.",
         "Damage Bonus": "The first 5 enemies Taunted by Challenging Shout take x20% increased damage from you.",
@@ -1220,6 +1352,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Chaotic Echoes",
+      "orden": 393,
       "runes": {},
       "tags": []
     },
@@ -1231,6 +1364,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Chaotic Favor",
+      "orden": 423,
       "runes": {},
       "tags": []
     },
@@ -1245,6 +1379,7 @@
       ],
       "luckyHit": "100%",
       "name": "Charge",
+      "orden": 86,
       "runes": {
         "Battering Ram": "Charge now deals Fire damage. Instead of swinging your weapon, colliding with enemies deals 63 Fire damage and Stuns them for 3 seconds. Additionally, you leave a burning trail that inflicts 252 Burning damage over 3 seconds.",
         "Cooldown Reduction": "Charge's Cooldown is reduced by 1 second for each enemy hit, up to 3 seconds.",
@@ -1270,6 +1405,7 @@
       ],
       "luckyHit": "20%",
       "name": "Charged Bolts",
+      "orden": 175,
       "runes": {
         "Burn Through": "Charged Bolts becomes a Pyromancy Skill, deals Fire damage, and costs 30 Mana. Each bolt no longer pierces and instead releases 2 to 3 explosions on impact, dealing an additional 180 damage.",
         "Cast Speed": "Each time you cast Charged Bolts it gains +5% Cast Speed, up to +15%. Moving removes this effect. Charged Bolts releases 1 additional bolt.",
@@ -1292,6 +1428,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Children of Zir",
+      "orden": 362,
       "runes": {},
       "tags": []
     },
@@ -1303,6 +1440,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Choron's Blessing",
+      "orden": 335,
       "runes": {},
       "tags": []
     },
@@ -1314,6 +1452,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Choron's Favor",
+      "orden": 337,
       "runes": {},
       "tags": []
     },
@@ -1325,6 +1464,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Choron's Flesh",
+      "orden": 339,
       "runes": {},
       "tags": []
     },
@@ -1336,6 +1476,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Choron's Haste",
+      "orden": 331,
       "runes": {},
       "tags": []
     },
@@ -1347,6 +1488,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Choron's Shortcut",
+      "orden": 332,
       "runes": {},
       "tags": []
     },
@@ -1358,6 +1500,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Choron's Soul",
+      "orden": 338,
       "runes": {},
       "tags": []
     },
@@ -1369,6 +1512,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Choron's Wager",
+      "orden": 340,
       "runes": {},
       "tags": []
     },
@@ -1380,6 +1524,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Cipher Maps",
+      "orden": 411,
       "runes": {},
       "tags": []
     },
@@ -1393,6 +1538,7 @@
       ],
       "luckyHit": "50%",
       "name": "Clash",
+      "orden": 47,
       "runes": {
         "Crusader's March Effectiveness": "Increase the effect of Crusader's March by x25%.",
         "Damage Increase": "Clash deals x20% increased damage.",
@@ -1417,6 +1563,7 @@
       ],
       "luckyHit": "50%",
       "name": "Claw",
+      "orden": 97,
       "runes": {
         "Cast Speed": "Claw's Cast Speed is increased by 20%.",
         "Critical Strike Chance": "Claw's Critical Strike Chance is increased by +20%.",
@@ -1442,6 +1589,7 @@
       ],
       "luckyHit": null,
       "name": "Cleave",
+      "orden": 275,
       "runes": {},
       "tags": [
         "Mercenary Core"
@@ -1455,6 +1603,7 @@
       "extra": [],
       "luckyHit": "33%",
       "name": "Cold Imbuement",
+      "orden": 164,
       "runes": {
         "Buffered Battery": "Lucky Hit: Cold Imbued Skills have up to a 50% chance to encase you in a Barrier for value3 of your Maximum Life, up to value4 , for 6 seconds. This Barrier reduces your Energy costs by 20%.",
         "Cooldown": "When Cold Imbuement Chills an enemy, Cold Imbuement's Cooldown is reduced by 0.5 seconds.",
@@ -1476,6 +1625,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Colossal Foe",
+      "orden": 426,
       "runes": {},
       "tags": []
     },
@@ -1487,6 +1637,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Combo Points",
+      "orden": 198,
       "runes": {},
       "tags": []
     },
@@ -1500,6 +1651,7 @@
       ],
       "luckyHit": "30%",
       "name": "Command Fallen",
+      "orden": 4,
       "runes": {
         "Damage Per Demon": "Command Fallen deals x1% increased damage for every Demon you have active, up to x20%.",
         "Dominance": "Every 15 times you hit enemies with Command Fallen you gain 1 Dominance.",
@@ -1523,6 +1675,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Concealment",
+      "orden": 156,
       "runes": {
         "Calculation": "Casting Concealment grants 4 stacks of Overpower. After breaking Concealment, you gain + value2 increased Critical Strike Chance for the next 6 seconds.",
         "Concealing Fate": "When you break Concealment, all Nearby enemies are covered in a shadowy mist for 4 seconds, causing them to become Vulnerable and explode for 150 Shadow damage when it expires.",
@@ -1546,6 +1699,7 @@
       ],
       "luckyHit": "20%",
       "name": "Concussive Stomp",
+      "orden": 237,
       "runes": {
         "Additional Charge": "Concussive Stomp gains an additional Charge.",
         "Barrier Generation": "Concussive Stomp grants a Barrier equal to 10% of your Maximum Life per enemy hit for 3 seconds, up to 30%.",
@@ -1568,6 +1722,7 @@
       "extra": [],
       "luckyHit": "26%",
       "name": "Condemn",
+      "orden": 63,
       "runes": {
         "Atonement": "Condemn Casts significantly faster instead of Pulling enemies in, dealing 420 damage.",
         "Cooldown Reduction": "Condemn reduces its cooldown by 1 second for each enemy hit, up to 4 seconds.",
@@ -1590,6 +1745,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Condemned",
+      "orden": 305,
       "runes": {},
       "tags": []
     },
@@ -1601,6 +1757,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Consecrated Shield",
+      "orden": 273,
       "runes": {},
       "tags": []
     },
@@ -1612,6 +1769,7 @@
       "extra": [],
       "luckyHit": "12%",
       "name": "Consecration",
+      "orden": 62,
       "runes": {
         "Bastion": "Consecration Immobilizes enemies and can be cast anywhere.",
         "Duration": "Increase the duration of Consecration by x35%.",
@@ -1635,6 +1793,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Control Impaired",
+      "orden": 254,
       "runes": {},
       "tags": [
         "Reinforcement"
@@ -1650,6 +1809,7 @@
       ],
       "luckyHit": "25%",
       "name": "Corpse Explosion",
+      "orden": 140,
       "runes": {
         "Blood Orb": "Corpse Explosion has a 20% chance to form a Blood Orb.",
         "Bloody Mess": "Corpse Explosion's Size is increased by 50% and damage is increased by x75%.",
@@ -1674,6 +1834,7 @@
       ],
       "luckyHit": "30%",
       "name": "Corpse Tendrils",
+      "orden": 141,
       "runes": {
         "Bitter Harvest": "Corpse Tendrils no longer consumes the Corpse. Enemies are Immobilized for 3 seconds after being Pulled in.",
         "Critical Strike Chance": "You gain an additional +5% increased Critical Strike Chance for 6 seconds against enemies damaged by Corpse Tendrils.",
@@ -1696,6 +1857,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Corrupted Roots",
+      "orden": 414,
       "runes": {},
       "tags": []
     },
@@ -1707,6 +1869,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Council Coffers",
+      "orden": 345,
       "runes": {},
       "tags": []
     },
@@ -1720,6 +1883,7 @@
       ],
       "luckyHit": "30%",
       "name": "Counterattack",
+      "orden": 238,
       "runes": {
         "Asymmetrical Warfare": "Counterattack's Passive now also retaliates against all Close enemies for 100 damage when you Dodge any attack.",
         "Controlled Reflection": "When you Dodge a Control Impairing attack with Counterattack it will reflect that Crowd Control to all Close enemies for 2 seconds.",
@@ -1745,6 +1909,7 @@
       ],
       "luckyHit": null,
       "name": "Cover Fire",
+      "orden": 318,
       "runes": {},
       "tags": [
         "Mercenary Iconic"
@@ -1758,6 +1923,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Covered in Ash",
+      "orden": 298,
       "runes": {},
       "tags": []
     },
@@ -1771,6 +1937,7 @@
       ],
       "luckyHit": null,
       "name": "Crater",
+      "orden": 263,
       "runes": {},
       "tags": [
         "Mercenary Iconic"
@@ -1784,6 +1951,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Crimson Scent",
+      "orden": 392,
       "runes": {},
       "tags": []
     },
@@ -1795,6 +1963,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Crushing Force",
+      "orden": 279,
       "runes": {},
       "tags": []
     },
@@ -1808,6 +1977,7 @@
       ],
       "luckyHit": "25%",
       "name": "Crushing Hand",
+      "orden": 228,
       "runes": {
         "100 Crushing Hands": "Crushing Hand becomes a Centipede Skill that deals Poison damage. Crushing Hand sends centipedes scuttling across the ground, Poisoning enemies for 300 damage over 6 seconds. Enemies Poisoned from Crushing Hand are Weakened.",
         "Barrier": "Crushing Hand grants a Barrier for 5% of your Maximum Life for 3 seconds, up to 30%.",
@@ -1830,6 +2000,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Cult of Annihilation",
+      "orden": 428,
       "runes": {},
       "tags": []
     },
@@ -1841,6 +2012,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Cursed Merchant",
+      "orden": 341,
       "runes": {},
       "tags": []
     },
@@ -1852,6 +2024,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Cursed Offerings",
+      "orden": 343,
       "runes": {},
       "tags": []
     },
@@ -1863,6 +2036,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Cursed Rituals",
+      "orden": 342,
       "runes": {},
       "tags": []
     },
@@ -1876,6 +2050,7 @@
       ],
       "luckyHit": "25%",
       "name": "Cyclone Armor",
+      "orden": 109,
       "runes": {
         "Damage Bonus": "<b>Active:</b> Cyclone Armor's damage is increased by 200%.",
         "Greater Cyclone Armor": "All bonuses and damage from Cyclone Armor are increased by 100%.",
@@ -1899,6 +2074,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Damned Thieves",
+      "orden": 334,
       "runes": {},
       "tags": []
     },
@@ -1913,6 +2089,7 @@
       ],
       "luckyHit": "35%",
       "name": "Dance of Knives",
+      "orden": 161,
       "runes": {
         "Energy Cost Reduction": "Dance of Knives' Energy Cost is reduced to 20.",
         "Fan of Knives": "Dance of Knives now throws a fan of 5 knives that each deal 36 damage.",
@@ -1939,6 +2116,7 @@
       ],
       "luckyHit": "20%",
       "name": "Dark Prison",
+      "orden": 12,
       "runes": {
         "Calamity": "Dark Prison now lasts 50% longer but you can only have one at a time. When the prison ends all enemies within take 30 damage, increased by 100% per enemy within. Non-Elite enemies within the prison cannot die while it is active. Recast to collapse the prison early.",
         "Chain Aura": "Dark Prison becomes a Hellfire Skill and now creates an aura of fire chains around you, reducing damage coming from outside by 45% and Slowing enemies within by 80%.",
@@ -1962,6 +2140,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Dark Shroud",
+      "orden": 157,
       "runes": {
         "Best Served Cold": "When a Dark Shroud shadow is consumed, it explodes in a frigid nova that deals 60 Cold damage to surrounding enemies and Chills them for 30%.",
         "Consume Chance": "Dark Shroud shadows have a 15% chance to not be consumed.",
@@ -1986,6 +2165,7 @@
       ],
       "luckyHit": "25%",
       "name": "Dash",
+      "orden": 162,
       "runes": {
         "Charges and Cooldown Reduction": "Dash has 1 additional Charge and its Charge Cooldown is reduced by 3 seconds.",
         "Critical Strike Chance": "Damaging enemies with Dash increases their chance to be Critically Struck by +5% for 8 seconds.",
@@ -2013,6 +2193,7 @@
       ],
       "luckyHit": "50%",
       "name": "Death Blow",
+      "orden": 90,
       "runes": {
         "Blast": "Death Blow now deals Fire damage and deals an additional 225 Burning damage over 5 seconds. Enemies that die to Death Blow while Burning or to Death Blow's burn trigger a fiery explosion for 30 damage to surrounding enemies.",
         "Charges": "Death Blow has 2 charges.",
@@ -2037,6 +2218,7 @@
       ],
       "luckyHit": "15%",
       "name": "Death Trap",
+      "orden": 167,
       "runes": {
         "Cooldown": "Killing an enemy or dealing damage to an Elite for the first time with Death Trap reduces its Cooldown by 1 second.",
         "Death Pit": "Death Trap Pulls In enemies and makes them Vulnerable and Knocked Down for 4 seconds. Death Trap gains 1 additional charge and has its Cooldown reduced by 15 seconds.",
@@ -2059,6 +2241,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Debilitating Roar",
+      "orden": 110,
       "runes": {
         "Booming Roar": "All Debilitating Roar's effects and durations are increased by 50%.",
         "Cooldown": "Reduce the Cooldown of Debilitating Roar by 8 seconds.",
@@ -2085,6 +2268,7 @@
       ],
       "luckyHit": "40%",
       "name": "Decompose",
+      "orden": 124,
       "runes": {
         "Barrier": "Decompose grants a Barrier every second for 10% of your Maximum Life that lasts 6 seconds.",
         "Crowd Control": "Decompose Slows enemies by 50%.",
@@ -2108,6 +2292,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Decrepify",
+      "orden": 137,
       "runes": {
         "Cooldown Reduction": "Lucky Hit: Enemies hit while afflicted with Decrepify have up to a 15% chance to reduce a random active Cooldown by 1 second.",
         "Critical Strike Chance": "You have an additional +5% Critical Strike Chance against enemies afflicted with Decrepify.",
@@ -2132,6 +2317,7 @@
       ],
       "luckyHit": "5%",
       "name": "Deep Freeze",
+      "orden": 192,
       "runes": {
         "Bonechill": "Deep Freeze's continuous and final explosion damage become Frostbite damage that deals 420 and 1440 damage over 4 seconds respectively. This Frostbite damage Chills for 100% over 4 seconds and will remove Unstoppable from enemies.",
         "Cooldown with Barrier": "Cooldown speed is increased by 50% while you have a Barrier.",
@@ -2154,6 +2340,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Defiance Aura",
+      "orden": 55,
       "runes": {
         "Bonus Healing": "Defiance Aura grants you and your allies 25% Healing received.",
         "Maximum Life": "Defiance Aura's passive also grants you and your allies 15% Maximum Life.",
@@ -2177,6 +2364,7 @@
       "extra": [],
       "luckyHit": "10%",
       "name": "Demonic Swipe-v2",
+      "orden": 0,
       "runes": {},
       "tags": [
         "Basic",
@@ -2194,6 +2382,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Devil's Deal",
+      "orden": 430,
       "runes": {},
       "tags": []
     },
@@ -2205,6 +2394,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Disciple",
+      "orden": 72,
       "runes": {},
       "tags": []
     },
@@ -2216,6 +2406,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Dismembering",
+      "orden": 290,
       "runes": {},
       "tags": []
     },
@@ -2229,6 +2420,7 @@
       ],
       "luckyHit": "6%",
       "name": "Divine Lance",
+      "orden": 52,
       "runes": {
         "Cast Speed": "Divine Lance gains +20% increased Cast Speed.",
         "Cost Reduction": "Killing enemies with Divine Lance reduces the cost of your next Divine Lance by 10% up to 50%.",
@@ -2252,6 +2444,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Dog of Astaroth",
+      "orden": 372,
       "runes": {},
       "tags": []
     },
@@ -2265,6 +2458,7 @@
       ],
       "luckyHit": "20%",
       "name": "Doom",
+      "orden": 2,
       "runes": {
         "Assimilation": "Casting Doom against a Vulnerable, Weakened, or Slowed enemy assimilates the effects, causing Doom to also apply those effects for 3 seconds.",
         "Contagion": "Whenever you kill a Hexed enemy, Doom spreads the Hex to another enemy and deals 50 damage to them.",
@@ -2291,6 +2485,7 @@
       ],
       "luckyHit": "30%",
       "name": "Double Swing",
+      "orden": 77,
       "runes": {
         "Chance to Hit Twice": "Gains 20% chance to hit twice.",
         "Damage Increase": "Increases this Skill's damage by x2% per enemy hit for 2 seconds, all stacks expire simultaneously and the duration cannot be refreshed.",
@@ -2314,6 +2509,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Draw Fire",
+      "orden": 261,
       "runes": {},
       "tags": []
     },
@@ -2327,6 +2523,7 @@
       ],
       "luckyHit": "15%",
       "name": "Dread Claws",
+      "orden": 7,
       "runes": {
         "Ambush": "Dread Claws deals x50% increased damage with its first claw strike against each enemy. When attacking from Stealth all claws gain this bonus.",
         "Cascading Dread": "Dread Claws sends out 4 additional claws and each set deals x30% increased damage than the last.",
@@ -2350,6 +2547,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Dread Revival",
+      "orden": 406,
       "runes": {},
       "tags": []
     },
@@ -2361,6 +2559,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Duriel's Invasion",
+      "orden": 360,
       "runes": {},
       "tags": []
     },
@@ -2372,6 +2571,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Eagle",
+      "orden": 248,
       "runes": {},
       "tags": []
     },
@@ -2385,6 +2585,7 @@
       ],
       "luckyHit": null,
       "name": "Earth Breaker",
+      "orden": 283,
       "runes": {},
       "tags": [
         "Mercenary Iconic"
@@ -2400,6 +2601,7 @@
       ],
       "luckyHit": "35%",
       "name": "Earth Spike",
+      "orden": 98,
       "runes": {
         "Aftershock": "A second Earth Spike will appear at the previously targeted location dealing 80% of normal damage. This effect expires in 5 seconds.",
         "Critical Strike Chance": "Increases Earth Spike's Critical Strike Chance by 15%.",
@@ -2426,6 +2628,7 @@
       ],
       "luckyHit": "30%",
       "name": "Earthen Bulwark",
+      "orden": 111,
       "runes": {
         "Barrier Duration and Bonus": "Extends the Barrier duration to 12 seconds and increase the base absorption amount to 60% of your Maximum Life.",
         "Earthen Shrapnel": "Rock shrapnel flies outward when Earthen Bulwark is destroyed or expires, dealing 275 to surrounding enemies. This damage is increased by Barrier bonuses.",
@@ -2450,6 +2653,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Ember's Gift",
+      "orden": 309,
       "runes": {},
       "tags": []
     },
@@ -2461,6 +2665,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Embers of Anguish",
+      "orden": 361,
       "runes": {},
       "tags": []
     },
@@ -2472,6 +2677,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Endless Swarm",
+      "orden": 373,
       "runes": {},
       "tags": []
     },
@@ -2483,6 +2689,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Energize",
+      "orden": 221,
       "runes": {},
       "tags": []
     },
@@ -2494,6 +2701,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Eradication",
+      "orden": 308,
       "runes": {},
       "tags": []
     },
@@ -2505,6 +2713,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Evisceration Fragment",
+      "orden": 32,
       "runes": {},
       "tags": []
     },
@@ -2516,6 +2725,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Exalted Council",
+      "orden": 344,
       "runes": {},
       "tags": []
     },
@@ -2527,6 +2737,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Exhaustion",
+      "orden": 297,
       "runes": {},
       "tags": []
     },
@@ -2538,6 +2749,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Exotic Armory",
+      "orden": 368,
       "runes": {},
       "tags": []
     },
@@ -2551,6 +2763,7 @@
       ],
       "luckyHit": null,
       "name": "Explosive Charge",
+      "orden": 321,
       "runes": {},
       "tags": [
         "Mercenary Iconic"
@@ -2564,6 +2777,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Fall of the Fell",
+      "orden": 397,
       "runes": {},
       "tags": []
     },
@@ -2577,6 +2791,7 @@
       ],
       "luckyHit": "24%",
       "name": "Falling Star",
+      "orden": 59,
       "runes": {
         "Additional Charge": "Falling Star has 1 additional Charge.",
         "Cooldown Reduction": "Killing a Vulnerable enemy reduces the Cooldown of Falling Star by 0.5 seconds.",
@@ -2600,6 +2815,7 @@
       "extra": [],
       "luckyHit": "10%",
       "name": "Familiar",
+      "orden": 184,
       "runes": {
         "Bonus Effect": "Gain a bonus based on the Familiar type when the Familiar explodes: - Fire Familiar: Gain +5% Healing Received for 5 seconds.\n- Cold Familiar: Gain a Barrier for 5% of your Maximum Life for 5 seconds, up to 30%.\n- Lightning Familiar: Reduce a random active Cooldown by 0.5 seconds.",
         "Charge": "Familiar gains 1 additional Charge.",
@@ -2624,6 +2840,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Fanaticism Aura",
+      "orden": 54,
       "runes": {
         "Additional Maximum Resource": "Fanaticism Aura's passive also grants you\nand your allies 15% Maximum Resource.",
         "Extra Passive Stack": "Fanaticism Aura's passive stacks 1 additional time.",
@@ -2646,6 +2863,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Fearless Conviction",
+      "orden": 405,
       "runes": {},
       "tags": []
     },
@@ -2659,6 +2877,7 @@
       ],
       "luckyHit": null,
       "name": "Field of Languish",
+      "orden": 300,
       "runes": {},
       "tags": [
         "Mercenary Iconic"
@@ -2674,6 +2893,7 @@
       ],
       "luckyHit": "22%",
       "name": "Fiend of Abaddon",
+      "orden": 21,
       "runes": {
         "Abyssal Colossus": "Fiend of Abaddon becomes an Abyss Recast Skill and now summons a demon for 30 seconds that attacks for 364 damage per swipe. Recast to command the demon to do a massive smash that Pulls in enemies and explodes for 560 damage.",
         "Crowd Damage": "Fiend of Abaddon deals x2% increased damage for each Nearby enemy present when it is summoned, up to x40%.",
@@ -2698,6 +2918,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Finely Tuned",
+      "orden": 381,
       "runes": {},
       "tags": []
     },
@@ -2711,6 +2932,7 @@
       ],
       "luckyHit": "35%",
       "name": "Fire Bolt",
+      "orden": 171,
       "runes": {
         "Damage Bonus": "Fire Bolt deals x50% increased Burning damage.",
         "Firefly": "Fire Bolt shoots out a firefly that attaches itself to an enemy and explodes 3 times after a delay, dealing 25 damage with each explosion.",
@@ -2735,6 +2957,7 @@
       ],
       "luckyHit": "33%",
       "name": "Fireball",
+      "orden": 176,
       "runes": {
         "Critical Strike Damage": "Fireball deals x30% increased Critical Strike Damage.",
         "Damage Bonus": "Fireball deals x40% increased damage, but its Mana cost is increased by 15.",
@@ -2759,6 +2982,7 @@
       ],
       "luckyHit": "30%",
       "name": "Firewall",
+      "orden": 189,
       "runes": {
         "Cost Reduction": "Every 100 Mana spent makes your next Firewall cost no Mana, stacking up to 300 total Mana.",
         "Damage Bonus": "Firewall deals x75% increased damage, but its duration is reduced by 25%.",
@@ -2784,6 +3008,7 @@
       ],
       "luckyHit": "35%",
       "name": "Flame Shield",
+      "orden": 180,
       "runes": {
         "Cooldown Reduction": "Flame Shield's Cooldown is reduced by 4 seconds.",
         "Duration Bonus": "Flame Shield's duration is increased to 1.5 seconds.",
@@ -2808,6 +3033,7 @@
       ],
       "luckyHit": null,
       "name": "Flame Surge",
+      "orden": 295,
       "runes": {},
       "tags": [
         "Mercenary Core"
@@ -2821,6 +3047,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Flawless Find",
+      "orden": 347,
       "runes": {},
       "tags": []
     },
@@ -2835,6 +3062,7 @@
       ],
       "luckyHit": "50%",
       "name": "Flay",
+      "orden": 74,
       "runes": {
         "Anemia": "Flay's Bleeding duration is reduced by 2 seconds and it makes enemies Vulnerable.",
         "Duration Bonus": "Flay's Bleeding duration is increased by 5 seconds.",
@@ -2861,6 +3089,7 @@
       ],
       "luckyHit": "20%",
       "name": "Flurry",
+      "orden": 152,
       "runes": {
         "Cast Speed": "Flurry gains +20% increased Cast Speed.",
         "Damage Increase": "Casting Flurry increases its damage by x15%, up to x45%. This bonus resets after hitting the maximum.",
@@ -2887,6 +3116,7 @@
       ],
       "luckyHit": "50%",
       "name": "Forceful Arrow",
+      "orden": 147,
       "runes": {
         "Cloudburst": "Forceful Arrow's Propel no longer Knocks Back Close enemies and instead creates an Arrow Storm every 3 arrows, dealing 113 damage and Slowing enemies hit by 50% for 2 seconds.",
         "Ender": "Forceful Arrow pierces through the first enemy hit, deals 82 damage, and has a 30% chance to Execute enemies.",
@@ -2909,6 +3139,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Forged in Flame",
+      "orden": 346,
       "runes": {},
       "tags": []
     },
@@ -2920,6 +3151,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Fortress",
+      "orden": 66,
       "runes": {
         "Barricade": "Killing enemies inside of your Fortress extends its duration by 0.5 seconds up to 20 seconds. You may recast Fortress to move it to your current location.",
         "Duration": "Increase Fortress's duration by 4 seconds.",
@@ -2943,6 +3175,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Fortune or Famine",
+      "orden": 419,
       "runes": {},
       "tags": []
     },
@@ -2957,6 +3190,7 @@
       ],
       "luckyHit": "30%",
       "name": "Frenzy",
+      "orden": 75,
       "runes": {
         "Barrage": "Frenzy stacks up an additional 5 times and you gain Berserking for 5 seconds while at maximum stacks.",
         "Ferocity": "Each stack of Frenzy gained also grants a stack of Ferocity.",
@@ -2982,6 +3216,7 @@
       ],
       "luckyHit": "40%",
       "name": "Frost Bolt",
+      "orden": 172,
       "runes": {
         "Barrier": "Frost Bolt grants a Barrier for 2% of your Maximum Life up to 6% for 6 seconds when it hits the first enemy.",
         "Pierce": "Frost Bolt Pierces 1 time.",
@@ -3004,6 +3239,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Frost Nova",
+      "orden": 181,
       "runes": {
         "Charge": "Frost Nova gains 1 additional Charge, but its Cooldown is increased by 6 seconds.",
         "Cold Front": "Frost Nova is now cast at a target location, and each enemy Frozen by it reduces the cooldowns of your Frost Skills by 0.5 seconds.",
@@ -3028,6 +3264,7 @@
       ],
       "luckyHit": "4%",
       "name": "Frozen Orb",
+      "orden": 177,
       "runes": {
         "Barrier": "Frozen Orb grants a Barrier for 5% of your Maximum Life for 3 seconds for each enemy hit by its explosion, up to 50%.",
         "Damage Over Time Bonus": "Frozen Orb deals x100% increased Frostbite damage.",
@@ -3050,6 +3287,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Gauntlet",
+      "orden": 402,
       "runes": {},
       "tags": []
     },
@@ -3061,6 +3299,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Gift of the Stag",
+      "orden": 209,
       "runes": {},
       "tags": []
     },
@@ -3072,6 +3311,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Goblinfall",
+      "orden": 409,
       "runes": {},
       "tags": []
     },
@@ -3083,6 +3323,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Golden Hoard",
+      "orden": 358,
       "runes": {},
       "tags": []
     },
@@ -3096,6 +3337,7 @@
       ],
       "luckyHit": "20%",
       "name": "Golem",
+      "orden": 134,
       "runes": {
         "Damage Bonus": "Golem deals x30% increased damage to Vulnerable enemies.",
         "Fel Gluttony": "Commanding your Golem causes it to erupt, dealing 300 damage to surrounding enemies. Your Golem passively consumes nearby Corpses every second to reduce its Cooldown by 2 seconds per Corpse consumed.",
@@ -3119,6 +3361,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Golems",
+      "orden": 197,
       "runes": {},
       "tags": []
     },
@@ -3130,6 +3373,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Gorilla",
+      "orden": 250,
       "runes": {},
       "tags": []
     },
@@ -3141,6 +3385,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Greater Nemesis",
+      "orden": 364,
       "runes": {},
       "tags": []
     },
@@ -3152,6 +3397,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Greed is Good",
+      "orden": 413,
       "runes": {},
       "tags": []
     },
@@ -3163,6 +3409,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Grigoire's Gambit",
+      "orden": 359,
       "runes": {},
       "tags": []
     },
@@ -3174,6 +3421,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Grim Mysteries",
+      "orden": 422,
       "runes": {},
       "tags": []
     },
@@ -3185,6 +3433,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Grim Retribution",
+      "orden": 425,
       "runes": {},
       "tags": []
     },
@@ -3196,6 +3445,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Grizzly Rage",
+      "orden": 120,
       "runes": {
         "Armor Bonus": "Increases Grizzly Rage's Armor bonus by an additional +15%.",
         "Avatar of Nature": "Earth and Storm Skills may be cast as a Werebear and deal x35% bonus damage while Grizzly Rage is active.",
@@ -3221,6 +3471,7 @@
       ],
       "luckyHit": null,
       "name": "Ground Slam",
+      "orden": 257,
       "runes": {},
       "tags": [
         "Mercenary Core"
@@ -3236,6 +3487,7 @@
       ],
       "luckyHit": "33%",
       "name": "Ground Stomp",
+      "orden": 83,
       "runes": {
         "Additional Charges": "Ground Stomp gains 2 additional Charges.",
         "Breach": "Ground Stomp becomes a Brawling Skill that deals Fire damage. Ground Stomp no longer Stuns and smashes the surrounding ground. Instead, it fissures the ground in front of you, dealing 150 damage. Burning enemies take x20% increased damage.",
@@ -3258,6 +3510,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Gutter Filth",
+      "orden": 375,
       "runes": {},
       "tags": []
     },
@@ -3272,6 +3525,7 @@
       ],
       "luckyHit": "50%",
       "name": "Hammer of the Ancients",
+      "orden": 78,
       "runes": {
         "Ancestral": "Hammer of the Ancients now deals Fire damage. Casting Hammer of the Ancients Summons 2 Ancients to hammer the same area for 66 damage each. If Burning enemies are struck Hammer of the Ancients explodes, dealing 17 damage.",
         "Critical Strike": "Hammer of the Ancients gains +2% increased Critical Strike Chance for every 20 Maximum Fury you have, up to +20% Critical Strike Chance at 200 Maximum Fury.",
@@ -3295,6 +3549,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Hated Foe",
+      "orden": 385,
       "runes": {},
       "tags": []
     },
@@ -3308,6 +3563,7 @@
       ],
       "luckyHit": null,
       "name": "Haunt",
+      "orden": 294,
       "runes": {},
       "tags": [
         "Mercenary Core"
@@ -3321,6 +3577,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Headrotten Feast",
+      "orden": 416,
       "runes": {},
       "tags": []
     },
@@ -3332,6 +3589,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Heart of Stone",
+      "orden": 333,
       "runes": {},
       "tags": []
     },
@@ -3346,6 +3604,7 @@
       ],
       "luckyHit": "50%",
       "name": "Heartseeker",
+      "orden": 148,
       "runes": {
         "Confluence": "Heartseeker now has a 10 second Cooldown and fires 2 additional arrows to your left and right dealing 30 damage. If at least 2 arrows hit the same enemy, surrounding enemies will be Pulled In.",
         "Critical Strike Chance": "When Heartseeker hits an enemy, your Critical Strike Chance against them is increased by +5% for 4 seconds, up to +20%.",
@@ -3368,6 +3627,7 @@
       "extra": [],
       "luckyHit": "3%",
       "name": "Heaven's Fury",
+      "orden": 65,
       "runes": {
         "Damage Bonus": "Enemies hit by Heaven's Fury take 20% increased damage from Heaven's Fury forever.",
         "Duration": "Increase Heaven's Fury duration by 4 seconds.",
@@ -3392,6 +3652,7 @@
       ],
       "luckyHit": "8%",
       "name": "Hell Fracture",
+      "orden": 6,
       "runes": {
         "Additional Fracture": "Hell Fracture explodes 1 additional time.",
         "Cost Reduction": "Casting Hell Fracture reduces its cost by 25% until you Cast a different Skill.",
@@ -3415,6 +3676,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Hell's Prize",
+      "orden": 400,
       "runes": {},
       "tags": []
     },
@@ -3426,6 +3688,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Hellguard Fragment",
+      "orden": 34,
       "runes": {},
       "tags": []
     },
@@ -3439,6 +3702,7 @@
       ],
       "luckyHit": "25%",
       "name": "Hellion Sting",
+      "orden": 3,
       "runes": {
         "Damage": "Hellion Sting deals x50% increased damage to enemies for 3 seconds after you first strike them with it.",
         "Demonic Swipe": "Hellion Sting becomes a Hellfire Skill and its 4th attack transforms you into Demonform, cleaving a wide area for 180 damage.",
@@ -3461,6 +3725,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Hellmouth",
+      "orden": 389,
       "runes": {},
       "tags": []
     },
@@ -3474,6 +3739,7 @@
       ],
       "luckyHit": "50%",
       "name": "Hemorrhage",
+      "orden": 125,
       "runes": {
         "Blood Boil": "Hemorrhage also deals 40 damage to enemies around your target.",
         "Blood Orb": "Hemorrhage has an additional 30% chance to form a Blood Orb.",
@@ -3498,6 +3764,7 @@
       ],
       "luckyHit": "44%",
       "name": "Holy Bolt",
+      "orden": 46,
       "runes": {
         "Cast Speed": "Increases Holy Bolt Cast Speed by +10% when hitting an enemy for 4 seconds, up to +30%. Decrease Holy Bolt's Cooldown by 30%.",
         "Divine Bolt": "Holy Bolt becomes a Disciple Skill. Holy Bolt pierces, deals 120 damage, and applies Vulnerable.",
@@ -3522,6 +3789,7 @@
       ],
       "luckyHit": "25%",
       "name": "Holy Light Aura",
+      "orden": 56,
       "runes": {
         "Additional Bounce": "Holy Light Aura's active bounces 1 additional time.",
         "Additional Targets": "Holy Light Aura's passive now targets 1 additional enemies.",
@@ -3544,6 +3812,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Horadric Hunter",
+      "orden": 410,
       "runes": {},
       "tags": []
     },
@@ -3557,6 +3826,7 @@
       ],
       "luckyHit": "17%",
       "name": "Hurricane",
+      "orden": 116,
       "runes": {
         "Critical Strike Chance": "Hurricane's Critical Strike Chance is increased by +5% and an additional 5% Critical Strike Chance for each stack of Ferocity active.",
         "Derecho": "Hurricane has no cooldown and deals x100% bonus damage. Hurricane costs 15 Spirit per second while active. Cast Hurricane again to toggle the effect off. Hurricane becomes a Core Skill.",
@@ -3583,6 +3853,7 @@
       ],
       "luckyHit": "5%",
       "name": "Hydra",
+      "orden": 185,
       "runes": {
         "Bathed in Flame": "Hydra is bathed in flame, dealing 28 Burning damage per second to surrounding\nenemies. Hydra's attacks now instead deal 70 Burning damage over 4 seconds.",
         "Behemoth": "Hydra Summons a massive 1-headed Hydra that spits explosive fire and deals 20% increased damage for each extra head it would have had. Hydra no longer costs Mana, but has a 15 second Cooldown. You can now have up to 10 total Hydras at one time.",
@@ -3606,6 +3877,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Hysteria",
+      "orden": 277,
       "runes": {},
       "tags": []
     },
@@ -3617,6 +3889,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Ice Armor",
+      "orden": 182,
       "runes": {
         "Blast Chill": "Ice Armor also applies to Nearby Allies and increases All Resistances by x value3 .",
         "Cooldown Reduction": "Ice Armor's Cooldown is reduced to 16 seconds.",
@@ -3641,6 +3914,7 @@
       ],
       "luckyHit": "15%",
       "name": "Ice Blades",
+      "orden": 186,
       "runes": {
         "Area Bonus": "Ice Blades now cleave.",
         "Blazing Blades": "Ice Blades becomes a Pyromancy Skill that deals 115 Fire damage. Ice Blades gain 30% Cast Speed, but drain 5 Mana per attack.",
@@ -3666,6 +3940,7 @@
       ],
       "luckyHit": "16%",
       "name": "Ice Shards",
+      "orden": 178,
       "runes": {
         "Barrier": "Ice Shards launches 1 additional shard while you have a Barrier.",
         "Cost Reduction": "Ice Shards' Mana cost is reduced by 3.",
@@ -3688,6 +3963,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Idols of War",
+      "orden": 379,
       "runes": {},
       "tags": []
     },
@@ -3699,6 +3975,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Impending Doom",
+      "orden": 352,
       "runes": {},
       "tags": []
     },
@@ -3710,6 +3987,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Incendiary Bolt",
+      "orden": 326,
       "runes": {},
       "tags": []
     },
@@ -3723,6 +4001,7 @@
       ],
       "luckyHit": "16%",
       "name": "Incinerate",
+      "orden": 179,
       "runes": {
         "Disintegration": "Incinerate becomes a Shock Skill that deals Lightning damage. Incinerate's beam no longer penetrates enemies and it now deals 140 damage to the first enemy hit and an additional 140 damage distributed among up to 5 enemies around them.",
         "Execute": "Incinerate Executes enemies.",
@@ -3748,6 +4027,7 @@
       ],
       "luckyHit": "2%",
       "name": "Infernal Breath",
+      "orden": 15,
       "runes": {
         "Abyssal Torrent": "Infernal Breath becomes an Abyss Recast Skill and summons a larger demon for 15 seconds that Executes Hexed enemies. Recast to aim and blast enemies 3 times for 150 damage.",
         "Demonic Breath": "Infernal Breath becomes a Channeled fire breath attack that transforms you into Demonform, dealing 35 damage per hit. Infernal Breath's cost is reduced by 50% while you have Volatility.",
@@ -3773,6 +4053,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Infernal Deception",
+      "orden": 367,
       "runes": {},
       "tags": []
     },
@@ -3784,6 +4065,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Infernal Hoard",
+      "orden": 348,
       "runes": {},
       "tags": []
     },
@@ -3795,6 +4077,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Infernal Rite",
+      "orden": 387,
       "runes": {},
       "tags": []
     },
@@ -3808,6 +4091,7 @@
       ],
       "luckyHit": "10%",
       "name": "Inferno",
+      "orden": 193,
       "runes": {
         "Cooldown Reduction": "Inferno's Cooldown is reduced to 12 seconds, but it now also costs 30 Mana.",
         "Direct Damage Bonus": "Inferno's Burning damage is now converted to direct Fire damage, allowing it to Critically Strike. Inferno deals 20% increased Critical Strike Damage.",
@@ -3830,6 +4114,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Inferno Fragment",
+      "orden": 36,
       "runes": {},
       "tags": []
     },
@@ -3841,6 +4126,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Initiative",
+      "orden": 383,
       "runes": {},
       "tags": []
     },
@@ -3852,6 +4138,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Injured",
+      "orden": 253,
       "runes": {},
       "tags": [
         "Reinforcement"
@@ -3865,6 +4152,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Inner Sight",
+      "orden": 199,
       "runes": {},
       "tags": []
     },
@@ -3876,6 +4164,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Inspiration",
+      "orden": 270,
       "runes": {},
       "tags": []
     },
@@ -3887,6 +4176,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Intimidated",
+      "orden": 285,
       "runes": {},
       "tags": []
     },
@@ -3901,6 +4191,7 @@
       ],
       "luckyHit": "50%",
       "name": "Invigorating Strike",
+      "orden": 149,
       "runes": {
         "Accumulating Strike": "Invigorating Strike now deals 114 damage and every 3rd cast grants 1 stack of Resolve and 1 stack of Ferocity.",
         "Cast Speed": "Increases Invigorating Strike Cast Speed by 5% when hitting an enemy for the first time, up to 20%, for 4 seconds.",
@@ -3923,6 +4214,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Iron Feather",
+      "orden": 213,
       "runes": {},
       "tags": []
     },
@@ -3934,6 +4226,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Iron Grip",
+      "orden": 292,
       "runes": {},
       "tags": []
     },
@@ -3947,6 +4240,7 @@
       ],
       "luckyHit": "24%",
       "name": "Iron Maelstrom",
+      "orden": 95,
       "runes": {
         "Additional Effect": "Each attack gains an additional effect: Two Handed Bludgeoning deals x25%\nincreased Critical Strike Damage Two Handed Slashing deals x20% increased\ndamage to Vulnerable enemies. Dual Wield gains +20% Cast Speed.",
         "Armageddon": "Each attack gains an additional effect: Two Handed Bludgeoning creates a Earthquake that deals 135 Physical damage over 4 seconds Two-Handed Slashing shoots Iron Shrapnel dealing 4 damage inflicting 216 Bleeding damage over 5 seconds Dual Wield forms Dust Devils that each deal 13 damage.",
@@ -3971,6 +4265,7 @@
       ],
       "luckyHit": "5%",
       "name": "Iron Maiden",
+      "orden": 138,
       "runes": {
         "Blood Maiden": "Iron Maiden is also a Blood Skill, causing enemies damaged by it to have a 5% chance to form a Blood Orb. Casting Iron Maiden picks up 4 Blood Orbs in the target area and causes them to burst for 150 damage.",
         "Essence Generation": "Iron Maiden no longer has an Essence cost and instead generates 5 Essence for each enemy you curse that was not already afflicted with Iron Maiden.",
@@ -3995,6 +4290,7 @@
       ],
       "luckyHit": null,
       "name": "Iron Skin",
+      "orden": 84,
       "runes": {
         "Endure": "Iron Skin no longer grants a Barrier, but your Life cannot be reduced below 1 for the duration and you are healed to value2 Life when Iron Skin expires.",
         "Juggernaut": "Iron Skin also grants Unstoppable and enemies that hit you are Knocked back.",
@@ -4017,6 +4313,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Iron Wolf's Arrival",
+      "orden": 272,
       "runes": {},
       "tags": []
     },
@@ -4028,6 +4325,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Iron Wolf's Call",
+      "orden": 268,
       "runes": {},
       "tags": []
     },
@@ -4039,6 +4337,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Iron Wolf's Virtue",
+      "orden": 271,
       "runes": {},
       "tags": []
     },
@@ -4050,6 +4349,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Iron Wolf's Ward",
+      "orden": 267,
       "runes": {},
       "tags": []
     },
@@ -4061,6 +4361,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Jade Epiphany",
+      "orden": 380,
       "runes": {},
       "tags": []
     },
@@ -4072,6 +4373,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Jaguar",
+      "orden": 249,
       "runes": {},
       "tags": []
     },
@@ -4083,6 +4385,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Judicator",
+      "orden": 71,
       "runes": {},
       "tags": []
     },
@@ -4094,6 +4397,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Juggernaut",
+      "orden": 70,
       "runes": {},
       "tags": []
     },
@@ -4107,6 +4411,7 @@
       ],
       "luckyHit": "40%",
       "name": "Kick",
+      "orden": 87,
       "runes": {
         "Collide": "Kicked enemies deal 20% damage to enemies they collide with. Additionally, Kick destroys certain objects from Elite monster affixes.",
         "Cooldown Reduction": "Kicking an enemy reduces the Cooldowns of your Mobility Skills by 2 seconds.",
@@ -4131,6 +4436,7 @@
       ],
       "luckyHit": "7%",
       "name": "Lacerate",
+      "orden": 121,
       "runes": {
         "Additional Strikes": "Lacerate gains 5 additional strikes over 1 seconds.",
         "Damage Bonus to Multiple": "Lacerate gains a x10% bonus damage bonus each time it strikes a different enemy up to a maximum of 200%.",
@@ -4154,6 +4460,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Lair of Plenty",
+      "orden": 357,
       "runes": {},
       "tags": []
     },
@@ -4165,6 +4472,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Lair of Runes",
+      "orden": 356,
       "runes": {},
       "tags": []
     },
@@ -4178,6 +4486,7 @@
       ],
       "luckyHit": "20%",
       "name": "Landslide",
+      "orden": 102,
       "runes": {
         "Additional Pillar": "Gain 1 additional pillar.",
         "Continental Shift": "Gain 2 additional pillars. In addition, Landslide's size is increased by 50% and damage is increased to 74 .",
@@ -4202,6 +4511,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Last Gasp",
+      "orden": 377,
       "runes": {},
       "tags": []
     },
@@ -4216,6 +4526,7 @@
       ],
       "luckyHit": "66%",
       "name": "Leap",
+      "orden": 88,
       "runes": {
         "Arsenal Bonus": "Leap grants a bonus based on its Arsenal\nSelection Dual Wield: 2 seconds of Berserking Bludgeoning: 1 stack of Overpower Slashing: 1 stack of Ferocity",
         "Damage Bonus and Crowd Control": "Leap deals x20% increased damage and Knocks Down enemies for 1 second.",
@@ -4239,6 +4550,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Legion Shard",
+      "orden": 29,
       "runes": {},
       "tags": []
     },
@@ -4252,6 +4564,7 @@
       ],
       "luckyHit": "5%",
       "name": "Lightning Spear",
+      "orden": 187,
       "runes": {
         "Chain Reaction": "Lightning Spear arcs to 2 additional surrounding targets dealing 48 damage. Critical Strikes greatly increase the range of the arcs.",
         "Critical Strike": "Lightning Spear gains 10% increased Critical Strike Chance.",
@@ -4277,6 +4590,7 @@
       ],
       "luckyHit": "15%",
       "name": "Lightning Storm",
+      "orden": 103,
       "runes": {
         "Additional Strikes": "Gain 1 additional Lightning Strike. Furthermore, each stack of Ferocity also grants 1 additional Lightning Strike, up to a maximum of 4 additional strikes.",
         "Damage Bonus": "Lightning Storm's gains x10% bonus damage. This bonus is increased to x25% if the target is Vulnerable.",
@@ -4302,6 +4616,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Loaded Munitions",
+      "orden": 324,
       "runes": {},
       "tags": []
     },
@@ -4316,6 +4631,7 @@
       ],
       "luckyHit": "50%",
       "name": "Lunging Strike",
+      "orden": 76,
       "runes": {
         "Berserking": "Lunging Strike grants Berserking for 3 seconds when it Critically Strikes. Lunging Strike gains +5% increased Critical Strike Chance.",
         "Fury Generation": "Lunging Strike generates 1 Fury for each enemy you lunge through.",
@@ -4339,6 +4655,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Malignant Invasion",
+      "orden": 427,
       "runes": {},
       "tags": []
     },
@@ -4350,6 +4667,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Masochistic",
+      "orden": 218,
       "runes": {},
       "tags": []
     },
@@ -4363,6 +4681,7 @@
       ],
       "luckyHit": null,
       "name": "Massacre",
+      "orden": 274,
       "runes": {},
       "tags": [
         "Mercenary Perk"
@@ -4376,6 +4695,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Mastermind",
+      "orden": 325,
       "runes": {},
       "tags": []
     },
@@ -4387,6 +4707,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Mastermind Shard",
+      "orden": 37,
       "runes": {},
       "tags": []
     },
@@ -4398,6 +4719,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Material Wealth",
+      "orden": 421,
       "runes": {},
       "tags": []
     },
@@ -4411,6 +4733,7 @@
       ],
       "luckyHit": "30%",
       "name": "Maul",
+      "orden": 99,
       "runes": {
         "Berserking": "Maul has a 25% chance when first dealing damage to grant Berserking for 4 seconds.",
         "Overpower": "Maul's grants 1 stack of Overpower per cast when dealing damage.",
@@ -4434,6 +4757,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Meat Brothers",
+      "orden": 386,
       "runes": {},
       "tags": []
     },
@@ -4447,6 +4771,7 @@
       ],
       "luckyHit": null,
       "name": "Metamorphosis",
+      "orden": 23,
       "runes": {
         "Damage Scaling": "Metamorphosis increases your Demonology Skill damage by x1% for each 1000 bonus Maximum Life you have.",
         "Destruction Demon": "Metamorphosis does not replace any Skills and grants Volatility while active. Each Hellfire Skill cast increases your Hellfire damage by x value2 but Burns you for 8% Maximum Life over 3 seconds. Each Cast deals 5% increased Burning to you and Metamorphosis ends if you become Injured or cancel early.",
@@ -4473,6 +4798,7 @@
       ],
       "luckyHit": "40%",
       "name": "Meteor",
+      "orden": 190,
       "runes": {
         "Air Burst": "Meteor rains down 6 Meteorites before the final impact that each deal 45 damage each, but Meteor no longer deals Burning damage.",
         "Comet": "Meteor becomes a Frost Skill that deals Cold damage. Meteor calls down an icy Comet that deals 270 damage and creates an icy mist that inflicts 66 Frostbite and 50% Chill over 3 seconds.",
@@ -4496,6 +4822,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Method and Madness",
+      "orden": 349,
       "runes": {},
       "tags": []
     },
@@ -4510,6 +4837,7 @@
       ],
       "luckyHit": "15%",
       "name": "Mighty Throw",
+      "orden": 93,
       "runes": {
         "Barrier": "Mighty Throw generates up to 15% of your Maximum Life as a Barrier for 6 seconds.",
         "Ferocity": "Grants 3 stacks of Ferocity each time you use Mighty Throw.",
@@ -4532,6 +4860,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Mocking Lure",
+      "orden": 266,
       "runes": {},
       "tags": []
     },
@@ -4545,6 +4874,7 @@
       ],
       "luckyHit": null,
       "name": "Molotov",
+      "orden": 313,
       "runes": {},
       "tags": [
         "Mercenary Core"
@@ -4560,6 +4890,7 @@
       ],
       "luckyHit": "27%",
       "name": "Molten Bomb",
+      "orden": 1,
       "runes": {
         "Area Bonus": "Molten Bomb's impact area is increased by 30% but does x30% increased damage to enemies at its center.",
         "Brimstone Bomb": "Molten Bomb creates Brimstone at the impact location which deals 56 damage when it explodes.",
@@ -4583,6 +4914,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Nemesis",
+      "orden": 403,
       "runes": {},
       "tags": []
     },
@@ -4594,6 +4926,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Nemesis Tides",
+      "orden": 366,
       "runes": {},
       "tags": []
     },
@@ -4607,6 +4940,7 @@
       ],
       "luckyHit": "0%",
       "name": "Nether Step",
+      "orden": 13,
       "runes": {
         "Damage Reduction": "Nether Step grants 60% Damage Reduction that decays alongside its Movement Speed Bonus.",
         "Extra Charge": "Nether Step gains an additional Charge.",
@@ -4631,6 +4965,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Night Terrors",
+      "orden": 388,
       "runes": {},
       "tags": []
     },
@@ -4642,6 +4977,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "No Escape",
+      "orden": 287,
       "runes": {},
       "tags": []
     },
@@ -4653,6 +4989,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Obsidian Slam",
+      "orden": 216,
       "runes": {},
       "tags": []
     },
@@ -4664,6 +5001,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Opening Fire",
+      "orden": 323,
       "runes": {},
       "tags": []
     },
@@ -4675,6 +5013,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Out of the Cold",
+      "orden": 371,
       "runes": {},
       "tags": []
     },
@@ -4686,6 +5025,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Overload",
+      "orden": 217,
       "runes": {},
       "tags": []
     },
@@ -4697,6 +5037,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Packleader",
+      "orden": 220,
       "runes": {},
       "tags": []
     },
@@ -4708,6 +5049,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Paranoia",
+      "orden": 304,
       "runes": {},
       "tags": []
     },
@@ -4719,6 +5061,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Pathfinder",
+      "orden": 382,
       "runes": {},
       "tags": []
     },
@@ -4732,6 +5075,7 @@
       ],
       "luckyHit": "30%",
       "name": "Payback",
+      "orden": 240,
       "runes": {
         "Area Increase": "Payback echoes forward damaging a larger area.",
         "Block Chance": "Payback grants +20% Block Chance for 5 seconds.",
@@ -4757,6 +5101,7 @@
       ],
       "luckyHit": "50%",
       "name": "Penetrating Shot",
+      "orden": 153,
       "runes": {
         "Ballista": "Penetrating Shot takes 100% longer to fire, but shoots a larger, more powerful arrow dealing 525 damage.",
         "Damage Increase": "Penetrating Shot's arrows deal x25% increased damage. This bonus is reduced by x5% per enemy they pierce.",
@@ -4780,6 +5125,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Petrify",
+      "orden": 122,
       "runes": {
         "Duration": "Petrify's duration is increased by 1 second.",
         "Enduring Consequences": "For 10 seconds after casting Petrify, any additional enemy who strikes you is also Petrified for 2 seconds.",
@@ -4804,6 +5150,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Piercing Arrows",
+      "orden": 314,
       "runes": {},
       "tags": []
     },
@@ -4815,6 +5162,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Pin Cushion",
+      "orden": 322,
       "runes": {},
       "tags": []
     },
@@ -4826,6 +5174,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Pit Butcher",
+      "orden": 336,
       "runes": {},
       "tags": []
     },
@@ -4837,6 +5186,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Planar Tremors",
+      "orden": 390,
       "runes": {},
       "tags": []
     },
@@ -4850,6 +5200,7 @@
       ],
       "luckyHit": "28%",
       "name": "Poison Creeper",
+      "orden": 113,
       "runes": {
         "Active Poisoning Duration": "<b>Active:</b> Poison Creeper's active Poisoning duration is increased by 3 seconds.",
         "Additional Poison Creeper": "<b>Passive:</b> Gain 1 additional Poison Creeper Companions.",
@@ -4874,6 +5225,7 @@
       ],
       "luckyHit": "33%",
       "name": "Poison Imbuement",
+      "orden": 165,
       "runes": {
         "Cooldown": "Lucky Hit: Poison Imbued Skills have up to a 30% chance to reduce the Cooldown of Poison Imbuement by 2 seconds.",
         "Corrosive Ring": "<b>Passive:</b> Poison Imbuement corrodes enemies around you, dealing 25 Poisoning damage over 6 seconds. While imbued, the size of the corrosion is increased by +100%. Each enemy affected by Poison Imbuement increases your Energy Regeneration by x10%, up to x100%.",
@@ -4897,6 +5249,7 @@
       ],
       "luckyHit": "25%",
       "name": "Poison Trap",
+      "orden": 158,
       "runes": {
         "Charges": "Poison Trap gains 1 Charge.",
         "Contamination": "Poison Trap bursts for an additional 162 damage when it triggers. Enemies hit by this burst take x40% increased damage from Poison Trap.",
@@ -4919,6 +5272,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Polearm",
+      "orden": 205,
       "runes": {},
       "tags": []
     },
@@ -4930,6 +5284,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Preparation",
+      "orden": 200,
       "runes": {},
       "tags": []
     },
@@ -4941,6 +5296,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Prickleskin",
+      "orden": 208,
       "runes": {},
       "tags": []
     },
@@ -4954,6 +5310,7 @@
       ],
       "luckyHit": "22%",
       "name": "Profane Sentinel",
+      "orden": 17,
       "runes": {
         "Demonic Glare": "Profane Sentinel becomes a Hellfire eye blast attack that transforms you into Demonform, dealing 234 damage and Weakening enemies.",
         "Focused Glare": "The longer Profane Sentinel is locked onto the same enemy the stronger it becomes, dealing 25% more damage every second.",
@@ -4982,6 +5339,7 @@
       ],
       "luckyHit": null,
       "name": "Provoke",
+      "orden": 262,
       "runes": {},
       "tags": [
         "Mercenary Iconic"
@@ -4995,6 +5353,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Pulse of Aether",
+      "orden": 353,
       "runes": {},
       "tags": []
     },
@@ -5008,6 +5367,7 @@
       ],
       "luckyHit": "25%",
       "name": "Pulverize",
+      "orden": 104,
       "runes": {
         "Cost Reduction": "Reduces the Spirit cost of Pulverize by 7.",
         "Damage Bonus": "Increase Pulverize's damage by x10% and consumes up to 2 Overpower stacks to further increase the damage bonus by x10% and size of Pulverize by 25% per Overpower stack consumed.",
@@ -5034,6 +5394,7 @@
       ],
       "luckyHit": "35%",
       "name": "Puncture",
+      "orden": 150,
       "runes": {
         "Blight Burst": "Puncture now also applies 25% of its Base damage as Poisoning damage over 6 seconds and also Poisons up to 2 enemies near your target. Enemies Poisoned this way are always pierced by Puncture and your Critical Strike Chance against them is increased by +10%.",
         "Crowd Control": "Puncture Slows enemies by 20% for 4 seconds. Critical Strikes will Immobilize enemies for 2 seconds.",
@@ -5056,6 +5417,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Purify",
+      "orden": 61,
       "runes": {
         "Absolution": "Purify now can be cast on enemies. Instead of Dazing them, it deals 380 damage and makes enemies Vulnerable for value2 seconds.",
         "Cooldown Reduction": "Purify reduces its cooldown by 1 second per enemy it hits up to 3 seconds.",
@@ -5081,6 +5443,7 @@
       ],
       "luckyHit": "12%",
       "name": "Quill Volley",
+      "orden": 229,
       "runes": {
         "Bonus Feathers": "Quill Volley hurls out 2 additional feathers. Consume 2 Nearby Storm Feathers to shoot out 2 more.",
         "Claw Volley": "Quill Volley is now a Jaguar skill that deals Fire damage and costs 10 less Vigor. Quill Volley sends out 3 piercing claws that deal 35 damage twice.",
@@ -5105,6 +5468,7 @@
       ],
       "luckyHit": "50%",
       "name": "Rabies",
+      "orden": 117,
       "runes": {
         "Cooldown Reduction": "Rabies' Cooldown is reduced by 4 seconds.",
         "Healing": "Enemies that die while affected by Rabies will heal you for 2% Maximum Life.",
@@ -5129,6 +5493,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Raging Havoc",
+      "orden": 311,
       "runes": {},
       "tags": []
     },
@@ -5140,6 +5505,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Raging Violence",
+      "orden": 299,
       "runes": {},
       "tags": []
     },
@@ -5151,6 +5517,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Raheir's Aegis",
+      "orden": 260,
       "runes": {},
       "tags": []
     },
@@ -5162,6 +5529,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Raheir's Guard",
+      "orden": 258,
       "runes": {},
       "tags": []
     },
@@ -5176,6 +5544,7 @@
       ],
       "luckyHit": "12%",
       "name": "Rain of Arrows",
+      "orden": 168,
       "runes": {
         "Cast Speed and Lucky Hit": "Rain of Arrows' Cast Speed is increased by +50% and Lucky Hit Chance is increased by x50%.",
         "Cooldown": "Rain of Arrows' Cooldown is reduced by 10 seconds.",
@@ -5201,6 +5570,7 @@
       ],
       "luckyHit": "18%",
       "name": "Rake",
+      "orden": 230,
       "runes": {
         "Cast Speed": "Rake gains 20% Cast Speed.",
         "Cooldown Reduction": "Hitting at least one enemy with Rake reduces your longest active Cooldown by 0.5 seconds.",
@@ -5223,6 +5593,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Rally",
+      "orden": 60,
       "runes": {
         "Cost Reduction": "Rally's Cooldown and Costs are reduced by 15%.",
         "Critical Strike Chance": "Casting Rally increases your Critical Strike Chance by +5% while active.",
@@ -5247,6 +5618,7 @@
       ],
       "luckyHit": null,
       "name": "Rallying Cry",
+      "orden": 85,
       "runes": {
         "Booming": "Rallying Cry increases your Resource Generation by x40% and your Movement Speed by an additional x10%.",
         "Duration Bonus": "Rallying Cry's duration is increased to 7 seconds.",
@@ -5270,6 +5642,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Rampage",
+      "orden": 289,
       "runes": {},
       "tags": []
     },
@@ -5283,6 +5656,7 @@
       ],
       "luckyHit": "30%",
       "name": "Rampage-v2",
+      "orden": 14,
       "runes": {
         "Abyssal Titan": "Rampage becomes an Abyssal Recast Skill and summons a larger demon that deals x50% increased damage. Recast to command the demon to leap around the battlefield, dealing 192 damage with a 15% chance per hit to Knock enemies Down for 3 seconds.",
         "Demon Masher": "Rampage now smashes your Lesser Demons to Fortify you for 2% Maximum Life.",
@@ -5310,6 +5684,7 @@
       ],
       "luckyHit": "20%",
       "name": "Rapid Fire",
+      "orden": 154,
       "runes": {
         "Additional Projectiles": "Rapid Fire fires 1 additional arrow. Casting Rapid Fire consumes 1 stack of Overpower to fire 2 more additional arrow.",
         "Breakneck Quiver": "Rapid Fire gains +50% increased Cast Speed, and its Energy Cost is reduced to 15.",
@@ -5335,6 +5710,7 @@
       ],
       "luckyHit": "30%",
       "name": "Ravager",
+      "orden": 234,
       "runes": {
         "Carnage": "Ravager deals x100% increased damage, further increased to x300% against Elites and Bosses.",
         "Damage Increase": "Ravager deals x20% increased damage.",
@@ -5360,6 +5736,7 @@
       ],
       "luckyHit": "45%",
       "name": "Ravens",
+      "orden": 112,
       "runes": {
         "Active Damage Bonus": "<b>Active:</b> Raven's active damage is increased by x300%.",
         "Additional Raven": "<b>Passive:</b> Gain 2 additional Ravens.",
@@ -5385,6 +5762,7 @@
       ],
       "luckyHit": "22%",
       "name": "Razor Wings",
+      "orden": 241,
       "runes": {
         "Brutal Blast": "Razor Wings becomes a Gorilla Skill that deals Physical damage. Razor Wings generates 2 Resolve and fires a slow moving burst of energy that continually pulses, dealing 100 damage every 0.5 seconds.",
         "Charge Cooldown": "Razor Wings' Cooldown is 40% longer but it now regains all Charges at once.",
@@ -5407,6 +5785,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Ready At Hand",
+      "orden": 315,
       "runes": {},
       "tags": []
     },
@@ -5420,6 +5799,7 @@
       ],
       "luckyHit": "30%",
       "name": "Reap",
+      "orden": 126,
       "runes": {
         "Chilled to the Bone": "Reap deals 50 Cold damage and Chills for value1 . Reap gains an additional +30% Cast Speed.",
         "Corpse Generation": "Reap forms a Corpse under the first enemy hit.",
@@ -5442,6 +5822,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Recklessness",
+      "orden": 278,
       "runes": {},
       "tags": []
     },
@@ -5453,6 +5834,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Recurring Nightmare",
+      "orden": 407,
       "runes": {},
       "tags": []
     },
@@ -5464,6 +5846,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Reign in Hell",
+      "orden": 350,
       "runes": {},
       "tags": []
     },
@@ -5478,6 +5861,7 @@
       ],
       "luckyHit": "33%",
       "name": "Rend",
+      "orden": 79,
       "runes": {
         "Blood Sworn": "Enemies that die while Bleeding from Rend spread 50% their remaining Bleed onto a random Close enemy.",
         "Cast Speed": "Rend gains +20% increased Cast Speed.",
@@ -5501,6 +5885,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Reprisal",
+      "orden": 280,
       "runes": {},
       "tags": []
     },
@@ -5512,6 +5897,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Resplendent Favor",
+      "orden": 424,
       "runes": {},
       "tags": []
     },
@@ -5523,6 +5909,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Rewarded Faith",
+      "orden": 404,
       "runes": {},
       "tags": []
     },
@@ -5534,6 +5921,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Ritualist Shard",
+      "orden": 41,
       "runes": {},
       "tags": []
     },
@@ -5547,6 +5935,7 @@
       ],
       "luckyHit": "28%",
       "name": "Rock Splitter",
+      "orden": 227,
       "runes": {
         "Block and Vigor": "Rock Splitter increases your Block Chance by +15% for 5 seconds and when you Block you gain 15 Vigor.",
         "Crowd Control Damage": "Rock Splitter deals x20% increased damage when hitting a Slowed or Knocked Down enemy.",
@@ -5570,6 +5959,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Roots of Power",
+      "orden": 415,
       "runes": {},
       "tags": []
     },
@@ -5584,6 +5974,7 @@
       ],
       "luckyHit": "50%",
       "name": "Rupture",
+      "orden": 91,
       "runes": {
         "All For One": "Casting Rupture Summons 2 Ancients that skewer your target for 20 damage and then performing a rip attack that deals 140 as direct damage instead of Bleeding.",
         "Blood Pool": "Rupture now creates a blood pool when you rip your weapon out, inflicting 50 Bleeding damage over 5 seconds. You and your Allies gain 15% increased Attack Speed while standing in the blood pool.",
@@ -5609,6 +6000,7 @@
       ],
       "luckyHit": "25%",
       "name": "Rushing Claw",
+      "orden": 242,
       "runes": {
         "Charge Increase": "Rushing Claw gains 1 Charge.",
         "Colossal Claw": "Rushing Claw now has 12 Maximum Charges. Casting it consumes all Charges to increase its damage by x50% per Charge and it hits a larger area. Rushing Claw's Cooldown refreshes 10% faster for each Ferocity you have.",
@@ -5632,6 +6024,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Sacrificial Fragment",
+      "orden": 31,
       "runes": {},
       "tags": []
     },
@@ -5643,6 +6036,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Scale of Tathamet",
+      "orden": 429,
       "runes": {},
       "tags": []
     },
@@ -5654,6 +6048,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Scorched Earth",
+      "orden": 316,
       "runes": {},
       "tags": []
     },
@@ -5665,6 +6060,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Scorching Fragment",
+      "orden": 43,
       "runes": {},
       "tags": []
     },
@@ -5678,6 +6074,7 @@
       ],
       "luckyHit": "10%",
       "name": "Scourge",
+      "orden": 239,
       "runes": {
         "Healing": "Lucky Hit: Hitting an enemy affected by Scourge has up to a 30% chance to Heal you for 5% of your Maximum Life.",
         "Hive Mind": "Scourge grants you 15% Damage Reduction and continuously affects enemies around you for 4.5 seconds.",
@@ -5700,6 +6097,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Scythe Talons",
+      "orden": 212,
       "runes": {},
       "tags": []
     },
@@ -5713,6 +6111,7 @@
       ],
       "luckyHit": null,
       "name": "Seeker",
+      "orden": 330,
       "runes": {},
       "tags": [
         "Mercenary Perk"
@@ -5728,6 +6127,7 @@
       ],
       "luckyHit": "40%",
       "name": "Sever",
+      "orden": 132,
       "runes": {
         "Cold Pursuit": "Sever deals Cold damage, Chills for 15%, and seeks another enemy to attack again.",
         "Cost Reduction": "Sever's Essence cost is reduced by 4.",
@@ -5752,6 +6152,7 @@
       ],
       "luckyHit": null,
       "name": "Shadow Clone",
+      "orden": 169,
       "runes": {
         "Awakening": "<b>Passive:</b> After spending 100 Energy, your next Core Skill Cast becomes a Shade Skill and spawns a Shade that deals value2 of its damage. Shadow Clone is now also a Shade Skill and its duration is reduced by x50%.",
         "Cooldown": "Shadow Clone's Cooldown is reduced by 10 seconds.",
@@ -5777,6 +6178,7 @@
       ],
       "luckyHit": "33%",
       "name": "Shadow Imbuement",
+      "orden": 166,
       "runes": {
         "Dark Dance": "Evading through an enemy infected by Shadow Imbuement grants Stealth for 4 seconds and explodes the infection for x value1 increased damage.",
         "Duration": "When Shadow Imbuement's infection expires, Shadow Imbuement's duration is increased by 0.5 seconds, up to 5 seconds.",
@@ -5801,6 +6203,7 @@
       ],
       "luckyHit": "100%",
       "name": "Shadow Step",
+      "orden": 163,
       "runes": {
         "Artifice": "Shadow Step no longer requires a target, and it leaves a decoy at your starting location that Taunts Nearby enemies and explodes after 2 seconds, dealing 72 Shadow damage.\n\nShadow Step's Cooldown is increased to 12 seconds.",
         "Cleave": "Shadow Step's stab now cleaves, dealing 10% of the original damage to the cleaved targets.",
@@ -5825,6 +6228,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Share a Drink",
+      "orden": 317,
       "runes": {},
       "tags": []
     },
@@ -5836,6 +6240,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Shared Pain",
+      "orden": 307,
       "runes": {},
       "tags": []
     },
@@ -5849,6 +6254,7 @@
       ],
       "luckyHit": "16%",
       "name": "Shield Bash",
+      "orden": 53,
       "runes": {
         "Breach": "Hits with Shield Bash grant you +10% Retribution Chance for 5 seconds, stacking up to 5 times.",
         "Damage Bonus": "Shield Bash deals x100% more damage to its primary target.",
@@ -5874,6 +6280,7 @@
       ],
       "luckyHit": null,
       "name": "Shield Charge",
+      "orden": 256,
       "runes": {},
       "tags": [
         "Mercenary Core"
@@ -5889,6 +6296,7 @@
       ],
       "luckyHit": "35%",
       "name": "Shield Charge-v2",
+      "orden": 57,
       "runes": {
         "Damage Bonus": "Shield Charge's damage increases by x10% when it hits an enemy for 6 seconds, up to x30% .",
         "Hit Count As Blocking": "Shield Charge's hits count as Blocks.",
@@ -5915,6 +6323,7 @@
       ],
       "luckyHit": null,
       "name": "Shield Throw",
+      "orden": 265,
       "runes": {},
       "tags": [
         "Mercenary Iconic"
@@ -5930,6 +6339,7 @@
       ],
       "luckyHit": null,
       "name": "Shockwave",
+      "orden": 276,
       "runes": {},
       "tags": [
         "Mercenary Core"
@@ -5945,6 +6355,7 @@
       ],
       "luckyHit": "20%",
       "name": "Shred",
+      "orden": 105,
       "runes": {
         "Berserking": "Shred grants Berserking for 1 seconds. Subsequent casts extend this duration up to a maximum of 4 seconds.",
         "Cast Speed": "Shred's Cast Speed is increased by 20%.",
@@ -5971,6 +6382,7 @@
       ],
       "luckyHit": "35%",
       "name": "Sigil of Chaos",
+      "orden": 20,
       "runes": {
         "Blood Ritual": "Sacrifice 4% of your Maximum Life to instantly trigger each of Sigil of Chaos' kill costs, up to 48% total.",
         "Chain Reaction": "Hitting an enemy with Sigil of Chaos has a 20% chance to trigger the effect on them again.",
@@ -5994,6 +6406,7 @@
       "extra": [],
       "luckyHit": "20%",
       "name": "Sigil of Subversion",
+      "orden": 18,
       "runes": {
         "Blood Ritual": "Sacrifice 2% of your Maximum Life to instantly trigger each of Sigil of Subversion's kill costs, up to 48% total.",
         "Cast Range": "Sigil of Subversion can now be placed at long range.",
@@ -6019,6 +6432,7 @@
       ],
       "luckyHit": "35%",
       "name": "Sigil of Summons",
+      "orden": 19,
       "runes": {
         "Blood Ritual": "Sacrifice 2% of your Maximum Life to instantly pay each of Sigil of Summons' kill costs, up to 48% total.",
         "Cooldown": "Sigil of Summons' active Cooldown is reduced by 3 seconds when your Greater Demons die.",
@@ -6043,6 +6457,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Simple Gifts",
+      "orden": 418,
       "runes": {},
       "tags": []
     },
@@ -6054,6 +6469,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Skeletal Mages",
+      "orden": 196,
       "runes": {},
       "tags": []
     },
@@ -6065,6 +6481,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Skeletal Warriors",
+      "orden": 195,
       "runes": {},
       "tags": []
     },
@@ -6078,6 +6495,7 @@
       ],
       "luckyHit": "20%",
       "name": "Skeleton Mage",
+      "orden": 128,
       "runes": {
         "Coven": "Skeleton Mage's maximum number of mages is increased by 2.",
         "Critical Strike Chance": "You gain an additional +5% Critical Strike Chance against enemies damaged by Skeleton Mages.",
@@ -6103,6 +6521,7 @@
       ],
       "luckyHit": "20%",
       "name": "Skeleton Warrior",
+      "orden": 139,
       "runes": {
         "Damage Bonus": "Commanding your Skeleton Warriors causes them to deal x25% increased damage for 10 seconds.",
         "Healing": "Skeletal Warriors heal you for 2% of your Maximum Life whenever they attack.",
@@ -6126,6 +6545,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Skill Cast",
+      "orden": 252,
       "runes": {},
       "tags": [
         "Reinforcement"
@@ -6139,6 +6559,7 @@
       "extra": [],
       "luckyHit": "25%",
       "name": "Smoke Grenade",
+      "orden": 159,
       "runes": {
         "Charge or Energy Cost Reduction": "Smoke Grenade gains 1 Charge or costs 10 less Energy.",
         "Increased Duration and Damage": "Smoke Grenade gains +30% increased Duration and deals x25% increased damage.",
@@ -6163,6 +6584,7 @@
       ],
       "luckyHit": null,
       "name": "Snipe",
+      "orden": 320,
       "runes": {},
       "tags": [
         "Mercenary Iconic"
@@ -6178,6 +6600,7 @@
       ],
       "luckyHit": "25%",
       "name": "Soar",
+      "orden": 233,
       "runes": {
         "Cooldown Reduction": "Soar's Cooldown is reduced by 3 seconds.",
         "Damage Increase": "Soar deals x75% increased damage.",
@@ -6203,6 +6626,7 @@
       ],
       "luckyHit": "20%",
       "name": "Soulrift",
+      "orden": 145,
       "runes": {
         "Barrier": "Every soul absorbed by Soulrift grants a Barrier for 0.5% of your Maximum Life. This Barrier persists for 5 seconds after Soulrift ends.",
         "Damage Bonus": "Every soul absorbed by Soulrift increases its damage by x0.3%, up to x45%.",
@@ -6227,6 +6651,7 @@
       ],
       "luckyHit": "9%",
       "name": "Spark",
+      "orden": 173,
       "runes": {
         "Additional Hits": "Spark shocks 1 additional time.",
         "Crackling Energy": "Spark forms a Crackling Energy each time it damages a new target.",
@@ -6248,6 +6673,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Spawn Fragment",
+      "orden": 30,
       "runes": {},
       "tags": []
     },
@@ -6259,6 +6685,7 @@
       "extra": [],
       "luckyHit": "33%",
       "name": "Spear of the Heavens",
+      "orden": 64,
       "runes": {
         "Cooldown Reduction": "Consuming Judgement reduces Spear of the Heavens active cooldown by 0.5 seconds.",
         "Fist of the Heavens": "Spear of the Heavens becomes a Core Skill and is now pure Holy energy that crashes down from the sky. On impact it deals 386 damage and breaks into 5 projectiles, dealing 386 additional damage to enemies in their path.",
@@ -6283,6 +6710,7 @@
       ],
       "luckyHit": "25%",
       "name": "Steel Grasp",
+      "orden": 92,
       "runes": {
         "Berserking": "Steel Grasp grants Berserking for 2 seconds on Hit.",
         "Chain Whip": "Steel Grasp is also a Brawling Skill that launches 2 additional chains for 65 damage.",
@@ -6307,6 +6735,7 @@
       ],
       "luckyHit": "20%",
       "name": "Stinger",
+      "orden": 231,
       "runes": {
         "Damage Bonus": "Stinger's initial impact deals 30% increased damage.",
         "Healing and Vulnerable": "If Stinger strikes a Vulnerable enemy it Heals you for 10% of your Maximum Life. If you are Healthy it makes enemies Vulnerable for 3 seconds.",
@@ -6331,6 +6760,7 @@
       ],
       "luckyHit": "25%",
       "name": "Stone Burst",
+      "orden": 106,
       "runes": {
         "Armor": "Gain 30% Armor while Stone Burst is channeling.",
         "Epicenter": "Stone Burst Slows enemies within the area by 80%. Additionally, each time Stone Burst grows larger, it marks the enemies in the area for 40% bonus damage from Stone Burst's final explosion, this bonus can stack on enemies and all stacks are consumed at final explosion.",
@@ -6358,6 +6788,7 @@
       ],
       "luckyHit": null,
       "name": "Storm of Fire",
+      "orden": 302,
       "runes": {},
       "tags": [
         "Mercenary Iconic"
@@ -6373,6 +6804,7 @@
       ],
       "luckyHit": "25%",
       "name": "Storm Strike",
+      "orden": 100,
       "runes": {
         "Additional Chain": "Storm Strike may chain 1 additional time.",
         "Armor": "You gain 15% Armor for 4 seconds when dealing damage.",
@@ -6398,6 +6830,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Subjugation Fragment",
+      "orden": 40,
       "runes": {},
       "tags": []
     },
@@ -6411,6 +6844,7 @@
       ],
       "luckyHit": "15%",
       "name": "Summon Abodian",
+      "orden": 27,
       "runes": {},
       "tags": [
         "Soul Shard",
@@ -6430,6 +6864,7 @@
       ],
       "luckyHit": "15%",
       "name": "Summon Ae'grom",
+      "orden": 28,
       "runes": {},
       "tags": [
         "Soul Shard",
@@ -6448,6 +6883,7 @@
       ],
       "luckyHit": "15%",
       "name": "Summon Laalish",
+      "orden": 26,
       "runes": {},
       "tags": [
         "Soul Shard",
@@ -6467,6 +6903,7 @@
       ],
       "luckyHit": null,
       "name": "Summon Vollach",
+      "orden": 25,
       "runes": {},
       "tags": [
         "Soul Shard",
@@ -6483,6 +6920,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Sundering Shield",
+      "orden": 269,
       "runes": {},
       "tags": []
     },
@@ -6494,6 +6932,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Swooping Attacks",
+      "orden": 214,
       "runes": {},
       "tags": []
     },
@@ -6505,6 +6944,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Tainted Shrines",
+      "orden": 384,
       "runes": {},
       "tags": []
     },
@@ -6516,6 +6956,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Taste of Flesh",
+      "orden": 288,
       "runes": {},
       "tags": []
     },
@@ -6529,6 +6970,7 @@
       ],
       "luckyHit": "65%",
       "name": "Teleport",
+      "orden": 183,
       "runes": {
         "Blaze": "Teleport becomes a Pyromancy Skill that deals 60 Fire damage. Teleport now only dashes you forward a short distance and will consume 1 stack of Overpower to refund its Cooldown.",
         "Crackling Energy": "Teleport forms 2 Crackling Energy at the ending location.",
@@ -6552,6 +6994,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Terrify",
+      "orden": 296,
       "runes": {},
       "tags": []
     },
@@ -6565,6 +7008,7 @@
       ],
       "luckyHit": "1%",
       "name": "Terror Swarm",
+      "orden": 24,
       "runes": {
         "Devouring Swarm": "Terror Swarm starts smaller and weaker but grows up to 3 times as it feeds on enemies. Upon reaching maximum size, swarms split off another smaller swarm. Can have up to 3 active swarms.",
         "Extra Bites": "Terror Swarm now bites up to 2 additional times per second.",
@@ -6589,6 +7033,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "The Black Pact",
+      "orden": 355,
       "runes": {},
       "tags": []
     },
@@ -6602,6 +7047,7 @@
       ],
       "luckyHit": "10%",
       "name": "The Devourer",
+      "orden": 247,
       "runes": {
         "Blast of Bile": "The Devourer now only blasts enemies in a line once, dealing 800 damage, before leaving. The Devourer is now also a Potency Skill and has a 18 second cooldown.",
         "Healing": "The Devourer Heals you for 5% of your Maximum Life per second.",
@@ -6626,6 +7072,7 @@
       ],
       "luckyHit": "15%",
       "name": "The Hunter",
+      "orden": 246,
       "runes": {
         "Execute": "The Hunter's landing damage will Execute enemies.",
         "Healing": "The Hunter restores 3% of your Maximum Health per strike.",
@@ -6650,6 +7097,7 @@
       ],
       "luckyHit": "15%",
       "name": "The Protector",
+      "orden": 244,
       "runes": {
         "Barrier": "The Protector grants an additional 10% of your Maximum Life in Barrier.",
         "Brutal Barrage": "The Protector also deals 175 damage to enemies around you with each smash. Spend up to 3 stacks of Resolve to increase The Protector's damage by 100% for each stack spent.",
@@ -6674,6 +7122,7 @@
       ],
       "luckyHit": "35%",
       "name": "The Seeker",
+      "orden": 245,
       "runes": {
         "Charge Refund": "Elites hit twice by The Seeker have a 25% chance to refund a Charge, doubled against Bosses.",
         "Lone Seeker": "The Seeker now only has 1 Charge, its area is increased by 50%, and it deals 250% increased damage.",
@@ -6698,6 +7147,7 @@
       ],
       "luckyHit": "20%",
       "name": "Thrash",
+      "orden": 225,
       "runes": {
         "Cooldown Reduction": "Each hit of Thrash has a 10% chance to reduce an active Cooldown by 1.5 seconds.",
         "Crashing and Thrashing": "Thrash's 3rd attack deals x50% increased damage. Thrash continues to unleash its 3rd attack if Cast again within 2.5 seconds.",
@@ -6721,6 +7171,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Thrillseeker",
+      "orden": 328,
       "runes": {},
       "tags": []
     },
@@ -6734,6 +7185,7 @@
       ],
       "luckyHit": "22%",
       "name": "Thunderspike",
+      "orden": 226,
       "runes": {
         "Critical Strike Chance": "After you Critically Strike 15 times, Thunderspike's next use will be its 3rd attack and always Critically Strike.",
         "Damage to Sparking": "Thunderspike deals 50% increased damage to Sparking enemies.",
@@ -6758,6 +7210,7 @@
       ],
       "luckyHit": "8%",
       "name": "Tornado",
+      "orden": 107,
       "runes": {
         "Additional Tornado": "Each time you cast Tornado, there is a 20% chance to spawn an additional Tornado.",
         "Cast Speed": "Tornado's Cast Speed is increased by x20%.",
@@ -6784,6 +7237,7 @@
       ],
       "luckyHit": "20%",
       "name": "Tortured Wretch",
+      "orden": 11,
       "runes": {
         "Cost Reduction": "Tortured Wretch cost is reduced by 30%.",
         "Death Saws": "Saws grind up enemies around the Tortured Wretch, periodically dealing 20 damage with a 5% chance to Eviscerate enemies for 600 damage.",
@@ -6808,6 +7262,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Total Chaos",
+      "orden": 351,
       "runes": {},
       "tags": []
     },
@@ -6821,6 +7276,7 @@
       ],
       "luckyHit": "20%",
       "name": "Touch of Death",
+      "orden": 243,
       "runes": {
         "Additional Charge": "Touch of Death gains an additional charge.",
         "Erupting Swarm": "Touch of Death's swarm bursts every second, applying 90 Poisoning damage over 6 seconds to surrounding enemies.",
@@ -6845,6 +7301,7 @@
       ],
       "luckyHit": "20%",
       "name": "Toxic Skin",
+      "orden": 235,
       "runes": {
         "Duration Increase": "Toxic Skin's duration is increased by 2 seconds",
         "Erupting Skin": "While Toxic Skin is active, you launch toxic globs that apply 250 Poisoning damage over 6 seconds",
@@ -6870,6 +7327,7 @@
       ],
       "luckyHit": "20%",
       "name": "Trample",
+      "orden": 118,
       "runes": {
         "Brunt Force": "Trample deals 500% bonus damage to the first target. Each subsequent target hit reduces this bonus by 50%.",
         "Cooldown Reduction": "Reduce Trample's cooldown by 6 seconds.",
@@ -6894,6 +7352,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Tree of Plenty",
+      "orden": 417,
       "runes": {},
       "tags": []
     },
@@ -6905,6 +7364,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Trials and Tributes",
+      "orden": 376,
       "runes": {},
       "tags": []
     },
@@ -6918,6 +7378,7 @@
       ],
       "luckyHit": null,
       "name": "Trip Mines",
+      "orden": 319,
       "runes": {},
       "tags": [
         "Mercenary Iconic"
@@ -6931,6 +7392,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Twisted Fragment",
+      "orden": 44,
       "runes": {},
       "tags": []
     },
@@ -6945,6 +7407,7 @@
       ],
       "luckyHit": "33%",
       "name": "Twisting Blades",
+      "orden": 155,
       "runes": {
         "Bladedancer": "Twisting Blades now cleaves and spirals outward around you for a short time after they return, dealing 39 damage per hit.",
         "Crowd Controlled or Weakened": "Twisting Blades deals x20% increased damage to Crowd Controlled or Weakened enemies.",
@@ -6968,6 +7431,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Two by Two",
+      "orden": 363,
       "runes": {},
       "tags": []
     },
@@ -6981,6 +7445,7 @@
       ],
       "luckyHit": "15%",
       "name": "Tyrant's Grasp",
+      "orden": 16,
       "runes": {
         "Abyssal Pit": "Tyrant's Grasp becomes an Abyss Recast Summon Skill and summons an Abyssal Pit for 10 seconds that consumes Non-Elite enemies, dealing 350 damage, Knocking them down, and hiding them in Stealth. Recast to Pull additional targets into the Pit. Tyrant's Grasp now costs 20 dominance.",
         "Demonic Grasp": "Tyrant's Grasp is now a direct grasp attack that transforms you into Demonform and Pulls enemies inward.",
@@ -7005,6 +7470,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Ultimate Nemesis",
+      "orden": 365,
       "runes": {},
       "tags": []
     },
@@ -7018,6 +7484,7 @@
       ],
       "luckyHit": "6%",
       "name": "Umbral Chains",
+      "orden": 9,
       "runes": {
         "Capture Damage": "Umbral Chains deals x20% increased damage when an unchained enemy is first caught by the chain. Hexed enemies always take increased damage.",
         "Chain Burst": "Umbral Chains explodes for 94 damage when stretched to its maximum or when it expires. If this happens early then any damage the chain would have done is added.",
@@ -7041,6 +7508,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Undying Embers",
+      "orden": 398,
       "runes": {},
       "tags": []
     },
@@ -7052,6 +7520,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Unfathomable Fragment",
+      "orden": 38,
       "runes": {},
       "tags": []
     },
@@ -7063,6 +7532,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Unfortunate Souls",
+      "orden": 374,
       "runes": {},
       "tags": []
     },
@@ -7076,6 +7546,7 @@
       ],
       "luckyHit": null,
       "name": "Unstable Currents",
+      "orden": 194,
       "runes": {
         "Boundless": "While Unstable Currents is active, gain the following bonuses:\n- Lucky Hit: Up to a value4 chance to form a Crackling Energy\n- Increases Crackling Energy damage by x value5 and reduces Unstable Currents' Cooldown by value6 seconds when absorbing Crackling Energy when you are not at Maximum stacks.\n- Automatically absorb Nearby Crackling Energy.",
         "Cooldown Reduction": "Unstable Currents' Cooldown is reduced to 100 seconds.",
@@ -7101,6 +7572,7 @@
       ],
       "luckyHit": "30%",
       "name": "Upheaval",
+      "orden": 80,
       "runes": {
         "Damage Increase": "Upheaval deals x30% increased damage to the first 5 enemies hit.",
         "Free Cast": "Every 100 Fury spent makes your next Upheaval free to cast. This stacks up to 300 total Fury.",
@@ -7125,6 +7597,7 @@
       ],
       "luckyHit": null,
       "name": "Valiance",
+      "orden": 255,
       "runes": {},
       "tags": [
         "Mercenary Perk"
@@ -7138,6 +7611,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Vanguard",
+      "orden": 259,
       "runes": {},
       "tags": []
     },
@@ -7149,6 +7623,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Vanguard Shard",
+      "orden": 33,
       "runes": {},
       "tags": []
     },
@@ -7160,6 +7635,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Varshan's Vengeance",
+      "orden": 370,
       "runes": {},
       "tags": []
     },
@@ -7173,6 +7649,7 @@
       ],
       "luckyHit": "20%",
       "name": "Vortex",
+      "orden": 232,
       "runes": {
         "1000 Year Storm": "Vortex deals x200% increased damage, affects a 50% larger area, and grants 20% Damage Reduction for 5 seconds, but its Cooldown is increased by 5 seconds.",
         "Cooldown Reduction": "Critical Strikes with Vortex reduce its Cooldown by 0.5 seconds.",
@@ -7195,6 +7672,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Waking Spoils",
+      "orden": 401,
       "runes": {},
       "tags": []
     },
@@ -7208,6 +7686,7 @@
       ],
       "luckyHit": "6%",
       "name": "Wall of Agony",
+      "orden": 10,
       "runes": {
         "Cost Reduction": "Wall of Agony's cost is reduced by 50% but increased by 10% for every Demon you have active.",
         "Damage": "Wall of Agony deals x2% increased damage for every point of Max Dominance you have.",
@@ -7232,6 +7711,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "War Cry",
+      "orden": 89,
       "runes": {
         "Duration Increase": "War Cry's duration is increased to 6 seconds.",
         "Ferocity": "War Cry grants 2 stacks of Ferocity.",
@@ -7255,6 +7735,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Warden Fragment",
+      "orden": 35,
       "runes": {},
       "tags": []
     },
@@ -7266,6 +7747,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Wariness",
+      "orden": 210,
       "runes": {},
       "tags": []
     },
@@ -7279,6 +7761,7 @@
       ],
       "luckyHit": null,
       "name": "Wave of Flame",
+      "orden": 303,
       "runes": {},
       "tags": [
         "Mercenary Iconic"
@@ -7295,6 +7778,7 @@
       ],
       "luckyHit": "20%",
       "name": "Whirlwind",
+      "orden": 81,
       "runes": {
         "Bursting": "Whirlwind also explodes, dealing 18 Fire damage and inflicting 50 Burning damage over 5 seconds. Whirlwind now deals Fire damage.",
         "Channel Damage Bonus": "Channeling Whirlwind causes it to deal x1% increased damage each time it hits an enemy, stacking up to 25 times.",
@@ -7320,6 +7804,7 @@
       ],
       "luckyHit": null,
       "name": "Whirlwind-v2",
+      "orden": 282,
       "runes": {},
       "tags": [
         "Mercenary Iconic"
@@ -7335,6 +7820,7 @@
       ],
       "luckyHit": "20%",
       "name": "Wind Shear",
+      "orden": 101,
       "runes": {
         "Barrier": "Wind Shear grants a Barrier for 2% of your Maximum Life for each enemy hit up to a maximum of 60%.",
         "Boomerang": "Wind Shear returns to you and deals 150% bonus damage to enemies already hit by this Wind Shear.",
@@ -7361,6 +7847,7 @@
       ],
       "luckyHit": null,
       "name": "Wire Trap",
+      "orden": 312,
       "runes": {},
       "tags": [
         "Mercenary Core"
@@ -7374,6 +7861,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Wisdom of Whispers",
+      "orden": 420,
       "runes": {},
       "tags": []
     },
@@ -7387,6 +7875,7 @@
       ],
       "luckyHit": "25%",
       "name": "Withering Fist",
+      "orden": 224,
       "runes": {
         "Fist of the Forest": "Withering Fist becomes a Gorilla Skill that deals Physical damage. Withering Fist's 3rd attack releases a shockwave that deals 50 damage. It grants Barrier equal to 5% of your Maximum Health for 6 seconds per enemy hit, up to 60%.",
         "Healing": "Withering Fist Heals you for 10% of your Maximum Life.",
@@ -7412,6 +7901,7 @@
       ],
       "luckyHit": "50%",
       "name": "Wolves",
+      "orden": 114,
       "runes": {
         "Additional Wolf": "Gain 1 additional Wolf Companion",
         "Attack Speed": "When your Wolves Critically Strike, you gain 20% Attack Speed for 5 seconds.",
@@ -7434,6 +7924,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Wrath of the Berserker",
+      "orden": 96,
       "runes": {
         "Berserking": "While Wrath of the Berserker is active, your Berserking damage bonus is increased by x100%.",
         "Deep Impact": "While Wrath of the Berserker is active, all attacks causes a fiery explosion for 75 damage.",
@@ -7456,6 +7947,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Wretched Vermin",
+      "orden": 396,
       "runes": {},
       "tags": []
     },
@@ -7467,6 +7959,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Writhe and Rot",
+      "orden": 391,
       "runes": {},
       "tags": []
     },
@@ -7480,6 +7973,7 @@
       ],
       "luckyHit": "3%",
       "name": "Zeal",
+      "orden": 49,
       "runes": {
         "Additional Strikes": "Zeal gains 2 additional strikes.",
         "Critical Strike Chance": "Zeal has an additional +6% Critical Strike Chance. Double this bonus against Weakened enemies.",
@@ -7502,6 +7996,7 @@
       "extra": [],
       "luckyHit": null,
       "name": "Zealot",
+      "orden": 69,
       "runes": {},
       "tags": []
     },
@@ -7513,6 +8008,7 @@
       "extra": [],
       "luckyHit": "28%",
       "name": "Zenith",
+      "orden": 67,
       "runes": {
         "Critical Strike Chance": "Casting Zenith increases your +5% Critical Strike Chance for 8 seconds.",
         "Empyrean Edge": "Zenith is now also a Mobility Skill that:\n- Dashes to enemies\n- Gains x25% Critical Strike Damage",
