@@ -1,0 +1,636 @@
+{
+  "buildId": "d1969fb4-7bd4-49f8-ad2d-48752d3e0a93",
+  "capturadoEn": "2026-08-09T07:35:22.283Z",
+  "pestanas": [
+    "Gear & Skills",
+    "Skill Tree",
+    "Paragon",
+    "Mercenaries",
+    "War Plans",
+    "Notes"
+  ],
+  "porVariante": [
+    {
+      "arbol": [],
+      "arbolEsCanvas": true,
+      "debug": {
+        "warplans": {
+          "clases": {
+            "active": 1,
+            "alt": 1,
+            "filters__btn": 1,
+            "game__filters__btn": 1,
+            "game__filters__btn__icon": 1,
+            "game__filters__list": 1,
+            "searchbar": 1,
+            "searchbar-close": 1,
+            "searchbar-close-img": 1,
+            "searchbar-icon": 1,
+            "searchbar-input": 1,
+            "skill-line-active-base": 6,
+            "skill-line-active-inner": 5,
+            "skill-line-base": 12,
+            "skill-line-inner": 12,
+            "skill-tree-viewer": 1,
+            "skill-tree-viewer__content": 1,
+            "skill__tree__header": 1,
+            "skill__tree__header__wrapper": 1,
+            "skill__tree__remaining": 1,
+            "skill__tree__remaining__total": 1,
+            "skill__tree__total": 1,
+            "viewer-canvas": 1,
+            "viewer-lines": 1,
+            "viewer-main": 1,
+            "warplan-tab": 7,
+            "warplan-tab__icon": 7,
+            "warplan-tabs": 1
+          },
+          "muestra": "<div class=\"general__wrapper\"><div class=\"skill-tree-viewer\"><div class=\"skill__tree__header alt\"><div class=\"skill__tree__header__wrapper\"><div class=\"skill__tree__remaining\"><div class=\"skill__tree__total\">Remaining:<div class=\"skill__tree__remaining__total\">0</div></div></div><div class=\"searchbar\"><img class=\"searchbar-icon\" src=\"https://sunderarmor.com/search-icon.svg\" alt=\"search icon\"><input id=\"skill-tree-viewer-search\" class=\"searchbar-input\" type=\"text\" placeholder=\"Search skills...\" autocomplete=\"off\" value=\"\"><button class=\"searchbar-close\" tabindex=\"-1\"><img class=\"searchbar-close-img\" src=\"https://sunderarmor.com/close-icon.svg\" alt=\"close icon\"></button></div><button class=\"game__filters__btn filters__btn\"><img src=\"https://sunderarmor.com/DIABLO4/UI/fullscreen_icon.svg\" class=\"game__filters__btn__icon\" alt=\"fullscreen\" style=\"width: 18px; height: 18px;\"></button><div class=\"game__filters__list\"></div><div class=\"warplan-tabs\"><button class=\"warplan-tab active\"><img src=\"https://sunderarmor.com/DIABLO4/WarPlans/whispers.png\" alt=\"Whispers\" class=\"warplan-tab__icon\"></button><button class=\"warplan-tab\"><img src=\"https://sunderarmor.com/DIABLO4/WarPlans/nightmare_dungeons.png\" alt=\"Nightmare Dungeons\" class=\"warplan-tab__icon\"></button><button class=\"warplan-tab\"><img src=\"https://sunderarmor.com/DIABLO4/WarPlans/helltides.png\" alt=\"Helltides\" class=\"warplan-tab__icon\"></button><button class=\"warplan-tab\"><img src=\"https://sunderarmor.com/DIABLO4/WarPlans/undercity.png\" alt=\"Undercity\" class=\"warplan-tab__icon\"></button><button class=\"warplan-tab\"><img src=\"https://sunderarmor.com/DIABLO4/WarPlans/boss_lairs.png\" alt=\"Boss Lairs\" class=\"warplan-tab__icon\"></button><button class=\"warplan-tab\"><img src=\"https://sunderarmor.com/DIABLO4/WarPlans/infernal_hordes.png\" alt=\"Infernal Hordes\" class=\"warplan-tab__icon\"></button><button class=\"warplan-tab\"><img src=\"https://sunderarmor.com/DIABLO4/WarPlans/pits.png\" alt=\"Pits\" class=\"warplan-tab__icon\"></button></div></div></div><div class=\"skill-tree-viewer__content\"><div class=\"viewer-main\"><div class=\"viewer-canvas \" style=\"transform: translate(150px, -60px) scale(0.7); transform-origin: left top; cursor: grab;\"><svg class=\"viewer-lines\"><g><path d=\"M 380 213 L 580 154\" fill=\"none\" stroke=\"#2d2d2d\" stroke-width=\"5\" stroke-linecap=\"round\" class=\"skill-line-base\"></path><path d=\"M 380 213 L 580 154\" fill=\"none\" stroke=\"#191b1f\" stroke-width=\"3\" stroke-linecap=\"round\" class=\"skill-line-inner\"></path><pat",
+          "textos": [
+            "Remaining:01/11/11/11/11/10/11/11/10/10/10/1"
+          ]
+        }
+      },
+      "etiqueta": "Standard Build",
+      "gear": [
+        {
+          "calidad": "mythic",
+          "engarces": [
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Runes/ritual.png",
+              "nombre": "Cem",
+              "tipo": "ritual"
+            },
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Runes/invocation.png",
+              "nombre": "Que",
+              "tipo": "invocation"
+            }
+          ],
+          "icono": "https://sunderarmor.com/DIABLO4/Uniques/2/harlequin_crest.png",
+          "nombre": "Harlequin Crest",
+          "slot": "Helm"
+        },
+        {
+          "calidad": null,
+          "engarces": [
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Runes/ritual.png",
+              "nombre": "Igni",
+              "tipo": "ritual"
+            },
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Runes/invocation.png",
+              "nombre": "Mot",
+              "tipo": "invocation"
+            }
+          ],
+          "icono": "https://sunderarmor.com/DIABLO4/Codex/1/defensive.png",
+          "nombre": "Aspect of Heavenly Strength",
+          "slot": "Chest Armor"
+        },
+        {
+          "calidad": null,
+          "engarces": [],
+          "icono": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
+          "nombre": "Revelator's Aspect",
+          "slot": "Gloves"
+        },
+        {
+          "calidad": "unique",
+          "engarces": [
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Gems/grand-ruby.png",
+              "nombre": "Ruby",
+              "tipo": "grand-ruby"
+            },
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Gems/grand-ruby.png",
+              "nombre": "Ruby",
+              "tipo": "grand-ruby"
+            }
+          ],
+          "icono": "https://sunderarmor.com/DIABLO4/Uniques/2/arcadia.png",
+          "nombre": "Arcadia",
+          "slot": "Pants"
+        },
+        {
+          "calidad": null,
+          "engarces": [],
+          "icono": "https://sunderarmor.com/DIABLO4/Codex/1/mobility.png",
+          "nombre": "Aspect of the Arbiter's Zephyr",
+          "slot": "Boots"
+        },
+        {
+          "calidad": "mythic",
+          "engarces": [
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Gems/grand-skull.png",
+              "nombre": "Skull",
+              "tipo": "grand-skull"
+            },
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Gems/grand-skull.png",
+              "nombre": "Skull",
+              "tipo": "grand-skull"
+            }
+          ],
+          "icono": "https://sunderarmor.com/DIABLO4/Uniques/2/red_sermon.png",
+          "nombre": "Red Sermon",
+          "slot": "Weapon"
+        },
+        {
+          "calidad": null,
+          "engarces": [],
+          "icono": null,
+          "nombre": null,
+          "slot": ""
+        },
+        {
+          "calidad": null,
+          "engarces": [],
+          "icono": null,
+          "nombre": null,
+          "slot": ""
+        },
+        {
+          "calidad": null,
+          "engarces": [
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Gems/grand-diamond.png",
+              "nombre": "Diamond",
+              "tipo": "grand-diamond"
+            }
+          ],
+          "icono": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
+          "nombre": "Aspect of the Zealot's Covenant",
+          "slot": "Amulet"
+        },
+        {
+          "calidad": null,
+          "engarces": [
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Gems/grand-ruby.png",
+              "nombre": "Ruby",
+              "tipo": "grand-ruby"
+            }
+          ],
+          "icono": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
+          "nombre": "The Penitent's Aspect",
+          "slot": "Ring 1"
+        },
+        {
+          "calidad": "unique",
+          "engarces": [
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Gems/grand-skull.png",
+              "nombre": "Skull",
+              "tipo": "grand-skull"
+            }
+          ],
+          "icono": "https://sunderarmor.com/DIABLO4/Uniques/2/argent_veil.png",
+          "nombre": "Argent Veil",
+          "slot": "Ring 2"
+        },
+        {
+          "calidad": null,
+          "engarces": [],
+          "icono": null,
+          "nombre": null,
+          "slot": ""
+        },
+        {
+          "calidad": "unique",
+          "engarces": [],
+          "icono": "https://sunderarmor.com/DIABLO4/Uniques/offhand.png",
+          "nombre": "Offhand",
+          "slot": "Empty"
+        },
+        {
+          "calidad": null,
+          "engarces": [],
+          "icono": null,
+          "nombre": null,
+          "slot": ""
+        }
+      ],
+      "index": 0,
+      "mercenarios": [
+        {
+          "habilidades": [],
+          "icono": "https://sunderarmor.com/DIABLO4/Skills/VoH2/field_of_languish.png",
+          "nombre": "Field of Languish",
+          "rol": "Mercenary"
+        },
+        {
+          "habilidades": [],
+          "icono": "https://sunderarmor.com/DIABLO4/Skills/VoH2/zeal.png",
+          "nombre": "Zeal",
+          "rol": "Reinforcement"
+        }
+      ],
+      "paragon": [
+        {
+          "glifo": "Spirit",
+          "icono": null,
+          "nivelGlifo": null,
+          "tablero": "Starting Board"
+        },
+        {
+          "glifo": "Chip",
+          "icono": null,
+          "nivelGlifo": null,
+          "tablero": "Castle"
+        },
+        {
+          "glifo": "Arbiter",
+          "icono": null,
+          "nivelGlifo": null,
+          "tablero": "Shield Bearer"
+        },
+        {
+          "glifo": "Feverous",
+          "icono": null,
+          "nivelGlifo": null,
+          "tablero": "Relentless"
+        },
+        {
+          "glifo": "Exploit",
+          "icono": null,
+          "nivelGlifo": null,
+          "tablero": "Beacon"
+        }
+      ],
+      "stats": [
+        {
+          "afijos": [
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "182 Primary Core Stat"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "2500 Maximum Life"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Resistance to All Elements"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Cooldown Reduction"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Arbiter Duration (Aura Innovation - Utility)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Helm"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "All Skills"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Vulnerable Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Strength"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Critical Strike Damage Multiplier"
+            },
+            {
+              "ga": 1,
+              "templado": true,
+              "texto": "Maximum Life (Worldly Endurance - Defensive)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Amulet"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Strength"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Maximum Life"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Armor"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Resistance to All Elements"
+            },
+            {
+              "ga": 1,
+              "templado": true,
+              "texto": "Arbiter Duration (Aura Innovation - Utility)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Pants"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Strength"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Critical Strike Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Maximum Life"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "All Damage Multiplier"
+            },
+            {
+              "ga": 1,
+              "templado": true,
+              "texto": "Critical Strike Chance (Worldly Destruction - Weapons)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Weapon"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Critical Strike Chance"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Critical Strike Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Cooldown Reduction"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Vulnerable Damage Multiplier"
+            },
+            {
+              "ga": 1,
+              "templado": true,
+              "texto": "Cooldown Reduction (Worldly Stability - Resource)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Ring 2"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Critical Strike Chance"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Vulnerable Damage Multiplier"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Cooldown Reduction"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Critical Strike Damage Multiplier"
+            },
+            {
+              "ga": 1,
+              "templado": true,
+              "texto": "Cooldown Reduction (Worldly Stability - Resource)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Ring 1"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Strength"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Maximum Life"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Attacks Reduce Evade's Cooldown"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Armor"
+            },
+            {
+              "ga": 1,
+              "templado": true,
+              "texto": "Arbiter Duration (Disciple Innovation - Utility)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Boots"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Critical Strike Chance"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Vulnerable Damage Multiplier"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Critical Strike Damage Multiplier"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Ranks to Zeal"
+            },
+            {
+              "ga": 1,
+              "templado": true,
+              "texto": "Zealot Damage (Guardian Finesse - Offensive)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Gloves"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Strength"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Resistance to All Elements"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Armor"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Maximum Life"
+            },
+            {
+              "ga": 1,
+              "templado": true,
+              "texto": "Maximum Life (Worldly Endurance - Defensive)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Chest Armor"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Weapon Type"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Stat 1"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Stat 2"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Stat 3"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Stat 4"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Tempering Stat 1"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Offhand"
+        }
+      ],
+      "warPlans": []
+    }
+  ],
+  "url": "https://d4builds.gg/builds/d1969fb4-7bd4-49f8-ad2d-48752d3e0a93/?var=0",
+  "variantes": [
+    {
+      "etiqueta": "Standard Build",
+      "index": 0
+    }
+  ]
+}

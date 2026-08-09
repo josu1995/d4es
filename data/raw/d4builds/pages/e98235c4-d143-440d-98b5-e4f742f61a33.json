@@ -1,0 +1,625 @@
+{
+  "buildId": "e98235c4-d143-440d-98b5-e4f742f61a33",
+  "capturadoEn": "2026-08-09T07:40:40.568Z",
+  "pestanas": [
+    "Gear & Skills",
+    "Skill Tree",
+    "Paragon",
+    "Mercenaries",
+    "War Plans",
+    "Notes"
+  ],
+  "porVariante": [
+    {
+      "arbol": [],
+      "arbolEsCanvas": true,
+      "debug": {
+        "mercenarios": {
+          "clases": {
+            "active": 7,
+            "alt": 1,
+            "builder__skill": 4,
+            "builder__skill__icon": 4,
+            "disabled": 1,
+            "empty": 2,
+            "even": 3,
+            "filters__btn": 1,
+            "game__filters__btn": 1,
+            "game__filters__btn__icon": 1,
+            "game__filters__list": 1,
+            "large": 4,
+            "odd": 3,
+            "searchbar": 1,
+            "searchbar-close": 1,
+            "searchbar-close-img": 1,
+            "searchbar-icon": 1,
+            "searchbar-input": 1,
+            "skill__tree": 1,
+            "skill__tree--merc": 1,
+            "skill__tree__alternative": 1,
+            "skill__tree__categories": 1,
+            "skill__tree__category": 7,
+            "skill__tree__category__count": 6,
+            "skill__tree__category__count__icon": 6,
+            "skill__tree__category__icon": 1,
+            "skill__tree__connector": 6,
+            "skill__tree__connector__bg": 6,
+            "skill__tree__connector__fill": 6,
+            "skill__tree__header": 1,
+            "skill__tree__header__wrapper": 1,
+            "skill__tree__merc": 1,
+            "skill__tree__merc__button__wrapper": 4,
+            "skill__tree__merc__label": 4,
+            "skill__tree__sections": 1,
+            "skill__tree__wrapper": 1
+          },
+          "muestra": "<div class=\"general__wrapper\"><div class=\"skill__tree skill__tree--merc\"><div class=\"skill__tree__header alt\"><div class=\"skill__tree__header__wrapper\"><div class=\"skill__tree__merc\"><div class=\"skill__tree__merc__button__wrapper\"><div class=\"skill__tree__merc__label\">Mercenary</div><button class=\"builder__skill\" disabled=\"\"><img class=\"builder__skill__icon\" src=\"https://sunderarmor.com/DIABLO4/UI/empty_skill.png\" alt=\"empty skill\"></button></div><div class=\"skill__tree__merc__button__wrapper\"><div class=\"skill__tree__merc__label\">Reinforcement</div><button class=\"builder__skill\" disabled=\"\"><img class=\"builder__skill__icon\" src=\"https://sunderarmor.com/DIABLO4/UI/empty_skill.png\" alt=\"empty skill\"></button></div><div class=\"skill__tree__merc__button__wrapper\"><div class=\"skill__tree__merc__label\">Skill</div><button class=\"builder__skill empty disabled\" disabled=\"\"><img class=\"builder__skill__icon\" src=\"https://sunderarmor.com/DIABLO4/UI/empty_skill.png\" alt=\"empty skill\"></button></div><div class=\"skill__tree__merc__button__wrapper\"><div class=\"skill__tree__merc__label\">Opportunity</div><button class=\"builder__skill empty\" disabled=\"\"><img class=\"builder__skill__icon\" src=\"https://sunderarmor.com/DIABLO4/UI/empty_skill.png\" alt=\"empty skill\"></button></div></div><div class=\"searchbar\"><img class=\"searchbar-icon\" src=\"https://sunderarmor.com/search-icon.svg\" alt=\"search icon\"><input id=\"searchBar\" class=\"searchbar-input\" type=\"text\" placeholder=\"Search by name or keyword...\" autocomplete=\"off\" value=\"\"><button class=\"searchbar-close\" tabindex=\"-1\"><img class=\"searchbar-close-img\" src=\"https://sunderarmor.com/close-icon.svg\" alt=\"close icon\"></button></div><button class=\"game__filters__btn filters__btn\"><img src=\"https://sunderarmor.com/DIABLO4/UI/fullscreen_icon.svg\" class=\"game__filters__btn__icon\" alt=\"fullscreen\" style=\"width: 18px; height: 18px;\"></button><div class=\"game__filters__list\"></div></div></div><div class=\"skill__tree__wrapper\" style=\"overflow: hidden; user-select: none; touch-action: none; cursor: move;\"><div class=\"skill__tree__alternative\" style=\"user-select: none; touch-action: none; transform-origin: 50% 50%; transition: none; transform: scale(0.8) translate(-350px, -550px);\"><div class=\"skill__tree__sections\"><div class=\"skill__tree__categories\"><div class=\"skill__tree__category active\" style=\"left: 1048px; top: 502px;\"><img class=\"skill__tree__category__icon\" src=\"https://sunderarmor.com/DIABLO4/SkillTree/category_basic.png\" alt=\"basi",
+          "textos": [
+            "MercenaryReinforcementSkillOpportunity1211162333"
+          ]
+        },
+        "warplans": {
+          "clases": {
+            "active": 1,
+            "alt": 1,
+            "filters__btn": 1,
+            "game__filters__btn": 1,
+            "game__filters__btn__icon": 1,
+            "game__filters__list": 1,
+            "searchbar": 1,
+            "searchbar-close": 1,
+            "searchbar-close-img": 1,
+            "searchbar-icon": 1,
+            "searchbar-input": 1,
+            "skill-line-base": 16,
+            "skill-line-inner": 15,
+            "skill-tree-viewer": 1,
+            "skill-tree-viewer__content": 1,
+            "skill__tree__header": 1,
+            "skill__tree__header__wrapper": 1,
+            "skill__tree__remaining": 1,
+            "skill__tree__remaining__total": 1,
+            "skill__tree__total": 1,
+            "viewer-canvas": 1,
+            "viewer-lines": 1,
+            "viewer-main": 1,
+            "warplan-tab": 7,
+            "warplan-tab__icon": 7,
+            "warplan-tabs": 1
+          },
+          "muestra": "<div class=\"general__wrapper\"><div class=\"skill-tree-viewer\"><div class=\"skill__tree__header alt\"><div class=\"skill__tree__header__wrapper\"><div class=\"skill__tree__remaining\"><div class=\"skill__tree__total\">Remaining:<div class=\"skill__tree__remaining__total\">7</div></div></div><div class=\"searchbar\"><img class=\"searchbar-icon\" src=\"https://sunderarmor.com/search-icon.svg\" alt=\"search icon\"><input id=\"skill-tree-viewer-search\" class=\"searchbar-input\" type=\"text\" placeholder=\"Search skills...\" autocomplete=\"off\" value=\"\"><button class=\"searchbar-close\" tabindex=\"-1\"><img class=\"searchbar-close-img\" src=\"https://sunderarmor.com/close-icon.svg\" alt=\"close icon\"></button></div><button class=\"game__filters__btn filters__btn\"><img src=\"https://sunderarmor.com/DIABLO4/UI/fullscreen_icon.svg\" class=\"game__filters__btn__icon\" alt=\"fullscreen\" style=\"width: 18px; height: 18px;\"></button><div class=\"game__filters__list\"></div><div class=\"warplan-tabs\"><button class=\"warplan-tab active\"><img src=\"https://sunderarmor.com/DIABLO4/WarPlans/whispers.png\" alt=\"Whispers\" class=\"warplan-tab__icon\"></button><button class=\"warplan-tab\"><img src=\"https://sunderarmor.com/DIABLO4/WarPlans/nightmare_dungeons.png\" alt=\"Nightmare Dungeons\" class=\"warplan-tab__icon\"></button><button class=\"warplan-tab\"><img src=\"https://sunderarmor.com/DIABLO4/WarPlans/helltides.png\" alt=\"Helltides\" class=\"warplan-tab__icon\"></button><button class=\"warplan-tab\"><img src=\"https://sunderarmor.com/DIABLO4/WarPlans/undercity.png\" alt=\"Undercity\" class=\"warplan-tab__icon\"></button><button class=\"warplan-tab\"><img src=\"https://sunderarmor.com/DIABLO4/WarPlans/boss_lairs.png\" alt=\"Boss Lairs\" class=\"warplan-tab__icon\"></button><button class=\"warplan-tab\"><img src=\"https://sunderarmor.com/DIABLO4/WarPlans/infernal_hordes.png\" alt=\"Infernal Hordes\" class=\"warplan-tab__icon\"></button><button class=\"warplan-tab\"><img src=\"https://sunderarmor.com/DIABLO4/WarPlans/pits.png\" alt=\"Pits\" class=\"warplan-tab__icon\"></button></div></div></div><div class=\"skill-tree-viewer__content\"><div class=\"viewer-main\"><div class=\"viewer-canvas \" style=\"transform: translate(150px, -60px) scale(0.7); transform-origin: left top; cursor: grab;\"><svg class=\"viewer-lines\"><g><path d=\"M 380 213 L 580 154\" fill=\"none\" stroke=\"#2d2d2d\" stroke-width=\"5\" stroke-linecap=\"round\" class=\"skill-line-base\"></path><path d=\"M 380 213 L 580 154\" fill=\"none\" stroke=\"#191b1f\" stroke-width=\"3\" stroke-linecap=\"round\" class=\"skill-line-inner\"></path></g>",
+          "textos": [
+            "Remaining:70/10/10/10/10/10/10/10/10/1"
+          ]
+        }
+      },
+      "etiqueta": "Standard Build",
+      "gear": [
+        {
+          "calidad": "mythic",
+          "engarces": [
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Runes/ritual.png",
+              "nombre": "Cir",
+              "tipo": "ritual"
+            },
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Runes/invocation.png",
+              "nombre": "Thul",
+              "tipo": "invocation"
+            }
+          ],
+          "icono": "https://sunderarmor.com/DIABLO4/Uniques/2/heir_of_perdition.png",
+          "nombre": "Heir of Perdition",
+          "slot": "Helm"
+        },
+        {
+          "calidad": "unique",
+          "engarces": [
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Runes/ritual.png",
+              "nombre": "Igni",
+              "tipo": "ritual"
+            },
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Runes/invocation.png",
+              "nombre": "Que",
+              "tipo": "invocation"
+            }
+          ],
+          "icono": "https://sunderarmor.com/DIABLO4/Uniques/2/soulbrand.png",
+          "nombre": "Soulbrand",
+          "slot": "Chest Armor"
+        },
+        {
+          "calidad": null,
+          "engarces": [],
+          "icono": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
+          "nombre": "Aspect of Peril",
+          "slot": "Gloves"
+        },
+        {
+          "calidad": null,
+          "engarces": [
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Gems/grand-sapphire.png",
+              "nombre": "Sapphire",
+              "tipo": "grand-sapphire"
+            },
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Gems/grand-sapphire.png",
+              "nombre": "Sapphire",
+              "tipo": "grand-sapphire"
+            }
+          ],
+          "icono": "https://sunderarmor.com/DIABLO4/Codex/1/defensive.png",
+          "nombre": "Aspect of Might",
+          "slot": "Pants"
+        },
+        {
+          "calidad": null,
+          "engarces": [],
+          "icono": "https://sunderarmor.com/DIABLO4/Codex/1/mobility.png",
+          "nombre": "Aspect of Impetus",
+          "slot": "Boots"
+        },
+        {
+          "calidad": "mythic",
+          "engarces": [
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Gems/grand-ruby.png",
+              "nombre": "Ruby",
+              "tipo": "grand-ruby"
+            }
+          ],
+          "icono": "https://sunderarmor.com/DIABLO4/Uniques/2/el'druin,_sword_of_justice.png",
+          "nombre": "El'druin, Sword of Justice",
+          "slot": "Weapon"
+        },
+        {
+          "calidad": null,
+          "engarces": [],
+          "icono": null,
+          "nombre": null,
+          "slot": ""
+        },
+        {
+          "calidad": null,
+          "engarces": [],
+          "icono": null,
+          "nombre": null,
+          "slot": ""
+        },
+        {
+          "calidad": "unique",
+          "engarces": [
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Gems/grand-ruby.png",
+              "nombre": "Ruby",
+              "tipo": "grand-ruby"
+            }
+          ],
+          "icono": "https://sunderarmor.com/DIABLO4/Uniques/2/seed_of_horazon.png",
+          "nombre": "Seed of Horazon",
+          "slot": "Amulet"
+        },
+        {
+          "calidad": "mythic",
+          "engarces": [
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Gems/grand-diamond.png",
+              "nombre": "Diamond",
+              "tipo": "grand-diamond"
+            }
+          ],
+          "icono": "https://sunderarmor.com/DIABLO4/Uniques/2/ring_of_starless_skies.png",
+          "nombre": "Ring of Starless Skies",
+          "slot": "Ring 1"
+        },
+        {
+          "calidad": null,
+          "engarces": [
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Gems/grand-diamond.png",
+              "nombre": "Diamond",
+              "tipo": "grand-diamond"
+            }
+          ],
+          "icono": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
+          "nombre": "Aspect of Inner Calm",
+          "slot": "Ring 2"
+        },
+        {
+          "calidad": null,
+          "engarces": [],
+          "icono": null,
+          "nombre": null,
+          "slot": ""
+        },
+        {
+          "calidad": null,
+          "engarces": [
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Gems/grand-ruby.png",
+              "nombre": "Ruby",
+              "tipo": "grand-ruby"
+            }
+          ],
+          "icono": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
+          "nombre": "Vehement Brawler's Aspect",
+          "slot": "Offhand"
+        },
+        {
+          "calidad": null,
+          "engarces": [],
+          "icono": null,
+          "nombre": null,
+          "slot": ""
+        }
+      ],
+      "index": 0,
+      "mercenarios": [],
+      "paragon": [
+        {
+          "glifo": "Attrition",
+          "icono": null,
+          "nivelGlifo": null,
+          "tablero": "Starting Board"
+        },
+        {
+          "glifo": "Archfiend",
+          "icono": null,
+          "nivelGlifo": null,
+          "tablero": "Demonic Spicules"
+        },
+        {
+          "glifo": "Demonologist",
+          "icono": null,
+          "nivelGlifo": null,
+          "tablero": "Pyrosis"
+        },
+        {
+          "glifo": null,
+          "icono": null,
+          "nivelGlifo": null,
+          "tablero": "Ritualism"
+        }
+      ],
+      "stats": [
+        {
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Willpower"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Maximum Life"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Wrath Regeneration"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Dodge Chance"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Maximum Life (Worldly Endurance - Defensive)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Pants"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Willpower"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Maximum Life"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Maximum Resource"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Armor"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Maximum Life (Worldly Endurance - Defensive)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Chest Armor"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Willpower"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Maximum Life"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Critical Strike Damage Multiplier"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Ranks to All Skills"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Fire Damage (Elemental Finesse: Day - Offensive)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Amulet"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "242 Primary Core Stat"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "26.25% Attack Speed"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Tempering Stat 1"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Ring 1"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Willpower"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Maximum Life"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Wrath Regeneration"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Movement Speed"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Movement Speed (Natural Motion - Mobility)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Boots"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Willpower"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Critical Strike Chance"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Critical Strike Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Cooldown Reduction"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Fire Damage (Elemental Finesse: Day - Offensive)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Ring 2"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "179 Weapon Damage"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "37.5% All Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Critical Strike Damage (Worldly Finesse - Offensive)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Weapon"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Willpower"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Critical Strike Chance"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Critical Strike Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Cooldown Reduction"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Fire Damage (Elemental Finesse: Day - Offensive)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Gloves"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Stat 1"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Stat 2"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Stat 3"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Stat 4"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Critical Strike Damage (Worldly Finesse - Offensive)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Offhand"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "182 Primary Core Stat"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "25% Movement Speed"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Tempering Stat 1"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Helm"
+        }
+      ],
+      "warPlans": []
+    }
+  ],
+  "url": "https://d4builds.gg/builds/e98235c4-d143-440d-98b5-e4f742f61a33/?var=0",
+  "variantes": [
+    {
+      "etiqueta": "Standard Build",
+      "index": 0
+    }
+  ]
+}
