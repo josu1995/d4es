@@ -67,8 +67,10 @@ export interface PlanGuerraRaw {
   lineas: AristaPlanRaw[];
 }
 
-/** Espera tras pulsar una solapa: el arbol se vuelve a montar entero. */
-const ESPERA_SOLAPA_MS = 1000;
+/** Margen para que el arbol acabe de redibujarse una vez la solapa ya esta activa. */
+const ESPERA_SOLAPA_MS = 700;
+/** Tope esperando a que el clic en la solapa surta efecto. */
+const ESPERA_ACTIVA_MS = 8000;
 
 /** Lee los nodos y las aristas de la solapa que este activa en ese momento. */
 async function leerSolapaActiva(
@@ -143,6 +145,21 @@ export async function extraerPlanesDeGuerra(page: Page): Promise<PlanGuerraRaw[]
   for (let i = 0; i < total; i++) {
     const solapa = solapas.nth(i);
     await solapa.click({ timeout: 10_000 }).catch(() => {});
+
+    // Esperar a que la solapa quede marcada como activa, no un tiempo fijo. Los nodos de
+    // la solapa anterior siguen en el DOM mientras se redibuja, asi que contar nodos no
+    // sirve para saber si el clic surtio efecto: una espera corta en una maquina lenta
+    // publicaria el arbol equivocado, o uno vacio, como si la build no invirtiera ahi.
+    await page
+      .waitForFunction(
+        (indice) => {
+          const tabs = Array.from(document.querySelectorAll('.warplan-tabs > .warplan-tab'));
+          return (tabs[indice]?.className ?? '').includes('active');
+        },
+        i,
+        { timeout: ESPERA_ACTIVA_MS },
+      )
+      .catch(() => {});
     await page.waitForTimeout(ESPERA_SOLAPA_MS);
 
     const cabecera = await solapa.evaluate((el) => {

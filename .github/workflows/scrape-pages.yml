@@ -52,6 +52,10 @@ jobs:
     timeout-minutes: 150
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Historia completa. El repo pesa ~7 MB, asi que es gratis, y hace falta para
+          # saber que ficheros trae el push mirando el diff de verdad.
+          fetch-depth: 0
 
       - uses: actions/setup-node@v4
         with:
@@ -69,25 +73,48 @@ jobs:
       # Un push que solo toca la SONDA no puede costar una re-extraccion completa de las
       # 92 paginas (que es lo que hace el paso de extraer cuando el evento es push).
       # Se mira que ficheros trae el push: si el parser no cambio, esta pasada es sonda.
+      #
+      # Se decide con `git diff`, NO con el payload del evento. Dos intentos con
+      # `github.event.commits` fallaron en silencio y se comieron dos rondas de CI:
+      # `join(commits.*.modified, ',')` devuelve vacio (es un array de arrays) y buscar la
+      # ruta dentro de `toJSON(commits)` tampoco caso. El diff de git es comprobable.
+      #
+      # Parser = scrape-pages.ts Y warplans.ts: los dos cambian lo que se extrae. Solo
+      # probe-page.ts se queda en sonda, porque no toca los datos.
       - name: Decidir que hace este push
         id: plan
         if: github.event_name == 'push'
         env:
-          # OJO: `join(github.event.commits.*.modified, ',')` NO vale. Al ser un array de
-          # arrays devuelve la cadena vacia, todo push caia en el caso por defecto y la
-          # re-extraccion no se disparaba nunca. `toJSON` si trae las rutas literales.
-          # Se busca la ruta ENTRECOMILLADA para no confundirla con una mencion al fichero
-          # en el mensaje del commit, que en ese volcado tambien viaja.
-          COMMITS: ${{ toJSON(github.event.commits) }}
+          ANTES: ${{ github.event.before }}
         run: |
-          case "$COMMITS" in
-            *'"apps/scraper/src/sources/d4builds/scrape-pages.ts"'*)
-              echo "El parser cambio: re-extraccion completa." >> "$GITHUB_STEP_SUMMARY"
-              echo "modo=scrape" >> "$GITHUB_OUTPUT" ;;
-            *)
-              echo "Solo cambio la sonda: reconocimiento, sin tocar las paginas ya extraidas." >> "$GITHUB_STEP_SUMMARY"
-              echo "modo=probe" >> "$GITHUB_OUTPUT" ;;
-          esac
+          base="$ANTES"
+          if [ -z "$base" ] || [ "$base" = "0000000000000000000000000000000000000000" ] \
+             || ! git cat-file -e "$base^{commit}" 2>/dev/null; then
+            base="HEAD^"
+          fi
+          cambiados=$(git diff --name-only "$base" HEAD || true)
+
+          if echo "$cambiados" | grep -qE '^apps/scraper/src/sources/d4builds/(scrape-pages|warplans)\.ts$'; then
+            modo=scrape
+          else
+            modo=probe
+          fi
+          echo "modo=$modo" >> "$GITHUB_OUTPUT"
+
+          # Queda por escrito en el repo: sin esto, saber que decidio el workflow exige
+          # abrir los logs a mano, y por eso las dos veces anteriores paso desapercibido.
+          mkdir -p data/reports
+          printf '{\n  "evento": "push",\n  "run": "%s",\n  "base": "%s",\n  "modo": "%s",\n  "ficheros": %s\n}\n' \
+            "${{ github.run_id }}" "$base" "$modo" \
+            "$(echo "$cambiados" | grep -v '^$' | sed 's/.*/"&"/' | paste -sd, - | sed 's/^/[/;s/$/]/')" \
+            > data/reports/ultimo-disparo.json
+
+          {
+            echo "Modo: **$modo**"
+            echo '```'
+            echo "$cambiados"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Sonda de reconocimiento
         if: github.event.inputs.modo == 'probe' || steps.plan.outputs.modo == 'probe'
