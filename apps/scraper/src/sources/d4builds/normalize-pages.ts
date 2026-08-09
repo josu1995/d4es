@@ -174,6 +174,28 @@ function normalizarPlanes(
   return { activities: actividades.slice(0, WARPLAN_ACTIVITIES), inferred: false };
 }
 
+/**
+ * La lista de "stats" de una ranura en la fuente NO son solo afijos: lleva dentro cosas
+ * de su propia interfaz. Publicarlas metia en la ficha lineas que no existen en el juego
+ * y que ademas salian en ingles con distintivo de sin traducir, como si fueran afijos que
+ * no supieramos traducir. Eran 869 apariciones, la primera causa de "sin traducir" de
+ * todo el proyecto:
+ *
+ *  - `Transfigure`: el boton de transfiguracion, al final de CADA ranura (811 veces).
+ *  - `Weapon Type`: el selector de tipo de arma.
+ *  - `Stat 1`..`Stat 4`, `Tempering Stat 1`: huecos del formulario sin rellenar.
+ *  - `Aspect of ...` / `... Aspect`: el aspecto de la pieza, que ya se publica aparte
+ *    como su nombre; repetido aqui no aporta y ademas no es un afijo.
+ */
+const NO_ES_AFIJO = /^(transfigure|weapon type|(tempering\s+)?stat\s*\d+)$/i;
+
+export function esAfijoDeVerdad(texto: string): boolean {
+  const t = texto.trim();
+  if (t.length === 0) return false;
+  if (NO_ES_AFIJO.test(t)) return false;
+  return !/\baspects?\b/i.test(t);
+}
+
 /** Un afijo templado o con estrellas no es "otro afijo": es el mismo con mas informacion. */
 function construirGear(
   crudo: GearItemRaw,
@@ -193,11 +215,7 @@ function construirGear(
 
   const bloque = afijosDeSlot(stats, crudo.slot);
   const afijos = (bloque?.afijos ?? [])
-    // "Stat 1", "Tempering Stat 1"... no son afijos: es el hueco vacio del formulario de
-    // la fuente cuando el autor no ha elegido ninguno. Publicarlos llenaba la ficha de
-    // 483 lineas que decian "Stat 3" en ingles y con distintivo de sin traducir, como si
-    // fuera un afijo del juego que no supieramos traducir.
-    .filter((a) => !/^(tempering\s+)?stat\s*\d+$/i.test(a.texto.trim()))
+    .filter((a) => esAfijoDeVerdad(a.texto))
     .map((a, i) => ({
     ref: resolver.resolve('affix', a.texto),
     greater: a.ga > 0,

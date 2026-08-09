@@ -1,7 +1,13 @@
 import { describe, expect, it } from 'vitest';
 import { Resolver, type Dictionary } from '@d4es/i18n';
 import { CanonicalBuild, untranslatedRef, type BuildVariant } from '@d4es/schema';
-import { enriquecerConPagina, limpiarNombreTablero, nombreDesdeSlug, slugDeNodo } from './normalize-pages.js';
+import {
+  enriquecerConPagina,
+  esAfijoDeVerdad,
+  limpiarNombreTablero,
+  nombreDesdeSlug,
+  slugDeNodo,
+} from './normalize-pages.js';
 import type { PaginaRaw } from './scrape-pages.js';
 
 function diccionario(entradas: { category: string; en: string; es: string }[]): Dictionary {
@@ -323,5 +329,36 @@ describe('planes de guerra', () => {
   it('el plan extraido sigue validando contra el esquema canonico', () => {
     const { build } = conPlanes([PLAN_SUSURROS]);
     expect(CanonicalBuild.safeParse(build).success).toBe(true);
+  });
+});
+
+/**
+ * La lista de "stats" de la fuente lleva dentro cosas de su interfaz. Publicarlas metia
+ * en la ficha 869 lineas que no existen en el juego, en ingles y marcadas como sin
+ * traducir: era la primera causa de "sin traducir" de todo el proyecto.
+ */
+describe('esAfijoDeVerdad', () => {
+  it('descarta el boton de transfiguracion, que sale en CADA ranura', () => {
+    expect(esAfijoDeVerdad('Transfigure')).toBe(false);
+  });
+
+  it('descarta el selector de tipo de arma', () => {
+    expect(esAfijoDeVerdad('Weapon Type')).toBe(false);
+  });
+
+  it('descarta los huecos del formulario sin rellenar', () => {
+    expect(esAfijoDeVerdad('Stat 1')).toBe(false);
+    expect(esAfijoDeVerdad('Tempering Stat 1')).toBe(false);
+  });
+
+  it('descarta el aspecto, que ya se publica como nombre de la pieza', () => {
+    expect(esAfijoDeVerdad('Aspect of Gloom')).toBe(false);
+    expect(esAfijoDeVerdad('Overcharged Aspect')).toBe(false);
+  });
+
+  it('deja pasar los afijos de verdad, incluido el grupo de templado pegado', () => {
+    expect(esAfijoDeVerdad('Maximum Life')).toBe(true);
+    expect(esAfijoDeVerdad('Cooldown Reduction (Worldly Stability - Resource)')).toBe(true);
+    expect(esAfijoDeVerdad('Critical Strike Damage')).toBe(true);
   });
 });

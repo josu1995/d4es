@@ -30,24 +30,39 @@ export class Resolver {
       // Los multiplicadores llevan una "x" delante en el texto del juego ("x Vulnerable
       // Damage Multiplier") que las fuentes de builds omiten. Es el MISMO afijo, asi que
       // se reintenta con el prefijo antes de darlo por no encontrado.
-      if (category === 'affix') {
-        const conX = this.dict.byEnglish[`affix:${normalizeName(`x ${opts.enUS}`)}`];
-        if (conX) return conX;
-
-        // La pagina de la build pega el grupo de templado al nombre del afijo:
-        // "Maximum Life (Worldly Endurance - Defensive)". El afijo es el mismo; el
-        // parentesis dice de que grupo lo sacas, no que afijo es.
-        const sinGrupo = opts.enUS.replace(/\s*\([^)]*\)\s*$/, '').trim();
-        if (sinGrupo !== opts.enUS && sinGrupo.length > 0) {
-          return (
-            this.dict.byEnglish[`affix:${normalizeName(sinGrupo)}`] ??
-            this.dict.byEnglish[`affix:${normalizeName(`x ${sinGrupo}`)}`]
-          );
-        }
-        return undefined;
-      }
+      if (category === 'affix') return this.lookupAfijo(opts.enUS);
 
       if (category === 'aspect') return this.lookupAspecto(opts.enUS);
+    }
+    return undefined;
+  }
+
+  /**
+   * Un afijo se nombra de tres formas distintas segun donde lo mires, y el diccionario
+   * solo guarda una. Se prueban las variantes conocidas, que NO son adivinar: cada una
+   * sale de una diferencia concreta y verificable entre la fuente y el juego.
+   *
+   * - La pagina de la build pega el grupo de templado: "Maximum Life (Worldly Endurance
+   *   - Defensive)". El parentesis dice de que grupo lo sacas, no que afijo es.
+   * - A veces pega tambien el valor: "242 Primary Core Stat", "25% Movement Speed".
+   * - El juego escribe los multiplicadores con una "x" delante y los rangos con un "to"
+   *   ("to All Skills"), que las fuentes de builds omiten.
+   */
+  private lookupAfijo(enUS: string): DictionaryEntry | undefined {
+    const sinGrupo = enUS.replace(/\s*\([^)]*\)\s*$/, '').trim();
+    const candidatos = new Set([enUS, sinGrupo]);
+    for (const c of [...candidatos]) {
+      // Fuera el valor pegado delante: "242 Primary Core Stat", "25% Movement Speed".
+      const sinValor = c.replace(/^[+-]?[\d.,]+%?\s+/, '').trim();
+      if (sinValor.length > 0) candidatos.add(sinValor);
+    }
+
+    for (const base of candidatos) {
+      if (base.length === 0) continue;
+      for (const forma of [base, `x ${base}`, `to ${base}`]) {
+        const e = this.dict.byEnglish[`affix:${normalizeName(forma)}`];
+        if (e) return e;
+      }
     }
     return undefined;
   }

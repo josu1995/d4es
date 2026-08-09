@@ -364,11 +364,11 @@
               "order": 2,
               "ref": {
                 "category": "affix",
-                "enUS": "Core Skills",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__core_skills",
-                "sno": null
+                "enUS": "to Core Skills",
+                "esES": "a las habilidades de categoría Principal",
+                "i18n": "d4companion",
+                "idName": "S04_SkillRankBonus_Generic_Category_Core;SkillRankBonus_Generic_Category_Core;SkillRankBonus_Generic_Category_Core_Always1_UNIQUE;SkillRankBonus_Generic_Category_Core_Double_UNIQUE;Talisman_Charm_Affix_SkillRankBonus_Generic_Category_Core;Talisman_Charm_Affix_SkillRankBonus_Generic_Category_Core_Double_UNIQUE;Talisman_Charm_SkillRankBonus_Generic_Category_Core;Talisman_Charm_SkillRankBonus_Generic_Category_Core_MagicOnly;UBERUNIQUE_SkillRankBonus_Generic_Category_Core_HeirOfPerdition;UBERUNIQUE_SkillRankBonus_Generic_Category_Core_RingofStarlessSkies;UNIQUE_SkillRankBonus_Generic_Category_Core_Higher;UNIQUE_SkillRankBonus_Paladin_Core;UNIQUE_SkillRankBonus_Sorc_Category_Core_Higher;X2_Transfiguration_SkillRankBonus_Generic_Category_Core",
+                "sno": 1088076
               },
               "tempered": false
             },
@@ -394,32 +394,6 @@
                 "esES": null,
                 "i18n": "none",
                 "idName": "affix__lucky_hit_up_to_a_15_chance_to_restore_x_primary_resource_worldly_stability_resource",
-                "sno": null
-              },
-              "tempered": true
-            },
-            {
-              "greater": false,
-              "order": 5,
-              "ref": {
-                "category": "affix",
-                "enUS": "Aspect of Booming Voice",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__aspect_of_booming_voice",
-                "sno": null
-              },
-              "tempered": true
-            },
-            {
-              "greater": false,
-              "order": 6,
-              "ref": {
-                "category": "affix",
-                "enUS": "Transfigure",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__transfigure",
                 "sno": null
               },
               "tempered": true
@@ -518,19 +492,6 @@
                 "sno": 1439265
               },
               "tempered": true
-            },
-            {
-              "greater": false,
-              "order": 5,
-              "ref": {
-                "category": "affix",
-                "enUS": "Transfigure",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__transfigure",
-                "sno": null
-              },
-              "tempered": true
             }
           ],
           "aspect": {
@@ -615,19 +576,6 @@
                 "i18n": "d4companion",
                 "idName": "Life;LifePercent;LifePercent_Double_UBERUNIQUE;Life_Flat_Quadruple_UBERUNIQUE;Life_Greater;S04_Life;Talisman_Charm_Affix_Life;Talisman_Charm_MaxLife_Percent;Talisman_Charm_MaxLife_Percent_MagicOnly;Talisman_Charm_Virtue_Vitality;Talisman_SealAffix_Normal_LifePercent;Tempered_Generic_LifeMax_Tier1;Tempered_Generic_LifeMax_Tier2;Tempered_Generic_LifeMax_Tier3;UBERUNIQUE_FlatLife_Grandfather;UBERUNIQUE_FlatLife_Greater;UBERUNIQUE_FlatLife_NesekemTheHerald;UBERUNIQUE_LifeFlat_HarlequinCrest;UBERUNIQUE_LifeFlat_ShroudOfFalseDeath;UBERUNIQUE_LifePercent_Doombringer;UNIQUE_LifeFlat_Higher;UNIQUE_LifeFlat_HigherHigher;UNIQUE_LifePercent;UNIQUE_LifePercent_Higher;UNIQUE_LifePercent_Higher_Necro;UNIQUE_LifePercent_LessHigher;UNIQUE_LifePercent_Lesser;X2_Life_Greater;X2_Transfiguration_LifePercent;X2_Transfiguration_LifePercent_Lesser",
                 "sno": 1227911
-              },
-              "tempered": true
-            },
-            {
-              "greater": false,
-              "order": 5,
-              "ref": {
-                "category": "affix",
-                "enUS": "Transfigure",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__transfigure",
-                "sno": null
               },
               "tempered": true
             }
@@ -733,19 +681,6 @@
                 "sno": 1234158
               },
               "tempered": true
-            },
-            {
-              "greater": false,
-              "order": 5,
-              "ref": {
-                "category": "affix",
-                "enUS": "Transfigure",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__transfigure",
-                "sno": null
-              },
-              "tempered": true
             }
           ],
           "aspect": null,
@@ -830,19 +765,6 @@
                 "i18n": "d4companion",
                 "idName": "Life;LifePercent;LifePercent_Double_UBERUNIQUE;Life_Flat_Quadruple_UBERUNIQUE;Life_Greater;S04_Life;Talisman_Charm_Affix_Life;Talisman_Charm_MaxLife_Percent;Talisman_Charm_MaxLife_Percent_MagicOnly;Talisman_Charm_Virtue_Vitality;Talisman_SealAffix_Normal_LifePercent;Tempered_Generic_LifeMax_Tier1;Tempered_Generic_LifeMax_Tier2;Tempered_Generic_LifeMax_Tier3;UBERUNIQUE_FlatLife_Grandfather;UBERUNIQUE_FlatLife_Greater;UBERUNIQUE_FlatLife_NesekemTheHerald;UBERUNIQUE_LifeFlat_HarlequinCrest;UBERUNIQUE_LifeFlat_ShroudOfFalseDeath;UBERUNIQUE_LifePercent_Doombringer;UNIQUE_LifeFlat_Higher;UNIQUE_LifeFlat_HigherHigher;UNIQUE_LifePercent;UNIQUE_LifePercent_Higher;UNIQUE_LifePercent_Higher_Necro;UNIQUE_LifePercent_LessHigher;UNIQUE_LifePercent_Lesser;X2_Life_Greater;X2_Transfiguration_LifePercent;X2_Transfiguration_LifePercent_Lesser",
                 "sno": 1227911
-              },
-              "tempered": true
-            },
-            {
-              "greater": false,
-              "order": 5,
-              "ref": {
-                "category": "affix",
-                "enUS": "Transfigure",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__transfigure",
-                "sno": null
               },
               "tempered": true
             }
@@ -948,19 +870,6 @@
                 "sno": 1227911
               },
               "tempered": true
-            },
-            {
-              "greater": false,
-              "order": 5,
-              "ref": {
-                "category": "affix",
-                "enUS": "Transfigure",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__transfigure",
-                "sno": null
-              },
-              "tempered": true
             }
           ],
           "aspect": {
@@ -1064,19 +973,6 @@
                 "sno": 1234186
               },
               "tempered": true
-            },
-            {
-              "greater": false,
-              "order": 5,
-              "ref": {
-                "category": "affix",
-                "enUS": "Transfigure",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__transfigure",
-                "sno": null
-              },
-              "tempered": true
             }
           ],
           "aspect": {
@@ -1172,19 +1068,6 @@
                 "sno": 1234186
               },
               "tempered": true
-            },
-            {
-              "greater": false,
-              "order": 5,
-              "ref": {
-                "category": "affix",
-                "enUS": "Transfigure",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__transfigure",
-                "sno": null
-              },
-              "tempered": true
             }
           ],
           "aspect": {
@@ -1221,19 +1104,6 @@
               "order": 0,
               "ref": {
                 "category": "affix",
-                "enUS": "Weapon Type",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__weapon_type",
-                "sno": null
-              },
-              "tempered": false
-            },
-            {
-              "greater": false,
-              "order": 1,
-              "ref": {
-                "category": "affix",
                 "enUS": "Strength",
                 "esES": "de fuerza",
                 "i18n": "d4companion",
@@ -1244,7 +1114,7 @@
             },
             {
               "greater": false,
-              "order": 2,
+              "order": 1,
               "ref": {
                 "category": "affix",
                 "enUS": "Maximum Life",
@@ -1257,7 +1127,7 @@
             },
             {
               "greater": true,
-              "order": 3,
+              "order": 2,
               "ref": {
                 "category": "affix",
                 "enUS": "Weapon Damage",
@@ -1270,7 +1140,7 @@
             },
             {
               "greater": false,
-              "order": 4,
+              "order": 3,
               "ref": {
                 "category": "affix",
                 "enUS": "x Critical Strike Damage Multiplier",
@@ -1283,7 +1153,7 @@
             },
             {
               "greater": true,
-              "order": 5,
+              "order": 4,
               "ref": {
                 "category": "affix",
                 "enUS": "Critical Strike Chance",
@@ -1291,19 +1161,6 @@
                 "i18n": "d4companion",
                 "idName": "CritChance;CritChanceJewelry;CritChanceJewelry_UBERUNIQUE;CritChance_UBERUNIQUE;S04_CritChance;S04_CritChanceJewelry;Talisman_Charm_Affix_CritChance;Talisman_SealAffix_Normal_CritChance;Tempered_Generic_CritChance_BarbRogue_Tier1;Tempered_Generic_CritChance_BarbRogue_Tier2;Tempered_Generic_CritChance_BarbRogue_Tier3;Tempered_Generic_CritChance_Tier1;Tempered_Generic_CritChance_Tier2;Tempered_Generic_CritChance_Tier3;UBERUNIQUE_CritChance_HeirOfPerdition;UBERUNIQUE_CritChance_RingofStarlessSkies;UNIQUE_CritChance_HighVariance;UNIQUE_CritChance_Higher;UNIQUE_CritChance_HigherHigher;X2_Transfiguration_CritChance",
                 "sno": 1193845
-              },
-              "tempered": true
-            },
-            {
-              "greater": false,
-              "order": 6,
-              "ref": {
-                "category": "affix",
-                "enUS": "Transfigure",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__transfigure",
-                "sno": null
               },
               "tempered": true
             }
@@ -1350,19 +1207,6 @@
               "order": 0,
               "ref": {
                 "category": "affix",
-                "enUS": "Weapon Type",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__weapon_type",
-                "sno": null
-              },
-              "tempered": false
-            },
-            {
-              "greater": false,
-              "order": 1,
-              "ref": {
-                "category": "affix",
                 "enUS": "Strength",
                 "esES": "de fuerza",
                 "i18n": "d4companion",
@@ -1373,7 +1217,7 @@
             },
             {
               "greater": false,
-              "order": 2,
+              "order": 1,
               "ref": {
                 "category": "affix",
                 "enUS": "Maximum Life",
@@ -1386,7 +1230,7 @@
             },
             {
               "greater": true,
-              "order": 3,
+              "order": 2,
               "ref": {
                 "category": "affix",
                 "enUS": "x Critical Strike Damage Multiplier",
@@ -1399,7 +1243,7 @@
             },
             {
               "greater": false,
-              "order": 4,
+              "order": 3,
               "ref": {
                 "category": "affix",
                 "enUS": "x All Damage Multiplier",
@@ -1412,7 +1256,7 @@
             },
             {
               "greater": false,
-              "order": 5,
+              "order": 4,
               "ref": {
                 "category": "affix",
                 "enUS": "Critical Strike Chance",
@@ -1420,19 +1264,6 @@
                 "i18n": "d4companion",
                 "idName": "CritChance;CritChanceJewelry;CritChanceJewelry_UBERUNIQUE;CritChance_UBERUNIQUE;S04_CritChance;S04_CritChanceJewelry;Talisman_Charm_Affix_CritChance;Talisman_SealAffix_Normal_CritChance;Tempered_Generic_CritChance_BarbRogue_Tier1;Tempered_Generic_CritChance_BarbRogue_Tier2;Tempered_Generic_CritChance_BarbRogue_Tier3;Tempered_Generic_CritChance_Tier1;Tempered_Generic_CritChance_Tier2;Tempered_Generic_CritChance_Tier3;UBERUNIQUE_CritChance_HeirOfPerdition;UBERUNIQUE_CritChance_RingofStarlessSkies;UNIQUE_CritChance_HighVariance;UNIQUE_CritChance_Higher;UNIQUE_CritChance_HigherHigher;X2_Transfiguration_CritChance",
                 "sno": 1193845
-              },
-              "tempered": true
-            },
-            {
-              "greater": false,
-              "order": 6,
-              "ref": {
-                "category": "affix",
-                "enUS": "Transfigure",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__transfigure",
-                "sno": null
               },
               "tempered": true
             }
@@ -1471,19 +1302,6 @@
               "order": 0,
               "ref": {
                 "category": "affix",
-                "enUS": "Weapon Type",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__weapon_type",
-                "sno": null
-              },
-              "tempered": false
-            },
-            {
-              "greater": false,
-              "order": 1,
-              "ref": {
-                "category": "affix",
                 "enUS": "Strength",
                 "esES": "de fuerza",
                 "i18n": "d4companion",
@@ -1494,7 +1312,7 @@
             },
             {
               "greater": true,
-              "order": 2,
+              "order": 1,
               "ref": {
                 "category": "affix",
                 "enUS": "x Critical Strike Damage Multiplier",
@@ -1507,7 +1325,7 @@
             },
             {
               "greater": false,
-              "order": 3,
+              "order": 2,
               "ref": {
                 "category": "affix",
                 "enUS": "x All Damage Multiplier",
@@ -1520,7 +1338,7 @@
             },
             {
               "greater": false,
-              "order": 4,
+              "order": 3,
               "ref": {
                 "category": "affix",
                 "enUS": "Maximum Life",
@@ -1533,7 +1351,7 @@
             },
             {
               "greater": false,
-              "order": 5,
+              "order": 4,
               "ref": {
                 "category": "affix",
                 "enUS": "Critical Strike Chance",
@@ -1546,7 +1364,7 @@
             },
             {
               "greater": false,
-              "order": 6,
+              "order": 5,
               "ref": {
                 "category": "affix",
                 "enUS": "Physical Damage",
@@ -1657,19 +1475,6 @@
                 "i18n": "d4companion",
                 "idName": "CritChance;CritChanceJewelry;CritChanceJewelry_UBERUNIQUE;CritChance_UBERUNIQUE;S04_CritChance;S04_CritChanceJewelry;Talisman_Charm_Affix_CritChance;Talisman_SealAffix_Normal_CritChance;Tempered_Generic_CritChance_BarbRogue_Tier1;Tempered_Generic_CritChance_BarbRogue_Tier2;Tempered_Generic_CritChance_BarbRogue_Tier3;Tempered_Generic_CritChance_Tier1;Tempered_Generic_CritChance_Tier2;Tempered_Generic_CritChance_Tier3;UBERUNIQUE_CritChance_HeirOfPerdition;UBERUNIQUE_CritChance_RingofStarlessSkies;UNIQUE_CritChance_HighVariance;UNIQUE_CritChance_Higher;UNIQUE_CritChance_HigherHigher;X2_Transfiguration_CritChance",
                 "sno": 1193845
-              },
-              "tempered": true
-            },
-            {
-              "greater": false,
-              "order": 5,
-              "ref": {
-                "category": "affix",
-                "enUS": "Transfigure",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__transfigure",
-                "sno": null
               },
               "tempered": true
             }

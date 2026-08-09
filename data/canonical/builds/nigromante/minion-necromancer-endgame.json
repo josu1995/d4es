@@ -397,11 +397,11 @@
               "order": 1,
               "ref": {
                 "category": "affix",
-                "enUS": "All Skills",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__all_skills",
-                "sno": null
+                "enUS": "to All Skills",
+                "esES": "a todas las habilidades",
+                "i18n": "d4companion",
+                "idName": "S14_Mythic_SkillRanksAll;SkillRanksAll_UBERUNIQUE;X2_SkillRankBonus_AllSkills;X2_Transfiguration_SkillRankBonus_AllSkills;X2_UBERUNIQUE_SkillRankBonus_AllSkills",
+                "sno": 1983837
               },
               "tempered": false
             },
@@ -410,11 +410,11 @@
               "order": 2,
               "ref": {
                 "category": "affix",
-                "enUS": "Darkness Skills",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__darkness_skills",
-                "sno": null
+                "enUS": "to Darkness Skills",
+                "esES": "a las habilidades de categoría Oscuridad",
+                "i18n": "d4companion",
+                "idName": "Talisman_Charm_Affix_UNIQUE_SkillRankBonus_Necro_Tag_Darkness;Talisman_Charm_SkillRankBonus_Necro_Category_Darkness;UNIQUE_SkillRankBonus_Necro_Tag_Darkness;X2_SkillRankBonus_Necro_Category_Darkness",
+                "sno": 2066543
               },
               "tempered": false
             },
@@ -423,11 +423,11 @@
               "order": 3,
               "ref": {
                 "category": "affix",
-                "enUS": "Minion Skills",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__minion_skills",
-                "sno": null
+                "enUS": "to Minion Skills",
+                "esES": "a las habilidades de categoría Esbirro",
+                "i18n": "d4companion",
+                "idName": "Talisman_Charm_SkillRankBonus_Necro_Category_Minion;X2_SkillRankBonus_Necro_Category_Minion",
+                "sno": 2619796
               },
               "tempered": false
             },
@@ -441,32 +441,6 @@
                 "i18n": "d4companion",
                 "idName": "Damage_Tag_Summoning;Damage_Tag_Summoning_Double_UNIQUE;INHERENT_Damage_Tag_Summoning;Tempered_Damage_Necro_Tag_Summoning_Tier1;Tempered_Damage_Necro_Tag_Summoning_Tier2;Tempered_Damage_Necro_Tag_Summoning_Tier3;UNIQUE_INHERENT_Damage_Tag_Summoning",
                 "sno": 1064575
-              },
-              "tempered": true
-            },
-            {
-              "greater": false,
-              "order": 5,
-              "ref": {
-                "category": "affix",
-                "enUS": "Aspect of Gloom",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__aspect_of_gloom",
-                "sno": null
-              },
-              "tempered": true
-            },
-            {
-              "greater": false,
-              "order": 6,
-              "ref": {
-                "category": "affix",
-                "enUS": "Transfigure",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__transfigure",
-                "sno": null
               },
               "tempered": true
             }
@@ -562,19 +536,6 @@
                 "i18n": "d4companion",
                 "idName": "Movement_Speed;Movement_Speed_Lesser;Movement_Speed_UBERUNIQUE;S04_Movement_Speed;Talisman_Charm_Affix_Movement_Speed;Talisman_Charm_Affix_UNIQUE_Movement_Speed_Lesser;Talisman_Charm_Movement_Speed;Talisman_Charm_Movement_Speed_MagicOnly;Tempered_MovementSpeed_Generic_Tier1;Tempered_MovementSpeed_Generic_Tier2;Tempered_MovementSpeed_Generic_Tier3;Tempered_PaladinMoveSpeed_Tier1;Tempered_PaladinMoveSpeed_Tier2;Tempered_PaladinMoveSpeed_Tier3;UBERUNIQUE_Movement_Speed_Ahavarion;UBERUNIQUE_Movement_Speed_HeirOfPerdition;UBERUNIQUE_Movement_Speed_MeltedHeartofSelig;UBERUNIQUE_Movement_Speed_TyraelsMight;UNIQUE_INHERENT_MovementSpeed_High;UNIQUE_Movement_Speed_High;UNIQUE_Movement_Speed_Higher;UNIQUE_Movement_Speed_Lesser;UNIQUE_Movement_Speed_LesserLesser;X2_Transfiguration_Movement_Speed;X2_Transfiguration_Movement_Speed_Lesser",
                 "sno": 1439265
-              },
-              "tempered": true
-            },
-            {
-              "greater": false,
-              "order": 5,
-              "ref": {
-                "category": "affix",
-                "enUS": "Transfigure",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__transfigure",
-                "sno": null
               },
               "tempered": true
             }
@@ -1082,11 +1043,11 @@
               "order": 3,
               "ref": {
                 "category": "affix",
-                "enUS": "Skeleton Mage",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__skeleton_mage",
-                "sno": null
+                "enUS": "to Skeleton Mage",
+                "esES": "a Mago esqueleto",
+                "i18n": "d4companion",
+                "idName": "S04_SkillRankBonus_Necro_Talent_SkeletonMage;Talisman_Charm_SkillRankBonus_Necro_Talent_SkeletonMage",
+                "sno": 1928785
               },
               "tempered": false
             },

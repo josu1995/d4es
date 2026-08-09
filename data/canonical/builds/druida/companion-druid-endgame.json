@@ -387,11 +387,11 @@
               "order": 2,
               "ref": {
                 "category": "affix",
-                "enUS": "Nature Magic Skills",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__nature_magic_skills",
-                "sno": null
+                "enUS": "to Nature Magic Skills",
+                "esES": "a las habilidades de categoría Magia de la naturaleza",
+                "i18n": "d4companion",
+                "idName": "Talisman_Charm_SkillRankBonus_Druid_Category_NatureMagic;UNIQUE_SkillRankBonus_Druid_Category_NatureMagic;X2_SkillRankBonus_Druid_Category_NatureMagic",
+                "sno": 2065070
               },
               "tempered": false
             },
@@ -418,32 +418,6 @@
                 "i18n": "d4companion",
                 "idName": "Talisman_Charm_Affix_UNIQUE_Special_Skill_Spiritborn_Resolve_MaxStacks;Tempered_Defensive_Resolve_MaxStacks_Paladin_Tier1;Tempered_Defensive_Resolve_MaxStacks_Paladin_Tier2;Tempered_Defensive_Resolve_MaxStacks_Paladin_Tier3;Tempered_Generic_ResolveStacks_Tier1;Tempered_Generic_ResolveStacks_Tier2;Tempered_Generic_ResolveStacks_Tier3;Tempered_Special_Skill_Spiritborn_Resolve_MaxStacks_Tier1;Tempered_Special_Skill_Spiritborn_Resolve_MaxStacks_Tier2;Tempered_Special_Skill_Spiritborn_Resolve_MaxStacks_Tier3;UNIQUE_Special_Skill_Paladin_Resolve_MaxStacks;UNIQUE_Special_Skill_Spiritborn_Resolve_MaxStacks",
                 "sno": 2051408
-              },
-              "tempered": true
-            },
-            {
-              "greater": false,
-              "order": 5,
-              "ref": {
-                "category": "affix",
-                "enUS": "Overcharged Aspect",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__overcharged_aspect",
-                "sno": null
-              },
-              "tempered": true
-            },
-            {
-              "greater": false,
-              "order": 6,
-              "ref": {
-                "category": "affix",
-                "enUS": "Transfigure",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__transfigure",
-                "sno": null
               },
               "tempered": true
             }
@@ -541,19 +515,6 @@
                 "sno": 1439265
               },
               "tempered": true
-            },
-            {
-              "greater": false,
-              "order": 5,
-              "ref": {
-                "category": "affix",
-                "enUS": "Transfigure",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__transfigure",
-                "sno": null
-              },
-              "tempered": true
             }
           ],
           "aspect": null,
@@ -638,19 +599,6 @@
                 "i18n": "d4companion",
                 "idName": "Talisman_Charm_Affix_UNIQUE_Special_Skill_Spiritborn_Resolve_MaxStacks;Tempered_Defensive_Resolve_MaxStacks_Paladin_Tier1;Tempered_Defensive_Resolve_MaxStacks_Paladin_Tier2;Tempered_Defensive_Resolve_MaxStacks_Paladin_Tier3;Tempered_Generic_ResolveStacks_Tier1;Tempered_Generic_ResolveStacks_Tier2;Tempered_Generic_ResolveStacks_Tier3;Tempered_Special_Skill_Spiritborn_Resolve_MaxStacks_Tier1;Tempered_Special_Skill_Spiritborn_Resolve_MaxStacks_Tier2;Tempered_Special_Skill_Spiritborn_Resolve_MaxStacks_Tier3;UNIQUE_Special_Skill_Paladin_Resolve_MaxStacks;UNIQUE_Special_Skill_Spiritborn_Resolve_MaxStacks",
                 "sno": 2051408
-              },
-              "tempered": true
-            },
-            {
-              "greater": false,
-              "order": 5,
-              "ref": {
-                "category": "affix",
-                "enUS": "Transfigure",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__transfigure",
-                "sno": null
               },
               "tempered": true
             }
@@ -756,19 +704,6 @@
                 "sno": 1234158
               },
               "tempered": true
-            },
-            {
-              "greater": false,
-              "order": 5,
-              "ref": {
-                "category": "affix",
-                "enUS": "Transfigure",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__transfigure",
-                "sno": null
-              },
-              "tempered": true
             }
           ],
           "aspect": {
@@ -809,11 +744,11 @@
               "order": 1,
               "ref": {
                 "category": "affix",
-                "enUS": "25% Movement Speed",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__25_movement_speed",
-                "sno": null
+                "enUS": "Movement Speed",
+                "esES": "de velocidad de movimiento",
+                "i18n": "d4companion",
+                "idName": "Movement_Speed;Movement_Speed_Lesser;Movement_Speed_UBERUNIQUE;S04_Movement_Speed;Talisman_Charm_Affix_Movement_Speed;Talisman_Charm_Affix_UNIQUE_Movement_Speed_Lesser;Talisman_Charm_Movement_Speed;Talisman_Charm_Movement_Speed_MagicOnly;Tempered_MovementSpeed_Generic_Tier1;Tempered_MovementSpeed_Generic_Tier2;Tempered_MovementSpeed_Generic_Tier3;Tempered_PaladinMoveSpeed_Tier1;Tempered_PaladinMoveSpeed_Tier2;Tempered_PaladinMoveSpeed_Tier3;UBERUNIQUE_Movement_Speed_Ahavarion;UBERUNIQUE_Movement_Speed_HeirOfPerdition;UBERUNIQUE_Movement_Speed_MeltedHeartofSelig;UBERUNIQUE_Movement_Speed_TyraelsMight;UNIQUE_INHERENT_MovementSpeed_High;UNIQUE_Movement_Speed_High;UNIQUE_Movement_Speed_Higher;UNIQUE_Movement_Speed_Lesser;UNIQUE_Movement_Speed_LesserLesser;X2_Transfiguration_Movement_Speed;X2_Transfiguration_Movement_Speed_Lesser",
+                "sno": 1439265
               },
               "tempered": false
             },
@@ -827,19 +762,6 @@
                 "i18n": "d4companion",
                 "idName": "Talisman_Charm_Affix_UNIQUE_Special_Skill_Spiritborn_Resolve_MaxStacks;Tempered_Defensive_Resolve_MaxStacks_Paladin_Tier1;Tempered_Defensive_Resolve_MaxStacks_Paladin_Tier2;Tempered_Defensive_Resolve_MaxStacks_Paladin_Tier3;Tempered_Generic_ResolveStacks_Tier1;Tempered_Generic_ResolveStacks_Tier2;Tempered_Generic_ResolveStacks_Tier3;Tempered_Special_Skill_Spiritborn_Resolve_MaxStacks_Tier1;Tempered_Special_Skill_Spiritborn_Resolve_MaxStacks_Tier2;Tempered_Special_Skill_Spiritborn_Resolve_MaxStacks_Tier3;UNIQUE_Special_Skill_Paladin_Resolve_MaxStacks;UNIQUE_Special_Skill_Spiritborn_Resolve_MaxStacks",
                 "sno": 2051408
-              },
-              "tempered": true
-            },
-            {
-              "greater": false,
-              "order": 3,
-              "ref": {
-                "category": "affix",
-                "enUS": "Transfigure",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__transfigure",
-                "sno": null
               },
               "tempered": true
             }
@@ -945,19 +867,6 @@
                 "sno": 1227911
               },
               "tempered": true
-            },
-            {
-              "greater": false,
-              "order": 5,
-              "ref": {
-                "category": "affix",
-                "enUS": "Transfigure",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__transfigure",
-                "sno": null
-              },
-              "tempered": true
             }
           ],
           "aspect": null,
@@ -1061,19 +970,6 @@
                 "sno": 1234186
               },
               "tempered": true
-            },
-            {
-              "greater": false,
-              "order": 5,
-              "ref": {
-                "category": "affix",
-                "enUS": "Transfigure",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__transfigure",
-                "sno": null
-              },
-              "tempered": true
             }
           ],
           "aspect": null,
@@ -1167,19 +1063,6 @@
                 "i18n": "d4companion",
                 "idName": "CooldownReductionCDR;CooldownReductionCDR_UBERUNIQUE;INHERENT_CooldownReductionCDR;INHERENT_Resource_Cost_Reduction_Druid;S04_CooldownReductionCDR;Talisman_Charm_Affix_CooldownReductionCDR;Talisman_Charm_Virtue_Elegance;Talisman_SealAffix_Normal_CooldownCDR;Tempered_Generic_CDR_Tier1;Tempered_Generic_CDR_Tier2;Tempered_Generic_CDR_Tier3;UBERUNIQUE_CooldownReductionCDR_HarlequinCrest;UNIQUE_CooldownReductionCDR_Higher;X2_Transfiguration_CooldownReductionCDR",
                 "sno": 1234186
-              },
-              "tempered": true
-            },
-            {
-              "greater": false,
-              "order": 5,
-              "ref": {
-                "category": "affix",
-                "enUS": "Transfigure",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__transfigure",
-                "sno": null
               },
               "tempered": true
             }
