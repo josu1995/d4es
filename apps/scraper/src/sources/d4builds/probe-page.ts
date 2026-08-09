@@ -60,6 +60,10 @@ export interface PestanaProbe {
   nodosVisor: number;
   /** Cuantos encuentra el selector que usa hoy el extractor. */
   segunElParserActual: number;
+  /** Cuantos encuentra el selector que parece llevar el contenido de verdad. */
+  segunElSelectorReal: number;
+  /** Muestras de ESE selector: es con lo que se escribe el parser nuevo. */
+  muestrasReales: string[];
   clases: Record<string, number>;
   textos: string[];
   muestras: string[];
@@ -98,20 +102,42 @@ export interface ProbeResult {
   detallePestanas?: PestanaProbe[];
 }
 
-/** Pestanas a reconocer, con el selector que usa hoy su extractor. */
+/**
+ * Pestanas a reconocer, con el selector que usa hoy su extractor y el que parece llevar
+ * el contenido de verdad.
+ *
+ * Lo que se descubrio en la ronda anterior:
+ *  - Mercenarios: el extractor de hoy lee `.build__skill__wrapper`, que es la BARRA DE
+ *    HABILIDADES DEL JUGADOR, no el mercenario. El mercenario esta en un arbol DOM
+ *    (`.skill__tree__item`: 57 nodos, 15 cogidos) con el nombre de la habilidad en la
+ *    clase del nodo (`raheirs_aegis`, `iron_wolfs_call`...).
+ *  - Paragon: hay 731 casillas (`.paragon__board__tile`) que no se leen, y el nivel de
+ *    Paragon anda suelto por ahi.
+ */
 const PESTANAS_SONDA = [
-  { nombre: 'Mercenaries', selectorActual: '.build__skill__wrapper, .builder__skill__wrapper' },
-  { nombre: 'Paragon', selectorActual: '.paragon__board' },
+  {
+    nombre: 'Mercenaries',
+    selectorActual: '.build__skill__wrapper, .builder__skill__wrapper',
+    selectorReal: '.skill__tree__item',
+  },
+  { nombre: 'Paragon', selectorActual: '.paragon__board', selectorReal: '.paragon__board__tile' },
 ] as const;
 
 /** Abre una pestana y la describe: que hay, cuanto ve el parser de hoy y que se pierde. */
-async function describirPestana(page: Page, nombre: string, selectorActual: string): Promise<PestanaProbe> {
+async function describirPestana(
+  page: Page,
+  nombre: string,
+  selectorActual: string,
+  selectorReal: string,
+): Promise<PestanaProbe> {
   const boton = page.locator('.builder__navigation__link', { hasText: nombre }).first();
   const vacio: PestanaProbe = {
     nombre,
     abierta: false,
     nodosVisor: 0,
     segunElParserActual: 0,
+    segunElSelectorReal: 0,
+    muestrasReales: [],
     clases: {},
     textos: [],
     muestras: [],
@@ -121,7 +147,7 @@ async function describirPestana(page: Page, nombre: string, selectorActual: stri
   await page.waitForTimeout(2500);
 
   return page.evaluate(
-    ({ nombre, selectorActual }) => {
+    ({ nombre, selectorActual, selectorReal }) => {
       const limpiar = (s: string) => s.replace(/\s+/g, ' ').trim();
       const contenido = document.querySelector('.builder__content') ?? document.body;
 
@@ -150,6 +176,21 @@ async function describirPestana(page: Page, nombre: string, selectorActual: stri
         abierta: true,
         nodosVisor: nodos.length,
         segunElParserActual: document.querySelectorAll(selectorActual).length,
+        segunElSelectorReal: document.querySelectorAll(selectorReal).length,
+        // Se cogen de sitios distintos de la lista (no los cuatro primeros, que suelen
+        // ser todos iguales) para ver tambien un nodo cogido y uno sin coger.
+        muestrasReales: (() => {
+          const todos = Array.from(document.querySelectorAll(selectorReal));
+          const idx = [0, 1, Math.floor(todos.length / 3), Math.floor(todos.length / 2), todos.length - 1];
+          const vistos = new Set<number>();
+          const salida: string[] = [];
+          for (const i of idx) {
+            if (i < 0 || i >= todos.length || vistos.has(i)) continue;
+            vistos.add(i);
+            salida.push(todos[i]!.outerHTML.slice(0, 700));
+          }
+          return salida;
+        })(),
         clases: Object.fromEntries(
           Object.entries(clases)
             .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
@@ -159,7 +200,7 @@ async function describirPestana(page: Page, nombre: string, selectorActual: stri
         muestras,
       };
     },
-    { nombre, selectorActual },
+    { nombre, selectorActual, selectorReal },
   );
 }
 
@@ -317,15 +358,19 @@ export async function probeBuildPage(buildId: string, variante = 0): Promise<Pro
     // cada una monta lo suyo al pulsarla, asi que el orden importa.
     const detallePestanas: PestanaProbe[] = [];
     for (const p of PESTANAS_SONDA) {
-      detallePestanas.push(await describirPestana(page, p.nombre, p.selectorActual).catch(() => ({
-        nombre: p.nombre,
-        abierta: false,
-        nodosVisor: 0,
-        segunElParserActual: 0,
-        clases: {},
-        textos: [],
-        muestras: [],
-      })));
+      detallePestanas.push(
+        await describirPestana(page, p.nombre, p.selectorActual, p.selectorReal).catch(() => ({
+          nombre: p.nombre,
+          abierta: false,
+          nodosVisor: 0,
+          segunElParserActual: 0,
+          segunElSelectorReal: 0,
+          muestrasReales: [],
+          clases: {},
+          textos: [],
+          muestras: [],
+        })),
+      );
     }
 
     const warPlans = await describirWarPlans(page).catch(() => undefined);
@@ -349,7 +394,7 @@ export async function runProbe(buildIds: string[]): Promise<void> {
     for (const p of res.detallePestanas ?? []) {
       process.stdout.write(
         `  ${p.nombre}: ${p.abierta ? 'abierta' : 'NO se abrio'} | nodos de visor: ${p.nodosVisor} | ` +
-          `lo que ve el parser de hoy: ${p.segunElParserActual}
+          `lo que ve el parser de hoy: ${p.segunElParserActual} | el selector real: ${p.segunElSelectorReal}
 `,
       );
     }
