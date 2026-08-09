@@ -23,7 +23,9 @@ import { extraerPlanesDeGuerra, type PlanGuerraRaw } from './warplans.js';
  *     .dropdown__button__tempering         marca de templado
  *     .greater__affix__button--filled      estrella de afijo superior
  *
- * Las pestanas distintas de la primera se montan AL PULSARLAS, de ahi los clics.
+ * Las pestanas distintas de la primera se montan AL PULSARLAS, de ahi los clics. Los
+ * planes de guerra van mas alla: cada una de sus SIETE solapas de actividad se monta al
+ * pulsar la suya, y su extractor vive aparte, en `warplans.ts`.
  *
  * La pestana "Notes" NO se extrae a proposito: es el texto de la guia escrito por su
  * autor. Copiarlo seria apropiarse de su trabajo; enlazamos al original y punto.

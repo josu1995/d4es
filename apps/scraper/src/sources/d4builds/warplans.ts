@@ -46,6 +46,14 @@ export interface NodoPlanRaw {
   y: number | null;
 }
 
+/** Una arista del arbol: la fuente la pinta como un <path d="M x1 y1 L x2 y2">. */
+export interface AristaPlanRaw {
+  x1: number;
+  y1: number;
+  x2: number;
+  y2: number;
+}
+
 export interface PlanGuerraRaw {
   /** Nombre de la actividad en ingles, del alt del icono de la solapa. */
   actividad: string;
@@ -55,13 +63,17 @@ export interface PlanGuerraRaw {
   /** Puntos sin gastar que publica la cabecera de esa solapa. */
   restantes: number | null;
   nodos: NodoPlanRaw[];
+  /** Aristas entre nodos, en las mismas coordenadas que `x`/`y` de los nodos. */
+  lineas: AristaPlanRaw[];
 }
 
 /** Espera tras pulsar una solapa: el arbol se vuelve a montar entero. */
 const ESPERA_SOLAPA_MS = 1000;
 
-/** Lee los nodos de la solapa que este activa en ese momento. */
-async function leerSolapaActiva(page: Page): Promise<{ restantes: number | null; nodos: NodoPlanRaw[] }> {
+/** Lee los nodos y las aristas de la solapa que este activa en ese momento. */
+async function leerSolapaActiva(
+  page: Page,
+): Promise<{ restantes: number | null; nodos: NodoPlanRaw[]; lineas: AristaPlanRaw[] }> {
   return page.evaluate(() => {
     const limpiar = (s: string) => s.replace(/\s+/g, ' ').trim();
     const fichero = (src: string) => {
@@ -93,7 +105,22 @@ async function leerSolapaActiva(page: Page): Promise<{ restantes: number | null;
       };
     });
 
-    return { restantes, nodos };
+    // Las aristas van en un <svg class="viewer-lines"> con dos trazos por linea (base y
+    // relleno), en las MISMAS coordenadas que el left/top de los nodos. Se deduplican.
+    const vistas = new Set<string>();
+    const lineas: AristaPlanRaw[] = [];
+    for (const p of Array.from(document.querySelectorAll('.viewer-lines path'))) {
+      const d = p.getAttribute('d') ?? '';
+      const m = d.match(/^\s*M\s*(-?[\d.]+)[\s,]+(-?[\d.]+)\s*L\s*(-?[\d.]+)[\s,]+(-?[\d.]+)\s*$/);
+      if (!m) continue;
+      const [x1, y1, x2, y2] = [Math.round(+m[1]!), Math.round(+m[2]!), Math.round(+m[3]!), Math.round(+m[4]!)];
+      const clave = `${x1},${y1},${x2},${y2}`;
+      if (vistas.has(clave)) continue;
+      vistas.add(clave);
+      lineas.push({ x1, y1, x2, y2 });
+    }
+
+    return { restantes, nodos, lineas };
   });
 }
 
@@ -125,8 +152,8 @@ export async function extraerPlanesDeGuerra(page: Page): Promise<PlanGuerraRaw[]
       return { actividad: img?.alt ?? '', slug: m?.[1] ?? '', icono: src || null };
     });
 
-    const { restantes, nodos } = await leerSolapaActiva(page);
-    planes.push({ ...cabecera, restantes, nodos });
+    const { restantes, nodos, lineas } = await leerSolapaActiva(page);
+    planes.push({ ...cabecera, restantes, nodos, lineas });
   }
 
   return planes;

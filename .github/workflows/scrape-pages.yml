@@ -73,11 +73,15 @@ jobs:
         id: plan
         if: github.event_name == 'push'
         env:
-          TOCADOS: ${{ join(github.event.commits.*.modified, ',') }},${{ join(github.event.commits.*.added, ',') }}
+          # OJO: `join(github.event.commits.*.modified, ',')` NO vale. Al ser un array de
+          # arrays devuelve la cadena vacia, todo push caia en el caso por defecto y la
+          # re-extraccion no se disparaba nunca. `toJSON` si trae las rutas literales.
+          # Se busca la ruta ENTRECOMILLADA para no confundirla con una mencion al fichero
+          # en el mensaje del commit, que en ese volcado tambien viaja.
+          COMMITS: ${{ toJSON(github.event.commits) }}
         run: |
-          echo "Ficheros tocados: $TOCADOS"
-          case "$TOCADOS" in
-            *apps/scraper/src/sources/d4builds/scrape-pages.ts*)
+          case "$COMMITS" in
+            *'"apps/scraper/src/sources/d4builds/scrape-pages.ts"'*)
               echo "El parser cambio: re-extraccion completa." >> "$GITHUB_STEP_SUMMARY"
               echo "modo=scrape" >> "$GITHUB_OUTPUT" ;;
             *)

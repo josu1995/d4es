@@ -247,6 +247,7 @@ const PLAN_SUSURROS = {
   slug: 'whispers',
   icono: 'https://sunderarmor.com/DIABLO4/WarPlans/whispers.png',
   restantes: 4,
+  lineas: [{ x1: 380, y1: 213, x2: 580, y2: 154 }],
   nodos: [
     { clases: ['category', 'unlocked'], iconos: ['category_active', 'category_whispers'], texto: null, x: 580, y: 154 },
     { clases: ['large-circle', 'allocated'], iconos: ['passive_active', 'corrupted_roots'], texto: '1/1', x: 380, y: 213 },
