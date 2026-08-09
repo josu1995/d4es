@@ -68,8 +68,11 @@ const obsoleto = [
       >
         Ver las {indice.count} builds
       </a>
-      <a href="/guias" class="grabado grabado-hover rounded bg-piedra px-5 py-2.5 text-sm">
-        Guías de crafteo y jefes
+      <a href="/guias/crafteo-miticos" class="grabado grabado-hover rounded bg-piedra px-5 py-2.5 text-sm">
+        Cómo conseguir míticos
+      </a>
+      <a href="/guias/jefes" class="grabado grabado-hover rounded bg-piedra px-5 py-2.5 text-sm">
+        Jefes y llaves
       </a>
     </div>
 
@@ -92,6 +95,44 @@ const obsoleto = [
       {
         destacadas.map((b) => (
           <TarjetaBuild build={b} claseEs={claseNombre(b.classId, clasesEs)} />
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-4 py-10 border-t border-grabado">
+    <h2 class="font-titulo text-2xl">Herramientas</h2>
+    <p class="mt-2 text-ceniza max-w-2xl">
+      Lo que no encontrarás en las webs en inglés, porque no está pensado para ti.
+    </p>
+    <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      {
+        [
+          {
+            href: '/objetos',
+            titulo: 'Buscador de objetos',
+            texto: 'Escribe «Shako» o «Abuelo» y encuentra el nombre en el otro idioma. Funciona en los dos sentidos.',
+          },
+          {
+            href: '/guias/crafteo-miticos',
+            titulo: 'Calculadora de míticos',
+            texto: 'Cuántos intentos hacen falta de verdad, y cuál es el peor caso razonable.',
+          },
+          {
+            href: '/glosario',
+            titulo: 'Glosario de jerga',
+            texto: 'GA, uber, mastear, bossear… qué significan y cómo se llaman en tu juego.',
+          },
+          {
+            href: '/herramientas/importar',
+            titulo: 'Traducir una build',
+            texto: 'Pega un enlace de Maxroll y tradúcelo en tu propio navegador.',
+          },
+        ].map((h) => (
+          <a href={h.href} class="grabado grabado-hover rounded-lg bg-piedra p-4 block">
+            <h3 class="font-titulo text-lg text-pergamino">{h.titulo}</h3>
+            <p class="mt-1.5 text-sm text-ceniza">{h.texto}</p>
+          </a>
         ))
       }
     </div>

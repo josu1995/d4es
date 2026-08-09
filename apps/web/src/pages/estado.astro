@@ -1,11 +1,19 @@
 ---
 import Base from '../layouts/Base.astro';
-import { loadIndex, loadEstado, loadCobertura, diasHastaFinDeTemporada } from '../lib/data';
+import { loadIndex, loadEstado, loadCobertura, loadBuilds, diasHastaFinDeTemporada } from '../lib/data';
 
 const indice = loadIndex();
 const estado = loadEstado();
 const cobertura = loadCobertura();
 const dias = diasHastaFinDeTemporada(estado, new Date());
+
+// Cuánto de cada ficha está realmente relleno. Es el dato que de verdad importa y el que
+// más fácil sería maquillar, así que se calcula de los datos publicados, no a mano.
+const builds = loadBuilds();
+const conEquipo = builds.filter((b) => b.variants.some((v) => v.completeness.hasGear)).length;
+const conParagon = builds.filter((b) => b.variants.some((v) => v.completeness.hasParagon)).length;
+const conMercenario = builds.filter((b) => b.variants.some((v) => v.completeness.hasMercenary)).length;
+const pct = (n: number) => (builds.length === 0 ? 0 : Math.round((n / builds.length) * 100));
 
 const fecha = (iso: string) =>
   new Date(iso).toLocaleString('es-ES', { dateStyle: 'long', timeStyle: 'short' });
@@ -80,10 +88,44 @@ const pendientes = cobertura
           <dd>d4builds.gg (catálogo público)</dd>
         </div>
       </dl>
-      <p class="mt-4 text-sm text-ceniza">
-        Hoy solo tenemos <strong>habilidades y runas</strong>: el catálogo público de la fuente no incluye
-        equipo ni Paragón. Cada ficha lo dice y enlaza a la guía original del autor.
+      <h3 class="mt-5 font-titulo text-lg">Qué tiene rellena cada ficha</h3>
+      <p class="mt-1 text-sm text-ceniza">
+        Las habilidades salen del catálogo público, que es un solo fichero. El equipo y el Paragón hay que
+        sacarlos de la página de cada build, una a una y con un navegador de verdad, así que van por lotes
+        y tardan.
       </p>
+      <dl class="mt-3 space-y-2 text-sm">
+        <div class="flex gap-3">
+          <dt class="w-44 shrink-0 text-humo">Habilidades</dt>
+          <dd>{builds.length} de {builds.length} <span class="text-humo">(100%)</span></dd>
+        </div>
+        <div class="flex gap-3">
+          <dt class="w-44 shrink-0 text-humo">Equipo y aspectos</dt>
+          <dd>
+            {conEquipo} de {builds.length} <span class="text-humo">({pct(conEquipo)}%)</span>
+          </dd>
+        </div>
+        <div class="flex gap-3">
+          <dt class="w-44 shrink-0 text-humo">Tableros de Paragón</dt>
+          <dd>
+            {conParagon} de {builds.length} <span class="text-humo">({pct(conParagon)}%)</span>
+          </dd>
+        </div>
+        <div class="flex gap-3">
+          <dt class="w-44 shrink-0 text-humo">Mercenarios</dt>
+          <dd>
+            {conMercenario} de {builds.length} <span class="text-humo">({pct(conMercenario)}%)</span>
+          </dd>
+        </div>
+      </dl>
+      {
+        conEquipo < builds.length && (
+          <p class="mt-4 rounded border border-oro-apagado/40 bg-oro/5 p-3 text-sm text-ceniza">
+            Las fichas a las que aún les falta el equipo lo dicen en su propia página y enlazan a la guía
+            original, en vez de aparentar que la build no lleva objetos.
+          </p>
+        )
+      }
     </section>
 
     {
