@@ -105,6 +105,8 @@ async function cmdScrapePages(): Promise<number> {
   const forzar = args.includes('--forzar');
   const limiteArg = args.find((a) => a.startsWith('--limite='));
   const limite = limiteArg ? Number(limiteArg.split('=')[1]) : Infinity;
+  const minutosArg = args.find((a) => a.startsWith('--minutos='));
+  const minutos = minutosArg ? Number(minutosArg.split('=')[1]) : 90;
   const explicitos = args.filter((a) => !a.startsWith('-'));
 
   let ids: string[] = explicitos;
@@ -117,11 +119,13 @@ async function cmdScrapePages(): Promise<number> {
     return EXIT.error;
   }
 
-  process.stdout.write(`Extrayendo ${ids.length} paginas de build...\n`);
-  const resumen = await runScrapePages(ids, { forzar });
+  process.stdout.write(`Extrayendo ${ids.length} paginas de build (presupuesto ${minutos} min)...\n`);
+  const resumen = await runScrapePages(ids, { forzar, minutos });
   process.stdout.write(
     `\n${resumen.total} paginas | equipo: ${resumen.conEquipo} | paragon: ${resumen.conParagon} | ` +
-      `arbol: ${resumen.conArbol} | mercenarios: ${resumen.conMercenarios} | fallos: ${resumen.fallos.length}\n`,
+      `arbol: ${resumen.conArbol} | mercenarios: ${resumen.conMercenarios} | fallos: ${resumen.fallos.length}` +
+      (resumen.pendientes > 0 ? ` | PENDIENTES: ${resumen.pendientes}` : '') +
+      '\n',
   );
   // Los fallos no tumban el workflow: se anotan y se reintentan en la siguiente pasada.
   return EXIT.ok;

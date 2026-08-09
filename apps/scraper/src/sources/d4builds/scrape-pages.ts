@@ -31,8 +31,10 @@ import { stableStringify } from '../../util/stable-json.js';
 const BASE = 'https://d4builds.gg/builds';
 const UA = 'd4es-bot/0.1 (+https://github.com/josu1995/d4es; proyecto personal de fans)';
 
-/** Pausa entre paginas. No hay prisa: el cron tiene horas por delante. */
-const PAUSA_MS = 1500;
+/** Pausa entre paginas. No hay prisa, pero tampoco hace falta ser lentos. */
+const PAUSA_MS = 1200;
+/** Espera tras pulsar una pestana, que se monta por JS. */
+const ESPERA_PESTANA_MS = 1800;
 
 export interface Engarce {
   nombre: string;
@@ -113,7 +115,7 @@ async function abrirPestana(page: Page, nombre: string): Promise<boolean> {
   const boton = page.locator('.builder__navigation__link', { hasText: nombre }).first();
   if ((await boton.count()) === 0) return false;
   await boton.click({ timeout: 15_000 }).catch(() => {});
-  await page.waitForTimeout(2500);
+  await page.waitForTimeout(ESPERA_PESTANA_MS);
   return true;
 }
 
@@ -313,10 +315,15 @@ export interface ResumenScrape {
   conParagon: number;
   conArbol: number;
   conMercenarios: number;
+  pendientes: number;
+  agotadoElTiempo: boolean;
   fallos: { buildId: string; error: string }[];
 }
 
-export async function runScrapePages(buildIds: string[], opciones: { forzar: boolean }): Promise<ResumenScrape> {
+export async function runScrapePages(
+  buildIds: string[],
+  opciones: { forzar: boolean; minutos: number },
+): Promise<ResumenScrape> {
   const dir = join(PATHS.raw, 'd4builds', 'pages');
   await mkdir(dir, { recursive: true });
 
@@ -326,12 +333,25 @@ export async function runScrapePages(buildIds: string[], opciones: { forzar: boo
     conParagon: 0,
     conArbol: 0,
     conMercenarios: 0,
+    pendientes: 0,
+    agotadoElTiempo: false,
     fallos: [],
   };
+
+  // Presupuesto de tiempo: al agotarse se sale limpiamente para que el workflow llegue
+  // a publicar lo extraido. El checkpoint hace que la siguiente pasada continue donde
+  // esta se quedo, en vez de empezar de cero.
+  const limite = Date.now() + opciones.minutos * 60_000;
 
   const browser = await chromium.launch();
   try {
     for (const buildId of buildIds) {
+      if (Date.now() > limite) {
+        resumen.agotadoElTiempo = true;
+        resumen.pendientes = buildIds.length - resumen.total;
+        process.stdout.write(`\nPresupuesto de ${opciones.minutos} min agotado; quedan ${resumen.pendientes}.\n`);
+        break;
+      }
       const destino = join(dir, `${buildId}.json`);
       // Checkpoint: si ya esta, no se vuelve a pedir. Asi el workflow puede ir por
       // lotes sin repetir trabajo ni castigar al origen.

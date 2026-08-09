@@ -33,7 +33,9 @@ permissions:
 jobs:
   paginas:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    # Generoso a proposito: son ~92 paginas con varias pestanas cada una. El scraper
+    # lleva su propio presupuesto de tiempo mas corto para salir limpiamente y publicar.
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
 
