@@ -111,6 +111,8 @@ export const CuratedEntry = z.object({
   category: z.string().min(1),
   idName: z.string().min(1).optional(),
   sno: z.number().int().positive().nullable().optional(),
+  /** Descripcion en castellano, tal como la publica la ficha de la fuente. */
+  desc: z.string().min(1).optional(),
   source: z.enum(['wowhead-es', 'curated']),
   sourceUrl: z.string().url(),
   verifiedAt: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),

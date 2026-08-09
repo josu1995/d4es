@@ -172,6 +172,31 @@ async function cmdSkillsWowhead(): Promise<number> {
 }
 
 /**
+ * Rellena las DESCRIPCIONES en castellano de las habilidades ya cosechadas: la ficha ES
+ * de Wowhead ya se descargaba entera para las mejoras y la descripcion se tiraba. Solo
+ * pide las habilidades con SNO conocido; el resto sigue en ingles con su distintivo.
+ */
+async function cmdSkillsDesc(): Promise<number> {
+  const { cosecharDescripcionesEs } = await import('./sources/wowhead/skill-desc-es.js');
+  const arg = process.argv.slice(3).find((a) => a.startsWith('--fichas='));
+  const maxFichas = arg ? Number(arg.split('=')[1]) : 200;
+
+  process.stdout.write(`Cosechando descripciones de habilidad en castellano (hasta ${maxFichas} fichas)...\n`);
+  const res = await cosecharDescripcionesEs(maxFichas);
+  process.stdout.write(`\n${res.fichas} fichas pedidas | ${res.nuevas} descripciones nuevas\n`);
+  if (res.descartadas.length > 0) {
+    process.stdout.write(`${res.descartadas.length} descartadas (nombre que no casa o ficha sin bloque):\n`);
+    for (const d of res.descartadas.slice(0, 10)) process.stdout.write(`  ${d}\n`);
+  }
+  if (res.fallos.length > 0) {
+    process.stdout.write(`${res.fallos.length} fallos de peticion (reanudable, vuelve a ejecutar):\n`);
+    for (const f of res.fallos.slice(0, 10)) process.stdout.write(`  ${f}\n`);
+  }
+  process.stdout.write('Ejecuta ahora: i18n:build && normalize\n');
+  return EXIT.ok;
+}
+
+/**
  * Rellena las traducciones de las MEJORAS DE RAMA del arbol, que son el mayor agujero de
  * traduccion del proyecto. Como esas mejoras no llevan identificador propio en la pagina,
  * se emparejan por posicion dentro de la misma ficha y se exige que todas las habilidades
@@ -288,6 +313,7 @@ const COMANDOS: Record<string, () => Promise<number>> = {
   'i18n:build': cmdI18nBuild,
   'i18n:skills:scaffold': cmdSkillsScaffold,
   'i18n:skills:wowhead': cmdSkillsWowhead,
+  'i18n:skills:desc': cmdSkillsDesc,
   'i18n:upgrades:wowhead': cmdUpgradesWowhead,
   'iconos:descargar': cmdIconos,
   'scrape:catalog': cmdScrapeCatalog,

@@ -46,6 +46,8 @@ export interface EntradaCurada {
   category: string;
   idName?: string;
   sno?: number | null;
+  /** Descripcion en castellano de la misma ficha (la recoge i18n:skills:desc). */
+  desc?: string;
   source: 'wowhead-es' | 'curated';
   sourceUrl: string;
   verifiedAt: string;

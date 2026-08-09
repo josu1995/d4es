@@ -133,6 +133,7 @@ export async function buildDictionary(opts: {
         category: e.category,
         en: e.en,
         es: e.es,
+        ...(e.desc ? { desc: e.desc } : {}),
         source: e.source,
       };
       byIdName[`${e.category}:${item.idName}`] = item;
