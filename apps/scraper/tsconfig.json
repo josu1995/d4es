@@ -2,7 +2,9 @@
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "outDir": "./dist",
-    "rootDir": "./src"
+    "rootDir": "./src",
+    // DOM porque los callbacks de page.evaluate() se ejecutan dentro del navegador.
+    "lib": ["ES2023", "DOM"]
   },
   "include": ["src/**/*.ts"],
   "exclude": ["src/**/*.test.ts"],

@@ -1,0 +1,85 @@
+name: Paginas de build (Playwright)
+
+# El equipo y el Paragon solo existen en la pagina de cada build, montada por JavaScript.
+# Desde la red de trabajo d4builds esta bloqueado, asi que este workflow es el unico sitio
+# donde se puede ejecutar el navegador: se dispara con cada push al scraper y devuelve el
+# resultado commiteado, que es como se itera sobre los parsers.
+
+on:
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: 'probe (reconocimiento del DOM) o scrape (extraccion real)'
+        required: false
+        default: 'probe'
+      objetivo:
+        description: 'uuid de build concreto (vacio = el de referencia / todas)'
+        required: false
+        default: ''
+  push:
+    branches: [main]
+    paths:
+      - 'apps/scraper/src/sources/d4builds/probe-page.ts'
+      - 'apps/scraper/src/sources/d4builds/scrape-pages.ts'
+      - '.github/workflows/scrape-pages.yml'
+
+concurrency:
+  group: scrape-pages
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  paginas:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci --no-audit --no-fund
+
+      - name: Instalar Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Compilar paquetes
+        run: npm run build:pkgs
+
+      - name: Ejecutar
+        id: ejecutar
+        run: |
+          set +e
+          MODO="${{ github.event.inputs.modo || 'probe' }}"
+          if [ "$MODO" = "scrape" ]; then
+            node apps/scraper/dist/cli.js scrape:pages ${{ github.event.inputs.objetivo }}
+          else
+            node apps/scraper/dist/cli.js probe:page ${{ github.event.inputs.objetivo }}
+          fi
+          echo "codigo=$?" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: Publicar resultado
+        run: |
+          if [ -z "$(git status --porcelain data/)" ]; then
+            echo "Sin cambios que publicar."
+            exit 0
+          fi
+          git config user.name "d4es-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/
+          # [skip netlify] porque estos commits son de depuracion, no contenido publicable.
+          git commit -m "paginas: resultado de ${{ github.event.inputs.modo || 'probe' }} (run ${{ github.run_id }}) [skip netlify]"
+          git pull --rebase --autostash
+          git push
+
+      - name: Resumen
+        if: always()
+        run: |
+          echo "### Resultado" >> "$GITHUB_STEP_SUMMARY"
+          echo "Codigo de salida: ${{ steps.ejecutar.outputs.codigo }}" >> "$GITHUB_STEP_SUMMARY"
+          ls -la data/reports/probe 2>/dev/null | head -20 >> "$GITHUB_STEP_SUMMARY" || true

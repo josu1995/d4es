@@ -74,6 +74,27 @@ async function cmdSkillsScaffold(): Promise<number> {
   return EXIT.ok;
 }
 
+/**
+ * Sonda de reconocimiento del DOM de una pagina de build. Solo se puede ejecutar donde
+ * d4builds sea alcanzable y haya navegador (en la practica: GitHub Actions).
+ */
+async function cmdProbePage(): Promise<number> {
+  const { runProbe } = await import('./sources/d4builds/probe-page.js');
+  const ids = process.argv.slice(3).filter((a) => !a.startsWith('-'));
+  if (ids.length === 0) {
+    // Por defecto, una build endgame con equipo completo y otra de subida de nivel.
+    const indice = await readJsonIfExists<{ builds: { id: string }[] }>(PATHS.buildIndex);
+    const porDefecto = ['ddaaaed4-6f3b-4c97-b65b-55b04aa2ae39'];
+    if (!indice) {
+      process.stderr.write('No hay indice; usando la build de referencia.\n');
+    }
+    await runProbe(porDefecto);
+    return EXIT.ok;
+  }
+  await runProbe(ids);
+  return EXIT.ok;
+}
+
 async function cmdScrapeCatalog(): Promise<number> {
   process.stdout.write('Descargando el catalogo de d4builds...\n');
   const informe = await scrapeD4BuildsCatalog({ now: new Date() });
@@ -137,6 +158,7 @@ const COMANDOS: Record<string, () => Promise<number>> = {
   'i18n:build': cmdI18nBuild,
   'i18n:skills:scaffold': cmdSkillsScaffold,
   'scrape:catalog': cmdScrapeCatalog,
+  'probe:page': cmdProbePage,
   normalize: cmdNormalize,
   correlate: cmdCorrelate,
   verify: cmdVerify,
