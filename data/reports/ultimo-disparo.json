@@ -1,7 +1,7 @@
 {
   "evento": "push",
-  "run": "31305641958",
-  "base": "1e9e52b9338b85131d6f641665c4464a98701bf3",
-  "modo": "scrape",
-  "ficheros": [".github/workflows/scrape-pages.yml","apps/scraper/src/sources/d4builds/warplans.ts"]
+  "run": "31319788399",
+  "base": "7cc4d34a9ed1f2bc783b1c90085c5bc14ac57f5e",
+  "modo": "probe",
+  "ficheros": ["apps/scraper/src/sources/d4builds/probe-page.ts"]
 }
