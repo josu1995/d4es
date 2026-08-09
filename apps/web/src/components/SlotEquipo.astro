@@ -1,6 +1,6 @@
 ---
 import type { GearItem } from '@d4es/schema';
-import { iconoUnico, iconoAspecto, COLOR_CALIDAD } from '../lib/iconos';
+import { iconoUnico, COLOR_CALIDAD } from '../lib/iconos';
 import { loadDiccionario } from '../lib/data';
 
 /**
@@ -23,7 +23,8 @@ const nombre = principal ? (principal.esES ?? principal.enUS) : 'Vacío';
 const sinTraducir = principal ? principal.esES === null : false;
 const colorNombre = item.mythic.isMythic ? 'text-rareza-mitico' : (COLOR_CALIDAD[item.quality] ?? 'text-rareza-normal');
 
-const icono = item.item ? iconoUnico(item.item.enUS) : item.aspect ? iconoAspecto(item.aspect.enUS) : null;
+// Solo los unicos tienen icono propio en el CDN; los aspectos se pintan sin el.
+const icono = item.item ? iconoUnico(item.item.enUS) : null;
 
 // Descripcion del poder del unico o del aspecto, en castellano, para el tooltip.
 const claveDesc = item.item

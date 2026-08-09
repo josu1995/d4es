@@ -25,13 +25,14 @@ export function iconoUnico(nombreEn: string): string {
   return `${CDN}/Uniques/2/${skillIconSlug(nombreEn)}.png`;
 }
 
-/** Los aspectos viven en la carpeta del Codice de Poder. */
-export function iconoAspecto(nombreEn: string): string {
-  return `${CDN}/Codex/${skillIconSlug(nombreEn)}.png`;
-}
-
-export function iconoRuna(nombreEn: string): string {
-  return `${CDN}/Runes/${skillIconSlug(nombreEn)}.png`;
+/**
+ * Los aspectos NO tienen icono propio en el CDN: la carpeta Codex solo trae iconos de
+ * categoria (offensive, defensive, utility) y no sabemos a cual pertenece cada aspecto.
+ * Devolver null evita cientos de peticiones rotas por pagina; la pieza se pinta igual
+ * con su nombre y sus afijos, que es lo que se lee de verdad.
+ */
+export function iconoAspecto(): null {
+  return null;
 }
 
 /** Color del nombre segun la calidad, como en el juego. */
