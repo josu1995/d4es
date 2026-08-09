@@ -1,0 +1,167 @@
+{
+  "_nota": [
+    "Miticos 3.0 (parche 3.1.0, temporada 14). El cambio conceptual: 'mitico' dejo de ser",
+    "una rareza y paso a ser una CALIDAD que casi cualquier unico puede alcanzar.",
+    "",
+    "Hay TRES vias distintas y la gente las confunde constantemente:",
+    "  cubo    -> mitico ALEATORIO de la misma ranura (barato pero es loteria)",
+    "  joyero  -> mitico CONCRETO, el que tu elijas (caro pero dirigido)",
+    "  herrero -> iconico ALEATORIO del conjunto de 13 (otro escalon distinto)",
+    "",
+    "El coste del Joyero esta SIN CONFIRMAR: las fuentes se contradicen entre si y Blizzard",
+    "lo ha ajustado varias veces. Por eso `cantidad` es null: mejor no decir nada que",
+    "decir un numero inventado."
+  ],
+  "recetas": [
+    {
+      "id": "cubo-mitico",
+      "nombre": {
+        "en": "Upgrade to Mythic",
+        "es": "Mejorar a mitico",
+        "verificacion": {
+          "estado": "por-verificar",
+          "fuente": "nombre en castellano no contrastado con el cliente espanol",
+          "fecha": "2026-08-09",
+          "parche": "3.1.2"
+        }
+      },
+      "donde": "cubo-horadrico",
+      "entradas": [
+        {
+          "materialId": "pandemonium-fragment",
+          "cantidad": {
+            "valor": 4,
+            "verificacion": {
+              "estado": "por-verificar",
+              "fuente": "eran 5 al salir la temporada 14; el parche 3.1.1 lo bajo a 4",
+              "fecha": "2026-08-09",
+              "parche": "3.1.2"
+            }
+          },
+          "nota": "Mas oro"
+        }
+      ],
+      "requisitos": [
+        "Un unico de 850 de poder de objeto o mas (se consume)",
+        "Nivel 70",
+        "Tormento I o superior"
+      ],
+      "resultado": "aleatorio-del-slot",
+      "tamanoPool": null,
+      "notas": [
+        "Devuelve un mitico aleatorio de la MISMA ranura: si metes un anillo sale un anillo.",
+        "Como es aleatorio dentro de la ranura, conviene mirar cuantos miticos hay por ranura antes de gastar.",
+        "Queda por confirmar si sigue vigente el limite de llevar un solo mitico crafteado equipado: el parche 3.1.1a pudo quitarlo."
+      ],
+      "verificacion": {
+        "estado": "por-verificar",
+        "fuente": "notas de parche 3.1.1 + Dot Esports + wiki Fextralife (investigacion 8-ago-2026)",
+        "fecha": "2026-08-09",
+        "parche": "3.1.2"
+      }
+    },
+    {
+      "id": "joyero-mitico",
+      "nombre": {
+        "en": "Craft a specific Mythic",
+        "es": "Fabricar un mitico concreto",
+        "verificacion": {
+          "estado": "por-verificar",
+          "fuente": "nombre en castellano no contrastado con el cliente espanol",
+          "fecha": "2026-08-09",
+          "parche": "3.1.2"
+        }
+      },
+      "donde": "joyero",
+      "entradas": [
+        {
+          "materialId": "resplendent-spark",
+          "cantidad": null,
+          "nota": "Cantidad sin confirmar: las fuentes dan 1 o 2 segun cual leas"
+        },
+        {
+          "materialId": "runas-crafteo",
+          "cantidad": null,
+          "nota": "Runas legendarias, raras y magicas; las cantidades tampoco cuadran entre fuentes"
+        }
+      ],
+      "requisitos": ["Requiere la expansion Vessel of Hatred", "Mas oro"],
+      "resultado": "especifico",
+      "tamanoPool": null,
+      "notas": [
+        "Es la unica via para conseguir EL mitico que quieres, sin loteria.",
+        "El coste exacto es el dato pendiente mas importante de esta guia: hasta confirmarlo dentro del juego, aqui no va ninguna cifra."
+      ],
+      "verificacion": {
+        "estado": "por-verificar",
+        "fuente": "fuentes contradictorias (investigacion 8-ago-2026)",
+        "fecha": "2026-08-09",
+        "parche": "3.1.2"
+      }
+    },
+    {
+      "id": "herrero-iconico",
+      "nombre": {
+        "en": "Craft a random Iconic Mythic",
+        "es": "Fabricar un mitico iconico aleatorio",
+        "verificacion": {
+          "estado": "por-verificar",
+          "fuente": "nombre en castellano no contrastado con el cliente espanol",
+          "fecha": "2026-08-09",
+          "parche": "3.1.2"
+        }
+      },
+      "donde": "herrero",
+      "entradas": [
+        {
+          "materialId": "resplendent-spark",
+          "cantidad": {
+            "valor": 2,
+            "verificacion": {
+              "estado": "por-verificar",
+              "fuente": "fuente unica (investigacion 8-ago-2026)",
+              "fecha": "2026-08-09",
+              "parche": "3.1.2"
+            }
+          },
+          "nota": null
+        }
+      ],
+      "requisitos": [],
+      "resultado": "iconico-aleatorio",
+      "tamanoPool": {
+        "valor": 13,
+        "verificacion": {
+          "estado": "por-verificar",
+          "fuente": "la lista de 13 iconicos incluye El'Druin, anadido en Lord of Hatred y sin contrastar",
+          "fecha": "2026-08-09",
+          "parche": "3.1.2"
+        }
+      },
+      "notas": [
+        "Los iconicos son el escalon por encima de los miticos normales y apilan sin limite.",
+        "Al ser aleatorio entre 13, la cuenta que importa no es el coste de un intento sino cuantos hacen falta."
+      ],
+      "verificacion": {
+        "estado": "por-verificar",
+        "fuente": "investigacion 8-ago-2026",
+        "fecha": "2026-08-09",
+        "parche": "3.1.2"
+      }
+    }
+  ],
+  "iconicos": [
+    "The Grandfather",
+    "Harlequin Crest",
+    "Ring of Starless Skies",
+    "Heir of Perdition",
+    "Melted Heart of Selig",
+    "Tyrael's Might",
+    "Shroud of False Death",
+    "Andariel's Visage",
+    "Doombringer",
+    "Shattered Vow",
+    "Ahavarion, Spear of Lycander",
+    "Nesekem, the Herald"
+  ]
+}

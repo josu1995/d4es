@@ -1,0 +1,183 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { loadUnicos, loadContenido, texto, type UnicoFicha } from '../../../lib/contenido';
+import { loadDiccionario } from '../../../lib/data';
+import { iconoUnico } from '../../../lib/iconos';
+
+export function getStaticPaths() {
+  return loadUnicos().map((unico) => ({ params: { slug: unico.slug }, props: { unico } }));
+}
+
+interface Props {
+  unico: UnicoFicha;
+}
+
+const { unico } = Astro.props;
+const dict = loadDiccionario();
+const entrada = dict.byIdName[`unique:${unico.idName}`];
+const descripcion = entrada?.desc ?? null;
+
+const { recetas, materiales } = loadContenido();
+const cubo = recetas.find((r) => r.donde === 'cubo-horadrico');
+const joyero = recetas.find((r) => r.donde === 'joyero');
+const herrero = recetas.find((r) => r.donde === 'herrero');
+const materialPorId = new Map(materiales.map((m) => [m.id, m]));
+
+const fragmentos = cubo?.entradas[0];
+const nombreFragmento = fragmentos ? materialPorId.get(fragmentos.materialId) : null;
+---
+
+<Base
+  titulo={`${unico.es}: qué hace y cómo conseguirlo — Diablo 4 en español`}
+  descripcion={`${unico.es} (${unico.en}) en Diablo 4: su poder único, qué jefe lo suelta y cómo convertirlo en mítico. Temporada 14.`}
+>
+  <article class="mx-auto max-w-3xl px-4 py-10">
+    <nav aria-label="Migas de pan" class="text-xs text-humo">
+      <a href="/objetos" class="hover:text-pergamino">Objetos</a>
+      <span> / </span>
+      <span>Únicos</span>
+    </nav>
+
+    <header class="mt-4 flex items-start gap-4">
+      <img
+        src={iconoUnico(unico.en)}
+        alt=""
+        width="72"
+        height="72"
+        class="h-18 w-18 shrink-0 rounded-lg border border-grabado-vivo bg-abismo object-cover"
+        onerror="this.style.display='none'"
+      />
+      <div class="min-w-0">
+        <h1 class={`font-titulo text-3xl sm:text-4xl ${unico.esIconico ? 'text-rareza-mitico' : 'text-rareza-unico'}`}>
+          {unico.es}
+        </h1>
+        <p class="mt-1 text-sm text-humo">
+          En inglés: <span class="text-ceniza">{unico.en}</span>
+        </p>
+        {
+          unico.esIconico && (
+            <p class="mt-2 inline-block rounded border border-rareza-mitico/50 bg-rareza-mitico/10 px-2 py-0.5 text-xs text-rareza-mitico">
+              Mítico icónico
+            </p>
+          )
+        }
+      </div>
+    </header>
+
+    {
+      descripcion && (
+        <section class="mt-6 grabado rounded-lg bg-piedra p-5">
+          <h2 class="text-xs uppercase tracking-wider text-humo">Poder único</h2>
+          <p class="mt-2 text-pergamino leading-relaxed">{descripcion}</p>
+          <p class="mt-3 text-xs text-humo">
+            La <span class="text-ceniza">X</span> marca un valor que cambia de un objeto a otro. Texto oficial
+            del juego en español.
+          </p>
+        </section>
+      )
+    }
+
+    <section class="mt-6">
+      <h2 class="font-titulo text-2xl">Cómo conseguirlo</h2>
+
+      {
+        unico.jefes.length > 0 ? (
+          <div class="mt-3 grabado rounded-lg bg-piedra p-5">
+            <h3 class="font-titulo text-lg">Farmeando al jefe</h3>
+            <p class="mt-1 text-sm text-ceniza">
+              Está en la tabla de {unico.jefes.length === 1 ? 'este jefe' : 'estos jefes'}. Es la vía dirigida:
+              los únicos normales sí dependen de qué jefe hagas.
+            </p>
+            <ul class="mt-3 space-y-2">
+              {unico.jefes.map((j) => (
+                <li>
+                  <a
+                    href={`/guias/jefes/${j.id}`}
+                    class="grabado grabado-hover flex items-center justify-between rounded bg-abismo px-3 py-2 text-sm"
+                  >
+                    <span>
+                      <span class="text-pergamino">{texto(j.nombre)}</span>
+                      {j.ubicacion && <span class="text-humo"> · {j.ubicacion}</span>}
+                    </span>
+                    <span class="text-humo">→</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : (
+          <div class="mt-3 grabado rounded-lg bg-piedra p-5">
+            <h3 class="font-titulo text-lg">Cayendo del botín general</h3>
+            <p class="mt-1 text-sm text-ceniza">
+              No lo tenemos asociado a ningún jefe concreto en nuestra tabla, así que la vía es el botín normal
+              de cualquier actividad de endgame. Nuestras tablas por jefe están incompletas y pendientes de
+              contrastar dentro del juego: si sabes que este objeto sale de un jefe concreto, es muy posible
+              que aún no lo tengamos anotado.
+            </p>
+          </div>
+        )
+      }
+
+      {
+        unico.esIconico
+          ? herrero && (
+              <div class="mt-3 grabado rounded-lg bg-piedra p-5">
+                <h3 class="font-titulo text-lg">Fabricándolo en el Herrero</h3>
+                <p class="mt-1 text-sm text-ceniza">
+                  Al ser icónico, entra en el sorteo del Herrero: {texto(herrero.nombre)}. Sale uno aleatorio
+                  entre todos los icónicos, así que conviene echar la cuenta de intentos antes de gastar.
+                </p>
+                <a
+                  href="/guias/crafteo-miticos"
+                  class="mt-3 inline-block text-sm underline underline-offset-4 hover:text-pergamino"
+                >
+                  Ver la calculadora de intentos →
+                </a>
+              </div>
+            )
+          : (
+              <div class="mt-3 grabado rounded-lg bg-piedra p-5">
+                <h3 class="font-titulo text-lg">Convirtiéndolo en mítico</h3>
+                <p class="mt-1 text-sm text-ceniza">
+                  Cualquier único puede subir a calidad mítica: siempre ancestral, un 30 % más de poder único y
+                  el resto de afijos al máximo. Hay dos formas:
+                </p>
+                <ul class="mt-3 space-y-2 text-sm">
+                  {cubo && (
+                    <li class="flex gap-2">
+                      <span class="text-humo">·</span>
+                      <span class="text-ceniza">
+                        <strong class="text-pergamino">Cubo Horádrico</strong> — metes un único de 850 de poder
+                        o más y sale un mítico <em>aleatorio de la misma ranura</em>. Cuesta{' '}
+                        {fragmentos?.cantidad?.valor ?? '?'} × {nombreFragmento ? texto(nombreFragmento.nombre) : 'fragmentos'}.
+                      </span>
+                    </li>
+                  )}
+                  {joyero && (
+                    <li class="flex gap-2">
+                      <span class="text-humo">·</span>
+                      <span class="text-ceniza">
+                        <strong class="text-pergamino">Joyero</strong> — la única vía para conseguir
+                        <em> este</em> objeto concreto en calidad mítica, sin azar. El coste exacto está
+                        pendiente de confirmar.
+                      </span>
+                    </li>
+                  )}
+                </ul>
+                <a
+                  href="/guias/crafteo-miticos"
+                  class="mt-3 inline-block text-sm underline underline-offset-4 hover:text-pergamino"
+                >
+                  Guía completa de crafteo de míticos →
+                </a>
+              </div>
+            )
+      }
+    </section>
+
+    <p class="mt-8 text-xs text-humo">
+      Nombre y poder proceden de la localización oficial del juego. La información sobre qué jefe lo suelta es
+      trabajo nuestro y está pendiente de contrastar; puedes ver el detalle en <a class="underline" href="/estado">Estado de los datos</a>.
+    </p>
+  </article>
+</Base>

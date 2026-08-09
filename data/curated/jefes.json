@@ -1,0 +1,318 @@
+{
+  "_nota": [
+    "Jefes de guarida (Lair Bosses) tal como quedaron tras Lord of Hatred.",
+    "",
+    "El cambio grande: ahora se PELEA PRIMERO y despues se gasta una llave para abrir el",
+    "alijo. Toda la informacion anterior a abril de 2026 dice lo contrario (juntar",
+    "materiales antes de invocar), y por eso el campo `ordenCombate` es explicito.",
+    "",
+    "Los nombres de unicos van EN INGLES a proposito: el diccionario oficial del juego los",
+    "traduce solo, asi no se inventa ninguna traduccion aqui.",
+    "",
+    "Las listas de unicos son los 'firma' de cada jefe, NO la tabla completa: por eso",
+    "todas van marcadas como por-verificar hasta contrastarlas dentro del juego."
+  ],
+  "jefes": [
+    {
+      "id": "varshan",
+      "nombre": {
+        "en": "Echo of Varshan",
+        "es": "Eco de Varshan",
+        "verificacion": {
+          "estado": "por-verificar",
+          "fuente": "nombre en castellano no contrastado con el cliente espanol",
+          "fecha": "2026-08-09",
+          "parche": "3.1.2"
+        }
+      },
+      "tier": "initiate",
+      "ubicacion": "Malnok, Estepas Aridas",
+      "llaveRequerida": "lair-key",
+      "sueltaLlave": "greater-lair-key",
+      "ordenCombate": "lucha-luego-alijo",
+      "unicos": ["Shard of Verathiel", "Tal Rasha's Iridescent Loop"],
+      "notas": ["Es el jefe inicial mas accesible y el habitual para empezar la escalera."],
+      "verificacion": {
+        "estado": "por-verificar",
+        "fuente": "Icy Veins Lair Boss System Guide + Game8 (investigacion 8-ago-2026)",
+        "fecha": "2026-08-09",
+        "parche": "3.1.2"
+      }
+    },
+    {
+      "id": "grigoire",
+      "nombre": {
+        "en": "Grigoire, the Galvanic Saint",
+        "es": "Grigoire, el Santo Galvanico",
+        "verificacion": {
+          "estado": "por-verificar",
+          "fuente": "nombre en castellano no contrastado con el cliente espanol",
+          "fecha": "2026-08-09",
+          "parche": "3.1.2"
+        }
+      },
+      "tier": "initiate",
+      "ubicacion": "Camara del Halo, Estepas Aridas",
+      "llaveRequerida": "lair-key",
+      "sueltaLlave": "greater-lair-key",
+      "ordenCombate": "lucha-luego-alijo",
+      "unicos": ["Paingorger's Gauntlets"],
+      "notas": ["Su tabla se inclina hacia los unicos de rayo."],
+      "verificacion": {
+        "estado": "por-verificar",
+        "fuente": "Icy Veins Lair Boss System Guide (investigacion 8-ago-2026)",
+        "fecha": "2026-08-09",
+        "parche": "3.1.2"
+      }
+    },
+    {
+      "id": "beast-in-the-ice",
+      "nombre": {
+        "en": "The Beast in the Ice",
+        "es": "La Bestia en el Hielo",
+        "verificacion": {
+          "estado": "por-verificar",
+          "fuente": "nombre en castellano no contrastado con el cliente espanol",
+          "fecha": "2026-08-09",
+          "parche": "3.1.2"
+        }
+      },
+      "tier": "initiate",
+      "ubicacion": "Guarida Glacial, Fracturados Picos",
+      "llaveRequerida": "lair-key",
+      "sueltaLlave": "greater-lair-key",
+      "ordenCombate": "lucha-luego-alijo",
+      "unicos": ["Signet of Pelghain", "Flickerstep", "Tibault's Will"],
+      "notas": ["Su tabla se inclina hacia los unicos de frio."],
+      "verificacion": {
+        "estado": "por-verificar",
+        "fuente": "Icy Veins Lair Boss System Guide (investigacion 8-ago-2026)",
+        "fecha": "2026-08-09",
+        "parche": "3.1.2"
+      }
+    },
+    {
+      "id": "lord-zir",
+      "nombre": {
+        "en": "Lord Zir",
+        "es": "Lord Zir",
+        "verificacion": {
+          "estado": "verificado",
+          "fuente": "nombre propio identico en ambos idiomas",
+          "fecha": "2026-08-09",
+          "parche": "3.1.2"
+        }
+      },
+      "tier": "initiate",
+      "ubicacion": "Camara Oscura, Hawezar",
+      "llaveRequerida": "lair-key",
+      "sueltaLlave": "greater-lair-key",
+      "ordenCombate": "lucha-luego-alijo",
+      "unicos": ["X'Fal's Corroded Signet"],
+      "notas": ["Su tabla se inclina hacia los unicos de sangre."],
+      "verificacion": {
+        "estado": "por-verificar",
+        "fuente": "Icy Veins Lair Boss System Guide (investigacion 8-ago-2026)",
+        "fecha": "2026-08-09",
+        "parche": "3.1.2"
+      }
+    },
+    {
+      "id": "urivar",
+      "nombre": {
+        "en": "Urivar",
+        "es": "Urivar",
+        "verificacion": {
+          "estado": "verificado",
+          "fuente": "nombre propio identico en ambos idiomas",
+          "fecha": "2026-08-09",
+          "parche": "3.1.2"
+        }
+      },
+      "tier": "initiate",
+      "ubicacion": "Nahantu",
+      "llaveRequerida": "lair-key",
+      "sueltaLlave": "greater-lair-key",
+      "ordenCombate": "lucha-luego-alijo",
+      "unicos": ["Yen's Blessing"],
+      "notas": ["Anadido con Vessel of Hatred; suelta unicos exclusivos de esa expansion."],
+      "verificacion": {
+        "estado": "por-verificar",
+        "fuente": "Icy Veins Lair Boss System Guide (investigacion 8-ago-2026)",
+        "fecha": "2026-08-09",
+        "parche": "3.1.2"
+      }
+    },
+    {
+      "id": "duriel",
+      "nombre": {
+        "en": "Echo of Duriel",
+        "es": "Eco de Duriel",
+        "verificacion": {
+          "estado": "por-verificar",
+          "fuente": "nombre en castellano no contrastado con el cliente espanol",
+          "fecha": "2026-08-09",
+          "parche": "3.1.2"
+        }
+      },
+      "tier": "greater",
+      "ubicacion": "Guarida de la Angustia, Kehjistan",
+      "llaveRequerida": "greater-lair-key",
+      "sueltaLlave": null,
+      "ordenCombate": "lucha-luego-alijo",
+      "unicos": ["Condemnation", "Blue Rose", "Razorplate", "Rod of Kepeleke", "Scourge of Duriel"],
+      "notas": [],
+      "verificacion": {
+        "estado": "por-verificar",
+        "fuente": "Icy Veins + Game8 (investigacion 8-ago-2026)",
+        "fecha": "2026-08-09",
+        "parche": "3.1.2"
+      }
+    },
+    {
+      "id": "andariel",
+      "nombre": {
+        "en": "Echo of Andariel",
+        "es": "Eco de Andariel",
+        "verificacion": {
+          "estado": "por-verificar",
+          "fuente": "nombre en castellano no contrastado con el cliente espanol",
+          "fecha": "2026-08-09",
+          "parche": "3.1.2"
+        }
+      },
+      "tier": "greater",
+      "ubicacion": "Guarida de la Angustia, Kehjistan",
+      "llaveRequerida": "greater-lair-key",
+      "sueltaLlave": null,
+      "ordenCombate": "lucha-luego-alijo",
+      "unicos": [
+        "Godslayer Crown",
+        "Hellhammer",
+        "Insatiable Fury",
+        "Lidless Wall",
+        "Beastfall Boots",
+        "Soulbrand"
+      ],
+      "notas": [],
+      "verificacion": {
+        "estado": "por-verificar",
+        "fuente": "Icy Veins + Game8 (investigacion 8-ago-2026)",
+        "fecha": "2026-08-09",
+        "parche": "3.1.2"
+      }
+    },
+    {
+      "id": "harbinger-of-hatred",
+      "nombre": {
+        "en": "Harbinger of Hatred",
+        "es": "Heraldo del Odio",
+        "verificacion": {
+          "estado": "por-verificar",
+          "fuente": "nombre en castellano no contrastado con el cliente espanol",
+          "fecha": "2026-08-09",
+          "parche": "3.1.2"
+        }
+      },
+      "tier": "greater",
+      "ubicacion": "Nahantu",
+      "llaveRequerida": "greater-lair-key",
+      "sueltaLlave": null,
+      "ordenCombate": "lucha-luego-alijo",
+      "unicos": ["Paingorger's Gauntlets", "Locran's Talisman"],
+      "notas": ["Anadido con Vessel of Hatred."],
+      "verificacion": {
+        "estado": "por-verificar",
+        "fuente": "Icy Veins Lair Boss System Guide (investigacion 8-ago-2026)",
+        "fecha": "2026-08-09",
+        "parche": "3.1.2"
+      }
+    },
+    {
+      "id": "the-butcher",
+      "nombre": {
+        "en": "The Butcher",
+        "es": "El Carnicero",
+        "verificacion": {
+          "estado": "por-verificar",
+          "fuente": "nombre en castellano no contrastado con el cliente espanol",
+          "fecha": "2026-08-09",
+          "parche": "3.1.2"
+        }
+      },
+      "tier": "greater",
+      "ubicacion": "Aparicion aleatoria en mazmorras",
+      "llaveRequerida": "greater-lair-key",
+      "sueltaLlave": null,
+      "ordenCombate": "lucha-luego-alijo",
+      "unicos": [],
+      "notas": ["No se busca: te encuentra el. Aparece de forma aleatoria mientras exploras."],
+      "verificacion": {
+        "estado": "por-verificar",
+        "fuente": "Icy Veins Lair Boss System Guide (investigacion 8-ago-2026)",
+        "fecha": "2026-08-09",
+        "parche": "3.1.2"
+      }
+    },
+    {
+      "id": "belial",
+      "nombre": {
+        "en": "Belial, Lord of Lies",
+        "es": "Belial, Senor de las Mentiras",
+        "verificacion": {
+          "estado": "por-verificar",
+          "fuente": "nombre en castellano no contrastado con el cliente espanol",
+          "fecha": "2026-08-09",
+          "parche": "3.1.2"
+        }
+      },
+      "tier": "exalted",
+      "ubicacion": "Palacio del Enganador",
+      "llaveRequerida": null,
+      "sueltaLlave": null,
+      "ordenCombate": "lucha-luego-alijo",
+      "unicos": [],
+      "notas": [
+        "Al abrir su alijo ELIGES de que tabla de otro jefe quieres tirar. Es la unica forma de dirigir el botin.",
+        "Tambien tiene mayor probabilidad de afijos superiores y de miticos.",
+        "La llave exacta que pide no esta confirmada: es el dato que falta por cerrar de este sistema."
+      ],
+      "verificacion": {
+        "estado": "por-verificar",
+        "fuente": "fuentes contradictorias sobre su llave; la mecanica de elegir tabla si es consistente",
+        "fecha": "2026-08-09",
+        "parche": "3.1.2"
+      }
+    },
+    {
+      "id": "corrupted-reaper",
+      "nombre": {
+        "en": "The Corrupted Reaper",
+        "es": "El Segador Corrupto",
+        "verificacion": {
+          "estado": "por-verificar",
+          "fuente": "nombre en castellano no contrastado con el cliente espanol",
+          "fecha": "2026-08-09",
+          "parche": "3.1.2"
+        }
+      },
+      "tier": "estacional",
+      "ubicacion": "Umbral de Pandemonium, Zarbinzet (sur de Hawezar)",
+      "llaveRequerida": "superior-lair-key",
+      "sueltaLlave": null,
+      "ordenCombate": "lucha-luego-alijo",
+      "unicos": [],
+      "notas": [
+        "Jefe de la temporada 14. Es la mayor probabilidad de mitico directo del juego.",
+        "Su alijo suelta ademas 1-2 Fragmentos de Pandemonium, que es el material del Cubo.",
+        "Requiere Tormento I o superior."
+      ],
+      "verificacion": {
+        "estado": "por-verificar",
+        "fuente": "notas de parche 3.1.1 + Icy Veins (investigacion 8-ago-2026)",
+        "fecha": "2026-08-09",
+        "parche": "3.1.2"
+      }
+    }
+  ]
+}

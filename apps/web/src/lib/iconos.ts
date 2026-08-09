@@ -20,6 +20,11 @@ export function iconoClase(classId: string): string {
   return `${CDN}/Classes/2/${classId}.png`;
 }
 
+/** Patron verificado en el DOM real: Uniques/2/tuskhelm_of_joritz_the_mighty.png */
+export function iconoUnico(nombreEn: string): string {
+  return `${CDN}/Uniques/2/${skillIconSlug(nombreEn)}.png`;
+}
+
 /** Colores por categoria de habilidad, alineados con la jerarquia visual del juego. */
 export const COLOR_CATEGORIA: Record<string, string> = {
   Basic: 'var(--color-ceniza)',

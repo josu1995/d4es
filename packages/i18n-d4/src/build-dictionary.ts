@@ -10,6 +10,7 @@ import {
   type CompanionRow,
   type Dictionary,
   type DictionaryEntry,
+  limpiarLocalisation,
   normalizeName,
 } from './types.js';
 
@@ -30,7 +31,11 @@ function claveDe(fila: CompanionRow, spec: CompanionFileSpec): string | null {
 
 /** Texto que se pinta. En los afijos es la descripcion, porque no tienen nombre. */
 function textoDe(fila: CompanionRow, spec: CompanionFileSpec): string | null {
-  const v = fila[spec.nameField];
+  return textoDeCampo(fila, spec.nameField);
+}
+
+function textoDeCampo(fila: CompanionRow, campo: string): string | null {
+  const v = fila[campo];
   return typeof v === 'string' && v.trim() !== '' ? v.trim() : null;
 }
 
@@ -92,12 +97,20 @@ export async function buildDictionary(opts: {
       // Sin el nombre en ingles no se puede casar lo que publica la fuente: se descarta.
       if (!nombreEn) continue;
 
+      // Se prefiere `Localisation` (conserva los valores) y se cae a DescriptionClean.
+      const localisation = textoDeCampo(fila, 'Localisation');
+      const desc = spec.descField
+        ? localisation
+          ? limpiarLocalisation(localisation)
+          : textoDeCampo(fila, spec.descField)
+        : null;
       const item: DictionaryEntry = {
         idName: clave,
         sno: snoOf(fila['IdSno']),
         category,
         en: nombreEn,
         es: nombreEs,
+        ...(desc ? { desc } : {}),
         source: 'd4companion',
       };
       byIdName[`${category}:${clave}`] = item;

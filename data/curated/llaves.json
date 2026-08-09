@@ -1,0 +1,87 @@
+{
+  "_nota": [
+    "Llaves de guarida. Lord of Hatred las unifico: antes cada jefe pedia su propio",
+    "material (Corazones Malignos, Acero Vivo, Miedo Destilado, Sangre Exquisita) y ahora",
+    "todos los iniciales comparten una llave y todos los mayores comparten otra.",
+    "",
+    "La gracia del sistema: cada jefe inicial suelta una llave de mayor, asi que farmear",
+    "el escalon de abajo alimenta el de arriba."
+  ],
+  "llaves": [
+    {
+      "id": "lair-key",
+      "nombre": {
+        "en": "Lair Key",
+        "es": "Llave de guarida",
+        "verificacion": {
+          "estado": "por-verificar",
+          "fuente": "nombre en castellano no contrastado con el cliente espanol",
+          "fecha": "2026-08-09",
+          "parche": "3.1.2"
+        }
+      },
+      "abre": ["varshan", "grigoire", "beast-in-the-ice", "lord-zir", "urivar"],
+      "seObtieneEn": [
+        "Planes de guerra",
+        "Mazmorras de Pesadilla",
+        "Marea Infernal",
+        "Ciudad Baja de Kurast",
+        "Arbol de los Susurros",
+        "Alijos de otros jefes"
+      ],
+      "verificacion": {
+        "estado": "por-verificar",
+        "fuente": "Icy Veins Lair Boss System Guide (investigacion 8-ago-2026)",
+        "fecha": "2026-08-09",
+        "parche": "3.1.2"
+      }
+    },
+    {
+      "id": "greater-lair-key",
+      "nombre": {
+        "en": "Greater Lair Key",
+        "es": "Llave de guarida mayor",
+        "verificacion": {
+          "estado": "por-verificar",
+          "fuente": "nombre en castellano no contrastado con el cliente espanol",
+          "fecha": "2026-08-09",
+          "parche": "3.1.2"
+        }
+      },
+      "abre": ["duriel", "andariel", "harbinger-of-hatred", "the-butcher"],
+      "seObtieneEn": [
+        "Alijo de cada jefe inicial (1 por muerte): es su unica fuente practica"
+      ],
+      "verificacion": {
+        "estado": "por-verificar",
+        "fuente": "Icy Veins + Game8 (investigacion 8-ago-2026)",
+        "fecha": "2026-08-09",
+        "parche": "3.1.2"
+      }
+    },
+    {
+      "id": "superior-lair-key",
+      "nombre": {
+        "en": "Superior Lair Key",
+        "es": "Llave de guarida superior",
+        "verificacion": {
+          "estado": "por-verificar",
+          "fuente": "nombre en castellano no contrastado con el cliente espanol",
+          "fecha": "2026-08-09",
+          "parche": "3.1.2"
+        }
+      },
+      "abre": ["corrupted-reaper"],
+      "seObtieneEn": [
+        "Camaras del Doblar de Muerte (tras el Caminante de Reinos, o en Mazmorra de Pesadilla con el afijo Ruptura)",
+        "Alijos de Destellos de Esperanza (desde el parche 3.1.1)"
+      ],
+      "verificacion": {
+        "estado": "por-verificar",
+        "fuente": "notas de parche 3.1.1 (investigacion 8-ago-2026)",
+        "fecha": "2026-08-09",
+        "parche": "3.1.2"
+      }
+    }
+  ]
+}

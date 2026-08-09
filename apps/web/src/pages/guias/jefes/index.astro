@@ -1,0 +1,132 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { loadContenido, texto, unicoEnCastellano } from '../../../lib/contenido';
+import { slugify } from '@d4es/schema';
+
+const { jefes, llaves } = loadContenido();
+
+const TIERS = [
+  {
+    id: 'initiate',
+    titulo: 'Iniciales',
+    descripcion: 'Se abren con una Llave de guarida y cada uno suelta una llave de mayor. Son el motor de todo el sistema.',
+  },
+  { id: 'greater', titulo: 'Mayores', descripcion: 'Se abren con una Llave de guarida mayor, que solo sale de los iniciales.' },
+  { id: 'exalted', titulo: 'Exaltado', descripcion: 'Belial: al abrir su alijo eliges de qué tabla quieres tirar.' },
+  { id: 'estacional', titulo: 'De temporada', descripcion: 'El jefe de la temporada 14, con la mayor probabilidad de mítico del juego.' },
+];
+
+const llavePorId = new Map(llaves.map((l) => [l.id, l]));
+---
+
+<Base
+  titulo="Jefes de guarida de Diablo 4: llaves, orden y qué suelta cada uno"
+  descripcion="Todos los jefes de guarida de Diablo 4 tras Lord of Hatred: qué llave pide cada uno, en qué orden hacerlos y qué únicos sueltan."
+>
+  <div class="mx-auto max-w-4xl px-4 py-10">
+    <nav aria-label="Migas de pan" class="text-xs text-humo">
+      <a href="/guias" class="hover:text-pergamino">Guías</a>
+    </nav>
+
+    <h1 class="mt-3 font-titulo text-3xl sm:text-4xl">Jefes de guarida</h1>
+    <p class="mt-4 max-w-2xl text-ceniza leading-relaxed">
+      Lord of Hatred dio la vuelta a este sistema y casi nada de lo que se lee por ahí sigue siendo
+      cierto. Lo esencial en dos frases: <strong class="text-pergamino">ahora se pelea primero y la llave
+      se gasta después</strong>, para abrir el alijo que aparece al matarlo. Y las llaves se unificaron:
+      ya no hay un material distinto por jefe.
+    </p>
+
+    <aside class="mt-6 grabado rounded-lg bg-piedra p-5">
+      <h2 class="font-titulo text-lg">Cómo funciona la escalera</h2>
+      <ol class="mt-3 space-y-2 text-sm text-ceniza">
+        <li>
+          <strong class="text-pergamino">1.</strong> Consigues <em>Llaves de guarida</em> en las actividades
+          normales (Mazmorras de Pesadilla, Marea Infernal, Susurros, Planes de guerra…).
+        </li>
+        <li>
+          <strong class="text-pergamino">2.</strong> Matas jefes iniciales. Cada alijo te devuelve una
+          <em>Llave de guarida mayor</em>: es prácticamente su única fuente.
+        </li>
+        <li>
+          <strong class="text-pergamino">3.</strong> Con esas llaves abres los jefes mayores, que es donde
+          están los únicos gordos.
+        </li>
+      </ol>
+      <p class="mt-3 text-sm text-humo">
+        Consecuencia práctica: farmear el escalón de abajo no es perder el tiempo, es lo que alimenta el
+        de arriba.
+      </p>
+    </aside>
+
+    <aside class="mt-4 grabado rounded-lg border-oro-apagado/40 bg-oro/5 p-4 text-sm">
+      <p class="text-pergamino"><strong>Sobre los míticos.</strong></p>
+      <p class="mt-1.5 text-ceniza">
+        Los míticos <strong>no están atados a ningún jefe</strong>: salen de un conjunto común desde
+        cualquiera de ellos. Lo que sí depende del jefe son los únicos normales. Si vas a por un mítico
+        concreto, tu vía es
+        <a href="/guias/crafteo-miticos" class="underline underline-offset-4 hover:text-pergamino">el crafteo</a>,
+        no farmear un jefe en particular.
+      </p>
+    </aside>
+
+    {
+      TIERS.map((tier) => {
+        const delTier = jefes.filter((j) => j.tier === tier.id);
+        if (delTier.length === 0) return null;
+        return (
+          <section class="mt-10">
+            <h2 class="font-titulo text-2xl">{tier.titulo}</h2>
+            <p class="mt-1 text-sm text-ceniza">{tier.descripcion}</p>
+            <div class="mt-4 grid gap-3 sm:grid-cols-2">
+              {delTier.map((j) => {
+                const llave = j.llaveRequerida ? llavePorId.get(j.llaveRequerida) : null;
+                return (
+                  <article class="grabado grabado-hover rounded-lg bg-piedra p-4">
+                    <h3 class="font-titulo text-lg">
+                      <a href={`/guias/jefes/${j.id}`} class="hover:text-brasa-viva transition-colors">
+                        {texto(j.nombre)}
+                      </a>
+                    </h3>
+                    {j.ubicacion && <p class="mt-0.5 text-xs text-humo">{j.ubicacion}</p>}
+                    <dl class="mt-3 space-y-1 text-sm">
+                      <div class="flex gap-2">
+                        <dt class="text-humo shrink-0">Llave:</dt>
+                        <dd>{llave ? texto(llave.nombre) : <span class="text-humo italic">sin confirmar</span>}</dd>
+                      </div>
+                      {j.sueltaLlave && (
+                        <div class="flex gap-2">
+                          <dt class="text-humo shrink-0">Suelta:</dt>
+                          <dd>{texto(llavePorId.get(j.sueltaLlave)?.nombre ?? { en: j.sueltaLlave, es: null, verificacion: j.verificacion })}</dd>
+                        </div>
+                      )}
+                    </dl>
+                    {j.unicos.length > 0 && (
+                      <ul class="mt-3 flex flex-wrap gap-1.5">
+                        {j.unicos.slice(0, 4).map((u) => (
+                          <li>
+                            <a
+                              href={`/objetos/unicos/${slugify(u)}`}
+                              class="rounded border border-grabado bg-abismo px-1.5 py-0.5 text-[0.7rem] text-rareza-unico hover:border-rareza-unico/60"
+                            >
+                              {unicoEnCastellano(u)}
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </article>
+                );
+              })}
+            </div>
+          </section>
+        );
+      })
+    }
+
+    <p class="mt-10 text-xs text-humo">
+      Los datos de esta página están marcados como pendientes de confirmar dentro del juego. Están
+      contrastados entre varias fuentes, pero no verificados de primera mano: puedes ver el detalle en
+      cada ficha de jefe.
+    </p>
+  </div>
+</Base>

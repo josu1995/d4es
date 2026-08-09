@@ -11,13 +11,13 @@ import { z } from 'zod';
  *  - ItemTypes no tiene `IdName` -> la clave es Type + Rarerity.
  */
 export const COMPANION_FILES = [
-  { file: 'Affixes', category: 'affix', keyFields: ['IdName'], nameField: 'DescriptionClean' },
-  { file: 'Aspects', category: 'aspect', keyFields: ['IdName'], nameField: 'Name' },
-  { file: 'Uniques', category: 'unique', keyFields: ['IdName'], nameField: 'Name' },
-  { file: 'Runes', category: 'rune', keyFields: ['IdName'], nameField: 'Name' },
-  { file: 'ParagonGlyphs', category: 'glyph', keyFields: ['IdName'], nameField: 'Name' },
-  { file: 'ParagonBoards', category: 'paragonBoard', keyFields: ['IdName'], nameField: 'Name' },
-  { file: 'ItemTypes', category: 'itemType', keyFields: ['Type', 'Rarerity'], nameField: 'Name' },
+  { file: 'Affixes', category: 'affix', keyFields: ['IdName'], nameField: 'DescriptionClean', descField: null },
+  { file: 'Aspects', category: 'aspect', keyFields: ['IdName'], nameField: 'Name', descField: 'DescriptionClean' },
+  { file: 'Uniques', category: 'unique', keyFields: ['IdName'], nameField: 'Name', descField: 'DescriptionClean' },
+  { file: 'Runes', category: 'rune', keyFields: ['IdName'], nameField: 'Name', descField: 'DescriptionClean' },
+  { file: 'ParagonGlyphs', category: 'glyph', keyFields: ['IdName'], nameField: 'Name', descField: null },
+  { file: 'ParagonBoards', category: 'paragonBoard', keyFields: ['IdName'], nameField: 'Name', descField: null },
+  { file: 'ItemTypes', category: 'itemType', keyFields: ['Type', 'Rarerity'], nameField: 'Name', descField: null },
 ] as const;
 
 export type CompanionFileSpec = (typeof COMPANION_FILES)[number];
@@ -38,6 +38,8 @@ export interface DictionaryEntry {
   category: string;
   en: string;
   es: string;
+  /** Descripcion del poder, en castellano, para unicos, aspectos y runas. */
+  desc?: string;
   source: 'd4companion' | 'wowhead-es' | 'curated';
 }
 
@@ -56,6 +58,37 @@ export interface Dictionary {
   byIdName: Record<string, DictionaryEntry>;
   /** clave: `${category}:${normalizeName(en)}` — la via real, porque las fuentes dan ingles */
   byEnglish: Record<string, DictionaryEntry>;
+}
+
+/**
+ * Convierte el campo `Localisation` de Companion en texto legible.
+ *
+ * Ese campo trae el texto oficial del juego con su marcado interno: etiquetas de color
+ * ({c_important}...{/c}), condicionales ({if:...}...{/if}) y expresiones de valor
+ * ([Affix_Value_1*100|x%|]). El campo `DescriptionClean` ya viene limpio, pero se come
+ * los valores y deja frases rotas ("inflige un mas de dano"), asi que aqui se limpia el
+ * marcado conservando el formato del valor, que es justo lo que hace falta entender.
+ */
+export function limpiarLocalisation(texto: string): string {
+  return (
+    texto
+      // Expresiones de valor. Pueden ser simples ([Affix_Value_1*100|x%|]) o formulas
+      // enteras con parentesis y sin formato. En ambos casos el numero concreto depende
+      // del objeto, asi que se sustituye por un marcador legible que conserva SI el
+      // bonus es porcentual, que es la parte que de verdad importa entender.
+      .replace(/\[([^\]]*)\]/g, (_, interior: string) => {
+        const partes = interior.split('|');
+        const formato = partes.length >= 2 ? (partes[partes.length - 2] ?? '').trim() : '';
+        return formato.includes('%') ? 'X%' : 'X';
+      })
+      // Condicionales y etiquetas de color/estilo del marcado interno del juego.
+      .replace(/\{if:[^}]*\}/gi, '')
+      .replace(/\{else\}/gi, '')
+      .replace(/\{\/?[a-z_][^}]*\}/gi, '')
+      .replace(/\s+/g, ' ')
+      .replace(/\s+([.,;:!?])/g, '$1')
+      .trim()
+  );
 }
 
 /** Normalizacion para comparar nombres en ingles entre fuentes distintas. */

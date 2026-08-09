@@ -1,0 +1,149 @@
+{
+  "_nota": [
+    "Materiales de crafteo de miticos y sus fuentes.",
+    "",
+    "Las tasas por hora NO estan aqui a proposito: cualquier cifra de ese tipo que se",
+    "publique sin medirla es un invento. Se listan las fuentes, no velocidades."
+  ],
+  "materiales": [
+    {
+      "id": "pandemonium-fragment",
+      "nombre": {
+        "en": "Pandemonium Fragment",
+        "es": "Fragmento de Pandemonium",
+        "verificacion": {
+          "estado": "por-verificar",
+          "fuente": "nombre en castellano no contrastado con el cliente espanol",
+          "fecha": "2026-08-09",
+          "parche": "3.1.2"
+        }
+      },
+      "paraQue": ["Receta \"Mejorar a mitico\" del Cubo Horadrico (4 por intento)"],
+      "fuentes": [
+        {
+          "actividad": "Tablero de reputacion estacional de Zarbinzet",
+          "detalle": "Se alimenta con Destellos de Esperanza; desde el parche 3.1.1 la recompensa repetible garantiza un fragmento",
+          "verificacion": {
+            "estado": "por-verificar",
+            "fuente": "notas de parche 3.1.1 (investigacion 8-ago-2026)",
+            "fecha": "2026-08-09",
+            "parche": "3.1.2"
+          }
+        },
+        {
+          "actividad": "Alijo del Segador Corrupto",
+          "detalle": "1 por muerte, hasta 2 desde el parche 3.1.1 escalando con el Tormento",
+          "verificacion": {
+            "estado": "por-verificar",
+            "fuente": "notas de parche 3.1.1 (investigacion 8-ago-2026)",
+            "fecha": "2026-08-09",
+            "parche": "3.1.2"
+          }
+        },
+        {
+          "actividad": "Alijos Resplandecientes y Camaras del Doblar de Muerte",
+          "detalle": null,
+          "verificacion": {
+            "estado": "por-verificar",
+            "fuente": "investigacion 8-ago-2026",
+            "fecha": "2026-08-09",
+            "parche": "3.1.2"
+          }
+        }
+      ],
+      "verificacion": {
+        "estado": "por-verificar",
+        "fuente": "notas de parche 3.1.1 + Dot Esports (investigacion 8-ago-2026)",
+        "fecha": "2026-08-09",
+        "parche": "3.1.2"
+      }
+    },
+    {
+      "id": "resplendent-spark",
+      "nombre": {
+        "en": "Resplendent Spark",
+        "es": "Chispa Resplandeciente",
+        "verificacion": {
+          "estado": "por-verificar",
+          "fuente": "nombre en castellano no contrastado con el cliente espanol",
+          "fecha": "2026-08-09",
+          "parche": "3.1.2"
+        }
+      },
+      "paraQue": [
+        "Mitico concreto en el Joyero",
+        "Mitico iconico aleatorio en el Herrero (2 chispas)"
+      ],
+      "fuentes": [
+        {
+          "actividad": "Desguazar un mitico",
+          "detalle": "Devuelve una chispa: es la forma de reciclar un mitico que no te sirve",
+          "verificacion": {
+            "estado": "por-verificar",
+            "fuente": "investigacion 8-ago-2026",
+            "fecha": "2026-08-09",
+            "parche": "3.1.2"
+          }
+        },
+        {
+          "actividad": "Primeras finalizaciones de campana y eventos, y recompensas de la Jornada de temporada",
+          "detalle": null,
+          "verificacion": {
+            "estado": "por-verificar",
+            "fuente": "investigacion 8-ago-2026; el detalle para 2026 no esta cerrado",
+            "fecha": "2026-08-09",
+            "parche": "3.1.2"
+          }
+        }
+      ],
+      "verificacion": {
+        "estado": "por-verificar",
+        "fuente": "investigacion 8-ago-2026",
+        "fecha": "2026-08-09",
+        "parche": "3.1.2"
+      }
+    },
+    {
+      "id": "runas-crafteo",
+      "nombre": {
+        "en": "Magic, Rare and Legendary Runes",
+        "es": "Runas magicas, raras y legendarias",
+        "verificacion": {
+          "estado": "por-verificar",
+          "fuente": "nombre en castellano no contrastado con el cliente espanol",
+          "fecha": "2026-08-09",
+          "parche": "3.1.2"
+        }
+      },
+      "paraQue": ["Receta de mitico concreto en el Joyero"],
+      "fuentes": [
+        {
+          "actividad": "Ciudad Baja de Kurast",
+          "detalle": "La fuente dirigida habitual de runas",
+          "verificacion": {
+            "estado": "por-verificar",
+            "fuente": "investigacion 8-ago-2026",
+            "fecha": "2026-08-09",
+            "parche": "3.1.2"
+          }
+        },
+        {
+          "actividad": "Botin general y Cubo Horadrico",
+          "detalle": "El Cubo permite craftear y mejorar runas de Ritual e Invocacion",
+          "verificacion": {
+            "estado": "por-verificar",
+            "fuente": "investigacion 8-ago-2026",
+            "fecha": "2026-08-09",
+            "parche": "3.1.2"
+          }
+        }
+      ],
+      "verificacion": {
+        "estado": "por-verificar",
+        "fuente": "investigacion 8-ago-2026",
+        "fecha": "2026-08-09",
+        "parche": "3.1.2"
+      }
+    }
+  ]
+}

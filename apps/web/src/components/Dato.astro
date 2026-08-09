@@ -1,0 +1,41 @@
+---
+import type { Verificacion } from '@d4es/schema';
+
+/**
+ * Pinta un dato del juego con su procedencia. Si no esta verificado, lo dice a la cara.
+ *
+ * Es la pieza que hace imposible publicar una cifra dudosa sin que se vea: la alternativa
+ * (escribir el numero en la prosa) permite colar datos sin marcar, y esta web no va de eso.
+ */
+interface Props {
+  valor: string | number | null;
+  verificacion: Verificacion;
+  sufijo?: string;
+  siNulo?: string;
+}
+
+const { valor, verificacion, sufijo = '', siNulo = 'sin confirmar' } = Astro.props;
+const dudoso = verificacion.estado !== 'verificado';
+const titulo = `${verificacion.estado} · ${verificacion.fuente} · parche ${verificacion.parche}`;
+---
+
+{
+  valor === null ? (
+    <span class="text-humo italic" title={titulo}>
+      {siNulo}
+    </span>
+  ) : (
+    <span class={dudoso ? 'text-pergamino' : 'text-pergamino'}>
+      {valor}
+      {sufijo && ` ${sufijo}`}
+      {dudoso && (
+        <span
+          class="ml-1 cursor-help rounded border border-oro-apagado/50 px-1 text-[0.6rem] uppercase tracking-wider text-oro-apagado align-middle"
+          title={titulo}
+        >
+          por confirmar
+        </span>
+      )}
+    </span>
+  )
+}

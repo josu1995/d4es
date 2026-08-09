@@ -1,0 +1,290 @@
+---
+import Base from '../../layouts/Base.astro';
+import Dato from '../../components/Dato.astro';
+import { loadContenido, texto, valorCifra, unicoEnCastellano } from '../../lib/contenido';
+import { costeEsperado, slugify } from '@d4es/schema';
+
+const { recetas, materiales, iconicos } = loadContenido();
+const materialPorId = new Map(materiales.map((m) => [m.id, m]));
+
+const cubo = recetas.find((r) => r.donde === 'cubo-horadrico');
+const joyero = recetas.find((r) => r.donde === 'joyero');
+const herrero = recetas.find((r) => r.donde === 'herrero');
+
+const poolIconicos = valorCifra(herrero?.tamanoPool ?? null) ?? iconicos.length;
+const chispasPorIntento = valorCifra(herrero?.entradas[0]?.cantidad ?? null) ?? 2;
+const fragmentosPorIntento = valorCifra(cubo?.entradas[0]?.cantidad ?? null) ?? 4;
+
+// La cuenta que de verdad importa no es lo que cuesta un intento, sino cuántos hacen falta.
+const cuentaIconicos = costeEsperado(poolIconicos, chispasPorIntento);
+---
+
+<Base
+  titulo="Cómo conseguir míticos en Diablo 4: las tres vías, explicadas"
+  descripcion="Cubo Horádrico, Joyero y Herrero: las tres formas de fabricar míticos en Diablo 4, qué cuesta cada una y cuál te conviene. Con calculadora de intentos."
+>
+  <article class="mx-auto max-w-3xl px-4 py-10">
+    <nav aria-label="Migas de pan" class="text-xs text-humo">
+      <a href="/guias" class="hover:text-pergamino">Guías</a>
+    </nav>
+
+    <h1 class="mt-3 font-titulo text-3xl sm:text-4xl">Cómo conseguir míticos</h1>
+    <p class="mt-4 text-ceniza leading-relaxed">
+      Lo primero, porque casi nadie lo explica: en la temporada 14 <strong class="text-pergamino">«mítico»
+      dejó de ser una rareza y pasó a ser una calidad</strong>. Ya no es una lista corta de objetos
+      legendarios inalcanzables: es un estado al que casi cualquier único puede llegar. Un mítico siempre
+      es ancestral, tiene un 30 % más de poder único y el resto de sus afijos al máximo.
+    </p>
+    <p class="mt-3 text-ceniza leading-relaxed">
+      Y hay <strong class="text-pergamino">tres vías distintas</strong> para fabricarlos, que se confunden
+      constantemente porque suenan parecidas pero no sirven para lo mismo.
+    </p>
+
+    <!-- Las tres vías -->
+    <section class="mt-8 space-y-4">
+      {
+        [
+          {
+            receta: cubo,
+            titulo: 'El Cubo Horádrico',
+            subtitulo: 'Barato, pero es una lotería',
+            resumen:
+              'Metes un único y sale un mítico aleatorio de la misma ranura. Si metes un anillo, sale un anillo.',
+            cuando: 'Cuando te vale cualquier mítico de esa ranura, o cuando tienes fragmentos de sobra.',
+          },
+          {
+            receta: joyero,
+            titulo: 'El Joyero',
+            subtitulo: 'Caro, pero eliges tú',
+            resumen: 'Es la única vía para conseguir el mítico concreto que quieres, sin azar.',
+            cuando: 'Cuando tu build depende de un mítico en particular y no quieres depender de la suerte.',
+          },
+          {
+            receta: herrero,
+            titulo: 'El Herrero',
+            subtitulo: 'Otro escalón distinto',
+            resumen: `Dos Chispas Resplandecientes y sale un icónico aleatorio de los ${poolIconicos}.`,
+            cuando: 'Cuando buscas los icónicos, que están por encima de los míticos normales y apilan sin límite.',
+          },
+        ].map(
+          (v) =>
+            v.receta && (
+              <div class="grabado rounded-lg bg-piedra p-5">
+                <div class="flex flex-wrap items-baseline justify-between gap-2">
+                  <h2 class="font-titulo text-xl">{v.titulo}</h2>
+                  <span class="text-xs uppercase tracking-wider text-oro-apagado">{v.subtitulo}</span>
+                </div>
+                <p class="mt-2 text-sm text-ceniza">{v.resumen}</p>
+
+                <div class="mt-4 grid gap-4 sm:grid-cols-2">
+                  <div>
+                    <h3 class="text-xs uppercase tracking-wider text-humo">Cuesta</h3>
+                    <ul class="mt-1.5 space-y-1 text-sm">
+                      {v.receta.entradas.map((e) => (
+                        <li>
+                          <Dato
+                            valor={valorCifra(e.cantidad)}
+                            verificacion={e.cantidad?.verificacion ?? v.receta!.verificacion}
+                            sufijo={`× ${texto(materialPorId.get(e.materialId)?.nombre ?? { en: e.materialId, es: null, verificacion: v.receta!.verificacion })}`}
+                            siNulo={`cantidad sin confirmar de ${texto(materialPorId.get(e.materialId)?.nombre ?? { en: e.materialId, es: null, verificacion: v.receta!.verificacion })}`}
+                          />
+                          {e.nota && <span class="block text-xs text-humo">{e.nota}</span>}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  {v.receta.requisitos.length > 0 && (
+                    <div>
+                      <h3 class="text-xs uppercase tracking-wider text-humo">Requisitos</h3>
+                      <ul class="mt-1.5 space-y-1 text-sm text-ceniza">
+                        {v.receta.requisitos.map((r) => (
+                          <li>{r}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
+
+                <p class="mt-4 border-t border-grabado pt-3 text-sm">
+                  <span class="text-humo">Te interesa </span>
+                  <span class="text-pergamino">{v.cuando}</span>
+                </p>
+
+                {v.receta.notas.length > 0 && (
+                  <ul class="mt-3 space-y-1.5 text-xs text-ceniza">
+                    {v.receta.notas.map((n) => (
+                      <li class="flex gap-2">
+                        <span class="text-humo">·</span>
+                        <span>{n}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            ),
+        )
+      }
+    </section>
+
+    <!-- Calculadora -->
+    <section class="mt-10">
+      <h2 class="font-titulo text-2xl">Cuántos intentos hacen falta</h2>
+      <p class="mt-2 text-ceniza">
+        Cuando el resultado es aleatorio, la pregunta útil no es «cuánto cuesta un intento» sino
+        <strong class="text-pergamino">cuántos intentos hasta tenerlo</strong>. Y sobre todo el peor caso
+        razonable: el número por debajo del cual lo consigue el 90 % de la gente.
+      </p>
+
+      <div class="mt-5 grabado rounded-lg bg-piedra p-5">
+        <div class="grid gap-4 sm:grid-cols-2">
+          <div>
+            <label for="pool" class="block text-xs uppercase tracking-wider text-humo mb-1.5">
+              Objetos posibles en el sorteo
+            </label>
+            <input
+              id="pool"
+              type="number"
+              min="1"
+              max="200"
+              value={poolIconicos}
+              class="w-full rounded bg-abismo grabado px-3 py-2 text-sm focus:border-oro-apagado"
+            />
+            <p class="mt-1 text-xs text-humo">
+              Para el Herrero son los {poolIconicos} icónicos. Para el Cubo, cuántos míticos hay en esa ranura.
+            </p>
+          </div>
+          <div>
+            <label for="coste" class="block text-xs uppercase tracking-wider text-humo mb-1.5">
+              Material por intento
+            </label>
+            <input
+              id="coste"
+              type="number"
+              min="1"
+              max="100"
+              value={chispasPorIntento}
+              class="w-full rounded bg-abismo grabado px-3 py-2 text-sm focus:border-oro-apagado"
+            />
+            <p class="mt-1 text-xs text-humo">
+              2 chispas en el Herrero, {fragmentosPorIntento} fragmentos en el Cubo.
+            </p>
+          </div>
+        </div>
+
+        <dl class="mt-5 grid gap-3 sm:grid-cols-3 border-t border-grabado pt-4">
+          <div>
+            <dt class="text-xs uppercase tracking-wider text-humo">Probabilidad por intento</dt>
+            <dd id="r-prob" class="mt-1 font-titulo text-2xl text-oro">{(cuentaIconicos.p * 100).toFixed(1)} %</dd>
+          </div>
+          <div>
+            <dt class="text-xs uppercase tracking-wider text-humo">Intentos de media</dt>
+            <dd id="r-media" class="mt-1 font-titulo text-2xl text-pergamino">{cuentaIconicos.intentosEsperados}</dd>
+            <dd id="r-media-coste" class="text-xs text-humo">{cuentaIconicos.costeEsperado} de material</dd>
+          </div>
+          <div>
+            <dt class="text-xs uppercase tracking-wider text-humo">Peor caso razonable</dt>
+            <dd id="r-p90" class="mt-1 font-titulo text-2xl text-brasa-viva">{cuentaIconicos.intentosP90}</dd>
+            <dd id="r-p90-coste" class="text-xs text-humo">{cuentaIconicos.costeP90} de material</dd>
+          </div>
+        </dl>
+        <p class="mt-3 text-xs text-humo">
+          «Peor caso razonable» = con ese número de intentos, 9 de cada 10 jugadores ya lo tienen. Es la
+          cifra con la que conviene planificar, no la media.
+        </p>
+      </div>
+
+      <aside class="mt-4 grabado rounded-lg border-oro-apagado/40 bg-oro/5 p-4 text-sm">
+        <p class="text-pergamino"><strong>El consejo que sale de esta cuenta.</strong></p>
+        <p class="mt-1.5 text-ceniza">
+          Si el Cubo devuelve un mítico aleatorio <em>de la misma ranura</em>, entonces te interesa usarlo en
+          la ranura con menos míticos posibles: menos candidatos, más probabilidad. Antes de darlo por bueno
+          hay que confirmar dentro del juego cómo se forma exactamente ese conjunto, así que está pendiente
+          de verificar; pero la matemática es la que es.
+        </p>
+      </aside>
+    </section>
+
+    <!-- Materiales -->
+    <section class="mt-10">
+      <h2 class="font-titulo text-2xl">De dónde salen los materiales</h2>
+      <div class="mt-4 space-y-3">
+        {
+          materiales.map((m) => (
+            <div class="grabado rounded-lg bg-piedra p-4">
+              <h3 class="font-titulo text-lg">{texto(m.nombre)}</h3>
+              <p class="mt-0.5 text-xs text-humo">{m.paraQue.join(' · ')}</p>
+              <ul class="mt-3 space-y-1.5 text-sm text-ceniza">
+                {m.fuentes.map((f) => (
+                  <li class="flex gap-2">
+                    <span class="text-humo">·</span>
+                    <span>
+                      <strong class="text-pergamino">{f.actividad}</strong>
+                      {f.detalle && <span class="text-ceniza"> — {f.detalle}</span>}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+
+    <!-- Icónicos -->
+    <section class="mt-10">
+      <h2 class="font-titulo text-2xl">Los míticos icónicos</h2>
+      <p class="mt-2 text-ceniza">
+        Son el escalón por encima, los que antes se llamaban «ubers». Apilan sin límite, así que puedes
+        llevar varios equipados.
+      </p>
+      <ul class="mt-4 grid gap-2 sm:grid-cols-2">
+        {
+          iconicos.map((i) => (
+            <li>
+              <a
+                href={`/objetos/unicos/${slugify(i)}`}
+                class="grabado grabado-hover flex items-center justify-between rounded bg-piedra px-3 py-2 text-sm"
+              >
+                <span class="text-rareza-mitico">{unicoEnCastellano(i)}</span>
+                <span class="text-humo">→</span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </article>
+</Base>
+
+<script>
+  // Cálculo en vivo. La fórmula vive en el paquete de esquema y está testeada;
+  // aquí solo se repite lo mínimo para no cargar un bundle por una división.
+  const pool = document.getElementById('pool') as HTMLInputElement | null;
+  const coste = document.getElementById('coste') as HTMLInputElement | null;
+
+  const salidas = {
+    prob: document.getElementById('r-prob'),
+    media: document.getElementById('r-media'),
+    mediaCoste: document.getElementById('r-media-coste'),
+    p90: document.getElementById('r-p90'),
+    p90Coste: document.getElementById('r-p90-coste'),
+  };
+
+  function recalcular() {
+    if (!pool || !coste) return;
+    const n = Math.max(1, Math.min(200, Number(pool.value) || 1));
+    const c = Math.max(1, Math.min(100, Number(coste.value) || 1));
+    const p = 1 / n;
+    // Intentos para tener un 90 % de probabilidad acumulada de haberlo sacado ya.
+    const p90 = p >= 1 ? 1 : Math.ceil(Math.log(0.1) / Math.log(1 - p));
+
+    if (salidas.prob) salidas.prob.textContent = `${(p * 100).toFixed(1)} %`;
+    if (salidas.media) salidas.media.textContent = String(n);
+    if (salidas.mediaCoste) salidas.mediaCoste.textContent = `${n * c} de material`;
+    if (salidas.p90) salidas.p90.textContent = String(p90);
+    if (salidas.p90Coste) salidas.p90Coste.textContent = `${p90 * c} de material`;
+  }
+
+  pool?.addEventListener('input', recalcular);
+  coste?.addEventListener('input', recalcular);
+</script>

@@ -1,15 +1,18 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { porCategoria, loadDiccionario } from '../../lib/data';
+import { loadUnicos } from '../../lib/contenido';
 
 const dict = loadDiccionario();
-const unicos = porCategoria('unique');
 const aspectos = porCategoria('aspect');
 const glifos = porCategoria('glyph');
 const runas = porCategoria('rune');
 
+// Los únicos tienen ficha propia; el resto, de momento, solo se traducen.
+const fichasUnicos = new Map(loadUnicos().map((u) => [u.idName, u.slug]));
+
 const secciones = [
-  { id: 'unicos', titulo: 'Únicos', entradas: unicos },
+  { id: 'unicos', titulo: 'Únicos', entradas: porCategoria('unique') },
   { id: 'aspectos', titulo: 'Aspectos', entradas: aspectos },
   { id: 'glifos', titulo: 'Glifos', entradas: glifos },
   { id: 'runas', titulo: 'Runas', entradas: runas },
@@ -48,16 +51,25 @@ const total = secciones.reduce((n, s) => n + s.entradas.length, 0);
             {s.titulo} <span class="text-humo text-base">({s.entradas.length})</span>
           </h2>
           <ul class="mt-3 grabado rounded-lg bg-piedra divide-y divide-grabado overflow-hidden">
-            {s.entradas.map((e) => (
-              <li
-                class="flex flex-wrap items-baseline gap-x-3 px-4 py-2"
-                data-item
-                data-busqueda={`${e.es} ${e.en}`.toLowerCase()}
-              >
-                <span class="text-pergamino">{e.es}</span>
-                <span class="text-sm text-humo">{e.en}</span>
-              </li>
-            ))}
+            {s.entradas.map((e) => {
+              const slug = fichasUnicos.get(e.idName);
+              return (
+                <li
+                  class="flex flex-wrap items-baseline gap-x-3 px-4 py-2"
+                  data-item
+                  data-busqueda={`${e.es} ${e.en}`.toLowerCase()}
+                >
+                  {slug ? (
+                    <a href={`/objetos/unicos/${slug}`} class="text-pergamino hover:text-brasa-viva">
+                      {e.es}
+                    </a>
+                  ) : (
+                    <span class="text-pergamino">{e.es}</span>
+                  )}
+                  <span class="text-sm text-humo">{e.en}</span>
+                </li>
+              );
+            })}
           </ul>
         </section>
       ))
