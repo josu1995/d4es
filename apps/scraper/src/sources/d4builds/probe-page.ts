@@ -46,6 +46,25 @@ interface ZonaInfo {
  * `warplans.ts` y se ejecuta aqui tal cual: asi la sonda valida el MISMO codigo que
  * luego correra sobre las 92 paginas, en vez de validar una copia parecida.
  */
+/**
+ * Reconocimiento de una pestana cualquiera despues de pulsarla. Existe porque dos
+ * pestanas se estan publicando a medias y no se sabe por que: mercenarios saca UNA
+ * habilidad por build, y el Paragon se queda en cinco tableros cuando el juego permite
+ * nueve. La sospecha es que las dos usan el mismo visor de arbol que los planes de
+ * guerra, donde el contenido esta en `.viewer-node` y no donde lo busca el parser.
+ */
+export interface PestanaProbe {
+  nombre: string;
+  abierta: boolean;
+  /** Cuantos nodos de visor hay: si salen, es un arbol y no una lista. */
+  nodosVisor: number;
+  /** Cuantos encuentra el selector que usa hoy el extractor. */
+  segunElParserActual: number;
+  clases: Record<string, number>;
+  textos: string[];
+  muestras: string[];
+}
+
 export interface WarPlansProbe {
   /** false si la pestana no existe o no llego a montarse. */
   abierta: boolean;
@@ -75,6 +94,73 @@ export interface ProbeResult {
   bloquesDeTexto: { selector: string; lineas: string[] }[];
   /** Reconocimiento de la pestana de Planes de guerra (hay que pulsarla para verla). */
   warPlans?: WarPlansProbe;
+  /** Detalle de las pestanas que hay que pulsar: mercenarios y Paragon. */
+  detallePestanas?: PestanaProbe[];
+}
+
+/** Pestanas a reconocer, con el selector que usa hoy su extractor. */
+const PESTANAS_SONDA = [
+  { nombre: 'Mercenaries', selectorActual: '.build__skill__wrapper, .builder__skill__wrapper' },
+  { nombre: 'Paragon', selectorActual: '.paragon__board' },
+] as const;
+
+/** Abre una pestana y la describe: que hay, cuanto ve el parser de hoy y que se pierde. */
+async function describirPestana(page: Page, nombre: string, selectorActual: string): Promise<PestanaProbe> {
+  const boton = page.locator('.builder__navigation__link', { hasText: nombre }).first();
+  const vacio: PestanaProbe = {
+    nombre,
+    abierta: false,
+    nodosVisor: 0,
+    segunElParserActual: 0,
+    clases: {},
+    textos: [],
+    muestras: [],
+  };
+  if ((await boton.count()) === 0) return vacio;
+  await boton.click({ timeout: 15_000 }).catch(() => {});
+  await page.waitForTimeout(2500);
+
+  return page.evaluate(
+    ({ nombre, selectorActual }) => {
+      const limpiar = (s: string) => s.replace(/\s+/g, ' ').trim();
+      const contenido = document.querySelector('.builder__content') ?? document.body;
+
+      const clases: Record<string, number> = {};
+      for (const el of Array.from(contenido.querySelectorAll('*'))) {
+        for (const c of Array.from(el.classList)) clases[c] = (clases[c] ?? 0) + 1;
+      }
+
+      const textos = new Set<string>();
+      for (const el of Array.from(contenido.querySelectorAll('*'))) {
+        if (el.children.length > 0) continue;
+        const t = limpiar(el.textContent ?? '');
+        if (t.length > 0 && t.length < 60) textos.add(t);
+      }
+
+      const nodos = Array.from(document.querySelectorAll('.viewer-node'));
+      const muestras = [
+        ...nodos.slice(0, 2).map((n) => n.outerHTML.slice(0, 900)),
+        ...Array.from(document.querySelectorAll(selectorActual))
+          .slice(0, 2)
+          .map((n) => n.outerHTML.slice(0, 900)),
+      ];
+
+      return {
+        nombre,
+        abierta: true,
+        nodosVisor: nodos.length,
+        segunElParserActual: document.querySelectorAll(selectorActual).length,
+        clases: Object.fromEntries(
+          Object.entries(clases)
+            .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+            .slice(0, 45),
+        ),
+        textos: Array.from(textos).slice(0, 45),
+        muestras,
+      };
+    },
+    { nombre, selectorActual },
+  );
 }
 
 /**
@@ -226,8 +312,24 @@ export async function probeBuildPage(buildId: string, variante = 0): Promise<Pro
     // Primero la pestana inicial (equipo), que es la que esta montada; los planes de
     // guerra van despues porque hay que pulsar y eso ya cambia lo que hay en pantalla.
     const base = await describir(page, url);
+
+    // Mercenarios y Paragon ANTES que los planes: los planes dejan abierta su pestana y
+    // cada una monta lo suyo al pulsarla, asi que el orden importa.
+    const detallePestanas: PestanaProbe[] = [];
+    for (const p of PESTANAS_SONDA) {
+      detallePestanas.push(await describirPestana(page, p.nombre, p.selectorActual).catch(() => ({
+        nombre: p.nombre,
+        abierta: false,
+        nodosVisor: 0,
+        segunElParserActual: 0,
+        clases: {},
+        textos: [],
+        muestras: [],
+      })));
+    }
+
     const warPlans = await describirWarPlans(page).catch(() => undefined);
-    return warPlans ? { ...base, warPlans } : base;
+    return { ...base, detallePestanas, ...(warPlans ? { warPlans } : {}) };
   } finally {
     await browser.close();
   }
@@ -244,6 +346,13 @@ export async function runProbe(buildIds: string[]): Promise<void> {
       `  pestanas: ${res.pestanas.length} | variantes: ${res.variantes.length} | ` +
         `equipo: ${res.zonas['equipo']?.encontrados ?? 0} nodos | paragon: ${res.zonas['paragon']?.encontrados ?? 0}\n`,
     );
+    for (const p of res.detallePestanas ?? []) {
+      process.stdout.write(
+        `  ${p.nombre}: ${p.abierta ? 'abierta' : 'NO se abrio'} | nodos de visor: ${p.nodosVisor} | ` +
+          `lo que ve el parser de hoy: ${p.segunElParserActual}
+`,
+      );
+    }
     const wp = res.warPlans;
     if (wp) {
       process.stdout.write(
