@@ -1,6 +1,6 @@
 {
   "buildId": "10de5d53-31d3-4d2e-a843-52f6f3f7e4c1",
-  "capturadoEn": "2026-08-09T05:56:18.844Z",
+  "capturadoEn": "2026-08-09T07:01:18.620Z",
   "pestanas": [
     "Gear & Skills",
     "Skill Tree",
@@ -12,101 +12,8 @@
   "porVariante": [
     {
       "arbol": [],
+      "arbolEsCanvas": true,
       "debug": {
-        "arbol": {
-          "clases": {
-            "Cast": 1,
-            "Claw": 1,
-            "CycloneArmor": 1,
-            "Damage": 1,
-            "EarthenBulwark": 1,
-            "Fortify": 1,
-            "LightningStorm": 1,
-            "Minimum": 1,
-            "Resistance": 1,
-            "Spirit": 1,
-            "active": 1,
-            "alt": 1,
-            "build__leveling__item": 12,
-            "build__leveling__item__level": 12,
-            "build__leveling__item__skill": 11,
-            "build__skill__icon": 12,
-            "build__skill__wrapper": 12,
-            "build__skill__wrapper--leveling": 12,
-            "filters__btn": 1,
-            "game__filters__btn": 1,
-            "game__filters__btn__icon": 1,
-            "game__filters__list": 1,
-            "leveling": 1,
-            "searchbar": 1,
-            "searchbar-close": 1,
-            "searchbar-close-img": 1,
-            "searchbar-icon": 1,
-            "searchbar-input": 1,
-            "skill-tree-viewer": 1,
-            "skill-tree-viewer__content": 1,
-            "skill__tree__header": 1,
-            "skill__tree__header__wrapper": 1,
-            "skill__tree__leveling": 1,
-            "skill__tree__leveling__list": 1,
-            "skill__tree__leveling__title": 1,
-            "skill__tree__leveling__toggle": 1,
-            "skill__tree__leveling__toggle__button": 1,
-            "skill__tree__remaining": 1,
-            "skill__tree__remaining__total": 1,
-            "skill__tree__total": 1
-          },
-          "muestra": "<div class=\"general__wrapper\"><div class=\"skill-tree-viewer\"><div class=\"skill__tree__header alt\"><div class=\"skill__tree__header__wrapper\"><div class=\"skill__tree__remaining\"><div class=\"skill__tree__total\">Remaining:<div class=\"skill__tree__remaining__total\">0</div></div></div><div class=\"searchbar\"><img class=\"searchbar-icon\" src=\"https://sunderarmor.com/search-icon.svg\" alt=\"search icon\"><input id=\"skill-tree-viewer-search\" class=\"searchbar-input\" type=\"text\" placeholder=\"Search skills...\" autocomplete=\"off\" value=\"\"><button class=\"searchbar-close\" tabindex=\"-1\"><img class=\"searchbar-close-img\" src=\"https://sunderarmor.com/close-icon.svg\" alt=\"close icon\"></button></div><button class=\"game__filters__btn filters__btn\"><img src=\"https://sunderarmor.com/DIABLO4/UI/fullscreen_icon.svg\" class=\"game__filters__btn__icon\" alt=\"fullscreen\" style=\"width: 18px; height: 18px;\"></button><div class=\"skill__tree__leveling__toggle active\"><div class=\"skill__tree__leveling__toggle__button\"><span></span></div>Leveling Path</div><div class=\"game__filters__list\"></div></div></div><div class=\"skill-tree-viewer__content leveling\"><div class=\"skill__tree__leveling\"><div class=\"skill__tree__leveling__title\">Leveling Path</div><div class=\"skill__tree__leveling__list\"><div class=\"build__leveling__item\"><div class=\"build__leveling__item__level\">2</div><div class=\"build__skill__wrapper build__skill__wrapper--leveling Claw \" role=\"button\" tabindex=\"0\" aria-expanded=\"false\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/claw.png\" class=\"build__skill__icon\" alt=\"Claw\"></div><div class=\"build__leveling__item__skill\">Claw</div></div><div class=\"build__leveling__item\"><div class=\"build__leveling__item__level\">3</div><div class=\"build__skill__wrapper build__skill__wrapper--leveling LightningStorm \" role=\"button\" tabindex=\"0\" aria-expanded=\"false\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/lightning_storm.png\" class=\"build__skill__icon\" alt=\"Lightning Storm\"></div><div class=\"build__leveling__item__skill\">Lightning Storm</div></div><div class=\"build__leveling__item\"><div class=\"build__leveling__item__level\">4</div><div class=\"build__skill__wrapper build__skill__wrapper--leveling EarthenBulwark \" role=\"button\" tabindex=\"0\" aria-expanded=\"false\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/earthen_bulwark.png\" class=\"build__skill__icon\" alt=\"Earthen Bulwark\"></div><div class=\"build__leveling__item__skill\">Earthen Bulwark</div></div><div class=\"build__leveling__it",
-          "textos": []
-        },
-        "mercenarios": {
-          "clases": {
-            "Bloodthirst": 1,
-            "LightningStorm": 1,
-            "after_bottom": 5,
-            "alt": 1,
-            "build__skill__icon": 2,
-            "build__skill__wrapper": 2,
-            "builder__skill": 4,
-            "builder__skill__icon": 2,
-            "builder__skill__icon--sm": 2,
-            "c1": 5,
-            "group__start": 2,
-            "large": 5,
-            "r1": 5,
-            "shield_charge": 4,
-            "skill__tree": 1,
-            "skill__tree--merc": 1,
-            "skill__tree__group": 2,
-            "skill__tree__group__wrapper": 2,
-            "skill__tree__header": 1,
-            "skill__tree__header__wrapper": 1,
-            "skill__tree__item": 5,
-            "skill__tree__item--active": 5,
-            "skill__tree__item--fill": 2,
-            "skill__tree__item--full": 2,
-            "skill__tree__item__icon": 4,
-            "skill__tree__item__icon--active": 4,
-            "skill__tree__item__line": 5,
-            "skill__tree__item__line--active": 5,
-            "skill__tree__item__line--fill": 2,
-            "skill__tree__item__line__active": 5,
-            "skill__tree__item__line__bg": 5,
-            "skill__tree__item__line__fill": 5,
-            "skill__tree__merc": 1,
-            "skill__tree__merc__button__wrapper": 4,
-            "skill__tree__merc__label": 4,
-            "skill__tree__row": 5,
-            "skill__tree__section": 2,
-            "skill__tree__section__bar": 2,
-            "skill__tree__section__req": 2,
-            "valiance": 6
-          },
-          "muestra": "<div class=\"general__wrapper\"><div class=\"skill__tree skill__tree--merc\"><div class=\"skill__tree__header alt\"><div class=\"skill__tree__header__wrapper\"><div class=\"skill__tree__merc\"><div class=\"skill__tree__merc__button__wrapper\"><div class=\"skill__tree__merc__label\">Mercenary</div><button class=\"builder__skill\" disabled=\"\"><img class=\"builder__skill__icon builder__skill__icon--sm\" src=\"https://sunderarmor.com/DIABLO4/Mercenaries/raheir,_the_shieldbearer.png\" alt=\"empty skill\"></button></div><div class=\"skill__tree__merc__button__wrapper\"><div class=\"skill__tree__merc__label\">Reinforcement</div><button class=\"builder__skill\" disabled=\"\"><img class=\"builder__skill__icon builder__skill__icon--sm\" src=\"https://sunderarmor.com/DIABLO4/Mercenaries/varyana,_the_berserker_crone.png\" alt=\"empty skill\"></button></div><div class=\"skill__tree__merc__button__wrapper\"><div class=\"skill__tree__merc__label\">Skill</div><button class=\"builder__skill\" disabled=\"\"><div class=\"build__skill__wrapper Bloodthirst \" role=\"button\" tabindex=\"0\" aria-expanded=\"false\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/bloodthirst.png\" class=\"build__skill__icon\" alt=\"Bloodthirst\"></div></button></div><div class=\"skill__tree__merc__button__wrapper\"><div class=\"skill__tree__merc__label\">Opportunity</div><button class=\"builder__skill\" disabled=\"\"><div class=\"build__skill__wrapper LightningStorm \" role=\"button\" tabindex=\"0\" aria-expanded=\"false\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/lightning_storm.png\" class=\"build__skill__icon\" alt=\"Lightning Storm\"></div></button></div></div><div class=\"searchbar\"><img class=\"searchbar-icon\" src=\"https://sunderarmor.com/search-icon.svg\" alt=\"search icon\"><input id=\"searchBar\" class=\"searchbar-input\" type=\"text\" placeholder=\"Search by name or keyword...\" autocomplete=\"off\" value=\"\"><button class=\"searchbar-close\" tabindex=\"-1\"><img class=\"searchbar-close-img\" src=\"https://sunderarmor.com/close-icon.svg\" alt=\"close icon\"></button></div><button class=\"game__filters__btn filters__btn\"><img src=\"https://sunderarmor.com/DIABLO4/UI/fullscreen_icon.svg\" class=\"game__filters__btn__icon\" alt=\"fullscreen\" style=\"width: 18px; height: 18px;\"></button><div class=\"game__filters__list\"></div></div></div><div class=\"skill__tree__wrapper leveling\" style=\"overflow: hidden; user-select: none; touch-action: none; cursor: move;\"><div class=\"skill__tree__alternative\" style=\"user-select: none; touch-action: none; transform-origin: 50% 50%; transition: none",
-          "textos": [
-            "MercenaryReinforcementSkillOpportunityNaN01/11/11/10/10/10/101/10/11/10/11/10/10/10/10/10/10/10/101/11/11/10/10/10/10/10/10/10/10/10/101/10/11/10/11/10/10/10/10/10/10/10/10/10/10/10/10/10/10/10/10/10/10/10/17121929"
-          ]
-        },
         "warplans": {
           "clases": {
             "active": 1,
@@ -295,67 +202,400 @@
         }
       ],
       "index": 0,
-      "mercenarios": [],
+      "mercenarios": [
+        {
+          "habilidades": [],
+          "icono": "https://sunderarmor.com/DIABLO4/Skills/VoH2/bloodthirst.png",
+          "nombre": "Bloodthirst",
+          "rol": "Mercenary"
+        },
+        {
+          "habilidades": [],
+          "icono": "https://sunderarmor.com/DIABLO4/Skills/VoH2/lightning_storm.png",
+          "nombre": "Lightning Storm",
+          "rol": "Reinforcement"
+        }
+      ],
       "paragon": [
         {
-          "glifo": "(Earth and Sky)",
-          "icono": "https://sunderarmor.com/close-icon.svg",
+          "glifo": "Earth and Sky",
+          "icono": null,
           "nivelGlifo": null,
-          "tablero": "1Starting Board Str 25•Dex 59•Int 64•Will 105"
+          "tablero": "Starting Board"
         },
         {
           "glifo": null,
-          "icono": "https://sunderarmor.com/DIABLO4/UI/rotate_icon.svg",
+          "icono": null,
           "nivelGlifo": null,
-          "tablero": "2Thunderstruck Str 15•Dex 59•Int 64•Will 110"
+          "tablero": "Thunderstruck"
         },
         {
           "glifo": null,
-          "icono": "https://sunderarmor.com/DIABLO4/UI/rotate_icon.svg",
+          "icono": null,
           "nivelGlifo": null,
-          "tablero": "3Constricting Tendrils Str 10•Dex 74•Int 54•Will 110"
+          "tablero": "Constricting Tendrils"
         }
       ],
       "stats": [
         {
-          "afijos": [],
-          "slot": ""
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Willpower"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Armor"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Maximum Life"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Movement Speed"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Movement Speed (Natural Motion - Mobility)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Boots"
         },
         {
-          "afijos": [],
-          "slot": ""
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Critical Strike Chance"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Critical Strike Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Vulnerable Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Attack Speed"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Cooldown Reduction (Worldly Stability - Resource)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Amulet"
         },
         {
-          "afijos": [],
-          "slot": ""
+          "afijos": [
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Critical Strike Chance"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Critical Strike Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Vulnerable Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Attack Speed"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Critical Strike Damage (Worldly Finesse - Offensive)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Gloves"
         },
         {
-          "afijos": [],
-          "slot": ""
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Critical Strike Chance"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Critical Strike Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Vulnerable Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Lightning Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Cooldown Reduction (Worldly Stability - Resource)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Ring 2"
         },
         {
-          "afijos": [],
-          "slot": ""
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Willpower"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Armor"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Maximum Life"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Spirit Regeneration"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Maximum Life (Worldly Endurance - Defensive)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Helm"
         },
         {
-          "afijos": [],
-          "slot": ""
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Willpower"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Armor"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Maximum Life"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Spirit Regeneration"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Maximum Life (Worldly Endurance - Defensive)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Chest Armor"
         },
         {
-          "afijos": [],
-          "slot": ""
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Willpower"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Armor"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Maximum Life"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Spirit Regeneration"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Maximum Life (Worldly Endurance - Defensive)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Pants"
         },
         {
-          "afijos": [],
-          "slot": ""
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Weapon Type"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Stat 1"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Stat 2"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Stat 3"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Stat 4"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Tempering Stat 1"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Weapon"
         },
         {
-          "afijos": [],
-          "slot": ""
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Critical Strike Chance"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Critical Strike Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Vulnerable Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Lightning Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Cooldown Reduction (Worldly Stability - Resource)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Ring 1"
         },
         {
-          "afijos": [],
-          "slot": ""
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Stat 1"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Stat 2"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Stat 3"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Stat 4"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Tempering Stat 1"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Offhand"
         }
       ],
       "warPlans": []

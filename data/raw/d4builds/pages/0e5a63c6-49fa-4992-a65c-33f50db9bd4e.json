@@ -1,6 +1,6 @@
 {
   "buildId": "0e5a63c6-49fa-4992-a65c-33f50db9bd4e",
-  "capturadoEn": "2026-08-09T05:55:46.859Z",
+  "capturadoEn": "2026-08-09T07:00:46.583Z",
   "pestanas": [
     "Gear & Skills",
     "Skill Tree",
@@ -12,85 +12,8 @@
   "porVariante": [
     {
       "arbol": [],
+      "arbolEsCanvas": true,
       "debug": {
-        "arbol": {
-          "clases": {
-            "alt": 1,
-            "filters__btn": 1,
-            "game__filters__btn": 1,
-            "game__filters__btn__icon": 1,
-            "game__filters__list": 1,
-            "searchbar": 1,
-            "searchbar-close": 1,
-            "searchbar-close-img": 1,
-            "searchbar-icon": 1,
-            "searchbar-input": 1,
-            "skill-line-base": 20,
-            "skill-line-inner": 19,
-            "skill-tree-viewer": 1,
-            "skill-tree-viewer__content": 1,
-            "skill__tree__header": 1,
-            "skill__tree__header__wrapper": 1,
-            "skill__tree__leveling__toggle": 1,
-            "skill__tree__leveling__toggle__button": 1,
-            "skill__tree__remaining": 1,
-            "skill__tree__remaining__total": 1,
-            "skill__tree__total": 1,
-            "viewer-canvas": 1,
-            "viewer-lines": 1,
-            "viewer-main": 1
-          },
-          "muestra": "<div class=\"general__wrapper\"><div class=\"skill-tree-viewer\"><div class=\"skill__tree__header alt\"><div class=\"skill__tree__header__wrapper\"><div class=\"skill__tree__remaining\"><div class=\"skill__tree__total\">Remaining:<div class=\"skill__tree__remaining__total\">0</div></div></div><div class=\"searchbar\"><img class=\"searchbar-icon\" src=\"https://sunderarmor.com/search-icon.svg\" alt=\"search icon\"><input id=\"skill-tree-viewer-search\" class=\"searchbar-input\" type=\"text\" placeholder=\"Search skills...\" autocomplete=\"off\" value=\"\"><button class=\"searchbar-close\" tabindex=\"-1\"><img class=\"searchbar-close-img\" src=\"https://sunderarmor.com/close-icon.svg\" alt=\"close icon\"></button></div><button class=\"game__filters__btn filters__btn\"><img src=\"https://sunderarmor.com/DIABLO4/UI/fullscreen_icon.svg\" class=\"game__filters__btn__icon\" alt=\"fullscreen\" style=\"width: 18px; height: 18px;\"></button><div class=\"skill__tree__leveling__toggle\"><div class=\"skill__tree__leveling__toggle__button\"><span></span></div>Leveling Path</div><div class=\"game__filters__list\"></div></div></div><div class=\"skill-tree-viewer__content\"><div class=\"viewer-main\"><div class=\"viewer-canvas \" style=\"transform: translate(-250px, -75px) scale(1); transform-origin: left top; cursor: grab;\"><svg class=\"viewer-lines\"><g><path d=\"M 759 532 L 906 534\" fill=\"none\" stroke=\"#2d2d2d\" stroke-width=\"5\" stroke-linecap=\"round\" class=\"skill-line-base\"></path><path d=\"M 759 532 L 906 534\" fill=\"none\" stroke=\"#191b1f\" stroke-width=\"3\" stroke-linecap=\"round\" class=\"skill-line-inner\"></path></g><g><path d=\"M 668 533 L 759 532\" fill=\"none\" stroke=\"#2d2d2d\" stroke-width=\"5\" stroke-linecap=\"round\" class=\"skill-line-base\"></path><path d=\"M 668 533 L 759 532\" fill=\"none\" stroke=\"#191b1f\" stroke-width=\"3\" stroke-linecap=\"round\" class=\"skill-line-inner\"></path></g><g><path d=\"M 669 586 L 668 533\" fill=\"none\" stroke=\"#2d2d2d\" stroke-width=\"5\" stroke-linecap=\"round\" class=\"skill-line-base\"></path><path d=\"M 669 586 L 668 533\" fill=\"none\" stroke=\"#191b1f\" stroke-width=\"3\" stroke-linecap=\"round\" class=\"skill-line-inner\"></path></g><g><path d=\"M 621 588 L 668 533\" fill=\"none\" stroke=\"#2d2d2d\" stroke-width=\"5\" stroke-linecap=\"round\" class=\"skill-line-base\"></path><path d=\"M 621 588 L 668 533\" fill=\"none\" stroke=\"#191b1f\" stroke-width=\"3\" stroke-linecap=\"round\" class=\"skill-line-inner\"></path></g><g><path d=\"M 615 496 Q 797 496 759 532\" fill=\"none\" stroke=\"#2d2d2d\" stroke-width=\"5\" stroke-linecap=\"round\" class=\"skill-line-base\"></pat",
-          "textos": []
-        },
-        "mercenarios": {
-          "clases": {
-            "Bloodthirst": 1,
-            "SkillCast": 1,
-            "after_bottom": 5,
-            "alt": 1,
-            "build__skill__icon": 2,
-            "build__skill__wrapper": 2,
-            "builder__skill": 4,
-            "builder__skill__icon": 2,
-            "builder__skill__icon--sm": 2,
-            "c1": 5,
-            "group__start": 2,
-            "large": 5,
-            "r1": 5,
-            "seeker": 6,
-            "skill__tree": 1,
-            "skill__tree--merc": 1,
-            "skill__tree__group": 2,
-            "skill__tree__group__wrapper": 2,
-            "skill__tree__header": 1,
-            "skill__tree__header__wrapper": 1,
-            "skill__tree__item": 5,
-            "skill__tree__item--active": 5,
-            "skill__tree__item--fill": 2,
-            "skill__tree__item--full": 2,
-            "skill__tree__item__icon": 4,
-            "skill__tree__item__icon--active": 4,
-            "skill__tree__item__line": 5,
-            "skill__tree__item__line--active": 5,
-            "skill__tree__item__line--fill": 2,
-            "skill__tree__item__line__active": 5,
-            "skill__tree__item__line__bg": 5,
-            "skill__tree__item__line__fill": 5,
-            "skill__tree__merc": 1,
-            "skill__tree__merc__button__wrapper": 4,
-            "skill__tree__merc__label": 4,
-            "skill__tree__row": 5,
-            "skill__tree__section": 2,
-            "skill__tree__section__bar": 2,
-            "skill__tree__section__req": 2,
-            "wire_trap": 4
-          },
-          "muestra": "<div class=\"general__wrapper\"><div class=\"skill__tree skill__tree--merc\"><div class=\"skill__tree__header alt\"><div class=\"skill__tree__header__wrapper\"><div class=\"skill__tree__merc\"><div class=\"skill__tree__merc__button__wrapper\"><div class=\"skill__tree__merc__label\">Mercenary</div><button class=\"builder__skill\" disabled=\"\"><img class=\"builder__skill__icon builder__skill__icon--sm\" src=\"https://sunderarmor.com/DIABLO4/Mercenaries/subo,_the_drunken_archer.png\" alt=\"empty skill\"></button></div><div class=\"skill__tree__merc__button__wrapper\"><div class=\"skill__tree__merc__label\">Reinforcement</div><button class=\"builder__skill\" disabled=\"\"><img class=\"builder__skill__icon builder__skill__icon--sm\" src=\"https://sunderarmor.com/DIABLO4/Mercenaries/varyana,_the_berserker_crone.png\" alt=\"empty skill\"></button></div><div class=\"skill__tree__merc__button__wrapper\"><div class=\"skill__tree__merc__label\">Skill</div><button class=\"builder__skill\" disabled=\"\"><div class=\"build__skill__wrapper Bloodthirst \" role=\"button\" tabindex=\"0\" aria-expanded=\"false\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/bloodthirst.png\" class=\"build__skill__icon\" alt=\"Bloodthirst\"></div></button></div><div class=\"skill__tree__merc__button__wrapper\"><div class=\"skill__tree__merc__label\">Opportunity</div><button class=\"builder__skill\" disabled=\"\"><div class=\"build__skill__wrapper SkillCast \" role=\"button\" tabindex=\"0\" aria-expanded=\"false\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/skill_cast.png\" class=\"build__skill__icon\" alt=\"Skill Cast\"></div></button></div></div><div class=\"searchbar\"><img class=\"searchbar-icon\" src=\"https://sunderarmor.com/search-icon.svg\" alt=\"search icon\"><input id=\"searchBar\" class=\"searchbar-input\" type=\"text\" placeholder=\"Search by name or keyword...\" autocomplete=\"off\" value=\"\"><button class=\"searchbar-close\" tabindex=\"-1\"><img class=\"searchbar-close-img\" src=\"https://sunderarmor.com/close-icon.svg\" alt=\"close icon\"></button></div><button class=\"game__filters__btn filters__btn\"><img src=\"https://sunderarmor.com/DIABLO4/UI/fullscreen_icon.svg\" class=\"game__filters__btn__icon\" alt=\"fullscreen\" style=\"width: 18px; height: 18px;\"></button><div class=\"game__filters__list\"></div></div></div><div class=\"skill__tree__wrapper\" style=\"overflow: hidden; user-select: none; touch-action: none; cursor: move;\"><div class=\"skill__tree__alternative\" style=\"user-select: none; touch-action: none; transform-origin: 50% 50%; transition: none; transform: scale(0.8) ",
-          "textos": [
-            "MercenaryReinforcementSkillOpportunityNaN01/11/11/10/10/10/100/11/10/11/10/11/10/10/10/10/10/10/101/11/11/10/10/10/10/10/10/10/10/10/100/11/10/11/10/11/10/10/10/10/10/10/10/10/10/10/10/10/10/10/10/10/10/10/17121929"
-          ]
-        },
         "warplans": {
           "clases": {
             "active": 1,
@@ -298,79 +221,412 @@
         }
       ],
       "index": 0,
-      "mercenarios": [],
+      "mercenarios": [
+        {
+          "habilidades": [],
+          "icono": "https://sunderarmor.com/DIABLO4/Skills/VoH2/bloodthirst.png",
+          "nombre": "Bloodthirst",
+          "rol": "Mercenary"
+        },
+        {
+          "habilidades": [],
+          "icono": "https://sunderarmor.com/DIABLO4/Skills/VoH2/skill_cast.png",
+          "nombre": "Skill Cast",
+          "rol": "Reinforcement"
+        }
+      ],
       "paragon": [
         {
-          "glifo": "(Tactician)",
-          "icono": "https://sunderarmor.com/close-icon.svg",
+          "glifo": "Tactician",
+          "icono": null,
           "nivelGlifo": null,
-          "tablero": "1Starting Board Str 25•Dex 59•Int 105•Will 64"
+          "tablero": "Starting Board"
         },
         {
-          "glifo": "(Elementalist)",
-          "icono": "https://sunderarmor.com/DIABLO4/UI/rotate_icon.svg",
+          "glifo": "Elementalist",
+          "icono": null,
           "nivelGlifo": null,
-          "tablero": "2Frigid Fate Str 25•Dex 49•Int 115•Will 59"
+          "tablero": "Frigid Fate"
         },
         {
-          "glifo": "(Adept)",
-          "icono": "https://sunderarmor.com/DIABLO4/UI/rotate_icon.svg",
+          "glifo": "Adept",
+          "icono": null,
           "nivelGlifo": null,
-          "tablero": "3Static Surge Str 20•Dex 59•Int 110•Will 59"
+          "tablero": "Static Surge"
         },
         {
-          "glifo": "(Unleash)",
-          "icono": "https://sunderarmor.com/DIABLO4/UI/rotate_icon.svg",
+          "glifo": "Unleash",
+          "icono": null,
           "nivelGlifo": null,
-          "tablero": "4Enchantment Master Str 20•Dex 49•Int 110•Will 69"
+          "tablero": "Enchantment Master"
         },
         {
-          "glifo": "(Destruction)",
-          "icono": "https://sunderarmor.com/DIABLO4/UI/rotate_icon.svg",
+          "glifo": "Destruction",
+          "icono": null,
           "nivelGlifo": null,
-          "tablero": "5Searing Heat Str 15•Dex 59•Int 110•Will 64"
+          "tablero": "Searing Heat"
         }
       ],
       "stats": [
         {
-          "afijos": [],
-          "slot": ""
+          "afijos": [
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Primary Core Stat"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Maximum Life"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Armor"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Mana Regeneration"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Maximum Life (Worldly Endurance - Defensive)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Pants"
         },
         {
-          "afijos": [],
-          "slot": ""
+          "afijos": [
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Critical Strike Damage Multiplier"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "All Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Critical Strike Chance"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Cooldown Reduction"
+            },
+            {
+              "ga": 1,
+              "templado": true,
+              "texto": "Critical Strike Chance (Worldly Destruction - Weapons)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Offhand"
         },
         {
-          "afijos": [],
-          "slot": ""
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Intelligence"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Vulnerable Damage Multiplier"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Critical Strike Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "All Damage Multiplier"
+            },
+            {
+              "ga": 1,
+              "templado": true,
+              "texto": "Lucky Hit: Up to a 15% Chance to Restore X Primary Resource (Worldly Stability - Resource)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Aspect of Shredding Blades"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Amulet"
         },
         {
-          "afijos": [],
-          "slot": ""
+          "afijos": [
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Intelligence"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Maximum Life"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Resource Generation"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Cooldown Reduction"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Maximum Life (Worldly Endurance - Defensive)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Helm"
         },
         {
-          "afijos": [],
-          "slot": ""
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Vulnerable Damage Multiplier"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Ranks to Shock Skills"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Critical Strike Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Cooldown Reduction"
+            },
+            {
+              "ga": 1,
+              "templado": true,
+              "texto": "Cooldown Reduction (Worldly Stability - Resource)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Ring 1"
         },
         {
-          "afijos": [],
-          "slot": ""
+          "afijos": [
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Intelligence"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Maximum Life"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Armor"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Mana Regeneration"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Maximum Life (Worldly Endurance - Defensive)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Chest Armor"
         },
         {
-          "afijos": [],
-          "slot": ""
+          "afijos": [
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Critical Strike Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Critical Strike Chance"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "All Damage Multiplier"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Vulnerable Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Critical Strike Damage (Worldly Finesse - Offensive)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Gloves"
         },
         {
-          "afijos": [],
-          "slot": ""
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Cooldown Reduction"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Lightning Damage Multiplier"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "All Damage Multiplier"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Critical Strike Damage Multiplier"
+            },
+            {
+              "ga": 1,
+              "templado": true,
+              "texto": "Cooldown Reduction (Worldly Stability - Resource)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Ring 2"
         },
         {
-          "afijos": [],
-          "slot": ""
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Weapon Type"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Critical Strike Damage Multiplier"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "All Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Weapon Damage"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Intelligence"
+            },
+            {
+              "ga": 1,
+              "templado": true,
+              "texto": "Critical Strike Chance (Worldly Destruction - Weapons)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Weapon"
         },
         {
-          "afijos": [],
-          "slot": ""
+          "afijos": [
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Intelligence"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Movement Speed"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Maximum Life"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Ball Lightning"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Movement Speed (Natural Motion - Mobility)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Boots"
         }
       ],
       "warPlans": []
