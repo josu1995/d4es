@@ -22,13 +22,13 @@
     {
       "lineas": [
         "Gear Stats",
-        "Ring 1Critical Strike ChanceStrengthCritical Strike Damage MultiplierVulnerable Damage MultiplierLucky Hit: Up to a 15% Chance to Restore X Primary Resource (Worldly Stability - Resource)All Skills",
-        "Ring 1"
+        "GlovesCritical Strike ChanceRanks to Double SwingVulnerable Damage MultiplierCritical Strike Damage MultiplierCritical Strike Damage (Worldly Finesse - Offensive)Physical Damage",
+        "Gloves"
       ],
       "selector": "[class*=\"stat\"]"
     }
   ],
-  "capturadoEn": "2026-08-09T14:59:03.820Z",
+  "capturadoEn": "2026-08-09T15:07:53.682Z",
   "clasesGlobales": {
     "0": 40,
     "1": 11,
@@ -205,9 +205,17 @@
         "<div class=\"build__skill__wrapper Bloodthirst \" role=\"button\" tabindex=\"0\" aria-expanded=\"false\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/bloodthirst.png\" class=\"build__skill__icon\" alt=\"Bloodthirst\"></div>",
         "<div class=\"build__skill__wrapper DoubleSwing \" role=\"button\" tabindex=\"0\" aria-expanded=\"false\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/double_swing.png\" class=\"build__skill__icon\" alt=\"Double Swing\"></div>"
       ],
+      "muestrasReales": [
+        "<button class=\"skill__tree__item r1 c1 large after_bottom skill__tree__item--active seeker\" style=\"top: 230px; left: 1050px;\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/seeker.png\" class=\"skill__tree__item__icon skill__tree__item__icon--active\" alt=\"Seeker\"></button>",
+        "<button class=\"skill__tree__item r1 c1 large after_bottom skill__tree__item--active seeker\" style=\"top: 230px; left: 1050px;\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/seeker.png\" class=\"skill__tree__item__icon skill__tree__item__icon--active\" alt=\"Seeker\"></button>",
+        "<button class=\"skill__tree__item r1 c1 before_right scorched_earth\" style=\"top: 470px; left: 1130px;\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/scorched_earth.png\" class=\"skill__tree__item__icon\" alt=\"Scorched Earth\"><div class=\"skill__tree__item__count\"><b>0</b>/<i>1</i></div></button>",
+        "<button class=\"skill__tree__item r3 c0 large before_left after_bottom snipe\" style=\"top: 590px; left: 1110px;\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/snipe.png\" class=\"skill__tree__item__icon\" alt=\"Snipe\"><div class=\"skill__tree__item__count\"><b>0</b>/<i>1</i></div></button>",
+        "<button class=\"skill__tree__item r1 c2 before_left bargaining_chips\" style=\"top: 740px; left: 1400px;\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/bargaining_chips.png\" class=\"skill__tree__item__icon\" alt=\"Bargaining Chips\"><div class=\"skill__tree__item__count\"><b>0</b>/<i>1</i></div></button>"
+      ],
       "nodosVisor": 0,
       "nombre": "Mercenaries",
       "segunElParserActual": 2,
+      "segunElSelectorReal": 57,
       "textos": [
         "Mercenary",
         "Reinforcement",
@@ -271,9 +279,17 @@
         "<div class=\"paragon__board\" style=\"top: 0px; left: 0px; transform: rotate(0deg);\"><div class=\"paragon__board__gates\" style=\"transform: rotate(0deg);\"><div class=\"paragon__board__name\"><div class=\"dropdown__wrapper dropdown__wrapper--paragon\"><button class=\"dropdown\" disabled=\"\"><div class=\"dropdown__button dropdown__button--center\">1</div></button></div>Starting Board <button class=\"paragon__board__name__glyph\">(Exploit)</button><div class=\"paragon__board__stats\"><div class=\"paragon__board__stat\">Str 105</div>•<div class=\"paragon__board__stat\">Dex 59</div>•<div class=\"paragon__board__stat\">Int 25</div>•<div class=\"paragon__board__stat\">Will 64</div></div></div><button class=\"paragon__board__reset\"><img class=\"paragon__board__delete__icon\" src=\"https://sunderarmor.com/close-icon.svg\" alt=\"Reset Board\"></button><button class=\"paragon__board__gate active\" style=\"top: 50px; left: 600px;\"><di",
         "<div class=\"paragon__board\" style=\"top: -1258px; left: 0px; transform: rotate(540deg);\"><div class=\"paragon__board__gates\" style=\"transform: rotate(-540deg);\"><div class=\"paragon__board__name\"><div class=\"dropdown__wrapper dropdown__wrapper--paragon\"><button class=\"dropdown\" disabled=\"\"><div class=\"dropdown__button dropdown__button--center\">2</div></button></div>Carnage <button class=\"paragon__board__name__glyph\">(Ambidextrous)</button><div class=\"paragon__board__stats\"><div class=\"paragon__board__stat active\">Str 110</div>•<div class=\"paragon__board__stat\">Dex 59</div>•<div class=\"paragon__board__stat\">Int 20</div>•<div class=\"paragon__board__stat\">Will 59</div></div></div><button class=\"paragon__board__rotate\"><img class=\"paragon__board__rotate__icon\" src=\"https://sunderarmor.com/DIABLO4/UI/rotate_icon.svg\" alt=\"Rotate Board\"></button><button class=\"paragon__board__change\"><img class=\""
       ],
+      "muestrasReales": [
+        "<button class=\"paragon__board__tile r2 c10 enabled\" style=\"transform: rotate(0deg);\"><div class=\"paragon__tile__wrapper\"><img class=\"paragon__board__tile__icon\" src=\"https://sunderarmor.com/DIABLO4/Paragon/3/Will.png\" alt=\"Will\"><img class=\"paragon__board__tile__icon active\" src=\"https://sunderarmor.com/DIABLO4/Paragon/3/Will_active.png\" alt=\"Will\"><img class=\"paragon__board__tile__bg\" src=\"https://sunderarmor.com/DIABLO4/Paragon/tile_bg_common.png\" alt=\"Common\"></div></button>",
+        "<button class=\"paragon__board__tile r2 c11 active enabled\" style=\"transform: rotate(0deg);\"><div class=\"paragon__tile__wrapper\"><img class=\"paragon__board__tile__icon\" src=\"https://sunderarmor.com/DIABLO4/Paragon/3/Will.png\" alt=\"Will\"><img class=\"paragon__board__tile__icon active\" src=\"https://sunderarmor.com/DIABLO4/Paragon/3/Will_active.png\" alt=\"Will\"><img class=\"paragon__board__tile__bg\" src=\"https://sunderarmor.com/DIABLO4/Paragon/tile_bg_common.png\" alt=\"Common\"></div></button>",
+        "<button class=\"paragon__board__tile r4 c13 enabled\" style=\"transform: rotate(-540deg);\"><div class=\"paragon__tile__wrapper\"><img class=\"paragon__board__tile__icon\" src=\"https://sunderarmor.com/DIABLO4/Paragon/3/Str.png\" alt=\"Str\"><img class=\"paragon__board__tile__icon active\" src=\"https://sunderarmor.com/DIABLO4/Paragon/3/Str_active.png\" alt=\"Str\"><img class=\"paragon__board__tile__bg\" src=\"https://sunderarmor.com/DIABLO4/Paragon/tile_bg_common.png\" alt=\"Common\"></div></button>",
+        "<button class=\"paragon__board__tile r15 c16 active enabled\" style=\"transform: rotate(-540deg);\"><div class=\"paragon__tile__wrapper\"><img class=\"paragon__board__tile__icon\" src=\"https://sunderarmor.com/DIABLO4/Paragon/3/Will.png\" alt=\"Will\"><img class=\"paragon__board__tile__icon active\" src=\"https://sunderarmor.com/DIABLO4/Paragon/3/Will_active.png\" alt=\"Will\"><img class=\"paragon__board__tile__bg\" src=\"https://sunderarmor.com/DIABLO4/Paragon/tile_bg_common.png\" alt=\"Common\"></div></button>",
+        "<button class=\"paragon__board__tile r20 c12\" style=\"transform: rotate(-180deg);\"><div class=\"paragon__tile__wrapper\"><img class=\"paragon__board__tile__icon\" src=\"https://sunderarmor.com/DIABLO4/Paragon/3/Int.png\" alt=\"Int\"><img class=\"paragon__board__tile__icon active\" src=\"https://sunderarmor.com/DIABLO4/Paragon/3/Int_active.png\" alt=\"Int\"><img class=\"paragon__board__tile__bg\" src=\"https://sunderarmor.com/DIABLO4/Paragon/tile_bg_common.png\" alt=\"Common\"></div></button>"
+      ],
       "nodosVisor": 0,
       "nombre": "Paragon",
       "segunElParserActual": 5,
+      "segunElSelectorReal": 711,
       "textos": [
         "271",
         "65",
@@ -386,13 +402,12 @@
       "https://sunderarmor.com/DIABLO4/Uniques/2/ring_of_starless_skies.png",
       "https://sunderarmor.com/DIABLO4/Uniques/2/the_grandfather.png",
       "https://sunderarmor.com/DIABLO4/Uniques/bludgeoning_weapon.png",
-      "https://sunderarmor.com/DIABLO4/Uniques/ring_1.png",
+      "https://sunderarmor.com/DIABLO4/Uniques/gloves.png",
       "https://sunderarmor.com/DIABLO4/Uniques/pants.png"
     ],
     "otros": [
       "https://img.youtube.com/vi/z9ZidNzZABE/mqdefault.jpg",
-      "https://sunderarmor.com/WOW/UI/share_icon.svg",
-      "https://sync.intentiq.com/profiles_engine/ProfilesEngineServlet?at=20&mi=10&secure=1&dpi=1477556550&iiqidtype=2&iiqpcid=99f34000-3583-bc54-3175-905a33751b42&iiqpciddate=1786287508991&tsrnd=742_1786287509002&jsver=6.256&testPercentage=95&testGroup=B&uh=%7B%220%22%3A%22%5C%22Not%3DA%3FBrand%5C%22%3Bv%3D%5C%2299%5C%22%2C%20%5C%22HeadlessChrome%5C%22%3Bv%3D%5C%22151%5C%22%2C%20%5C%22Chromium%5C%22%3Bv%3D%5C%22151%5C%22%22%2C%221%22%3A%22%3F0%22%2C%222%22%3A%22%5C%22Windows%5C%22%22%2C%223%22%3A%22%5C%22x86%5C%22%22%2C%224%22%3A%22%5C%2264%5C%22%22%2C%227%22%3A%22%3F0%22%2C%228%22%3A%22%5C%22Not%3DA%3FBrand%5C%22%3Bv%3D%5C%2299.0.0.0%5C%22%2C%20%5C%22HeadlessChrome%5C%22%3Bv%3D%5C%22151.0.7922.34%5C%22%2C%20%5C%22Chromium%5C%22%3Bv%3D%5C%22151.0.7922.34%5C%22%22%7D&vrref=https%3A%2F%2Fd4builds.gg&gdpr_consent=undefined&gpc=undefined&gdpr=0"
+      "https://sunderarmor.com/WOW/UI/share_icon.svg"
     ]
   },
   "pestanas": [
@@ -2657,43 +2672,42 @@
     },
     "stats": {
       "clasesInternas": {
-        "0": 69,
-        "1": 19,
+        "0": 76,
+        "1": 21,
+        "Gloves": 2,
         "Pants": 2,
-        "Ring1": 2,
-        "barbarian": 131,
-        "builder__stat": 133,
+        "barbarian": 129,
+        "builder__stat": 131,
         "builder__stats__group": 4,
         "builder__stats__list": 1,
         "builder__stats__priority": 14,
         "builder__stats__slot": 14,
         "builder__stats__slot__icon": 23,
         "builder__stats__title": 1,
-        "dropdown": 131,
-        "dropdown__button": 131,
-        "dropdown__button__tempering": 44,
-        "dropdown__button__wrapper": 131,
-        "filled": 131,
+        "dropdown": 129,
+        "dropdown__button": 129,
+        "dropdown__button__tempering": 43,
+        "dropdown__button__wrapper": 129,
+        "filled": 129,
         "greater__affix__button": 107,
-        "greater__affix__button--filled": 46,
+        "greater__affix__button--filled": 54,
         "greater__affix__img": 106,
-        "null": 10,
-        "stat__dropdown": 131,
-        "stat__dropdown__wrapper": 132,
-        "undefined": 33
+        "stat__dropdown": 129,
+        "stat__dropdown__wrapper": 130,
+        "undefined": 32
       },
       "encontrados": 51,
-      "muestraHtml": "<div class=\"builder__stats__section\"><div class=\"builder__stats__title\">Gear Stats</div><div class=\"builder__stats__list\"><div class=\"builder__stats__group Ring1\"><div class=\"builder__stats__slot\"><img class=\"builder__stats__slot__icon\" src=\"https://sunderarmor.com/DIABLO4/Uniques/ring_1.png\" alt=\"Ring 1\">Ring 1</div><div class=\"builder__stats__priority\"><div class=\"builder__stat\"><button class=\"greater__affix__button greater__affix__button--filled\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      0\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Critical Strike Chance</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      0\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Strength</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button greater__affix__button--filled\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      1\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Critical Strike Damage Multiplier</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      0\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Vulnerable Damage Multiplier</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button greater__affix__button--filled\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__drop",
+      "muestraHtml": "<div class=\"builder__stats__section\"><div class=\"builder__stats__title\">Gear Stats</div><div class=\"builder__stats__list\"><div class=\"builder__stats__group Gloves\"><div class=\"builder__stats__slot\"><img class=\"builder__stats__slot__icon\" src=\"https://sunderarmor.com/DIABLO4/Uniques/gloves.png\" alt=\"Gloves\">Gloves</div><div class=\"builder__stats__priority\"><div class=\"builder__stat\"><button class=\"greater__affix__button\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      0\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Critical Strike Chance</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button greater__affix__button--filled\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      0\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Ranks to Double Swing</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button greater__affix__button--filled\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      1\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Vulnerable Damage Multiplier</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button greater__affix__button--filled\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      0\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Critical Strike Damage Multiplier</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button greater__affix__button--filled\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"st",
       "selector": "[class*=\"builder__stats\"]",
       "textos": [
         "Gear Stats",
-        "Ring 1Critical Strike ChanceStrengthCritical Strike Damage MultiplierVulnerable Damage MultiplierLucky Hit: Up to a 15% Chance to Restore X Primary Resource (Worldly Stability - Resource)All Skills",
-        "Ring 1",
-        "Critical Strike ChanceStrengthCritical Strike Damage MultiplierVulnerable Damage MultiplierLucky Hit: Up to a 15% Chance to Restore X Primary Resource (Worldly Stability - Resource)All Skills",
+        "GlovesCritical Strike ChanceRanks to Double SwingVulnerable Damage MultiplierCritical Strike Damage MultiplierCritical Strike Damage (Worldly Finesse - Offensive)Physical Damage",
+        "Gloves",
+        "Critical Strike ChanceRanks to Double SwingVulnerable Damage MultiplierCritical Strike Damage MultiplierCritical Strike Damage (Worldly Finesse - Offensive)Physical Damage",
         "PantsStrengthMaximum LifeFury RegenerationResistance to All ElementsMaximum Life (Worldly Endurance - Defensive)Physical Damage",
         "Pants",
         "StrengthMaximum LifeFury RegenerationResistance to All ElementsMaximum Life (Worldly Endurance - Defensive)Physical Damage",
-        "GlovesCritical Strike ChanceRanks to Double SwingVulnerable Damage MultiplierCritical Strike Damage MultiplierCritical Strike Damage (Worldly Finesse - Offensive)Physical Damage"
+        "Ring 2Attack SpeedCritical Strike ChanceCritical Strike Damage MultiplierVulnerable Damage MultiplierLucky Hit: Up to a 15% Chance to Restore X Primary Resource (Worldly Stability - Resource)All Skills"
       ]
     },
     "variantes": {
