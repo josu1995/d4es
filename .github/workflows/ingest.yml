@@ -124,6 +124,18 @@ jobs:
 
       - run: node apps/scraper/dist/cli.js correlate
 
+      # Si el catalogo ha traido builds nuevas, sus paginas (equipo, Paragon) aun no
+      # existen. Se avisa aqui en vez de dejar fichas a medias sin explicacion; el
+      # workflow de paginas las recogera en su pasada diaria.
+      - name: Comprobar paginas pendientes
+        run: |
+          total=$(ls data/canonical/builds/*/*.json 2>/dev/null | wc -l)
+          paginas=$(ls data/raw/d4builds/pages/*.json 2>/dev/null | wc -l)
+          echo "Builds: $total | con pagina extraida: $paginas" >> "$GITHUB_STEP_SUMMARY"
+          if [ "$paginas" -lt "$total" ]; then
+            echo "Faltan $((total - paginas)) paginas por extraer." >> "$GITHUB_STEP_SUMMARY"
+          fi
+
       - name: Verificar los datos antes de publicarlos
         run: node apps/scraper/dist/cli.js verify
 

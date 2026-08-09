@@ -1,0 +1,88 @@
+---
+import Base from '../layouts/Base.astro';
+import { loadIndex, loadDiccionario } from '../lib/data';
+
+const indice = loadIndex();
+const dict = loadDiccionario();
+const totalTerminos = Object.keys(dict.byIdName).length;
+---
+
+<Base
+  titulo="Buscar en D4es"
+  descripcion="Busca builds, objetos y guías de Diablo 4 en castellano. Funciona escribiendo en español o en inglés."
+  migas={[{ nombre: 'Inicio', url: '/' }, { nombre: 'Buscar', url: '/buscar' }]}
+>
+  <div class="mx-auto max-w-3xl px-4 py-10">
+    <h1 class="font-titulo text-3xl">Buscar</h1>
+    <p class="mt-2 text-ceniza">
+      Busca entre las {indice.count} builds, las guías y los {totalTerminos} términos del juego. Puedes
+      escribir en español o en inglés: las fichas llevan los dos nombres.
+    </p>
+
+    <!--
+      Pagefind genera su índice al terminar el build y lo sirve como ficheros estáticos.
+      Sin servidor, sin base de datos y sin enviar lo que buscas a ninguna parte.
+    -->
+    <div id="buscador" class="mt-6"></div>
+
+    <noscript>
+      <p class="mt-6 grabado rounded-lg bg-piedra p-4 text-sm text-ceniza">
+        El buscador necesita JavaScript. Sin él puedes navegar igualmente por
+        <a href="/builds" class="underline underline-offset-4">las builds</a>,
+        <a href="/objetos" class="underline underline-offset-4">los objetos</a> y
+        <a href="/guias" class="underline underline-offset-4">las guías</a>.
+      </p>
+    </noscript>
+  </div>
+</Base>
+
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+<script src="/pagefind/pagefind-ui.js" is:inline></script>
+<script is:inline>
+  window.addEventListener('DOMContentLoaded', () => {
+    if (typeof PagefindUI === 'undefined') return;
+    new PagefindUI({
+      element: '#buscador',
+      showSubResults: true,
+      showImages: false,
+      translations: {
+        placeholder: 'Nombre de build, objeto, habilidad…',
+        clear_search: 'Limpiar',
+        load_more: 'Ver más resultados',
+        search_label: 'Buscar en este sitio',
+        filters_label: 'Filtros',
+        zero_results: 'No hay resultados para [SEARCH_TERM]',
+        many_results: '[COUNT] resultados para [SEARCH_TERM]',
+        one_result: '1 resultado para [SEARCH_TERM]',
+        searching: 'Buscando [SEARCH_TERM]…',
+      },
+    });
+  });
+</script>
+
+<style is:global>
+  /* El buscador viene con estilos claros por defecto: se adapta a la paleta del sitio. */
+  #buscador {
+    --pagefind-ui-scale: 0.9;
+    --pagefind-ui-primary: var(--color-pergamino);
+    --pagefind-ui-text: var(--color-pergamino);
+    --pagefind-ui-background: var(--color-piedra);
+    --pagefind-ui-border: var(--color-grabado);
+    --pagefind-ui-tag: var(--color-piedra-alta);
+    --pagefind-ui-border-width: 1px;
+    --pagefind-ui-border-radius: 0.4rem;
+  }
+  #buscador .pagefind-ui__result-link {
+    color: var(--color-pergamino);
+  }
+  #buscador .pagefind-ui__result-link:hover {
+    color: var(--color-brasa-viva);
+  }
+  #buscador .pagefind-ui__result-excerpt {
+    color: var(--color-ceniza);
+  }
+  #buscador mark {
+    background: color-mix(in srgb, var(--color-oro) 25%, transparent);
+    color: var(--color-pergamino);
+  }
+</style>

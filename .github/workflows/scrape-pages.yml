@@ -22,6 +22,11 @@ on:
       - 'apps/scraper/src/sources/d4builds/probe-page.ts'
       - 'apps/scraper/src/sources/d4builds/scrape-pages.ts'
       - '.github/workflows/scrape-pages.yml'
+  schedule:
+    # Diario. El checkpoint hace que solo se pidan las paginas que faltan, asi que en
+    # regimen normal esta pasada no descarga casi nada: solo recoge las builds nuevas
+    # que haya publicado el catalogo.
+    - cron: '43 3 * * *'
 
 concurrency:
   group: scrape-pages
