@@ -26,6 +26,7 @@ on:
       - 'apps/scraper/src/sources/d4builds/probe-page.ts'
       - 'apps/scraper/src/sources/d4builds/scrape-pages.ts'
       - 'apps/scraper/src/sources/d4builds/warplans.ts'
+      - 'apps/scraper/src/sources/d4builds/mercenarios.ts'
       - '.github/workflows/scrape-pages.yml'
   schedule:
     # Diario. El checkpoint hace que solo se pidan las paginas que faltan, asi que en
@@ -79,8 +80,8 @@ jobs:
       # `join(commits.*.modified, ',')` devuelve vacio (es un array de arrays) y buscar la
       # ruta dentro de `toJSON(commits)` tampoco caso. El diff de git es comprobable.
       #
-      # Parser = scrape-pages.ts Y warplans.ts: los dos cambian lo que se extrae. Solo
-      # probe-page.ts se queda en sonda, porque no toca los datos.
+      # Parser = scrape-pages.ts, warplans.ts Y mercenarios.ts: los tres cambian lo que
+      # se extrae. Solo probe-page.ts se queda en sonda, porque no toca los datos.
       - name: Decidir que hace este push
         id: plan
         if: github.event_name == 'push'
@@ -94,7 +95,7 @@ jobs:
           fi
           cambiados=$(git diff --name-only "$base" HEAD || true)
 
-          if echo "$cambiados" | grep -qE '^apps/scraper/src/sources/d4builds/(scrape-pages|warplans)\.ts$'; then
+          if echo "$cambiados" | grep -qE '^apps/scraper/src/sources/d4builds/(scrape-pages|warplans|mercenarios)\.ts$'; then
             modo=scrape
           else
             modo=probe

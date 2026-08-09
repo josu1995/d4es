@@ -240,7 +240,9 @@ async function extraerParagon(page: Page): Promise<VarianteRaw['paragon']> {
       tablero = tablero.split(/\s+(?:Str|Dex|Int|Will|Fue|Des|Int|Vol)\s+\d/)[0] ?? tablero;
       tablero = limpiar(tablero);
 
-      // El glifo llega entre parentesis; el nivel no siempre se publica.
+      // El glifo llega entre parentesis. Su NIVEL no lo publica la fuente (verificado en
+      // las sondas: la cabecera solo trae "(Brawl) Str 105..."); el regex se queda por si
+      // algun dia lo añaden, pero hoy sale null en el 100% de los tableros.
       const nivel = textoGlifo.match(/(\d+)/);
       const glifo = limpiar(textoGlifo.replace(/[()]/g, '').replace(/\d+/g, ''));
 
@@ -248,18 +250,27 @@ async function extraerParagon(page: Page): Promise<VarianteRaw['paragon']> {
       const giro = el.style.transform.match(/rotate\((-?[\d.]+)deg\)/);
 
       // Las casillas: fila/columna van en las clases (r2 c11), el tipo en el alt del
-      // icono y "active" dice si la build la recorre. Se guardan compactas —
-      // "r2c11:Will:active"— porque son ~730 por pagina y en JSON con objetos
-      // engordarian el crudo sin aportar nada.
+      // icono, la RAREZA en el alt del fondo (tile_bg_common.png -> "Common") y "active"
+      // dice si la build la recorre. Se guardan compactas —"r2c11:Will:common:active"—
+      // porque son ~730 por pagina y en JSON con objetos engordarian el crudo sin aportar
+      // nada. La rareza va en minusculas para que no se confunda con un estado; las
+      // paginas extraidas antes de este cambio no la traen y el normalizador lo tolera.
       const casillas: string[] = [];
       for (const t of Array.from(el.querySelectorAll('.paragon__board__tile'))) {
         const clases = Array.from(t.classList);
         const fila = clases.find((c) => /^r\d+$/.test(c));
         const col = clases.find((c) => /^c\d+$/.test(c));
         if (!fila || !col) continue;
-        const tipo = limpiar((t.querySelector('img') as HTMLImageElement | null)?.alt ?? '');
+        const tipo = limpiar(
+          (t.querySelector('img.paragon__board__tile__icon') as HTMLImageElement | null)?.alt ??
+            (t.querySelector('img') as HTMLImageElement | null)?.alt ??
+            '',
+        );
+        const rareza = limpiar(
+          (t.querySelector('img.paragon__board__tile__bg') as HTMLImageElement | null)?.alt ?? '',
+        ).toLowerCase();
         const estados = clases.filter((c) => c === 'active' || c === 'enabled' || c === 'radius');
-        casillas.push([fila + col, tipo, ...estados].join(':'));
+        casillas.push([fila + col, tipo, ...(rareza ? [rareza] : []), ...estados].join(':'));
       }
 
       return {
