@@ -67,6 +67,14 @@ Maxroll en el navegador, RSS y página de cambios. **416 páginas**, **77 tests*
 **El proxy de Dibal bloquea d4builds y maxroll** (webcat cat=22, «juegos»). Desde el portátil hay
 que pasar por `https://r.jina.ai/<url>`. GitHub raw y el registro de npm sí son alcanzables.
 
+**`api.github.com` también es alcanzable**, y el repo es público: se puede ver qué está haciendo un
+workflow sin `gh` ni abrir el navegador. Sirve para no quedarse a ciegas esperando a CI:
+
+```bash
+curl -s "https://api.github.com/repos/josu1995/d4es/actions/workflows/scrape-pages.yml/runs?per_page=3"
+curl -s "https://api.github.com/repos/josu1995/d4es/actions/runs/<id>/jobs"   # estado paso a paso
+```
+
 **El equipo y el Paragón solo existen en el DOM de cada build**, montado por JavaScript. El lector
 proxy NO hidrata la página (comprobado: 0 objetos). Única vía: Playwright en CI.
 
