@@ -5,18 +5,42 @@
       {
         "category": "skill",
         "enUS": "Brandish",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__brandish",
-        "sno": null
+        "esES": "Blandir",
+        "i18n": "wowhead-es",
+        "idName": "curated_brandish",
+        "sno": 2265693
       },
       {
         "category": "skill",
         "enUS": "Defiance Aura",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__defiance_aura",
-        "sno": null
+        "esES": "Aura desafiante",
+        "i18n": "wowhead-es",
+        "idName": "curated_defiance_aura",
+        "sno": 2187578
+      },
+      {
+        "category": "skill",
+        "enUS": "Fanaticism Aura",
+        "esES": "Aura de fanatismo",
+        "i18n": "wowhead-es",
+        "idName": "curated_fanaticism_aura",
+        "sno": 2187741
+      },
+      {
+        "category": "skill",
+        "enUS": "Fortress",
+        "esES": "Fortaleza",
+        "i18n": "wowhead-es",
+        "idName": "curated_fortress",
+        "sno": 2301078
+      },
+      {
+        "category": "skill",
+        "enUS": "Holy Light Aura",
+        "esES": "Aura de Luz sagrada",
+        "i18n": "wowhead-es",
+        "idName": "curated_holy_light_aura",
+        "sno": 2297097
       },
       {
         "category": "skill",
@@ -25,43 +49,19 @@
         "i18n": "none",
         "idName": "skill__falling_star",
         "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Fanaticism Aura",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__fanaticism_aura",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Fortress",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__fortress",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Holy Light Aura",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__holy_light_aura",
-        "sno": null
       }
     ],
     "coreUniques": [],
     "fields": [
       {
-        "key": "skill:skill__brandish",
+        "key": "skill:curated_brandish",
         "label": {
           "category": "skill",
           "enUS": "Brandish",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__brandish",
-          "sno": null
+          "esES": "Blandir",
+          "i18n": "wowhead-es",
+          "idName": "curated_brandish",
+          "sno": 2265693
         },
         "status": "agree",
         "values": {
@@ -69,18 +69,63 @@
         }
       },
       {
-        "key": "skill:skill__defiance_aura",
+        "key": "skill:curated_defiance_aura",
         "label": {
           "category": "skill",
           "enUS": "Defiance Aura",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__defiance_aura",
-          "sno": null
+          "esES": "Aura desafiante",
+          "i18n": "wowhead-es",
+          "idName": "curated_defiance_aura",
+          "sno": 2187578
         },
         "status": "agree",
         "values": {
           "d4builds:ffa6be98-a365-4497-b652-7936efb93804:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_fanaticism_aura",
+        "label": {
+          "category": "skill",
+          "enUS": "Fanaticism Aura",
+          "esES": "Aura de fanatismo",
+          "i18n": "wowhead-es",
+          "idName": "curated_fanaticism_aura",
+          "sno": 2187741
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ffa6be98-a365-4497-b652-7936efb93804:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_fortress",
+        "label": {
+          "category": "skill",
+          "enUS": "Fortress",
+          "esES": "Fortaleza",
+          "i18n": "wowhead-es",
+          "idName": "curated_fortress",
+          "sno": 2301078
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ffa6be98-a365-4497-b652-7936efb93804:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_holy_light_aura",
+        "label": {
+          "category": "skill",
+          "enUS": "Holy Light Aura",
+          "esES": "Aura de Luz sagrada",
+          "i18n": "wowhead-es",
+          "idName": "curated_holy_light_aura",
+          "sno": 2297097
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ffa6be98-a365-4497-b652-7936efb93804:0": 5
         }
       },
       {
@@ -97,56 +142,11 @@
         "values": {
           "d4builds:ffa6be98-a365-4497-b652-7936efb93804:0": 1
         }
-      },
-      {
-        "key": "skill:skill__fanaticism_aura",
-        "label": {
-          "category": "skill",
-          "enUS": "Fanaticism Aura",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__fanaticism_aura",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:ffa6be98-a365-4497-b652-7936efb93804:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__fortress",
-        "label": {
-          "category": "skill",
-          "enUS": "Fortress",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__fortress",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:ffa6be98-a365-4497-b652-7936efb93804:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__holy_light_aura",
-        "label": {
-          "category": "skill",
-          "enUS": "Holy Light Aura",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__holy_light_aura",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:ffa6be98-a365-4497-b652-7936efb93804:0": 5
-        }
       }
     ],
     "variantCount": 1
   },
-  "correlationKey": "paladin::skill__brandish::generic",
+  "correlationKey": "paladin::curated_brandish::generic",
   "gameVersion": {
     "patch": "3.1.2",
     "season": 14
@@ -171,7 +171,7 @@
   },
   "title": {
     "en": "Brandish",
-    "es": "Brandish"
+    "es": "Blandir"
   },
   "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
@@ -202,10 +202,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Fanaticism Aura",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__fanaticism_aura",
-            "sno": null
+            "esES": "Aura de fanatismo",
+            "i18n": "wowhead-es",
+            "idName": "curated_fanaticism_aura",
+            "sno": 2187741
           },
           "runes": [
             {
@@ -242,10 +242,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Defiance Aura",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__defiance_aura",
-            "sno": null
+            "esES": "Aura desafiante",
+            "i18n": "wowhead-es",
+            "idName": "curated_defiance_aura",
+            "sno": 2187578
           },
           "runes": [
             {
@@ -282,10 +282,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Holy Light Aura",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__holy_light_aura",
-            "sno": null
+            "esES": "Aura de Luz sagrada",
+            "i18n": "wowhead-es",
+            "idName": "curated_holy_light_aura",
+            "sno": 2297097
           },
           "runes": [
             {
@@ -354,10 +354,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Brandish",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__brandish",
-            "sno": null
+            "esES": "Blandir",
+            "i18n": "wowhead-es",
+            "idName": "curated_brandish",
+            "sno": 2265693
           },
           "runes": [
             {
@@ -394,10 +394,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Fortress",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__fortress",
-            "sno": null
+            "esES": "Fortaleza",
+            "i18n": "wowhead-es",
+            "idName": "curated_fortress",
+            "sno": 2301078
           },
           "runes": [
             {

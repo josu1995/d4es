@@ -4,18 +4,34 @@
     "coreSkills": [
       {
         "category": "skill",
+        "enUS": "Blood Mist",
+        "esES": "Bruma de sangre",
+        "i18n": "wowhead-es",
+        "idName": "curated_blood_mist",
+        "sno": 493422
+      },
+      {
+        "category": "skill",
+        "enUS": "Skeleton Mage",
+        "esES": "Mago esqueleto",
+        "i18n": "wowhead-es",
+        "idName": "curated_skeleton_mage",
+        "sno": 440313
+      },
+      {
+        "category": "skill",
+        "enUS": "Skeleton Warrior",
+        "esES": "Guerrero esqueleto",
+        "i18n": "wowhead-es",
+        "idName": "curated_skeleton_warrior",
+        "sno": 439912
+      },
+      {
+        "category": "skill",
         "enUS": "Army of the Dead",
         "esES": null,
         "i18n": "none",
         "idName": "skill__army_of_the_dead",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Blood Mist",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__blood_mist",
         "sno": null
       },
       {
@@ -33,26 +49,55 @@
         "i18n": "none",
         "idName": "skill__golem",
         "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Skeleton Mage",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__skeleton_mage",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Skeleton Warrior",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__skeleton_warrior",
-        "sno": null
       }
     ],
     "coreUniques": [],
     "fields": [
+      {
+        "key": "skill:curated_blood_mist",
+        "label": {
+          "category": "skill",
+          "enUS": "Blood Mist",
+          "esES": "Bruma de sangre",
+          "i18n": "wowhead-es",
+          "idName": "curated_blood_mist",
+          "sno": 493422
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:eff0d5ea-4918-4e28-a37e-a471ff2e1d6d:0": 1
+        }
+      },
+      {
+        "key": "skill:curated_skeleton_mage",
+        "label": {
+          "category": "skill",
+          "enUS": "Skeleton Mage",
+          "esES": "Mago esqueleto",
+          "i18n": "wowhead-es",
+          "idName": "curated_skeleton_mage",
+          "sno": 440313
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:eff0d5ea-4918-4e28-a37e-a471ff2e1d6d:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_skeleton_warrior",
+        "label": {
+          "category": "skill",
+          "enUS": "Skeleton Warrior",
+          "esES": "Guerrero esqueleto",
+          "i18n": "wowhead-es",
+          "idName": "curated_skeleton_warrior",
+          "sno": 439912
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:eff0d5ea-4918-4e28-a37e-a471ff2e1d6d:0": 13
+        }
+      },
       {
         "key": "skill:skill__army_of_the_dead",
         "label": {
@@ -66,21 +111,6 @@
         "status": "agree",
         "values": {
           "d4builds:eff0d5ea-4918-4e28-a37e-a471ff2e1d6d:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__blood_mist",
-        "label": {
-          "category": "skill",
-          "enUS": "Blood Mist",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__blood_mist",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:eff0d5ea-4918-4e28-a37e-a471ff2e1d6d:0": 1
         }
       },
       {
@@ -111,36 +141,6 @@
         "status": "agree",
         "values": {
           "d4builds:eff0d5ea-4918-4e28-a37e-a471ff2e1d6d:0": 8
-        }
-      },
-      {
-        "key": "skill:skill__skeleton_mage",
-        "label": {
-          "category": "skill",
-          "enUS": "Skeleton Mage",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__skeleton_mage",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:eff0d5ea-4918-4e28-a37e-a471ff2e1d6d:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__skeleton_warrior",
-        "label": {
-          "category": "skill",
-          "enUS": "Skeleton Warrior",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__skeleton_warrior",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:eff0d5ea-4918-4e28-a37e-a471ff2e1d6d:0": 13
         }
       }
     ],
@@ -202,10 +202,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Skeleton Warrior",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__skeleton_warrior",
-            "sno": null
+            "esES": "Guerrero esqueleto",
+            "i18n": "wowhead-es",
+            "idName": "curated_skeleton_warrior",
+            "sno": 439912
           },
           "runes": [
             {
@@ -289,10 +289,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Blood Mist",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__blood_mist",
-            "sno": null
+            "esES": "Bruma de sangre",
+            "i18n": "wowhead-es",
+            "idName": "curated_blood_mist",
+            "sno": 493422
           },
           "runes": [
             {
@@ -369,10 +369,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Skeleton Mage",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__skeleton_mage",
-            "sno": null
+            "esES": "Mago esqueleto",
+            "i18n": "wowhead-es",
+            "idName": "curated_skeleton_mage",
+            "sno": 440313
           },
           "runes": [
             {

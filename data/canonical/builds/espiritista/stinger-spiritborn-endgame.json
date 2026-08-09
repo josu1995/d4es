@@ -5,26 +5,34 @@
       {
         "category": "skill",
         "enUS": "Armored Hide",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__armored_hide",
-        "sno": null
+        "esES": "Piel blindada",
+        "i18n": "wowhead-es",
+        "idName": "curated_armored_hide",
+        "sno": 1871764
       },
       {
         "category": "skill",
         "enUS": "Ravager",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__ravager",
-        "sno": null
+        "esES": "Estragador",
+        "i18n": "wowhead-es",
+        "idName": "curated_ravager",
+        "sno": 1862773
       },
       {
         "category": "skill",
         "enUS": "Scourge",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__scourge",
-        "sno": null
+        "esES": "Azote",
+        "i18n": "wowhead-es",
+        "idName": "curated_scourge",
+        "sno": 1871801
+      },
+      {
+        "category": "skill",
+        "enUS": "The Protector",
+        "esES": "El Protector",
+        "i18n": "wowhead-es",
+        "idName": "curated_the_protector",
+        "sno": 1663208
       },
       {
         "category": "skill",
@@ -32,14 +40,6 @@
         "esES": null,
         "i18n": "none",
         "idName": "skill__stinger",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "The Protector",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__the_protector",
         "sno": null
       },
       {
@@ -54,14 +54,14 @@
     "coreUniques": [],
     "fields": [
       {
-        "key": "skill:skill__armored_hide",
+        "key": "skill:curated_armored_hide",
         "label": {
           "category": "skill",
           "enUS": "Armored Hide",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__armored_hide",
-          "sno": null
+          "esES": "Piel blindada",
+          "i18n": "wowhead-es",
+          "idName": "curated_armored_hide",
+          "sno": 1871764
         },
         "status": "agree",
         "values": {
@@ -69,14 +69,14 @@
         }
       },
       {
-        "key": "skill:skill__ravager",
+        "key": "skill:curated_ravager",
         "label": {
           "category": "skill",
           "enUS": "Ravager",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__ravager",
-          "sno": null
+          "esES": "Estragador",
+          "i18n": "wowhead-es",
+          "idName": "curated_ravager",
+          "sno": 1862773
         },
         "status": "agree",
         "values": {
@@ -84,18 +84,33 @@
         }
       },
       {
-        "key": "skill:skill__scourge",
+        "key": "skill:curated_scourge",
         "label": {
           "category": "skill",
           "enUS": "Scourge",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__scourge",
-          "sno": null
+          "esES": "Azote",
+          "i18n": "wowhead-es",
+          "idName": "curated_scourge",
+          "sno": 1871801
         },
         "status": "agree",
         "values": {
           "d4builds:de241242-4b1c-477d-a1cd-adb92e463f62:0": 1
+        }
+      },
+      {
+        "key": "skill:curated_the_protector",
+        "label": {
+          "category": "skill",
+          "enUS": "The Protector",
+          "esES": "El Protector",
+          "i18n": "wowhead-es",
+          "idName": "curated_the_protector",
+          "sno": 1663208
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:de241242-4b1c-477d-a1cd-adb92e463f62:0": 15
         }
       },
       {
@@ -106,21 +121,6 @@
           "esES": null,
           "i18n": "none",
           "idName": "skill__stinger",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:de241242-4b1c-477d-a1cd-adb92e463f62:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__the_protector",
-        "label": {
-          "category": "skill",
-          "enUS": "The Protector",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__the_protector",
           "sno": null
         },
         "status": "agree",
@@ -202,10 +202,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Ravager",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__ravager",
-            "sno": null
+            "esES": "Estragador",
+            "i18n": "wowhead-es",
+            "idName": "curated_ravager",
+            "sno": 1862773
           },
           "runes": [
             {
@@ -242,10 +242,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Armored Hide",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__armored_hide",
-            "sno": null
+            "esES": "Piel blindada",
+            "i18n": "wowhead-es",
+            "idName": "curated_armored_hide",
+            "sno": 1871764
           },
           "runes": [
             {
@@ -282,10 +282,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Scourge",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__scourge",
-            "sno": null
+            "esES": "Azote",
+            "i18n": "wowhead-es",
+            "idName": "curated_scourge",
+            "sno": 1871801
           },
           "runes": [
             {
@@ -402,10 +402,10 @@
           "ref": {
             "category": "skill",
             "enUS": "The Protector",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__the_protector",
-            "sno": null
+            "esES": "El Protector",
+            "i18n": "wowhead-es",
+            "idName": "curated_the_protector",
+            "sno": 1663208
           },
           "runes": [
             {

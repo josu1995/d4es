@@ -4,18 +4,42 @@
     "coreSkills": [
       {
         "category": "skill",
+        "enUS": "Debilitating Roar",
+        "esES": "Rugido debilitante",
+        "i18n": "wowhead-es",
+        "idName": "curated_debilitating_roar",
+        "sno": 336238
+      },
+      {
+        "category": "skill",
+        "enUS": "Lacerate",
+        "esES": "Lacerar",
+        "i18n": "wowhead-es",
+        "idName": "curated_lacerate",
+        "sno": 394251
+      },
+      {
+        "category": "skill",
+        "enUS": "Lightning Storm",
+        "esES": "Tormenta de rayos",
+        "i18n": "wowhead-es",
+        "idName": "curated_lightning_storm",
+        "sno": 548399
+      },
+      {
+        "category": "skill",
+        "enUS": "Wolves",
+        "esES": "Lobos",
+        "i18n": "wowhead-es",
+        "idName": "curated_wolves",
+        "sno": 265663
+      },
+      {
+        "category": "skill",
         "enUS": "Cyclone Armor",
         "esES": null,
         "i18n": "none",
         "idName": "skill__cyclone_armor",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Debilitating Roar",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__debilitating_roar",
         "sno": null
       },
       {
@@ -25,34 +49,70 @@
         "i18n": "none",
         "idName": "skill__hurricane",
         "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Lacerate",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__lacerate",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Lightning Storm",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__lightning_storm",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Wolves",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__wolves",
-        "sno": null
       }
     ],
     "coreUniques": [],
     "fields": [
+      {
+        "key": "skill:curated_debilitating_roar",
+        "label": {
+          "category": "skill",
+          "enUS": "Debilitating Roar",
+          "esES": "Rugido debilitante",
+          "i18n": "wowhead-es",
+          "idName": "curated_debilitating_roar",
+          "sno": 336238
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:c3474db0-d540-4d4f-9143-d32c51ae5362:0": 11
+        }
+      },
+      {
+        "key": "skill:curated_lacerate",
+        "label": {
+          "category": "skill",
+          "enUS": "Lacerate",
+          "esES": "Lacerar",
+          "i18n": "wowhead-es",
+          "idName": "curated_lacerate",
+          "sno": 394251
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:c3474db0-d540-4d4f-9143-d32c51ae5362:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_lightning_storm",
+        "label": {
+          "category": "skill",
+          "enUS": "Lightning Storm",
+          "esES": "Tormenta de rayos",
+          "i18n": "wowhead-es",
+          "idName": "curated_lightning_storm",
+          "sno": 548399
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:c3474db0-d540-4d4f-9143-d32c51ae5362:0": 1
+        }
+      },
+      {
+        "key": "skill:curated_wolves",
+        "label": {
+          "category": "skill",
+          "enUS": "Wolves",
+          "esES": "Lobos",
+          "i18n": "wowhead-es",
+          "idName": "curated_wolves",
+          "sno": 265663
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:c3474db0-d540-4d4f-9143-d32c51ae5362:0": 1
+        }
+      },
       {
         "key": "skill:skill__cyclone_armor",
         "label": {
@@ -69,21 +129,6 @@
         }
       },
       {
-        "key": "skill:skill__debilitating_roar",
-        "label": {
-          "category": "skill",
-          "enUS": "Debilitating Roar",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__debilitating_roar",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:c3474db0-d540-4d4f-9143-d32c51ae5362:0": 11
-        }
-      },
-      {
         "key": "skill:skill__hurricane",
         "label": {
           "category": "skill",
@@ -97,56 +142,11 @@
         "values": {
           "d4builds:c3474db0-d540-4d4f-9143-d32c51ae5362:0": 1
         }
-      },
-      {
-        "key": "skill:skill__lacerate",
-        "label": {
-          "category": "skill",
-          "enUS": "Lacerate",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__lacerate",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:c3474db0-d540-4d4f-9143-d32c51ae5362:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__lightning_storm",
-        "label": {
-          "category": "skill",
-          "enUS": "Lightning Storm",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__lightning_storm",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:c3474db0-d540-4d4f-9143-d32c51ae5362:0": 1
-        }
-      },
-      {
-        "key": "skill:skill__wolves",
-        "label": {
-          "category": "skill",
-          "enUS": "Wolves",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__wolves",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:c3474db0-d540-4d4f-9143-d32c51ae5362:0": 1
-        }
       }
     ],
     "variantCount": 1
   },
-  "correlationKey": "druid::skill__lacerate::generic",
+  "correlationKey": "druid::curated_lacerate::generic",
   "gameVersion": {
     "patch": "3.1.2",
     "season": 14
@@ -171,7 +171,7 @@
   },
   "title": {
     "en": "Lacerate",
-    "es": "Lacerate"
+    "es": "Lacerar"
   },
   "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
@@ -202,10 +202,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Lightning Storm",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__lightning_storm",
-            "sno": null
+            "esES": "Tormenta de rayos",
+            "i18n": "wowhead-es",
+            "idName": "curated_lightning_storm",
+            "sno": 548399
           },
           "runes": [
             {
@@ -282,10 +282,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Wolves",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__wolves",
-            "sno": null
+            "esES": "Lobos",
+            "i18n": "wowhead-es",
+            "idName": "curated_wolves",
+            "sno": 265663
           },
           "runes": [
             {
@@ -354,10 +354,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Lacerate",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__lacerate",
-            "sno": null
+            "esES": "Lacerar",
+            "i18n": "wowhead-es",
+            "idName": "curated_lacerate",
+            "sno": 394251
           },
           "runes": [
             {
@@ -394,10 +394,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Debilitating Roar",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__debilitating_roar",
-            "sno": null
+            "esES": "Rugido debilitante",
+            "i18n": "wowhead-es",
+            "idName": "curated_debilitating_roar",
+            "sno": 336238
           },
           "runes": [
             {

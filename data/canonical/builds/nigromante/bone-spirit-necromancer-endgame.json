@@ -4,18 +4,42 @@
     "coreSkills": [
       {
         "category": "skill",
+        "enUS": "Bone Storm",
+        "esES": "Tormenta de hueso",
+        "i18n": "wowhead-es",
+        "idName": "curated_bone_storm",
+        "sno": 499281
+      },
+      {
+        "category": "skill",
+        "enUS": "Sever",
+        "esES": "Cercenar",
+        "i18n": "wowhead-es",
+        "idName": "curated_sever",
+        "sno": 481785
+      },
+      {
+        "category": "skill",
+        "enUS": "Skeleton Mage",
+        "esES": "Mago esqueleto",
+        "i18n": "wowhead-es",
+        "idName": "curated_skeleton_mage",
+        "sno": 440313
+      },
+      {
+        "category": "skill",
+        "enUS": "Skeleton Warrior",
+        "esES": "Guerrero esqueleto",
+        "i18n": "wowhead-es",
+        "idName": "curated_skeleton_warrior",
+        "sno": 439912
+      },
+      {
+        "category": "skill",
         "enUS": "Bone Spirit",
         "esES": null,
         "i18n": "none",
         "idName": "skill__bone_spirit",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Bone Storm",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__bone_storm",
         "sno": null
       },
       {
@@ -25,34 +49,70 @@
         "i18n": "none",
         "idName": "skill__corpse_tendrils",
         "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Sever",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__sever",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Skeleton Mage",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__skeleton_mage",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Skeleton Warrior",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__skeleton_warrior",
-        "sno": null
       }
     ],
     "coreUniques": [],
     "fields": [
+      {
+        "key": "skill:curated_bone_storm",
+        "label": {
+          "category": "skill",
+          "enUS": "Bone Storm",
+          "esES": "Tormenta de hueso",
+          "i18n": "wowhead-es",
+          "idName": "curated_bone_storm",
+          "sno": 499281
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:65461ac6-c3c5-4079-b795-6437ffca6880:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_sever",
+        "label": {
+          "category": "skill",
+          "enUS": "Sever",
+          "esES": "Cercenar",
+          "i18n": "wowhead-es",
+          "idName": "curated_sever",
+          "sno": 481785
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:65461ac6-c3c5-4079-b795-6437ffca6880:0": 1
+        }
+      },
+      {
+        "key": "skill:curated_skeleton_mage",
+        "label": {
+          "category": "skill",
+          "enUS": "Skeleton Mage",
+          "esES": "Mago esqueleto",
+          "i18n": "wowhead-es",
+          "idName": "curated_skeleton_mage",
+          "sno": 440313
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:65461ac6-c3c5-4079-b795-6437ffca6880:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_skeleton_warrior",
+        "label": {
+          "category": "skill",
+          "enUS": "Skeleton Warrior",
+          "esES": "Guerrero esqueleto",
+          "i18n": "wowhead-es",
+          "idName": "curated_skeleton_warrior",
+          "sno": 439912
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:65461ac6-c3c5-4079-b795-6437ffca6880:0": 1
+        }
+      },
       {
         "key": "skill:skill__bone_spirit",
         "label": {
@@ -69,21 +129,6 @@
         }
       },
       {
-        "key": "skill:skill__bone_storm",
-        "label": {
-          "category": "skill",
-          "enUS": "Bone Storm",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__bone_storm",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:65461ac6-c3c5-4079-b795-6437ffca6880:0": 15
-        }
-      },
-      {
         "key": "skill:skill__corpse_tendrils",
         "label": {
           "category": "skill",
@@ -91,51 +136,6 @@
           "esES": null,
           "i18n": "none",
           "idName": "skill__corpse_tendrils",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:65461ac6-c3c5-4079-b795-6437ffca6880:0": 1
-        }
-      },
-      {
-        "key": "skill:skill__sever",
-        "label": {
-          "category": "skill",
-          "enUS": "Sever",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__sever",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:65461ac6-c3c5-4079-b795-6437ffca6880:0": 1
-        }
-      },
-      {
-        "key": "skill:skill__skeleton_mage",
-        "label": {
-          "category": "skill",
-          "enUS": "Skeleton Mage",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__skeleton_mage",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:65461ac6-c3c5-4079-b795-6437ffca6880:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__skeleton_warrior",
-        "label": {
-          "category": "skill",
-          "enUS": "Skeleton Warrior",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__skeleton_warrior",
           "sno": null
         },
         "status": "agree",
@@ -202,10 +202,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Sever",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__sever",
-            "sno": null
+            "esES": "Cercenar",
+            "i18n": "wowhead-es",
+            "idName": "curated_sever",
+            "sno": 481785
           },
           "runes": [
             {
@@ -282,10 +282,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Skeleton Warrior",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__skeleton_warrior",
-            "sno": null
+            "esES": "Guerrero esqueleto",
+            "i18n": "wowhead-es",
+            "idName": "curated_skeleton_warrior",
+            "sno": 439912
           },
           "runes": [
             {
@@ -322,10 +322,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Skeleton Mage",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__skeleton_mage",
-            "sno": null
+            "esES": "Mago esqueleto",
+            "i18n": "wowhead-es",
+            "idName": "curated_skeleton_mage",
+            "sno": 440313
           },
           "runes": [
             {
@@ -402,10 +402,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Bone Storm",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__bone_storm",
-            "sno": null
+            "esES": "Tormenta de hueso",
+            "i18n": "wowhead-es",
+            "idName": "curated_bone_storm",
+            "sno": 499281
           },
           "runes": [
             {

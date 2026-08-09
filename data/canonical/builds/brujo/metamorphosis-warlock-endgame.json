@@ -5,34 +5,42 @@
       {
         "category": "skill",
         "enUS": "Infernal Breath",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__infernal_breath",
-        "sno": null
+        "esES": "Aliento infernal",
+        "i18n": "wowhead-es",
+        "idName": "curated_infernal_breath",
+        "sno": 2214419
       },
       {
         "category": "skill",
         "enUS": "Metamorphosis",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__metamorphosis",
-        "sno": null
+        "esES": "Metamorfosis",
+        "i18n": "wowhead-es",
+        "idName": "curated_metamorphosis",
+        "sno": 2215096
       },
       {
         "category": "skill",
         "enUS": "Molten Bomb",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__molten_bomb",
-        "sno": null
+        "esES": "Bomba fundida",
+        "i18n": "wowhead-es",
+        "idName": "curated_molten_bomb",
+        "sno": 2215258
       },
       {
         "category": "skill",
         "enUS": "Profane Sentinel",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__profane_sentinel",
-        "sno": null
+        "esES": "Centinela profano",
+        "i18n": "wowhead-es",
+        "idName": "curated_profane_sentinel",
+        "sno": 2289261
+      },
+      {
+        "category": "skill",
+        "enUS": "Tyrant's Grasp",
+        "esES": "Agarre de tirano",
+        "i18n": "wowhead-es",
+        "idName": "curated_tyrant_s_grasp",
+        "sno": 2301447
       },
       {
         "category": "skill",
@@ -41,27 +49,19 @@
         "i18n": "none",
         "idName": "skill__rampage_v2",
         "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Tyrant's Grasp",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__tyrant_s_grasp",
-        "sno": null
       }
     ],
     "coreUniques": [],
     "fields": [
       {
-        "key": "skill:skill__infernal_breath",
+        "key": "skill:curated_infernal_breath",
         "label": {
           "category": "skill",
           "enUS": "Infernal Breath",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__infernal_breath",
-          "sno": null
+          "esES": "Aliento infernal",
+          "i18n": "wowhead-es",
+          "idName": "curated_infernal_breath",
+          "sno": 2214419
         },
         "status": "agree",
         "values": {
@@ -69,14 +69,14 @@
         }
       },
       {
-        "key": "skill:skill__metamorphosis",
+        "key": "skill:curated_metamorphosis",
         "label": {
           "category": "skill",
           "enUS": "Metamorphosis",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__metamorphosis",
-          "sno": null
+          "esES": "Metamorfosis",
+          "i18n": "wowhead-es",
+          "idName": "curated_metamorphosis",
+          "sno": 2215096
         },
         "status": "agree",
         "values": {
@@ -84,14 +84,14 @@
         }
       },
       {
-        "key": "skill:skill__molten_bomb",
+        "key": "skill:curated_molten_bomb",
         "label": {
           "category": "skill",
           "enUS": "Molten Bomb",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__molten_bomb",
-          "sno": null
+          "esES": "Bomba fundida",
+          "i18n": "wowhead-es",
+          "idName": "curated_molten_bomb",
+          "sno": 2215258
         },
         "status": "agree",
         "values": {
@@ -99,18 +99,33 @@
         }
       },
       {
-        "key": "skill:skill__profane_sentinel",
+        "key": "skill:curated_profane_sentinel",
         "label": {
           "category": "skill",
           "enUS": "Profane Sentinel",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__profane_sentinel",
-          "sno": null
+          "esES": "Centinela profano",
+          "i18n": "wowhead-es",
+          "idName": "curated_profane_sentinel",
+          "sno": 2289261
         },
         "status": "agree",
         "values": {
           "d4builds:7e1956ea-90b2-48c5-b144-ebce6f75ef75:0": 1
+        }
+      },
+      {
+        "key": "skill:curated_tyrant_s_grasp",
+        "label": {
+          "category": "skill",
+          "enUS": "Tyrant's Grasp",
+          "esES": "Agarre de tirano",
+          "i18n": "wowhead-es",
+          "idName": "curated_tyrant_s_grasp",
+          "sno": 2301447
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:7e1956ea-90b2-48c5-b144-ebce6f75ef75:0": 15
         }
       },
       {
@@ -127,26 +142,11 @@
         "values": {
           "d4builds:7e1956ea-90b2-48c5-b144-ebce6f75ef75:0": 15
         }
-      },
-      {
-        "key": "skill:skill__tyrant_s_grasp",
-        "label": {
-          "category": "skill",
-          "enUS": "Tyrant's Grasp",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__tyrant_s_grasp",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:7e1956ea-90b2-48c5-b144-ebce6f75ef75:0": 15
-        }
       }
     ],
     "variantCount": 1
   },
-  "correlationKey": "warlock::skill__metamorphosis::generic",
+  "correlationKey": "warlock::curated_metamorphosis::generic",
   "gameVersion": {
     "patch": "3.1.2",
     "season": 13
@@ -171,7 +171,7 @@
   },
   "title": {
     "en": "Metamorphosis",
-    "es": "Metamorphosis"
+    "es": "Metamorfosis"
   },
   "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
@@ -249,10 +249,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Tyrant's Grasp",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__tyrant_s_grasp",
-            "sno": null
+            "esES": "Agarre de tirano",
+            "i18n": "wowhead-es",
+            "idName": "curated_tyrant_s_grasp",
+            "sno": 2301447
           },
           "runes": [
             {
@@ -289,10 +289,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Metamorphosis",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__metamorphosis",
-            "sno": null
+            "esES": "Metamorfosis",
+            "i18n": "wowhead-es",
+            "idName": "curated_metamorphosis",
+            "sno": 2215096
           },
           "runes": [
             {
@@ -329,10 +329,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Profane Sentinel",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__profane_sentinel",
-            "sno": null
+            "esES": "Centinela profano",
+            "i18n": "wowhead-es",
+            "idName": "curated_profane_sentinel",
+            "sno": 2289261
           },
           "runes": [
             {
@@ -376,10 +376,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Molten Bomb",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__molten_bomb",
-            "sno": null
+            "esES": "Bomba fundida",
+            "i18n": "wowhead-es",
+            "idName": "curated_molten_bomb",
+            "sno": 2215258
           },
           "runes": [
             {
@@ -416,10 +416,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Infernal Breath",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__infernal_breath",
-            "sno": null
+            "esES": "Aliento infernal",
+            "i18n": "wowhead-es",
+            "idName": "curated_infernal_breath",
+            "sno": 2214419
           },
           "runes": [
             {

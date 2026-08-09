@@ -5,34 +5,42 @@
       {
         "category": "skill",
         "enUS": "Apocalypse",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__apocalypse",
-        "sno": null
+        "esES": "Apocalipsis",
+        "i18n": "wowhead-es",
+        "idName": "curated_apocalypse",
+        "sno": 2221260
       },
       {
         "category": "skill",
         "enUS": "Hell Fracture",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__hell_fracture",
-        "sno": null
+        "esES": "Fractura infernal",
+        "i18n": "wowhead-es",
+        "idName": "curated_hell_fracture",
+        "sno": 2164252
       },
       {
         "category": "skill",
         "enUS": "Nether Step",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__nether_step",
-        "sno": null
+        "esES": "Paso abisal",
+        "i18n": "wowhead-es",
+        "idName": "curated_nether_step",
+        "sno": 2218211
       },
       {
         "category": "skill",
         "enUS": "Sigil of Chaos",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__sigil_of_chaos",
-        "sno": null
+        "esES": "Sigilo de caos",
+        "i18n": "wowhead-es",
+        "idName": "curated_sigil_of_chaos",
+        "sno": 2218213
+      },
+      {
+        "category": "skill",
+        "enUS": "Tyrant's Grasp",
+        "esES": "Agarre de tirano",
+        "i18n": "wowhead-es",
+        "idName": "curated_tyrant_s_grasp",
+        "sno": 2301447
       },
       {
         "category": "skill",
@@ -41,27 +49,19 @@
         "i18n": "none",
         "idName": "skill__summon_abodian",
         "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Tyrant's Grasp",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__tyrant_s_grasp",
-        "sno": null
       }
     ],
     "coreUniques": [],
     "fields": [
       {
-        "key": "skill:skill__apocalypse",
+        "key": "skill:curated_apocalypse",
         "label": {
           "category": "skill",
           "enUS": "Apocalypse",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__apocalypse",
-          "sno": null
+          "esES": "Apocalipsis",
+          "i18n": "wowhead-es",
+          "idName": "curated_apocalypse",
+          "sno": 2221260
         },
         "status": "agree",
         "values": {
@@ -69,14 +69,14 @@
         }
       },
       {
-        "key": "skill:skill__hell_fracture",
+        "key": "skill:curated_hell_fracture",
         "label": {
           "category": "skill",
           "enUS": "Hell Fracture",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__hell_fracture",
-          "sno": null
+          "esES": "Fractura infernal",
+          "i18n": "wowhead-es",
+          "idName": "curated_hell_fracture",
+          "sno": 2164252
         },
         "status": "agree",
         "values": {
@@ -84,14 +84,14 @@
         }
       },
       {
-        "key": "skill:skill__nether_step",
+        "key": "skill:curated_nether_step",
         "label": {
           "category": "skill",
           "enUS": "Nether Step",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__nether_step",
-          "sno": null
+          "esES": "Paso abisal",
+          "i18n": "wowhead-es",
+          "idName": "curated_nether_step",
+          "sno": 2218211
         },
         "status": "agree",
         "values": {
@@ -99,18 +99,33 @@
         }
       },
       {
-        "key": "skill:skill__sigil_of_chaos",
+        "key": "skill:curated_sigil_of_chaos",
         "label": {
           "category": "skill",
           "enUS": "Sigil of Chaos",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__sigil_of_chaos",
-          "sno": null
+          "esES": "Sigilo de caos",
+          "i18n": "wowhead-es",
+          "idName": "curated_sigil_of_chaos",
+          "sno": 2218213
         },
         "status": "agree",
         "values": {
           "d4builds:7fe32f34-83cd-42b9-b574-005041d2985b:0": 14
+        }
+      },
+      {
+        "key": "skill:curated_tyrant_s_grasp",
+        "label": {
+          "category": "skill",
+          "enUS": "Tyrant's Grasp",
+          "esES": "Agarre de tirano",
+          "i18n": "wowhead-es",
+          "idName": "curated_tyrant_s_grasp",
+          "sno": 2301447
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:7fe32f34-83cd-42b9-b574-005041d2985b:0": 15
         }
       },
       {
@@ -127,26 +142,11 @@
         "values": {
           "d4builds:7fe32f34-83cd-42b9-b574-005041d2985b:0": 1
         }
-      },
-      {
-        "key": "skill:skill__tyrant_s_grasp",
-        "label": {
-          "category": "skill",
-          "enUS": "Tyrant's Grasp",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__tyrant_s_grasp",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:7fe32f34-83cd-42b9-b574-005041d2985b:0": 15
-        }
       }
     ],
     "variantCount": 1
   },
-  "correlationKey": "warlock::skill__hell_fracture::generic",
+  "correlationKey": "warlock::curated_hell_fracture::generic",
   "gameVersion": {
     "patch": "3.1.2",
     "season": 13
@@ -171,7 +171,7 @@
   },
   "title": {
     "en": "Hell Fracture",
-    "es": "Hell Fracture"
+    "es": "Fractura infernal"
   },
   "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
@@ -202,10 +202,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Hell Fracture",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__hell_fracture",
-            "sno": null
+            "esES": "Fractura infernal",
+            "i18n": "wowhead-es",
+            "idName": "curated_hell_fracture",
+            "sno": 2164252
           },
           "runes": [
             {
@@ -242,10 +242,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Nether Step",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__nether_step",
-            "sno": null
+            "esES": "Paso abisal",
+            "i18n": "wowhead-es",
+            "idName": "curated_nether_step",
+            "sno": 2218211
           },
           "runes": [
             {
@@ -282,10 +282,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Apocalypse",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__apocalypse",
-            "sno": null
+            "esES": "Apocalipsis",
+            "i18n": "wowhead-es",
+            "idName": "curated_apocalypse",
+            "sno": 2221260
           },
           "runes": [
             {
@@ -337,10 +337,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Sigil of Chaos",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__sigil_of_chaos",
-            "sno": null
+            "esES": "Sigilo de caos",
+            "i18n": "wowhead-es",
+            "idName": "curated_sigil_of_chaos",
+            "sno": 2218213
           },
           "runes": [
             {
@@ -377,10 +377,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Tyrant's Grasp",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__tyrant_s_grasp",
-            "sno": null
+            "esES": "Agarre de tirano",
+            "i18n": "wowhead-es",
+            "idName": "curated_tyrant_s_grasp",
+            "sno": 2301447
           },
           "runes": [
             {

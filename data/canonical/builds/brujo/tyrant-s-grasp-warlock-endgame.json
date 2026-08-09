@@ -5,10 +5,34 @@
       {
         "category": "skill",
         "enUS": "Apocalypse",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__apocalypse",
-        "sno": null
+        "esES": "Apocalipsis",
+        "i18n": "wowhead-es",
+        "idName": "curated_apocalypse",
+        "sno": 2221260
+      },
+      {
+        "category": "skill",
+        "enUS": "Metamorphosis",
+        "esES": "Metamorfosis",
+        "i18n": "wowhead-es",
+        "idName": "curated_metamorphosis",
+        "sno": 2215096
+      },
+      {
+        "category": "skill",
+        "enUS": "Nether Step",
+        "esES": "Paso abisal",
+        "i18n": "wowhead-es",
+        "idName": "curated_nether_step",
+        "sno": 2218211
+      },
+      {
+        "category": "skill",
+        "enUS": "Tyrant's Grasp",
+        "esES": "Agarre de tirano",
+        "i18n": "wowhead-es",
+        "idName": "curated_tyrant_s_grasp",
+        "sno": 2301447
       },
       {
         "category": "skill",
@@ -25,47 +49,68 @@
         "i18n": "none",
         "idName": "skill__demonic_swipe_v2",
         "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Metamorphosis",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__metamorphosis",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Nether Step",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__nether_step",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Tyrant's Grasp",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__tyrant_s_grasp",
-        "sno": null
       }
     ],
     "coreUniques": [],
     "fields": [
       {
-        "key": "skill:skill__apocalypse",
+        "key": "skill:curated_apocalypse",
         "label": {
           "category": "skill",
           "enUS": "Apocalypse",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__apocalypse",
-          "sno": null
+          "esES": "Apocalipsis",
+          "i18n": "wowhead-es",
+          "idName": "curated_apocalypse",
+          "sno": 2221260
         },
         "status": "agree",
         "values": {
           "d4builds:e98235c4-d143-440d-98b5-e4f742f61a33:0": 0
+        }
+      },
+      {
+        "key": "skill:curated_metamorphosis",
+        "label": {
+          "category": "skill",
+          "enUS": "Metamorphosis",
+          "esES": "Metamorfosis",
+          "i18n": "wowhead-es",
+          "idName": "curated_metamorphosis",
+          "sno": 2215096
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:e98235c4-d143-440d-98b5-e4f742f61a33:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_nether_step",
+        "label": {
+          "category": "skill",
+          "enUS": "Nether Step",
+          "esES": "Paso abisal",
+          "i18n": "wowhead-es",
+          "idName": "curated_nether_step",
+          "sno": 2218211
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:e98235c4-d143-440d-98b5-e4f742f61a33:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_tyrant_s_grasp",
+        "label": {
+          "category": "skill",
+          "enUS": "Tyrant's Grasp",
+          "esES": "Agarre de tirano",
+          "i18n": "wowhead-es",
+          "idName": "curated_tyrant_s_grasp",
+          "sno": 2301447
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:e98235c4-d143-440d-98b5-e4f742f61a33:0": 15
         }
       },
       {
@@ -97,56 +142,11 @@
         "values": {
           "d4builds:e98235c4-d143-440d-98b5-e4f742f61a33:0": 1
         }
-      },
-      {
-        "key": "skill:skill__metamorphosis",
-        "label": {
-          "category": "skill",
-          "enUS": "Metamorphosis",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__metamorphosis",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:e98235c4-d143-440d-98b5-e4f742f61a33:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__nether_step",
-        "label": {
-          "category": "skill",
-          "enUS": "Nether Step",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__nether_step",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:e98235c4-d143-440d-98b5-e4f742f61a33:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__tyrant_s_grasp",
-        "label": {
-          "category": "skill",
-          "enUS": "Tyrant's Grasp",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__tyrant_s_grasp",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:e98235c4-d143-440d-98b5-e4f742f61a33:0": 15
-        }
       }
     ],
     "variantCount": 1
   },
-  "correlationKey": "warlock::skill__tyrant_s_grasp::generic",
+  "correlationKey": "warlock::curated_tyrant_s_grasp::generic",
   "gameVersion": {
     "patch": "3.1.2",
     "season": 13
@@ -171,7 +171,7 @@
   },
   "title": {
     "en": "Tyrant's Grasp",
-    "es": "Tyrant's Grasp"
+    "es": "Agarre de tirano"
   },
   "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
@@ -202,10 +202,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Tyrant's Grasp",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__tyrant_s_grasp",
-            "sno": null
+            "esES": "Agarre de tirano",
+            "i18n": "wowhead-es",
+            "idName": "curated_tyrant_s_grasp",
+            "sno": 2301447
           },
           "runes": [
             {
@@ -242,10 +242,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Nether Step",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__nether_step",
-            "sno": null
+            "esES": "Paso abisal",
+            "i18n": "wowhead-es",
+            "idName": "curated_nether_step",
+            "sno": 2218211
           },
           "runes": [
             {
@@ -282,10 +282,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Apocalypse",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__apocalypse",
-            "sno": null
+            "esES": "Apocalipsis",
+            "i18n": "wowhead-es",
+            "idName": "curated_apocalypse",
+            "sno": 2221260
           },
           "runes": [],
           "skillVariant": null
@@ -297,10 +297,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Metamorphosis",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__metamorphosis",
-            "sno": null
+            "esES": "Metamorfosis",
+            "i18n": "wowhead-es",
+            "idName": "curated_metamorphosis",
+            "sno": 2215096
           },
           "runes": [
             {

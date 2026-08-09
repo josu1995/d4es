@@ -5,26 +5,26 @@
       {
         "category": "skill",
         "enUS": "Blazing Scream",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__blazing_scream",
-        "sno": null
+        "esES": "Grito llameante",
+        "i18n": "wowhead-es",
+        "idName": "curated_blazing_scream",
+        "sno": 2213860
       },
       {
         "category": "skill",
         "enUS": "Profane Sentinel",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__profane_sentinel",
-        "sno": null
+        "esES": "Centinela profano",
+        "i18n": "wowhead-es",
+        "idName": "curated_profane_sentinel",
+        "sno": 2289261
       },
       {
         "category": "skill",
         "enUS": "Sigil of Subversion",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__sigil_of_subversion",
-        "sno": null
+        "esES": "Sigilo desestabilizador",
+        "i18n": "wowhead-es",
+        "idName": "curated_sigil_of_subversion",
+        "sno": 2218209
       },
       {
         "category": "skill",
@@ -54,14 +54,14 @@
     "coreUniques": [],
     "fields": [
       {
-        "key": "skill:skill__blazing_scream",
+        "key": "skill:curated_blazing_scream",
         "label": {
           "category": "skill",
           "enUS": "Blazing Scream",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__blazing_scream",
-          "sno": null
+          "esES": "Grito llameante",
+          "i18n": "wowhead-es",
+          "idName": "curated_blazing_scream",
+          "sno": 2213860
         },
         "status": "agree",
         "values": {
@@ -69,14 +69,14 @@
         }
       },
       {
-        "key": "skill:skill__profane_sentinel",
+        "key": "skill:curated_profane_sentinel",
         "label": {
           "category": "skill",
           "enUS": "Profane Sentinel",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__profane_sentinel",
-          "sno": null
+          "esES": "Centinela profano",
+          "i18n": "wowhead-es",
+          "idName": "curated_profane_sentinel",
+          "sno": 2289261
         },
         "status": "agree",
         "values": {
@@ -84,14 +84,14 @@
         }
       },
       {
-        "key": "skill:skill__sigil_of_subversion",
+        "key": "skill:curated_sigil_of_subversion",
         "label": {
           "category": "skill",
           "enUS": "Sigil of Subversion",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__sigil_of_subversion",
-          "sno": null
+          "esES": "Sigilo desestabilizador",
+          "i18n": "wowhead-es",
+          "idName": "curated_sigil_of_subversion",
+          "sno": 2218209
         },
         "status": "agree",
         "values": {
@@ -146,7 +146,7 @@
     ],
     "variantCount": 1
   },
-  "correlationKey": "warlock::skill__profane_sentinel::generic",
+  "correlationKey": "warlock::curated_profane_sentinel::generic",
   "gameVersion": {
     "patch": "3.1.2",
     "season": 14
@@ -171,7 +171,7 @@
   },
   "title": {
     "en": "Profane Sentinel",
-    "es": "Profane Sentinel"
+    "es": "Centinela profano"
   },
   "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
@@ -281,10 +281,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Sigil of Subversion",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__sigil_of_subversion",
-            "sno": null
+            "esES": "Sigilo desestabilizador",
+            "i18n": "wowhead-es",
+            "idName": "curated_sigil_of_subversion",
+            "sno": 2218209
           },
           "runes": [
             {
@@ -336,10 +336,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Profane Sentinel",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__profane_sentinel",
-            "sno": null
+            "esES": "Centinela profano",
+            "i18n": "wowhead-es",
+            "idName": "curated_profane_sentinel",
+            "sno": 2289261
           },
           "runes": [
             {
@@ -376,10 +376,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Blazing Scream",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__blazing_scream",
-            "sno": null
+            "esES": "Grito llameante",
+            "i18n": "wowhead-es",
+            "idName": "curated_blazing_scream",
+            "sno": 2213860
           },
           "runes": [
             {

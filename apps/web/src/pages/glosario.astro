@@ -1,0 +1,137 @@
+---
+import Base from '../layouts/Base.astro';
+import { readFileSync, existsSync } from 'node:fs';
+import { join } from 'node:path';
+import { ROOT, porCategoria } from '../lib/data';
+
+interface TerminoJerga {
+  jerga: string;
+  de: string;
+  oficial: string | null;
+  explicacion: string;
+  ver: string | null;
+}
+
+const jergaPath = join(ROOT, 'data', 'curated', 'jerga.json');
+const jerga: TerminoJerga[] = existsSync(jergaPath)
+  ? ((JSON.parse(readFileSync(jergaPath, 'utf8')) as { terminos?: TerminoJerga[] }).terminos ?? [])
+  : [];
+
+// Del diccionario oficial se toma una muestra representativa por categoría: el listado
+// completo ya vive en /objetos y aquí sobrecargaría la página.
+const oficiales = [
+  { categoria: 'unique', etiqueta: 'Únicos', entradas: porCategoria('unique') },
+  { categoria: 'glyph', etiqueta: 'Glifos', entradas: porCategoria('glyph') },
+  { categoria: 'rune', etiqueta: 'Runas', entradas: porCategoria('rune') },
+  { categoria: 'paragonBoard', etiqueta: 'Tableros de Paragón', entradas: porCategoria('paragonBoard') },
+];
+const totalOficial = oficiales.reduce((n, o) => n + o.entradas.length, 0);
+---
+
+<Base
+  titulo="Glosario de Diablo 4 inglés-español: jerga y términos oficiales"
+  descripcion="Qué significa GA, uber, temperar, mastear o bossear, y cómo se llaman de verdad en el Diablo 4 en español. Glosario bidireccional."
+>
+  <div class="mx-auto max-w-3xl px-4 py-10">
+    <h1 class="font-titulo text-3xl sm:text-4xl">Glosario</h1>
+    <p class="mt-4 text-ceniza leading-relaxed">
+      La comunidad hispanohablante juega en español pero habla en inglés a medias. Aquí están las dos cosas
+      separadas a propósito: <strong class="text-pergamino">la jerga</strong> que usa la gente, y
+      <strong class="text-pergamino">el nombre oficial</strong> que verás en tu cliente del juego.
+    </p>
+
+    <div class="mt-6 sticky top-14 z-30 bg-abismo/95 backdrop-blur py-3">
+      <label for="q" class="sr-only">Buscar término</label>
+      <input
+        id="q"
+        type="search"
+        placeholder="GA, mastear, uber, Pit…"
+        class="w-full rounded bg-piedra grabado px-4 py-3 text-base placeholder:text-humo focus:border-oro-apagado"
+        autocomplete="off"
+      />
+      <p id="conteo" class="mt-2 text-xs text-humo" aria-live="polite">{jerga.length} términos de jerga</p>
+    </div>
+
+    <section class="mt-6">
+      <h2 class="font-titulo text-2xl">Jerga de la comunidad</h2>
+      <div class="mt-4 space-y-3">
+        {
+          jerga.map((t) => (
+            <article
+              class="grabado rounded-lg bg-piedra p-4"
+              data-item
+              data-busqueda={`${t.jerga} ${t.de} ${t.oficial ?? ''} ${t.explicacion}`.toLowerCase()}
+            >
+              <div class="flex flex-wrap items-baseline gap-x-3">
+                <h3 class="font-titulo text-lg text-pergamino">{t.jerga}</h3>
+                <span class="text-xs text-humo">de «{t.de}»</span>
+                {t.oficial && (
+                  <span class="text-sm text-oro">
+                    en tu juego: <span class="text-oro-apagado">{t.oficial}</span>
+                  </span>
+                )}
+              </div>
+              <p class="mt-1.5 text-sm text-ceniza">{t.explicacion}</p>
+              {t.ver && (
+                <a href={t.ver} class="mt-2 inline-block text-xs underline underline-offset-4 hover:text-pergamino">
+                  Más sobre esto →
+                </a>
+              )}
+            </article>
+          ))
+        }
+      </div>
+      <p id="vacio" class="mt-6 hidden text-center text-ceniza">Ningún término de jerga coincide.</p>
+    </section>
+
+    <section class="mt-10 grabado rounded-lg bg-piedra p-5">
+      <h2 class="font-titulo text-2xl">Nombres oficiales</h2>
+      <p class="mt-2 text-sm text-ceniza">
+        Los {totalOficial} nombres de objetos, glifos, runas y tableros salen directamente de la
+        localización oficial del juego, no de una traducción nuestra. Están todos, buscables en los dos
+        idiomas, en la base de datos:
+      </p>
+      <div class="mt-4 flex flex-wrap gap-2">
+        {
+          oficiales.map((o) => (
+            <a href="/objetos" class="grabado grabado-hover rounded bg-abismo px-3 py-2 text-sm">
+              {o.etiqueta} <span class="text-humo">{o.entradas.length}</span>
+            </a>
+          ))
+        }
+      </div>
+    </section>
+
+    <aside class="mt-6 text-xs text-humo">
+      <p>
+        Nota sobre el castellano: la localización oficial del juego es de España, pero la comunidad es mucho
+        más amplia. Usamos siempre el término que aparece en pantalla como principal, e incluimos los
+        sinónimos en el buscador para que dé igual cómo lo escribas.
+      </p>
+    </aside>
+  </div>
+</Base>
+
+<script>
+  const q = document.getElementById('q') as HTMLInputElement | null;
+  const conteo = document.getElementById('conteo');
+  const vacio = document.getElementById('vacio');
+
+  if (q && conteo && vacio) {
+    const items = Array.from(document.querySelectorAll<HTMLElement>('[data-item]'));
+    const plano = (s: string) => s.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase();
+    const indice = items.map((el) => plano(el.dataset['busqueda'] ?? ''));
+
+    q.addEventListener('input', () => {
+      const texto = plano(q.value.trim());
+      let visibles = 0;
+      items.forEach((el, i) => {
+        const visible = texto === '' || indice[i]!.includes(texto);
+        el.classList.toggle('hidden', !visible);
+        if (visible) visibles++;
+      });
+      conteo.textContent = visibles === 1 ? '1 término de jerga' : `${visibles} términos de jerga`;
+      vacio.classList.toggle('hidden', visibles > 0);
+    });
+  }
+</script>

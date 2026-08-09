@@ -4,55 +4,130 @@
     "coreSkills": [
       {
         "category": "skill",
+        "enUS": "Hydra",
+        "esES": "Hidra",
+        "i18n": "wowhead-es",
+        "idName": "curated_hydra",
+        "sno": 146743
+      },
+      {
+        "category": "skill",
+        "enUS": "Ice Armor",
+        "esES": "Armadura de hielo",
+        "i18n": "wowhead-es",
+        "idName": "curated_ice_armor",
+        "sno": 297039
+      },
+      {
+        "category": "skill",
+        "enUS": "Incinerate",
+        "esES": "Incinerar",
+        "i18n": "wowhead-es",
+        "idName": "curated_incinerate",
+        "sno": 292737
+      },
+      {
+        "category": "skill",
+        "enUS": "Inferno",
+        "esES": "Averno",
+        "i18n": "wowhead-es",
+        "idName": "curated_inferno",
+        "sno": 294198
+      },
+      {
+        "category": "skill",
+        "enUS": "Teleport",
+        "esES": "Teletransporte",
+        "i18n": "wowhead-es",
+        "idName": "curated_teleport",
+        "sno": 288106
+      },
+      {
+        "category": "skill",
         "enUS": "Familiar",
         "esES": null,
         "i18n": "none",
         "idName": "skill__familiar",
         "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Hydra",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__hydra",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Ice Armor",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__ice_armor",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Incinerate",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__incinerate",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Inferno",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__inferno",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Teleport",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__teleport",
-        "sno": null
       }
     ],
     "coreUniques": [],
     "fields": [
+      {
+        "key": "skill:curated_hydra",
+        "label": {
+          "category": "skill",
+          "enUS": "Hydra",
+          "esES": "Hidra",
+          "i18n": "wowhead-es",
+          "idName": "curated_hydra",
+          "sno": 146743
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:5b72fbcc-dfa5-4bb8-957e-6bfbb09ed1dd:0": 1
+        }
+      },
+      {
+        "key": "skill:curated_ice_armor",
+        "label": {
+          "category": "skill",
+          "enUS": "Ice Armor",
+          "esES": "Armadura de hielo",
+          "i18n": "wowhead-es",
+          "idName": "curated_ice_armor",
+          "sno": 297039
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:5b72fbcc-dfa5-4bb8-957e-6bfbb09ed1dd:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_incinerate",
+        "label": {
+          "category": "skill",
+          "enUS": "Incinerate",
+          "esES": "Incinerar",
+          "i18n": "wowhead-es",
+          "idName": "curated_incinerate",
+          "sno": 292737
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:5b72fbcc-dfa5-4bb8-957e-6bfbb09ed1dd:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_inferno",
+        "label": {
+          "category": "skill",
+          "enUS": "Inferno",
+          "esES": "Averno",
+          "i18n": "wowhead-es",
+          "idName": "curated_inferno",
+          "sno": 294198
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:5b72fbcc-dfa5-4bb8-957e-6bfbb09ed1dd:0": 1
+        }
+      },
+      {
+        "key": "skill:curated_teleport",
+        "label": {
+          "category": "skill",
+          "enUS": "Teleport",
+          "esES": "Teletransporte",
+          "i18n": "wowhead-es",
+          "idName": "curated_teleport",
+          "sno": 288106
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:5b72fbcc-dfa5-4bb8-957e-6bfbb09ed1dd:0": 1
+        }
+      },
       {
         "key": "skill:skill__familiar",
         "label": {
@@ -67,86 +142,11 @@
         "values": {
           "d4builds:5b72fbcc-dfa5-4bb8-957e-6bfbb09ed1dd:0": 10
         }
-      },
-      {
-        "key": "skill:skill__hydra",
-        "label": {
-          "category": "skill",
-          "enUS": "Hydra",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__hydra",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:5b72fbcc-dfa5-4bb8-957e-6bfbb09ed1dd:0": 1
-        }
-      },
-      {
-        "key": "skill:skill__ice_armor",
-        "label": {
-          "category": "skill",
-          "enUS": "Ice Armor",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__ice_armor",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:5b72fbcc-dfa5-4bb8-957e-6bfbb09ed1dd:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__incinerate",
-        "label": {
-          "category": "skill",
-          "enUS": "Incinerate",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__incinerate",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:5b72fbcc-dfa5-4bb8-957e-6bfbb09ed1dd:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__inferno",
-        "label": {
-          "category": "skill",
-          "enUS": "Inferno",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__inferno",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:5b72fbcc-dfa5-4bb8-957e-6bfbb09ed1dd:0": 1
-        }
-      },
-      {
-        "key": "skill:skill__teleport",
-        "label": {
-          "category": "skill",
-          "enUS": "Teleport",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__teleport",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:5b72fbcc-dfa5-4bb8-957e-6bfbb09ed1dd:0": 1
-        }
       }
     ],
     "variantCount": 1
   },
-  "correlationKey": "sorcerer::skill__incinerate::generic",
+  "correlationKey": "sorcerer::curated_incinerate::generic",
   "gameVersion": {
     "patch": "3.1.2",
     "season": 14
@@ -171,7 +171,7 @@
   },
   "title": {
     "en": "Incinerate",
-    "es": "Incinerate"
+    "es": "Incinerar"
   },
   "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
@@ -202,10 +202,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Teleport",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__teleport",
-            "sno": null
+            "esES": "Teletransporte",
+            "i18n": "wowhead-es",
+            "idName": "curated_teleport",
+            "sno": 288106
           },
           "runes": [
             {
@@ -242,10 +242,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Ice Armor",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__ice_armor",
-            "sno": null
+            "esES": "Armadura de hielo",
+            "i18n": "wowhead-es",
+            "idName": "curated_ice_armor",
+            "sno": 297039
           },
           "runes": [
             {
@@ -329,10 +329,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Hydra",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__hydra",
-            "sno": null
+            "esES": "Hidra",
+            "i18n": "wowhead-es",
+            "idName": "curated_hydra",
+            "sno": 146743
           },
           "runes": [
             {
@@ -376,10 +376,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Incinerate",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__incinerate",
-            "sno": null
+            "esES": "Incinerar",
+            "i18n": "wowhead-es",
+            "idName": "curated_incinerate",
+            "sno": 292737
           },
           "runes": [
             {
@@ -416,10 +416,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Inferno",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__inferno",
-            "sno": null
+            "esES": "Averno",
+            "i18n": "wowhead-es",
+            "idName": "curated_inferno",
+            "sno": 294198
           },
           "runes": [
             {

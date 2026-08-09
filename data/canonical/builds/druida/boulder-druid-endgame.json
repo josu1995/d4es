@@ -4,18 +4,42 @@
     "coreSkills": [
       {
         "category": "skill",
+        "enUS": "Claw",
+        "esES": "Desgarrar",
+        "i18n": "wowhead-es",
+        "idName": "curated_claw",
+        "sno": 439581
+      },
+      {
+        "category": "skill",
+        "enUS": "Grizzly Rage",
+        "esES": "Ira de oso pardo",
+        "i18n": "wowhead-es",
+        "idName": "curated_grizzly_rage",
+        "sno": 267021
+      },
+      {
+        "category": "skill",
+        "enUS": "Lightning Storm",
+        "esES": "Tormenta de rayos",
+        "i18n": "wowhead-es",
+        "idName": "curated_lightning_storm",
+        "sno": 548399
+      },
+      {
+        "category": "skill",
+        "enUS": "Wolves",
+        "esES": "Lobos",
+        "i18n": "wowhead-es",
+        "idName": "curated_wolves",
+        "sno": 265663
+      },
+      {
+        "category": "skill",
         "enUS": "Boulder",
         "esES": null,
         "i18n": "none",
         "idName": "skill__boulder",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Claw",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__claw",
         "sno": null
       },
       {
@@ -25,34 +49,70 @@
         "i18n": "none",
         "idName": "skill__cyclone_armor",
         "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Grizzly Rage",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__grizzly_rage",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Lightning Storm",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__lightning_storm",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Wolves",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__wolves",
-        "sno": null
       }
     ],
     "coreUniques": [],
     "fields": [
+      {
+        "key": "skill:curated_claw",
+        "label": {
+          "category": "skill",
+          "enUS": "Claw",
+          "esES": "Desgarrar",
+          "i18n": "wowhead-es",
+          "idName": "curated_claw",
+          "sno": 439581
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:c5d56e75-51f1-4c89-a340-7a7e74982076:0": 1
+        }
+      },
+      {
+        "key": "skill:curated_grizzly_rage",
+        "label": {
+          "category": "skill",
+          "enUS": "Grizzly Rage",
+          "esES": "Ira de oso pardo",
+          "i18n": "wowhead-es",
+          "idName": "curated_grizzly_rage",
+          "sno": 267021
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:c5d56e75-51f1-4c89-a340-7a7e74982076:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_lightning_storm",
+        "label": {
+          "category": "skill",
+          "enUS": "Lightning Storm",
+          "esES": "Tormenta de rayos",
+          "i18n": "wowhead-es",
+          "idName": "curated_lightning_storm",
+          "sno": 548399
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:c5d56e75-51f1-4c89-a340-7a7e74982076:0": 1
+        }
+      },
+      {
+        "key": "skill:curated_wolves",
+        "label": {
+          "category": "skill",
+          "enUS": "Wolves",
+          "esES": "Lobos",
+          "i18n": "wowhead-es",
+          "idName": "curated_wolves",
+          "sno": 265663
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:c5d56e75-51f1-4c89-a340-7a7e74982076:0": 1
+        }
+      },
       {
         "key": "skill:skill__boulder",
         "label": {
@@ -69,21 +129,6 @@
         }
       },
       {
-        "key": "skill:skill__claw",
-        "label": {
-          "category": "skill",
-          "enUS": "Claw",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__claw",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:c5d56e75-51f1-4c89-a340-7a7e74982076:0": 1
-        }
-      },
-      {
         "key": "skill:skill__cyclone_armor",
         "label": {
           "category": "skill",
@@ -96,51 +141,6 @@
         "status": "agree",
         "values": {
           "d4builds:c5d56e75-51f1-4c89-a340-7a7e74982076:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__grizzly_rage",
-        "label": {
-          "category": "skill",
-          "enUS": "Grizzly Rage",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__grizzly_rage",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:c5d56e75-51f1-4c89-a340-7a7e74982076:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__lightning_storm",
-        "label": {
-          "category": "skill",
-          "enUS": "Lightning Storm",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__lightning_storm",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:c5d56e75-51f1-4c89-a340-7a7e74982076:0": 1
-        }
-      },
-      {
-        "key": "skill:skill__wolves",
-        "label": {
-          "category": "skill",
-          "enUS": "Wolves",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__wolves",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:c5d56e75-51f1-4c89-a340-7a7e74982076:0": 1
         }
       }
     ],
@@ -202,10 +202,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Grizzly Rage",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__grizzly_rage",
-            "sno": null
+            "esES": "Ira de oso pardo",
+            "i18n": "wowhead-es",
+            "idName": "curated_grizzly_rage",
+            "sno": 267021
           },
           "runes": [
             {
@@ -242,10 +242,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Lightning Storm",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__lightning_storm",
-            "sno": null
+            "esES": "Tormenta de rayos",
+            "i18n": "wowhead-es",
+            "idName": "curated_lightning_storm",
+            "sno": 548399
           },
           "runes": [
             {
@@ -282,10 +282,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Wolves",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__wolves",
-            "sno": null
+            "esES": "Lobos",
+            "i18n": "wowhead-es",
+            "idName": "curated_wolves",
+            "sno": 265663
           },
           "runes": [
             {
@@ -394,10 +394,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Claw",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__claw",
-            "sno": null
+            "esES": "Desgarrar",
+            "i18n": "wowhead-es",
+            "idName": "curated_claw",
+            "sno": 439581
           },
           "runes": [
             {

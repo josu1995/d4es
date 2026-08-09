@@ -5,18 +5,34 @@
       {
         "category": "skill",
         "enUS": "Challenging Shout",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__challenging_shout",
-        "sno": null
+        "esES": "Grito desafiante",
+        "i18n": "wowhead-es",
+        "idName": "curated_challenging_shout",
+        "sno": 375484
       },
       {
         "category": "skill",
         "enUS": "Death Blow",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__death_blow",
-        "sno": null
+        "esES": "Golpe mortal",
+        "i18n": "wowhead-es",
+        "idName": "curated_death_blow",
+        "sno": 323105
+      },
+      {
+        "category": "skill",
+        "enUS": "Rallying Cry",
+        "esES": "Grito alentador",
+        "i18n": "wowhead-es",
+        "idName": "curated_rallying_cry",
+        "sno": 211938
+      },
+      {
+        "category": "skill",
+        "enUS": "Whirlwind",
+        "esES": "Torbellino",
+        "i18n": "wowhead-es",
+        "idName": "curated_whirlwind",
+        "sno": 206435
       },
       {
         "category": "skill",
@@ -24,22 +40,6 @@
         "esES": null,
         "i18n": "none",
         "idName": "skill__frenzy",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Rallying Cry",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__rallying_cry",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Whirlwind",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__whirlwind",
         "sno": null
       },
       {
@@ -54,14 +54,14 @@
     "coreUniques": [],
     "fields": [
       {
-        "key": "skill:skill__challenging_shout",
+        "key": "skill:curated_challenging_shout",
         "label": {
           "category": "skill",
           "enUS": "Challenging Shout",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__challenging_shout",
-          "sno": null
+          "esES": "Grito desafiante",
+          "i18n": "wowhead-es",
+          "idName": "curated_challenging_shout",
+          "sno": 375484
         },
         "status": "agree",
         "values": {
@@ -69,18 +69,48 @@
         }
       },
       {
-        "key": "skill:skill__death_blow",
+        "key": "skill:curated_death_blow",
         "label": {
           "category": "skill",
           "enUS": "Death Blow",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__death_blow",
-          "sno": null
+          "esES": "Golpe mortal",
+          "i18n": "wowhead-es",
+          "idName": "curated_death_blow",
+          "sno": 323105
         },
         "status": "agree",
         "values": {
           "d4builds:9ba1c760-fc3f-4980-a4af-95960b421f16:0": 0
+        }
+      },
+      {
+        "key": "skill:curated_rallying_cry",
+        "label": {
+          "category": "skill",
+          "enUS": "Rallying Cry",
+          "esES": "Grito alentador",
+          "i18n": "wowhead-es",
+          "idName": "curated_rallying_cry",
+          "sno": 211938
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:9ba1c760-fc3f-4980-a4af-95960b421f16:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_whirlwind",
+        "label": {
+          "category": "skill",
+          "enUS": "Whirlwind",
+          "esES": "Torbellino",
+          "i18n": "wowhead-es",
+          "idName": "curated_whirlwind",
+          "sno": 206435
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:9ba1c760-fc3f-4980-a4af-95960b421f16:0": 1
         }
       },
       {
@@ -91,36 +121,6 @@
           "esES": null,
           "i18n": "none",
           "idName": "skill__frenzy",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:9ba1c760-fc3f-4980-a4af-95960b421f16:0": 1
-        }
-      },
-      {
-        "key": "skill:skill__rallying_cry",
-        "label": {
-          "category": "skill",
-          "enUS": "Rallying Cry",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__rallying_cry",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:9ba1c760-fc3f-4980-a4af-95960b421f16:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__whirlwind",
-        "label": {
-          "category": "skill",
-          "enUS": "Whirlwind",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__whirlwind",
           "sno": null
         },
         "status": "agree",
@@ -146,7 +146,7 @@
     ],
     "variantCount": 1
   },
-  "correlationKey": "barbarian::skill__death_blow::generic",
+  "correlationKey": "barbarian::curated_death_blow::generic",
   "gameVersion": {
     "patch": "3.1.2",
     "season": 14
@@ -171,7 +171,7 @@
   },
   "title": {
     "en": "Death Blow",
-    "es": "Death Blow"
+    "es": "Golpe mortal"
   },
   "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
@@ -249,10 +249,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Death Blow",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__death_blow",
-            "sno": null
+            "esES": "Golpe mortal",
+            "i18n": "wowhead-es",
+            "idName": "curated_death_blow",
+            "sno": 323105
           },
           "runes": [],
           "skillVariant": null
@@ -264,10 +264,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Challenging Shout",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__challenging_shout",
-            "sno": null
+            "esES": "Grito desafiante",
+            "i18n": "wowhead-es",
+            "idName": "curated_challenging_shout",
+            "sno": 375484
           },
           "runes": [
             {
@@ -304,10 +304,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Rallying Cry",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__rallying_cry",
-            "sno": null
+            "esES": "Grito alentador",
+            "i18n": "wowhead-es",
+            "idName": "curated_rallying_cry",
+            "sno": 211938
           },
           "runes": [
             {
@@ -384,10 +384,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Whirlwind",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__whirlwind",
-            "sno": null
+            "esES": "Torbellino",
+            "i18n": "wowhead-es",
+            "idName": "curated_whirlwind",
+            "sno": 206435
           },
           "runes": [
             {

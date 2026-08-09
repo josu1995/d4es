@@ -4,55 +4,130 @@
     "coreSkills": [
       {
         "category": "skill",
+        "enUS": "Fire Bolt",
+        "esES": "Descarga de fuego",
+        "i18n": "wowhead-es",
+        "idName": "curated_fire_bolt",
+        "sno": 153249
+      },
+      {
+        "category": "skill",
+        "enUS": "Flame Shield",
+        "esES": "Escudo de llamas",
+        "i18n": "wowhead-es",
+        "idName": "curated_flame_shield",
+        "sno": 167341
+      },
+      {
+        "category": "skill",
+        "enUS": "Ice Armor",
+        "esES": "Armadura de hielo",
+        "i18n": "wowhead-es",
+        "idName": "curated_ice_armor",
+        "sno": 297039
+      },
+      {
+        "category": "skill",
+        "enUS": "Teleport",
+        "esES": "Teletransporte",
+        "i18n": "wowhead-es",
+        "idName": "curated_teleport",
+        "sno": 288106
+      },
+      {
+        "category": "skill",
+        "enUS": "Unstable Currents",
+        "esES": "Corrientes inestables",
+        "i18n": "wowhead-es",
+        "idName": "curated_unstable_currents",
+        "sno": 517417
+      },
+      {
+        "category": "skill",
         "enUS": "Familiar",
         "esES": null,
         "i18n": "none",
         "idName": "skill__familiar",
         "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Fire Bolt",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__fire_bolt",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Flame Shield",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__flame_shield",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Ice Armor",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__ice_armor",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Teleport",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__teleport",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Unstable Currents",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__unstable_currents",
-        "sno": null
       }
     ],
     "coreUniques": [],
     "fields": [
+      {
+        "key": "skill:curated_fire_bolt",
+        "label": {
+          "category": "skill",
+          "enUS": "Fire Bolt",
+          "esES": "Descarga de fuego",
+          "i18n": "wowhead-es",
+          "idName": "curated_fire_bolt",
+          "sno": 153249
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ec6c242b-22a9-428e-b44d-b8aafd64a48f:0": 1
+        }
+      },
+      {
+        "key": "skill:curated_flame_shield",
+        "label": {
+          "category": "skill",
+          "enUS": "Flame Shield",
+          "esES": "Escudo de llamas",
+          "i18n": "wowhead-es",
+          "idName": "curated_flame_shield",
+          "sno": 167341
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ec6c242b-22a9-428e-b44d-b8aafd64a48f:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_ice_armor",
+        "label": {
+          "category": "skill",
+          "enUS": "Ice Armor",
+          "esES": "Armadura de hielo",
+          "i18n": "wowhead-es",
+          "idName": "curated_ice_armor",
+          "sno": 297039
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ec6c242b-22a9-428e-b44d-b8aafd64a48f:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_teleport",
+        "label": {
+          "category": "skill",
+          "enUS": "Teleport",
+          "esES": "Teletransporte",
+          "i18n": "wowhead-es",
+          "idName": "curated_teleport",
+          "sno": 288106
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ec6c242b-22a9-428e-b44d-b8aafd64a48f:0": 1
+        }
+      },
+      {
+        "key": "skill:curated_unstable_currents",
+        "label": {
+          "category": "skill",
+          "enUS": "Unstable Currents",
+          "esES": "Corrientes inestables",
+          "i18n": "wowhead-es",
+          "idName": "curated_unstable_currents",
+          "sno": 517417
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ec6c242b-22a9-428e-b44d-b8aafd64a48f:0": 15
+        }
+      },
       {
         "key": "skill:skill__familiar",
         "label": {
@@ -67,86 +142,11 @@
         "values": {
           "d4builds:ec6c242b-22a9-428e-b44d-b8aafd64a48f:0": 1
         }
-      },
-      {
-        "key": "skill:skill__fire_bolt",
-        "label": {
-          "category": "skill",
-          "enUS": "Fire Bolt",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__fire_bolt",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:ec6c242b-22a9-428e-b44d-b8aafd64a48f:0": 1
-        }
-      },
-      {
-        "key": "skill:skill__flame_shield",
-        "label": {
-          "category": "skill",
-          "enUS": "Flame Shield",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__flame_shield",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:ec6c242b-22a9-428e-b44d-b8aafd64a48f:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__ice_armor",
-        "label": {
-          "category": "skill",
-          "enUS": "Ice Armor",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__ice_armor",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:ec6c242b-22a9-428e-b44d-b8aafd64a48f:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__teleport",
-        "label": {
-          "category": "skill",
-          "enUS": "Teleport",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__teleport",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:ec6c242b-22a9-428e-b44d-b8aafd64a48f:0": 1
-        }
-      },
-      {
-        "key": "skill:skill__unstable_currents",
-        "label": {
-          "category": "skill",
-          "enUS": "Unstable Currents",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__unstable_currents",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:ec6c242b-22a9-428e-b44d-b8aafd64a48f:0": 15
-        }
       }
     ],
     "variantCount": 1
   },
-  "correlationKey": "sorcerer::skill__flame_shield::generic",
+  "correlationKey": "sorcerer::curated_flame_shield::generic",
   "gameVersion": {
     "patch": "3.1.2",
     "season": 14
@@ -171,7 +171,7 @@
   },
   "title": {
     "en": "Crackling Energy",
-    "es": "Crackling Energy"
+    "es": "Escudo de llamas"
   },
   "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
@@ -202,10 +202,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Teleport",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__teleport",
-            "sno": null
+            "esES": "Teletransporte",
+            "i18n": "wowhead-es",
+            "idName": "curated_teleport",
+            "sno": 288106
           },
           "runes": [
             {
@@ -249,10 +249,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Flame Shield",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__flame_shield",
-            "sno": null
+            "esES": "Escudo de llamas",
+            "i18n": "wowhead-es",
+            "idName": "curated_flame_shield",
+            "sno": 167341
           },
           "runes": [
             {
@@ -296,10 +296,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Ice Armor",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__ice_armor",
-            "sno": null
+            "esES": "Armadura de hielo",
+            "i18n": "wowhead-es",
+            "idName": "curated_ice_armor",
+            "sno": 297039
           },
           "runes": [
             {
@@ -375,10 +375,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Fire Bolt",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__fire_bolt",
-            "sno": null
+            "esES": "Descarga de fuego",
+            "i18n": "wowhead-es",
+            "idName": "curated_fire_bolt",
+            "sno": 153249
           },
           "runes": [
             {
@@ -414,10 +414,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Unstable Currents",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__unstable_currents",
-            "sno": null
+            "esES": "Corrientes inestables",
+            "i18n": "wowhead-es",
+            "idName": "curated_unstable_currents",
+            "sno": 517417
           },
           "runes": [
             {

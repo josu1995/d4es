@@ -4,55 +4,130 @@
     "coreSkills": [
       {
         "category": "skill",
+        "enUS": "Flame Shield",
+        "esES": "Escudo de llamas",
+        "i18n": "wowhead-es",
+        "idName": "curated_flame_shield",
+        "sno": 167341
+      },
+      {
+        "category": "skill",
+        "enUS": "Ice Armor",
+        "esES": "Armadura de hielo",
+        "i18n": "wowhead-es",
+        "idName": "curated_ice_armor",
+        "sno": 297039
+      },
+      {
+        "category": "skill",
+        "enUS": "Inferno",
+        "esES": "Averno",
+        "i18n": "wowhead-es",
+        "idName": "curated_inferno",
+        "sno": 294198
+      },
+      {
+        "category": "skill",
+        "enUS": "Meteor",
+        "esES": "Meteorito",
+        "i18n": "wowhead-es",
+        "idName": "curated_meteor",
+        "sno": 296998
+      },
+      {
+        "category": "skill",
+        "enUS": "Teleport",
+        "esES": "Teletransporte",
+        "i18n": "wowhead-es",
+        "idName": "curated_teleport",
+        "sno": 288106
+      },
+      {
+        "category": "skill",
         "enUS": "Familiar",
         "esES": null,
         "i18n": "none",
         "idName": "skill__familiar",
         "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Flame Shield",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__flame_shield",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Ice Armor",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__ice_armor",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Inferno",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__inferno",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Meteor",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__meteor",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Teleport",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__teleport",
-        "sno": null
       }
     ],
     "coreUniques": [],
     "fields": [
+      {
+        "key": "skill:curated_flame_shield",
+        "label": {
+          "category": "skill",
+          "enUS": "Flame Shield",
+          "esES": "Escudo de llamas",
+          "i18n": "wowhead-es",
+          "idName": "curated_flame_shield",
+          "sno": 167341
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:85fbebdc-26fd-4d79-b295-2d9234b7dcd7:0": 1
+        }
+      },
+      {
+        "key": "skill:curated_ice_armor",
+        "label": {
+          "category": "skill",
+          "enUS": "Ice Armor",
+          "esES": "Armadura de hielo",
+          "i18n": "wowhead-es",
+          "idName": "curated_ice_armor",
+          "sno": 297039
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:85fbebdc-26fd-4d79-b295-2d9234b7dcd7:0": 11
+        }
+      },
+      {
+        "key": "skill:curated_inferno",
+        "label": {
+          "category": "skill",
+          "enUS": "Inferno",
+          "esES": "Averno",
+          "i18n": "wowhead-es",
+          "idName": "curated_inferno",
+          "sno": 294198
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:85fbebdc-26fd-4d79-b295-2d9234b7dcd7:0": 4
+        }
+      },
+      {
+        "key": "skill:curated_meteor",
+        "label": {
+          "category": "skill",
+          "enUS": "Meteor",
+          "esES": "Meteorito",
+          "i18n": "wowhead-es",
+          "idName": "curated_meteor",
+          "sno": 296998
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:85fbebdc-26fd-4d79-b295-2d9234b7dcd7:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_teleport",
+        "label": {
+          "category": "skill",
+          "enUS": "Teleport",
+          "esES": "Teletransporte",
+          "i18n": "wowhead-es",
+          "idName": "curated_teleport",
+          "sno": 288106
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:85fbebdc-26fd-4d79-b295-2d9234b7dcd7:0": 1
+        }
+      },
       {
         "key": "skill:skill__familiar",
         "label": {
@@ -67,86 +142,11 @@
         "values": {
           "d4builds:85fbebdc-26fd-4d79-b295-2d9234b7dcd7:0": 1
         }
-      },
-      {
-        "key": "skill:skill__flame_shield",
-        "label": {
-          "category": "skill",
-          "enUS": "Flame Shield",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__flame_shield",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:85fbebdc-26fd-4d79-b295-2d9234b7dcd7:0": 1
-        }
-      },
-      {
-        "key": "skill:skill__ice_armor",
-        "label": {
-          "category": "skill",
-          "enUS": "Ice Armor",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__ice_armor",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:85fbebdc-26fd-4d79-b295-2d9234b7dcd7:0": 11
-        }
-      },
-      {
-        "key": "skill:skill__inferno",
-        "label": {
-          "category": "skill",
-          "enUS": "Inferno",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__inferno",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:85fbebdc-26fd-4d79-b295-2d9234b7dcd7:0": 4
-        }
-      },
-      {
-        "key": "skill:skill__meteor",
-        "label": {
-          "category": "skill",
-          "enUS": "Meteor",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__meteor",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:85fbebdc-26fd-4d79-b295-2d9234b7dcd7:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__teleport",
-        "label": {
-          "category": "skill",
-          "enUS": "Teleport",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__teleport",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:85fbebdc-26fd-4d79-b295-2d9234b7dcd7:0": 1
-        }
       }
     ],
     "variantCount": 1
   },
-  "correlationKey": "sorcerer::skill__meteor::generic",
+  "correlationKey": "sorcerer::curated_meteor::generic",
   "gameVersion": {
     "patch": "3.1.2",
     "season": 14
@@ -171,7 +171,7 @@
   },
   "title": {
     "en": "Meteor",
-    "es": "Meteor"
+    "es": "Meteorito"
   },
   "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
@@ -202,10 +202,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Teleport",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__teleport",
-            "sno": null
+            "esES": "Teletransporte",
+            "i18n": "wowhead-es",
+            "idName": "curated_teleport",
+            "sno": 288106
           },
           "runes": [
             {
@@ -249,10 +249,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Ice Armor",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__ice_armor",
-            "sno": null
+            "esES": "Armadura de hielo",
+            "i18n": "wowhead-es",
+            "idName": "curated_ice_armor",
+            "sno": 297039
           },
           "runes": [
             {
@@ -328,10 +328,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Flame Shield",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__flame_shield",
-            "sno": null
+            "esES": "Escudo de llamas",
+            "i18n": "wowhead-es",
+            "idName": "curated_flame_shield",
+            "sno": 167341
           },
           "runes": [
             {
@@ -368,10 +368,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Meteor",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__meteor",
-            "sno": null
+            "esES": "Meteorito",
+            "i18n": "wowhead-es",
+            "idName": "curated_meteor",
+            "sno": 296998
           },
           "runes": [
             {
@@ -408,10 +408,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Inferno",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__inferno",
-            "sno": null
+            "esES": "Averno",
+            "i18n": "wowhead-es",
+            "idName": "curated_inferno",
+            "sno": 294198
           },
           "runes": [
             {

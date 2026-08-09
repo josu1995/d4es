@@ -19,6 +19,8 @@ import { PATHS } from '../paths.js';
 import { loadEstadoJuego } from '../estado-juego.js';
 import { readSnapshot } from '../sources/d4builds/scrape.js';
 import { normalizeD4BuildsCatalog } from '../sources/d4builds/normalize.js';
+import { enriquecerConPagina } from '../sources/d4builds/normalize-pages.js';
+import type { PaginaRaw } from '../sources/d4builds/scrape-pages.js';
 import { readJsonIfExists, stableStringify, writeIfChanged } from '../util/stable-json.js';
 import { evaluarGuardrails } from './guardrails.js';
 
@@ -157,6 +159,31 @@ export async function runNormalize(): Promise<NormalizeResultado> {
     capturedAt: catalogo.meta.lastChangedAt,
     estado,
   });
+
+  // Enriquecimiento con lo extraido de las paginas: equipo, Paragon y mercenarios.
+  const relleno = { conGear: 0, conParagon: 0, conMercenario: 0, paginas: 0 };
+  const dirPaginas = join(PATHS.raw, 'd4builds', 'pages');
+  if (existsSync(dirPaginas)) {
+    for (let i = 0; i < builds.length; i++) {
+      const build = builds[i]!;
+      const externalId = build.variants.find((v) => v.source.site === 'd4builds')?.source.externalId;
+      if (!externalId) continue;
+      const pagina = await readJsonIfExists<PaginaRaw>(join(dirPaginas, `${externalId}.json`));
+      if (!pagina) continue;
+      relleno.paginas++;
+      const res = enriquecerConPagina(build, pagina, resolver);
+      builds[i] = res.build;
+      if (res.relleno.gear > 0) relleno.conGear++;
+      if (res.relleno.paragon > 0) relleno.conParagon++;
+      if (res.relleno.mercenarios > 0) relleno.conMercenario++;
+    }
+    if (relleno.paginas > 0) {
+      process.stdout.write(
+        `  paginas aplicadas: ${relleno.paginas} | con equipo: ${relleno.conGear} | ` +
+          `paragon: ${relleno.conParagon} | mercenarios: ${relleno.conMercenario}\n`,
+      );
+    }
+  }
 
   const previo = await readJsonIfExists<BuildIndex>(PATHS.buildIndex);
   const existentes = await idsExistentes();

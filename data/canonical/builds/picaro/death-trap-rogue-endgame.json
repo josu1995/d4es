@@ -4,55 +4,130 @@
     "coreSkills": [
       {
         "category": "skill",
+        "enUS": "Dark Shroud",
+        "esES": "Embozo oscuro",
+        "i18n": "wowhead-es",
+        "idName": "curated_dark_shroud",
+        "sno": 786381
+      },
+      {
+        "category": "skill",
+        "enUS": "Dash",
+        "esES": "Carrera",
+        "i18n": "wowhead-es",
+        "idName": "curated_dash",
+        "sno": 358761
+      },
+      {
+        "category": "skill",
+        "enUS": "Death Trap",
+        "esES": "Trampa mortal",
+        "i18n": "wowhead-es",
+        "idName": "curated_death_trap",
+        "sno": 421161
+      },
+      {
+        "category": "skill",
+        "enUS": "Shadow Step",
+        "esES": "Paso de las sombras",
+        "i18n": "wowhead-es",
+        "idName": "curated_shadow_step",
+        "sno": 355606
+      },
+      {
+        "category": "skill",
+        "enUS": "Smoke Grenade",
+        "esES": "Granada de humo",
+        "i18n": "wowhead-es",
+        "idName": "curated_smoke_grenade",
+        "sno": 356162
+      },
+      {
+        "category": "skill",
         "enUS": "Concealment",
         "esES": null,
         "i18n": "none",
         "idName": "skill__concealment",
         "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Dark Shroud",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__dark_shroud",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Dash",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__dash",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Death Trap",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__death_trap",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Shadow Step",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__shadow_step",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Smoke Grenade",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__smoke_grenade",
-        "sno": null
       }
     ],
     "coreUniques": [],
     "fields": [
+      {
+        "key": "skill:curated_dark_shroud",
+        "label": {
+          "category": "skill",
+          "enUS": "Dark Shroud",
+          "esES": "Embozo oscuro",
+          "i18n": "wowhead-es",
+          "idName": "curated_dark_shroud",
+          "sno": 786381
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:f97bb7fd-d762-4ee4-a524-c7a61d95cbc1:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_dash",
+        "label": {
+          "category": "skill",
+          "enUS": "Dash",
+          "esES": "Carrera",
+          "i18n": "wowhead-es",
+          "idName": "curated_dash",
+          "sno": 358761
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:f97bb7fd-d762-4ee4-a524-c7a61d95cbc1:0": 4
+        }
+      },
+      {
+        "key": "skill:curated_death_trap",
+        "label": {
+          "category": "skill",
+          "enUS": "Death Trap",
+          "esES": "Trampa mortal",
+          "i18n": "wowhead-es",
+          "idName": "curated_death_trap",
+          "sno": 421161
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:f97bb7fd-d762-4ee4-a524-c7a61d95cbc1:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_shadow_step",
+        "label": {
+          "category": "skill",
+          "enUS": "Shadow Step",
+          "esES": "Paso de las sombras",
+          "i18n": "wowhead-es",
+          "idName": "curated_shadow_step",
+          "sno": 355606
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:f97bb7fd-d762-4ee4-a524-c7a61d95cbc1:0": 1
+        }
+      },
+      {
+        "key": "skill:curated_smoke_grenade",
+        "label": {
+          "category": "skill",
+          "enUS": "Smoke Grenade",
+          "esES": "Granada de humo",
+          "i18n": "wowhead-es",
+          "idName": "curated_smoke_grenade",
+          "sno": 356162
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:f97bb7fd-d762-4ee4-a524-c7a61d95cbc1:0": 15
+        }
+      },
       {
         "key": "skill:skill__concealment",
         "label": {
@@ -67,86 +142,11 @@
         "values": {
           "d4builds:f97bb7fd-d762-4ee4-a524-c7a61d95cbc1:0": 15
         }
-      },
-      {
-        "key": "skill:skill__dark_shroud",
-        "label": {
-          "category": "skill",
-          "enUS": "Dark Shroud",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__dark_shroud",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:f97bb7fd-d762-4ee4-a524-c7a61d95cbc1:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__dash",
-        "label": {
-          "category": "skill",
-          "enUS": "Dash",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__dash",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:f97bb7fd-d762-4ee4-a524-c7a61d95cbc1:0": 4
-        }
-      },
-      {
-        "key": "skill:skill__death_trap",
-        "label": {
-          "category": "skill",
-          "enUS": "Death Trap",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__death_trap",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:f97bb7fd-d762-4ee4-a524-c7a61d95cbc1:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__shadow_step",
-        "label": {
-          "category": "skill",
-          "enUS": "Shadow Step",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__shadow_step",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:f97bb7fd-d762-4ee4-a524-c7a61d95cbc1:0": 1
-        }
-      },
-      {
-        "key": "skill:skill__smoke_grenade",
-        "label": {
-          "category": "skill",
-          "enUS": "Smoke Grenade",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__smoke_grenade",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:f97bb7fd-d762-4ee4-a524-c7a61d95cbc1:0": 15
-        }
       }
     ],
     "variantCount": 1
   },
-  "correlationKey": "rogue::skill__death_trap::generic",
+  "correlationKey": "rogue::curated_death_trap::generic",
   "gameVersion": {
     "patch": "3.1.2",
     "season": 14
@@ -171,7 +171,7 @@
   },
   "title": {
     "en": "Death Trap",
-    "es": "Death Trap"
+    "es": "Trampa mortal"
   },
   "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
@@ -202,10 +202,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Dark Shroud",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__dark_shroud",
-            "sno": null
+            "esES": "Embozo oscuro",
+            "i18n": "wowhead-es",
+            "idName": "curated_dark_shroud",
+            "sno": 786381
           },
           "runes": [
             {
@@ -282,10 +282,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Smoke Grenade",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__smoke_grenade",
-            "sno": null
+            "esES": "Granada de humo",
+            "i18n": "wowhead-es",
+            "idName": "curated_smoke_grenade",
+            "sno": 356162
           },
           "runes": [
             {
@@ -322,10 +322,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Shadow Step",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__shadow_step",
-            "sno": null
+            "esES": "Paso de las sombras",
+            "i18n": "wowhead-es",
+            "idName": "curated_shadow_step",
+            "sno": 355606
           },
           "runes": [
             {
@@ -362,10 +362,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Death Trap",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__death_trap",
-            "sno": null
+            "esES": "Trampa mortal",
+            "i18n": "wowhead-es",
+            "idName": "curated_death_trap",
+            "sno": 421161
           },
           "runes": [
             {
@@ -402,10 +402,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Dash",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__dash",
-            "sno": null
+            "esES": "Carrera",
+            "i18n": "wowhead-es",
+            "idName": "curated_dash",
+            "sno": 358761
           },
           "runes": [
             {

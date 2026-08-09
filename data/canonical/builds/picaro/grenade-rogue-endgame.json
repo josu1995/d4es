@@ -4,6 +4,38 @@
     "coreSkills": [
       {
         "category": "skill",
+        "enUS": "Dance of Knives",
+        "esES": "Danza de cuchillos",
+        "i18n": "wowhead-es",
+        "idName": "curated_dance_of_knives",
+        "sno": 1690398
+      },
+      {
+        "category": "skill",
+        "enUS": "Dark Shroud",
+        "esES": "Embozo oscuro",
+        "i18n": "wowhead-es",
+        "idName": "curated_dark_shroud",
+        "sno": 786381
+      },
+      {
+        "category": "skill",
+        "enUS": "Shadow Clone",
+        "esES": "Clon tenebroso",
+        "i18n": "wowhead-es",
+        "idName": "curated_shadow_clone",
+        "sno": 357628
+      },
+      {
+        "category": "skill",
+        "enUS": "Smoke Grenade",
+        "esES": "Granada de humo",
+        "i18n": "wowhead-es",
+        "idName": "curated_smoke_grenade",
+        "sno": 356162
+      },
+      {
+        "category": "skill",
         "enUS": "Cold Imbuement",
         "esES": null,
         "i18n": "none",
@@ -17,42 +49,70 @@
         "i18n": "none",
         "idName": "skill__concealment",
         "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Dance of Knives",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__dance_of_knives",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Dark Shroud",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__dark_shroud",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Shadow Clone",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__shadow_clone",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Smoke Grenade",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__smoke_grenade",
-        "sno": null
       }
     ],
     "coreUniques": [],
     "fields": [
+      {
+        "key": "skill:curated_dance_of_knives",
+        "label": {
+          "category": "skill",
+          "enUS": "Dance of Knives",
+          "esES": "Danza de cuchillos",
+          "i18n": "wowhead-es",
+          "idName": "curated_dance_of_knives",
+          "sno": 1690398
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:fdd4eabf-1af9-49b8-812c-be5e28a53458:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_dark_shroud",
+        "label": {
+          "category": "skill",
+          "enUS": "Dark Shroud",
+          "esES": "Embozo oscuro",
+          "i18n": "wowhead-es",
+          "idName": "curated_dark_shroud",
+          "sno": 786381
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:fdd4eabf-1af9-49b8-812c-be5e28a53458:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_shadow_clone",
+        "label": {
+          "category": "skill",
+          "enUS": "Shadow Clone",
+          "esES": "Clon tenebroso",
+          "i18n": "wowhead-es",
+          "idName": "curated_shadow_clone",
+          "sno": 357628
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:fdd4eabf-1af9-49b8-812c-be5e28a53458:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_smoke_grenade",
+        "label": {
+          "category": "skill",
+          "enUS": "Smoke Grenade",
+          "esES": "Granada de humo",
+          "i18n": "wowhead-es",
+          "idName": "curated_smoke_grenade",
+          "sno": 356162
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:fdd4eabf-1af9-49b8-812c-be5e28a53458:0": 1
+        }
+      },
       {
         "key": "skill:skill__cold_imbuement",
         "label": {
@@ -81,66 +141,6 @@
         "status": "agree",
         "values": {
           "d4builds:fdd4eabf-1af9-49b8-812c-be5e28a53458:0": 6
-        }
-      },
-      {
-        "key": "skill:skill__dance_of_knives",
-        "label": {
-          "category": "skill",
-          "enUS": "Dance of Knives",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__dance_of_knives",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:fdd4eabf-1af9-49b8-812c-be5e28a53458:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__dark_shroud",
-        "label": {
-          "category": "skill",
-          "enUS": "Dark Shroud",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__dark_shroud",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:fdd4eabf-1af9-49b8-812c-be5e28a53458:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__shadow_clone",
-        "label": {
-          "category": "skill",
-          "enUS": "Shadow Clone",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__shadow_clone",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:fdd4eabf-1af9-49b8-812c-be5e28a53458:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__smoke_grenade",
-        "label": {
-          "category": "skill",
-          "enUS": "Smoke Grenade",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__smoke_grenade",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:fdd4eabf-1af9-49b8-812c-be5e28a53458:0": 1
         }
       }
     ],
@@ -242,10 +242,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Dark Shroud",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__dark_shroud",
-            "sno": null
+            "esES": "Embozo oscuro",
+            "i18n": "wowhead-es",
+            "idName": "curated_dark_shroud",
+            "sno": 786381
           },
           "runes": [
             {
@@ -306,10 +306,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Smoke Grenade",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__smoke_grenade",
-            "sno": null
+            "esES": "Granada de humo",
+            "i18n": "wowhead-es",
+            "idName": "curated_smoke_grenade",
+            "sno": 356162
           },
           "runes": [
             {
@@ -346,10 +346,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Dance of Knives",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__dance_of_knives",
-            "sno": null
+            "esES": "Danza de cuchillos",
+            "i18n": "wowhead-es",
+            "idName": "curated_dance_of_knives",
+            "sno": 1690398
           },
           "runes": [
             {
@@ -386,10 +386,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Shadow Clone",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__shadow_clone",
-            "sno": null
+            "esES": "Clon tenebroso",
+            "i18n": "wowhead-es",
+            "idName": "curated_shadow_clone",
+            "sno": 357628
           },
           "runes": [
             {

@@ -150,6 +150,24 @@ async function leerExternalIds(): Promise<string[]> {
   return [...ids].sort();
 }
 
+/**
+ * Rellena las traducciones de habilidades cruzando los listados de Wowhead en ingles y
+ * en castellano por el identificador interno del juego. No traduce nada: copia la
+ * traduccion oficial y anota de donde sale.
+ */
+async function cmdSkillsWowhead(): Promise<number> {
+  const { cosecharSkillsEs } = await import('./sources/wowhead/skills-es.js');
+  const hoy = new Date().toISOString().slice(0, 10);
+  process.stdout.write('Cosechando nombres de habilidad en castellano...\n');
+  const res = await cosecharSkillsEs(hoy);
+  process.stdout.write(`\n${res.total} traducciones (${res.nuevas} nuevas)\n`);
+  if (res.sinPareja.length > 0) {
+    process.stdout.write(`${res.sinPareja.length} habilidades sin pareja en castellano (se quedan en ingles)\n`);
+  }
+  process.stdout.write('Ejecuta ahora: i18n:build && normalize\n');
+  return EXIT.ok;
+}
+
 async function cmdScrapeCatalog(): Promise<number> {
   process.stdout.write('Descargando el catalogo de d4builds...\n');
   const informe = await scrapeD4BuildsCatalog({ now: new Date() });
@@ -212,6 +230,7 @@ const COMANDOS: Record<string, () => Promise<number>> = {
   'i18n:sync': cmdI18nSync,
   'i18n:build': cmdI18nBuild,
   'i18n:skills:scaffold': cmdSkillsScaffold,
+  'i18n:skills:wowhead': cmdSkillsWowhead,
   'scrape:catalog': cmdScrapeCatalog,
   'probe:page': cmdProbePage,
   'scrape:pages': cmdScrapePages,

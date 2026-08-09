@@ -5,10 +5,34 @@
       {
         "category": "skill",
         "enUS": "Cataclysm",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__cataclysm",
-        "sno": null
+        "esES": "Cataclismo",
+        "i18n": "wowhead-es",
+        "idName": "curated_cataclysm",
+        "sno": 266570
+      },
+      {
+        "category": "skill",
+        "enUS": "Earth Spike",
+        "esES": "Aguja de tierra",
+        "i18n": "wowhead-es",
+        "idName": "curated_earth_spike",
+        "sno": 543387
+      },
+      {
+        "category": "skill",
+        "enUS": "Lightning Storm",
+        "esES": "Tormenta de rayos",
+        "i18n": "wowhead-es",
+        "idName": "curated_lightning_storm",
+        "sno": 548399
+      },
+      {
+        "category": "skill",
+        "enUS": "Ravens",
+        "esES": "Cuervos",
+        "i18n": "wowhead-es",
+        "idName": "curated_ravens",
+        "sno": 281516
       },
       {
         "category": "skill",
@@ -20,52 +44,73 @@
       },
       {
         "category": "skill",
-        "enUS": "Earth Spike",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__earth_spike",
-        "sno": null
-      },
-      {
-        "category": "skill",
         "enUS": "Hurricane",
         "esES": null,
         "i18n": "none",
         "idName": "skill__hurricane",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Lightning Storm",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__lightning_storm",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Ravens",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__ravens",
         "sno": null
       }
     ],
     "coreUniques": [],
     "fields": [
       {
-        "key": "skill:skill__cataclysm",
+        "key": "skill:curated_cataclysm",
         "label": {
           "category": "skill",
           "enUS": "Cataclysm",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__cataclysm",
-          "sno": null
+          "esES": "Cataclismo",
+          "i18n": "wowhead-es",
+          "idName": "curated_cataclysm",
+          "sno": 266570
         },
         "status": "agree",
         "values": {
           "d4builds:e65be4e0-212b-4b2b-9520-b67c10e8f076:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_earth_spike",
+        "label": {
+          "category": "skill",
+          "enUS": "Earth Spike",
+          "esES": "Aguja de tierra",
+          "i18n": "wowhead-es",
+          "idName": "curated_earth_spike",
+          "sno": 543387
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:e65be4e0-212b-4b2b-9520-b67c10e8f076:0": 1
+        }
+      },
+      {
+        "key": "skill:curated_lightning_storm",
+        "label": {
+          "category": "skill",
+          "enUS": "Lightning Storm",
+          "esES": "Tormenta de rayos",
+          "i18n": "wowhead-es",
+          "idName": "curated_lightning_storm",
+          "sno": 548399
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:e65be4e0-212b-4b2b-9520-b67c10e8f076:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_ravens",
+        "label": {
+          "category": "skill",
+          "enUS": "Ravens",
+          "esES": "Cuervos",
+          "i18n": "wowhead-es",
+          "idName": "curated_ravens",
+          "sno": 281516
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:e65be4e0-212b-4b2b-9520-b67c10e8f076:0": 1
         }
       },
       {
@@ -84,21 +129,6 @@
         }
       },
       {
-        "key": "skill:skill__earth_spike",
-        "label": {
-          "category": "skill",
-          "enUS": "Earth Spike",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__earth_spike",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:e65be4e0-212b-4b2b-9520-b67c10e8f076:0": 1
-        }
-      },
-      {
         "key": "skill:skill__hurricane",
         "label": {
           "category": "skill",
@@ -112,41 +142,11 @@
         "values": {
           "d4builds:e65be4e0-212b-4b2b-9520-b67c10e8f076:0": 3
         }
-      },
-      {
-        "key": "skill:skill__lightning_storm",
-        "label": {
-          "category": "skill",
-          "enUS": "Lightning Storm",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__lightning_storm",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:e65be4e0-212b-4b2b-9520-b67c10e8f076:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__ravens",
-        "label": {
-          "category": "skill",
-          "enUS": "Ravens",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__ravens",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:e65be4e0-212b-4b2b-9520-b67c10e8f076:0": 1
-        }
       }
     ],
     "variantCount": 1
   },
-  "correlationKey": "druid::skill__cataclysm::generic",
+  "correlationKey": "druid::curated_cataclysm::generic",
   "gameVersion": {
     "patch": "3.1.2",
     "season": 14
@@ -171,7 +171,7 @@
   },
   "title": {
     "en": "Cataclysm",
-    "es": "Cataclysm"
+    "es": "Cataclismo"
   },
   "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
@@ -202,10 +202,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Lightning Storm",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__lightning_storm",
-            "sno": null
+            "esES": "Tormenta de rayos",
+            "i18n": "wowhead-es",
+            "idName": "curated_lightning_storm",
+            "sno": 548399
           },
           "runes": [
             {
@@ -242,10 +242,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Ravens",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__ravens",
-            "sno": null
+            "esES": "Cuervos",
+            "i18n": "wowhead-es",
+            "idName": "curated_ravens",
+            "sno": 281516
           },
           "runes": [
             {
@@ -346,10 +346,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Cataclysm",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__cataclysm",
-            "sno": null
+            "esES": "Cataclismo",
+            "i18n": "wowhead-es",
+            "idName": "curated_cataclysm",
+            "sno": 266570
           },
           "runes": [
             {
@@ -386,10 +386,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Earth Spike",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__earth_spike",
-            "sno": null
+            "esES": "Aguja de tierra",
+            "i18n": "wowhead-es",
+            "idName": "curated_earth_spike",
+            "sno": 543387
           },
           "runes": [
             {

@@ -5,10 +5,34 @@
       {
         "category": "skill",
         "enUS": "Charge",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__charge",
-        "sno": null
+        "esES": "Carga",
+        "i18n": "wowhead-es",
+        "idName": "curated_charge",
+        "sno": 204662
+      },
+      {
+        "category": "skill",
+        "enUS": "Rallying Cry",
+        "esES": "Grito alentador",
+        "i18n": "wowhead-es",
+        "idName": "curated_rallying_cry",
+        "sno": 211938
+      },
+      {
+        "category": "skill",
+        "enUS": "Steel Grasp",
+        "esES": "Tenaza de acero",
+        "i18n": "wowhead-es",
+        "idName": "curated_steel_grasp",
+        "sno": 964631
+      },
+      {
+        "category": "skill",
+        "enUS": "War Cry",
+        "esES": "Grito de guerra",
+        "i18n": "wowhead-es",
+        "idName": "curated_war_cry",
+        "sno": 184600
       },
       {
         "category": "skill",
@@ -16,30 +40,6 @@
         "esES": null,
         "i18n": "none",
         "idName": "skill__iron_skin",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Rallying Cry",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__rallying_cry",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Steel Grasp",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__steel_grasp",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "War Cry",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__war_cry",
         "sno": null
       },
       {
@@ -54,14 +54,59 @@
     "coreUniques": [],
     "fields": [
       {
-        "key": "skill:skill__charge",
+        "key": "skill:curated_charge",
         "label": {
           "category": "skill",
           "enUS": "Charge",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__charge",
-          "sno": null
+          "esES": "Carga",
+          "i18n": "wowhead-es",
+          "idName": "curated_charge",
+          "sno": 204662
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ddaaaed4-6f3b-4c97-b65b-55b04aa2ae39:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_rallying_cry",
+        "label": {
+          "category": "skill",
+          "enUS": "Rallying Cry",
+          "esES": "Grito alentador",
+          "i18n": "wowhead-es",
+          "idName": "curated_rallying_cry",
+          "sno": 211938
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ddaaaed4-6f3b-4c97-b65b-55b04aa2ae39:0": 1
+        }
+      },
+      {
+        "key": "skill:curated_steel_grasp",
+        "label": {
+          "category": "skill",
+          "enUS": "Steel Grasp",
+          "esES": "Tenaza de acero",
+          "i18n": "wowhead-es",
+          "idName": "curated_steel_grasp",
+          "sno": 964631
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ddaaaed4-6f3b-4c97-b65b-55b04aa2ae39:0": 1
+        }
+      },
+      {
+        "key": "skill:curated_war_cry",
+        "label": {
+          "category": "skill",
+          "enUS": "War Cry",
+          "esES": "Grito de guerra",
+          "i18n": "wowhead-es",
+          "idName": "curated_war_cry",
+          "sno": 184600
         },
         "status": "agree",
         "values": {
@@ -84,51 +129,6 @@
         }
       },
       {
-        "key": "skill:skill__rallying_cry",
-        "label": {
-          "category": "skill",
-          "enUS": "Rallying Cry",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__rallying_cry",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:ddaaaed4-6f3b-4c97-b65b-55b04aa2ae39:0": 1
-        }
-      },
-      {
-        "key": "skill:skill__steel_grasp",
-        "label": {
-          "category": "skill",
-          "enUS": "Steel Grasp",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__steel_grasp",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:ddaaaed4-6f3b-4c97-b65b-55b04aa2ae39:0": 1
-        }
-      },
-      {
-        "key": "skill:skill__war_cry",
-        "label": {
-          "category": "skill",
-          "enUS": "War Cry",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__war_cry",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:ddaaaed4-6f3b-4c97-b65b-55b04aa2ae39:0": 15
-        }
-      },
-      {
         "key": "skill:skill__wrath_of_the_berserker",
         "label": {
           "category": "skill",
@@ -146,7 +146,7 @@
     ],
     "variantCount": 1
   },
-  "correlationKey": "barbarian::skill__charge::generic",
+  "correlationKey": "barbarian::curated_charge::generic",
   "gameVersion": {
     "patch": "3.1.2",
     "season": 14
@@ -171,7 +171,7 @@
   },
   "title": {
     "en": "Charge",
-    "es": "Charge"
+    "es": "Carga"
   },
   "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
@@ -242,10 +242,10 @@
           "ref": {
             "category": "skill",
             "enUS": "War Cry",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__war_cry",
-            "sno": null
+            "esES": "Grito de guerra",
+            "i18n": "wowhead-es",
+            "idName": "curated_war_cry",
+            "sno": 184600
           },
           "runes": [
             {
@@ -282,10 +282,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Steel Grasp",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__steel_grasp",
-            "sno": null
+            "esES": "Tenaza de acero",
+            "i18n": "wowhead-es",
+            "idName": "curated_steel_grasp",
+            "sno": 964631
           },
           "runes": [
             {
@@ -322,10 +322,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Rallying Cry",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__rallying_cry",
-            "sno": null
+            "esES": "Grito alentador",
+            "i18n": "wowhead-es",
+            "idName": "curated_rallying_cry",
+            "sno": 211938
           },
           "runes": [
             {
@@ -362,10 +362,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Charge",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__charge",
-            "sno": null
+            "esES": "Carga",
+            "i18n": "wowhead-es",
+            "idName": "curated_charge",
+            "sno": 204662
           },
           "runes": [
             {

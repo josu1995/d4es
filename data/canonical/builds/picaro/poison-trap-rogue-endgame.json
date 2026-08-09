@@ -4,6 +4,38 @@
     "coreSkills": [
       {
         "category": "skill",
+        "enUS": "Dance of Knives",
+        "esES": "Danza de cuchillos",
+        "i18n": "wowhead-es",
+        "idName": "curated_dance_of_knives",
+        "sno": 1690398
+      },
+      {
+        "category": "skill",
+        "enUS": "Dark Shroud",
+        "esES": "Embozo oscuro",
+        "i18n": "wowhead-es",
+        "idName": "curated_dark_shroud",
+        "sno": 786381
+      },
+      {
+        "category": "skill",
+        "enUS": "Poison Trap",
+        "esES": "Trampa de veneno",
+        "i18n": "wowhead-es",
+        "idName": "curated_poison_trap",
+        "sno": 416528
+      },
+      {
+        "category": "skill",
+        "enUS": "Shadow Clone",
+        "esES": "Clon tenebroso",
+        "i18n": "wowhead-es",
+        "idName": "curated_shadow_clone",
+        "sno": 357628
+      },
+      {
+        "category": "skill",
         "enUS": "Cold Imbuement",
         "esES": null,
         "i18n": "none",
@@ -17,42 +49,70 @@
         "i18n": "none",
         "idName": "skill__concealment",
         "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Dance of Knives",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__dance_of_knives",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Dark Shroud",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__dark_shroud",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Poison Trap",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__poison_trap",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Shadow Clone",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__shadow_clone",
-        "sno": null
       }
     ],
     "coreUniques": [],
     "fields": [
+      {
+        "key": "skill:curated_dance_of_knives",
+        "label": {
+          "category": "skill",
+          "enUS": "Dance of Knives",
+          "esES": "Danza de cuchillos",
+          "i18n": "wowhead-es",
+          "idName": "curated_dance_of_knives",
+          "sno": 1690398
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ad5d0919-ca9c-431b-9ea8-7b295465990f:0": 1
+        }
+      },
+      {
+        "key": "skill:curated_dark_shroud",
+        "label": {
+          "category": "skill",
+          "enUS": "Dark Shroud",
+          "esES": "Embozo oscuro",
+          "i18n": "wowhead-es",
+          "idName": "curated_dark_shroud",
+          "sno": 786381
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ad5d0919-ca9c-431b-9ea8-7b295465990f:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_poison_trap",
+        "label": {
+          "category": "skill",
+          "enUS": "Poison Trap",
+          "esES": "Trampa de veneno",
+          "i18n": "wowhead-es",
+          "idName": "curated_poison_trap",
+          "sno": 416528
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ad5d0919-ca9c-431b-9ea8-7b295465990f:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_shadow_clone",
+        "label": {
+          "category": "skill",
+          "enUS": "Shadow Clone",
+          "esES": "Clon tenebroso",
+          "i18n": "wowhead-es",
+          "idName": "curated_shadow_clone",
+          "sno": 357628
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ad5d0919-ca9c-431b-9ea8-7b295465990f:0": 15
+        }
+      },
       {
         "key": "skill:skill__cold_imbuement",
         "label": {
@@ -82,71 +142,11 @@
         "values": {
           "d4builds:ad5d0919-ca9c-431b-9ea8-7b295465990f:0": 7
         }
-      },
-      {
-        "key": "skill:skill__dance_of_knives",
-        "label": {
-          "category": "skill",
-          "enUS": "Dance of Knives",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__dance_of_knives",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:ad5d0919-ca9c-431b-9ea8-7b295465990f:0": 1
-        }
-      },
-      {
-        "key": "skill:skill__dark_shroud",
-        "label": {
-          "category": "skill",
-          "enUS": "Dark Shroud",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__dark_shroud",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:ad5d0919-ca9c-431b-9ea8-7b295465990f:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__poison_trap",
-        "label": {
-          "category": "skill",
-          "enUS": "Poison Trap",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__poison_trap",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:ad5d0919-ca9c-431b-9ea8-7b295465990f:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__shadow_clone",
-        "label": {
-          "category": "skill",
-          "enUS": "Shadow Clone",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__shadow_clone",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:ad5d0919-ca9c-431b-9ea8-7b295465990f:0": 15
-        }
       }
     ],
     "variantCount": 1
   },
-  "correlationKey": "rogue::skill__poison_trap::generic",
+  "correlationKey": "rogue::curated_poison_trap::generic",
   "gameVersion": {
     "patch": "3.1.2",
     "season": 14
@@ -171,7 +171,7 @@
   },
   "title": {
     "en": "Poison Trap",
-    "es": "Poison Trap"
+    "es": "Trampa de veneno"
   },
   "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
@@ -266,10 +266,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Poison Trap",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__poison_trap",
-            "sno": null
+            "esES": "Trampa de veneno",
+            "i18n": "wowhead-es",
+            "idName": "curated_poison_trap",
+            "sno": 416528
           },
           "runes": [
             {
@@ -305,10 +305,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Dark Shroud",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__dark_shroud",
-            "sno": null
+            "esES": "Embozo oscuro",
+            "i18n": "wowhead-es",
+            "idName": "curated_dark_shroud",
+            "sno": 786381
           },
           "runes": [
             {
@@ -345,10 +345,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Dance of Knives",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__dance_of_knives",
-            "sno": null
+            "esES": "Danza de cuchillos",
+            "i18n": "wowhead-es",
+            "idName": "curated_dance_of_knives",
+            "sno": 1690398
           },
           "runes": [
             {
@@ -392,10 +392,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Shadow Clone",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__shadow_clone",
-            "sno": null
+            "esES": "Clon tenebroso",
+            "i18n": "wowhead-es",
+            "idName": "curated_shadow_clone",
+            "sno": 357628
           },
           "runes": [
             {

@@ -4,26 +4,42 @@
     "coreSkills": [
       {
         "category": "skill",
-        "enUS": "Concealment",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__concealment",
-        "sno": null
-      },
-      {
-        "category": "skill",
         "enUS": "Dash",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__dash",
-        "sno": null
+        "esES": "Carrera",
+        "i18n": "wowhead-es",
+        "idName": "curated_dash",
+        "sno": 358761
       },
       {
         "category": "skill",
         "enUS": "Penetrating Shot",
+        "esES": "Disparo penetrante",
+        "i18n": "wowhead-es",
+        "idName": "curated_penetrating_shot",
+        "sno": 377137
+      },
+      {
+        "category": "skill",
+        "enUS": "Shadow Clone",
+        "esES": "Clon tenebroso",
+        "i18n": "wowhead-es",
+        "idName": "curated_shadow_clone",
+        "sno": 357628
+      },
+      {
+        "category": "skill",
+        "enUS": "Smoke Grenade",
+        "esES": "Granada de humo",
+        "i18n": "wowhead-es",
+        "idName": "curated_smoke_grenade",
+        "sno": 356162
+      },
+      {
+        "category": "skill",
+        "enUS": "Concealment",
         "esES": null,
         "i18n": "none",
-        "idName": "skill__penetrating_shot",
+        "idName": "skill__concealment",
         "sno": null
       },
       {
@@ -33,26 +49,70 @@
         "i18n": "none",
         "idName": "skill__poison_imbuement",
         "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Shadow Clone",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__shadow_clone",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Smoke Grenade",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__smoke_grenade",
-        "sno": null
       }
     ],
     "coreUniques": [],
     "fields": [
+      {
+        "key": "skill:curated_dash",
+        "label": {
+          "category": "skill",
+          "enUS": "Dash",
+          "esES": "Carrera",
+          "i18n": "wowhead-es",
+          "idName": "curated_dash",
+          "sno": 358761
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ed086872-1243-46cb-bea0-c23c14cadc48:0": 1
+        }
+      },
+      {
+        "key": "skill:curated_penetrating_shot",
+        "label": {
+          "category": "skill",
+          "enUS": "Penetrating Shot",
+          "esES": "Disparo penetrante",
+          "i18n": "wowhead-es",
+          "idName": "curated_penetrating_shot",
+          "sno": 377137
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ed086872-1243-46cb-bea0-c23c14cadc48:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_shadow_clone",
+        "label": {
+          "category": "skill",
+          "enUS": "Shadow Clone",
+          "esES": "Clon tenebroso",
+          "i18n": "wowhead-es",
+          "idName": "curated_shadow_clone",
+          "sno": 357628
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ed086872-1243-46cb-bea0-c23c14cadc48:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_smoke_grenade",
+        "label": {
+          "category": "skill",
+          "enUS": "Smoke Grenade",
+          "esES": "Granada de humo",
+          "i18n": "wowhead-es",
+          "idName": "curated_smoke_grenade",
+          "sno": 356162
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ed086872-1243-46cb-bea0-c23c14cadc48:0": 1
+        }
+      },
       {
         "key": "skill:skill__concealment",
         "label": {
@@ -69,36 +129,6 @@
         }
       },
       {
-        "key": "skill:skill__dash",
-        "label": {
-          "category": "skill",
-          "enUS": "Dash",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__dash",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:ed086872-1243-46cb-bea0-c23c14cadc48:0": 1
-        }
-      },
-      {
-        "key": "skill:skill__penetrating_shot",
-        "label": {
-          "category": "skill",
-          "enUS": "Penetrating Shot",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__penetrating_shot",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:ed086872-1243-46cb-bea0-c23c14cadc48:0": 15
-        }
-      },
-      {
         "key": "skill:skill__poison_imbuement",
         "label": {
           "category": "skill",
@@ -112,41 +142,11 @@
         "values": {
           "d4builds:ed086872-1243-46cb-bea0-c23c14cadc48:0": 15
         }
-      },
-      {
-        "key": "skill:skill__shadow_clone",
-        "label": {
-          "category": "skill",
-          "enUS": "Shadow Clone",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__shadow_clone",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:ed086872-1243-46cb-bea0-c23c14cadc48:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__smoke_grenade",
-        "label": {
-          "category": "skill",
-          "enUS": "Smoke Grenade",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__smoke_grenade",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:ed086872-1243-46cb-bea0-c23c14cadc48:0": 1
-        }
       }
     ],
     "variantCount": 1
   },
-  "correlationKey": "rogue::skill__penetrating_shot::generic",
+  "correlationKey": "rogue::curated_penetrating_shot::generic",
   "gameVersion": {
     "patch": "3.1.2",
     "season": 14
@@ -171,7 +171,7 @@
   },
   "title": {
     "en": "Penetrating Shot",
-    "es": "Penetrating Shot"
+    "es": "Disparo penetrante"
   },
   "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
@@ -242,10 +242,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Dash",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__dash",
-            "sno": null
+            "esES": "Carrera",
+            "i18n": "wowhead-es",
+            "idName": "curated_dash",
+            "sno": 358761
           },
           "runes": [
             {
@@ -274,10 +274,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Smoke Grenade",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__smoke_grenade",
-            "sno": null
+            "esES": "Granada de humo",
+            "i18n": "wowhead-es",
+            "idName": "curated_smoke_grenade",
+            "sno": 356162
           },
           "runes": [
             {
@@ -338,10 +338,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Penetrating Shot",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__penetrating_shot",
-            "sno": null
+            "esES": "Disparo penetrante",
+            "i18n": "wowhead-es",
+            "idName": "curated_penetrating_shot",
+            "sno": 377137
           },
           "runes": [
             {
@@ -378,10 +378,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Shadow Clone",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__shadow_clone",
-            "sno": null
+            "esES": "Clon tenebroso",
+            "i18n": "wowhead-es",
+            "idName": "curated_shadow_clone",
+            "sno": 357628
           },
           "runes": [
             {

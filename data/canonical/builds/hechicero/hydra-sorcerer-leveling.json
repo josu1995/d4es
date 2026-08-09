@@ -5,63 +5,63 @@
       {
         "category": "skill",
         "enUS": "Hydra",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__hydra",
-        "sno": null
+        "esES": "Hidra",
+        "i18n": "wowhead-es",
+        "idName": "curated_hydra",
+        "sno": 146743
       },
       {
         "category": "skill",
         "enUS": "Ice Armor",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__ice_armor",
-        "sno": null
+        "esES": "Armadura de hielo",
+        "i18n": "wowhead-es",
+        "idName": "curated_ice_armor",
+        "sno": 297039
       },
       {
         "category": "skill",
         "enUS": "Incinerate",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__incinerate",
-        "sno": null
+        "esES": "Incinerar",
+        "i18n": "wowhead-es",
+        "idName": "curated_incinerate",
+        "sno": 292737
       },
       {
         "category": "skill",
         "enUS": "Inferno",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__inferno",
-        "sno": null
+        "esES": "Averno",
+        "i18n": "wowhead-es",
+        "idName": "curated_inferno",
+        "sno": 294198
       },
       {
         "category": "skill",
         "enUS": "Spark",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__spark",
-        "sno": null
+        "esES": "Chispa",
+        "i18n": "wowhead-es",
+        "idName": "curated_spark",
+        "sno": 143483
       },
       {
         "category": "skill",
         "enUS": "Teleport",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__teleport",
-        "sno": null
+        "esES": "Teletransporte",
+        "i18n": "wowhead-es",
+        "idName": "curated_teleport",
+        "sno": 288106
       }
     ],
     "coreUniques": [],
     "fields": [
       {
-        "key": "skill:skill__hydra",
+        "key": "skill:curated_hydra",
         "label": {
           "category": "skill",
           "enUS": "Hydra",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__hydra",
-          "sno": null
+          "esES": "Hidra",
+          "i18n": "wowhead-es",
+          "idName": "curated_hydra",
+          "sno": 146743
         },
         "status": "agree",
         "values": {
@@ -69,14 +69,14 @@
         }
       },
       {
-        "key": "skill:skill__ice_armor",
+        "key": "skill:curated_ice_armor",
         "label": {
           "category": "skill",
           "enUS": "Ice Armor",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__ice_armor",
-          "sno": null
+          "esES": "Armadura de hielo",
+          "i18n": "wowhead-es",
+          "idName": "curated_ice_armor",
+          "sno": 297039
         },
         "status": "agree",
         "values": {
@@ -84,14 +84,14 @@
         }
       },
       {
-        "key": "skill:skill__incinerate",
+        "key": "skill:curated_incinerate",
         "label": {
           "category": "skill",
           "enUS": "Incinerate",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__incinerate",
-          "sno": null
+          "esES": "Incinerar",
+          "i18n": "wowhead-es",
+          "idName": "curated_incinerate",
+          "sno": 292737
         },
         "status": "agree",
         "values": {
@@ -99,14 +99,14 @@
         }
       },
       {
-        "key": "skill:skill__inferno",
+        "key": "skill:curated_inferno",
         "label": {
           "category": "skill",
           "enUS": "Inferno",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__inferno",
-          "sno": null
+          "esES": "Averno",
+          "i18n": "wowhead-es",
+          "idName": "curated_inferno",
+          "sno": 294198
         },
         "status": "agree",
         "values": {
@@ -114,14 +114,14 @@
         }
       },
       {
-        "key": "skill:skill__spark",
+        "key": "skill:curated_spark",
         "label": {
           "category": "skill",
           "enUS": "Spark",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__spark",
-          "sno": null
+          "esES": "Chispa",
+          "i18n": "wowhead-es",
+          "idName": "curated_spark",
+          "sno": 143483
         },
         "status": "agree",
         "values": {
@@ -129,14 +129,14 @@
         }
       },
       {
-        "key": "skill:skill__teleport",
+        "key": "skill:curated_teleport",
         "label": {
           "category": "skill",
           "enUS": "Teleport",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__teleport",
-          "sno": null
+          "esES": "Teletransporte",
+          "i18n": "wowhead-es",
+          "idName": "curated_teleport",
+          "sno": 288106
         },
         "status": "agree",
         "values": {
@@ -146,7 +146,7 @@
     ],
     "variantCount": 1
   },
-  "correlationKey": "sorcerer::skill__hydra::generic",
+  "correlationKey": "sorcerer::curated_hydra::generic",
   "gameVersion": {
     "patch": "3.1.2",
     "season": 14
@@ -171,7 +171,7 @@
   },
   "title": {
     "en": "Hydra",
-    "es": "Hydra"
+    "es": "Hidra"
   },
   "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
@@ -202,10 +202,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Incinerate",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__incinerate",
-            "sno": null
+            "esES": "Incinerar",
+            "i18n": "wowhead-es",
+            "idName": "curated_incinerate",
+            "sno": 292737
           },
           "runes": [
             {
@@ -242,10 +242,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Teleport",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__teleport",
-            "sno": null
+            "esES": "Teletransporte",
+            "i18n": "wowhead-es",
+            "idName": "curated_teleport",
+            "sno": 288106
           },
           "runes": [
             {
@@ -282,10 +282,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Ice Armor",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__ice_armor",
-            "sno": null
+            "esES": "Armadura de hielo",
+            "i18n": "wowhead-es",
+            "idName": "curated_ice_armor",
+            "sno": 297039
           },
           "runes": [
             {
@@ -314,10 +314,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Inferno",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__inferno",
-            "sno": null
+            "esES": "Averno",
+            "i18n": "wowhead-es",
+            "idName": "curated_inferno",
+            "sno": 294198
           },
           "runes": [
             {
@@ -354,10 +354,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Spark",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__spark",
-            "sno": null
+            "esES": "Chispa",
+            "i18n": "wowhead-es",
+            "idName": "curated_spark",
+            "sno": 143483
           },
           "runes": [
             {
@@ -394,10 +394,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Hydra",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__hydra",
-            "sno": null
+            "esES": "Hidra",
+            "i18n": "wowhead-es",
+            "idName": "curated_hydra",
+            "sno": 146743
           },
           "runes": [
             {

@@ -4,55 +4,130 @@
     "coreSkills": [
       {
         "category": "skill",
+        "enUS": "Hydra",
+        "esES": "Hidra",
+        "i18n": "wowhead-es",
+        "idName": "curated_hydra",
+        "sno": 146743
+      },
+      {
+        "category": "skill",
+        "enUS": "Ice Armor",
+        "esES": "Armadura de hielo",
+        "i18n": "wowhead-es",
+        "idName": "curated_ice_armor",
+        "sno": 297039
+      },
+      {
+        "category": "skill",
+        "enUS": "Inferno",
+        "esES": "Averno",
+        "i18n": "wowhead-es",
+        "idName": "curated_inferno",
+        "sno": 294198
+      },
+      {
+        "category": "skill",
+        "enUS": "Lightning Spear",
+        "esES": "Lanza de rayos",
+        "i18n": "wowhead-es",
+        "idName": "curated_lightning_spear",
+        "sno": 292074
+      },
+      {
+        "category": "skill",
+        "enUS": "Teleport",
+        "esES": "Teletransporte",
+        "i18n": "wowhead-es",
+        "idName": "curated_teleport",
+        "sno": 288106
+      },
+      {
+        "category": "skill",
         "enUS": "Familiar",
         "esES": null,
         "i18n": "none",
         "idName": "skill__familiar",
         "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Hydra",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__hydra",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Ice Armor",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__ice_armor",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Inferno",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__inferno",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Lightning Spear",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__lightning_spear",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Teleport",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__teleport",
-        "sno": null
       }
     ],
     "coreUniques": [],
     "fields": [
+      {
+        "key": "skill:curated_hydra",
+        "label": {
+          "category": "skill",
+          "enUS": "Hydra",
+          "esES": "Hidra",
+          "i18n": "wowhead-es",
+          "idName": "curated_hydra",
+          "sno": 146743
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:eaa9778a-bdec-40f7-9449-7c8004e6359c:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_ice_armor",
+        "label": {
+          "category": "skill",
+          "enUS": "Ice Armor",
+          "esES": "Armadura de hielo",
+          "i18n": "wowhead-es",
+          "idName": "curated_ice_armor",
+          "sno": 297039
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:eaa9778a-bdec-40f7-9449-7c8004e6359c:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_inferno",
+        "label": {
+          "category": "skill",
+          "enUS": "Inferno",
+          "esES": "Averno",
+          "i18n": "wowhead-es",
+          "idName": "curated_inferno",
+          "sno": 294198
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:eaa9778a-bdec-40f7-9449-7c8004e6359c:0": 1
+        }
+      },
+      {
+        "key": "skill:curated_lightning_spear",
+        "label": {
+          "category": "skill",
+          "enUS": "Lightning Spear",
+          "esES": "Lanza de rayos",
+          "i18n": "wowhead-es",
+          "idName": "curated_lightning_spear",
+          "sno": 292074
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:eaa9778a-bdec-40f7-9449-7c8004e6359c:0": 1
+        }
+      },
+      {
+        "key": "skill:curated_teleport",
+        "label": {
+          "category": "skill",
+          "enUS": "Teleport",
+          "esES": "Teletransporte",
+          "i18n": "wowhead-es",
+          "idName": "curated_teleport",
+          "sno": 288106
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:eaa9778a-bdec-40f7-9449-7c8004e6359c:0": 1
+        }
+      },
       {
         "key": "skill:skill__familiar",
         "label": {
@@ -67,86 +142,11 @@
         "values": {
           "d4builds:eaa9778a-bdec-40f7-9449-7c8004e6359c:0": 15
         }
-      },
-      {
-        "key": "skill:skill__hydra",
-        "label": {
-          "category": "skill",
-          "enUS": "Hydra",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__hydra",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:eaa9778a-bdec-40f7-9449-7c8004e6359c:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__ice_armor",
-        "label": {
-          "category": "skill",
-          "enUS": "Ice Armor",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__ice_armor",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:eaa9778a-bdec-40f7-9449-7c8004e6359c:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__inferno",
-        "label": {
-          "category": "skill",
-          "enUS": "Inferno",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__inferno",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:eaa9778a-bdec-40f7-9449-7c8004e6359c:0": 1
-        }
-      },
-      {
-        "key": "skill:skill__lightning_spear",
-        "label": {
-          "category": "skill",
-          "enUS": "Lightning Spear",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__lightning_spear",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:eaa9778a-bdec-40f7-9449-7c8004e6359c:0": 1
-        }
-      },
-      {
-        "key": "skill:skill__teleport",
-        "label": {
-          "category": "skill",
-          "enUS": "Teleport",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__teleport",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:eaa9778a-bdec-40f7-9449-7c8004e6359c:0": 1
-        }
       }
     ],
     "variantCount": 1
   },
-  "correlationKey": "sorcerer::skill__hydra::generic",
+  "correlationKey": "sorcerer::curated_hydra::generic",
   "gameVersion": {
     "patch": "3.1.2",
     "season": 14
@@ -171,7 +171,7 @@
   },
   "title": {
     "en": "Hydra",
-    "es": "Hydra"
+    "es": "Hidra"
   },
   "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
@@ -202,10 +202,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Teleport",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__teleport",
-            "sno": null
+            "esES": "Teletransporte",
+            "i18n": "wowhead-es",
+            "idName": "curated_teleport",
+            "sno": 288106
           },
           "runes": [
             {
@@ -249,10 +249,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Ice Armor",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__ice_armor",
-            "sno": null
+            "esES": "Armadura de hielo",
+            "i18n": "wowhead-es",
+            "idName": "curated_ice_armor",
+            "sno": 297039
           },
           "runes": [
             {
@@ -289,10 +289,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Lightning Spear",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__lightning_spear",
-            "sno": null
+            "esES": "Lanza de rayos",
+            "i18n": "wowhead-es",
+            "idName": "curated_lightning_spear",
+            "sno": 292074
           },
           "runes": [
             {
@@ -352,10 +352,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Hydra",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__hydra",
-            "sno": null
+            "esES": "Hidra",
+            "i18n": "wowhead-es",
+            "idName": "curated_hydra",
+            "sno": 146743
           },
           "runes": [
             {
@@ -383,10 +383,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Inferno",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__inferno",
-            "sno": null
+            "esES": "Averno",
+            "i18n": "wowhead-es",
+            "idName": "curated_inferno",
+            "sno": 294198
           },
           "runes": [
             {

@@ -5,63 +5,63 @@
       {
         "category": "skill",
         "enUS": "Ball Lightning",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__ball_lightning",
-        "sno": null
+        "esES": "Bola de rayos",
+        "i18n": "wowhead-es",
+        "idName": "curated_ball_lightning",
+        "sno": 514030
       },
       {
         "category": "skill",
         "enUS": "Hydra",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__hydra",
-        "sno": null
+        "esES": "Hidra",
+        "i18n": "wowhead-es",
+        "idName": "curated_hydra",
+        "sno": 146743
       },
       {
         "category": "skill",
         "enUS": "Ice Armor",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__ice_armor",
-        "sno": null
+        "esES": "Armadura de hielo",
+        "i18n": "wowhead-es",
+        "idName": "curated_ice_armor",
+        "sno": 297039
       },
       {
         "category": "skill",
         "enUS": "Meteor",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__meteor",
-        "sno": null
+        "esES": "Meteorito",
+        "i18n": "wowhead-es",
+        "idName": "curated_meteor",
+        "sno": 296998
       },
       {
         "category": "skill",
         "enUS": "Teleport",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__teleport",
-        "sno": null
+        "esES": "Teletransporte",
+        "i18n": "wowhead-es",
+        "idName": "curated_teleport",
+        "sno": 288106
       },
       {
         "category": "skill",
         "enUS": "Unstable Currents",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__unstable_currents",
-        "sno": null
+        "esES": "Corrientes inestables",
+        "i18n": "wowhead-es",
+        "idName": "curated_unstable_currents",
+        "sno": 517417
       }
     ],
     "coreUniques": [],
     "fields": [
       {
-        "key": "skill:skill__ball_lightning",
+        "key": "skill:curated_ball_lightning",
         "label": {
           "category": "skill",
           "enUS": "Ball Lightning",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__ball_lightning",
-          "sno": null
+          "esES": "Bola de rayos",
+          "i18n": "wowhead-es",
+          "idName": "curated_ball_lightning",
+          "sno": 514030
         },
         "status": "agree",
         "values": {
@@ -69,14 +69,14 @@
         }
       },
       {
-        "key": "skill:skill__hydra",
+        "key": "skill:curated_hydra",
         "label": {
           "category": "skill",
           "enUS": "Hydra",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__hydra",
-          "sno": null
+          "esES": "Hidra",
+          "i18n": "wowhead-es",
+          "idName": "curated_hydra",
+          "sno": 146743
         },
         "status": "agree",
         "values": {
@@ -84,14 +84,14 @@
         }
       },
       {
-        "key": "skill:skill__ice_armor",
+        "key": "skill:curated_ice_armor",
         "label": {
           "category": "skill",
           "enUS": "Ice Armor",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__ice_armor",
-          "sno": null
+          "esES": "Armadura de hielo",
+          "i18n": "wowhead-es",
+          "idName": "curated_ice_armor",
+          "sno": 297039
         },
         "status": "agree",
         "values": {
@@ -99,14 +99,14 @@
         }
       },
       {
-        "key": "skill:skill__meteor",
+        "key": "skill:curated_meteor",
         "label": {
           "category": "skill",
           "enUS": "Meteor",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__meteor",
-          "sno": null
+          "esES": "Meteorito",
+          "i18n": "wowhead-es",
+          "idName": "curated_meteor",
+          "sno": 296998
         },
         "status": "agree",
         "values": {
@@ -114,14 +114,14 @@
         }
       },
       {
-        "key": "skill:skill__teleport",
+        "key": "skill:curated_teleport",
         "label": {
           "category": "skill",
           "enUS": "Teleport",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__teleport",
-          "sno": null
+          "esES": "Teletransporte",
+          "i18n": "wowhead-es",
+          "idName": "curated_teleport",
+          "sno": 288106
         },
         "status": "agree",
         "values": {
@@ -129,14 +129,14 @@
         }
       },
       {
-        "key": "skill:skill__unstable_currents",
+        "key": "skill:curated_unstable_currents",
         "label": {
           "category": "skill",
           "enUS": "Unstable Currents",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__unstable_currents",
-          "sno": null
+          "esES": "Corrientes inestables",
+          "i18n": "wowhead-es",
+          "idName": "curated_unstable_currents",
+          "sno": 517417
         },
         "status": "agree",
         "values": {
@@ -146,7 +146,7 @@
     ],
     "variantCount": 1
   },
-  "correlationKey": "sorcerer::skill__ball_lightning::generic",
+  "correlationKey": "sorcerer::curated_ball_lightning::generic",
   "gameVersion": {
     "patch": "3.1.2",
     "season": 14
@@ -171,7 +171,7 @@
   },
   "title": {
     "en": "Ball Lightning",
-    "es": "Ball Lightning"
+    "es": "Bola de rayos"
   },
   "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
@@ -202,10 +202,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Unstable Currents",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__unstable_currents",
-            "sno": null
+            "esES": "Corrientes inestables",
+            "i18n": "wowhead-es",
+            "idName": "curated_unstable_currents",
+            "sno": 517417
           },
           "runes": [
             {
@@ -242,10 +242,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Teleport",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__teleport",
-            "sno": null
+            "esES": "Teletransporte",
+            "i18n": "wowhead-es",
+            "idName": "curated_teleport",
+            "sno": 288106
           },
           "runes": [
             {
@@ -289,10 +289,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Ice Armor",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__ice_armor",
-            "sno": null
+            "esES": "Armadura de hielo",
+            "i18n": "wowhead-es",
+            "idName": "curated_ice_armor",
+            "sno": 297039
           },
           "runes": [
             {
@@ -329,10 +329,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Meteor",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__meteor",
-            "sno": null
+            "esES": "Meteorito",
+            "i18n": "wowhead-es",
+            "idName": "curated_meteor",
+            "sno": 296998
           },
           "runes": [
             {
@@ -369,10 +369,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Ball Lightning",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__ball_lightning",
-            "sno": null
+            "esES": "Bola de rayos",
+            "i18n": "wowhead-es",
+            "idName": "curated_ball_lightning",
+            "sno": 514030
           },
           "runes": [
             {
@@ -409,10 +409,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Hydra",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__hydra",
-            "sno": null
+            "esES": "Hidra",
+            "i18n": "wowhead-es",
+            "idName": "curated_hydra",
+            "sno": 146743
           },
           "runes": [
             {

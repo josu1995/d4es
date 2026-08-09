@@ -5,42 +5,42 @@
       {
         "category": "skill",
         "enUS": "Challenging Shout",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__challenging_shout",
-        "sno": null
+        "esES": "Grito desafiante",
+        "i18n": "wowhead-es",
+        "idName": "curated_challenging_shout",
+        "sno": 375484
       },
       {
         "category": "skill",
         "enUS": "Leap",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__leap",
-        "sno": null
+        "esES": "Salto ofensivo",
+        "i18n": "wowhead-es",
+        "idName": "curated_leap",
+        "sno": 196545
       },
       {
         "category": "skill",
         "enUS": "Rallying Cry",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__rallying_cry",
-        "sno": null
+        "esES": "Grito alentador",
+        "i18n": "wowhead-es",
+        "idName": "curated_rallying_cry",
+        "sno": 211938
       },
       {
         "category": "skill",
         "enUS": "Rend",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__rend",
-        "sno": null
+        "esES": "Hender",
+        "i18n": "wowhead-es",
+        "idName": "curated_rend",
+        "sno": 214786
       },
       {
         "category": "skill",
         "enUS": "War Cry",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__war_cry",
-        "sno": null
+        "esES": "Grito de guerra",
+        "i18n": "wowhead-es",
+        "idName": "curated_war_cry",
+        "sno": 184600
       },
       {
         "category": "skill",
@@ -54,14 +54,14 @@
     "coreUniques": [],
     "fields": [
       {
-        "key": "skill:skill__challenging_shout",
+        "key": "skill:curated_challenging_shout",
         "label": {
           "category": "skill",
           "enUS": "Challenging Shout",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__challenging_shout",
-          "sno": null
+          "esES": "Grito desafiante",
+          "i18n": "wowhead-es",
+          "idName": "curated_challenging_shout",
+          "sno": 375484
         },
         "status": "agree",
         "values": {
@@ -69,14 +69,14 @@
         }
       },
       {
-        "key": "skill:skill__leap",
+        "key": "skill:curated_leap",
         "label": {
           "category": "skill",
           "enUS": "Leap",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__leap",
-          "sno": null
+          "esES": "Salto ofensivo",
+          "i18n": "wowhead-es",
+          "idName": "curated_leap",
+          "sno": 196545
         },
         "status": "agree",
         "values": {
@@ -84,14 +84,14 @@
         }
       },
       {
-        "key": "skill:skill__rallying_cry",
+        "key": "skill:curated_rallying_cry",
         "label": {
           "category": "skill",
           "enUS": "Rallying Cry",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__rallying_cry",
-          "sno": null
+          "esES": "Grito alentador",
+          "i18n": "wowhead-es",
+          "idName": "curated_rallying_cry",
+          "sno": 211938
         },
         "status": "agree",
         "values": {
@@ -99,14 +99,14 @@
         }
       },
       {
-        "key": "skill:skill__rend",
+        "key": "skill:curated_rend",
         "label": {
           "category": "skill",
           "enUS": "Rend",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__rend",
-          "sno": null
+          "esES": "Hender",
+          "i18n": "wowhead-es",
+          "idName": "curated_rend",
+          "sno": 214786
         },
         "status": "agree",
         "values": {
@@ -114,14 +114,14 @@
         }
       },
       {
-        "key": "skill:skill__war_cry",
+        "key": "skill:curated_war_cry",
         "label": {
           "category": "skill",
           "enUS": "War Cry",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__war_cry",
-          "sno": null
+          "esES": "Grito de guerra",
+          "i18n": "wowhead-es",
+          "idName": "curated_war_cry",
+          "sno": 184600
         },
         "status": "agree",
         "values": {
@@ -146,7 +146,7 @@
     ],
     "variantCount": 1
   },
-  "correlationKey": "barbarian::skill__war_cry::generic",
+  "correlationKey": "barbarian::curated_war_cry::generic",
   "gameVersion": {
     "patch": "3.1.2",
     "season": 14
@@ -171,7 +171,7 @@
   },
   "title": {
     "en": "Leap Rend",
-    "es": "Leap Rend"
+    "es": "Grito de guerra"
   },
   "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
@@ -202,10 +202,10 @@
           "ref": {
             "category": "skill",
             "enUS": "War Cry",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__war_cry",
-            "sno": null
+            "esES": "Grito de guerra",
+            "i18n": "wowhead-es",
+            "idName": "curated_war_cry",
+            "sno": 184600
           },
           "runes": [
             {
@@ -242,10 +242,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Rend",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__rend",
-            "sno": null
+            "esES": "Hender",
+            "i18n": "wowhead-es",
+            "idName": "curated_rend",
+            "sno": 214786
           },
           "runes": [
             {
@@ -282,10 +282,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Challenging Shout",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__challenging_shout",
-            "sno": null
+            "esES": "Grito desafiante",
+            "i18n": "wowhead-es",
+            "idName": "curated_challenging_shout",
+            "sno": 375484
           },
           "runes": [
             {
@@ -322,10 +322,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Rallying Cry",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__rallying_cry",
-            "sno": null
+            "esES": "Grito alentador",
+            "i18n": "wowhead-es",
+            "idName": "curated_rallying_cry",
+            "sno": 211938
           },
           "runes": [
             {
@@ -402,10 +402,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Leap",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__leap",
-            "sno": null
+            "esES": "Salto ofensivo",
+            "i18n": "wowhead-es",
+            "idName": "curated_leap",
+            "sno": 196545
           },
           "runes": [
             {

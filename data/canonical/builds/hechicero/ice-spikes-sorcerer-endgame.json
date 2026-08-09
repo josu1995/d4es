@@ -5,10 +5,42 @@
       {
         "category": "skill",
         "enUS": "Blizzard",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__blizzard",
-        "sno": null
+        "esES": "Ventisca",
+        "i18n": "wowhead-es",
+        "idName": "curated_blizzard",
+        "sno": 291403
+      },
+      {
+        "category": "skill",
+        "enUS": "Flame Shield",
+        "esES": "Escudo de llamas",
+        "i18n": "wowhead-es",
+        "idName": "curated_flame_shield",
+        "sno": 167341
+      },
+      {
+        "category": "skill",
+        "enUS": "Hydra",
+        "esES": "Hidra",
+        "i18n": "wowhead-es",
+        "idName": "curated_hydra",
+        "sno": 146743
+      },
+      {
+        "category": "skill",
+        "enUS": "Ice Armor",
+        "esES": "Armadura de hielo",
+        "i18n": "wowhead-es",
+        "idName": "curated_ice_armor",
+        "sno": 297039
+      },
+      {
+        "category": "skill",
+        "enUS": "Teleport",
+        "esES": "Teletransporte",
+        "i18n": "wowhead-es",
+        "idName": "curated_teleport",
+        "sno": 288106
       },
       {
         "category": "skill",
@@ -17,55 +49,83 @@
         "i18n": "none",
         "idName": "skill__familiar",
         "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Flame Shield",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__flame_shield",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Hydra",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__hydra",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Ice Armor",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__ice_armor",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Teleport",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__teleport",
-        "sno": null
       }
     ],
     "coreUniques": [],
     "fields": [
       {
-        "key": "skill:skill__blizzard",
+        "key": "skill:curated_blizzard",
         "label": {
           "category": "skill",
           "enUS": "Blizzard",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__blizzard",
-          "sno": null
+          "esES": "Ventisca",
+          "i18n": "wowhead-es",
+          "idName": "curated_blizzard",
+          "sno": 291403
         },
         "status": "agree",
         "values": {
           "d4builds:4b94b28d-fd5e-49a0-b8eb-f1144074b930:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_flame_shield",
+        "label": {
+          "category": "skill",
+          "enUS": "Flame Shield",
+          "esES": "Escudo de llamas",
+          "i18n": "wowhead-es",
+          "idName": "curated_flame_shield",
+          "sno": 167341
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:4b94b28d-fd5e-49a0-b8eb-f1144074b930:0": 1
+        }
+      },
+      {
+        "key": "skill:curated_hydra",
+        "label": {
+          "category": "skill",
+          "enUS": "Hydra",
+          "esES": "Hidra",
+          "i18n": "wowhead-es",
+          "idName": "curated_hydra",
+          "sno": 146743
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:4b94b28d-fd5e-49a0-b8eb-f1144074b930:0": 14
+        }
+      },
+      {
+        "key": "skill:curated_ice_armor",
+        "label": {
+          "category": "skill",
+          "enUS": "Ice Armor",
+          "esES": "Armadura de hielo",
+          "i18n": "wowhead-es",
+          "idName": "curated_ice_armor",
+          "sno": 297039
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:4b94b28d-fd5e-49a0-b8eb-f1144074b930:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_teleport",
+        "label": {
+          "category": "skill",
+          "enUS": "Teleport",
+          "esES": "Teletransporte",
+          "i18n": "wowhead-es",
+          "idName": "curated_teleport",
+          "sno": 288106
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:4b94b28d-fd5e-49a0-b8eb-f1144074b930:0": 1
         }
       },
       {
@@ -82,71 +142,11 @@
         "values": {
           "d4builds:4b94b28d-fd5e-49a0-b8eb-f1144074b930:0": 15
         }
-      },
-      {
-        "key": "skill:skill__flame_shield",
-        "label": {
-          "category": "skill",
-          "enUS": "Flame Shield",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__flame_shield",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:4b94b28d-fd5e-49a0-b8eb-f1144074b930:0": 1
-        }
-      },
-      {
-        "key": "skill:skill__hydra",
-        "label": {
-          "category": "skill",
-          "enUS": "Hydra",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__hydra",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:4b94b28d-fd5e-49a0-b8eb-f1144074b930:0": 14
-        }
-      },
-      {
-        "key": "skill:skill__ice_armor",
-        "label": {
-          "category": "skill",
-          "enUS": "Ice Armor",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__ice_armor",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:4b94b28d-fd5e-49a0-b8eb-f1144074b930:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__teleport",
-        "label": {
-          "category": "skill",
-          "enUS": "Teleport",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__teleport",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:4b94b28d-fd5e-49a0-b8eb-f1144074b930:0": 1
-        }
       }
     ],
     "variantCount": 1
   },
-  "correlationKey": "sorcerer::skill__ice_armor::generic",
+  "correlationKey": "sorcerer::curated_ice_armor::generic",
   "gameVersion": {
     "patch": "3.1.2",
     "season": 14
@@ -171,7 +171,7 @@
   },
   "title": {
     "en": "Ice Spikes",
-    "es": "Ice Spikes"
+    "es": "Armadura de hielo"
   },
   "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
@@ -202,10 +202,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Teleport",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__teleport",
-            "sno": null
+            "esES": "Teletransporte",
+            "i18n": "wowhead-es",
+            "idName": "curated_teleport",
+            "sno": 288106
           },
           "runes": [
             {
@@ -249,10 +249,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Ice Armor",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__ice_armor",
-            "sno": null
+            "esES": "Armadura de hielo",
+            "i18n": "wowhead-es",
+            "idName": "curated_ice_armor",
+            "sno": 297039
           },
           "runes": [
             {
@@ -336,10 +336,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Hydra",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__hydra",
-            "sno": null
+            "esES": "Hidra",
+            "i18n": "wowhead-es",
+            "idName": "curated_hydra",
+            "sno": 146743
           },
           "runes": [
             {
@@ -383,10 +383,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Blizzard",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__blizzard",
-            "sno": null
+            "esES": "Ventisca",
+            "i18n": "wowhead-es",
+            "idName": "curated_blizzard",
+            "sno": 291403
           },
           "runes": [
             {
@@ -423,10 +423,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Flame Shield",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__flame_shield",
-            "sno": null
+            "esES": "Escudo de llamas",
+            "i18n": "wowhead-es",
+            "idName": "curated_flame_shield",
+            "sno": 167341
           },
           "runes": [
             {

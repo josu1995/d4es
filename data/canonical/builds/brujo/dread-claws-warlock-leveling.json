@@ -5,26 +5,26 @@
       {
         "category": "skill",
         "enUS": "Doom",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__doom",
-        "sno": null
+        "esES": "Fatalidad",
+        "i18n": "wowhead-es",
+        "idName": "curated_doom",
+        "sno": 2218204
       },
       {
         "category": "skill",
         "enUS": "Dread Claws",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__dread_claws",
-        "sno": null
+        "esES": "Garras pavorosas",
+        "i18n": "wowhead-es",
+        "idName": "curated_dread_claws",
+        "sno": 2385787
       },
       {
         "category": "skill",
         "enUS": "Nether Step",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__nether_step",
-        "sno": null
+        "esES": "Paso abisal",
+        "i18n": "wowhead-es",
+        "idName": "curated_nether_step",
+        "sno": 2218211
       },
       {
         "category": "skill",
@@ -54,14 +54,14 @@
     "coreUniques": [],
     "fields": [
       {
-        "key": "skill:skill__doom",
+        "key": "skill:curated_doom",
         "label": {
           "category": "skill",
           "enUS": "Doom",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__doom",
-          "sno": null
+          "esES": "Fatalidad",
+          "i18n": "wowhead-es",
+          "idName": "curated_doom",
+          "sno": 2218204
         },
         "status": "agree",
         "values": {
@@ -69,14 +69,14 @@
         }
       },
       {
-        "key": "skill:skill__dread_claws",
+        "key": "skill:curated_dread_claws",
         "label": {
           "category": "skill",
           "enUS": "Dread Claws",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__dread_claws",
-          "sno": null
+          "esES": "Garras pavorosas",
+          "i18n": "wowhead-es",
+          "idName": "curated_dread_claws",
+          "sno": 2385787
         },
         "status": "agree",
         "values": {
@@ -84,14 +84,14 @@
         }
       },
       {
-        "key": "skill:skill__nether_step",
+        "key": "skill:curated_nether_step",
         "label": {
           "category": "skill",
           "enUS": "Nether Step",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__nether_step",
-          "sno": null
+          "esES": "Paso abisal",
+          "i18n": "wowhead-es",
+          "idName": "curated_nether_step",
+          "sno": 2218211
         },
         "status": "agree",
         "values": {
@@ -146,7 +146,7 @@
     ],
     "variantCount": 1
   },
-  "correlationKey": "warlock::skill__dread_claws::generic",
+  "correlationKey": "warlock::curated_dread_claws::generic",
   "gameVersion": {
     "patch": "3.1.2",
     "season": 14
@@ -171,7 +171,7 @@
   },
   "title": {
     "en": "Dread Claws",
-    "es": "Dread Claws"
+    "es": "Garras pavorosas"
   },
   "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
@@ -202,10 +202,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Dread Claws",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__dread_claws",
-            "sno": null
+            "esES": "Garras pavorosas",
+            "i18n": "wowhead-es",
+            "idName": "curated_dread_claws",
+            "sno": 2385787
           },
           "runes": [
             {
@@ -242,10 +242,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Nether Step",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__nether_step",
-            "sno": null
+            "esES": "Paso abisal",
+            "i18n": "wowhead-es",
+            "idName": "curated_nether_step",
+            "sno": 2218211
           },
           "runes": [
             {
@@ -377,10 +377,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Doom",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__doom",
-            "sno": null
+            "esES": "Fatalidad",
+            "i18n": "wowhead-es",
+            "idName": "curated_doom",
+            "sno": 2218204
           },
           "runes": [
             {

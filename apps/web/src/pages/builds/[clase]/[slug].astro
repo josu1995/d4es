@@ -1,9 +1,10 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import SlotSkill from '../../../components/SlotSkill.astro';
+import SlotEquipo from '../../../components/SlotEquipo.astro';
 import { loadBuilds, loadClasesEs, claseNombre } from '../../../lib/data';
 import { iconoClase } from '../../../lib/iconos';
-import { classById, type CanonicalBuild } from '@d4es/schema';
+import { classById, type CanonicalBuild, type GearItem, type SlotId } from '@d4es/schema';
 
 export function getStaticPaths() {
   return loadBuilds().map((build) => ({
@@ -37,21 +38,50 @@ const fechaCaptura = new Date(principal.source.capturedAt).toLocaleDateString('e
   year: 'numeric',
 });
 
-/*
-  Pestañas con la misma estructura que d4builds (equipo/habilidades · árbol · paragón).
-  Hoy solo Habilidades trae datos: las otras dos existen y dicen honestamente de dónde
-  saldrán, en vez de fingir que no existen.
-*/
-const pestanas = [
-  { id: 'habilidades', etiqueta: 'Habilidades', disponible: principal.skills.length > 0 },
-  { id: 'equipo', etiqueta: 'Equipo y aspectos', disponible: principal.completeness.hasGear },
-  { id: 'paragon', etiqueta: 'Paragón', disponible: principal.completeness.hasParagon },
-];
+// El muñeco de equipo se reparte en dos columnas, como en el juego.
+const COLUMNA_IZQUIERDA: SlotId[] = ['helm', 'chest', 'gloves', 'pants', 'boots'];
+const COLUMNA_DERECHA: SlotId[] = ['amulet', 'ring1', 'ring2', 'weapon', 'offhand', 'weapon2', 'weapon3', 'weapon4'];
+
+function repartir(gear: Record<string, GearItem>) {
+  const izq = COLUMNA_IZQUIERDA.map((s) => gear[s]).filter((x): x is GearItem => Boolean(x));
+  const der = COLUMNA_DERECHA.map((s) => gear[s]).filter((x): x is GearItem => Boolean(x));
+  return { izq, der };
+}
+
+/**
+ * Las pestañas son las mismas que publica d4builds. "Notas" enlaza al original en vez de
+ * copiar su contenido: ese texto es el trabajo del autor de la guía, no nuestro.
+ */
+const PESTANAS = [
+  { id: 'equipo', etiqueta: 'Equipo y habilidades' },
+  { id: 'arbol', etiqueta: 'Árbol de habilidades' },
+  { id: 'paragon', etiqueta: 'Paragón' },
+  { id: 'mercenarios', etiqueta: 'Mercenarios' },
+  { id: 'warplans', etiqueta: 'Planes de guerra' },
+  { id: 'notas', etiqueta: 'Notas del autor' },
+] as const;
+
+function disponible(v: (typeof build.variants)[number], id: string): boolean {
+  switch (id) {
+    case 'equipo':
+      return v.completeness.hasGear || v.skills.length > 0;
+    case 'arbol':
+      return v.skills.length > 0;
+    case 'paragon':
+      return v.paragon.boards.length > 0;
+    case 'mercenarios':
+      return v.mercenary !== null;
+    case 'warplans':
+      return v.warPlan !== null;
+    default:
+      return true;
+  }
+}
 ---
 
 <Base
   titulo={`${build.title.es} — ${nombreClase} · Build de Diablo 4 en español`}
-  descripcion={`Build de ${nombreClase} "${build.title.es}" (${build.title.en}) para Diablo 4 temporada ${build.gameVersion.season}: habilidades, runas y rangos, traducida al castellano.`}
+  descripcion={`Build de ${nombreClase} "${build.title.es}" para Diablo 4 temporada ${build.gameVersion.season}: equipo, aspectos, Paragón y habilidades, en castellano.`}
 >
   <div class="mx-auto max-w-5xl px-4 py-8">
     <nav aria-label="Migas de pan" class="text-xs text-humo">
@@ -60,7 +90,6 @@ const pestanas = [
       <a href={`/builds?clase=${classById(build.classId)?.slug}`} class="hover:text-pergamino">{nombreClase}</a>
     </nav>
 
-    <!-- Cabecera estilo d4builds: retrato de clase + titulo + insignias -->
     <header class="mt-4 grabado rounded-xl bg-piedra overflow-hidden">
       <div class="flex items-center gap-5 p-5 sm:p-6 bg-gradient-to-r from-brasa/10 via-transparent to-transparent">
         <img
@@ -68,8 +97,7 @@ const pestanas = [
           alt=""
           width="88"
           height="88"
-          loading="eager"
-          class="h-20 w-20 sm:h-22 sm:w-22 shrink-0 rounded-lg border border-grabado-vivo bg-abismo object-cover"
+          class="h-20 w-20 shrink-0 rounded-lg border border-grabado-vivo bg-abismo object-cover"
           onerror="this.style.display='none'"
         />
         <div class="min-w-0">
@@ -80,20 +108,16 @@ const pestanas = [
             {build.title.es !== build.title.en && <span class="text-humo"> · «{build.title.en}»</span>}
           </p>
           <div class="mt-3 flex flex-wrap items-center gap-2 text-xs">
-            {
-              build.ratings.tierLabel && (
-                <span class={`rounded border bg-abismo px-2 py-1 font-semibold ${tierClase}`}>
-                  Tier {build.ratings.tierLabel}
-                </span>
-              )
-            }
-            {
-              build.ratings.pitTier && (
-                <span class="rounded border border-grabado bg-abismo px-2 py-1 text-ceniza" title="Nivel de Fosa que aguanta según la fuente">
-                  Fosa {build.ratings.pitTier}
-                </span>
-              )
-            }
+            {build.ratings.tierLabel && (
+              <span class={`rounded border bg-abismo px-2 py-1 font-semibold ${tierClase}`}>
+                Tier {build.ratings.tierLabel}
+              </span>
+            )}
+            {build.ratings.pitTier && (
+              <span class="rounded border border-grabado bg-abismo px-2 py-1 text-ceniza">
+                Fosa {build.ratings.pitTier}
+              </span>
+            )}
             <span class="rounded border border-grabado bg-abismo px-2 py-1 text-ceniza">
               {principal.levelBand === 'leveling' ? 'Subida de nivel' : 'Endgame'}
             </span>
@@ -108,7 +132,7 @@ const pestanas = [
         hayVariasFuentes && (
           <div class="border-t border-grabado px-5 py-3">
             <span class="text-xs uppercase tracking-wider text-humo mr-3">Versión:</span>
-            <div class="inline-flex flex-wrap gap-2" role="tablist" aria-label="Fuente de la build">
+            <div class="inline-flex flex-wrap gap-2" role="tablist" aria-label="Variante de la build">
               {build.variants.map((v) => (
                 <button
                   type="button"
@@ -117,123 +141,271 @@ const pestanas = [
                   aria-selected={v.id === build.primaryVariantId}
                   class="grabado grabado-hover rounded bg-abismo px-3 py-1.5 text-sm aria-selected:border-brasa/60 aria-selected:bg-brasa/15"
                 >
-                  {v.source.site}
-                  {v.source.variantLabel && <span class="text-humo"> · {v.source.variantLabel}</span>}
+                  {v.source.variantLabel ?? `Variante ${v.source.variantIndex + 1}`}
                 </button>
               ))}
             </div>
+            <a
+              href={`${Astro.url.pathname}/comparar`}
+              class="ml-3 text-sm text-ceniza underline underline-offset-4 hover:text-pergamino"
+            >
+              Comparar →
+            </a>
           </div>
         )
       }
     </header>
 
-    <!-- Pestañas -->
-    <div class="mt-6 flex gap-1 border-b border-grabado" role="tablist" aria-label="Secciones de la build">
+    <div class="mt-6 flex flex-wrap gap-1 border-b border-grabado" role="tablist" aria-label="Secciones">
       {
-        pestanas.map((p, i) => (
+        PESTANAS.map((p, i) => (
           <button
             type="button"
             role="tab"
-            id={`tab-${p.id}`}
-            aria-controls={`panel-${p.id}`}
             aria-selected={i === 0}
             data-pestana={p.id}
-            class="relative rounded-t px-4 py-2.5 text-sm text-ceniza transition-colors hover:text-pergamino aria-selected:text-pergamino aria-selected:bg-piedra grabado aria-selected:border-b-transparent border-transparent"
+            class="rounded-t px-3.5 py-2.5 text-sm text-ceniza transition-colors hover:text-pergamino aria-selected:text-pergamino aria-selected:bg-piedra grabado border-transparent aria-selected:border-b-transparent"
           >
             {p.etiqueta}
-            {!p.disponible && <span class="ml-1.5 text-[0.6rem] uppercase tracking-wider text-humo">pronto</span>}
           </button>
         ))
       }
     </div>
 
     {
-      build.variants.map((v) => (
-        <div data-panel-variante={v.id} class:list={[v.id !== build.primaryVariantId && 'hidden']}>
-          <!-- HABILIDADES -->
-          <section
-            id="panel-habilidades"
-            role="tabpanel"
-            aria-labelledby="tab-habilidades"
-            data-panel-pestana="habilidades"
-            class="grabado rounded-b-lg rounded-tr-lg bg-piedra p-5 sm:p-6"
-          >
-            {v.skills.length === 0 ? (
-              <p class="text-ceniza">Esta fuente no publica las habilidades de la build.</p>
-            ) : (
-              <>
-                <p class="text-xs text-humo">
-                  Pasa el ratón (o pulsa) sobre una habilidad o una runa <span class="inline-block h-2 w-2 rotate-45 border border-oro-apagado/60 bg-piedra-alta align-middle" /> para ver su detalle.
-                </p>
-                <div class="mt-5 flex flex-wrap justify-center gap-x-4 gap-y-6 sm:justify-start">
-                  {v.skills.map((s, i) => (
-                    <SlotSkill skill={s} idTooltip={`tt-${v.source.variantIndex}-${i}`} />
-                  ))}
+      build.variants.map((v) => {
+        const { izq, der } = repartir(v.gear);
+        const idBase = `v${v.source.variantIndex}`;
+        return (
+          <div data-panel-variante={v.id} class:list={[v.id !== build.primaryVariantId && 'hidden']}>
+            {/* EQUIPO Y HABILIDADES */}
+            <section
+              data-panel-pestana="equipo"
+              class="grabado rounded-b-lg rounded-tr-lg bg-piedra p-5 sm:p-6"
+            >
+              {izq.length + der.length > 0 ? (
+                <>
+                  <h2 class="font-titulo text-xl">Equipo</h2>
+                  <div class="mt-4 grid gap-x-8 gap-y-5 sm:grid-cols-2">
+                    <div class="space-y-5">
+                      {izq.map((item, i) => (
+                        <SlotEquipo item={item} idTooltip={`${idBase}-gi-${i}`} />
+                      ))}
+                    </div>
+                    <div class="space-y-5">
+                      {der.map((item, i) => (
+                        <SlotEquipo item={item} idTooltip={`${idBase}-gd-${i}`} derecha />
+                      ))}
+                    </div>
+                  </div>
+                  <p class="mt-4 text-xs text-humo">
+                    <span class="text-oro">★</span> afijo superior · <span class="text-rareza-magico">azul</span>{' '}
+                    afijo templado · <span class="inline-block h-2 w-2 rotate-45 border border-oro-apagado/70 align-middle" />{' '}
+                    engarce
+                  </p>
+                </>
+              ) : (
+                <div class="rounded border border-oro-apagado/40 bg-oro/5 p-4 text-sm">
+                  <p class="text-pergamino"><strong>El equipo de esta build todavía no está extraído.</strong></p>
+                  <p class="mt-1.5 text-ceniza">
+                    Se saca página a página con un navegador y va por lotes; esta build aún no ha entrado.
+                    Mientras tanto lo tienes íntegro en la guía original.
+                  </p>
                 </div>
-              </>
-            )}
-          </section>
+              )}
 
-          <!-- EQUIPO -->
-          <section
-            id="panel-equipo"
-            role="tabpanel"
-            aria-labelledby="tab-equipo"
-            data-panel-pestana="equipo"
-            class="hidden grabado rounded-b-lg rounded-tr-lg bg-piedra p-5 sm:p-6"
-          >
-            <h2 class="font-titulo text-xl">Equipo y aspectos</h2>
-            <p class="mt-2 text-sm text-ceniza max-w-2xl">
-              El catálogo público de la fuente no incluye el equipo: se extrae página a página y es la
-              siguiente fase de este sitio. Mientras tanto lo tienes íntegro en la guía original:
-            </p>
-            <a
-              href={v.source.url}
-              rel="nofollow noopener external"
-              target="_blank"
-              class="mt-4 inline-block grabado grabado-hover rounded bg-abismo px-4 py-2 text-sm"
+              {v.skills.length > 0 && (
+                <>
+                  <h2 class="mt-8 font-titulo text-xl">Habilidades</h2>
+                  <p class="mt-1 text-xs text-humo">
+                    Pasa el ratón por encima para ver qué hace cada una y sus runas.
+                  </p>
+                  <div class="mt-4 flex flex-wrap justify-center gap-x-4 gap-y-6 sm:justify-start">
+                    {v.skills.map((s, i) => (
+                      <SlotSkill skill={s} idTooltip={`${idBase}-sk-${i}`} />
+                    ))}
+                  </div>
+                </>
+              )}
+            </section>
+
+            {/* ARBOL */}
+            <section
+              data-panel-pestana="arbol"
+              class="hidden grabado rounded-b-lg rounded-tr-lg bg-piedra p-5 sm:p-6"
             >
-              Ver el equipo en {v.source.site} →
-            </a>
-          </section>
+              <h2 class="font-titulo text-xl">Árbol de habilidades</h2>
+              {v.skills.length > 0 ? (
+                <>
+                  <p class="mt-1 text-sm text-ceniza">
+                    Puntos invertidos en cada habilidad de la barra, con las mejoras elegidas en cada rama.
+                  </p>
+                  <ul class="mt-4 divide-y divide-grabado grabado rounded-lg bg-abismo overflow-hidden">
+                    {v.skills.map((s) => (
+                      <li class="flex flex-wrap items-baseline gap-x-3 px-4 py-2.5">
+                        <span class="w-8 shrink-0 text-right font-mono text-sm text-oro">{s.rank}</span>
+                        <span class="text-pergamino">{s.ref.esES ?? s.ref.enUS}</span>
+                        {s.skillVariant && (
+                          <span class="text-sm text-rareza-mitico">
+                            {s.skillVariant.esES ?? s.skillVariant.enUS}
+                          </span>
+                        )}
+                        {s.runes.length > 0 && (
+                          <span class="text-xs text-humo">
+                            {s.runes.map((r) => r.esES ?? r.enUS).join(' · ')}
+                          </span>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              ) : (
+                <p class="mt-2 text-ceniza">Esta variante no publica el árbol.</p>
+              )}
+            </section>
 
-          <!-- PARAGON -->
-          <section
-            id="panel-paragon"
-            role="tabpanel"
-            aria-labelledby="tab-paragon"
-            data-panel-pestana="paragon"
-            class="hidden grabado rounded-b-lg rounded-tr-lg bg-piedra p-5 sm:p-6"
-          >
-            <h2 class="font-titulo text-xl">Tablero de Paragón</h2>
-            <p class="mt-2 text-sm text-ceniza max-w-2xl">
-              Los tableros y glifos tampoco están en el catálogo público; llegarán con la misma fase que el
-              equipo. La guía original los muestra completos:
-            </p>
-            <a
-              href={v.source.url}
-              rel="nofollow noopener external"
-              target="_blank"
-              class="mt-4 inline-block grabado grabado-hover rounded bg-abismo px-4 py-2 text-sm"
+            {/* PARAGON */}
+            <section
+              data-panel-pestana="paragon"
+              class="hidden grabado rounded-b-lg rounded-tr-lg bg-piedra p-5 sm:p-6"
             >
-              Ver el Paragón en {v.source.site} →
-            </a>
-          </section>
+              <h2 class="font-titulo text-xl">Tableros de Paragón</h2>
+              {v.paragon.boards.length > 0 ? (
+                <>
+                  <p class="mt-1 text-sm text-ceniza">
+                    En el orden en que se encajan, con el glifo de cada uno. Recuerda que los glifos solo
+                    suben en la Fosa y que el salto importante está en el nivel 51.
+                  </p>
+                  <ol class="mt-4 space-y-2">
+                    {v.paragon.boards.map((b, i) => (
+                      <li class="grabado flex flex-wrap items-center gap-3 rounded bg-abismo px-4 py-3">
+                        <span class="font-mono text-sm text-humo">{i + 1}</span>
+                        <span class="text-pergamino">{b.ref.esES ?? b.ref.enUS}</span>
+                        {b.glyph && (
+                          <span class="ml-auto flex items-center gap-2 text-sm">
+                            <span class="text-oro">{b.glyph.ref.esES ?? b.glyph.ref.enUS}</span>
+                            <span class="rounded border border-grabado px-1.5 py-0.5 font-mono text-xs text-ceniza">
+                              {b.glyph.rank}
+                            </span>
+                          </span>
+                        )}
+                      </li>
+                    ))}
+                  </ol>
+                </>
+              ) : (
+                <p class="mt-2 text-ceniza">
+                  Los tableros de esta build todavía no están extraídos.
+                </p>
+              )}
+            </section>
 
-          <!-- Procedencia -->
-          <footer class="mt-4 flex flex-wrap items-center gap-x-6 gap-y-2 px-1 text-xs text-humo">
-            <span>
-              Fuente:
-              <a href={v.source.url} rel="nofollow noopener external" target="_blank" class="underline underline-offset-4 hover:text-pergamino">
-                {v.source.site}
+            {/* MERCENARIOS */}
+            <section
+              data-panel-pestana="mercenarios"
+              class="hidden grabado rounded-b-lg rounded-tr-lg bg-piedra p-5 sm:p-6"
+            >
+              <h2 class="font-titulo text-xl">Mercenarios</h2>
+              {v.mercenary ? (
+                <div class="mt-3 space-y-3">
+                  <div class="grabado rounded bg-abismo p-4">
+                    <p class="text-xs uppercase tracking-wider text-humo">Contratado</p>
+                    <p class="mt-1 text-lg text-pergamino">
+                      {v.mercenary.ref.esES ?? v.mercenary.ref.enUS}
+                    </p>
+                    {v.mercenary.skills.length > 0 && (
+                      <ul class="mt-2 flex flex-wrap gap-1.5">
+                        {v.mercenary.skills.map((s) => (
+                          <li class="rounded border border-grabado px-1.5 py-0.5 text-xs text-ceniza">
+                            {s.esES ?? s.enUS}
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                  {v.mercenary.reinforcement && (
+                    <div class="grabado rounded bg-abismo p-4">
+                      <p class="text-xs uppercase tracking-wider text-humo">Refuerzo</p>
+                      <p class="mt-1 text-lg text-pergamino">
+                        {v.mercenary.reinforcement.esES ?? v.mercenary.reinforcement.enUS}
+                      </p>
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <p class="mt-2 text-ceniza">Esta build no lleva mercenario, o todavía no está extraído.</p>
+              )}
+            </section>
+
+            {/* PLANES DE GUERRA */}
+            <section
+              data-panel-pestana="warplans"
+              class="hidden grabado rounded-b-lg rounded-tr-lg bg-piedra p-5 sm:p-6"
+            >
+              <h2 class="font-titulo text-xl">Planes de guerra</h2>
+              {v.warPlan && v.warPlan.route.length > 0 ? (
+                <>
+                  <p class="mt-1 text-sm text-ceniza">
+                    La ruta de actividades del plan. Regla de oro: no hagas actividades fuera del plan
+                    activo, porque pierdes recompensas.
+                  </p>
+                  <ol class="mt-4 space-y-2">
+                    {v.warPlan.route.map((n, i) => (
+                      <li class="grabado flex items-center gap-3 rounded bg-abismo px-4 py-2.5">
+                        <span class="font-mono text-sm text-humo">{i + 1}</span>
+                        <span class="text-pergamino">{n.esES ?? n.enUS}</span>
+                      </li>
+                    ))}
+                  </ol>
+                </>
+              ) : (
+                <p class="mt-2 text-ceniza">
+                  Esta build no publica plan de guerra, o todavía no está extraído.
+                </p>
+              )}
+            </section>
+
+            {/* NOTAS */}
+            <section
+              data-panel-pestana="notas"
+              class="hidden grabado rounded-b-lg rounded-tr-lg bg-piedra p-5 sm:p-6"
+            >
+              <h2 class="font-titulo text-xl">Notas del autor</h2>
+              <p class="mt-2 text-sm text-ceniza max-w-2xl">
+                Las notas de la build las escribe su autor, y ese texto es suyo: no lo copiamos aquí.
+                Nosotros traemos los datos (equipo, habilidades, Paragón) y los traducimos; el análisis
+                está en su guía original y merece la visita.
+              </p>
+              <a
+                href={v.source.url}
+                rel="nofollow noopener external"
+                target="_blank"
+                class="mt-4 inline-block grabado grabado-hover rounded bg-abismo px-4 py-2 text-sm"
+              >
+                Leer las notas en {v.source.site}
+                {v.source.author && ` · ${v.source.author}`} →
               </a>
-              {v.source.author && <> · {v.source.author}</>}
-            </span>
-            <span>Capturada el {fechaCaptura}</span>
-            <span>Completitud: {Math.round(v.completeness.score * 100)}%</span>
-          </footer>
-        </div>
-      ))
+            </section>
+
+            <footer class="mt-4 flex flex-wrap items-center gap-x-6 gap-y-2 px-1 text-xs text-humo">
+              <span>
+                Fuente:
+                <a
+                  href={v.source.url}
+                  rel="nofollow noopener external"
+                  target="_blank"
+                  class="underline underline-offset-4 hover:text-pergamino"
+                >
+                  {v.source.site}
+                </a>
+                {v.source.author && <> · {v.source.author}</>}
+              </span>
+              <span>Capturada el {fechaCaptura}</span>
+              <span>Completitud: {Math.round(v.completeness.score * 100)}%</span>
+            </footer>
+          </div>
+        );
+      })
     }
   </div>
 </Base>
@@ -241,19 +413,22 @@ const pestanas = [
 <div id="tooltip" class="tooltip-panel hidden" role="tooltip"></div>
 
 <script>
-  // ---- Pestañas -----------------------------------------------------------------
+  // ---- Pestañas -------------------------------------------------------------------
   const tabs = document.querySelectorAll<HTMLButtonElement>('[data-pestana]');
-  const panelesPestana = document.querySelectorAll<HTMLElement>('[data-panel-pestana]');
 
+  function mostrarPestana(id: string) {
+    for (const t of tabs) t.setAttribute('aria-selected', String(t.dataset['pestana'] === id));
+    // Solo se tocan los paneles de la variante visible; los de las otras siguen ocultos
+    // por su contenedor, así que basta con marcar todos y dejar que el padre mande.
+    for (const p of document.querySelectorAll<HTMLElement>('[data-panel-pestana]')) {
+      p.classList.toggle('hidden', p.dataset['panelPestana'] !== id);
+    }
+  }
   for (const tab of tabs) {
-    tab.addEventListener('click', () => {
-      const id = tab.dataset['pestana'];
-      for (const t of tabs) t.setAttribute('aria-selected', String(t === tab));
-      for (const p of panelesPestana) p.classList.toggle('hidden', p.dataset['panelPestana'] !== id);
-    });
+    tab.addEventListener('click', () => mostrarPestana(tab.dataset['pestana'] ?? ''));
   }
 
-  // ---- Selector de fuente ---------------------------------------------------------
+  // ---- Variantes ------------------------------------------------------------------
   const botonesVariante = document.querySelectorAll<HTMLButtonElement>('[data-variante]');
   const panelesVariante = document.querySelectorAll<HTMLElement>('[data-panel-variante]');
 
@@ -268,23 +443,21 @@ const pestanas = [
     for (const b of botonesVariante) b.setAttribute('aria-selected', String(b.dataset['variante'] === id));
     if (actualizarUrl) {
       const params = new URLSearchParams(location.search);
-      params.set('fuente', id);
+      params.set('var', id);
       history.replaceState(null, '', `?${params}`);
     }
   }
   for (const b of botonesVariante) b.addEventListener('click', () => mostrarVariante(b.dataset['variante'] ?? ''));
-  const fuenteInicial = new URLSearchParams(location.search).get('fuente');
-  if (fuenteInicial) mostrarVariante(fuenteInicial, false);
+  const varInicial = new URLSearchParams(location.search).get('var');
+  if (varInicial) mostrarVariante(varInicial, false);
 
-  // ---- Motor de tooltips ------------------------------------------------------------
-  // Un unico panel flotante; el contenido vive en <template> junto a cada slot.
+  // ---- Tooltips --------------------------------------------------------------------
   const panel = document.getElementById('tooltip')!;
   let ancladoA: HTMLElement | null = null;
 
   function colocar(objetivo: HTMLElement) {
     const r = objetivo.getBoundingClientRect();
     const p = panel.getBoundingClientRect();
-    // Preferencia: encima y centrado, como en el juego. Si no cabe, debajo.
     let x = r.left + r.width / 2 - p.width / 2;
     let y = r.top - p.height - 10;
     x = Math.max(8, Math.min(x, window.innerWidth - p.width - 8));
@@ -312,7 +485,6 @@ const pestanas = [
     el.addEventListener('mouseleave', cerrar);
     el.addEventListener('focus', () => abrir(el));
     el.addEventListener('blur', cerrar);
-    // En tactil no hay hover: el toque alterna el tooltip.
     el.addEventListener('click', (e) => {
       e.preventDefault();
       if (ancladoA === el) cerrar();

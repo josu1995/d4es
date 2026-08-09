@@ -4,55 +4,130 @@
     "coreSkills": [
       {
         "category": "skill",
+        "enUS": "Earth Spike",
+        "esES": "Aguja de tierra",
+        "i18n": "wowhead-es",
+        "idName": "curated_earth_spike",
+        "sno": 543387
+      },
+      {
+        "category": "skill",
+        "enUS": "Grizzly Rage",
+        "esES": "Ira de oso pardo",
+        "i18n": "wowhead-es",
+        "idName": "curated_grizzly_rage",
+        "sno": 267021
+      },
+      {
+        "category": "skill",
+        "enUS": "Lightning Storm",
+        "esES": "Tormenta de rayos",
+        "i18n": "wowhead-es",
+        "idName": "curated_lightning_storm",
+        "sno": 548399
+      },
+      {
+        "category": "skill",
+        "enUS": "Pulverize",
+        "esES": "Pulverizar",
+        "i18n": "wowhead-es",
+        "idName": "curated_pulverize",
+        "sno": 272138
+      },
+      {
+        "category": "skill",
+        "enUS": "Wolves",
+        "esES": "Lobos",
+        "i18n": "wowhead-es",
+        "idName": "curated_wolves",
+        "sno": 265663
+      },
+      {
+        "category": "skill",
         "enUS": "Cyclone Armor",
         "esES": null,
         "i18n": "none",
         "idName": "skill__cyclone_armor",
         "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Earth Spike",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__earth_spike",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Grizzly Rage",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__grizzly_rage",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Lightning Storm",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__lightning_storm",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Pulverize",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__pulverize",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Wolves",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__wolves",
-        "sno": null
       }
     ],
     "coreUniques": [],
     "fields": [
+      {
+        "key": "skill:curated_earth_spike",
+        "label": {
+          "category": "skill",
+          "enUS": "Earth Spike",
+          "esES": "Aguja de tierra",
+          "i18n": "wowhead-es",
+          "idName": "curated_earth_spike",
+          "sno": 543387
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ec633c6a-c363-4806-b002-23bee5a757a4:0": 1
+        }
+      },
+      {
+        "key": "skill:curated_grizzly_rage",
+        "label": {
+          "category": "skill",
+          "enUS": "Grizzly Rage",
+          "esES": "Ira de oso pardo",
+          "i18n": "wowhead-es",
+          "idName": "curated_grizzly_rage",
+          "sno": 267021
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ec633c6a-c363-4806-b002-23bee5a757a4:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_lightning_storm",
+        "label": {
+          "category": "skill",
+          "enUS": "Lightning Storm",
+          "esES": "Tormenta de rayos",
+          "i18n": "wowhead-es",
+          "idName": "curated_lightning_storm",
+          "sno": 548399
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ec633c6a-c363-4806-b002-23bee5a757a4:0": 1
+        }
+      },
+      {
+        "key": "skill:curated_pulverize",
+        "label": {
+          "category": "skill",
+          "enUS": "Pulverize",
+          "esES": "Pulverizar",
+          "i18n": "wowhead-es",
+          "idName": "curated_pulverize",
+          "sno": 272138
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ec633c6a-c363-4806-b002-23bee5a757a4:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_wolves",
+        "label": {
+          "category": "skill",
+          "enUS": "Wolves",
+          "esES": "Lobos",
+          "i18n": "wowhead-es",
+          "idName": "curated_wolves",
+          "sno": 265663
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:ec633c6a-c363-4806-b002-23bee5a757a4:0": 1
+        }
+      },
       {
         "key": "skill:skill__cyclone_armor",
         "label": {
@@ -67,86 +142,11 @@
         "values": {
           "d4builds:ec633c6a-c363-4806-b002-23bee5a757a4:0": 15
         }
-      },
-      {
-        "key": "skill:skill__earth_spike",
-        "label": {
-          "category": "skill",
-          "enUS": "Earth Spike",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__earth_spike",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:ec633c6a-c363-4806-b002-23bee5a757a4:0": 1
-        }
-      },
-      {
-        "key": "skill:skill__grizzly_rage",
-        "label": {
-          "category": "skill",
-          "enUS": "Grizzly Rage",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__grizzly_rage",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:ec633c6a-c363-4806-b002-23bee5a757a4:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__lightning_storm",
-        "label": {
-          "category": "skill",
-          "enUS": "Lightning Storm",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__lightning_storm",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:ec633c6a-c363-4806-b002-23bee5a757a4:0": 1
-        }
-      },
-      {
-        "key": "skill:skill__pulverize",
-        "label": {
-          "category": "skill",
-          "enUS": "Pulverize",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__pulverize",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:ec633c6a-c363-4806-b002-23bee5a757a4:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__wolves",
-        "label": {
-          "category": "skill",
-          "enUS": "Wolves",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__wolves",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:ec633c6a-c363-4806-b002-23bee5a757a4:0": 1
-        }
       }
     ],
     "variantCount": 1
   },
-  "correlationKey": "druid::skill__pulverize::generic",
+  "correlationKey": "druid::curated_pulverize::generic",
   "gameVersion": {
     "patch": "3.1.2",
     "season": 14
@@ -171,7 +171,7 @@
   },
   "title": {
     "en": "Pulverize",
-    "es": "Pulverize"
+    "es": "Pulverizar"
   },
   "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
@@ -202,10 +202,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Grizzly Rage",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__grizzly_rage",
-            "sno": null
+            "esES": "Ira de oso pardo",
+            "i18n": "wowhead-es",
+            "idName": "curated_grizzly_rage",
+            "sno": 267021
           },
           "runes": [
             {
@@ -242,10 +242,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Lightning Storm",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__lightning_storm",
-            "sno": null
+            "esES": "Tormenta de rayos",
+            "i18n": "wowhead-es",
+            "idName": "curated_lightning_storm",
+            "sno": 548399
           },
           "runes": [
             {
@@ -282,10 +282,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Wolves",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__wolves",
-            "sno": null
+            "esES": "Lobos",
+            "i18n": "wowhead-es",
+            "idName": "curated_wolves",
+            "sno": 265663
           },
           "runes": [
             {
@@ -354,10 +354,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Pulverize",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__pulverize",
-            "sno": null
+            "esES": "Pulverizar",
+            "i18n": "wowhead-es",
+            "idName": "curated_pulverize",
+            "sno": 272138
           },
           "runes": [
             {
@@ -401,10 +401,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Earth Spike",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__earth_spike",
-            "sno": null
+            "esES": "Aguja de tierra",
+            "i18n": "wowhead-es",
+            "idName": "curated_earth_spike",
+            "sno": 543387
           },
           "runes": [
             {

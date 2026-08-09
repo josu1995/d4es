@@ -4,55 +4,130 @@
     "coreSkills": [
       {
         "category": "skill",
+        "enUS": "Debilitating Roar",
+        "esES": "Rugido debilitante",
+        "i18n": "wowhead-es",
+        "idName": "curated_debilitating_roar",
+        "sno": 336238
+      },
+      {
+        "category": "skill",
+        "enUS": "Grizzly Rage",
+        "esES": "Ira de oso pardo",
+        "i18n": "wowhead-es",
+        "idName": "curated_grizzly_rage",
+        "sno": 267021
+      },
+      {
+        "category": "skill",
+        "enUS": "Lightning Storm",
+        "esES": "Tormenta de rayos",
+        "i18n": "wowhead-es",
+        "idName": "curated_lightning_storm",
+        "sno": 548399
+      },
+      {
+        "category": "skill",
+        "enUS": "Maul",
+        "esES": "Vapulear",
+        "i18n": "wowhead-es",
+        "idName": "curated_maul",
+        "sno": 309070
+      },
+      {
+        "category": "skill",
+        "enUS": "Wolves",
+        "esES": "Lobos",
+        "i18n": "wowhead-es",
+        "idName": "curated_wolves",
+        "sno": 265663
+      },
+      {
+        "category": "skill",
         "enUS": "Cyclone Armor",
         "esES": null,
         "i18n": "none",
         "idName": "skill__cyclone_armor",
         "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Debilitating Roar",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__debilitating_roar",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Grizzly Rage",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__grizzly_rage",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Lightning Storm",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__lightning_storm",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Maul",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__maul",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Wolves",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__wolves",
-        "sno": null
       }
     ],
     "coreUniques": [],
     "fields": [
+      {
+        "key": "skill:curated_debilitating_roar",
+        "label": {
+          "category": "skill",
+          "enUS": "Debilitating Roar",
+          "esES": "Rugido debilitante",
+          "i18n": "wowhead-es",
+          "idName": "curated_debilitating_roar",
+          "sno": 336238
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:6ec3ffac-af5b-4294-880c-9703cb86acf9:0": 1
+        }
+      },
+      {
+        "key": "skill:curated_grizzly_rage",
+        "label": {
+          "category": "skill",
+          "enUS": "Grizzly Rage",
+          "esES": "Ira de oso pardo",
+          "i18n": "wowhead-es",
+          "idName": "curated_grizzly_rage",
+          "sno": 267021
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:6ec3ffac-af5b-4294-880c-9703cb86acf9:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_lightning_storm",
+        "label": {
+          "category": "skill",
+          "enUS": "Lightning Storm",
+          "esES": "Tormenta de rayos",
+          "i18n": "wowhead-es",
+          "idName": "curated_lightning_storm",
+          "sno": 548399
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:6ec3ffac-af5b-4294-880c-9703cb86acf9:0": 1
+        }
+      },
+      {
+        "key": "skill:curated_maul",
+        "label": {
+          "category": "skill",
+          "enUS": "Maul",
+          "esES": "Vapulear",
+          "i18n": "wowhead-es",
+          "idName": "curated_maul",
+          "sno": 309070
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:6ec3ffac-af5b-4294-880c-9703cb86acf9:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_wolves",
+        "label": {
+          "category": "skill",
+          "enUS": "Wolves",
+          "esES": "Lobos",
+          "i18n": "wowhead-es",
+          "idName": "curated_wolves",
+          "sno": 265663
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:6ec3ffac-af5b-4294-880c-9703cb86acf9:0": 1
+        }
+      },
       {
         "key": "skill:skill__cyclone_armor",
         "label": {
@@ -67,86 +142,11 @@
         "values": {
           "d4builds:6ec3ffac-af5b-4294-880c-9703cb86acf9:0": 15
         }
-      },
-      {
-        "key": "skill:skill__debilitating_roar",
-        "label": {
-          "category": "skill",
-          "enUS": "Debilitating Roar",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__debilitating_roar",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:6ec3ffac-af5b-4294-880c-9703cb86acf9:0": 1
-        }
-      },
-      {
-        "key": "skill:skill__grizzly_rage",
-        "label": {
-          "category": "skill",
-          "enUS": "Grizzly Rage",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__grizzly_rage",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:6ec3ffac-af5b-4294-880c-9703cb86acf9:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__lightning_storm",
-        "label": {
-          "category": "skill",
-          "enUS": "Lightning Storm",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__lightning_storm",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:6ec3ffac-af5b-4294-880c-9703cb86acf9:0": 1
-        }
-      },
-      {
-        "key": "skill:skill__maul",
-        "label": {
-          "category": "skill",
-          "enUS": "Maul",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__maul",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:6ec3ffac-af5b-4294-880c-9703cb86acf9:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__wolves",
-        "label": {
-          "category": "skill",
-          "enUS": "Wolves",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__wolves",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:6ec3ffac-af5b-4294-880c-9703cb86acf9:0": 1
-        }
       }
     ],
     "variantCount": 1
   },
-  "correlationKey": "druid::skill__maul::generic",
+  "correlationKey": "druid::curated_maul::generic",
   "gameVersion": {
     "patch": "3.1.2",
     "season": 14
@@ -171,7 +171,7 @@
   },
   "title": {
     "en": "Maul",
-    "es": "Maul"
+    "es": "Vapulear"
   },
   "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
@@ -202,10 +202,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Grizzly Rage",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__grizzly_rage",
-            "sno": null
+            "esES": "Ira de oso pardo",
+            "i18n": "wowhead-es",
+            "idName": "curated_grizzly_rage",
+            "sno": 267021
           },
           "runes": [
             {
@@ -242,10 +242,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Debilitating Roar",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__debilitating_roar",
-            "sno": null
+            "esES": "Rugido debilitante",
+            "i18n": "wowhead-es",
+            "idName": "curated_debilitating_roar",
+            "sno": 336238
           },
           "runes": [
             {
@@ -282,10 +282,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Wolves",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__wolves",
-            "sno": null
+            "esES": "Lobos",
+            "i18n": "wowhead-es",
+            "idName": "curated_wolves",
+            "sno": 265663
           },
           "runes": [
             {
@@ -354,10 +354,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Maul",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__maul",
-            "sno": null
+            "esES": "Vapulear",
+            "i18n": "wowhead-es",
+            "idName": "curated_maul",
+            "sno": 309070
           },
           "runes": [
             {
@@ -401,10 +401,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Lightning Storm",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__lightning_storm",
-            "sno": null
+            "esES": "Tormenta de rayos",
+            "i18n": "wowhead-es",
+            "idName": "curated_lightning_storm",
+            "sno": 548399
           },
           "runes": [
             {

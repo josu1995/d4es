@@ -5,26 +5,34 @@
       {
         "category": "skill",
         "enUS": "Counterattack",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__counterattack",
-        "sno": null
+        "esES": "Contraataque",
+        "i18n": "wowhead-es",
+        "idName": "curated_counterattack",
+        "sno": 1871819
       },
       {
         "category": "skill",
         "enUS": "Rock Splitter",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__rock_splitter",
-        "sno": null
+        "esES": "Parterrocas",
+        "i18n": "wowhead-es",
+        "idName": "curated_rock_splitter",
+        "sno": 1817045
       },
       {
         "category": "skill",
         "enUS": "Scourge",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__scourge",
-        "sno": null
+        "esES": "Azote",
+        "i18n": "wowhead-es",
+        "idName": "curated_scourge",
+        "sno": 1871801
+      },
+      {
+        "category": "skill",
+        "enUS": "The Devourer",
+        "esES": "El Devorador",
+        "i18n": "wowhead-es",
+        "idName": "curated_the_devourer",
+        "sno": 1663210
       },
       {
         "category": "skill",
@@ -32,14 +40,6 @@
         "esES": null,
         "i18n": "none",
         "idName": "skill__stinger",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "The Devourer",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__the_devourer",
         "sno": null
       },
       {
@@ -54,14 +54,14 @@
     "coreUniques": [],
     "fields": [
       {
-        "key": "skill:skill__counterattack",
+        "key": "skill:curated_counterattack",
         "label": {
           "category": "skill",
           "enUS": "Counterattack",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__counterattack",
-          "sno": null
+          "esES": "Contraataque",
+          "i18n": "wowhead-es",
+          "idName": "curated_counterattack",
+          "sno": 1871819
         },
         "status": "agree",
         "values": {
@@ -69,14 +69,14 @@
         }
       },
       {
-        "key": "skill:skill__rock_splitter",
+        "key": "skill:curated_rock_splitter",
         "label": {
           "category": "skill",
           "enUS": "Rock Splitter",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__rock_splitter",
-          "sno": null
+          "esES": "Parterrocas",
+          "i18n": "wowhead-es",
+          "idName": "curated_rock_splitter",
+          "sno": 1817045
         },
         "status": "agree",
         "values": {
@@ -84,18 +84,33 @@
         }
       },
       {
-        "key": "skill:skill__scourge",
+        "key": "skill:curated_scourge",
         "label": {
           "category": "skill",
           "enUS": "Scourge",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__scourge",
-          "sno": null
+          "esES": "Azote",
+          "i18n": "wowhead-es",
+          "idName": "curated_scourge",
+          "sno": 1871801
         },
         "status": "agree",
         "values": {
           "d4builds:a46f8eee-efa6-49e6-bd04-65ed29ba3a25:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_the_devourer",
+        "label": {
+          "category": "skill",
+          "enUS": "The Devourer",
+          "esES": "El Devorador",
+          "i18n": "wowhead-es",
+          "idName": "curated_the_devourer",
+          "sno": 1663210
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:a46f8eee-efa6-49e6-bd04-65ed29ba3a25:0": 1
         }
       },
       {
@@ -111,21 +126,6 @@
         "status": "agree",
         "values": {
           "d4builds:a46f8eee-efa6-49e6-bd04-65ed29ba3a25:0": 5
-        }
-      },
-      {
-        "key": "skill:skill__the_devourer",
-        "label": {
-          "category": "skill",
-          "enUS": "The Devourer",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__the_devourer",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:a46f8eee-efa6-49e6-bd04-65ed29ba3a25:0": 1
         }
       },
       {
@@ -242,10 +242,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Counterattack",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__counterattack",
-            "sno": null
+            "esES": "Contraataque",
+            "i18n": "wowhead-es",
+            "idName": "curated_counterattack",
+            "sno": 1871819
           },
           "runes": [],
           "skillVariant": null
@@ -257,10 +257,10 @@
           "ref": {
             "category": "skill",
             "enUS": "The Devourer",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__the_devourer",
-            "sno": null
+            "esES": "El Devorador",
+            "i18n": "wowhead-es",
+            "idName": "curated_the_devourer",
+            "sno": 1663210
           },
           "runes": [
             {
@@ -336,10 +336,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Rock Splitter",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__rock_splitter",
-            "sno": null
+            "esES": "Parterrocas",
+            "i18n": "wowhead-es",
+            "idName": "curated_rock_splitter",
+            "sno": 1817045
           },
           "runes": [
             {
@@ -376,10 +376,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Scourge",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__scourge",
-            "sno": null
+            "esES": "Azote",
+            "i18n": "wowhead-es",
+            "idName": "curated_scourge",
+            "sno": 1871801
           },
           "runes": [
             {

@@ -5,42 +5,42 @@
       {
         "category": "skill",
         "enUS": "Doom",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__doom",
-        "sno": null
+        "esES": "Fatalidad",
+        "i18n": "wowhead-es",
+        "idName": "curated_doom",
+        "sno": 2218204
       },
       {
         "category": "skill",
         "enUS": "Dread Claws",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__dread_claws",
-        "sno": null
+        "esES": "Garras pavorosas",
+        "i18n": "wowhead-es",
+        "idName": "curated_dread_claws",
+        "sno": 2385787
       },
       {
         "category": "skill",
         "enUS": "Metamorphosis",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__metamorphosis",
-        "sno": null
+        "esES": "Metamorfosis",
+        "i18n": "wowhead-es",
+        "idName": "curated_metamorphosis",
+        "sno": 2215096
       },
       {
         "category": "skill",
         "enUS": "Profane Sentinel",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__profane_sentinel",
-        "sno": null
+        "esES": "Centinela profano",
+        "i18n": "wowhead-es",
+        "idName": "curated_profane_sentinel",
+        "sno": 2289261
       },
       {
         "category": "skill",
         "enUS": "Sigil of Subversion",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__sigil_of_subversion",
-        "sno": null
+        "esES": "Sigilo desestabilizador",
+        "i18n": "wowhead-es",
+        "idName": "curated_sigil_of_subversion",
+        "sno": 2218209
       },
       {
         "category": "skill",
@@ -54,14 +54,14 @@
     "coreUniques": [],
     "fields": [
       {
-        "key": "skill:skill__doom",
+        "key": "skill:curated_doom",
         "label": {
           "category": "skill",
           "enUS": "Doom",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__doom",
-          "sno": null
+          "esES": "Fatalidad",
+          "i18n": "wowhead-es",
+          "idName": "curated_doom",
+          "sno": 2218204
         },
         "status": "agree",
         "values": {
@@ -69,14 +69,14 @@
         }
       },
       {
-        "key": "skill:skill__dread_claws",
+        "key": "skill:curated_dread_claws",
         "label": {
           "category": "skill",
           "enUS": "Dread Claws",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__dread_claws",
-          "sno": null
+          "esES": "Garras pavorosas",
+          "i18n": "wowhead-es",
+          "idName": "curated_dread_claws",
+          "sno": 2385787
         },
         "status": "agree",
         "values": {
@@ -84,14 +84,14 @@
         }
       },
       {
-        "key": "skill:skill__metamorphosis",
+        "key": "skill:curated_metamorphosis",
         "label": {
           "category": "skill",
           "enUS": "Metamorphosis",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__metamorphosis",
-          "sno": null
+          "esES": "Metamorfosis",
+          "i18n": "wowhead-es",
+          "idName": "curated_metamorphosis",
+          "sno": 2215096
         },
         "status": "agree",
         "values": {
@@ -99,14 +99,14 @@
         }
       },
       {
-        "key": "skill:skill__profane_sentinel",
+        "key": "skill:curated_profane_sentinel",
         "label": {
           "category": "skill",
           "enUS": "Profane Sentinel",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__profane_sentinel",
-          "sno": null
+          "esES": "Centinela profano",
+          "i18n": "wowhead-es",
+          "idName": "curated_profane_sentinel",
+          "sno": 2289261
         },
         "status": "agree",
         "values": {
@@ -114,14 +114,14 @@
         }
       },
       {
-        "key": "skill:skill__sigil_of_subversion",
+        "key": "skill:curated_sigil_of_subversion",
         "label": {
           "category": "skill",
           "enUS": "Sigil of Subversion",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__sigil_of_subversion",
-          "sno": null
+          "esES": "Sigilo desestabilizador",
+          "i18n": "wowhead-es",
+          "idName": "curated_sigil_of_subversion",
+          "sno": 2218209
         },
         "status": "agree",
         "values": {
@@ -146,7 +146,7 @@
     ],
     "variantCount": 1
   },
-  "correlationKey": "warlock::skill__dread_claws::generic",
+  "correlationKey": "warlock::curated_dread_claws::generic",
   "gameVersion": {
     "patch": "3.1.2",
     "season": 14
@@ -171,7 +171,7 @@
   },
   "title": {
     "en": "Dread Claws",
-    "es": "Dread Claws"
+    "es": "Garras pavorosas"
   },
   "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
@@ -202,10 +202,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Dread Claws",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__dread_claws",
-            "sno": null
+            "esES": "Garras pavorosas",
+            "i18n": "wowhead-es",
+            "idName": "curated_dread_claws",
+            "sno": 2385787
           },
           "runes": [
             {
@@ -242,10 +242,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Doom",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__doom",
-            "sno": null
+            "esES": "Fatalidad",
+            "i18n": "wowhead-es",
+            "idName": "curated_doom",
+            "sno": 2218204
           },
           "runes": [
             {
@@ -282,10 +282,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Profane Sentinel",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__profane_sentinel",
-            "sno": null
+            "esES": "Centinela profano",
+            "i18n": "wowhead-es",
+            "idName": "curated_profane_sentinel",
+            "sno": 2289261
           },
           "runes": [
             {
@@ -322,10 +322,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Metamorphosis",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__metamorphosis",
-            "sno": null
+            "esES": "Metamorfosis",
+            "i18n": "wowhead-es",
+            "idName": "curated_metamorphosis",
+            "sno": 2215096
           },
           "runes": [
             {
@@ -384,10 +384,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Sigil of Subversion",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__sigil_of_subversion",
-            "sno": null
+            "esES": "Sigilo desestabilizador",
+            "i18n": "wowhead-es",
+            "idName": "curated_sigil_of_subversion",
+            "sno": 2218209
           },
           "runes": [
             {

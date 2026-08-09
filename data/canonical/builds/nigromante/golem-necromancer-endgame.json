@@ -5,10 +5,34 @@
       {
         "category": "skill",
         "enUS": "Blight",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__blight",
-        "sno": null
+        "esES": "Peste",
+        "i18n": "wowhead-es",
+        "idName": "curated_blight",
+        "sno": 481293
+      },
+      {
+        "category": "skill",
+        "enUS": "Bone Storm",
+        "esES": "Tormenta de hueso",
+        "i18n": "wowhead-es",
+        "idName": "curated_bone_storm",
+        "sno": 499281
+      },
+      {
+        "category": "skill",
+        "enUS": "Sever",
+        "esES": "Cercenar",
+        "i18n": "wowhead-es",
+        "idName": "curated_sever",
+        "sno": 481785
+      },
+      {
+        "category": "skill",
+        "enUS": "Skeleton Warrior",
+        "esES": "Guerrero esqueleto",
+        "i18n": "wowhead-es",
+        "idName": "curated_skeleton_warrior",
+        "sno": 439912
       },
       {
         "category": "skill",
@@ -20,52 +44,73 @@
       },
       {
         "category": "skill",
-        "enUS": "Bone Storm",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__bone_storm",
-        "sno": null
-      },
-      {
-        "category": "skill",
         "enUS": "Golem",
         "esES": null,
         "i18n": "none",
         "idName": "skill__golem",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Sever",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__sever",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Skeleton Warrior",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__skeleton_warrior",
         "sno": null
       }
     ],
     "coreUniques": [],
     "fields": [
       {
-        "key": "skill:skill__blight",
+        "key": "skill:curated_blight",
         "label": {
           "category": "skill",
           "enUS": "Blight",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__blight",
-          "sno": null
+          "esES": "Peste",
+          "i18n": "wowhead-es",
+          "idName": "curated_blight",
+          "sno": 481293
         },
         "status": "agree",
         "values": {
           "d4builds:3c144000-e477-4d13-8c50-1654b5ac16eb:0": 1
+        }
+      },
+      {
+        "key": "skill:curated_bone_storm",
+        "label": {
+          "category": "skill",
+          "enUS": "Bone Storm",
+          "esES": "Tormenta de hueso",
+          "i18n": "wowhead-es",
+          "idName": "curated_bone_storm",
+          "sno": 499281
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:3c144000-e477-4d13-8c50-1654b5ac16eb:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_sever",
+        "label": {
+          "category": "skill",
+          "enUS": "Sever",
+          "esES": "Cercenar",
+          "i18n": "wowhead-es",
+          "idName": "curated_sever",
+          "sno": 481785
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:3c144000-e477-4d13-8c50-1654b5ac16eb:0": 1
+        }
+      },
+      {
+        "key": "skill:curated_skeleton_warrior",
+        "label": {
+          "category": "skill",
+          "enUS": "Skeleton Warrior",
+          "esES": "Guerrero esqueleto",
+          "i18n": "wowhead-es",
+          "idName": "curated_skeleton_warrior",
+          "sno": 439912
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:3c144000-e477-4d13-8c50-1654b5ac16eb:0": 15
         }
       },
       {
@@ -84,21 +129,6 @@
         }
       },
       {
-        "key": "skill:skill__bone_storm",
-        "label": {
-          "category": "skill",
-          "enUS": "Bone Storm",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__bone_storm",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:3c144000-e477-4d13-8c50-1654b5ac16eb:0": 15
-        }
-      },
-      {
         "key": "skill:skill__golem",
         "label": {
           "category": "skill",
@@ -106,36 +136,6 @@
           "esES": null,
           "i18n": "none",
           "idName": "skill__golem",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:3c144000-e477-4d13-8c50-1654b5ac16eb:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__sever",
-        "label": {
-          "category": "skill",
-          "enUS": "Sever",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__sever",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:3c144000-e477-4d13-8c50-1654b5ac16eb:0": 1
-        }
-      },
-      {
-        "key": "skill:skill__skeleton_warrior",
-        "label": {
-          "category": "skill",
-          "enUS": "Skeleton Warrior",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__skeleton_warrior",
           "sno": null
         },
         "status": "agree",
@@ -202,10 +202,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Sever",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__sever",
-            "sno": null
+            "esES": "Cercenar",
+            "i18n": "wowhead-es",
+            "idName": "curated_sever",
+            "sno": 481785
           },
           "runes": [
             {
@@ -289,10 +289,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Skeleton Warrior",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__skeleton_warrior",
-            "sno": null
+            "esES": "Guerrero esqueleto",
+            "i18n": "wowhead-es",
+            "idName": "curated_skeleton_warrior",
+            "sno": 439912
           },
           "runes": [
             {
@@ -329,10 +329,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Bone Storm",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__bone_storm",
-            "sno": null
+            "esES": "Tormenta de hueso",
+            "i18n": "wowhead-es",
+            "idName": "curated_bone_storm",
+            "sno": 499281
           },
           "runes": [
             {
@@ -409,10 +409,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Blight",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__blight",
-            "sno": null
+            "esES": "Peste",
+            "i18n": "wowhead-es",
+            "idName": "curated_blight",
+            "sno": 481293
           },
           "runes": [
             {

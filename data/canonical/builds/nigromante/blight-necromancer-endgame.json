@@ -5,18 +5,34 @@
       {
         "category": "skill",
         "enUS": "Blight",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__blight",
-        "sno": null
+        "esES": "Peste",
+        "i18n": "wowhead-es",
+        "idName": "curated_blight",
+        "sno": 481293
       },
       {
         "category": "skill",
         "enUS": "Blood Wave",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__blood_wave",
-        "sno": null
+        "esES": "Ola de sangre",
+        "i18n": "wowhead-es",
+        "idName": "curated_blood_wave",
+        "sno": 658216
+      },
+      {
+        "category": "skill",
+        "enUS": "Sever",
+        "esES": "Cercenar",
+        "i18n": "wowhead-es",
+        "idName": "curated_sever",
+        "sno": 481785
+      },
+      {
+        "category": "skill",
+        "enUS": "Skeleton Warrior",
+        "esES": "Guerrero esqueleto",
+        "i18n": "wowhead-es",
+        "idName": "curated_skeleton_warrior",
+        "sno": 439912
       },
       {
         "category": "skill",
@@ -33,35 +49,19 @@
         "i18n": "none",
         "idName": "skill__corpse_tendrils",
         "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Sever",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__sever",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Skeleton Warrior",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__skeleton_warrior",
-        "sno": null
       }
     ],
     "coreUniques": [],
     "fields": [
       {
-        "key": "skill:skill__blight",
+        "key": "skill:curated_blight",
         "label": {
           "category": "skill",
           "enUS": "Blight",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__blight",
-          "sno": null
+          "esES": "Peste",
+          "i18n": "wowhead-es",
+          "idName": "curated_blight",
+          "sno": 481293
         },
         "status": "agree",
         "values": {
@@ -69,18 +69,48 @@
         }
       },
       {
-        "key": "skill:skill__blood_wave",
+        "key": "skill:curated_blood_wave",
         "label": {
           "category": "skill",
           "enUS": "Blood Wave",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__blood_wave",
-          "sno": null
+          "esES": "Ola de sangre",
+          "i18n": "wowhead-es",
+          "idName": "curated_blood_wave",
+          "sno": 658216
         },
         "status": "agree",
         "values": {
           "d4builds:4dab8393-fc48-43a1-bf39-561d68b12185:0": 1
+        }
+      },
+      {
+        "key": "skill:curated_sever",
+        "label": {
+          "category": "skill",
+          "enUS": "Sever",
+          "esES": "Cercenar",
+          "i18n": "wowhead-es",
+          "idName": "curated_sever",
+          "sno": 481785
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:4dab8393-fc48-43a1-bf39-561d68b12185:0": 1
+        }
+      },
+      {
+        "key": "skill:curated_skeleton_warrior",
+        "label": {
+          "category": "skill",
+          "enUS": "Skeleton Warrior",
+          "esES": "Guerrero esqueleto",
+          "i18n": "wowhead-es",
+          "idName": "curated_skeleton_warrior",
+          "sno": 439912
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:4dab8393-fc48-43a1-bf39-561d68b12185:0": 10
         }
       },
       {
@@ -112,41 +142,11 @@
         "values": {
           "d4builds:4dab8393-fc48-43a1-bf39-561d68b12185:0": 1
         }
-      },
-      {
-        "key": "skill:skill__sever",
-        "label": {
-          "category": "skill",
-          "enUS": "Sever",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__sever",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:4dab8393-fc48-43a1-bf39-561d68b12185:0": 1
-        }
-      },
-      {
-        "key": "skill:skill__skeleton_warrior",
-        "label": {
-          "category": "skill",
-          "enUS": "Skeleton Warrior",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__skeleton_warrior",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:4dab8393-fc48-43a1-bf39-561d68b12185:0": 10
-        }
       }
     ],
     "variantCount": 1
   },
-  "correlationKey": "necromancer::skill__blight::generic",
+  "correlationKey": "necromancer::curated_blight::generic",
   "gameVersion": {
     "patch": "3.1.2",
     "season": 14
@@ -171,7 +171,7 @@
   },
   "title": {
     "en": "Blight",
-    "es": "Blight"
+    "es": "Peste"
   },
   "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
@@ -202,10 +202,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Skeleton Warrior",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__skeleton_warrior",
-            "sno": null
+            "esES": "Guerrero esqueleto",
+            "i18n": "wowhead-es",
+            "idName": "curated_skeleton_warrior",
+            "sno": 439912
           },
           "runes": [
             {
@@ -329,10 +329,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Blood Wave",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__blood_wave",
-            "sno": null
+            "esES": "Ola de sangre",
+            "i18n": "wowhead-es",
+            "idName": "curated_blood_wave",
+            "sno": 658216
           },
           "runes": [
             {
@@ -369,10 +369,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Blight",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__blight",
-            "sno": null
+            "esES": "Peste",
+            "i18n": "wowhead-es",
+            "idName": "curated_blight",
+            "sno": 481293
           },
           "runes": [
             {
@@ -416,10 +416,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Sever",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__sever",
-            "sno": null
+            "esES": "Cercenar",
+            "i18n": "wowhead-es",
+            "idName": "curated_sever",
+            "sno": 481785
           },
           "runes": [
             {

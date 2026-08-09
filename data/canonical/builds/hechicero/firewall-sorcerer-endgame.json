@@ -5,63 +5,63 @@
       {
         "category": "skill",
         "enUS": "Firewall",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__firewall",
-        "sno": null
+        "esES": "Muro de fuego",
+        "i18n": "wowhead-es",
+        "idName": "curated_firewall",
+        "sno": 111422
       },
       {
         "category": "skill",
         "enUS": "Frost Nova",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__frost_nova",
-        "sno": null
+        "esES": "Nova de escarcha",
+        "i18n": "wowhead-es",
+        "idName": "curated_frost_nova",
+        "sno": 291215
       },
       {
         "category": "skill",
         "enUS": "Ice Armor",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__ice_armor",
-        "sno": null
+        "esES": "Armadura de hielo",
+        "i18n": "wowhead-es",
+        "idName": "curated_ice_armor",
+        "sno": 297039
       },
       {
         "category": "skill",
         "enUS": "Inferno",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__inferno",
-        "sno": null
+        "esES": "Averno",
+        "i18n": "wowhead-es",
+        "idName": "curated_inferno",
+        "sno": 294198
       },
       {
         "category": "skill",
         "enUS": "Lightning Spear",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__lightning_spear",
-        "sno": null
+        "esES": "Lanza de rayos",
+        "i18n": "wowhead-es",
+        "idName": "curated_lightning_spear",
+        "sno": 292074
       },
       {
         "category": "skill",
         "enUS": "Teleport",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__teleport",
-        "sno": null
+        "esES": "Teletransporte",
+        "i18n": "wowhead-es",
+        "idName": "curated_teleport",
+        "sno": 288106
       }
     ],
     "coreUniques": [],
     "fields": [
       {
-        "key": "skill:skill__firewall",
+        "key": "skill:curated_firewall",
         "label": {
           "category": "skill",
           "enUS": "Firewall",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__firewall",
-          "sno": null
+          "esES": "Muro de fuego",
+          "i18n": "wowhead-es",
+          "idName": "curated_firewall",
+          "sno": 111422
         },
         "status": "agree",
         "values": {
@@ -69,14 +69,14 @@
         }
       },
       {
-        "key": "skill:skill__frost_nova",
+        "key": "skill:curated_frost_nova",
         "label": {
           "category": "skill",
           "enUS": "Frost Nova",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__frost_nova",
-          "sno": null
+          "esES": "Nova de escarcha",
+          "i18n": "wowhead-es",
+          "idName": "curated_frost_nova",
+          "sno": 291215
         },
         "status": "agree",
         "values": {
@@ -84,14 +84,14 @@
         }
       },
       {
-        "key": "skill:skill__ice_armor",
+        "key": "skill:curated_ice_armor",
         "label": {
           "category": "skill",
           "enUS": "Ice Armor",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__ice_armor",
-          "sno": null
+          "esES": "Armadura de hielo",
+          "i18n": "wowhead-es",
+          "idName": "curated_ice_armor",
+          "sno": 297039
         },
         "status": "agree",
         "values": {
@@ -99,14 +99,14 @@
         }
       },
       {
-        "key": "skill:skill__inferno",
+        "key": "skill:curated_inferno",
         "label": {
           "category": "skill",
           "enUS": "Inferno",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__inferno",
-          "sno": null
+          "esES": "Averno",
+          "i18n": "wowhead-es",
+          "idName": "curated_inferno",
+          "sno": 294198
         },
         "status": "agree",
         "values": {
@@ -114,14 +114,14 @@
         }
       },
       {
-        "key": "skill:skill__lightning_spear",
+        "key": "skill:curated_lightning_spear",
         "label": {
           "category": "skill",
           "enUS": "Lightning Spear",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__lightning_spear",
-          "sno": null
+          "esES": "Lanza de rayos",
+          "i18n": "wowhead-es",
+          "idName": "curated_lightning_spear",
+          "sno": 292074
         },
         "status": "agree",
         "values": {
@@ -129,14 +129,14 @@
         }
       },
       {
-        "key": "skill:skill__teleport",
+        "key": "skill:curated_teleport",
         "label": {
           "category": "skill",
           "enUS": "Teleport",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__teleport",
-          "sno": null
+          "esES": "Teletransporte",
+          "i18n": "wowhead-es",
+          "idName": "curated_teleport",
+          "sno": 288106
         },
         "status": "agree",
         "values": {
@@ -146,7 +146,7 @@
     ],
     "variantCount": 1
   },
-  "correlationKey": "sorcerer::skill__firewall::generic",
+  "correlationKey": "sorcerer::curated_firewall::generic",
   "gameVersion": {
     "patch": "3.1.2",
     "season": 14
@@ -171,7 +171,7 @@
   },
   "title": {
     "en": "Firewall",
-    "es": "Firewall"
+    "es": "Muro de fuego"
   },
   "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
@@ -202,10 +202,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Teleport",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__teleport",
-            "sno": null
+            "esES": "Teletransporte",
+            "i18n": "wowhead-es",
+            "idName": "curated_teleport",
+            "sno": 288106
           },
           "runes": [
             {
@@ -242,10 +242,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Ice Armor",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__ice_armor",
-            "sno": null
+            "esES": "Armadura de hielo",
+            "i18n": "wowhead-es",
+            "idName": "curated_ice_armor",
+            "sno": 297039
           },
           "runes": [
             {
@@ -282,10 +282,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Frost Nova",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__frost_nova",
-            "sno": null
+            "esES": "Nova de escarcha",
+            "i18n": "wowhead-es",
+            "idName": "curated_frost_nova",
+            "sno": 291215
           },
           "runes": [
             {
@@ -322,10 +322,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Lightning Spear",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__lightning_spear",
-            "sno": null
+            "esES": "Lanza de rayos",
+            "i18n": "wowhead-es",
+            "idName": "curated_lightning_spear",
+            "sno": 292074
           },
           "runes": [
             {
@@ -354,10 +354,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Firewall",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__firewall",
-            "sno": null
+            "esES": "Muro de fuego",
+            "i18n": "wowhead-es",
+            "idName": "curated_firewall",
+            "sno": 111422
           },
           "runes": [
             {
@@ -394,10 +394,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Inferno",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__inferno",
-            "sno": null
+            "esES": "Averno",
+            "i18n": "wowhead-es",
+            "idName": "curated_inferno",
+            "sno": 294198
           },
           "runes": [
             {

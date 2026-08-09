@@ -4,42 +4,42 @@
     "coreSkills": [
       {
         "category": "skill",
-        "enUS": "Concealment",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__concealment",
-        "sno": null
-      },
-      {
-        "category": "skill",
         "enUS": "Dance of Knives",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__dance_of_knives",
-        "sno": null
+        "esES": "Danza de cuchillos",
+        "i18n": "wowhead-es",
+        "idName": "curated_dance_of_knives",
+        "sno": 1690398
       },
       {
         "category": "skill",
         "enUS": "Dark Shroud",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__dark_shroud",
-        "sno": null
+        "esES": "Embozo oscuro",
+        "i18n": "wowhead-es",
+        "idName": "curated_dark_shroud",
+        "sno": 786381
       },
       {
         "category": "skill",
         "enUS": "Invigorating Strike",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__invigorating_strike",
-        "sno": null
+        "esES": "Golpe vigorizador",
+        "i18n": "wowhead-es",
+        "idName": "curated_invigorating_strike",
+        "sno": 416057
       },
       {
         "category": "skill",
         "enUS": "Shadow Clone",
+        "esES": "Clon tenebroso",
+        "i18n": "wowhead-es",
+        "idName": "curated_shadow_clone",
+        "sno": 357628
+      },
+      {
+        "category": "skill",
+        "enUS": "Concealment",
         "esES": null,
         "i18n": "none",
-        "idName": "skill__shadow_clone",
+        "idName": "skill__concealment",
         "sno": null
       },
       {
@@ -54,6 +54,66 @@
     "coreUniques": [],
     "fields": [
       {
+        "key": "skill:curated_dance_of_knives",
+        "label": {
+          "category": "skill",
+          "enUS": "Dance of Knives",
+          "esES": "Danza de cuchillos",
+          "i18n": "wowhead-es",
+          "idName": "curated_dance_of_knives",
+          "sno": 1690398
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:9479f69b-b519-40ab-8340-047efb206b3e:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_dark_shroud",
+        "label": {
+          "category": "skill",
+          "enUS": "Dark Shroud",
+          "esES": "Embozo oscuro",
+          "i18n": "wowhead-es",
+          "idName": "curated_dark_shroud",
+          "sno": 786381
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:9479f69b-b519-40ab-8340-047efb206b3e:0": 4
+        }
+      },
+      {
+        "key": "skill:curated_invigorating_strike",
+        "label": {
+          "category": "skill",
+          "enUS": "Invigorating Strike",
+          "esES": "Golpe vigorizador",
+          "i18n": "wowhead-es",
+          "idName": "curated_invigorating_strike",
+          "sno": 416057
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:9479f69b-b519-40ab-8340-047efb206b3e:0": 1
+        }
+      },
+      {
+        "key": "skill:curated_shadow_clone",
+        "label": {
+          "category": "skill",
+          "enUS": "Shadow Clone",
+          "esES": "Clon tenebroso",
+          "i18n": "wowhead-es",
+          "idName": "curated_shadow_clone",
+          "sno": 357628
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:9479f69b-b519-40ab-8340-047efb206b3e:0": 15
+        }
+      },
+      {
         "key": "skill:skill__concealment",
         "label": {
           "category": "skill",
@@ -66,66 +126,6 @@
         "status": "agree",
         "values": {
           "d4builds:9479f69b-b519-40ab-8340-047efb206b3e:0": 1
-        }
-      },
-      {
-        "key": "skill:skill__dance_of_knives",
-        "label": {
-          "category": "skill",
-          "enUS": "Dance of Knives",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__dance_of_knives",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:9479f69b-b519-40ab-8340-047efb206b3e:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__dark_shroud",
-        "label": {
-          "category": "skill",
-          "enUS": "Dark Shroud",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__dark_shroud",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:9479f69b-b519-40ab-8340-047efb206b3e:0": 4
-        }
-      },
-      {
-        "key": "skill:skill__invigorating_strike",
-        "label": {
-          "category": "skill",
-          "enUS": "Invigorating Strike",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__invigorating_strike",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:9479f69b-b519-40ab-8340-047efb206b3e:0": 1
-        }
-      },
-      {
-        "key": "skill:skill__shadow_clone",
-        "label": {
-          "category": "skill",
-          "enUS": "Shadow Clone",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__shadow_clone",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:9479f69b-b519-40ab-8340-047efb206b3e:0": 15
         }
       },
       {
@@ -146,7 +146,7 @@
     ],
     "variantCount": 1
   },
-  "correlationKey": "rogue::skill__dance_of_knives::generic",
+  "correlationKey": "rogue::curated_dance_of_knives::generic",
   "gameVersion": {
     "patch": "3.1.2",
     "season": 14
@@ -171,7 +171,7 @@
   },
   "title": {
     "en": "Dance of Knives",
-    "es": "Dance of Knives"
+    "es": "Danza de cuchillos"
   },
   "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
@@ -202,10 +202,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Shadow Clone",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__shadow_clone",
-            "sno": null
+            "esES": "Clon tenebroso",
+            "i18n": "wowhead-es",
+            "idName": "curated_shadow_clone",
+            "sno": 357628
           },
           "runes": [
             {
@@ -282,10 +282,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Dark Shroud",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__dark_shroud",
-            "sno": null
+            "esES": "Embozo oscuro",
+            "i18n": "wowhead-es",
+            "idName": "curated_dark_shroud",
+            "sno": 786381
           },
           "runes": [
             {
@@ -362,10 +362,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Invigorating Strike",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__invigorating_strike",
-            "sno": null
+            "esES": "Golpe vigorizador",
+            "i18n": "wowhead-es",
+            "idName": "curated_invigorating_strike",
+            "sno": 416057
           },
           "runes": [
             {
@@ -402,10 +402,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Dance of Knives",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__dance_of_knives",
-            "sno": null
+            "esES": "Danza de cuchillos",
+            "i18n": "wowhead-es",
+            "idName": "curated_dance_of_knives",
+            "sno": 1690398
           },
           "runes": [
             {

@@ -5,42 +5,42 @@
       {
         "category": "skill",
         "enUS": "Armored Hide",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__armored_hide",
-        "sno": null
+        "esES": "Piel blindada",
+        "i18n": "wowhead-es",
+        "idName": "curated_armored_hide",
+        "sno": 1871764
       },
       {
         "category": "skill",
         "enUS": "Ravager",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__ravager",
-        "sno": null
+        "esES": "Estragador",
+        "i18n": "wowhead-es",
+        "idName": "curated_ravager",
+        "sno": 1862773
       },
       {
         "category": "skill",
         "enUS": "Rock Splitter",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__rock_splitter",
-        "sno": null
+        "esES": "Parterrocas",
+        "i18n": "wowhead-es",
+        "idName": "curated_rock_splitter",
+        "sno": 1817045
       },
       {
         "category": "skill",
         "enUS": "Scourge",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__scourge",
-        "sno": null
+        "esES": "Azote",
+        "i18n": "wowhead-es",
+        "idName": "curated_scourge",
+        "sno": 1871801
       },
       {
         "category": "skill",
         "enUS": "The Hunter",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__the_hunter",
-        "sno": null
+        "esES": "El Cazador",
+        "i18n": "wowhead-es",
+        "idName": "curated_the_hunter",
+        "sno": 1663206
       },
       {
         "category": "skill",
@@ -54,14 +54,14 @@
     "coreUniques": [],
     "fields": [
       {
-        "key": "skill:skill__armored_hide",
+        "key": "skill:curated_armored_hide",
         "label": {
           "category": "skill",
           "enUS": "Armored Hide",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__armored_hide",
-          "sno": null
+          "esES": "Piel blindada",
+          "i18n": "wowhead-es",
+          "idName": "curated_armored_hide",
+          "sno": 1871764
         },
         "status": "agree",
         "values": {
@@ -69,14 +69,14 @@
         }
       },
       {
-        "key": "skill:skill__ravager",
+        "key": "skill:curated_ravager",
         "label": {
           "category": "skill",
           "enUS": "Ravager",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__ravager",
-          "sno": null
+          "esES": "Estragador",
+          "i18n": "wowhead-es",
+          "idName": "curated_ravager",
+          "sno": 1862773
         },
         "status": "agree",
         "values": {
@@ -84,14 +84,14 @@
         }
       },
       {
-        "key": "skill:skill__rock_splitter",
+        "key": "skill:curated_rock_splitter",
         "label": {
           "category": "skill",
           "enUS": "Rock Splitter",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__rock_splitter",
-          "sno": null
+          "esES": "Parterrocas",
+          "i18n": "wowhead-es",
+          "idName": "curated_rock_splitter",
+          "sno": 1817045
         },
         "status": "agree",
         "values": {
@@ -99,14 +99,14 @@
         }
       },
       {
-        "key": "skill:skill__scourge",
+        "key": "skill:curated_scourge",
         "label": {
           "category": "skill",
           "enUS": "Scourge",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__scourge",
-          "sno": null
+          "esES": "Azote",
+          "i18n": "wowhead-es",
+          "idName": "curated_scourge",
+          "sno": 1871801
         },
         "status": "agree",
         "values": {
@@ -114,14 +114,14 @@
         }
       },
       {
-        "key": "skill:skill__the_hunter",
+        "key": "skill:curated_the_hunter",
         "label": {
           "category": "skill",
           "enUS": "The Hunter",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__the_hunter",
-          "sno": null
+          "esES": "El Cazador",
+          "i18n": "wowhead-es",
+          "idName": "curated_the_hunter",
+          "sno": 1663206
         },
         "status": "agree",
         "values": {
@@ -146,7 +146,7 @@
     ],
     "variantCount": 1
   },
-  "correlationKey": "spiritborn::skill__rock_splitter::generic",
+  "correlationKey": "spiritborn::curated_rock_splitter::generic",
   "gameVersion": {
     "patch": "3.1.2",
     "season": 14
@@ -171,7 +171,7 @@
   },
   "title": {
     "en": "Rock Splitter",
-    "es": "Rock Splitter"
+    "es": "Parterrocas"
   },
   "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
@@ -202,10 +202,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Ravager",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__ravager",
-            "sno": null
+            "esES": "Estragador",
+            "i18n": "wowhead-es",
+            "idName": "curated_ravager",
+            "sno": 1862773
           },
           "runes": [
             {
@@ -242,10 +242,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Armored Hide",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__armored_hide",
-            "sno": null
+            "esES": "Piel blindada",
+            "i18n": "wowhead-es",
+            "idName": "curated_armored_hide",
+            "sno": 1871764
           },
           "runes": [
             {
@@ -282,10 +282,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Scourge",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__scourge",
-            "sno": null
+            "esES": "Azote",
+            "i18n": "wowhead-es",
+            "idName": "curated_scourge",
+            "sno": 1871801
           },
           "runes": [
             {
@@ -354,10 +354,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Rock Splitter",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__rock_splitter",
-            "sno": null
+            "esES": "Parterrocas",
+            "i18n": "wowhead-es",
+            "idName": "curated_rock_splitter",
+            "sno": 1817045
           },
           "runes": [
             {
@@ -401,10 +401,10 @@
           "ref": {
             "category": "skill",
             "enUS": "The Hunter",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__the_hunter",
-            "sno": null
+            "esES": "El Cazador",
+            "i18n": "wowhead-es",
+            "idName": "curated_the_hunter",
+            "sno": 1663206
           },
           "runes": [
             {

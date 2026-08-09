@@ -4,6 +4,30 @@
     "coreSkills": [
       {
         "category": "skill",
+        "enUS": "Dash",
+        "esES": "Carrera",
+        "i18n": "wowhead-es",
+        "idName": "curated_dash",
+        "sno": 358761
+      },
+      {
+        "category": "skill",
+        "enUS": "Forceful Arrow",
+        "esES": "Flecha impetuosa",
+        "i18n": "wowhead-es",
+        "idName": "curated_forceful_arrow",
+        "sno": 416272
+      },
+      {
+        "category": "skill",
+        "enUS": "Smoke Grenade",
+        "esES": "Granada de humo",
+        "i18n": "wowhead-es",
+        "idName": "curated_smoke_grenade",
+        "sno": 356162
+      },
+      {
+        "category": "skill",
         "enUS": "Barrage",
         "esES": null,
         "i18n": "none",
@@ -25,34 +49,55 @@
         "i18n": "none",
         "idName": "skill__concealment",
         "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Dash",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__dash",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Forceful Arrow",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__forceful_arrow",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Smoke Grenade",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__smoke_grenade",
-        "sno": null
       }
     ],
     "coreUniques": [],
     "fields": [
+      {
+        "key": "skill:curated_dash",
+        "label": {
+          "category": "skill",
+          "enUS": "Dash",
+          "esES": "Carrera",
+          "i18n": "wowhead-es",
+          "idName": "curated_dash",
+          "sno": 358761
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:e40dbceb-08fb-4f58-a8f4-49f01a25f1a2:0": 1
+        }
+      },
+      {
+        "key": "skill:curated_forceful_arrow",
+        "label": {
+          "category": "skill",
+          "enUS": "Forceful Arrow",
+          "esES": "Flecha impetuosa",
+          "i18n": "wowhead-es",
+          "idName": "curated_forceful_arrow",
+          "sno": 416272
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:e40dbceb-08fb-4f58-a8f4-49f01a25f1a2:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_smoke_grenade",
+        "label": {
+          "category": "skill",
+          "enUS": "Smoke Grenade",
+          "esES": "Granada de humo",
+          "i18n": "wowhead-es",
+          "idName": "curated_smoke_grenade",
+          "sno": 356162
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:e40dbceb-08fb-4f58-a8f4-49f01a25f1a2:0": 1
+        }
+      },
       {
         "key": "skill:skill__barrage",
         "label": {
@@ -91,51 +136,6 @@
           "esES": null,
           "i18n": "none",
           "idName": "skill__concealment",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:e40dbceb-08fb-4f58-a8f4-49f01a25f1a2:0": 1
-        }
-      },
-      {
-        "key": "skill:skill__dash",
-        "label": {
-          "category": "skill",
-          "enUS": "Dash",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__dash",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:e40dbceb-08fb-4f58-a8f4-49f01a25f1a2:0": 1
-        }
-      },
-      {
-        "key": "skill:skill__forceful_arrow",
-        "label": {
-          "category": "skill",
-          "enUS": "Forceful Arrow",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__forceful_arrow",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:e40dbceb-08fb-4f58-a8f4-49f01a25f1a2:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__smoke_grenade",
-        "label": {
-          "category": "skill",
-          "enUS": "Smoke Grenade",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__smoke_grenade",
           "sno": null
         },
         "status": "agree",
@@ -242,10 +242,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Dash",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__dash",
-            "sno": null
+            "esES": "Carrera",
+            "i18n": "wowhead-es",
+            "idName": "curated_dash",
+            "sno": 358761
           },
           "runes": [
             {
@@ -314,10 +314,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Smoke Grenade",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__smoke_grenade",
-            "sno": null
+            "esES": "Granada de humo",
+            "i18n": "wowhead-es",
+            "idName": "curated_smoke_grenade",
+            "sno": 356162
           },
           "runes": [
             {
@@ -394,10 +394,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Forceful Arrow",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__forceful_arrow",
-            "sno": null
+            "esES": "Flecha impetuosa",
+            "i18n": "wowhead-es",
+            "idName": "curated_forceful_arrow",
+            "sno": 416272
           },
           "runes": [
             {

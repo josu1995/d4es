@@ -5,18 +5,42 @@
       {
         "category": "skill",
         "enUS": "Call of the Ancients",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__call_of_the_ancients",
-        "sno": null
+        "esES": "Llamada a los Ancestros",
+        "i18n": "wowhead-es",
+        "idName": "curated_call_of_the_ancients",
+        "sno": 309802
       },
       {
         "category": "skill",
         "enUS": "Challenging Shout",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__challenging_shout",
-        "sno": null
+        "esES": "Grito desafiante",
+        "i18n": "wowhead-es",
+        "idName": "curated_challenging_shout",
+        "sno": 375484
+      },
+      {
+        "category": "skill",
+        "enUS": "Leap",
+        "esES": "Salto ofensivo",
+        "i18n": "wowhead-es",
+        "idName": "curated_leap",
+        "sno": 196545
+      },
+      {
+        "category": "skill",
+        "enUS": "Lunging Strike",
+        "esES": "Acometida",
+        "i18n": "wowhead-es",
+        "idName": "curated_lunging_strike",
+        "sno": 206504
+      },
+      {
+        "category": "skill",
+        "enUS": "Whirlwind",
+        "esES": "Torbellino",
+        "i18n": "wowhead-es",
+        "idName": "curated_whirlwind",
+        "sno": 206435
       },
       {
         "category": "skill",
@@ -25,43 +49,19 @@
         "i18n": "none",
         "idName": "skill__ground_stomp",
         "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Leap",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__leap",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Lunging Strike",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__lunging_strike",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Whirlwind",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__whirlwind",
-        "sno": null
       }
     ],
     "coreUniques": [],
     "fields": [
       {
-        "key": "skill:skill__call_of_the_ancients",
+        "key": "skill:curated_call_of_the_ancients",
         "label": {
           "category": "skill",
           "enUS": "Call of the Ancients",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__call_of_the_ancients",
-          "sno": null
+          "esES": "Llamada a los Ancestros",
+          "i18n": "wowhead-es",
+          "idName": "curated_call_of_the_ancients",
+          "sno": 309802
         },
         "status": "agree",
         "values": {
@@ -69,14 +69,59 @@
         }
       },
       {
-        "key": "skill:skill__challenging_shout",
+        "key": "skill:curated_challenging_shout",
         "label": {
           "category": "skill",
           "enUS": "Challenging Shout",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__challenging_shout",
-          "sno": null
+          "esES": "Grito desafiante",
+          "i18n": "wowhead-es",
+          "idName": "curated_challenging_shout",
+          "sno": 375484
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:2c273831-6609-4414-8486-6da72c903e83:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_leap",
+        "label": {
+          "category": "skill",
+          "enUS": "Leap",
+          "esES": "Salto ofensivo",
+          "i18n": "wowhead-es",
+          "idName": "curated_leap",
+          "sno": 196545
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:2c273831-6609-4414-8486-6da72c903e83:0": 1
+        }
+      },
+      {
+        "key": "skill:curated_lunging_strike",
+        "label": {
+          "category": "skill",
+          "enUS": "Lunging Strike",
+          "esES": "Acometida",
+          "i18n": "wowhead-es",
+          "idName": "curated_lunging_strike",
+          "sno": 206504
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:2c273831-6609-4414-8486-6da72c903e83:0": 1
+        }
+      },
+      {
+        "key": "skill:curated_whirlwind",
+        "label": {
+          "category": "skill",
+          "enUS": "Whirlwind",
+          "esES": "Torbellino",
+          "i18n": "wowhead-es",
+          "idName": "curated_whirlwind",
+          "sno": 206435
         },
         "status": "agree",
         "values": {
@@ -97,56 +142,11 @@
         "values": {
           "d4builds:2c273831-6609-4414-8486-6da72c903e83:0": 1
         }
-      },
-      {
-        "key": "skill:skill__leap",
-        "label": {
-          "category": "skill",
-          "enUS": "Leap",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__leap",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:2c273831-6609-4414-8486-6da72c903e83:0": 1
-        }
-      },
-      {
-        "key": "skill:skill__lunging_strike",
-        "label": {
-          "category": "skill",
-          "enUS": "Lunging Strike",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__lunging_strike",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:2c273831-6609-4414-8486-6da72c903e83:0": 1
-        }
-      },
-      {
-        "key": "skill:skill__whirlwind",
-        "label": {
-          "category": "skill",
-          "enUS": "Whirlwind",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__whirlwind",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:2c273831-6609-4414-8486-6da72c903e83:0": 15
-        }
       }
     ],
     "variantCount": 1
   },
-  "correlationKey": "barbarian::skill__whirlwind::generic",
+  "correlationKey": "barbarian::curated_whirlwind::generic",
   "gameVersion": {
     "patch": "3.1.2",
     "season": 14
@@ -171,7 +171,7 @@
   },
   "title": {
     "en": "Whirlwind",
-    "es": "Whirlwind"
+    "es": "Torbellino"
   },
   "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
@@ -202,10 +202,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Lunging Strike",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__lunging_strike",
-            "sno": null
+            "esES": "Acometida",
+            "i18n": "wowhead-es",
+            "idName": "curated_lunging_strike",
+            "sno": 206504
           },
           "runes": [
             {
@@ -282,10 +282,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Leap",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__leap",
-            "sno": null
+            "esES": "Salto ofensivo",
+            "i18n": "wowhead-es",
+            "idName": "curated_leap",
+            "sno": 196545
           },
           "runes": [
             {
@@ -322,10 +322,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Call of the Ancients",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__call_of_the_ancients",
-            "sno": null
+            "esES": "Llamada a los Ancestros",
+            "i18n": "wowhead-es",
+            "idName": "curated_call_of_the_ancients",
+            "sno": 309802
           },
           "runes": [
             {
@@ -362,10 +362,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Challenging Shout",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__challenging_shout",
-            "sno": null
+            "esES": "Grito desafiante",
+            "i18n": "wowhead-es",
+            "idName": "curated_challenging_shout",
+            "sno": 375484
           },
           "runes": [
             {
@@ -402,10 +402,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Whirlwind",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__whirlwind",
-            "sno": null
+            "esES": "Torbellino",
+            "i18n": "wowhead-es",
+            "idName": "curated_whirlwind",
+            "sno": 206435
           },
           "runes": [
             {

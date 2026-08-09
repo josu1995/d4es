@@ -4,18 +4,26 @@
     "coreSkills": [
       {
         "category": "skill",
+        "enUS": "Metamorphosis",
+        "esES": "Metamorfosis",
+        "i18n": "wowhead-es",
+        "idName": "curated_metamorphosis",
+        "sno": 2215096
+      },
+      {
+        "category": "skill",
+        "enUS": "Tortured Wretch",
+        "esES": "Despojo torturado",
+        "i18n": "wowhead-es",
+        "idName": "curated_tortured_wretch",
+        "sno": 2245730
+      },
+      {
+        "category": "skill",
         "enUS": "Command Fallen",
         "esES": null,
         "i18n": "none",
         "idName": "skill__command_fallen",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Metamorphosis",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__metamorphosis",
         "sno": null
       },
       {
@@ -41,18 +49,40 @@
         "i18n": "none",
         "idName": "skill__summon_ae_grom",
         "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Tortured Wretch",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__tortured_wretch",
-        "sno": null
       }
     ],
     "coreUniques": [],
     "fields": [
+      {
+        "key": "skill:curated_metamorphosis",
+        "label": {
+          "category": "skill",
+          "enUS": "Metamorphosis",
+          "esES": "Metamorfosis",
+          "i18n": "wowhead-es",
+          "idName": "curated_metamorphosis",
+          "sno": 2215096
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:37988a2a-4a9e-49c2-9346-54474c19dd86:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_tortured_wretch",
+        "label": {
+          "category": "skill",
+          "enUS": "Tortured Wretch",
+          "esES": "Despojo torturado",
+          "i18n": "wowhead-es",
+          "idName": "curated_tortured_wretch",
+          "sno": 2245730
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:37988a2a-4a9e-49c2-9346-54474c19dd86:0": 15
+        }
+      },
       {
         "key": "skill:skill__command_fallen",
         "label": {
@@ -61,21 +91,6 @@
           "esES": null,
           "i18n": "none",
           "idName": "skill__command_fallen",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:37988a2a-4a9e-49c2-9346-54474c19dd86:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__metamorphosis",
-        "label": {
-          "category": "skill",
-          "enUS": "Metamorphosis",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__metamorphosis",
           "sno": null
         },
         "status": "agree",
@@ -126,21 +141,6 @@
         "status": "agree",
         "values": {
           "d4builds:37988a2a-4a9e-49c2-9346-54474c19dd86:0": 1
-        }
-      },
-      {
-        "key": "skill:skill__tortured_wretch",
-        "label": {
-          "category": "skill",
-          "enUS": "Tortured Wretch",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__tortured_wretch",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:37988a2a-4a9e-49c2-9346-54474c19dd86:0": 15
         }
       }
     ],
@@ -202,10 +202,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Metamorphosis",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__metamorphosis",
-            "sno": null
+            "esES": "Metamorfosis",
+            "i18n": "wowhead-es",
+            "idName": "curated_metamorphosis",
+            "sno": 2215096
           },
           "runes": [
             {
@@ -377,10 +377,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Tortured Wretch",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__tortured_wretch",
-            "sno": null
+            "esES": "Despojo torturado",
+            "i18n": "wowhead-es",
+            "idName": "curated_tortured_wretch",
+            "sno": 2245730
           },
           "runes": [
             {

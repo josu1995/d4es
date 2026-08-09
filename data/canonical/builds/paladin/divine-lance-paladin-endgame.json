@@ -4,6 +4,30 @@
     "coreSkills": [
       {
         "category": "skill",
+        "enUS": "Defiance Aura",
+        "esES": "Aura desafiante",
+        "i18n": "wowhead-es",
+        "idName": "curated_defiance_aura",
+        "sno": 2187578
+      },
+      {
+        "category": "skill",
+        "enUS": "Divine Lance",
+        "esES": "Lanza divina",
+        "i18n": "wowhead-es",
+        "idName": "curated_divine_lance",
+        "sno": 2120228
+      },
+      {
+        "category": "skill",
+        "enUS": "Fanaticism Aura",
+        "esES": "Aura de fanatismo",
+        "i18n": "wowhead-es",
+        "idName": "curated_fanaticism_aura",
+        "sno": 2187741
+      },
+      {
+        "category": "skill",
         "enUS": "Arbiter of Justice",
         "esES": null,
         "i18n": "none",
@@ -25,34 +49,55 @@
         "i18n": "none",
         "idName": "skill__consecration",
         "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Defiance Aura",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__defiance_aura",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Divine Lance",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__divine_lance",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Fanaticism Aura",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__fanaticism_aura",
-        "sno": null
       }
     ],
     "coreUniques": [],
     "fields": [
+      {
+        "key": "skill:curated_defiance_aura",
+        "label": {
+          "category": "skill",
+          "enUS": "Defiance Aura",
+          "esES": "Aura desafiante",
+          "i18n": "wowhead-es",
+          "idName": "curated_defiance_aura",
+          "sno": 2187578
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:f209da9d-f8a1-4597-839a-9dda707f91b5:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_divine_lance",
+        "label": {
+          "category": "skill",
+          "enUS": "Divine Lance",
+          "esES": "Lanza divina",
+          "i18n": "wowhead-es",
+          "idName": "curated_divine_lance",
+          "sno": 2120228
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:f209da9d-f8a1-4597-839a-9dda707f91b5:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_fanaticism_aura",
+        "label": {
+          "category": "skill",
+          "enUS": "Fanaticism Aura",
+          "esES": "Aura de fanatismo",
+          "i18n": "wowhead-es",
+          "idName": "curated_fanaticism_aura",
+          "sno": 2187741
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:f209da9d-f8a1-4597-839a-9dda707f91b5:0": 15
+        }
+      },
       {
         "key": "skill:skill__arbiter_of_justice",
         "label": {
@@ -97,56 +142,11 @@
         "values": {
           "d4builds:f209da9d-f8a1-4597-839a-9dda707f91b5:0": 4
         }
-      },
-      {
-        "key": "skill:skill__defiance_aura",
-        "label": {
-          "category": "skill",
-          "enUS": "Defiance Aura",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__defiance_aura",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:f209da9d-f8a1-4597-839a-9dda707f91b5:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__divine_lance",
-        "label": {
-          "category": "skill",
-          "enUS": "Divine Lance",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__divine_lance",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:f209da9d-f8a1-4597-839a-9dda707f91b5:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__fanaticism_aura",
-        "label": {
-          "category": "skill",
-          "enUS": "Fanaticism Aura",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__fanaticism_aura",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:f209da9d-f8a1-4597-839a-9dda707f91b5:0": 15
-        }
       }
     ],
     "variantCount": 1
   },
-  "correlationKey": "paladin::skill__divine_lance::generic",
+  "correlationKey": "paladin::curated_divine_lance::generic",
   "gameVersion": {
     "patch": "3.1.2",
     "season": 14
@@ -171,7 +171,7 @@
   },
   "title": {
     "en": "Divine Lance",
-    "es": "Divine Lance"
+    "es": "Lanza divina"
   },
   "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
@@ -202,10 +202,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Divine Lance",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__divine_lance",
-            "sno": null
+            "esES": "Lanza divina",
+            "i18n": "wowhead-es",
+            "idName": "curated_divine_lance",
+            "sno": 2120228
           },
           "runes": [
             {
@@ -242,10 +242,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Fanaticism Aura",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__fanaticism_aura",
-            "sno": null
+            "esES": "Aura de fanatismo",
+            "i18n": "wowhead-es",
+            "idName": "curated_fanaticism_aura",
+            "sno": 2187741
           },
           "runes": [
             {
@@ -282,10 +282,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Defiance Aura",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__defiance_aura",
-            "sno": null
+            "esES": "Aura desafiante",
+            "i18n": "wowhead-es",
+            "idName": "curated_defiance_aura",
+            "sno": 2187578
           },
           "runes": [
             {

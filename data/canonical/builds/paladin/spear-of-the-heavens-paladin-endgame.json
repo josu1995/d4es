@@ -4,18 +4,42 @@
     "coreSkills": [
       {
         "category": "skill",
+        "enUS": "Defiance Aura",
+        "esES": "Aura desafiante",
+        "i18n": "wowhead-es",
+        "idName": "curated_defiance_aura",
+        "sno": 2187578
+      },
+      {
+        "category": "skill",
+        "enUS": "Fanaticism Aura",
+        "esES": "Aura de fanatismo",
+        "i18n": "wowhead-es",
+        "idName": "curated_fanaticism_aura",
+        "sno": 2187741
+      },
+      {
+        "category": "skill",
+        "enUS": "Rally",
+        "esES": "Reunir",
+        "i18n": "wowhead-es",
+        "idName": "curated_rally",
+        "sno": 2303677
+      },
+      {
+        "category": "skill",
+        "enUS": "Spear of the Heavens",
+        "esES": "Lanza de los cielos",
+        "i18n": "wowhead-es",
+        "idName": "curated_spear_of_the_heavens",
+        "sno": 2100457
+      },
+      {
+        "category": "skill",
         "enUS": "Condemn",
         "esES": null,
         "i18n": "none",
         "idName": "skill__condemn",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Defiance Aura",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__defiance_aura",
         "sno": null
       },
       {
@@ -25,34 +49,70 @@
         "i18n": "none",
         "idName": "skill__falling_star",
         "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Fanaticism Aura",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__fanaticism_aura",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Rally",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__rally",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Spear of the Heavens",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__spear_of_the_heavens",
-        "sno": null
       }
     ],
     "coreUniques": [],
     "fields": [
+      {
+        "key": "skill:curated_defiance_aura",
+        "label": {
+          "category": "skill",
+          "enUS": "Defiance Aura",
+          "esES": "Aura desafiante",
+          "i18n": "wowhead-es",
+          "idName": "curated_defiance_aura",
+          "sno": 2187578
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:36a6ea06-edf1-4c2e-8b1b-cc4dfa1c39d2:0": 3
+        }
+      },
+      {
+        "key": "skill:curated_fanaticism_aura",
+        "label": {
+          "category": "skill",
+          "enUS": "Fanaticism Aura",
+          "esES": "Aura de fanatismo",
+          "i18n": "wowhead-es",
+          "idName": "curated_fanaticism_aura",
+          "sno": 2187741
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:36a6ea06-edf1-4c2e-8b1b-cc4dfa1c39d2:0": 3
+        }
+      },
+      {
+        "key": "skill:curated_rally",
+        "label": {
+          "category": "skill",
+          "enUS": "Rally",
+          "esES": "Reunir",
+          "i18n": "wowhead-es",
+          "idName": "curated_rally",
+          "sno": 2303677
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:36a6ea06-edf1-4c2e-8b1b-cc4dfa1c39d2:0": 3
+        }
+      },
+      {
+        "key": "skill:curated_spear_of_the_heavens",
+        "label": {
+          "category": "skill",
+          "enUS": "Spear of the Heavens",
+          "esES": "Lanza de los cielos",
+          "i18n": "wowhead-es",
+          "idName": "curated_spear_of_the_heavens",
+          "sno": 2100457
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:36a6ea06-edf1-4c2e-8b1b-cc4dfa1c39d2:0": 0
+        }
+      },
       {
         "key": "skill:skill__condemn",
         "label": {
@@ -69,21 +129,6 @@
         }
       },
       {
-        "key": "skill:skill__defiance_aura",
-        "label": {
-          "category": "skill",
-          "enUS": "Defiance Aura",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__defiance_aura",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:36a6ea06-edf1-4c2e-8b1b-cc4dfa1c39d2:0": 3
-        }
-      },
-      {
         "key": "skill:skill__falling_star",
         "label": {
           "category": "skill",
@@ -97,56 +142,11 @@
         "values": {
           "d4builds:36a6ea06-edf1-4c2e-8b1b-cc4dfa1c39d2:0": 0
         }
-      },
-      {
-        "key": "skill:skill__fanaticism_aura",
-        "label": {
-          "category": "skill",
-          "enUS": "Fanaticism Aura",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__fanaticism_aura",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:36a6ea06-edf1-4c2e-8b1b-cc4dfa1c39d2:0": 3
-        }
-      },
-      {
-        "key": "skill:skill__rally",
-        "label": {
-          "category": "skill",
-          "enUS": "Rally",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__rally",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:36a6ea06-edf1-4c2e-8b1b-cc4dfa1c39d2:0": 3
-        }
-      },
-      {
-        "key": "skill:skill__spear_of_the_heavens",
-        "label": {
-          "category": "skill",
-          "enUS": "Spear of the Heavens",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__spear_of_the_heavens",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:36a6ea06-edf1-4c2e-8b1b-cc4dfa1c39d2:0": 0
-        }
       }
     ],
     "variantCount": 1
   },
-  "correlationKey": "paladin::skill__spear_of_the_heavens::generic",
+  "correlationKey": "paladin::curated_spear_of_the_heavens::generic",
   "gameVersion": {
     "patch": "3.1.2",
     "season": 13
@@ -171,7 +171,7 @@
   },
   "title": {
     "en": "Spear of the Heavens",
-    "es": "Spear of the Heavens"
+    "es": "Lanza de los cielos"
   },
   "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
@@ -226,10 +226,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Fanaticism Aura",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__fanaticism_aura",
-            "sno": null
+            "esES": "Aura de fanatismo",
+            "i18n": "wowhead-es",
+            "idName": "curated_fanaticism_aura",
+            "sno": 2187741
           },
           "runes": [
             {
@@ -273,10 +273,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Defiance Aura",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__defiance_aura",
-            "sno": null
+            "esES": "Aura desafiante",
+            "i18n": "wowhead-es",
+            "idName": "curated_defiance_aura",
+            "sno": 2187578
           },
           "runes": [
             {
@@ -313,10 +313,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Rally",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__rally",
-            "sno": null
+            "esES": "Reunir",
+            "i18n": "wowhead-es",
+            "idName": "curated_rally",
+            "sno": 2303677
           },
           "runes": [
             {
@@ -345,10 +345,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Spear of the Heavens",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__spear_of_the_heavens",
-            "sno": null
+            "esES": "Lanza de los cielos",
+            "i18n": "wowhead-es",
+            "idName": "curated_spear_of_the_heavens",
+            "sno": 2100457
           },
           "runes": [],
           "skillVariant": null

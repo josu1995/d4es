@@ -5,18 +5,34 @@
       {
         "category": "skill",
         "enUS": "Blood Lance",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__blood_lance",
-        "sno": null
+        "esES": "Lanza de sangre",
+        "i18n": "wowhead-es",
+        "idName": "curated_blood_lance",
+        "sno": 501629
       },
       {
         "category": "skill",
         "enUS": "Blood Wave",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__blood_wave",
-        "sno": null
+        "esES": "Ola de sangre",
+        "i18n": "wowhead-es",
+        "idName": "curated_blood_wave",
+        "sno": 658216
+      },
+      {
+        "category": "skill",
+        "enUS": "Decrepify",
+        "esES": "Decrepitud",
+        "i18n": "wowhead-es",
+        "idName": "curated_decrepify",
+        "sno": 915150
+      },
+      {
+        "category": "skill",
+        "enUS": "Sever",
+        "esES": "Cercenar",
+        "i18n": "wowhead-es",
+        "idName": "curated_sever",
+        "sno": 481785
       },
       {
         "category": "skill",
@@ -33,35 +49,19 @@
         "i18n": "none",
         "idName": "skill__corpse_tendrils",
         "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Decrepify",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__decrepify",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Sever",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__sever",
-        "sno": null
       }
     ],
     "coreUniques": [],
     "fields": [
       {
-        "key": "skill:skill__blood_lance",
+        "key": "skill:curated_blood_lance",
         "label": {
           "category": "skill",
           "enUS": "Blood Lance",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__blood_lance",
-          "sno": null
+          "esES": "Lanza de sangre",
+          "i18n": "wowhead-es",
+          "idName": "curated_blood_lance",
+          "sno": 501629
         },
         "status": "agree",
         "values": {
@@ -69,18 +69,48 @@
         }
       },
       {
-        "key": "skill:skill__blood_wave",
+        "key": "skill:curated_blood_wave",
         "label": {
           "category": "skill",
           "enUS": "Blood Wave",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__blood_wave",
-          "sno": null
+          "esES": "Ola de sangre",
+          "i18n": "wowhead-es",
+          "idName": "curated_blood_wave",
+          "sno": 658216
         },
         "status": "agree",
         "values": {
           "d4builds:4701a6ac-a455-440d-9f8a-a51e4e4f3481:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_decrepify",
+        "label": {
+          "category": "skill",
+          "enUS": "Decrepify",
+          "esES": "Decrepitud",
+          "i18n": "wowhead-es",
+          "idName": "curated_decrepify",
+          "sno": 915150
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:4701a6ac-a455-440d-9f8a-a51e4e4f3481:0": 9
+        }
+      },
+      {
+        "key": "skill:curated_sever",
+        "label": {
+          "category": "skill",
+          "enUS": "Sever",
+          "esES": "Cercenar",
+          "i18n": "wowhead-es",
+          "idName": "curated_sever",
+          "sno": 481785
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:4701a6ac-a455-440d-9f8a-a51e4e4f3481:0": 1
         }
       },
       {
@@ -112,41 +142,11 @@
         "values": {
           "d4builds:4701a6ac-a455-440d-9f8a-a51e4e4f3481:0": 1
         }
-      },
-      {
-        "key": "skill:skill__decrepify",
-        "label": {
-          "category": "skill",
-          "enUS": "Decrepify",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__decrepify",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:4701a6ac-a455-440d-9f8a-a51e4e4f3481:0": 9
-        }
-      },
-      {
-        "key": "skill:skill__sever",
-        "label": {
-          "category": "skill",
-          "enUS": "Sever",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__sever",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:4701a6ac-a455-440d-9f8a-a51e4e4f3481:0": 1
-        }
       }
     ],
     "variantCount": 1
   },
-  "correlationKey": "necromancer::skill__blood_wave::generic",
+  "correlationKey": "necromancer::curated_blood_wave::generic",
   "gameVersion": {
     "patch": "3.1.2",
     "season": 14
@@ -171,7 +171,7 @@
   },
   "title": {
     "en": "Blood Wave",
-    "es": "Blood Wave"
+    "es": "Ola de sangre"
   },
   "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
@@ -202,10 +202,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Sever",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__sever",
-            "sno": null
+            "esES": "Cercenar",
+            "i18n": "wowhead-es",
+            "idName": "curated_sever",
+            "sno": 481785
           },
           "runes": [
             {
@@ -242,10 +242,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Blood Lance",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__blood_lance",
-            "sno": null
+            "esES": "Lanza de sangre",
+            "i18n": "wowhead-es",
+            "idName": "curated_blood_lance",
+            "sno": 501629
           },
           "runes": [
             {
@@ -376,10 +376,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Decrepify",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__decrepify",
-            "sno": null
+            "esES": "Decrepitud",
+            "i18n": "wowhead-es",
+            "idName": "curated_decrepify",
+            "sno": 915150
           },
           "runes": [
             {
@@ -423,10 +423,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Blood Wave",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__blood_wave",
-            "sno": null
+            "esES": "Ola de sangre",
+            "i18n": "wowhead-es",
+            "idName": "curated_blood_wave",
+            "sno": 658216
           },
           "runes": [
             {

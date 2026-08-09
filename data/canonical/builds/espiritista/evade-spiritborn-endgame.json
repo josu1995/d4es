@@ -5,10 +5,34 @@
       {
         "category": "skill",
         "enUS": "Armored Hide",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__armored_hide",
-        "sno": null
+        "esES": "Piel blindada",
+        "i18n": "wowhead-es",
+        "idName": "curated_armored_hide",
+        "sno": 1871764
+      },
+      {
+        "category": "skill",
+        "enUS": "Ravager",
+        "esES": "Estragador",
+        "i18n": "wowhead-es",
+        "idName": "curated_ravager",
+        "sno": 1862773
+      },
+      {
+        "category": "skill",
+        "enUS": "Rushing Claw",
+        "esES": "Garra rauda",
+        "i18n": "wowhead-es",
+        "idName": "curated_rushing_claw",
+        "sno": 1871761
+      },
+      {
+        "category": "skill",
+        "enUS": "The Seeker",
+        "esES": "El Buscador",
+        "i18n": "wowhead-es",
+        "idName": "curated_the_seeker",
+        "sno": 1663204
       },
       {
         "category": "skill",
@@ -16,30 +40,6 @@
         "esES": null,
         "i18n": "none",
         "idName": "skill__concussive_stomp",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Ravager",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__ravager",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Rushing Claw",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__rushing_claw",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "The Seeker",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__the_seeker",
         "sno": null
       },
       {
@@ -54,14 +54,59 @@
     "coreUniques": [],
     "fields": [
       {
-        "key": "skill:skill__armored_hide",
+        "key": "skill:curated_armored_hide",
         "label": {
           "category": "skill",
           "enUS": "Armored Hide",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__armored_hide",
-          "sno": null
+          "esES": "Piel blindada",
+          "i18n": "wowhead-es",
+          "idName": "curated_armored_hide",
+          "sno": 1871764
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:35fe4be7-216c-4d51-a3b9-1a75885f7b9f:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_ravager",
+        "label": {
+          "category": "skill",
+          "enUS": "Ravager",
+          "esES": "Estragador",
+          "i18n": "wowhead-es",
+          "idName": "curated_ravager",
+          "sno": 1862773
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:35fe4be7-216c-4d51-a3b9-1a75885f7b9f:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_rushing_claw",
+        "label": {
+          "category": "skill",
+          "enUS": "Rushing Claw",
+          "esES": "Garra rauda",
+          "i18n": "wowhead-es",
+          "idName": "curated_rushing_claw",
+          "sno": 1871761
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:35fe4be7-216c-4d51-a3b9-1a75885f7b9f:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_the_seeker",
+        "label": {
+          "category": "skill",
+          "enUS": "The Seeker",
+          "esES": "El Buscador",
+          "i18n": "wowhead-es",
+          "idName": "curated_the_seeker",
+          "sno": 1663204
         },
         "status": "agree",
         "values": {
@@ -84,51 +129,6 @@
         }
       },
       {
-        "key": "skill:skill__ravager",
-        "label": {
-          "category": "skill",
-          "enUS": "Ravager",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__ravager",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:35fe4be7-216c-4d51-a3b9-1a75885f7b9f:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__rushing_claw",
-        "label": {
-          "category": "skill",
-          "enUS": "Rushing Claw",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__rushing_claw",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:35fe4be7-216c-4d51-a3b9-1a75885f7b9f:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__the_seeker",
-        "label": {
-          "category": "skill",
-          "enUS": "The Seeker",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__the_seeker",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:35fe4be7-216c-4d51-a3b9-1a75885f7b9f:0": 15
-        }
-      },
-      {
         "key": "skill:skill__toxic_skin",
         "label": {
           "category": "skill",
@@ -146,7 +146,7 @@
     ],
     "variantCount": 1
   },
-  "correlationKey": "spiritborn::skill__armored_hide::generic",
+  "correlationKey": "spiritborn::curated_armored_hide::generic",
   "gameVersion": {
     "patch": "3.1.2",
     "season": 13
@@ -171,7 +171,7 @@
   },
   "title": {
     "en": "Evade",
-    "es": "Evade"
+    "es": "Piel blindada"
   },
   "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
@@ -274,10 +274,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Armored Hide",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__armored_hide",
-            "sno": null
+            "esES": "Piel blindada",
+            "i18n": "wowhead-es",
+            "idName": "curated_armored_hide",
+            "sno": 1871764
           },
           "runes": [
             {
@@ -314,10 +314,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Ravager",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__ravager",
-            "sno": null
+            "esES": "Estragador",
+            "i18n": "wowhead-es",
+            "idName": "curated_ravager",
+            "sno": 1862773
           },
           "runes": [
             {
@@ -354,10 +354,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Rushing Claw",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__rushing_claw",
-            "sno": null
+            "esES": "Garra rauda",
+            "i18n": "wowhead-es",
+            "idName": "curated_rushing_claw",
+            "sno": 1871761
           },
           "runes": [
             {
@@ -401,10 +401,10 @@
           "ref": {
             "category": "skill",
             "enUS": "The Seeker",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__the_seeker",
-            "sno": null
+            "esES": "El Buscador",
+            "i18n": "wowhead-es",
+            "idName": "curated_the_seeker",
+            "sno": 1663204
           },
           "runes": [
             {

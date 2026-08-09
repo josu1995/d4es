@@ -5,10 +5,34 @@
       {
         "category": "skill",
         "enUS": "Armored Hide",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__armored_hide",
-        "sno": null
+        "esES": "Piel blindada",
+        "i18n": "wowhead-es",
+        "idName": "curated_armored_hide",
+        "sno": 1871764
+      },
+      {
+        "category": "skill",
+        "enUS": "Ravager",
+        "esES": "Estragador",
+        "i18n": "wowhead-es",
+        "idName": "curated_ravager",
+        "sno": 1862773
+      },
+      {
+        "category": "skill",
+        "enUS": "Scourge",
+        "esES": "Azote",
+        "i18n": "wowhead-es",
+        "idName": "curated_scourge",
+        "sno": 1871801
+      },
+      {
+        "category": "skill",
+        "enUS": "The Hunter",
+        "esES": "El Cazador",
+        "i18n": "wowhead-es",
+        "idName": "curated_the_hunter",
+        "sno": 1663206
       },
       {
         "category": "skill",
@@ -16,30 +40,6 @@
         "esES": null,
         "i18n": "none",
         "idName": "skill__quill_volley",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Ravager",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__ravager",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Scourge",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__scourge",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "The Hunter",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__the_hunter",
         "sno": null
       },
       {
@@ -54,18 +54,63 @@
     "coreUniques": [],
     "fields": [
       {
-        "key": "skill:skill__armored_hide",
+        "key": "skill:curated_armored_hide",
         "label": {
           "category": "skill",
           "enUS": "Armored Hide",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__armored_hide",
-          "sno": null
+          "esES": "Piel blindada",
+          "i18n": "wowhead-es",
+          "idName": "curated_armored_hide",
+          "sno": 1871764
         },
         "status": "agree",
         "values": {
           "d4builds:44eb96bd-9712-4eae-8d4a-e41301a00177:0": 9
+        }
+      },
+      {
+        "key": "skill:curated_ravager",
+        "label": {
+          "category": "skill",
+          "enUS": "Ravager",
+          "esES": "Estragador",
+          "i18n": "wowhead-es",
+          "idName": "curated_ravager",
+          "sno": 1862773
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:44eb96bd-9712-4eae-8d4a-e41301a00177:0": 1
+        }
+      },
+      {
+        "key": "skill:curated_scourge",
+        "label": {
+          "category": "skill",
+          "enUS": "Scourge",
+          "esES": "Azote",
+          "i18n": "wowhead-es",
+          "idName": "curated_scourge",
+          "sno": 1871801
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:44eb96bd-9712-4eae-8d4a-e41301a00177:0": 1
+        }
+      },
+      {
+        "key": "skill:curated_the_hunter",
+        "label": {
+          "category": "skill",
+          "enUS": "The Hunter",
+          "esES": "El Cazador",
+          "i18n": "wowhead-es",
+          "idName": "curated_the_hunter",
+          "sno": 1663206
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:44eb96bd-9712-4eae-8d4a-e41301a00177:0": 15
         }
       },
       {
@@ -76,51 +121,6 @@
           "esES": null,
           "i18n": "none",
           "idName": "skill__quill_volley",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:44eb96bd-9712-4eae-8d4a-e41301a00177:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__ravager",
-        "label": {
-          "category": "skill",
-          "enUS": "Ravager",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__ravager",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:44eb96bd-9712-4eae-8d4a-e41301a00177:0": 1
-        }
-      },
-      {
-        "key": "skill:skill__scourge",
-        "label": {
-          "category": "skill",
-          "enUS": "Scourge",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__scourge",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:44eb96bd-9712-4eae-8d4a-e41301a00177:0": 1
-        }
-      },
-      {
-        "key": "skill:skill__the_hunter",
-        "label": {
-          "category": "skill",
-          "enUS": "The Hunter",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__the_hunter",
           "sno": null
         },
         "status": "agree",
@@ -202,10 +202,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Ravager",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__ravager",
-            "sno": null
+            "esES": "Estragador",
+            "i18n": "wowhead-es",
+            "idName": "curated_ravager",
+            "sno": 1862773
           },
           "runes": [
             {
@@ -242,10 +242,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Armored Hide",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__armored_hide",
-            "sno": null
+            "esES": "Piel blindada",
+            "i18n": "wowhead-es",
+            "idName": "curated_armored_hide",
+            "sno": 1871764
           },
           "runes": [
             {
@@ -282,10 +282,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Scourge",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__scourge",
-            "sno": null
+            "esES": "Azote",
+            "i18n": "wowhead-es",
+            "idName": "curated_scourge",
+            "sno": 1871801
           },
           "runes": [
             {
@@ -394,10 +394,10 @@
           "ref": {
             "category": "skill",
             "enUS": "The Hunter",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__the_hunter",
-            "sno": null
+            "esES": "El Cazador",
+            "i18n": "wowhead-es",
+            "idName": "curated_the_hunter",
+            "sno": 1663206
           },
           "runes": [
             {

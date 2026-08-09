@@ -5,18 +5,42 @@
       {
         "category": "skill",
         "enUS": "Call of the Ancients",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__call_of_the_ancients",
-        "sno": null
+        "esES": "Llamada a los Ancestros",
+        "i18n": "wowhead-es",
+        "idName": "curated_call_of_the_ancients",
+        "sno": 309802
       },
       {
         "category": "skill",
         "enUS": "Challenging Shout",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__challenging_shout",
-        "sno": null
+        "esES": "Grito desafiante",
+        "i18n": "wowhead-es",
+        "idName": "curated_challenging_shout",
+        "sno": 375484
+      },
+      {
+        "category": "skill",
+        "enUS": "Mighty Throw",
+        "esES": "Lanzamiento poderoso",
+        "i18n": "wowhead-es",
+        "idName": "curated_mighty_throw",
+        "sno": 1611316
+      },
+      {
+        "category": "skill",
+        "enUS": "Rallying Cry",
+        "esES": "Grito alentador",
+        "i18n": "wowhead-es",
+        "idName": "curated_rallying_cry",
+        "sno": 211938
+      },
+      {
+        "category": "skill",
+        "enUS": "War Cry",
+        "esES": "Grito de guerra",
+        "i18n": "wowhead-es",
+        "idName": "curated_war_cry",
+        "sno": 184600
       },
       {
         "category": "skill",
@@ -25,43 +49,19 @@
         "i18n": "none",
         "idName": "skill__iron_skin",
         "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Mighty Throw",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__mighty_throw",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Rallying Cry",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__rallying_cry",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "War Cry",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__war_cry",
-        "sno": null
       }
     ],
     "coreUniques": [],
     "fields": [
       {
-        "key": "skill:skill__call_of_the_ancients",
+        "key": "skill:curated_call_of_the_ancients",
         "label": {
           "category": "skill",
           "enUS": "Call of the Ancients",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__call_of_the_ancients",
-          "sno": null
+          "esES": "Llamada a los Ancestros",
+          "i18n": "wowhead-es",
+          "idName": "curated_call_of_the_ancients",
+          "sno": 309802
         },
         "status": "agree",
         "values": {
@@ -69,14 +69,59 @@
         }
       },
       {
-        "key": "skill:skill__challenging_shout",
+        "key": "skill:curated_challenging_shout",
         "label": {
           "category": "skill",
           "enUS": "Challenging Shout",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__challenging_shout",
-          "sno": null
+          "esES": "Grito desafiante",
+          "i18n": "wowhead-es",
+          "idName": "curated_challenging_shout",
+          "sno": 375484
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:8124c2fe-2a76-47fa-9584-aa79f69ec16e:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_mighty_throw",
+        "label": {
+          "category": "skill",
+          "enUS": "Mighty Throw",
+          "esES": "Lanzamiento poderoso",
+          "i18n": "wowhead-es",
+          "idName": "curated_mighty_throw",
+          "sno": 1611316
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:8124c2fe-2a76-47fa-9584-aa79f69ec16e:0": 1
+        }
+      },
+      {
+        "key": "skill:curated_rallying_cry",
+        "label": {
+          "category": "skill",
+          "enUS": "Rallying Cry",
+          "esES": "Grito alentador",
+          "i18n": "wowhead-es",
+          "idName": "curated_rallying_cry",
+          "sno": 211938
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:8124c2fe-2a76-47fa-9584-aa79f69ec16e:0": 15
+        }
+      },
+      {
+        "key": "skill:curated_war_cry",
+        "label": {
+          "category": "skill",
+          "enUS": "War Cry",
+          "esES": "Grito de guerra",
+          "i18n": "wowhead-es",
+          "idName": "curated_war_cry",
+          "sno": 184600
         },
         "status": "agree",
         "values": {
@@ -97,56 +142,11 @@
         "values": {
           "d4builds:8124c2fe-2a76-47fa-9584-aa79f69ec16e:0": 4
         }
-      },
-      {
-        "key": "skill:skill__mighty_throw",
-        "label": {
-          "category": "skill",
-          "enUS": "Mighty Throw",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__mighty_throw",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:8124c2fe-2a76-47fa-9584-aa79f69ec16e:0": 1
-        }
-      },
-      {
-        "key": "skill:skill__rallying_cry",
-        "label": {
-          "category": "skill",
-          "enUS": "Rallying Cry",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__rallying_cry",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:8124c2fe-2a76-47fa-9584-aa79f69ec16e:0": 15
-        }
-      },
-      {
-        "key": "skill:skill__war_cry",
-        "label": {
-          "category": "skill",
-          "enUS": "War Cry",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__war_cry",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:8124c2fe-2a76-47fa-9584-aa79f69ec16e:0": 15
-        }
       }
     ],
     "variantCount": 1
   },
-  "correlationKey": "barbarian::skill__war_cry::generic",
+  "correlationKey": "barbarian::curated_war_cry::generic",
   "gameVersion": {
     "patch": "3.1.2",
     "season": 14
@@ -171,7 +171,7 @@
   },
   "title": {
     "en": "Ancients",
-    "es": "Ancients"
+    "es": "Grito de guerra"
   },
   "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
@@ -242,10 +242,10 @@
           "ref": {
             "category": "skill",
             "enUS": "War Cry",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__war_cry",
-            "sno": null
+            "esES": "Grito de guerra",
+            "i18n": "wowhead-es",
+            "idName": "curated_war_cry",
+            "sno": 184600
           },
           "runes": [
             {
@@ -289,10 +289,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Challenging Shout",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__challenging_shout",
-            "sno": null
+            "esES": "Grito desafiante",
+            "i18n": "wowhead-es",
+            "idName": "curated_challenging_shout",
+            "sno": 375484
           },
           "runes": [
             {
@@ -336,10 +336,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Rallying Cry",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__rallying_cry",
-            "sno": null
+            "esES": "Grito alentador",
+            "i18n": "wowhead-es",
+            "idName": "curated_rallying_cry",
+            "sno": 211938
           },
           "runes": [
             {
@@ -376,10 +376,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Call of the Ancients",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__call_of_the_ancients",
-            "sno": null
+            "esES": "Llamada a los Ancestros",
+            "i18n": "wowhead-es",
+            "idName": "curated_call_of_the_ancients",
+            "sno": 309802
           },
           "runes": [
             {
@@ -416,10 +416,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Mighty Throw",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__mighty_throw",
-            "sno": null
+            "esES": "Lanzamiento poderoso",
+            "i18n": "wowhead-es",
+            "idName": "curated_mighty_throw",
+            "sno": 1611316
           },
           "runes": [
             {

@@ -1,0 +1,158 @@
+---
+import type { GearItem } from '@d4es/schema';
+import { iconoUnico, iconoAspecto, COLOR_CALIDAD } from '../lib/iconos';
+import { loadDiccionario } from '../lib/data';
+
+/**
+ * Una pieza de equipo, con el mismo reparto de informacion que el planificador de
+ * d4builds: icono, nombre coloreado por calidad, aspecto, afijos con marca de superior
+ * y de templado, y engarces. El detalle largo va al tooltip.
+ */
+interface Props {
+  item: GearItem;
+  idTooltip: string;
+  /** A la derecha se alinea al reves, como el muneco del juego. */
+  derecha?: boolean;
+}
+
+const { item, idTooltip, derecha = false } = Astro.props;
+const dict = loadDiccionario();
+
+const principal = item.item ?? item.aspect;
+const nombre = principal ? (principal.esES ?? principal.enUS) : 'Vacío';
+const sinTraducir = principal ? principal.esES === null : false;
+const colorNombre = item.mythic.isMythic ? 'text-rareza-mitico' : (COLOR_CALIDAD[item.quality] ?? 'text-rareza-normal');
+
+const icono = item.item ? iconoUnico(item.item.enUS) : item.aspect ? iconoAspecto(item.aspect.enUS) : null;
+
+// Descripcion del poder del unico o del aspecto, en castellano, para el tooltip.
+const claveDesc = item.item
+  ? `unique:${item.item.idName}`
+  : item.aspect
+    ? `aspect:${item.aspect.idName}`
+    : null;
+const descripcion = claveDesc ? (dict.byIdName[claveDesc]?.desc ?? null) : null;
+
+const NOMBRE_SLOT: Record<string, string> = {
+  helm: 'Yelmo',
+  chest: 'Pechera',
+  gloves: 'Guantes',
+  pants: 'Pantalones',
+  boots: 'Botas',
+  amulet: 'Amuleto',
+  ring1: 'Anillo 1',
+  ring2: 'Anillo 2',
+  weapon: 'Arma',
+  weapon2: 'Arma 2',
+  weapon3: 'Arma 3',
+  weapon4: 'Arma 4',
+  offhand: 'Mano izquierda',
+};
+const etiquetaSlot = NOMBRE_SLOT[item.slot] ?? item.slot;
+---
+
+<div class:list={['flex items-start gap-3', derecha && 'flex-row-reverse text-right']}>
+  <button
+    type="button"
+    class="slot-equipo relative block h-14 w-14 shrink-0 rounded bg-piedra-alta"
+    data-tooltip={idTooltip}
+    aria-describedby={idTooltip}
+  >
+    {
+      icono && (
+        <img
+          src={icono}
+          alt=""
+          width="56"
+          height="56"
+          loading="lazy"
+          class="h-full w-full rounded object-cover"
+          onerror="this.style.display='none'"
+        />
+      )
+    }
+    {
+      item.sockets.length > 0 && (
+        <span class:list={['absolute -bottom-1 flex gap-0.5', derecha ? 'left-0' : 'right-0']}>
+          {item.sockets.map((s) => (
+            <span
+              class="h-2.5 w-2.5 rotate-45 border border-oro-apagado/70 bg-abismo"
+              title={s.esES ?? s.enUS}
+            />
+          ))}
+        </span>
+      )
+    }
+  </button>
+
+  <div class="min-w-0 flex-1">
+    <p class="text-[0.65rem] uppercase tracking-wider text-humo">{etiquetaSlot}</p>
+    <p class={`text-sm leading-tight ${colorNombre}`}>
+      {nombre}
+      {sinTraducir && <span class="chip-en" data-i18n-missing>EN</span>}
+      {item.mythic.isMythic && <span class="ml-1 text-[0.6rem] uppercase tracking-wider">mítico</span>}
+    </p>
+    {
+      item.affixes.length > 0 && (
+        <ul class:list={['mt-1 space-y-0.5', derecha && 'flex flex-col items-end']}>
+          {item.affixes.slice(0, 4).map((a) => (
+            <li class="text-[0.7rem] leading-tight text-ceniza">
+              {a.greater && <span class="text-oro" title="Afijo superior">★ </span>}
+              <span class={a.tempered ? 'text-rareza-magico' : ''}>{a.ref.esES ?? a.ref.enUS}</span>
+              {a.tempered && <span class="text-humo" title="Afijo templado"> ⚒</span>}
+            </li>
+          ))}
+        </ul>
+      )
+    }
+  </div>
+</div>
+
+<template id={idTooltip}>
+  <div class="tt-titulo">{nombre}</div>
+  <div class="tt-meta">
+    <span>{etiquetaSlot}</span>
+    {item.mythic.isMythic ? <span>Mítico</span> : <span>{item.quality}</span>}
+  </div>
+  {descripcion && <p class="tt-descripcion">{descripcion}</p>}
+  {
+    item.affixes.length > 0 && (
+      <div class="tt-runas">
+        {item.affixes.map((a) => (
+          <div>
+            <span class="tt-runa-nombre">
+              {a.greater ? '★' : '·'} {a.ref.esES ?? a.ref.enUS}
+            </span>
+            {a.tempered && <span class="tt-runa-desc"> (templado)</span>}
+          </div>
+        ))}
+      </div>
+    )
+  }
+  {
+    item.sockets.length > 0 && (
+      <div class="tt-runas">
+        {item.sockets.map((s) => (
+          <div>
+            <span class="tt-runa-nombre">◆ {s.esES ?? s.enUS}</span>
+          </div>
+        ))}
+      </div>
+    )
+  }
+</template>
+
+<style>
+  .slot-equipo {
+    border: 1px solid var(--color-grabado-vivo);
+    box-shadow: inset 0 0 10px rgb(0 0 0 / 0.6);
+    transition:
+      border-color 120ms ease,
+      transform 120ms ease;
+  }
+  .slot-equipo:hover,
+  .slot-equipo:focus-visible {
+    border-color: var(--color-oro-apagado);
+    transform: scale(1.05);
+  }
+</style>

@@ -5,18 +5,42 @@
       {
         "category": "skill",
         "enUS": "Cataclysm",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__cataclysm",
-        "sno": null
+        "esES": "Cataclismo",
+        "i18n": "wowhead-es",
+        "idName": "curated_cataclysm",
+        "sno": 266570
       },
       {
         "category": "skill",
         "enUS": "Claw",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__claw",
-        "sno": null
+        "esES": "Desgarrar",
+        "i18n": "wowhead-es",
+        "idName": "curated_claw",
+        "sno": 439581
+      },
+      {
+        "category": "skill",
+        "enUS": "Debilitating Roar",
+        "esES": "Rugido debilitante",
+        "i18n": "wowhead-es",
+        "idName": "curated_debilitating_roar",
+        "sno": 336238
+      },
+      {
+        "category": "skill",
+        "enUS": "Earthen Bulwark",
+        "esES": "Baluarte de tierra",
+        "i18n": "wowhead-es",
+        "idName": "curated_earthen_bulwark",
+        "sno": 333421
+      },
+      {
+        "category": "skill",
+        "enUS": "Lightning Storm",
+        "esES": "Tormenta de rayos",
+        "i18n": "wowhead-es",
+        "idName": "curated_lightning_storm",
+        "sno": 548399
       },
       {
         "category": "skill",
@@ -25,43 +49,19 @@
         "i18n": "none",
         "idName": "skill__cyclone_armor",
         "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Debilitating Roar",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__debilitating_roar",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Earthen Bulwark",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__earthen_bulwark",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Lightning Storm",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__lightning_storm",
-        "sno": null
       }
     ],
     "coreUniques": [],
     "fields": [
       {
-        "key": "skill:skill__cataclysm",
+        "key": "skill:curated_cataclysm",
         "label": {
           "category": "skill",
           "enUS": "Cataclysm",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__cataclysm",
-          "sno": null
+          "esES": "Cataclismo",
+          "i18n": "wowhead-es",
+          "idName": "curated_cataclysm",
+          "sno": 266570
         },
         "status": "agree",
         "values": {
@@ -69,18 +69,63 @@
         }
       },
       {
-        "key": "skill:skill__claw",
+        "key": "skill:curated_claw",
         "label": {
           "category": "skill",
           "enUS": "Claw",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__claw",
-          "sno": null
+          "esES": "Desgarrar",
+          "i18n": "wowhead-es",
+          "idName": "curated_claw",
+          "sno": 439581
         },
         "status": "agree",
         "values": {
           "d4builds:10de5d53-31d3-4d2e-a843-52f6f3f7e4c1:0": 1
+        }
+      },
+      {
+        "key": "skill:curated_debilitating_roar",
+        "label": {
+          "category": "skill",
+          "enUS": "Debilitating Roar",
+          "esES": "Rugido debilitante",
+          "i18n": "wowhead-es",
+          "idName": "curated_debilitating_roar",
+          "sno": 336238
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:10de5d53-31d3-4d2e-a843-52f6f3f7e4c1:0": 8
+        }
+      },
+      {
+        "key": "skill:curated_earthen_bulwark",
+        "label": {
+          "category": "skill",
+          "enUS": "Earthen Bulwark",
+          "esES": "Baluarte de tierra",
+          "i18n": "wowhead-es",
+          "idName": "curated_earthen_bulwark",
+          "sno": 333421
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:10de5d53-31d3-4d2e-a843-52f6f3f7e4c1:0": 12
+        }
+      },
+      {
+        "key": "skill:curated_lightning_storm",
+        "label": {
+          "category": "skill",
+          "enUS": "Lightning Storm",
+          "esES": "Tormenta de rayos",
+          "i18n": "wowhead-es",
+          "idName": "curated_lightning_storm",
+          "sno": 548399
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:10de5d53-31d3-4d2e-a843-52f6f3f7e4c1:0": 15
         }
       },
       {
@@ -97,56 +142,11 @@
         "values": {
           "d4builds:10de5d53-31d3-4d2e-a843-52f6f3f7e4c1:0": 15
         }
-      },
-      {
-        "key": "skill:skill__debilitating_roar",
-        "label": {
-          "category": "skill",
-          "enUS": "Debilitating Roar",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__debilitating_roar",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:10de5d53-31d3-4d2e-a843-52f6f3f7e4c1:0": 8
-        }
-      },
-      {
-        "key": "skill:skill__earthen_bulwark",
-        "label": {
-          "category": "skill",
-          "enUS": "Earthen Bulwark",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__earthen_bulwark",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:10de5d53-31d3-4d2e-a843-52f6f3f7e4c1:0": 12
-        }
-      },
-      {
-        "key": "skill:skill__lightning_storm",
-        "label": {
-          "category": "skill",
-          "enUS": "Lightning Storm",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__lightning_storm",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:10de5d53-31d3-4d2e-a843-52f6f3f7e4c1:0": 15
-        }
       }
     ],
     "variantCount": 1
   },
-  "correlationKey": "druid::skill__lightning_storm::generic",
+  "correlationKey": "druid::curated_lightning_storm::generic",
   "gameVersion": {
     "patch": "3.1.2",
     "season": 14
@@ -171,7 +171,7 @@
   },
   "title": {
     "en": "Lightning Storm",
-    "es": "Lightning Storm"
+    "es": "Tormenta de rayos"
   },
   "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
@@ -202,10 +202,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Earthen Bulwark",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__earthen_bulwark",
-            "sno": null
+            "esES": "Baluarte de tierra",
+            "i18n": "wowhead-es",
+            "idName": "curated_earthen_bulwark",
+            "sno": 333421
           },
           "runes": [
             {
@@ -242,10 +242,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Debilitating Roar",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__debilitating_roar",
-            "sno": null
+            "esES": "Rugido debilitante",
+            "i18n": "wowhead-es",
+            "idName": "curated_debilitating_roar",
+            "sno": 336238
           },
           "runes": [
             {
@@ -314,10 +314,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Cataclysm",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__cataclysm",
-            "sno": null
+            "esES": "Cataclismo",
+            "i18n": "wowhead-es",
+            "idName": "curated_cataclysm",
+            "sno": 266570
           },
           "runes": [
             {
@@ -354,10 +354,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Claw",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__claw",
-            "sno": null
+            "esES": "Desgarrar",
+            "i18n": "wowhead-es",
+            "idName": "curated_claw",
+            "sno": 439581
           },
           "runes": [
             {
@@ -394,10 +394,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Lightning Storm",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__lightning_storm",
-            "sno": null
+            "esES": "Tormenta de rayos",
+            "i18n": "wowhead-es",
+            "idName": "curated_lightning_storm",
+            "sno": 548399
           },
           "runes": [
             {

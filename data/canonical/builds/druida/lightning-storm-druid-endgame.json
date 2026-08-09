@@ -5,63 +5,63 @@
       {
         "category": "skill",
         "enUS": "Debilitating Roar",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__debilitating_roar",
-        "sno": null
+        "esES": "Rugido debilitante",
+        "i18n": "wowhead-es",
+        "idName": "curated_debilitating_roar",
+        "sno": 336238
       },
       {
         "category": "skill",
         "enUS": "Grizzly Rage",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__grizzly_rage",
-        "sno": null
+        "esES": "Ira de oso pardo",
+        "i18n": "wowhead-es",
+        "idName": "curated_grizzly_rage",
+        "sno": 267021
       },
       {
         "category": "skill",
         "enUS": "Lightning Storm",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__lightning_storm",
-        "sno": null
+        "esES": "Tormenta de rayos",
+        "i18n": "wowhead-es",
+        "idName": "curated_lightning_storm",
+        "sno": 548399
       },
       {
         "category": "skill",
         "enUS": "Stone Burst",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__stone_burst",
-        "sno": null
+        "esES": "Estallido de piedras",
+        "i18n": "wowhead-es",
+        "idName": "curated_stone_burst",
+        "sno": 1473878
       },
       {
         "category": "skill",
         "enUS": "Storm Strike",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__storm_strike",
-        "sno": null
+        "esES": "Golpe de tormenta",
+        "i18n": "wowhead-es",
+        "idName": "curated_storm_strike",
+        "sno": 309320
       },
       {
         "category": "skill",
         "enUS": "Wolves",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__wolves",
-        "sno": null
+        "esES": "Lobos",
+        "i18n": "wowhead-es",
+        "idName": "curated_wolves",
+        "sno": 265663
       }
     ],
     "coreUniques": [],
     "fields": [
       {
-        "key": "skill:skill__debilitating_roar",
+        "key": "skill:curated_debilitating_roar",
         "label": {
           "category": "skill",
           "enUS": "Debilitating Roar",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__debilitating_roar",
-          "sno": null
+          "esES": "Rugido debilitante",
+          "i18n": "wowhead-es",
+          "idName": "curated_debilitating_roar",
+          "sno": 336238
         },
         "status": "agree",
         "values": {
@@ -69,14 +69,14 @@
         }
       },
       {
-        "key": "skill:skill__grizzly_rage",
+        "key": "skill:curated_grizzly_rage",
         "label": {
           "category": "skill",
           "enUS": "Grizzly Rage",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__grizzly_rage",
-          "sno": null
+          "esES": "Ira de oso pardo",
+          "i18n": "wowhead-es",
+          "idName": "curated_grizzly_rage",
+          "sno": 267021
         },
         "status": "agree",
         "values": {
@@ -84,14 +84,14 @@
         }
       },
       {
-        "key": "skill:skill__lightning_storm",
+        "key": "skill:curated_lightning_storm",
         "label": {
           "category": "skill",
           "enUS": "Lightning Storm",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__lightning_storm",
-          "sno": null
+          "esES": "Tormenta de rayos",
+          "i18n": "wowhead-es",
+          "idName": "curated_lightning_storm",
+          "sno": 548399
         },
         "status": "agree",
         "values": {
@@ -99,14 +99,14 @@
         }
       },
       {
-        "key": "skill:skill__stone_burst",
+        "key": "skill:curated_stone_burst",
         "label": {
           "category": "skill",
           "enUS": "Stone Burst",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__stone_burst",
-          "sno": null
+          "esES": "Estallido de piedras",
+          "i18n": "wowhead-es",
+          "idName": "curated_stone_burst",
+          "sno": 1473878
         },
         "status": "agree",
         "values": {
@@ -114,14 +114,14 @@
         }
       },
       {
-        "key": "skill:skill__storm_strike",
+        "key": "skill:curated_storm_strike",
         "label": {
           "category": "skill",
           "enUS": "Storm Strike",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__storm_strike",
-          "sno": null
+          "esES": "Golpe de tormenta",
+          "i18n": "wowhead-es",
+          "idName": "curated_storm_strike",
+          "sno": 309320
         },
         "status": "agree",
         "values": {
@@ -129,14 +129,14 @@
         }
       },
       {
-        "key": "skill:skill__wolves",
+        "key": "skill:curated_wolves",
         "label": {
           "category": "skill",
           "enUS": "Wolves",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__wolves",
-          "sno": null
+          "esES": "Lobos",
+          "i18n": "wowhead-es",
+          "idName": "curated_wolves",
+          "sno": 265663
         },
         "status": "agree",
         "values": {
@@ -146,7 +146,7 @@
     ],
     "variantCount": 1
   },
-  "correlationKey": "druid::skill__lightning_storm::generic",
+  "correlationKey": "druid::curated_lightning_storm::generic",
   "gameVersion": {
     "patch": "3.1.2",
     "season": 14
@@ -171,7 +171,7 @@
   },
   "title": {
     "en": "Lightning Storm",
-    "es": "Lightning Storm"
+    "es": "Tormenta de rayos"
   },
   "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
@@ -202,10 +202,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Grizzly Rage",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__grizzly_rage",
-            "sno": null
+            "esES": "Ira de oso pardo",
+            "i18n": "wowhead-es",
+            "idName": "curated_grizzly_rage",
+            "sno": 267021
           },
           "runes": [
             {
@@ -242,10 +242,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Stone Burst",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__stone_burst",
-            "sno": null
+            "esES": "Estallido de piedras",
+            "i18n": "wowhead-es",
+            "idName": "curated_stone_burst",
+            "sno": 1473878
           },
           "runes": [
             {
@@ -274,10 +274,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Wolves",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__wolves",
-            "sno": null
+            "esES": "Lobos",
+            "i18n": "wowhead-es",
+            "idName": "curated_wolves",
+            "sno": 265663
           },
           "runes": [
             {
@@ -306,10 +306,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Debilitating Roar",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__debilitating_roar",
-            "sno": null
+            "esES": "Rugido debilitante",
+            "i18n": "wowhead-es",
+            "idName": "curated_debilitating_roar",
+            "sno": 336238
           },
           "runes": [
             {
@@ -346,10 +346,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Lightning Storm",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__lightning_storm",
-            "sno": null
+            "esES": "Tormenta de rayos",
+            "i18n": "wowhead-es",
+            "idName": "curated_lightning_storm",
+            "sno": 548399
           },
           "runes": [
             {
@@ -386,10 +386,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Storm Strike",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__storm_strike",
-            "sno": null
+            "esES": "Golpe de tormenta",
+            "i18n": "wowhead-es",
+            "idName": "curated_storm_strike",
+            "sno": 309320
           },
           "runes": [
             {

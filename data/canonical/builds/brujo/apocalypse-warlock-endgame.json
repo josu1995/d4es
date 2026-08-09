@@ -5,18 +5,26 @@
       {
         "category": "skill",
         "enUS": "Apocalypse",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__apocalypse",
-        "sno": null
+        "esES": "Apocalipsis",
+        "i18n": "wowhead-es",
+        "idName": "curated_apocalypse",
+        "sno": 2221260
       },
       {
         "category": "skill",
         "enUS": "Bombardment",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__bombardment",
-        "sno": null
+        "esES": "Bombardeo",
+        "i18n": "wowhead-es",
+        "idName": "curated_bombardment",
+        "sno": 2245719
+      },
+      {
+        "category": "skill",
+        "enUS": "Sigil of Subversion",
+        "esES": "Sigilo desestabilizador",
+        "i18n": "wowhead-es",
+        "idName": "curated_sigil_of_subversion",
+        "sno": 2218209
       },
       {
         "category": "skill",
@@ -24,14 +32,6 @@
         "esES": null,
         "i18n": "none",
         "idName": "skill__dark_prison",
-        "sno": null
-      },
-      {
-        "category": "skill",
-        "enUS": "Sigil of Subversion",
-        "esES": null,
-        "i18n": "none",
-        "idName": "skill__sigil_of_subversion",
         "sno": null
       },
       {
@@ -54,14 +54,14 @@
     "coreUniques": [],
     "fields": [
       {
-        "key": "skill:skill__apocalypse",
+        "key": "skill:curated_apocalypse",
         "label": {
           "category": "skill",
           "enUS": "Apocalypse",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__apocalypse",
-          "sno": null
+          "esES": "Apocalipsis",
+          "i18n": "wowhead-es",
+          "idName": "curated_apocalypse",
+          "sno": 2221260
         },
         "status": "agree",
         "values": {
@@ -69,18 +69,33 @@
         }
       },
       {
-        "key": "skill:skill__bombardment",
+        "key": "skill:curated_bombardment",
         "label": {
           "category": "skill",
           "enUS": "Bombardment",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__bombardment",
-          "sno": null
+          "esES": "Bombardeo",
+          "i18n": "wowhead-es",
+          "idName": "curated_bombardment",
+          "sno": 2245719
         },
         "status": "agree",
         "values": {
           "d4builds:c8c2a2fc-e327-4df5-8b02-c57407e76de7:0": 12
+        }
+      },
+      {
+        "key": "skill:curated_sigil_of_subversion",
+        "label": {
+          "category": "skill",
+          "enUS": "Sigil of Subversion",
+          "esES": "Sigilo desestabilizador",
+          "i18n": "wowhead-es",
+          "idName": "curated_sigil_of_subversion",
+          "sno": 2218209
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:c8c2a2fc-e327-4df5-8b02-c57407e76de7:0": 1
         }
       },
       {
@@ -91,21 +106,6 @@
           "esES": null,
           "i18n": "none",
           "idName": "skill__dark_prison",
-          "sno": null
-        },
-        "status": "agree",
-        "values": {
-          "d4builds:c8c2a2fc-e327-4df5-8b02-c57407e76de7:0": 1
-        }
-      },
-      {
-        "key": "skill:skill__sigil_of_subversion",
-        "label": {
-          "category": "skill",
-          "enUS": "Sigil of Subversion",
-          "esES": null,
-          "i18n": "none",
-          "idName": "skill__sigil_of_subversion",
           "sno": null
         },
         "status": "agree",
@@ -146,7 +146,7 @@
     ],
     "variantCount": 1
   },
-  "correlationKey": "warlock::skill__apocalypse::generic",
+  "correlationKey": "warlock::curated_apocalypse::generic",
   "gameVersion": {
     "patch": "3.1.2",
     "season": 14
@@ -171,7 +171,7 @@
   },
   "title": {
     "en": "Apocalypse",
-    "es": "Apocalypse"
+    "es": "Apocalipsis"
   },
   "updatedAt": "2026-08-09T02:30:41.994Z",
   "variants": [
@@ -249,10 +249,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Sigil of Subversion",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__sigil_of_subversion",
-            "sno": null
+            "esES": "Sigilo desestabilizador",
+            "i18n": "wowhead-es",
+            "idName": "curated_sigil_of_subversion",
+            "sno": 2218209
           },
           "runes": [
             {
@@ -358,10 +358,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Apocalypse",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__apocalypse",
-            "sno": null
+            "esES": "Apocalipsis",
+            "i18n": "wowhead-es",
+            "idName": "curated_apocalypse",
+            "sno": 2221260
           },
           "runes": [
             {
@@ -398,10 +398,10 @@
           "ref": {
             "category": "skill",
             "enUS": "Bombardment",
-            "esES": null,
-            "i18n": "none",
-            "idName": "skill__bombardment",
-            "sno": null
+            "esES": "Bombardeo",
+            "i18n": "wowhead-es",
+            "idName": "curated_bombardment",
+            "sno": 2245719
           },
           "runes": [
             {

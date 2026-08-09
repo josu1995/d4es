@@ -25,6 +25,24 @@ export function iconoUnico(nombreEn: string): string {
   return `${CDN}/Uniques/2/${skillIconSlug(nombreEn)}.png`;
 }
 
+/** Los aspectos viven en la carpeta del Codice de Poder. */
+export function iconoAspecto(nombreEn: string): string {
+  return `${CDN}/Codex/${skillIconSlug(nombreEn)}.png`;
+}
+
+export function iconoRuna(nombreEn: string): string {
+  return `${CDN}/Runes/${skillIconSlug(nombreEn)}.png`;
+}
+
+/** Color del nombre segun la calidad, como en el juego. */
+export const COLOR_CALIDAD: Record<string, string> = {
+  unique: 'text-rareza-unico',
+  legendary: 'text-rareza-legendario',
+  rare: 'text-rareza-raro',
+  magic: 'text-rareza-magico',
+  normal: 'text-rareza-normal',
+};
+
 /** Colores por categoria de habilidad, alineados con la jerarquia visual del juego. */
 export const COLOR_CATEGORIA: Record<string, string> = {
   Basic: 'var(--color-ceniza)',
