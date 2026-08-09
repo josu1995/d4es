@@ -60,6 +60,17 @@ export function iconoClase(classId: string): string {
   return servir(iconoDeClase(classId));
 }
 
+/**
+ * Igual que `iconoSkill`, pero partiendo del slug ya calculado que guarda el indice de
+ * builds (`skillIcons`), en vez del nombre.
+ */
+export function iconoSkillPorSlug(slug: string): string {
+  return servir({
+    url: `${ICONO_CDN}/Skills/VoH2/${encodeURIComponent(slug)}.png`,
+    ruta: `/iconos/habilidades/${encodeURIComponent(slug)}.png`,
+  });
+}
+
 export function iconoUnico(nombreEn: string): string {
   return servir(iconoDeUnico(nombreEn));
 }

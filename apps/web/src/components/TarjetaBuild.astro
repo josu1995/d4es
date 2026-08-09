@@ -1,7 +1,7 @@
 ---
 import type { BuildIndexRow } from '@d4es/schema';
 import { buildUrl } from '../lib/data';
-import { iconoClase } from '../lib/iconos';
+import { iconoClase, iconoSkillPorSlug } from '../lib/iconos';
 
 interface Props {
   build: BuildIndexRow;
@@ -18,10 +18,9 @@ const COLOR_TIER: Record<string, string> = {
 };
 const tierClase = build.tierLabel ? (COLOR_TIER[build.tierLabel[0] ?? ''] ?? '') : '';
 
-const CDN_SKILLS = 'https://sunderarmor.com/DIABLO4/Skills/VoH2';
 // Como en las tarjetas de d4builds: una fila con los iconos de las habilidades.
 const iconos = build.skillIcons.slice(0, 6).map((slug, i) => ({
-  src: `${CDN_SKILLS}/${slug}.png`,
+  src: iconoSkillPorSlug(slug),
   alt: build.skills[i] ?? '',
 }));
 ---

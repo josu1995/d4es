@@ -82,10 +82,17 @@ export async function reunirIconos(): Promise<Icono[]> {
   for (const c of CLASSES) anadir(iconoDeClase(c.id));
   for (const r of RANURAS) anadir(iconoDeRanura(r));
 
-  const dataset = await readJsonIfExists<{ byName: Record<string, { name: string }> }>(
+  const dataset = await readJsonIfExists<{ byName: Record<string, { name: string; class: string | null }> }>(
     join(PATHS.canonical, 'skills-dataset.json'),
   );
-  for (const s of Object.values(dataset?.byName ?? {})) anadir(iconoHabilidad(s.name));
+  for (const s of Object.values(dataset?.byName ?? {})) {
+    // Las entradas SIN clase de ese dataset no son habilidades: son los nodos de plan de
+    // guerra (y tres disparadores de refuerzo). Sus iconos ya vienen del catalogo de
+    // planes, con el nombre de fichero exacto que publica la fuente; pedirlos tambien por
+    // aqui solo generaba 404 duplicados.
+    if (!s.class) continue;
+    anadir(iconoHabilidad(s.name));
+  }
 
   const planes = await readJsonIfExists<WarPlansDataset>(join(PATHS.canonical, 'warplans-dataset.json'));
   for (const a of planes?.activities ?? []) {

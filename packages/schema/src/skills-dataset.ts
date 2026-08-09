@@ -55,9 +55,21 @@ export function skillNameKey(name: string): string {
 /**
  * Slug de icono de la fuente: "Charge Battering Ram" -> "charge_battering_ram".
  * Verificado contra las URLs reales de sunderarmor.com/DIABLO4/Skills/VoH2/.
+ *
+ * El APOSTROFO SE CONSERVA: el CDN publica "choron's_haste.png" y "esu's_heirloom.png".
+ * Comerselo (que es lo que hace `skillNameKey`, pensado para buscar, no para nombrar
+ * ficheros) dejaba 44 iconos de unicos pidiendo una URL que no existe. No se notaba
+ * porque la web esconde la imagen rota, asi que llevaba tiempo asi en silencio; salio al
+ * descargarlos, que es cuando un 404 deja de ser invisible.
  */
 export function skillIconSlug(name: string): string {
-  return skillNameKey(name).replace(/ /g, '_');
+  return name
+    .normalize('NFD')
+    .replace(/\p{Diacritic}/gu, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9']+/g, ' ')
+    .trim()
+    .replace(/ /g, '_');
 }
 
 /** Quita las llaves de los valores plantilla de la fuente: "{71} damage" -> "71 damage". */
