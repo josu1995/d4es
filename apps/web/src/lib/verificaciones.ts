@@ -1,6 +1,7 @@
 import { readFileSync, existsSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
-import { ROOT } from './data';
+import { ROOT, loadBuilds } from './data';
+import { loadContenido } from './contenido';
 
 /**
  * Recorre el contenido curado y saca TODO lo que no está verificado dentro del juego.
@@ -98,6 +99,53 @@ export function pendientesDeVerificar(): Pendiente[] {
   }
   cache = salida;
   return cache;
+}
+
+export interface UnicoSinOrigen {
+  en: string;
+  es: string | null;
+  /** En cuantas builds publicadas aparece equipado. */
+  builds: number;
+}
+
+/**
+ * Únicos que las builds equipan de verdad y de los que NO sabemos decir de dónde salen.
+ *
+ * Es la otra cara del hueco de las tablas de botín. La tabla completa de cada jefe no
+ * está publicada por nadie de forma contrastable, así que no se puede rellenar; pero sí
+ * se puede decir exactamente QUÉ falta y en qué orden importa, cruzando dos cosas que ya
+ * tenemos: lo que llevan las 92 builds y el grafo curado de jefes. Ordenado por cuántas
+ * builds lo usan, porque no es lo mismo un único que llevan trece que uno que no lleva
+ * nadie.
+ */
+export function unicosSinOrigen(): UnicoSinOrigen[] {
+  const normal = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+
+  const conOrigen = new Set<string>();
+  for (const jefe of loadContenido().jefes) {
+    for (const u of jefe.unicos) conOrigen.add(normal(u));
+  }
+
+  const usados = new Map<string, { es: string | null; builds: number }>();
+  for (const build of loadBuilds()) {
+    // Un único que sale en dos variantes de la misma build cuenta una vez.
+    const enEstaBuild = new Set<string>();
+    for (const v of build.variants) {
+      for (const pieza of Object.values(v.gear)) {
+        if (!pieza.item || pieza.quality !== 'unique') continue;
+        enEstaBuild.add(pieza.item.enUS);
+        if (!usados.has(pieza.item.enUS)) {
+          usados.set(pieza.item.enUS, { es: pieza.item.esES, builds: 0 });
+        }
+      }
+    }
+    for (const en of enEstaBuild) usados.get(en)!.builds++;
+  }
+
+  return [...usados.entries()]
+    .filter(([en]) => !conOrigen.has(normal(en)))
+    .map(([en, v]) => ({ en, es: v.es, builds: v.builds }))
+    .sort((a, b) => b.builds - a.builds || a.en.localeCompare(b.en));
 }
 
 export function pendientesPorFichero(): { fichero: string; items: Pendiente[] }[] {

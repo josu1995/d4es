@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { pendientesDeVerificar, pendientesPorFichero } from '../../lib/verificaciones';
+import { pendientesDeVerificar, pendientesPorFichero, unicosSinOrigen } from '../../lib/verificaciones';
 import { loadEstado } from '../../lib/data';
 
 /**
@@ -14,6 +14,7 @@ import { loadEstado } from '../../lib/data';
 const estado = loadEstado();
 const todos = pendientesDeVerificar();
 const grupos = pendientesPorFichero();
+const sinOrigen = unicosSinOrigen();
 
 const ETIQUETA: Record<string, string> = {
   'por-verificar': 'Por verificar',
@@ -97,13 +98,40 @@ const FICHERO_ES: Record<string, string> = {
     }
 
     <section class="mt-8 grabado rounded-lg bg-piedra p-5">
-      <h2 class="font-titulo text-xl">Sobre el botín de los jefes</h2>
+      <h2 class="font-titulo text-xl">Únicos sin origen conocido</h2>
       <p class="mt-2 text-sm text-ceniza">
         De cada jefe solo se publican sus únicos «firma», los que lo identifican. La tabla completa
         de botín no está: no hay ninguna fuente que la publique de forma fiable y contrastable, y
-        rellenarla a ojo sería justo lo que este proyecto no hace. Mientras no aparezca una fuente
-        que se pueda citar, se queda incompleta y dicho.
+        rellenarla a ojo sería justo lo que este proyecto no hace.
       </p>
+      <p class="mt-2 text-sm text-ceniza">
+        Lo que sí se puede decir es <strong class="text-pergamino">qué falta y en qué orden importa</strong>.
+        Estos {sinOrigen.length} únicos los equipan builds publicadas y la web no sabe decir de dónde
+        salen. Van por número de builds que los llevan: no es lo mismo uno que usan trece que uno que
+        no usa nadie.
+      </p>
+      <ol class="mt-4 space-y-1.5 text-sm">
+        {
+          sinOrigen.slice(0, 25).map((u) => (
+            <li class="flex gap-3">
+              <span class="w-16 shrink-0 text-right font-mono text-xs text-humo">
+                {u.builds} {u.builds === 1 ? 'build' : 'builds'}
+              </span>
+              <span class="text-pergamino">
+                {u.es ?? u.en}
+                {u.es && <span class="text-humo"> · {u.en}</span>}
+              </span>
+            </li>
+          ))
+        }
+      </ol>
+      {
+        sinOrigen.length > 25 && (
+          <p class="mt-3 text-xs text-humo">
+            Y {sinOrigen.length - 25} más, con menos presencia en las builds.
+          </p>
+        )
+      }
     </section>
   </div>
 </Base>
