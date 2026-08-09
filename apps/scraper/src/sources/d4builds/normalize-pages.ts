@@ -73,6 +73,20 @@ function afijosDeSlot(stats: readonly StatsSlotRaw[], nombreSlot: string): Stats
   return stats.find((s) => normalizeName(s.slot) === objetivo);
 }
 
+/**
+ * Limpia el nombre de un tablero de Paragon. El extractor ya lo hace, pero se repite
+ * aqui a proposito: el normalizador no debe fiarse de que el crudo venga limpio, porque
+ * entonces cualquier crudo antiguo o cualquier fallo del extractor acaba publicado tal
+ * cual. Aqui es barato y evita sacar "1Starting Board Str 105*Dex 59" a la web.
+ */
+export function limpiarNombreTablero(texto: string): string {
+  return texto
+    .replace(/^\d+\s*/, '')
+    .split(/\s+(?:Str|Dex|Int|Will|Fue|Des|Vol)\s+\d/)[0]!
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
 /** Un afijo templado o con estrellas no es "otro afijo": es el mismo con mas informacion. */
 function construirGear(
   crudo: GearItemRaw,
@@ -138,6 +152,7 @@ function construirVariante(
   });
 
   const boards = crudo.paragon
+    .map((b) => ({ ...b, tablero: limpiarNombreTablero(b.tablero) }))
     .filter((b) => b.tablero.length > 0)
     .slice(0, 9)
     .map((b, i) => ({

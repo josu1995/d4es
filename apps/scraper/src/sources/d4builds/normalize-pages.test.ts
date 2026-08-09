@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { Resolver, type Dictionary } from '@d4es/i18n';
 import { CanonicalBuild, untranslatedRef, type BuildVariant } from '@d4es/schema';
-import { enriquecerConPagina } from './normalize-pages.js';
+import { enriquecerConPagina, limpiarNombreTablero } from './normalize-pages.js';
 import type { PaginaRaw } from './scrape-pages.js';
 
 function diccionario(entradas: { category: string; en: string; es: string }[]): Dictionary {
@@ -135,6 +135,17 @@ const dict = diccionario([
   { category: 'paragonBoard', en: 'Blood Drinker', es: 'Bebedor de sangre' },
   { category: 'glyph', en: 'Might', es: 'Poderío' },
 ]);
+
+describe('limpiarNombreTablero', () => {
+  it('quita el numero de orden y las estadisticas pegadas', () => {
+    expect(limpiarNombreTablero('2Carnage Str 110•Dex 59•Int 20')).toBe('Carnage');
+    expect(limpiarNombreTablero('1Starting Board Str 105•Dex 59')).toBe('Starting Board');
+  });
+
+  it('deja intacto un nombre que ya viene limpio', () => {
+    expect(limpiarNombreTablero('Blood Drinker')).toBe('Blood Drinker');
+  });
+});
 
 describe('enriquecerConPagina', () => {
   it('coloca cada pieza en su ranura', () => {
