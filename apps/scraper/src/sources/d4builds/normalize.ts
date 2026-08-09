@@ -80,7 +80,10 @@ function normalizarHabilidades(entry: RawD4BuildsEntry, resolver: Resolver, avis
       order: i,
       rank,
       skillVariant: s.specialUrl ? resolver.resolve('skillVariant', s.specialUrl) : null,
-      runes: (s.rune ?? []).slice(0, 3).map((r) => resolver.resolve('rune', r)),
+      // La fuente las llama "rune", pero son las mejoras de rama del arbol: no tienen
+      // nada que ver con las runas engarzables, y buscarlas en el diccionario de runas
+      // solo generaba fallos de traduccion que no significaban nada.
+      runes: (s.rune ?? []).slice(0, 3).map((r) => resolver.resolve('skillUpgrade', r)),
       category: 'unknown',
     });
   }

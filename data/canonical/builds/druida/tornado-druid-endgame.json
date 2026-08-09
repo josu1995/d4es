@@ -51,7 +51,64 @@
         "sno": null
       }
     ],
-    "coreUniques": [],
+    "coreUniques": [
+      {
+        "category": "unique",
+        "enUS": "Azurewrath",
+        "esES": "Ira celeste",
+        "i18n": "d4companion",
+        "idName": "1HSword_Unique_Barb_102",
+        "sno": 1439444
+      },
+      {
+        "category": "unique",
+        "enUS": "Ifeh's Dire Totem",
+        "esES": "Tótem atroz de Ifeh",
+        "i18n": "d4companion",
+        "idName": "1HTotem_Unique_Druid_01_x2",
+        "sno": 2571324
+      },
+      {
+        "category": "unique",
+        "enUS": "Malefic Crescent",
+        "esES": "Medialuna maléfica",
+        "i18n": "d4companion",
+        "idName": "Amulet_Unique_Druid_101",
+        "sno": 2178728
+      },
+      {
+        "category": "unique",
+        "enUS": "Dark Howl",
+        "esES": "Aullido oscuro",
+        "i18n": "d4companion",
+        "idName": "Gloves_Unique_Druid_01_x2",
+        "sno": 2570632
+      },
+      {
+        "category": "unique",
+        "enUS": "Gathlen's Birthright",
+        "esES": "Herencia de Gathlen",
+        "i18n": "d4companion",
+        "idName": "Helm_Unique_Druid_102",
+        "sno": 2224763
+      },
+      {
+        "category": "unique",
+        "enUS": "Tibault's Will",
+        "esES": "Voluntad de Tibault",
+        "i18n": "d4companion",
+        "idName": "Pants_Unique_Generic_102",
+        "sno": 1559366
+      },
+      {
+        "category": "unique",
+        "enUS": "Dirge of Airidah",
+        "esES": "Endecha de Airidah",
+        "i18n": "d4companion",
+        "idName": "Ring_Unique_Druid_01_x2",
+        "sno": 2571890
+      }
+    ],
     "fields": [
       {
         "key": "skill:curated_debilitating_roar",
@@ -142,6 +199,186 @@
         "values": {
           "d4builds:65f12311-b0bf-40c1-bc7b-32ac786c4657:0": 15
         }
+      },
+      {
+        "key": "unique:1HSword_Unique_Barb_102",
+        "label": {
+          "category": "unique",
+          "enUS": "Azurewrath",
+          "esES": "Ira celeste",
+          "i18n": "d4companion",
+          "idName": "1HSword_Unique_Barb_102",
+          "sno": 1439444
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:65f12311-b0bf-40c1-bc7b-32ac786c4657:0": "si"
+        }
+      },
+      {
+        "key": "unique:1HTotem_Unique_Druid_01_x2",
+        "label": {
+          "category": "unique",
+          "enUS": "Ifeh's Dire Totem",
+          "esES": "Tótem atroz de Ifeh",
+          "i18n": "d4companion",
+          "idName": "1HTotem_Unique_Druid_01_x2",
+          "sno": 2571324
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:65f12311-b0bf-40c1-bc7b-32ac786c4657:0": "si"
+        }
+      },
+      {
+        "key": "unique:Amulet_Unique_Druid_101",
+        "label": {
+          "category": "unique",
+          "enUS": "Malefic Crescent",
+          "esES": "Medialuna maléfica",
+          "i18n": "d4companion",
+          "idName": "Amulet_Unique_Druid_101",
+          "sno": 2178728
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:65f12311-b0bf-40c1-bc7b-32ac786c4657:0": "si"
+        }
+      },
+      {
+        "key": "unique:Gloves_Unique_Druid_01_x2",
+        "label": {
+          "category": "unique",
+          "enUS": "Dark Howl",
+          "esES": "Aullido oscuro",
+          "i18n": "d4companion",
+          "idName": "Gloves_Unique_Druid_01_x2",
+          "sno": 2570632
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:65f12311-b0bf-40c1-bc7b-32ac786c4657:0": "si"
+        }
+      },
+      {
+        "key": "unique:Helm_Unique_Druid_102",
+        "label": {
+          "category": "unique",
+          "enUS": "Gathlen's Birthright",
+          "esES": "Herencia de Gathlen",
+          "i18n": "d4companion",
+          "idName": "Helm_Unique_Druid_102",
+          "sno": 2224763
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:65f12311-b0bf-40c1-bc7b-32ac786c4657:0": "si"
+        }
+      },
+      {
+        "key": "unique:Pants_Unique_Generic_102",
+        "label": {
+          "category": "unique",
+          "enUS": "Tibault's Will",
+          "esES": "Voluntad de Tibault",
+          "i18n": "d4companion",
+          "idName": "Pants_Unique_Generic_102",
+          "sno": 1559366
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:65f12311-b0bf-40c1-bc7b-32ac786c4657:0": "si"
+        }
+      },
+      {
+        "key": "unique:Ring_Unique_Druid_01_x2",
+        "label": {
+          "category": "unique",
+          "enUS": "Dirge of Airidah",
+          "esES": "Endecha de Airidah",
+          "i18n": "d4companion",
+          "idName": "Ring_Unique_Druid_01_x2",
+          "sno": 2571890
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:65f12311-b0bf-40c1-bc7b-32ac786c4657:0": "si"
+        }
+      },
+      {
+        "key": "glyph:Rare_035_Intelligence_Side",
+        "label": {
+          "category": "glyph",
+          "enUS": "Dominate",
+          "esES": "Dominar",
+          "i18n": "d4companion",
+          "idName": "Rare_035_Intelligence_Side",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:65f12311-b0bf-40c1-bc7b-32ac786c4657:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_039_Willpower_Main",
+        "label": {
+          "category": "glyph",
+          "enUS": "Fang and Claw",
+          "esES": "Garra y colmillo",
+          "i18n": "d4companion",
+          "idName": "Rare_039_Willpower_Main",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:65f12311-b0bf-40c1-bc7b-32ac786c4657:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_040_Willpower_Main",
+        "label": {
+          "category": "glyph",
+          "enUS": "Earth and Sky",
+          "esES": "Tierra y cielo",
+          "i18n": "d4companion",
+          "idName": "Rare_040_Willpower_Main",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:65f12311-b0bf-40c1-bc7b-32ac786c4657:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_046_Intelligence_Side",
+        "label": {
+          "category": "glyph",
+          "enUS": "Keeper",
+          "esES": "Guardián",
+          "i18n": "d4companion",
+          "idName": "Rare_046_Intelligence_Side",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:65f12311-b0bf-40c1-bc7b-32ac786c4657:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_050_Dexterity_Main",
+        "label": {
+          "category": "glyph",
+          "enUS": "Spirit",
+          "esES": "Espíritu",
+          "i18n": "d4companion",
+          "idName": "Rare_050_Dexterity_Main",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:65f12311-b0bf-40c1-bc7b-32ac786c4657:0": "presente"
+        }
       }
     ],
     "variantCount": 1
@@ -173,24 +410,437 @@
     "en": "Tornado",
     "es": "Tornado"
   },
-  "updatedAt": "2026-08-09T02:30:41.994Z",
+  "updatedAt": "2026-08-09T06:13:51.467Z",
   "variants": [
     {
       "completeness": {
-        "hasGear": false,
+        "hasGear": true,
         "hasMercenary": false,
-        "hasParagon": false,
+        "hasParagon": true,
         "hasSkills": true,
         "hasTalisman": false,
         "hasWarPlan": false,
-        "score": 0.35
+        "score": 0.85
       },
-      "gear": {},
+      "gear": {
+        "amulet": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Malefic Crescent",
+            "esES": "Medialuna maléfica",
+            "i18n": "d4companion",
+            "idName": "Amulet_Unique_Druid_101",
+            "sno": 2178728
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "amulet",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Skull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__skull",
+              "sno": null
+            }
+          ]
+        },
+        "boots": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Great Storm Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__great_storm_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "boots",
+          "sockets": []
+        },
+        "chest": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Debilitating Toxins",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_debilitating_toxins",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "chest",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Moni",
+              "esES": "Moni",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Condition_OnStutterStep",
+              "sno": 2063886
+            },
+            {
+              "category": "rune",
+              "enUS": "Gar",
+              "esES": "Gar",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Effect_CritBuff",
+              "sno": 1969098
+            }
+          ]
+        },
+        "gloves": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Dark Howl",
+            "esES": "Aullido oscuro",
+            "i18n": "d4companion",
+            "idName": "Gloves_Unique_Druid_01_x2",
+            "sno": 2570632
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "gloves",
+          "sockets": []
+        },
+        "helm": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Gathlen's Birthright",
+            "esES": "Herencia de Gathlen",
+            "i18n": "d4companion",
+            "idName": "Helm_Unique_Druid_102",
+            "sno": 2224763
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "helm",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Poc",
+              "esES": "Poc",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Condition_OnSpendResource",
+              "sno": 2004453
+            },
+            {
+              "category": "rune",
+              "enUS": "Que",
+              "esES": "Que",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Effect_Druid_EarthenBulwark",
+              "sno": 2004804
+            }
+          ]
+        },
+        "offhand": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Ifeh's Dire Totem",
+            "esES": "Tótem atroz de Ifeh",
+            "i18n": "d4companion",
+            "idName": "1HTotem_Unique_Druid_01_x2",
+            "sno": 2571324
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "offhand",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Diamond",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__diamond",
+              "sno": null
+            }
+          ]
+        },
+        "pants": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Tibault's Will",
+            "esES": "Voluntad de Tibault",
+            "i18n": "d4companion",
+            "idName": "Pants_Unique_Generic_102",
+            "sno": 1559366
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "pants",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Sapphire",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__sapphire",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Sapphire",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__sapphire",
+              "sno": null
+            }
+          ]
+        },
+        "ring1": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Crushing Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__crushing_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "ring1",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Skull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__skull",
+              "sno": null
+            }
+          ]
+        },
+        "ring2": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Dirge of Airidah",
+            "esES": "Endecha de Airidah",
+            "i18n": "d4companion",
+            "idName": "Ring_Unique_Druid_01_x2",
+            "sno": 2571890
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "ring2",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Skull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__skull",
+              "sno": null
+            }
+          ]
+        },
+        "weapon": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Azurewrath",
+            "esES": "Ira celeste",
+            "i18n": "d4companion",
+            "idName": "1HSword_Unique_Barb_102",
+            "sno": 1439444
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "weapon",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Diamond",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__diamond",
+              "sno": null
+            }
+          ]
+        }
+      },
       "id": "d4builds:65f12311-b0bf-40c1-bc7b-32ac786c4657:0",
       "levelBand": "endgame",
       "mercenary": null,
       "paragon": {
-        "boards": [],
+        "boards": [
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Spirit",
+                "esES": "Espíritu",
+                "i18n": "d4companion",
+                "idName": "Rare_050_Dexterity_Main",
+                "sno": null
+              }
+            },
+            "order": 0,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "1Starting Board Str 25•Dex 59•Int 64•Will 105",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__1starting_board_str_25_dex_59_int_64_will_105",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Earth and Sky",
+                "esES": "Tierra y cielo",
+                "i18n": "d4companion",
+                "idName": "Rare_040_Willpower_Main",
+                "sno": null
+              }
+            },
+            "order": 1,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "2Thunderstruck Str 15•Dex 59•Int 64•Will 110",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__2thunderstruck_str_15_dex_59_int_64_will_110",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Fang and Claw",
+                "esES": "Garra y colmillo",
+                "i18n": "d4companion",
+                "idName": "Rare_039_Willpower_Main",
+                "sno": null
+              }
+            },
+            "order": 2,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "3Constricting Tendrils Str 10•Dex 74•Int 54•Will 110",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__3constricting_tendrils_str_10_dex_74_int_54_will_110",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Dominate",
+                "esES": "Dominar",
+                "i18n": "d4companion",
+                "idName": "Rare_035_Intelligence_Side",
+                "sno": null
+              }
+            },
+            "order": 3,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "4Heightened Malice Str 10•Dex 74•Int 59•Will 105",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__4heightened_malice_str_10_dex_74_int_59_will_105",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Keeper",
+                "esES": "Guardián",
+                "i18n": "d4companion",
+                "idName": "Rare_046_Intelligence_Side",
+                "sno": null
+              }
+            },
+            "order": 4,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "5Lust for Carnage Str 15•Dex 54•Int 69•Will 110",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__5lust_for_carnage_str_15_dex_54_int_69_will_110",
+              "sno": null
+            },
+            "rotation": null
+          }
+        ],
         "level": null
       },
       "runewords": [],
@@ -209,19 +859,19 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Hero of the Storm",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__hero_of_the_storm",
+              "idName": "skillUpgrade__hero_of_the_storm",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Additional Strikes",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__additional_strikes",
+              "idName": "skillUpgrade__additional_strikes",
               "sno": null
             }
           ],
@@ -241,27 +891,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Increased Duration",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__increased_duration",
+              "idName": "skillUpgrade__increased_duration",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Booming Roar",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__booming_roar",
+              "idName": "skillUpgrade__booming_roar",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Cooldown",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__cooldown",
+              "idName": "skillUpgrade__cooldown",
               "sno": null
             }
           ],
@@ -281,19 +931,19 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Derecho",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__derecho",
+              "idName": "skillUpgrade__derecho",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Weaken",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__weaken",
+              "idName": "skillUpgrade__weaken",
               "sno": null
             }
           ],
@@ -313,27 +963,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Fortify",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__fortify",
+              "idName": "skillUpgrade__fortify",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Cornered Beast",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__cornered_beast",
+              "idName": "skillUpgrade__cornered_beast",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Cooldown Reduction",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__cooldown_reduction",
+              "idName": "skillUpgrade__cooldown_reduction",
               "sno": null
             }
           ],
@@ -353,19 +1003,19 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Thrill of the Hunt",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__thrill_of_the_hunt",
+              "idName": "skillUpgrade__thrill_of_the_hunt",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Attack Speed",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__attack_speed",
+              "idName": "skillUpgrade__attack_speed",
               "sno": null
             }
           ],
@@ -385,27 +1035,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Increased Duration",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__increased_duration",
+              "idName": "skillUpgrade__increased_duration",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Explosive Tornado",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__explosive_tornado",
+              "idName": "skillUpgrade__explosive_tornado",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Cast Speed",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__cast_speed",
+              "idName": "skillUpgrade__cast_speed",
               "sno": null
             }
           ],
@@ -414,14 +1064,14 @@
       ],
       "source": {
         "author": "Rob2628",
-        "capturedAt": "2026-08-09T02:30:41.994Z",
+        "capturedAt": "2026-08-09T06:13:51.467Z",
         "externalId": "65f12311-b0bf-40c1-bc7b-32ac786c4657",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "a9fb2204242deefe6214363b4e4d3f57c505cd7983da0096e48a9ac0f23e1903",
-        "url": "https://d4builds.gg/builds/tornado-druid-endgame/",
+        "snapshotHash": "e289029fea63aa3ace84e5ea4d7c81525ee68a7db48012f120f51cae19aa2d30",
+        "url": "https://d4builds.gg/builds/65f12311-b0bf-40c1-bc7b-32ac786c4657/?var=0",
         "variantIndex": 0,
-        "variantLabel": "Endgame"
+        "variantLabel": "Standard Build"
       },
       "talisman": null,
       "warPlan": null

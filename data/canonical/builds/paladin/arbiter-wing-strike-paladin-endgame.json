@@ -51,7 +51,24 @@
         "sno": null
       }
     ],
-    "coreUniques": [],
+    "coreUniques": [
+      {
+        "category": "unique",
+        "enUS": "Griswold's Opus",
+        "esES": "Filo de Griswold",
+        "i18n": "d4companion",
+        "idName": "1HSword_Unique_Paladin_002",
+        "sno": 2476979
+      },
+      {
+        "category": "unique",
+        "enUS": "Godslayer Crown",
+        "esES": "Corona de matadioses",
+        "i18n": "d4companion",
+        "idName": "Helm_Unique_Generic_003",
+        "sno": 1555204
+      }
+    ],
     "fields": [
       {
         "key": "skill:curated_defiance_aura",
@@ -142,6 +159,111 @@
         "values": {
           "d4builds:5d79f803-464b-4076-b161-7cac6568b5bf:0": 1
         }
+      },
+      {
+        "key": "unique:1HSword_Unique_Paladin_002",
+        "label": {
+          "category": "unique",
+          "enUS": "Griswold's Opus",
+          "esES": "Filo de Griswold",
+          "i18n": "d4companion",
+          "idName": "1HSword_Unique_Paladin_002",
+          "sno": 2476979
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:5d79f803-464b-4076-b161-7cac6568b5bf:0": "si"
+        }
+      },
+      {
+        "key": "unique:Helm_Unique_Generic_003",
+        "label": {
+          "category": "unique",
+          "enUS": "Godslayer Crown",
+          "esES": "Corona de matadioses",
+          "i18n": "d4companion",
+          "idName": "Helm_Unique_Generic_003",
+          "sno": 1555204
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:5d79f803-464b-4076-b161-7cac6568b5bf:0": "si"
+        }
+      },
+      {
+        "key": "glyph:Rare_011_Willpower_Side",
+        "label": {
+          "category": "glyph",
+          "enUS": "Imbiber",
+          "esES": "Bebedor",
+          "i18n": "d4companion",
+          "idName": "Rare_011_Willpower_Side",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:5d79f803-464b-4076-b161-7cac6568b5bf:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_050_Dexterity_Main",
+        "label": {
+          "category": "glyph",
+          "enUS": "Spirit",
+          "esES": "Espíritu",
+          "i18n": "d4companion",
+          "idName": "Rare_050_Dexterity_Main",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:5d79f803-464b-4076-b161-7cac6568b5bf:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_106_Willpower_Side",
+        "label": {
+          "category": "glyph",
+          "enUS": "Arbiter",
+          "esES": "Árbitro",
+          "i18n": "d4companion",
+          "idName": "Rare_106_Willpower_Side",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:5d79f803-464b-4076-b161-7cac6568b5bf:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_107_Strength_Main",
+        "label": {
+          "category": "glyph",
+          "enUS": "Resplendence",
+          "esES": "Resplandor",
+          "i18n": "d4companion",
+          "idName": "Rare_107_Strength_Main",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:5d79f803-464b-4076-b161-7cac6568b5bf:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_110_Strength_Main",
+        "label": {
+          "category": "glyph",
+          "enUS": "Apostle",
+          "esES": "Apóstol",
+          "i18n": "d4companion",
+          "idName": "Rare_110_Strength_Main",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:5d79f803-464b-4076-b161-7cac6568b5bf:0": "presente"
+        }
       }
     ],
     "variantCount": 1
@@ -173,24 +295,437 @@
     "en": "Arbiter Wing Strike",
     "es": "Arbiter Wing Strike"
   },
-  "updatedAt": "2026-08-09T02:30:41.994Z",
+  "updatedAt": "2026-08-09T06:10:08.310Z",
   "variants": [
     {
       "completeness": {
-        "hasGear": false,
+        "hasGear": true,
         "hasMercenary": false,
-        "hasParagon": false,
+        "hasParagon": true,
         "hasSkills": true,
         "hasTalisman": false,
         "hasWarPlan": false,
-        "score": 0.35
+        "score": 0.85
       },
-      "gear": {},
+      "gear": {
+        "amulet": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Tyrael's Jurisdiction",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_tyrael_s_jurisdiction",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "amulet",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Topaz",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__topaz",
+              "sno": null
+            }
+          ]
+        },
+        "boots": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of the Arbiter's Zephyr",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_the_arbiter_s_zephyr",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "boots",
+          "sockets": []
+        },
+        "chest": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Angelic Masterwork",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_angelic_masterwork",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "chest",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Igni",
+              "esES": "Igni",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Condition_Bomb",
+              "sno": 2165976
+            },
+            {
+              "category": "rune",
+              "enUS": "Que",
+              "esES": "Que",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Effect_Druid_EarthenBulwark",
+              "sno": 2004804
+            }
+          ]
+        },
+        "gloves": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Celestial Strife",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_celestial_strife",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "gloves",
+          "sockets": []
+        },
+        "helm": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Godslayer Crown",
+            "esES": "Corona de matadioses",
+            "i18n": "d4companion",
+            "idName": "Helm_Unique_Generic_003",
+            "sno": 1555204
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "helm",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Cir",
+              "esES": "Cir",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Condition_CastRepeatSkill",
+              "sno": 2060617
+            },
+            {
+              "category": "rune",
+              "enUS": "Thul",
+              "esES": "Thul",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Effect_Sorcerer_FrostNova",
+              "sno": 1969845
+            }
+          ]
+        },
+        "offhand": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Ascension",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_ascension",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "offhand",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Ruby",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ruby",
+              "sno": null
+            }
+          ]
+        },
+        "pants": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of the Indomitable",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_the_indomitable",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "pants",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Ruby",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ruby",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Ruby",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ruby",
+              "sno": null
+            }
+          ]
+        },
+        "ring1": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Holy Punishment",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_holy_punishment",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "ring1",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Ruby",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ruby",
+              "sno": null
+            }
+          ]
+        },
+        "ring2": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Lagera's Sovereignty",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_lagera_s_sovereignty",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "ring2",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Skull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__skull",
+              "sno": null
+            }
+          ]
+        },
+        "weapon": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Griswold's Opus",
+            "esES": "Filo de Griswold",
+            "i18n": "d4companion",
+            "idName": "1HSword_Unique_Paladin_002",
+            "sno": 2476979
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": true
+          },
+          "quality": "unique",
+          "slot": "weapon",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Ruby",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ruby",
+              "sno": null
+            }
+          ]
+        }
+      },
       "id": "d4builds:5d79f803-464b-4076-b161-7cac6568b5bf:0",
       "levelBand": "endgame",
       "mercenary": null,
       "paragon": {
-        "boards": [],
+        "boards": [
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Spirit",
+                "esES": "Espíritu",
+                "i18n": "d4companion",
+                "idName": "Rare_050_Dexterity_Main",
+                "sno": null
+              }
+            },
+            "order": 0,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "1Starting Board Str 105•Dex 25•Int 64•Will 59",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__1starting_board_str_105_dex_25_int_64_will_59",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Imbiber",
+                "esES": "Bebedor",
+                "i18n": "d4companion",
+                "idName": "Rare_011_Willpower_Side",
+                "sno": null
+              }
+            },
+            "order": 1,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "2Castle Str 117•Dex 15•Int 64•Will 59",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__2castle_str_117_dex_15_int_64_will_59",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Apostle",
+                "esES": "Apóstol",
+                "i18n": "d4companion",
+                "idName": "Rare_110_Strength_Main",
+                "sno": null
+              }
+            },
+            "order": 2,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "3Shield Bearer Str 115•Dex 25•Int 59•Will 49",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__3shield_bearer_str_115_dex_25_int_59_will_49",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Resplendence",
+                "esES": "Resplandor",
+                "i18n": "d4companion",
+                "idName": "Rare_107_Strength_Main",
+                "sno": null
+              }
+            },
+            "order": 3,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "4Relentless Str 90•Dex 25•Int 69•Will 64",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__4relentless_str_90_dex_25_int_69_will_64",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Arbiter",
+                "esES": "Árbitro",
+                "i18n": "d4companion",
+                "idName": "Rare_106_Willpower_Side",
+                "sno": null
+              }
+            },
+            "order": 4,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "5Divinity Str 105•Dex 10•Int 59•Will 74",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__5divinity_str_105_dex_10_int_59_will_74",
+              "sno": null
+            },
+            "rotation": null
+          }
+        ],
         "level": null
       },
       "runewords": [],
@@ -209,19 +744,19 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Duration",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__duration",
+              "idName": "skillUpgrade__duration",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Cooldown Reduction",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__cooldown_reduction",
+              "idName": "skillUpgrade__cooldown_reduction",
               "sno": null
             }
           ],
@@ -241,27 +776,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Additional Maximum Resource",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__additional_maximum_resource",
+              "idName": "skillUpgrade__additional_maximum_resource",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Rite of Vengeance",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__rite_of_vengeance",
+              "idName": "skillUpgrade__rite_of_vengeance",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Potency",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__potency",
+              "idName": "skillUpgrade__potency",
               "sno": null
             }
           ],
@@ -281,27 +816,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Weaken",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__weaken",
+              "idName": "skillUpgrade__weaken",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Gather the Guilty",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__gather_the_guilty",
+              "idName": "skillUpgrade__gather_the_guilty",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Size Increase",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__size_increase",
+              "idName": "skillUpgrade__size_increase",
               "sno": null
             }
           ],
@@ -321,27 +856,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Unstoppable",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__unstoppable",
+              "idName": "skillUpgrade__unstoppable",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Rite of Might",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__rite_of_might",
+              "idName": "skillUpgrade__rite_of_might",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Potency",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__potency",
+              "idName": "skillUpgrade__potency",
               "sno": null
             }
           ],
@@ -361,27 +896,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Wing Strike Recast",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__wing_strike_recast",
+              "idName": "skillUpgrade__wing_strike_recast",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Reach of the Law",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__reach_of_the_law",
+              "idName": "skillUpgrade__reach_of_the_law",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Duration",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__duration",
+              "idName": "skillUpgrade__duration",
               "sno": null
             }
           ],
@@ -401,27 +936,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Weaken",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__weaken",
+              "idName": "skillUpgrade__weaken",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Hallowed Ground",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__hallowed_ground",
+              "idName": "skillUpgrade__hallowed_ground",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Resource Generation",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__resource_generation",
+              "idName": "skillUpgrade__resource_generation",
               "sno": null
             }
           ],
@@ -430,14 +965,14 @@
       ],
       "source": {
         "author": "Rob2628",
-        "capturedAt": "2026-08-09T02:30:41.994Z",
+        "capturedAt": "2026-08-09T06:10:08.310Z",
         "externalId": "5d79f803-464b-4076-b161-7cac6568b5bf",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "6a188d7231230fb8de0336f686ebd9a171cf8db6f9100a4869a6c8ebc9d553f5",
-        "url": "https://d4builds.gg/builds/arbiter-wing-strike-paladin-endgame/",
+        "snapshotHash": "d40b88739030808dfef76f87f4170b4e7d65b38bcf5c3f7fa9b72be7f2169d3e",
+        "url": "https://d4builds.gg/builds/5d79f803-464b-4076-b161-7cac6568b5bf/?var=0",
         "variantIndex": 0,
-        "variantLabel": "Endgame"
+        "variantLabel": "Standard Build"
       },
       "talisman": null,
       "warPlan": null

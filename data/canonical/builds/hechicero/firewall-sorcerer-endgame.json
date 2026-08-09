@@ -51,7 +51,48 @@
         "sno": 288106
       }
     ],
-    "coreUniques": [],
+    "coreUniques": [
+      {
+        "category": "unique",
+        "enUS": "Flickerstep",
+        "esES": "Pasos parpadeantes",
+        "i18n": "d4companion",
+        "idName": "Boots_Unique_Generic_002",
+        "sno": 579708
+      },
+      {
+        "category": "unique",
+        "enUS": "Vision of the Firestorm",
+        "esES": "Visión de la tormenta ígnea",
+        "i18n": "d4companion",
+        "idName": "Helm_Unique_Sorc_102_x2",
+        "sno": 2584913
+      },
+      {
+        "category": "unique",
+        "enUS": "Tibault's Will",
+        "esES": "Voluntad de Tibault",
+        "i18n": "d4companion",
+        "idName": "Pants_Unique_Generic_102",
+        "sno": 1559366
+      },
+      {
+        "category": "unique",
+        "enUS": "Drognan's Anguish",
+        "esES": "Angustia de Drognan",
+        "i18n": "d4companion",
+        "idName": "Ring_Unique_Sorc_104_x2",
+        "sno": 2586420
+      },
+      {
+        "category": "unique",
+        "enUS": "Raiment of the Infinite",
+        "esES": null,
+        "i18n": "none",
+        "idName": "unique__raiment_of_the_infinite",
+        "sno": null
+      }
+    ],
     "fields": [
       {
         "key": "skill:curated_firewall",
@@ -142,6 +183,156 @@
         "values": {
           "d4builds:a34ba13c-e634-4685-a92f-5086010e9fb1:0": 1
         }
+      },
+      {
+        "key": "unique:Boots_Unique_Generic_002",
+        "label": {
+          "category": "unique",
+          "enUS": "Flickerstep",
+          "esES": "Pasos parpadeantes",
+          "i18n": "d4companion",
+          "idName": "Boots_Unique_Generic_002",
+          "sno": 579708
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:a34ba13c-e634-4685-a92f-5086010e9fb1:0": "si"
+        }
+      },
+      {
+        "key": "unique:Helm_Unique_Sorc_102_x2",
+        "label": {
+          "category": "unique",
+          "enUS": "Vision of the Firestorm",
+          "esES": "Visión de la tormenta ígnea",
+          "i18n": "d4companion",
+          "idName": "Helm_Unique_Sorc_102_x2",
+          "sno": 2584913
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:a34ba13c-e634-4685-a92f-5086010e9fb1:0": "si"
+        }
+      },
+      {
+        "key": "unique:Pants_Unique_Generic_102",
+        "label": {
+          "category": "unique",
+          "enUS": "Tibault's Will",
+          "esES": "Voluntad de Tibault",
+          "i18n": "d4companion",
+          "idName": "Pants_Unique_Generic_102",
+          "sno": 1559366
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:a34ba13c-e634-4685-a92f-5086010e9fb1:0": "si"
+        }
+      },
+      {
+        "key": "unique:Ring_Unique_Sorc_104_x2",
+        "label": {
+          "category": "unique",
+          "enUS": "Drognan's Anguish",
+          "esES": "Angustia de Drognan",
+          "i18n": "d4companion",
+          "idName": "Ring_Unique_Sorc_104_x2",
+          "sno": 2586420
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:a34ba13c-e634-4685-a92f-5086010e9fb1:0": "si"
+        }
+      },
+      {
+        "key": "unique:unique__raiment_of_the_infinite",
+        "label": {
+          "category": "unique",
+          "enUS": "Raiment of the Infinite",
+          "esES": null,
+          "i18n": "none",
+          "idName": "unique__raiment_of_the_infinite",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:a34ba13c-e634-4685-a92f-5086010e9fb1:0": "si"
+        }
+      },
+      {
+        "key": "glyph:Rare_003_Intelligence_Main",
+        "label": {
+          "category": "glyph",
+          "enUS": "Elementalist",
+          "esES": "Elementalista",
+          "i18n": "d4companion",
+          "idName": "Rare_003_Intelligence_Main",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:a34ba13c-e634-4685-a92f-5086010e9fb1:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_004_Intelligence_Main",
+        "label": {
+          "category": "glyph",
+          "enUS": "Adept",
+          "esES": "Adepto",
+          "i18n": "d4companion",
+          "idName": "Rare_004_Intelligence_Main",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:a34ba13c-e634-4685-a92f-5086010e9fb1:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_007_Willpower_Side",
+        "label": {
+          "category": "glyph",
+          "enUS": "Torch",
+          "esES": "Antorcha",
+          "i18n": "d4companion",
+          "idName": "Rare_007_Willpower_Side",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:a34ba13c-e634-4685-a92f-5086010e9fb1:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_008_Willpower_Side",
+        "label": {
+          "category": "glyph",
+          "enUS": "Pyromaniac",
+          "esES": "Pirómano",
+          "i18n": "d4companion",
+          "idName": "Rare_008_Willpower_Side",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:a34ba13c-e634-4685-a92f-5086010e9fb1:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_010_Dexterity_Main",
+        "label": {
+          "category": "glyph",
+          "enUS": "Tactician",
+          "esES": "Táctico",
+          "i18n": "d4companion",
+          "idName": "Rare_010_Dexterity_Main",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:a34ba13c-e634-4685-a92f-5086010e9fb1:0": "presente"
+        }
       }
     ],
     "variantCount": 1
@@ -173,24 +364,416 @@
     "en": "Firewall",
     "es": "Muro de fuego"
   },
-  "updatedAt": "2026-08-09T02:30:41.994Z",
+  "updatedAt": "2026-08-09T06:25:33.290Z",
   "variants": [
     {
       "completeness": {
-        "hasGear": false,
+        "hasGear": true,
         "hasMercenary": false,
-        "hasParagon": false,
+        "hasParagon": true,
         "hasSkills": true,
         "hasTalisman": false,
         "hasWarPlan": false,
-        "score": 0.35
+        "score": 0.85
       },
-      "gear": {},
+      "gear": {
+        "amulet": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Elemental Constellation",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_elemental_constellation",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "amulet",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Emerald",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__emerald",
+              "sno": null
+            }
+          ]
+        },
+        "boots": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Flickerstep",
+            "esES": "Pasos parpadeantes",
+            "i18n": "d4companion",
+            "idName": "Boots_Unique_Generic_002",
+            "sno": 579708
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "boots",
+          "sockets": []
+        },
+        "chest": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Raiment of the Infinite",
+            "esES": null,
+            "i18n": "none",
+            "idName": "unique__raiment_of_the_infinite",
+            "sno": null
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": true
+          },
+          "quality": "unique",
+          "slot": "chest",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Igni",
+              "esES": "Igni",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Condition_Bomb",
+              "sno": 2165976
+            },
+            {
+              "category": "rune",
+              "enUS": "Mot",
+              "esES": "Mot",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Effect_Rogue_DarkShroud",
+              "sno": 2089934
+            }
+          ]
+        },
+        "gloves": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Writhing Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__writhing_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "gloves",
+          "sockets": []
+        },
+        "helm": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Vision of the Firestorm",
+            "esES": "Visión de la tormenta ígnea",
+            "i18n": "d4companion",
+            "idName": "Helm_Unique_Sorc_102_x2",
+            "sno": 2584913
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "helm",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Cir",
+              "esES": "Cir",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Condition_CastRepeatSkill",
+              "sno": 2060617
+            },
+            {
+              "category": "rune",
+              "enUS": "Vex",
+              "esES": "Vex",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Effect_BonusToAllSkills",
+              "sno": 2024156
+            }
+          ]
+        },
+        "pants": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Tibault's Will",
+            "esES": "Voluntad de Tibault",
+            "i18n": "d4companion",
+            "idName": "Pants_Unique_Generic_102",
+            "sno": 1559366
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "pants",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Topaz",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__topaz",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Topaz",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__topaz",
+              "sno": null
+            }
+          ]
+        },
+        "ring1": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Apogeic Furor",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_apogeic_furor",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "ring1",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Ruby",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ruby",
+              "sno": null
+            }
+          ]
+        },
+        "ring2": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Drognan's Anguish",
+            "esES": "Angustia de Drognan",
+            "i18n": "d4companion",
+            "idName": "Ring_Unique_Sorc_104_x2",
+            "sno": 2586420
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "ring2",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Topaz",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__topaz",
+              "sno": null
+            }
+          ]
+        },
+        "weapon": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Ancient Flame",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_ancient_flame",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "weapon",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Ruby",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ruby",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Ruby",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ruby",
+              "sno": null
+            }
+          ]
+        }
+      },
       "id": "d4builds:a34ba13c-e634-4685-a92f-5086010e9fb1:0",
       "levelBand": "endgame",
       "mercenary": null,
       "paragon": {
-        "boards": [],
+        "boards": [
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Pyromaniac",
+                "esES": "Pirómano",
+                "i18n": "d4companion",
+                "idName": "Rare_008_Willpower_Side",
+                "sno": null
+              }
+            },
+            "order": 0,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "1Starting Board Str 25•Dex 59•Int 105•Will 64",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__1starting_board_str_25_dex_59_int_105_will_64",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Elementalist",
+                "esES": "Elementalista",
+                "i18n": "d4companion",
+                "idName": "Rare_003_Intelligence_Main",
+                "sno": null
+              }
+            },
+            "order": 1,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "4Enchantment Master Str 20•Dex 49•Int 110•Will 69",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__4enchantment_master_str_20_dex_49_int_110_will_69",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Adept",
+                "esES": "Adepto",
+                "i18n": "d4companion",
+                "idName": "Rare_004_Intelligence_Main",
+                "sno": null
+              }
+            },
+            "order": 2,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "3Frigid Fate Str 25•Dex 49•Int 115•Will 59",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__3frigid_fate_str_25_dex_49_int_115_will_59",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Torch",
+                "esES": "Antorcha",
+                "i18n": "d4companion",
+                "idName": "Rare_007_Willpower_Side",
+                "sno": null
+              }
+            },
+            "order": 3,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "4Static Surge Str 20•Dex 59•Int 110•Will 59",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__4static_surge_str_20_dex_59_int_110_will_59",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Tactician",
+                "esES": "Táctico",
+                "i18n": "d4companion",
+                "idName": "Rare_010_Dexterity_Main",
+                "sno": null
+              }
+            },
+            "order": 4,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "5Burning Instinct Str 10•Dex 74•Int 105•Will 59",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__5burning_instinct_str_10_dex_74_int_105_will_59",
+              "sno": null
+            },
+            "rotation": null
+          }
+        ],
         "level": null
       },
       "runewords": [],
@@ -209,27 +792,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Weaken",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__weaken",
+              "idName": "skillUpgrade__weaken",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Electrobolt",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__electrobolt",
+              "idName": "skillUpgrade__electrobolt",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Crackling Energy",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__crackling_energy",
+              "idName": "skillUpgrade__crackling_energy",
               "sno": null
             }
           ],
@@ -249,27 +832,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Cooldown Reduction",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__cooldown_reduction",
+              "idName": "skillUpgrade__cooldown_reduction",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Permafrost",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__permafrost",
+              "idName": "skillUpgrade__permafrost",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Frozen and Chill",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__frozen_and_chill",
+              "idName": "skillUpgrade__frozen_and_chill",
               "sno": null
             }
           ],
@@ -289,27 +872,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Size Bonus",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__size_bonus",
+              "idName": "skillUpgrade__size_bonus",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Shatter",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__shatter",
+              "idName": "skillUpgrade__shatter",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Vulnerable",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__vulnerable",
+              "idName": "skillUpgrade__vulnerable",
               "sno": null
             }
           ],
@@ -329,19 +912,19 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Projectile Speed",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__projectile_speed",
+              "idName": "skillUpgrade__projectile_speed",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Reverse Polarity",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__reverse_polarity",
+              "idName": "skillUpgrade__reverse_polarity",
               "sno": null
             }
           ],
@@ -361,27 +944,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Damage Bonus",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__damage_bonus",
+              "idName": "skillUpgrade__damage_bonus",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Ring of Fire",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__ring_of_fire",
+              "idName": "skillUpgrade__ring_of_fire",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Weaken",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__weaken",
+              "idName": "skillUpgrade__weaken",
               "sno": null
             }
           ],
@@ -401,27 +984,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Overpower",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__overpower",
+              "idName": "skillUpgrade__overpower",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Living Bomb",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__living_bomb",
+              "idName": "skillUpgrade__living_bomb",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Cooldown Reduction",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__cooldown_reduction",
+              "idName": "skillUpgrade__cooldown_reduction",
               "sno": null
             }
           ],
@@ -430,14 +1013,14 @@
       ],
       "source": {
         "author": "Rob2628",
-        "capturedAt": "2026-08-09T02:30:41.994Z",
+        "capturedAt": "2026-08-09T06:25:33.290Z",
         "externalId": "a34ba13c-e634-4685-a92f-5086010e9fb1",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "10b8f760553a8eb4a7ff0590f492340a8f91ff2ba7ae0cdae8e7e1523e614fbb",
-        "url": "https://d4builds.gg/builds/firewall-sorcerer-endgame/",
+        "snapshotHash": "e96c40a52ff47e6f0f1ef78a19519af3b899dcbfb5d50b5261478ecbfab6d4fd",
+        "url": "https://d4builds.gg/builds/a34ba13c-e634-4685-a92f-5086010e9fb1/?var=0",
         "variantIndex": 0,
-        "variantLabel": "Endgame"
+        "variantLabel": "Standard Build"
       },
       "talisman": null,
       "warPlan": null

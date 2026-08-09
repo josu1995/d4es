@@ -51,7 +51,56 @@
         "sno": null
       }
     ],
-    "coreUniques": [],
+    "coreUniques": [
+      {
+        "category": "unique",
+        "enUS": "Azurewrath",
+        "esES": "Ira celeste",
+        "i18n": "d4companion",
+        "idName": "1HSword_Unique_Barb_102",
+        "sno": 1439444
+      },
+      {
+        "category": "unique",
+        "enUS": "Beastfall Boots",
+        "esES": "Botas de bestia caída",
+        "i18n": "d4companion",
+        "idName": "Boots_Unique_Rogue_100",
+        "sno": 1717016
+      },
+      {
+        "category": "unique",
+        "enUS": "Gladiator's Triumph",
+        "esES": "Triunfo del gladiador",
+        "i18n": "d4companion",
+        "idName": "Gloves_Unique_Rogue_98",
+        "sno": 2580658
+      },
+      {
+        "category": "unique",
+        "enUS": "Harlequin Crest",
+        "esES": "Cresta de arlequín",
+        "i18n": "d4companion",
+        "idName": "Helm_Unique_Generic_002;S14_Helm_Unique_Generic_002",
+        "sno": 2646317
+      },
+      {
+        "category": "unique",
+        "enUS": "Shrouded Gift",
+        "esES": "Regalo velado",
+        "i18n": "d4companion",
+        "idName": "Pants_Unique_Rogue_001_x2",
+        "sno": 2582112
+      },
+      {
+        "category": "unique",
+        "enUS": "Signet of Pelghain",
+        "esES": "Sello de Pelghain",
+        "i18n": "d4companion",
+        "idName": "Ring_Unique_Generic_105_x2",
+        "sno": 2586356
+      }
+    ],
     "fields": [
       {
         "key": "skill:curated_dash",
@@ -142,6 +191,171 @@
         "values": {
           "d4builds:190ae829-2bbc-4f4c-8233-0f8ccab4b575:0": 15
         }
+      },
+      {
+        "key": "unique:1HSword_Unique_Barb_102",
+        "label": {
+          "category": "unique",
+          "enUS": "Azurewrath",
+          "esES": "Ira celeste",
+          "i18n": "d4companion",
+          "idName": "1HSword_Unique_Barb_102",
+          "sno": 1439444
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:190ae829-2bbc-4f4c-8233-0f8ccab4b575:0": "si"
+        }
+      },
+      {
+        "key": "unique:Boots_Unique_Rogue_100",
+        "label": {
+          "category": "unique",
+          "enUS": "Beastfall Boots",
+          "esES": "Botas de bestia caída",
+          "i18n": "d4companion",
+          "idName": "Boots_Unique_Rogue_100",
+          "sno": 1717016
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:190ae829-2bbc-4f4c-8233-0f8ccab4b575:0": "si"
+        }
+      },
+      {
+        "key": "unique:Gloves_Unique_Rogue_98",
+        "label": {
+          "category": "unique",
+          "enUS": "Gladiator's Triumph",
+          "esES": "Triunfo del gladiador",
+          "i18n": "d4companion",
+          "idName": "Gloves_Unique_Rogue_98",
+          "sno": 2580658
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:190ae829-2bbc-4f4c-8233-0f8ccab4b575:0": "si"
+        }
+      },
+      {
+        "key": "unique:Helm_Unique_Generic_002;S14_Helm_Unique_Generic_002",
+        "label": {
+          "category": "unique",
+          "enUS": "Harlequin Crest",
+          "esES": "Cresta de arlequín",
+          "i18n": "d4companion",
+          "idName": "Helm_Unique_Generic_002;S14_Helm_Unique_Generic_002",
+          "sno": 2646317
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:190ae829-2bbc-4f4c-8233-0f8ccab4b575:0": "si"
+        }
+      },
+      {
+        "key": "unique:Pants_Unique_Rogue_001_x2",
+        "label": {
+          "category": "unique",
+          "enUS": "Shrouded Gift",
+          "esES": "Regalo velado",
+          "i18n": "d4companion",
+          "idName": "Pants_Unique_Rogue_001_x2",
+          "sno": 2582112
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:190ae829-2bbc-4f4c-8233-0f8ccab4b575:0": "si"
+        }
+      },
+      {
+        "key": "unique:Ring_Unique_Generic_105_x2",
+        "label": {
+          "category": "unique",
+          "enUS": "Signet of Pelghain",
+          "esES": "Sello de Pelghain",
+          "i18n": "d4companion",
+          "idName": "Ring_Unique_Generic_105_x2",
+          "sno": 2586356
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:190ae829-2bbc-4f4c-8233-0f8ccab4b575:0": "si"
+        }
+      },
+      {
+        "key": "glyph:Rare_020_Dexterity_Side",
+        "label": {
+          "category": "glyph",
+          "enUS": "Control",
+          "esES": "Control",
+          "i18n": "d4companion",
+          "idName": "Rare_020_Dexterity_Side",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:190ae829-2bbc-4f4c-8233-0f8ccab4b575:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_052_Dexterity_Main",
+        "label": {
+          "category": "glyph",
+          "enUS": "Versatility",
+          "esES": "Versatilidad",
+          "i18n": "d4companion",
+          "idName": "Rare_052_Dexterity_Main",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:190ae829-2bbc-4f4c-8233-0f8ccab4b575:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_057_Dexterity_Main",
+        "label": {
+          "category": "glyph",
+          "enUS": "Fluidity",
+          "esES": "Fluidez",
+          "i18n": "d4companion",
+          "idName": "Rare_057_Dexterity_Main",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:190ae829-2bbc-4f4c-8233-0f8ccab4b575:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_059_Dexterity_Main",
+        "label": {
+          "category": "glyph",
+          "enUS": "Devious",
+          "esES": "Artero",
+          "i18n": "d4companion",
+          "idName": "Rare_059_Dexterity_Main",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:190ae829-2bbc-4f4c-8233-0f8ccab4b575:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_063_Intelligence_Side",
+        "label": {
+          "category": "glyph",
+          "enUS": "Canny",
+          "esES": "Astuto",
+          "i18n": "d4companion",
+          "idName": "Rare_063_Intelligence_Side",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:190ae829-2bbc-4f4c-8233-0f8ccab4b575:0": "presente"
+        }
       }
     ],
     "variantCount": 1
@@ -173,24 +387,474 @@
     "en": "Rain of Arrows",
     "es": "Lluvia de flechas"
   },
-  "updatedAt": "2026-08-09T02:30:41.994Z",
+  "updatedAt": "2026-08-09T05:58:26.219Z",
   "variants": [
     {
       "completeness": {
-        "hasGear": false,
+        "hasGear": true,
         "hasMercenary": false,
-        "hasParagon": false,
+        "hasParagon": true,
         "hasSkills": true,
         "hasTalisman": false,
         "hasWarPlan": false,
-        "score": 0.35
+        "score": 0.85
       },
-      "gear": {},
+      "gear": {
+        "amulet": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Frozen Memories",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_frozen_memories",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "amulet",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Diamond",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__diamond",
+              "sno": null
+            }
+          ]
+        },
+        "boots": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Beastfall Boots",
+            "esES": "Botas de bestia caída",
+            "i18n": "d4companion",
+            "idName": "Boots_Unique_Rogue_100",
+            "sno": 1717016
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": true
+          },
+          "quality": "unique",
+          "slot": "boots",
+          "sockets": []
+        },
+        "chest": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Heavenly Strength",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_heavenly_strength",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "chest",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Zan",
+              "esES": "Zan",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Condition_OnCastUltimateSkill",
+              "sno": 1968549
+            },
+            {
+              "category": "rune",
+              "enUS": "Que",
+              "esES": "Que",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Effect_Druid_EarthenBulwark",
+              "sno": 2004804
+            }
+          ]
+        },
+        "gloves": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Gladiator's Triumph",
+            "esES": "Triunfo del gladiador",
+            "i18n": "d4companion",
+            "idName": "Gloves_Unique_Rogue_98",
+            "sno": 2580658
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "gloves",
+          "sockets": []
+        },
+        "helm": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Harlequin Crest",
+            "esES": "Cresta de arlequín",
+            "i18n": "d4companion",
+            "idName": "Helm_Unique_Generic_002;S14_Helm_Unique_Generic_002",
+            "sno": 2646317
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": true
+          },
+          "quality": "unique",
+          "slot": "helm",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Poc",
+              "esES": "Poc",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Condition_OnSpendResource",
+              "sno": 2004453
+            },
+            {
+              "category": "rune",
+              "enUS": "Gar",
+              "esES": "Gar",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Effect_CritBuff",
+              "sno": 1969098
+            }
+          ]
+        },
+        "pants": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Shrouded Gift",
+            "esES": "Regalo velado",
+            "i18n": "d4companion",
+            "idName": "Pants_Unique_Rogue_001_x2",
+            "sno": 2582112
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "pants",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Emerald",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__emerald",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Emerald",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__emerald",
+              "sno": null
+            }
+          ]
+        },
+        "ring1": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Signet of Pelghain",
+            "esES": "Sello de Pelghain",
+            "i18n": "d4companion",
+            "idName": "Ring_Unique_Generic_105_x2",
+            "sno": 2586356
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "ring1",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Diamond",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__diamond",
+              "sno": null
+            }
+          ]
+        },
+        "ring2": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Aftermath",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_aftermath",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "ring2",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Diamond",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__diamond",
+              "sno": null
+            }
+          ]
+        },
+        "weapon": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Ferocious Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__ferocious_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "weapon",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Sapphire",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__sapphire",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Sapphire",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__sapphire",
+              "sno": null
+            }
+          ]
+        },
+        "weapon2": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of the Expectant",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_the_expectant",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "weapon2",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Sapphire",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__sapphire",
+              "sno": null
+            }
+          ]
+        },
+        "weapon3": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Azurewrath",
+            "esES": "Ira celeste",
+            "i18n": "d4companion",
+            "idName": "1HSword_Unique_Barb_102",
+            "sno": 1439444
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "weapon3",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Sapphire",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__sapphire",
+              "sno": null
+            }
+          ]
+        }
+      },
       "id": "d4builds:190ae829-2bbc-4f4c-8233-0f8ccab4b575:0",
       "levelBand": "endgame",
       "mercenary": null,
       "paragon": {
-        "boards": [],
+        "boards": [
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Devious",
+                "esES": "Artero",
+                "i18n": "d4companion",
+                "idName": "Rare_059_Dexterity_Main",
+                "sno": null
+              }
+            },
+            "order": 0,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "1Starting Board Str 64•Dex 105•Int 59•Will 25",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__1starting_board_str_64_dex_105_int_59_will_25",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Control",
+                "esES": "Control",
+                "i18n": "d4companion",
+                "idName": "Rare_020_Dexterity_Side",
+                "sno": null
+              }
+            },
+            "order": 1,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "2Exploit Weakness Str 54•Dex 110•Int 74•Will 10",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__2exploit_weakness_str_54_dex_110_int_74_will_10",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Versatility",
+                "esES": "Versatilidad",
+                "i18n": "d4companion",
+                "idName": "Rare_052_Dexterity_Main",
+                "sno": null
+              }
+            },
+            "order": 2,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "4Cheap Shot Str 59•Dex 110•Int 59•Will 20",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__4cheap_shot_str_59_dex_110_int_59_will_20",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Canny",
+                "esES": "Astuto",
+                "i18n": "d4companion",
+                "idName": "Rare_063_Intelligence_Side",
+                "sno": null
+              }
+            },
+            "order": 3,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "3Eldritch Bounty Str 64•Dex 110•Int 59•Will 15",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__3eldritch_bounty_str_64_dex_110_int_59_will_15",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Fluidity",
+                "esES": "Fluidez",
+                "i18n": "d4companion",
+                "idName": "Rare_057_Dexterity_Main",
+                "sno": null
+              }
+            },
+            "order": 4,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "5Danse Macabre Str 79•Dex 95•Int 54•Will 20",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__5danse_macabre_str_79_dex_95_int_54_will_20",
+              "sno": null
+            },
+            "rotation": null
+          }
+        ],
         "level": null
       },
       "runewords": [],
@@ -209,27 +873,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Cooldown",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__cooldown",
+              "idName": "skillUpgrade__cooldown",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Buffered Battery",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__buffered_battery",
+              "idName": "skillUpgrade__buffered_battery",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Overpower",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__overpower",
+              "idName": "skillUpgrade__overpower",
               "sno": null
             }
           ],
@@ -249,27 +913,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Resolve",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__resolve",
+              "idName": "skillUpgrade__resolve",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Calculation",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__calculation",
+              "idName": "skillUpgrade__calculation",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Ferocity",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__ferocity",
+              "idName": "skillUpgrade__ferocity",
               "sno": null
             }
           ],
@@ -289,19 +953,19 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Primer",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__primer",
+              "idName": "skillUpgrade__primer",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Charges and Cooldown Reduction",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__charges_and_cooldown_reduction",
+              "idName": "skillUpgrade__charges_and_cooldown_reduction",
               "sno": null
             }
           ],
@@ -321,27 +985,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Cooldown",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__cooldown",
+              "idName": "skillUpgrade__cooldown",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Artifice",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__artifice",
+              "idName": "skillUpgrade__artifice",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Unstoppable",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__unstoppable",
+              "idName": "skillUpgrade__unstoppable",
               "sno": null
             }
           ],
@@ -361,27 +1025,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Cooldown",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__cooldown",
+              "idName": "skillUpgrade__cooldown",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Crashing Waves",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__crashing_waves",
+              "idName": "skillUpgrade__crashing_waves",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Ferocity",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__ferocity",
+              "idName": "skillUpgrade__ferocity",
               "sno": null
             }
           ],
@@ -401,27 +1065,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Critical Strike Chance",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__critical_strike_chance",
+              "idName": "skillUpgrade__critical_strike_chance",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Confluence",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__confluence",
+              "idName": "skillUpgrade__confluence",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Pierce",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__pierce",
+              "idName": "skillUpgrade__pierce",
               "sno": null
             }
           ],
@@ -430,14 +1094,14 @@
       ],
       "source": {
         "author": null,
-        "capturedAt": "2026-08-09T02:30:41.994Z",
+        "capturedAt": "2026-08-09T05:58:26.219Z",
         "externalId": "190ae829-2bbc-4f4c-8233-0f8ccab4b575",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "1c39aa56741f39c66892078f4afcfc6e2fe2b9472631be9f4f6aba3587edc19c",
-        "url": "https://d4builds.gg/builds/rain-of-arrows-rogue-endgame/",
+        "snapshotHash": "84309e68bdd4712e730ab2e7726300673ef4d00a0a880a9225db2cb89ce8aa7b",
+        "url": "https://d4builds.gg/builds/190ae829-2bbc-4f4c-8233-0f8ccab4b575/?var=0",
         "variantIndex": 0,
-        "variantLabel": "Endgame"
+        "variantLabel": "Standard Build"
       },
       "talisman": null,
       "warPlan": null

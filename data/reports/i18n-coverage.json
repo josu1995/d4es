@@ -17,12 +17,1372 @@
   },
   "generatedAt": "2026-08-09T02:30:41.994Z",
   "resolucion": {
-    "hits": 396,
-    "missRate": 0.8151,
-    "misses": 1746
+    "hits": 1495,
+    "missRate": 0.6983,
+    "misses": 3461
   },
   "sinTraducir": {
+    "aspect": [
+      {
+        "termino": "Crushing Aspect",
+        "veces": 30
+      },
+      {
+        "termino": "Aspect of Glynn's Anvil",
+        "veces": 26
+      },
+      {
+        "termino": "Aspect of Heavenly Strength",
+        "veces": 21
+      },
+      {
+        "termino": "Aspect of Debilitating Toxins",
+        "veces": 13
+      },
+      {
+        "termino": "Aspect of Inner Calm",
+        "veces": 13
+      },
+      {
+        "termino": "Juggernaut's Aspect",
+        "veces": 13
+      },
+      {
+        "termino": "Aspect of Redirected Force",
+        "veces": 12
+      },
+      {
+        "termino": "Edgemaster's Aspect",
+        "veces": 12
+      },
+      {
+        "termino": "Aspect of Frozen Memories",
+        "veces": 11
+      },
+      {
+        "termino": "Aspect of Might",
+        "veces": 11
+      },
+      {
+        "termino": "Aspect of Anger Management",
+        "veces": 10
+      },
+      {
+        "termino": "Aspect of Disobedience",
+        "veces": 10
+      },
+      {
+        "termino": "Conceited Aspect",
+        "veces": 10
+      },
+      {
+        "termino": "Ferocious Aspect",
+        "veces": 10
+      },
+      {
+        "termino": "Writhing Aspect",
+        "veces": 10
+      },
+      {
+        "termino": "Aspect of Celestial Strife",
+        "veces": 9
+      },
+      {
+        "termino": "Aspect of Elemental Constellation",
+        "veces": 9
+      },
+      {
+        "termino": "Aspect of Ascension",
+        "veces": 8
+      },
+      {
+        "termino": "Aspect of Channeling",
+        "veces": 8
+      },
+      {
+        "termino": "Aspect of Holy Punishment",
+        "veces": 8
+      },
+      {
+        "termino": "Aspect of the Moonrise",
+        "veces": 8
+      },
+      {
+        "termino": "Aspect of Imitated Imbuement",
+        "veces": 7
+      },
+      {
+        "termino": "Aspect of Mending Obscurity",
+        "veces": 7
+      },
+      {
+        "termino": "Hellbent Commander Aspect",
+        "veces": 7
+      },
+      {
+        "termino": "Aspect of Forest Power",
+        "veces": 6
+      },
+      {
+        "termino": "Aspect of Plains Power",
+        "veces": 6
+      },
+      {
+        "termino": "Aspect of Sky Power",
+        "veces": 6
+      },
+      {
+        "termino": "Aspect of the Arbiter's Zephyr",
+        "veces": 6
+      },
+      {
+        "termino": "Aspect of the Indomitable",
+        "veces": 6
+      },
+      {
+        "termino": "Tidal Aspect",
+        "veces": 6
+      },
+      {
+        "termino": "Vehement Brawler's Aspect",
+        "veces": 6
+      },
+      {
+        "termino": "Aspect of Angelic Masterwork",
+        "veces": 5
+      },
+      {
+        "termino": "Aspect of Coalesced Blood",
+        "veces": 5
+      },
+      {
+        "termino": "Aspect of Impetus",
+        "veces": 5
+      },
+      {
+        "termino": "Aspect of Peril",
+        "veces": 5
+      },
+      {
+        "termino": "Aspect of Reanimation",
+        "veces": 5
+      },
+      {
+        "termino": "Aspect of Thickened Blood",
+        "veces": 5
+      },
+      {
+        "termino": "Great Storm Aspect",
+        "veces": 5
+      },
+      {
+        "termino": "Tides of Blood Aspect",
+        "veces": 5
+      },
+      {
+        "termino": "Aspect of Calamity",
+        "veces": 4
+      },
+      {
+        "termino": "Aspect of Hardened Bones",
+        "veces": 4
+      },
+      {
+        "termino": "Aspect of Interdiction",
+        "veces": 4
+      },
+      {
+        "termino": "Aspect of Lagera's Sovereignty",
+        "veces": 4
+      },
+      {
+        "termino": "Aspect of Malice",
+        "veces": 4
+      },
+      {
+        "termino": "Aspect of Walloping",
+        "veces": 4
+      },
+      {
+        "termino": "Mage-Lord's Aspect",
+        "veces": 4
+      },
+      {
+        "termino": "Aspect of Armageddon",
+        "veces": 3
+      },
+      {
+        "termino": "Aspect of Dominance",
+        "veces": 3
+      },
+      {
+        "termino": "Aspect of Elemental Attunement",
+        "veces": 3
+      },
+      {
+        "termino": "Aspect of Fathomless Dark",
+        "veces": 3
+      },
+      {
+        "termino": "Aspect of Layered Wards",
+        "veces": 3
+      },
+      {
+        "termino": "Aspect of Overwhelming Currents",
+        "veces": 3
+      },
+      {
+        "termino": "Aspect of Supremacy",
+        "veces": 3
+      },
+      {
+        "termino": "Aspect of the Expectant",
+        "veces": 3
+      },
+      {
+        "termino": "Overcharged Aspect",
+        "veces": 3
+      },
+      {
+        "termino": "Storm Splitter's Aspect",
+        "veces": 3
+      },
+      {
+        "termino": "Wildbolt Aspect",
+        "veces": 3
+      },
+      {
+        "termino": "Archdruid's Aspect",
+        "veces": 2
+      },
+      {
+        "termino": "Aspect of Aftermath",
+        "veces": 2
+      },
+      {
+        "termino": "Aspect of Alchemical Advantage",
+        "veces": 2
+      },
+      {
+        "termino": "Aspect of Apogeic Furor",
+        "veces": 2
+      },
+      {
+        "termino": "Aspect of Combustion",
+        "veces": 2
+      },
+      {
+        "termino": "Aspect of Creeping Cadaver",
+        "veces": 2
+      },
+      {
+        "termino": "Aspect of Merciless Cold",
+        "veces": 2
+      },
+      {
+        "termino": "Aspect of Nebulous Brews",
+        "veces": 2
+      },
+      {
+        "termino": "Aspect of Shredding Blades",
+        "veces": 2
+      },
+      {
+        "termino": "Aspect of Splintering Energy",
+        "veces": 2
+      },
+      {
+        "termino": "Aspect of the Followed Path",
+        "veces": 2
+      },
+      {
+        "termino": "Aspect of the Juggernaut's Covenant",
+        "veces": 2
+      },
+      {
+        "termino": "Aspect of the Orange Herald",
+        "veces": 2
+      },
+      {
+        "termino": "Aspect of the Untarnished Blaze",
+        "veces": 2
+      },
+      {
+        "termino": "Aspect of the Ursine Horror",
+        "veces": 2
+      },
+      {
+        "termino": "Aspect of the Void",
+        "veces": 2
+      },
+      {
+        "termino": "Aspect of the Warpath",
+        "veces": 2
+      },
+      {
+        "termino": "Aspect of the Zealot's Covenant",
+        "veces": 2
+      },
+      {
+        "termino": "Aspect of Unyielding Hits",
+        "veces": 2
+      },
+      {
+        "termino": "Bane-Link Aspect",
+        "veces": 2
+      },
+      {
+        "termino": "Blasting Aspect",
+        "veces": 2
+      },
+      {
+        "termino": "Bold Chieftain's Aspect",
+        "veces": 2
+      },
+      {
+        "termino": "Cheat's Aspect",
+        "veces": 2
+      },
+      {
+        "termino": "Exploiter's Aspect",
+        "veces": 2
+      },
+      {
+        "termino": "Irrepressible Aspect",
+        "veces": 2
+      },
+      {
+        "termino": "Malicious Aspect",
+        "veces": 2
+      },
+      {
+        "termino": "Reaper's Aspect",
+        "veces": 2
+      },
+      {
+        "termino": "Rebounding Aspect",
+        "veces": 2
+      },
+      {
+        "termino": "Revelator's Aspect",
+        "veces": 2
+      },
+      {
+        "termino": "Snowveiled Aspect",
+        "veces": 2
+      },
+      {
+        "termino": "Vanguard's Aspect",
+        "veces": 2
+      },
+      {
+        "termino": "Wanton Rupture Aspect",
+        "veces": 2
+      },
+      {
+        "termino": "Aspect of Adaptability",
+        "veces": 1
+      },
+      {
+        "termino": "Aspect of Ancestral Force",
+        "veces": 1
+      },
+      {
+        "termino": "Aspect of Ancient Flame",
+        "veces": 1
+      },
+      {
+        "termino": "Aspect of Apprehension",
+        "veces": 1
+      },
+      {
+        "termino": "Aspect of Berserk Fury",
+        "veces": 1
+      },
+      {
+        "termino": "Aspect of Bursting Bones",
+        "veces": 1
+      },
+      {
+        "termino": "Aspect of Coagulation",
+        "veces": 1
+      },
+      {
+        "termino": "Aspect of Compound Fracture",
+        "veces": 1
+      },
+      {
+        "termino": "Aspect of Concentration",
+        "veces": 1
+      },
+      {
+        "termino": "Aspect of Crippling Darkness",
+        "veces": 1
+      },
+      {
+        "termino": "Aspect of Deeper Shadows",
+        "veces": 1
+      },
+      {
+        "termino": "Aspect of Diabolical Armor",
+        "veces": 1
+      },
+      {
+        "termino": "Aspect of Elemental Fate",
+        "veces": 1
+      },
+      {
+        "termino": "Aspect of Entrapment",
+        "veces": 1
+      },
+      {
+        "termino": "Aspect of Fleet Wings",
+        "veces": 1
+      },
+      {
+        "termino": "Aspect of Haste",
+        "veces": 1
+      },
+      {
+        "termino": "Aspect of Heresy",
+        "veces": 1
+      },
+      {
+        "termino": "Aspect of Hewed Flesh",
+        "veces": 1
+      },
+      {
+        "termino": "Aspect of Infestation",
+        "veces": 1
+      },
+      {
+        "termino": "Aspect of Lapa's Scripture",
+        "veces": 1
+      },
+      {
+        "termino": "Aspect of Lava",
+        "veces": 1
+      },
+      {
+        "termino": "Aspect of Numbing Wrath",
+        "veces": 1
+      },
+      {
+        "termino": "Aspect of Pestilence",
+        "veces": 1
+      },
+      {
+        "termino": "Aspect of Piercing Cold",
+        "veces": 1
+      },
+      {
+        "termino": "Aspect of Rapid Ossification",
+        "veces": 1
+      },
+      {
+        "termino": "Aspect of Ritual Synthesis",
+        "veces": 1
+      },
+      {
+        "termino": "Aspect of Scorching Heat",
+        "veces": 1
+      },
+      {
+        "termino": "Aspect of Serration",
+        "veces": 1
+      },
+      {
+        "termino": "Aspect of Siphoning Strikes",
+        "veces": 1
+      },
+      {
+        "termino": "Aspect of the Fortress",
+        "veces": 1
+      },
+      {
+        "termino": "Aspect of the Golden Hour",
+        "veces": 1
+      },
+      {
+        "termino": "Aspect of the Great Feast",
+        "veces": 1
+      },
+      {
+        "termino": "Aspect of the Judicator",
+        "veces": 1
+      },
+      {
+        "termino": "Aspect of the Protector",
+        "veces": 1
+      },
+      {
+        "termino": "Aspect of the Stampede",
+        "veces": 1
+      },
+      {
+        "termino": "Aspect of Transfusion",
+        "veces": 1
+      },
+      {
+        "termino": "Aspect of Tyrael's Jurisdiction",
+        "veces": 1
+      },
+      {
+        "termino": "Battle Caster's Aspect",
+        "veces": 1
+      },
+      {
+        "termino": "Bulwark's Aspect",
+        "veces": 1
+      },
+      {
+        "termino": "Conjuration Master's Aspect",
+        "veces": 1
+      },
+      {
+        "termino": "Cut to the Bone Aspect",
+        "veces": 1
+      },
+      {
+        "termino": "Duelist's Aspect",
+        "veces": 1
+      },
+      {
+        "termino": "Enshrouding Aspect",
+        "veces": 1
+      },
+      {
+        "termino": "Grenadier's Aspect",
+        "veces": 1
+      },
+      {
+        "termino": "Heavy Hitting Aspect",
+        "veces": 1
+      },
+      {
+        "termino": "Hectic Aspect",
+        "veces": 1
+      },
+      {
+        "termino": "Insidious Aspect",
+        "veces": 1
+      },
+      {
+        "termino": "Lingering Aspect",
+        "veces": 1
+      },
+      {
+        "termino": "Mangled Aspect",
+        "veces": 1
+      },
+      {
+        "termino": "Nightstalker's Aspect",
+        "veces": 1
+      },
+      {
+        "termino": "Opportunist's Aspect",
+        "veces": 1
+      },
+      {
+        "termino": "Overheating Aspect",
+        "veces": 1
+      },
+      {
+        "termino": "Progenitor's Aspect",
+        "veces": 1
+      },
+      {
+        "termino": "Protecting Aspect",
+        "veces": 1
+      },
+      {
+        "termino": "Sacrificial Aspect",
+        "veces": 1
+      },
+      {
+        "termino": "Shepherd's Aspect",
+        "veces": 1
+      },
+      {
+        "termino": "Shivering Aspect",
+        "veces": 1
+      },
+      {
+        "termino": "Skullbreaker's Aspect",
+        "veces": 1
+      },
+      {
+        "termino": "The Penitent's Aspect",
+        "veces": 1
+      },
+      {
+        "termino": "Tormentor's Aspect",
+        "veces": 1
+      },
+      {
+        "termino": "Trickster's Aspect",
+        "veces": 1
+      },
+      {
+        "termino": "Vengeful Aspect",
+        "veces": 1
+      },
+      {
+        "termino": "Vigorous Aspect",
+        "veces": 1
+      },
+      {
+        "termino": "Vulpine's Aspect",
+        "veces": 1
+      }
+    ],
+    "paragonBoard": [
+      {
+        "termino": "1Starting Board Str 25•Dex 59•Int 105•Will 64",
+        "veces": 22
+      },
+      {
+        "termino": "1Starting Board Str 25•Dex 59•Int 64•Will 105",
+        "veces": 14
+      },
+      {
+        "termino": "1Starting Board Str 105•Dex 25•Int 64•Will 59",
+        "veces": 13
+      },
+      {
+        "termino": "1Starting Board Str 64•Dex 105•Int 59•Will 25",
+        "veces": 13
+      },
+      {
+        "termino": "2Castle Str 117•Dex 15•Int 64•Will 59",
+        "veces": 12
+      },
+      {
+        "termino": "3Shield Bearer Str 115•Dex 25•Int 59•Will 49",
+        "veces": 12
+      },
+      {
+        "termino": "1Starting Board Str 59•Dex 105•Int 64•Will 25",
+        "veces": 11
+      },
+      {
+        "termino": "1Starting Board Str 64•Dex 25•Int 59•Will 105",
+        "veces": 10
+      },
+      {
+        "termino": "1Starting Board Str 105•Dex 59•Int 25•Will 64",
+        "veces": 9
+      },
+      {
+        "termino": "4Enchantment Master Str 20•Dex 49•Int 110•Will 69",
+        "veces": 9
+      },
+      {
+        "termino": "4Relentless Str 90•Dex 25•Int 69•Will 64",
+        "veces": 9
+      },
+      {
+        "termino": "4Survival Instincts Str 20•Dex 59•Int 59•Will 110",
+        "veces": 8
+      },
+      {
+        "termino": "2Exploit Weakness Str 54•Dex 110•Int 74•Will 10",
+        "veces": 7
+      },
+      {
+        "termino": "2Viscous Shield Str 59•Dex 110•Int 59•Will 20",
+        "veces": 7
+      },
+      {
+        "termino": "3Blood Rage Str 115•Dex 51•Int 25•Will 59",
+        "veces": 7
+      },
+      {
+        "termino": "3Eldritch Bounty Str 64•Dex 110•Int 59•Will 15",
+        "veces": 7
+      },
+      {
+        "termino": "3Prodigy's Tempo Str 49•Dex 110•Int 69•Will 20",
+        "veces": 7
+      },
+      {
+        "termino": "4Frailty Str 20•Dex 54•Int 95•Will 79",
+        "veces": 7
+      },
+      {
+        "termino": "5In-Fighter Str 59•Dex 110•Int 64•Will 15",
+        "veces": 7
+      },
+      {
+        "termino": "2Carnage Str 110•Dex 59•Int 20•Will 59",
+        "veces": 6
+      },
+      {
+        "termino": "4Cheap Shot Str 59•Dex 110•Int 59•Will 20",
+        "veces": 6
+      },
+      {
+        "termino": "4Convergence Str 74•Dex 110•Int 54•Will 10",
+        "veces": 6
+      },
+      {
+        "termino": "4Warbringer Str 110•Dex 74•Int 10•Will 54",
+        "veces": 6
+      },
+      {
+        "termino": "2Bloodbath Str 10•Dex 74•Int 110•Will 54",
+        "veces": 5
+      },
+      {
+        "termino": "2Eldritch Bounty Str 64•Dex 110•Int 59•Will 15",
+        "veces": 5
+      },
+      {
+        "termino": "2Frigid Fate Str 25•Dex 49•Int 115•Will 59",
+        "veces": 5
+      },
+      {
+        "termino": "3Frigid Fate Str 25•Dex 49•Int 115•Will 59",
+        "veces": 5
+      },
+      {
+        "termino": "5Beacon Str 95•Dex 20•Int 79•Will 54",
+        "veces": 5
+      },
+      {
+        "termino": "5Cheap Shot Str 59•Dex 110•Int 59•Will 20",
+        "veces": 5
+      },
+      {
+        "termino": "5Constricting Tendrils Str 10•Dex 74•Int 54•Will 110",
+        "veces": 5
+      },
+      {
+        "termino": "5Earthen Devastation Str 25•Dex 49•Int 59•Will 115",
+        "veces": 5
+      },
+      {
+        "termino": "2Thunderstruck Str 15•Dex 59•Int 64•Will 110",
+        "veces": 4
+      },
+      {
+        "termino": "3Constricting Tendrils Str 10•Dex 74•Int 54•Will 110",
+        "veces": 4
+      },
+      {
+        "termino": "4Heightened Malice Str 10•Dex 74•Int 59•Will 105",
+        "veces": 4
+      },
+      {
+        "termino": "5Blood Begets Blood Str 25•Dex 64•Int 90•Will 69",
+        "veces": 4
+      },
+      {
+        "termino": "5Danse Macabre Str 79•Dex 95•Int 54•Will 20",
+        "veces": 4
+      },
+      {
+        "termino": "5Heightened Malice Str 10•Dex 74•Int 59•Will 105",
+        "veces": 4
+      },
+      {
+        "termino": "2Cult Leader Str 15•Dex 59•Int 110•Will 64",
+        "veces": 3
+      },
+      {
+        "termino": "2Searing Heat Str 15•Dex 59•Int 110•Will 64",
+        "veces": 3
+      },
+      {
+        "termino": "3Convergence Str 74•Dex 110•Int 54•Will 10",
+        "veces": 3
+      },
+      {
+        "termino": "3Dominion Str 86•Dex 20•Int 54•Will 90",
+        "veces": 3
+      },
+      {
+        "termino": "3Greater Hex Str 69•Dex 25•Int 64•Will 90",
+        "veces": 3
+      },
+      {
+        "termino": "3Scent of Death Str 15•Dex 54•Int 110•Will 69",
+        "veces": 3
+      },
+      {
+        "termino": "3Static Surge Str 20•Dex 59•Int 110•Will 59",
+        "veces": 3
+      },
+      {
+        "termino": "4Leyrana's Instinct Str 59•Dex 105•Int 74•Will 10",
+        "veces": 3
+      },
+      {
+        "termino": "5Flawless Technique Str 90•Dex 64•Int 25•Will 69",
+        "veces": 3
+      },
+      {
+        "termino": "5Lust for Carnage Str 15•Dex 54•Int 69•Will 110",
+        "veces": 3
+      },
+      {
+        "termino": "5Scent of Death Str 15•Dex 54•Int 110•Will 69",
+        "veces": 3
+      },
+      {
+        "termino": "2Constricting Tendrils Str 10•Dex 74•Int 54•Will 110",
+        "veces": 2
+      },
+      {
+        "termino": "2Hemorrhage Str 110•Dex 59•Int 15•Will 64",
+        "veces": 2
+      },
+      {
+        "termino": "2Icefall Str 25•Dex 64•Int 90•Will 69",
+        "veces": 2
+      },
+      {
+        "termino": "2Pyrosis Str 69•Dex 15•Int 54•Will 110",
+        "veces": 2
+      },
+      {
+        "termino": "2Revealing Str 74•Dex 105•Int 59•Will 10",
+        "veces": 2
+      },
+      {
+        "termino": "2Ritualism Str 54•Dex 10•Int 74•Will 110",
+        "veces": 2
+      },
+      {
+        "termino": "3Ancestral Guidance Str 20•Dex 49•Int 69•Will 110",
+        "veces": 2
+      },
+      {
+        "termino": "3Danse Macabre Str 79•Dex 95•Int 54•Will 20",
+        "veces": 2
+      },
+      {
+        "termino": "3Demonic Spicules Str 59•Dex 25•Int 49•Will 115",
+        "veces": 2
+      },
+      {
+        "termino": "3Enchantment Master Str 20•Dex 49•Int 110•Will 69",
+        "veces": 2
+      },
+      {
+        "termino": "3Exploit Weakness Str 54•Dex 110•Int 74•Will 10",
+        "veces": 2
+      },
+      {
+        "termino": "3Flesh-eater Str 20•Dex 59•Int 110•Will 59",
+        "veces": 2
+      },
+      {
+        "termino": "3Frailty Str 20•Dex 54•Int 95•Will 79",
+        "veces": 2
+      },
+      {
+        "termino": "3Heightened Malice Str 10•Dex 74•Int 59•Will 105",
+        "veces": 2
+      },
+      {
+        "termino": "4Ancestral Guidance Str 20•Dex 49•Int 69•Will 110",
+        "veces": 2
+      },
+      {
+        "termino": "4Ceaseless Conduit Str 10•Dex 74•Int 110•Will 54",
+        "veces": 2
+      },
+      {
+        "termino": "4Chaos Str 69•Dex 20•Int 49•Will 110",
+        "veces": 2
+      },
+      {
+        "termino": "4Exploit Weakness Str 54•Dex 110•Int 74•Will 10",
+        "veces": 2
+      },
+      {
+        "termino": "4Greater Hex Str 69•Dex 25•Int 64•Will 90",
+        "veces": 2
+      },
+      {
+        "termino": "4Preacher Str 110•Dex 15•Int 69•Will 54",
+        "veces": 2
+      },
+      {
+        "termino": "4Ritualism Str 54•Dex 10•Int 74•Will 110",
+        "veces": 2
+      },
+      {
+        "termino": "4Scent of Death Str 15•Dex 54•Int 110•Will 69",
+        "veces": 2
+      },
+      {
+        "termino": "5Deadly Ambush Str 69•Dex 110•Int 54•Will 15",
+        "veces": 2
+      },
+      {
+        "termino": "5Divinity Str 105•Dex 10•Int 59•Will 74",
+        "veces": 2
+      },
+      {
+        "termino": "5Dynamism Str 59•Dex 20•Int 59•Will 110",
+        "veces": 2
+      },
+      {
+        "termino": "5Elemental Summoner Str 15•Dex 54•Int 124•Will 55",
+        "veces": 2
+      },
+      {
+        "termino": "5Flesh-eater Str 20•Dex 59•Int 110•Will 59",
+        "veces": 2
+      },
+      {
+        "termino": "5Force of Nature Str 100•Dex 49•Int 20•Will 79",
+        "veces": 2
+      },
+      {
+        "termino": "5Relentless Str 90•Dex 25•Int 69•Will 64",
+        "veces": 2
+      },
+      {
+        "termino": "5Ritualism Str 54•Dex 10•Int 74•Will 110",
+        "veces": 2
+      },
+      {
+        "termino": "5Searing Heat Str 15•Dex 59•Int 110•Will 64",
+        "veces": 2
+      },
+      {
+        "termino": "5Wither Str 20•Dex 49•Int 110•Will 69",
+        "veces": 2
+      },
+      {
+        "termino": "2Ancestral Guidance Str 20•Dex 49•Int 69•Will 110",
+        "veces": 1
+      },
+      {
+        "termino": "2Burning Instinct Str 10•Dex 74•Int 105•Will 59",
+        "veces": 1
+      },
+      {
+        "termino": "2Demonic Spicules Str 59•Dex 25•Int 49•Will 115",
+        "veces": 1
+      },
+      {
+        "termino": "2Dominion Str 86•Dex 20•Int 54•Will 90",
+        "veces": 1
+      },
+      {
+        "termino": "2Earthen Devastation Str 25•Dex 49•Int 59•Will 115",
+        "veces": 1
+      },
+      {
+        "termino": "2Fathomless Str 64•Dex 15•Int 59•Will 110",
+        "veces": 1
+      },
+      {
+        "termino": "2Flesh-eater Str 20•Dex 59•Int 110•Will 59",
+        "veces": 1
+      },
+      {
+        "termino": "2Force of Nature Str 100•Dex 49•Int 20•Will 79",
+        "veces": 1
+      },
+      {
+        "termino": "2Fundamental Release Str 20•Dex 54•Int 95•Will 79",
+        "veces": 1
+      },
+      {
+        "termino": "2Greater Hex Str 69•Dex 25•Int 64•Will 90",
+        "veces": 1
+      },
+      {
+        "termino": "2Hulking Monstrosity Str 25•Dex 49•Int 115•Will 59",
+        "veces": 1
+      },
+      {
+        "termino": "2In-Fighter Str 59•Dex 110•Int 64•Will 15",
+        "veces": 1
+      },
+      {
+        "termino": "2Lust for Carnage Str 15•Dex 54•Int 69•Will 110",
+        "veces": 1
+      },
+      {
+        "termino": "2Prodigy's Tempo Str 49•Dex 110•Int 69•Will 20",
+        "veces": 1
+      },
+      {
+        "termino": "2Untamed Str 20•Dex 54•Int 79•Will 95",
+        "veces": 1
+      },
+      {
+        "termino": "3Bone Graft Str 10•Dex 74•Int 105•Will 59",
+        "veces": 1
+      },
+      {
+        "termino": "3Carnage Str 110•Dex 59•Int 20•Will 59",
+        "veces": 1
+      },
+      {
+        "termino": "3Cheap Shot Str 59•Dex 110•Int 59•Will 20",
+        "veces": 1
+      },
+      {
+        "termino": "3Decimator Str 110•Dex 54•Int 15•Will 69",
+        "veces": 1
+      },
+      {
+        "termino": "3Drive Str 64•Dex 90•Int 69•Will 25",
+        "veces": 1
+      },
+      {
+        "termino": "3Fathomless Str 64•Dex 15•Int 59•Will 110",
+        "veces": 1
+      },
+      {
+        "termino": "3Icefall Str 25•Dex 64•Int 90•Will 69",
+        "veces": 1
+      },
+      {
+        "termino": "3Lust for Carnage Str 15•Dex 54•Int 69•Will 110",
+        "veces": 1
+      },
+      {
+        "termino": "3Ritualism Str 54•Dex 10•Int 74•Will 110",
+        "veces": 1
+      },
+      {
+        "termino": "3Thunderstruck Str 15•Dex 59•Int 64•Will 110",
+        "veces": 1
+      },
+      {
+        "termino": "3Wither Str 20•Dex 49•Int 110•Will 69",
+        "veces": 1
+      },
+      {
+        "termino": "4Beacon Str 95•Dex 20•Int 79•Will 54",
+        "veces": 1
+      },
+      {
+        "termino": "4Constricting Tendrils Str 10•Dex 74•Int 54•Will 110",
+        "veces": 1
+      },
+      {
+        "termino": "4Decimator Str 110•Dex 54•Int 15•Will 69",
+        "veces": 1
+      },
+      {
+        "termino": "4Drive Str 64•Dex 90•Int 69•Will 25",
+        "veces": 1
+      },
+      {
+        "termino": "4Fathomless Str 64•Dex 15•Int 59•Will 110",
+        "veces": 1
+      },
+      {
+        "termino": "4Fervent Str 110•Dex 20•Int 59•Will 59",
+        "veces": 1
+      },
+      {
+        "termino": "4Searing Heat Str 15•Dex 59•Int 110•Will 64",
+        "veces": 1
+      },
+      {
+        "termino": "4Static Surge Str 20•Dex 59•Int 110•Will 59",
+        "veces": 1
+      },
+      {
+        "termino": "4Viscous Shield Str 59•Dex 110•Int 59•Will 20",
+        "veces": 1
+      },
+      {
+        "termino": "4Weapons Master Str 110•Dex 49•Int 20•Will 69",
+        "veces": 1
+      },
+      {
+        "termino": "4Wither Str 20•Dex 49•Int 110•Will 69",
+        "veces": 1
+      },
+      {
+        "termino": "5Blood Rage Str 115•Dex 51•Int 25•Will 59",
+        "veces": 1
+      },
+      {
+        "termino": "5Burning Instinct Str 10•Dex 74•Int 105•Will 59",
+        "veces": 1
+      },
+      {
+        "termino": "5Demonic Spicules Str 59•Dex 25•Int 49•Will 115",
+        "veces": 1
+      },
+      {
+        "termino": "5Fundamental Release Str 20•Dex 54•Int 95•Will 79",
+        "veces": 1
+      },
+      {
+        "termino": "5Hemorrhage Str 110•Dex 59•Int 15•Will 64",
+        "veces": 1
+      },
+      {
+        "termino": "5Pyrosis Str 69•Dex 15•Int 54•Will 110",
+        "veces": 1
+      },
+      {
+        "termino": "5Static Surge Str 20•Dex 59•Int 110•Will 59",
+        "veces": 1
+      },
+      {
+        "termino": "5Survival Instincts Str 20•Dex 59•Int 59•Will 110",
+        "veces": 1
+      },
+      {
+        "termino": "5Viscous Shield Str 59•Dex 110•Int 59•Will 20",
+        "veces": 1
+      },
+      {
+        "termino": "6Beacon Str 95•Dex 20•Int 79•Will 54",
+        "veces": 1
+      },
+      {
+        "termino": "6Divinity Str 105•Dex 10•Int 59•Will 74",
+        "veces": 1
+      },
+      {
+        "termino": "6Earthen Devastation Str 25•Dex 49•Int 59•Will 115",
+        "veces": 1
+      },
+      {
+        "termino": "6Leyrana's Instinct Str 59•Dex 105•Int 74•Will 10",
+        "veces": 1
+      },
+      {
+        "termino": "6No Witnesses Str 69•Dex 90•Int 64•Will 25",
+        "veces": 1
+      },
+      {
+        "termino": "6Searing Heat Str 15•Dex 59•Int 110•Will 64",
+        "veces": 1
+      }
+    ],
     "rune": [
+      {
+        "termino": "Diamond",
+        "veces": 196
+      },
+      {
+        "termino": "Ruby",
+        "veces": 118
+      },
+      {
+        "termino": "Skull",
+        "veces": 103
+      },
+      {
+        "termino": "Topaz",
+        "veces": 93
+      },
+      {
+        "termino": "Sapphire",
+        "veces": 92
+      },
+      {
+        "termino": "Emerald",
+        "veces": 78
+      },
+      {
+        "termino": "Amethyst",
+        "veces": 21
+      }
+    ],
+    "skill": [
+      {
+        "termino": "Concealment",
+        "veces": 12
+      },
+      {
+        "termino": "Cyclone Armor",
+        "veces": 11
+      },
+      {
+        "termino": "Toxic Skin",
+        "veces": 11
+      },
+      {
+        "termino": "Arbiter of Justice",
+        "veces": 7
+      },
+      {
+        "termino": "Cold Imbuement",
+        "veces": 7
+      },
+      {
+        "termino": "Condemn",
+        "veces": 7
+      },
+      {
+        "termino": "Corpse Tendrils",
+        "veces": 7
+      },
+      {
+        "termino": "Familiar",
+        "veces": 7
+      },
+      {
+        "termino": "Wrath of the Berserker",
+        "veces": 7
+      },
+      {
+        "termino": "Bone Prison",
+        "veces": 6
+      },
+      {
+        "termino": "Consecration",
+        "veces": 6
+      },
+      {
+        "termino": "Falling Star",
+        "veces": 4
+      },
+      {
+        "termino": "Hurricane",
+        "veces": 4
+      },
+      {
+        "termino": "Iron Skin",
+        "veces": 4
+      },
+      {
+        "termino": "Rampage-v2",
+        "veces": 4
+      },
+      {
+        "termino": "Sigil of Summons",
+        "veces": 4
+      },
+      {
+        "termino": "Golem",
+        "veces": 3
+      },
+      {
+        "termino": "Poison Imbuement",
+        "veces": 3
+      },
+      {
+        "termino": "Summon Laalish",
+        "veces": 3
+      },
+      {
+        "termino": "Terror Swarm",
+        "veces": 3
+      },
+      {
+        "termino": "Aegis",
+        "veces": 2
+      },
+      {
+        "termino": "Army of the Dead",
+        "veces": 2
+      },
+      {
+        "termino": "Command Fallen",
+        "veces": 2
+      },
+      {
+        "termino": "Dark Prison",
+        "veces": 2
+      },
+      {
+        "termino": "Ground Stomp",
+        "veces": 2
+      },
+      {
+        "termino": "Quill Volley",
+        "veces": 2
+      },
+      {
+        "termino": "Stinger",
+        "veces": 2
+      },
+      {
+        "termino": "Summon Ae'grom",
+        "veces": 2
+      },
+      {
+        "termino": "Summon Vollach",
+        "veces": 2
+      },
+      {
+        "termino": "Umbral Chains",
+        "veces": 2
+      },
+      {
+        "termino": "Arc Lash",
+        "veces": 1
+      },
+      {
+        "termino": "Barrage",
+        "veces": 1
+      },
+      {
+        "termino": "Bone Spirit",
+        "veces": 1
+      },
+      {
+        "termino": "Boulder",
+        "veces": 1
+      },
+      {
+        "termino": "Concussive Stomp",
+        "veces": 1
+      },
+      {
+        "termino": "Corpse Explosion",
+        "veces": 1
+      },
+      {
+        "termino": "Demonic Swipe-v2",
+        "veces": 1
+      },
+      {
+        "termino": "Fiend of Abaddon",
+        "veces": 1
+      },
+      {
+        "termino": "Flurry",
+        "veces": 1
+      },
+      {
+        "termino": "Frenzy",
+        "veces": 1
+      },
+      {
+        "termino": "Rapid Fire",
+        "veces": 1
+      },
+      {
+        "termino": "Shadow Imbuement",
+        "veces": 1
+      },
+      {
+        "termino": "Summon Abodian",
+        "veces": 1
+      },
+      {
+        "termino": "Tornado",
+        "veces": 1
+      },
+      {
+        "termino": "Zeal",
+        "veces": 1
+      },
+      {
+        "termino": "Zenith",
+        "veces": 1
+      }
+    ],
+    "skillUpgrade": [
       {
         "termino": "Cooldown Reduction",
         "veces": 56
@@ -1680,192 +3040,6 @@
         "veces": 1
       }
     ],
-    "skill": [
-      {
-        "termino": "Concealment",
-        "veces": 12
-      },
-      {
-        "termino": "Cyclone Armor",
-        "veces": 11
-      },
-      {
-        "termino": "Toxic Skin",
-        "veces": 11
-      },
-      {
-        "termino": "Arbiter of Justice",
-        "veces": 7
-      },
-      {
-        "termino": "Cold Imbuement",
-        "veces": 7
-      },
-      {
-        "termino": "Condemn",
-        "veces": 7
-      },
-      {
-        "termino": "Corpse Tendrils",
-        "veces": 7
-      },
-      {
-        "termino": "Familiar",
-        "veces": 7
-      },
-      {
-        "termino": "Wrath of the Berserker",
-        "veces": 7
-      },
-      {
-        "termino": "Bone Prison",
-        "veces": 6
-      },
-      {
-        "termino": "Consecration",
-        "veces": 6
-      },
-      {
-        "termino": "Falling Star",
-        "veces": 4
-      },
-      {
-        "termino": "Hurricane",
-        "veces": 4
-      },
-      {
-        "termino": "Iron Skin",
-        "veces": 4
-      },
-      {
-        "termino": "Rampage-v2",
-        "veces": 4
-      },
-      {
-        "termino": "Sigil of Summons",
-        "veces": 4
-      },
-      {
-        "termino": "Golem",
-        "veces": 3
-      },
-      {
-        "termino": "Poison Imbuement",
-        "veces": 3
-      },
-      {
-        "termino": "Summon Laalish",
-        "veces": 3
-      },
-      {
-        "termino": "Terror Swarm",
-        "veces": 3
-      },
-      {
-        "termino": "Aegis",
-        "veces": 2
-      },
-      {
-        "termino": "Army of the Dead",
-        "veces": 2
-      },
-      {
-        "termino": "Command Fallen",
-        "veces": 2
-      },
-      {
-        "termino": "Dark Prison",
-        "veces": 2
-      },
-      {
-        "termino": "Ground Stomp",
-        "veces": 2
-      },
-      {
-        "termino": "Quill Volley",
-        "veces": 2
-      },
-      {
-        "termino": "Stinger",
-        "veces": 2
-      },
-      {
-        "termino": "Summon Ae'grom",
-        "veces": 2
-      },
-      {
-        "termino": "Summon Vollach",
-        "veces": 2
-      },
-      {
-        "termino": "Umbral Chains",
-        "veces": 2
-      },
-      {
-        "termino": "Arc Lash",
-        "veces": 1
-      },
-      {
-        "termino": "Barrage",
-        "veces": 1
-      },
-      {
-        "termino": "Bone Spirit",
-        "veces": 1
-      },
-      {
-        "termino": "Boulder",
-        "veces": 1
-      },
-      {
-        "termino": "Concussive Stomp",
-        "veces": 1
-      },
-      {
-        "termino": "Corpse Explosion",
-        "veces": 1
-      },
-      {
-        "termino": "Demonic Swipe-v2",
-        "veces": 1
-      },
-      {
-        "termino": "Fiend of Abaddon",
-        "veces": 1
-      },
-      {
-        "termino": "Flurry",
-        "veces": 1
-      },
-      {
-        "termino": "Frenzy",
-        "veces": 1
-      },
-      {
-        "termino": "Rapid Fire",
-        "veces": 1
-      },
-      {
-        "termino": "Shadow Imbuement",
-        "veces": 1
-      },
-      {
-        "termino": "Summon Abodian",
-        "veces": 1
-      },
-      {
-        "termino": "Tornado",
-        "veces": 1
-      },
-      {
-        "termino": "Zeal",
-        "veces": 1
-      },
-      {
-        "termino": "Zenith",
-        "veces": 1
-      }
-    ],
     "skillVariant": [
       {
         "termino": "Teleport Blaze",
@@ -2074,6 +3248,24 @@
       {
         "termino": "Wrath of the Berserker Full Throttle",
         "veces": 1
+      }
+    ],
+    "unique": [
+      {
+        "termino": "Ring of Starless Skies",
+        "veces": 13
+      },
+      {
+        "termino": "Raiment of the Infinite",
+        "veces": 9
+      },
+      {
+        "termino": "Esu's Heirloom",
+        "veces": 7
+      },
+      {
+        "termino": "El'druin, Sword of Justice",
+        "veces": 3
       }
     ]
   }

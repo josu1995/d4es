@@ -173,24 +173,306 @@
     "en": "Dread Claws",
     "es": "Garras pavorosas"
   },
-  "updatedAt": "2026-08-09T02:30:41.994Z",
+  "updatedAt": "2026-08-09T06:10:40.117Z",
   "variants": [
     {
       "completeness": {
-        "hasGear": false,
+        "hasGear": true,
         "hasMercenary": false,
-        "hasParagon": false,
+        "hasParagon": true,
         "hasSkills": true,
         "hasTalisman": false,
         "hasWarPlan": false,
-        "score": 0.35
+        "score": 0.85
       },
-      "gear": {},
+      "gear": {
+        "amulet": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Inner Calm",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_inner_calm",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "amulet",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Diamond",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__diamond",
+              "sno": null
+            }
+          ]
+        },
+        "boots": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Impetus",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_impetus",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "boots",
+          "sockets": []
+        },
+        "chest": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Might",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_might",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "chest",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Cir",
+              "esES": "Cir",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Condition_CastRepeatSkill",
+              "sno": 2060617
+            },
+            {
+              "category": "rune",
+              "enUS": "Que",
+              "esES": "Que",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Effect_Druid_EarthenBulwark",
+              "sno": 2004804
+            }
+          ]
+        },
+        "gloves": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Insidious Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__insidious_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "gloves",
+          "sockets": []
+        },
+        "helm": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Juggernaut's Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__juggernaut_s_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "helm",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Yax",
+              "esES": "Yax",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Condition_OnPotion",
+              "sno": 1969053
+            },
+            {
+              "category": "rune",
+              "enUS": "Gar",
+              "esES": "Gar",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Effect_CritBuff",
+              "sno": 1969098
+            }
+          ]
+        },
+        "offhand": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Edgemaster's Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__edgemaster_s_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "offhand",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Amethyst",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__amethyst",
+              "sno": null
+            }
+          ]
+        },
+        "pants": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Protecting Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__protecting_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "pants",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Sapphire",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__sapphire",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Sapphire",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__sapphire",
+              "sno": null
+            }
+          ]
+        },
+        "ring1": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Peril",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_peril",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "ring1",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Diamond",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__diamond",
+              "sno": null
+            }
+          ]
+        },
+        "ring2": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Malicious Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__malicious_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "ring2",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Diamond",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__diamond",
+              "sno": null
+            }
+          ]
+        }
+      },
       "id": "d4builds:6039c2cb-3bac-4a50-8f55-84c26e498e0a:0",
       "levelBand": "leveling",
       "mercenary": null,
       "paragon": {
-        "boards": [],
+        "boards": [
+          {
+            "glyph": null,
+            "order": 0,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "1Starting Board Str 64•Dex 25•Int 59•Will 105",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__1starting_board_str_64_dex_25_int_59_will_105",
+              "sno": null
+            },
+            "rotation": null
+          }
+        ],
         "level": null
       },
       "runewords": [],
@@ -209,27 +491,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Damage",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__damage",
+              "idName": "skillUpgrade__damage",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Cascading Dread",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__cascading_dread",
+              "idName": "skillUpgrade__cascading_dread",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Ambush",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__ambush",
+              "idName": "skillUpgrade__ambush",
               "sno": null
             }
           ],
@@ -249,27 +531,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Damage Reduction",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__damage_reduction",
+              "idName": "skillUpgrade__damage_reduction",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Portals",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__portals",
+              "idName": "skillUpgrade__portals",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Vacuum Swap",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__vacuum_swap",
+              "idName": "skillUpgrade__vacuum_swap",
               "sno": null
             }
           ],
@@ -289,27 +571,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Killstreak Damage",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__killstreak_damage",
+              "idName": "skillUpgrade__killstreak_damage",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Shockwave",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__shockwave",
+              "idName": "skillUpgrade__shockwave",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Elite Hit Chance",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__elite_hit_chance",
+              "idName": "skillUpgrade__elite_hit_chance",
               "sno": null
             }
           ],
@@ -329,27 +611,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Extra Bites",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__extra_bites",
+              "idName": "skillUpgrade__extra_bites",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Nightmare",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__nightmare",
+              "idName": "skillUpgrade__nightmare",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Pull",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__pull",
+              "idName": "skillUpgrade__pull",
               "sno": null
             }
           ],
@@ -384,27 +666,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Wrath",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__wrath",
+              "idName": "skillUpgrade__wrath",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Contagion",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__contagion",
+              "idName": "skillUpgrade__contagion",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Echo",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__echo",
+              "idName": "skillUpgrade__echo",
               "sno": null
             }
           ],
@@ -413,14 +695,14 @@
       ],
       "source": {
         "author": "Rob2628",
-        "capturedAt": "2026-08-09T02:30:41.994Z",
+        "capturedAt": "2026-08-09T06:10:40.117Z",
         "externalId": "6039c2cb-3bac-4a50-8f55-84c26e498e0a",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "b628eaf1a7cc203b659ff37e0ecaad8bb66266e9725412cd24cb4864110def87",
-        "url": "https://d4builds.gg/builds/dread-claws-warlock-leveling/",
+        "snapshotHash": "eeb0ad4dbb99cd2346f730e79863c249268fafdf2549bd1e63f54fee2d8393a7",
+        "url": "https://d4builds.gg/builds/6039c2cb-3bac-4a50-8f55-84c26e498e0a/?var=0",
         "variantIndex": 0,
-        "variantLabel": "Leveling"
+        "variantLabel": "Standard Build"
       },
       "talisman": null,
       "warPlan": null

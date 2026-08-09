@@ -51,7 +51,32 @@
         "sno": null
       }
     ],
-    "coreUniques": [],
+    "coreUniques": [
+      {
+        "category": "unique",
+        "enUS": "Mantle of the Grey",
+        "esES": "Manto de los grises",
+        "i18n": "d4companion",
+        "idName": "Chest_Unique_Paladin_001",
+        "sno": 2479170
+      },
+      {
+        "category": "unique",
+        "enUS": "Paingorger's Gauntlets",
+        "esES": "Guanteletes de engulledolor",
+        "i18n": "d4companion",
+        "idName": "Gloves_Unique_Generic_004",
+        "sno": 1558648
+      },
+      {
+        "category": "unique",
+        "enUS": "Shard of Verathiel",
+        "esES": "Esquirla de Verathiel",
+        "i18n": "d4companion",
+        "idName": "S05_BSK_Generic_004",
+        "sno": 1944498
+      }
+    ],
     "fields": [
       {
         "key": "skill:curated_clash",
@@ -142,6 +167,126 @@
         "values": {
           "d4builds:895acb96-2d37-4ab2-82dc-d48899e9dbe3:0": 5
         }
+      },
+      {
+        "key": "unique:Chest_Unique_Paladin_001",
+        "label": {
+          "category": "unique",
+          "enUS": "Mantle of the Grey",
+          "esES": "Manto de los grises",
+          "i18n": "d4companion",
+          "idName": "Chest_Unique_Paladin_001",
+          "sno": 2479170
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:895acb96-2d37-4ab2-82dc-d48899e9dbe3:0": "si"
+        }
+      },
+      {
+        "key": "unique:Gloves_Unique_Generic_004",
+        "label": {
+          "category": "unique",
+          "enUS": "Paingorger's Gauntlets",
+          "esES": "Guanteletes de engulledolor",
+          "i18n": "d4companion",
+          "idName": "Gloves_Unique_Generic_004",
+          "sno": 1558648
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:895acb96-2d37-4ab2-82dc-d48899e9dbe3:0": "si"
+        }
+      },
+      {
+        "key": "unique:S05_BSK_Generic_004",
+        "label": {
+          "category": "unique",
+          "enUS": "Shard of Verathiel",
+          "esES": "Esquirla de Verathiel",
+          "i18n": "d4companion",
+          "idName": "S05_BSK_Generic_004",
+          "sno": 1944498
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:895acb96-2d37-4ab2-82dc-d48899e9dbe3:0": "si"
+        }
+      },
+      {
+        "key": "glyph:Rare_016_Dexterity_Side",
+        "label": {
+          "category": "glyph",
+          "enUS": "Exploit",
+          "esES": "Explotar",
+          "i18n": "d4companion",
+          "idName": "Rare_016_Dexterity_Side",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:895acb96-2d37-4ab2-82dc-d48899e9dbe3:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_049_Dexterity_Side",
+        "label": {
+          "category": "glyph",
+          "enUS": "Outmatch",
+          "esES": "Aventajar",
+          "i18n": "d4companion",
+          "idName": "Rare_049_Dexterity_Side",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:895acb96-2d37-4ab2-82dc-d48899e9dbe3:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_050_Dexterity_Main",
+        "label": {
+          "category": "glyph",
+          "enUS": "Spirit",
+          "esES": "Espíritu",
+          "i18n": "d4companion",
+          "idName": "Rare_050_Dexterity_Main",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:895acb96-2d37-4ab2-82dc-d48899e9dbe3:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_103_Strength_Main",
+        "label": {
+          "category": "glyph",
+          "enUS": "Sentinel",
+          "esES": "Centinela",
+          "i18n": "d4companion",
+          "idName": "Rare_103_Strength_Main",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:895acb96-2d37-4ab2-82dc-d48899e9dbe3:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_107_Strength_Main",
+        "label": {
+          "category": "glyph",
+          "enUS": "Resplendence",
+          "esES": "Resplandor",
+          "i18n": "d4companion",
+          "idName": "Rare_107_Strength_Main",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:895acb96-2d37-4ab2-82dc-d48899e9dbe3:0": "presente"
+        }
       }
     ],
     "variantCount": 1
@@ -173,24 +318,437 @@
     "en": "Clash",
     "es": "Enfrentamiento"
   },
-  "updatedAt": "2026-08-09T02:30:41.994Z",
+  "updatedAt": "2026-08-09T06:20:46.251Z",
   "variants": [
     {
       "completeness": {
-        "hasGear": false,
+        "hasGear": true,
         "hasMercenary": false,
-        "hasParagon": false,
+        "hasParagon": true,
         "hasSkills": true,
         "hasTalisman": false,
         "hasWarPlan": false,
-        "score": 0.35
+        "score": 0.85
       },
-      "gear": {},
+      "gear": {
+        "amulet": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Vanguard's Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__vanguard_s_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "amulet",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Diamond",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__diamond",
+              "sno": null
+            }
+          ]
+        },
+        "boots": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Interdiction",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_interdiction",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "boots",
+          "sockets": []
+        },
+        "chest": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Mantle of the Grey",
+            "esES": "Manto de los grises",
+            "i18n": "d4companion",
+            "idName": "Chest_Unique_Paladin_001",
+            "sno": 2479170
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "chest",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Cir",
+              "esES": "Cir",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Condition_CastRepeatSkill",
+              "sno": 2060617
+            },
+            {
+              "category": "rune",
+              "enUS": "Que",
+              "esES": "Que",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Effect_Druid_EarthenBulwark",
+              "sno": 2004804
+            }
+          ]
+        },
+        "gloves": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Paingorger's Gauntlets",
+            "esES": "Guanteletes de engulledolor",
+            "i18n": "d4companion",
+            "idName": "Gloves_Unique_Generic_004",
+            "sno": 1558648
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "gloves",
+          "sockets": []
+        },
+        "helm": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Juggernaut's Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__juggernaut_s_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "helm",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Igni",
+              "esES": "Igni",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Condition_Bomb",
+              "sno": 2165976
+            },
+            {
+              "category": "rune",
+              "enUS": "Kry",
+              "esES": "Kry",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Effect_Spiritborn_Vortex",
+              "sno": 2039678
+            }
+          ]
+        },
+        "offhand": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of the Moonrise",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_the_moonrise",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "offhand",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Ruby",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ruby",
+              "sno": null
+            }
+          ]
+        },
+        "pants": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Glynn's Anvil",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_glynn_s_anvil",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "pants",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Ruby",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ruby",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Ruby",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ruby",
+              "sno": null
+            }
+          ]
+        },
+        "ring1": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of the Juggernaut's Covenant",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_the_juggernaut_s_covenant",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "ring1",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Diamond",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__diamond",
+              "sno": null
+            }
+          ]
+        },
+        "ring2": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Redirected Force",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_redirected_force",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "ring2",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Diamond",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__diamond",
+              "sno": null
+            }
+          ]
+        },
+        "weapon": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Shard of Verathiel",
+            "esES": "Esquirla de Verathiel",
+            "i18n": "d4companion",
+            "idName": "S05_BSK_Generic_004",
+            "sno": 1944498
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": true
+          },
+          "quality": "unique",
+          "slot": "weapon",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Skull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__skull",
+              "sno": null
+            }
+          ]
+        }
+      },
       "id": "d4builds:895acb96-2d37-4ab2-82dc-d48899e9dbe3:0",
       "levelBand": "endgame",
       "mercenary": null,
       "paragon": {
-        "boards": [],
+        "boards": [
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Resplendence",
+                "esES": "Resplandor",
+                "i18n": "d4companion",
+                "idName": "Rare_107_Strength_Main",
+                "sno": null
+              }
+            },
+            "order": 0,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "1Starting Board Str 105•Dex 25•Int 64•Will 59",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__1starting_board_str_105_dex_25_int_64_will_59",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Spirit",
+                "esES": "Espíritu",
+                "i18n": "d4companion",
+                "idName": "Rare_050_Dexterity_Main",
+                "sno": null
+              }
+            },
+            "order": 1,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "4Relentless Str 90•Dex 25•Int 69•Will 64",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__4relentless_str_90_dex_25_int_69_will_64",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Sentinel",
+                "esES": "Centinela",
+                "i18n": "d4companion",
+                "idName": "Rare_103_Strength_Main",
+                "sno": null
+              }
+            },
+            "order": 2,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "3Shield Bearer Str 115•Dex 25•Int 59•Will 49",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__3shield_bearer_str_115_dex_25_int_59_will_49",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Outmatch",
+                "esES": "Aventajar",
+                "i18n": "d4companion",
+                "idName": "Rare_049_Dexterity_Side",
+                "sno": null
+              }
+            },
+            "order": 3,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "2Castle Str 117•Dex 15•Int 64•Will 59",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__2castle_str_117_dex_15_int_64_will_59",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Exploit",
+                "esES": "Explotar",
+                "i18n": "d4companion",
+                "idName": "Rare_016_Dexterity_Side",
+                "sno": null
+              }
+            },
+            "order": 4,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "5Beacon Str 95•Dex 20•Int 79•Will 54",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__5beacon_str_95_dex_20_int_79_will_54",
+              "sno": null
+            },
+            "rotation": null
+          }
+        ],
         "level": null
       },
       "runewords": [],
@@ -209,27 +767,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Extra Passive Stack",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__extra_passive_stack",
+              "idName": "skillUpgrade__extra_passive_stack",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Rite of Vengeance",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__rite_of_vengeance",
+              "idName": "skillUpgrade__rite_of_vengeance",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Potency",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__potency",
+              "idName": "skillUpgrade__potency",
               "sno": null
             }
           ],
@@ -249,27 +807,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Maximum Life",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__maximum_life",
+              "idName": "skillUpgrade__maximum_life",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Rite of Might",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__rite_of_might",
+              "idName": "skillUpgrade__rite_of_might",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Bonus Healing",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__bonus_healing",
+              "idName": "skillUpgrade__bonus_healing",
               "sno": null
             }
           ],
@@ -289,19 +847,19 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Additional Bounce",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__additional_bounce",
+              "idName": "skillUpgrade__additional_bounce",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Rite of Mercy",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__rite_of_mercy",
+              "idName": "skillUpgrade__rite_of_mercy",
               "sno": null
             }
           ],
@@ -321,27 +879,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Duration",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__duration",
+              "idName": "skillUpgrade__duration",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Hallowed Ground",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__hallowed_ground",
+              "idName": "skillUpgrade__hallowed_ground",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Fortify",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__fortify",
+              "idName": "skillUpgrade__fortify",
               "sno": null
             }
           ],
@@ -361,27 +919,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Resolve",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__resolve",
+              "idName": "skillUpgrade__resolve",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Seize Them",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__seize_them",
+              "idName": "skillUpgrade__seize_them",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Damage Increase",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__damage_increase",
+              "idName": "skillUpgrade__damage_increase",
               "sno": null
             }
           ],
@@ -401,27 +959,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Resolve Damage Bonus",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__resolve_damage_bonus",
+              "idName": "skillUpgrade__resolve_damage_bonus",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Barricade",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__barricade",
+              "idName": "skillUpgrade__barricade",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Free Cast",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__free_cast",
+              "idName": "skillUpgrade__free_cast",
               "sno": null
             }
           ],
@@ -430,14 +988,14 @@
       ],
       "source": {
         "author": null,
-        "capturedAt": "2026-08-09T02:30:41.994Z",
+        "capturedAt": "2026-08-09T06:20:46.251Z",
         "externalId": "895acb96-2d37-4ab2-82dc-d48899e9dbe3",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "bbcb0db5ed5450c392cc072c633241441691dcccc8c58c43a57b9a4b99d5d6e0",
-        "url": "https://d4builds.gg/builds/clash-paladin-endgame/",
+        "snapshotHash": "7357a67ebb42360a9633a92303cfee1b40c6c85bd10950c16f532e1543af8412",
+        "url": "https://d4builds.gg/builds/895acb96-2d37-4ab2-82dc-d48899e9dbe3/?var=0",
         "variantIndex": 0,
-        "variantLabel": "Endgame"
+        "variantLabel": "Standard Build"
       },
       "talisman": null,
       "warPlan": null

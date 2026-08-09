@@ -51,7 +51,48 @@
         "sno": null
       }
     ],
-    "coreUniques": [],
+    "coreUniques": [
+      {
+        "category": "unique",
+        "enUS": "Shattered Vow",
+        "esES": "Juramento roto",
+        "i18n": "d4companion",
+        "idName": "2HPolearm_Unique_Generic_001;S14_2HPolearm_Unique_Generic_001",
+        "sno": 2106301
+      },
+      {
+        "category": "unique",
+        "enUS": "Rage of Harrogath",
+        "esES": "Rabia de Harrogath",
+        "i18n": "d4companion",
+        "idName": "Chest_Unique_Barb_100",
+        "sno": 1199202
+      },
+      {
+        "category": "unique",
+        "enUS": "Tuskhelm of Joritz the Mighty",
+        "esES": "Casco acolmillado de Joritz el Poderoso",
+        "i18n": "d4companion",
+        "idName": "Helm_Unique_Barb_100",
+        "sno": 1489569
+      },
+      {
+        "category": "unique",
+        "enUS": "Chainscourged Mail",
+        "esES": "Cota de malla flagelada",
+        "i18n": "d4companion",
+        "idName": "Pants_Unique_Barb_101",
+        "sno": 2478856
+      },
+      {
+        "category": "unique",
+        "enUS": "Ring of the Ravenous",
+        "esES": "Anillo de los voraces",
+        "i18n": "d4companion",
+        "idName": "Ring_Unique_Barb_101_x2",
+        "sno": 2576759
+      }
+    ],
     "fields": [
       {
         "key": "skill:curated_challenging_shout",
@@ -142,6 +183,156 @@
         "values": {
           "d4builds:828f4501-84e4-4e5f-9715-866d4581f98f:0": 15
         }
+      },
+      {
+        "key": "unique:2HPolearm_Unique_Generic_001;S14_2HPolearm_Unique_Generic_001",
+        "label": {
+          "category": "unique",
+          "enUS": "Shattered Vow",
+          "esES": "Juramento roto",
+          "i18n": "d4companion",
+          "idName": "2HPolearm_Unique_Generic_001;S14_2HPolearm_Unique_Generic_001",
+          "sno": 2106301
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:828f4501-84e4-4e5f-9715-866d4581f98f:0": "si"
+        }
+      },
+      {
+        "key": "unique:Chest_Unique_Barb_100",
+        "label": {
+          "category": "unique",
+          "enUS": "Rage of Harrogath",
+          "esES": "Rabia de Harrogath",
+          "i18n": "d4companion",
+          "idName": "Chest_Unique_Barb_100",
+          "sno": 1199202
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:828f4501-84e4-4e5f-9715-866d4581f98f:0": "si"
+        }
+      },
+      {
+        "key": "unique:Helm_Unique_Barb_100",
+        "label": {
+          "category": "unique",
+          "enUS": "Tuskhelm of Joritz the Mighty",
+          "esES": "Casco acolmillado de Joritz el Poderoso",
+          "i18n": "d4companion",
+          "idName": "Helm_Unique_Barb_100",
+          "sno": 1489569
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:828f4501-84e4-4e5f-9715-866d4581f98f:0": "si"
+        }
+      },
+      {
+        "key": "unique:Pants_Unique_Barb_101",
+        "label": {
+          "category": "unique",
+          "enUS": "Chainscourged Mail",
+          "esES": "Cota de malla flagelada",
+          "i18n": "d4companion",
+          "idName": "Pants_Unique_Barb_101",
+          "sno": 2478856
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:828f4501-84e4-4e5f-9715-866d4581f98f:0": "si"
+        }
+      },
+      {
+        "key": "unique:Ring_Unique_Barb_101_x2",
+        "label": {
+          "category": "unique",
+          "enUS": "Ring of the Ravenous",
+          "esES": "Anillo de los voraces",
+          "i18n": "d4companion",
+          "idName": "Ring_Unique_Barb_101_x2",
+          "sno": 2576759
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:828f4501-84e4-4e5f-9715-866d4581f98f:0": "si"
+        }
+      },
+      {
+        "key": "glyph:Rare_016_Dexterity_Side",
+        "label": {
+          "category": "glyph",
+          "enUS": "Exploit",
+          "esES": "Explotar",
+          "i18n": "d4companion",
+          "idName": "Rare_016_Dexterity_Side",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:828f4501-84e4-4e5f-9715-866d4581f98f:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_026_Strength_Main",
+        "label": {
+          "category": "glyph",
+          "enUS": "Executioner",
+          "esES": "Verdugo",
+          "i18n": "d4companion",
+          "idName": "Rare_026_Strength_Main",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:828f4501-84e4-4e5f-9715-866d4581f98f:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_028_Strength_Main",
+        "label": {
+          "category": "glyph",
+          "enUS": "Marshal",
+          "esES": "Mariscal",
+          "i18n": "d4companion",
+          "idName": "Rare_028_Strength_Main",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:828f4501-84e4-4e5f-9715-866d4581f98f:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_036_Willpower_Side",
+        "label": {
+          "category": "glyph",
+          "enUS": "Disembowel",
+          "esES": "Desentrañar",
+          "i18n": "d4companion",
+          "idName": "Rare_036_Willpower_Side",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:828f4501-84e4-4e5f-9715-866d4581f98f:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_Str_Generic",
+        "label": {
+          "category": "glyph",
+          "enUS": "Challenger",
+          "esES": "Contendiente",
+          "i18n": "d4companion",
+          "idName": "Rare_Str_Generic",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:828f4501-84e4-4e5f-9715-866d4581f98f:0": "presente"
+        }
       }
     ],
     "variantCount": 1
@@ -173,24 +364,511 @@
     "en": "Leap Rend",
     "es": "Grito de guerra"
   },
-  "updatedAt": "2026-08-09T02:30:41.994Z",
+  "updatedAt": "2026-08-09T06:19:42.303Z",
   "variants": [
     {
       "completeness": {
-        "hasGear": false,
+        "hasGear": true,
         "hasMercenary": false,
-        "hasParagon": false,
+        "hasParagon": true,
         "hasSkills": true,
         "hasTalisman": false,
         "hasWarPlan": false,
-        "score": 0.35
+        "score": 0.85
       },
-      "gear": {},
+      "gear": {
+        "amulet": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Disobedience",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_disobedience",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "amulet",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Emerald",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__emerald",
+              "sno": null
+            }
+          ]
+        },
+        "boots": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Anger Management",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_anger_management",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "boots",
+          "sockets": []
+        },
+        "chest": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Rage of Harrogath",
+            "esES": "Rabia de Harrogath",
+            "i18n": "d4companion",
+            "idName": "Chest_Unique_Barb_100",
+            "sno": 1199202
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "chest",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Yul",
+              "esES": "Yul",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Condition_AllSkillsOnCD",
+              "sno": 2004497
+            },
+            {
+              "category": "rune",
+              "enUS": "Kry",
+              "esES": "Kry",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Effect_Spiritborn_Vortex",
+              "sno": 2039678
+            }
+          ]
+        },
+        "gloves": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Skullbreaker's Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__skullbreaker_s_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "gloves",
+          "sockets": []
+        },
+        "helm": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Tuskhelm of Joritz the Mighty",
+            "esES": "Casco acolmillado de Joritz el Poderoso",
+            "i18n": "d4companion",
+            "idName": "Helm_Unique_Barb_100",
+            "sno": 1489569
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "helm",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Moni",
+              "esES": "Moni",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Condition_OnStutterStep",
+              "sno": 2063886
+            },
+            {
+              "category": "rune",
+              "enUS": "Que",
+              "esES": "Que",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Effect_Druid_EarthenBulwark",
+              "sno": 2004804
+            }
+          ]
+        },
+        "pants": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Chainscourged Mail",
+            "esES": "Cota de malla flagelada",
+            "i18n": "d4companion",
+            "idName": "Pants_Unique_Barb_101",
+            "sno": 2478856
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "pants",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Amethyst",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__amethyst",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Amethyst",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__amethyst",
+              "sno": null
+            }
+          ]
+        },
+        "ring1": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Ring of the Ravenous",
+            "esES": "Anillo de los voraces",
+            "i18n": "d4companion",
+            "idName": "Ring_Unique_Barb_101_x2",
+            "sno": 2576759
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": true
+          },
+          "quality": "unique",
+          "slot": "ring1",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Ruby",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ruby",
+              "sno": null
+            }
+          ]
+        },
+        "ring2": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Cut to the Bone Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__cut_to_the_bone_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "ring2",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Topaz",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__topaz",
+              "sno": null
+            }
+          ]
+        },
+        "weapon": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Writhing Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__writhing_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "weapon",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Skull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__skull",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Skull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__skull",
+              "sno": null
+            }
+          ]
+        },
+        "weapon2": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Wanton Rupture Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__wanton_rupture_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "weapon2",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Skull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__skull",
+              "sno": null
+            }
+          ]
+        },
+        "weapon3": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Shattered Vow",
+            "esES": "Juramento roto",
+            "i18n": "d4companion",
+            "idName": "2HPolearm_Unique_Generic_001;S14_2HPolearm_Unique_Generic_001",
+            "sno": 2106301
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": true
+          },
+          "quality": "unique",
+          "slot": "weapon3",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Skull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__skull",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Skull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__skull",
+              "sno": null
+            }
+          ]
+        },
+        "weapon4": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Crushing Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__crushing_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "weapon4",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Skull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__skull",
+              "sno": null
+            }
+          ]
+        }
+      },
       "id": "d4builds:828f4501-84e4-4e5f-9715-866d4581f98f:0",
       "levelBand": "endgame",
       "mercenary": null,
       "paragon": {
-        "boards": [],
+        "boards": [
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Marshal",
+                "esES": "Mariscal",
+                "i18n": "d4companion",
+                "idName": "Rare_028_Strength_Main",
+                "sno": null
+              }
+            },
+            "order": 0,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "1Starting Board Str 105•Dex 59•Int 25•Will 64",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__1starting_board_str_105_dex_59_int_25_will_64",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Exploit",
+                "esES": "Explotar",
+                "i18n": "d4companion",
+                "idName": "Rare_016_Dexterity_Side",
+                "sno": null
+              }
+            },
+            "order": 1,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "2Carnage Str 110•Dex 59•Int 20•Will 59",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__2carnage_str_110_dex_59_int_20_will_59",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Challenger",
+                "esES": "Contendiente",
+                "i18n": "d4companion",
+                "idName": "Rare_Str_Generic",
+                "sno": null
+              }
+            },
+            "order": 2,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "3Blood Rage Str 115•Dex 51•Int 25•Will 59",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__3blood_rage_str_115_dex_51_int_25_will_59",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Executioner",
+                "esES": "Verdugo",
+                "i18n": "d4companion",
+                "idName": "Rare_026_Strength_Main",
+                "sno": null
+              }
+            },
+            "order": 3,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "4Decimator Str 110•Dex 54•Int 15•Will 69",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__4decimator_str_110_dex_54_int_15_will_69",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Disembowel",
+                "esES": "Desentrañar",
+                "i18n": "d4companion",
+                "idName": "Rare_036_Willpower_Side",
+                "sno": null
+              }
+            },
+            "order": 4,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "5Hemorrhage Str 110•Dex 59•Int 15•Will 64",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__5hemorrhage_str_110_dex_59_int_15_will_64",
+              "sno": null
+            },
+            "rotation": null
+          }
+        ],
         "level": null
       },
       "runewords": [],
@@ -209,27 +887,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Vulnerable",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__vulnerable",
+              "idName": "skillUpgrade__vulnerable",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Mighty Roar",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__mighty_roar",
+              "idName": "skillUpgrade__mighty_roar",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Ferocity",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__ferocity",
+              "idName": "skillUpgrade__ferocity",
               "sno": null
             }
           ],
@@ -249,27 +927,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Healing",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__healing",
+              "idName": "skillUpgrade__healing",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Blood Sworn",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__blood_sworn",
+              "idName": "skillUpgrade__blood_sworn",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Vulnerable Damage Bonus",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__vulnerable_damage_bonus",
+              "idName": "skillUpgrade__vulnerable_damage_bonus",
               "sno": null
             }
           ],
@@ -289,27 +967,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Duration Bonus",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__duration_bonus",
+              "idName": "skillUpgrade__duration_bonus",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Bawl",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__bawl",
+              "idName": "skillUpgrade__bawl",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Damage Bonus",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__damage_bonus",
+              "idName": "skillUpgrade__damage_bonus",
               "sno": null
             }
           ],
@@ -329,27 +1007,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Fortify",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__fortify",
+              "idName": "skillUpgrade__fortify",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Booming",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__booming",
+              "idName": "skillUpgrade__booming",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Fury Gain",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__fury_gain",
+              "idName": "skillUpgrade__fury_gain",
               "sno": null
             }
           ],
@@ -369,27 +1047,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Berserking",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__berserking",
+              "idName": "skillUpgrade__berserking",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Maximum Carnage",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__maximum_carnage",
+              "idName": "skillUpgrade__maximum_carnage",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Overpower",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__overpower",
+              "idName": "skillUpgrade__overpower",
               "sno": null
             }
           ],
@@ -409,27 +1087,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Damage Bonus and Crowd Control",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__damage_bonus_and_crowd_control",
+              "idName": "skillUpgrade__damage_bonus_and_crowd_control",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Mosh",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__mosh",
+              "idName": "skillUpgrade__mosh",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Fury Generation",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__fury_generation",
+              "idName": "skillUpgrade__fury_generation",
               "sno": null
             }
           ],
@@ -445,14 +1123,14 @@
       ],
       "source": {
         "author": "Rob2628",
-        "capturedAt": "2026-08-09T02:30:41.994Z",
+        "capturedAt": "2026-08-09T06:19:42.303Z",
         "externalId": "828f4501-84e4-4e5f-9715-866d4581f98f",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "3ab5b89406d008a29e9dd47aefc1501ae6c81d0acb03d74b0103cdc635f064c7",
-        "url": "https://d4builds.gg/builds/leap-rend-barbarian-endgame/",
+        "snapshotHash": "2df7f208219c8e3d9b5c126a3a1dbcecec1f61e6912111f0acdf9f32c61f1845",
+        "url": "https://d4builds.gg/builds/828f4501-84e4-4e5f-9715-866d4581f98f/?var=0",
         "variantIndex": 0,
-        "variantLabel": "Endgame"
+        "variantLabel": "Standard Build"
       },
       "talisman": null,
       "warPlan": null

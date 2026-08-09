@@ -51,7 +51,48 @@
         "sno": null
       }
     ],
-    "coreUniques": [],
+    "coreUniques": [
+      {
+        "category": "unique",
+        "enUS": "Ae'grom's Schism",
+        "esES": "Cisma de Ae'grom",
+        "i18n": "d4companion",
+        "idName": "Chest_Unique_Warlock_002",
+        "sno": 2559910
+      },
+      {
+        "category": "unique",
+        "enUS": "Gauntlets of Sheol",
+        "esES": "Guanteletes de Sheol",
+        "i18n": "d4companion",
+        "idName": "Gloves_Unique_Warlock_001",
+        "sno": 2559912
+      },
+      {
+        "category": "unique",
+        "enUS": "Harlequin Crest",
+        "esES": "Cresta de arlequín",
+        "i18n": "d4companion",
+        "idName": "Helm_Unique_Generic_002;S14_Helm_Unique_Generic_002",
+        "sno": 2646317
+      },
+      {
+        "category": "unique",
+        "enUS": "The Fecund Seal",
+        "esES": "El sello fecundo",
+        "i18n": "d4companion",
+        "idName": "Ring_Unique_Warlock_005",
+        "sno": 2559980
+      },
+      {
+        "category": "unique",
+        "enUS": "El'druin, Sword of Justice",
+        "esES": null,
+        "i18n": "none",
+        "idName": "unique__el_druin_sword_of_justice",
+        "sno": null
+      }
+    ],
     "fields": [
       {
         "key": "skill:curated_bombardment",
@@ -142,6 +183,156 @@
         "values": {
           "d4builds:775094c6-ea32-4d36-9f25-93d2d08c82ef:0": 1
         }
+      },
+      {
+        "key": "unique:Chest_Unique_Warlock_002",
+        "label": {
+          "category": "unique",
+          "enUS": "Ae'grom's Schism",
+          "esES": "Cisma de Ae'grom",
+          "i18n": "d4companion",
+          "idName": "Chest_Unique_Warlock_002",
+          "sno": 2559910
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:775094c6-ea32-4d36-9f25-93d2d08c82ef:0": "si"
+        }
+      },
+      {
+        "key": "unique:Gloves_Unique_Warlock_001",
+        "label": {
+          "category": "unique",
+          "enUS": "Gauntlets of Sheol",
+          "esES": "Guanteletes de Sheol",
+          "i18n": "d4companion",
+          "idName": "Gloves_Unique_Warlock_001",
+          "sno": 2559912
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:775094c6-ea32-4d36-9f25-93d2d08c82ef:0": "si"
+        }
+      },
+      {
+        "key": "unique:Helm_Unique_Generic_002;S14_Helm_Unique_Generic_002",
+        "label": {
+          "category": "unique",
+          "enUS": "Harlequin Crest",
+          "esES": "Cresta de arlequín",
+          "i18n": "d4companion",
+          "idName": "Helm_Unique_Generic_002;S14_Helm_Unique_Generic_002",
+          "sno": 2646317
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:775094c6-ea32-4d36-9f25-93d2d08c82ef:0": "si"
+        }
+      },
+      {
+        "key": "unique:Ring_Unique_Warlock_005",
+        "label": {
+          "category": "unique",
+          "enUS": "The Fecund Seal",
+          "esES": "El sello fecundo",
+          "i18n": "d4companion",
+          "idName": "Ring_Unique_Warlock_005",
+          "sno": 2559980
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:775094c6-ea32-4d36-9f25-93d2d08c82ef:0": "si"
+        }
+      },
+      {
+        "key": "unique:unique__el_druin_sword_of_justice",
+        "label": {
+          "category": "unique",
+          "enUS": "El'druin, Sword of Justice",
+          "esES": null,
+          "i18n": "none",
+          "idName": "unique__el_druin_sword_of_justice",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:775094c6-ea32-4d36-9f25-93d2d08c82ef:0": "si"
+        }
+      },
+      {
+        "key": "glyph:Rare_019_Dexterity_Side",
+        "label": {
+          "category": "glyph",
+          "enUS": "Destruction",
+          "esES": "Destrucción",
+          "i18n": "d4companion",
+          "idName": "Rare_019_Dexterity_Side",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:775094c6-ea32-4d36-9f25-93d2d08c82ef:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_112_Willpower_Main",
+        "label": {
+          "category": "glyph",
+          "enUS": "Eliminator",
+          "esES": "Eliminador",
+          "i18n": "d4companion",
+          "idName": "Rare_112_Willpower_Main",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:775094c6-ea32-4d36-9f25-93d2d08c82ef:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_115_Intelligence_Side",
+        "label": {
+          "category": "glyph",
+          "enUS": "Unbound",
+          "esES": "Desatar",
+          "i18n": "d4companion",
+          "idName": "Rare_115_Intelligence_Side",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:775094c6-ea32-4d36-9f25-93d2d08c82ef:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_128_Strength_Side",
+        "label": {
+          "category": "glyph",
+          "enUS": "Demonologist",
+          "esES": "Demonólogo",
+          "i18n": "d4companion",
+          "idName": "Rare_128_Strength_Side",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:775094c6-ea32-4d36-9f25-93d2d08c82ef:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_Dex_Generic",
+        "label": {
+          "category": "glyph",
+          "enUS": "Headhunter",
+          "esES": "Cazacabezas",
+          "i18n": "d4companion",
+          "idName": "Rare_Dex_Generic",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:775094c6-ea32-4d36-9f25-93d2d08c82ef:0": "presente"
+        }
       }
     ],
     "variantCount": 1
@@ -173,24 +364,437 @@
     "en": "Summon",
     "es": "Summon"
   },
-  "updatedAt": "2026-08-09T02:30:41.994Z",
+  "updatedAt": "2026-08-09T06:15:59.192Z",
   "variants": [
     {
       "completeness": {
-        "hasGear": false,
+        "hasGear": true,
         "hasMercenary": false,
-        "hasParagon": false,
+        "hasParagon": true,
         "hasSkills": true,
         "hasTalisman": false,
         "hasWarPlan": false,
-        "score": 0.35
+        "score": 0.85
       },
-      "gear": {},
+      "gear": {
+        "amulet": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Reanimation",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_reanimation",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "amulet",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Diamond",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__diamond",
+              "sno": null
+            }
+          ]
+        },
+        "boots": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Impetus",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_impetus",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "boots",
+          "sockets": []
+        },
+        "chest": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Ae'grom's Schism",
+            "esES": "Cisma de Ae'grom",
+            "i18n": "d4companion",
+            "idName": "Chest_Unique_Warlock_002",
+            "sno": 2559910
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "chest",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Igni",
+              "esES": "Igni",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Condition_Bomb",
+              "sno": 2165976
+            },
+            {
+              "category": "rune",
+              "enUS": "Ohm",
+              "esES": "Ohm",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Effect_Barbarian_WarCry",
+              "sno": 1969850
+            }
+          ]
+        },
+        "gloves": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Gauntlets of Sheol",
+            "esES": "Guanteletes de Sheol",
+            "i18n": "d4companion",
+            "idName": "Gloves_Unique_Warlock_001",
+            "sno": 2559912
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "gloves",
+          "sockets": []
+        },
+        "helm": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Harlequin Crest",
+            "esES": "Cresta de arlequín",
+            "i18n": "d4companion",
+            "idName": "Helm_Unique_Generic_002;S14_Helm_Unique_Generic_002",
+            "sno": 2646317
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": true
+          },
+          "quality": "unique",
+          "slot": "helm",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Cir",
+              "esES": "Cir",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Condition_CastRepeatSkill",
+              "sno": 2060617
+            },
+            {
+              "category": "rune",
+              "enUS": "Thul",
+              "esES": "Thul",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Effect_Sorcerer_FrostNova",
+              "sno": 1969845
+            }
+          ]
+        },
+        "offhand": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Peril",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_peril",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "offhand",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Skull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__skull",
+              "sno": null
+            }
+          ]
+        },
+        "pants": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Might",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_might",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "pants",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Sapphire",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__sapphire",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Sapphire",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__sapphire",
+              "sno": null
+            }
+          ]
+        },
+        "ring1": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "The Fecund Seal",
+            "esES": "El sello fecundo",
+            "i18n": "d4companion",
+            "idName": "Ring_Unique_Warlock_005",
+            "sno": 2559980
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "ring1",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Diamond",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__diamond",
+              "sno": null
+            }
+          ]
+        },
+        "ring2": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Hellbent Commander Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__hellbent_commander_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "ring2",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Diamond",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__diamond",
+              "sno": null
+            }
+          ]
+        },
+        "weapon": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "El'druin, Sword of Justice",
+            "esES": null,
+            "i18n": "none",
+            "idName": "unique__el_druin_sword_of_justice",
+            "sno": null
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": true
+          },
+          "quality": "unique",
+          "slot": "weapon",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Skull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__skull",
+              "sno": null
+            }
+          ]
+        }
+      },
       "id": "d4builds:775094c6-ea32-4d36-9f25-93d2d08c82ef:0",
       "levelBand": "endgame",
       "mercenary": null,
       "paragon": {
-        "boards": [],
+        "boards": [
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Demonologist",
+                "esES": "Demonólogo",
+                "i18n": "d4companion",
+                "idName": "Rare_128_Strength_Side",
+                "sno": null
+              }
+            },
+            "order": 0,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "1Starting Board Str 64•Dex 25•Int 59•Will 105",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__1starting_board_str_64_dex_25_int_59_will_105",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Eliminator",
+                "esES": "Eliminador",
+                "i18n": "d4companion",
+                "idName": "Rare_112_Willpower_Main",
+                "sno": null
+              }
+            },
+            "order": 1,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "2Greater Hex Str 69•Dex 25•Int 64•Will 90",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__2greater_hex_str_69_dex_25_int_64_will_90",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Destruction",
+                "esES": "Destrucción",
+                "i18n": "d4companion",
+                "idName": "Rare_019_Dexterity_Side",
+                "sno": null
+              }
+            },
+            "order": 2,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "3Dominion Str 86•Dex 20•Int 54•Will 90",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__3dominion_str_86_dex_20_int_54_will_90",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Unbound",
+                "esES": "Desatar",
+                "i18n": "d4companion",
+                "idName": "Rare_115_Intelligence_Side",
+                "sno": null
+              }
+            },
+            "order": 3,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "4Ritualism Str 54•Dex 10•Int 74•Will 110",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__4ritualism_str_54_dex_10_int_74_will_110",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Headhunter",
+                "esES": "Cazacabezas",
+                "i18n": "d4companion",
+                "idName": "Rare_Dex_Generic",
+                "sno": null
+              }
+            },
+            "order": 4,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "5Demonic Spicules Str 59•Dex 25•Int 49•Will 115",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__5demonic_spicules_str_59_dex_25_int_49_will_115",
+              "sno": null
+            },
+            "rotation": null
+          }
+        ],
         "level": null
       },
       "runewords": [],
@@ -224,27 +828,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Damage",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__damage",
+              "idName": "skillUpgrade__damage",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Feeding Frenzy",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__feeding_frenzy",
+              "idName": "skillUpgrade__feeding_frenzy",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Stronger Summons",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__stronger_summons",
+              "idName": "skillUpgrade__stronger_summons",
               "sno": null
             }
           ],
@@ -264,27 +868,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Killstreak Damage",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__killstreak_damage",
+              "idName": "skillUpgrade__killstreak_damage",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Shockwave",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__shockwave",
+              "idName": "skillUpgrade__shockwave",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Elite Hit Chance",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__elite_hit_chance",
+              "idName": "skillUpgrade__elite_hit_chance",
               "sno": null
             }
           ],
@@ -304,27 +908,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Crowd Damage",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__crowd_damage",
+              "idName": "skillUpgrade__crowd_damage",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Spiteful Enrage",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__spiteful_enrage",
+              "idName": "skillUpgrade__spiteful_enrage",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Elite Damage",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__elite_damage",
+              "idName": "skillUpgrade__elite_damage",
               "sno": null
             }
           ],
@@ -344,27 +948,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Wrath",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__wrath",
+              "idName": "skillUpgrade__wrath",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Meat Shields",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__meat_shields",
+              "idName": "skillUpgrade__meat_shields",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Dominance",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__dominance",
+              "idName": "skillUpgrade__dominance",
               "sno": null
             }
           ],
@@ -391,27 +995,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Additional Demon",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__additional_demon",
+              "idName": "skillUpgrade__additional_demon",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Demon Mangler",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__demon_mangler",
+              "idName": "skillUpgrade__demon_mangler",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Focused Target",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__focused_target",
+              "idName": "skillUpgrade__focused_target",
               "sno": null
             }
           ],
@@ -420,14 +1024,14 @@
       ],
       "source": {
         "author": "Rob2628",
-        "capturedAt": "2026-08-09T02:30:41.994Z",
+        "capturedAt": "2026-08-09T06:15:59.192Z",
         "externalId": "775094c6-ea32-4d36-9f25-93d2d08c82ef",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "d7b0a13a1b00b31ca6d09b6d9295cb6b3e6cd289749a7a4cdfe3d72eb4d89e54",
-        "url": "https://d4builds.gg/builds/summon-warlock-endgame/",
+        "snapshotHash": "ad1cd1cd7b49989206522d72236164a437c369c108e424bf89da6bc61744555f",
+        "url": "https://d4builds.gg/builds/775094c6-ea32-4d36-9f25-93d2d08c82ef/?var=0",
         "variantIndex": 0,
-        "variantLabel": "Endgame"
+        "variantLabel": "Standard Build"
       },
       "talisman": null,
       "warPlan": null

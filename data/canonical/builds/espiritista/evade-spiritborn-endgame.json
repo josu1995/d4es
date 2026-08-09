@@ -51,7 +51,24 @@
         "sno": null
       }
     ],
-    "coreUniques": [],
+    "coreUniques": [
+      {
+        "category": "unique",
+        "enUS": "Loyalty's Mantle",
+        "esES": "Manto de lealtad",
+        "i18n": "d4companion",
+        "idName": "Helm_Unique_Spiritborn_011_x1",
+        "sno": 1990379
+      },
+      {
+        "category": "unique",
+        "enUS": "Temerity",
+        "esES": "Temeridad",
+        "i18n": "d4companion",
+        "idName": "Pants_Unique_Generic_100",
+        "sno": 578775
+      }
+    ],
     "fields": [
       {
         "key": "skill:curated_armored_hide",
@@ -142,6 +159,111 @@
         "values": {
           "d4builds:35fe4be7-216c-4d51-a3b9-1a75885f7b9f:0": 3
         }
+      },
+      {
+        "key": "unique:Helm_Unique_Spiritborn_011_x1",
+        "label": {
+          "category": "unique",
+          "enUS": "Loyalty's Mantle",
+          "esES": "Manto de lealtad",
+          "i18n": "d4companion",
+          "idName": "Helm_Unique_Spiritborn_011_x1",
+          "sno": 1990379
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:35fe4be7-216c-4d51-a3b9-1a75885f7b9f:0": "si"
+        }
+      },
+      {
+        "key": "unique:Pants_Unique_Generic_100",
+        "label": {
+          "category": "unique",
+          "enUS": "Temerity",
+          "esES": "Temeridad",
+          "i18n": "d4companion",
+          "idName": "Pants_Unique_Generic_100",
+          "sno": 578775
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:35fe4be7-216c-4d51-a3b9-1a75885f7b9f:0": "si"
+        }
+      },
+      {
+        "key": "glyph:Rare_047_Dexterity_Side",
+        "label": {
+          "category": "glyph",
+          "enUS": "Fulminate",
+          "esES": "Fulminar",
+          "i18n": "d4companion",
+          "idName": "Rare_047_Dexterity_Side",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:35fe4be7-216c-4d51-a3b9-1a75885f7b9f:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_050_Dexterity_Main",
+        "label": {
+          "category": "glyph",
+          "enUS": "Spirit",
+          "esES": "Espíritu",
+          "i18n": "d4companion",
+          "idName": "Rare_050_Dexterity_Main",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:35fe4be7-216c-4d51-a3b9-1a75885f7b9f:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_063_Intelligence_Side",
+        "label": {
+          "category": "glyph",
+          "enUS": "Canny",
+          "esES": "Astuto",
+          "i18n": "d4companion",
+          "idName": "Rare_063_Intelligence_Side",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:35fe4be7-216c-4d51-a3b9-1a75885f7b9f:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_098_Strength_Side",
+        "label": {
+          "category": "glyph",
+          "enUS": "Colossal",
+          "esES": "Colosal",
+          "i18n": "d4companion",
+          "idName": "Rare_098_Strength_Side",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:35fe4be7-216c-4d51-a3b9-1a75885f7b9f:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_100_Dexterity_Main",
+        "label": {
+          "category": "glyph",
+          "enUS": "Talon",
+          "esES": "Garfa",
+          "i18n": "d4companion",
+          "idName": "Rare_100_Dexterity_Main",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:35fe4be7-216c-4d51-a3b9-1a75885f7b9f:0": "presente"
+        }
       }
     ],
     "variantCount": 1
@@ -173,24 +295,416 @@
     "en": "Evade",
     "es": "Piel blindada"
   },
-  "updatedAt": "2026-08-09T02:30:41.994Z",
+  "updatedAt": "2026-08-09T06:01:05.847Z",
   "variants": [
     {
       "completeness": {
-        "hasGear": false,
+        "hasGear": true,
         "hasMercenary": false,
-        "hasParagon": false,
+        "hasParagon": true,
         "hasSkills": true,
         "hasTalisman": false,
         "hasWarPlan": false,
-        "score": 0.35
+        "score": 0.85
       },
-      "gear": {},
+      "gear": {
+        "amulet": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Rebounding Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__rebounding_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "amulet",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Diamond",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__diamond",
+              "sno": null
+            }
+          ]
+        },
+        "boots": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Interdiction",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_interdiction",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "boots",
+          "sockets": []
+        },
+        "chest": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Glynn's Anvil",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_glynn_s_anvil",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "chest",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Bac",
+              "esES": "Bac",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Condition_OnMove",
+              "sno": 1999351
+            },
+            {
+              "category": "rune",
+              "enUS": "Kry",
+              "esES": "Kry",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Effect_Spiritborn_Vortex",
+              "sno": 2039678
+            }
+          ]
+        },
+        "gloves": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Fleet Wings",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_fleet_wings",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "gloves",
+          "sockets": []
+        },
+        "helm": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Loyalty's Mantle",
+            "esES": "Manto de lealtad",
+            "i18n": "d4companion",
+            "idName": "Helm_Unique_Spiritborn_011_x1",
+            "sno": 1990379
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "helm",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Yul",
+              "esES": "Yul",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Condition_AllSkillsOnCD",
+              "sno": 2004497
+            },
+            {
+              "category": "rune",
+              "enUS": "Que",
+              "esES": "Que",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Effect_Druid_EarthenBulwark",
+              "sno": 2004804
+            }
+          ]
+        },
+        "pants": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Temerity",
+            "esES": "Temeridad",
+            "i18n": "d4companion",
+            "idName": "Pants_Unique_Generic_100",
+            "sno": 578775
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "pants",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Emerald",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__emerald",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Emerald",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__emerald",
+              "sno": null
+            }
+          ]
+        },
+        "ring1": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Conceited Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__conceited_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "ring1",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Diamond",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__diamond",
+              "sno": null
+            }
+          ]
+        },
+        "ring2": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Redirected Force",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_redirected_force",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "ring2",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Diamond",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__diamond",
+              "sno": null
+            }
+          ]
+        },
+        "weapon": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Supremacy",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_supremacy",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "weapon",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Topaz",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__topaz",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Topaz",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__topaz",
+              "sno": null
+            }
+          ]
+        }
+      },
       "id": "d4builds:35fe4be7-216c-4d51-a3b9-1a75885f7b9f:0",
       "levelBand": "endgame",
       "mercenary": null,
       "paragon": {
-        "boards": [],
+        "boards": [
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Colossal",
+                "esES": "Colosal",
+                "i18n": "d4companion",
+                "idName": "Rare_098_Strength_Side",
+                "sno": null
+              }
+            },
+            "order": 0,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "1Starting Board Str 59•Dex 105•Int 64•Will 25",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__1starting_board_str_59_dex_105_int_64_will_25",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Fulminate",
+                "esES": "Fulminar",
+                "i18n": "d4companion",
+                "idName": "Rare_047_Dexterity_Side",
+                "sno": null
+              }
+            },
+            "order": 1,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "4Drive Str 64•Dex 90•Int 69•Will 25",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__4drive_str_64_dex_90_int_69_will_25",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Canny",
+                "esES": "Astuto",
+                "i18n": "d4companion",
+                "idName": "Rare_063_Intelligence_Side",
+                "sno": null
+              }
+            },
+            "order": 2,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "5In-Fighter Str 59•Dex 110•Int 64•Will 15",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__5in_fighter_str_59_dex_110_int_64_will_15",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Spirit",
+                "esES": "Espíritu",
+                "i18n": "d4companion",
+                "idName": "Rare_050_Dexterity_Main",
+                "sno": null
+              }
+            },
+            "order": 3,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "3Convergence Str 74•Dex 110•Int 54•Will 10",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__3convergence_str_74_dex_110_int_54_will_10",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Talon",
+                "esES": "Garfa",
+                "i18n": "d4companion",
+                "idName": "Rare_100_Dexterity_Main",
+                "sno": null
+              }
+            },
+            "order": 4,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "2Viscous Shield Str 59•Dex 110•Int 59•Will 20",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__2viscous_shield_str_59_dex_110_int_59_will_20",
+              "sno": null
+            },
+            "rotation": null
+          }
+        ],
         "level": null
       },
       "runewords": [],
@@ -209,27 +723,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Barrier Generation",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__barrier_generation",
+              "idName": "skillUpgrade__barrier_generation",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Debilitate",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__debilitate",
+              "idName": "skillUpgrade__debilitate",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Resolve Generation",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__resolve_generation",
+              "idName": "skillUpgrade__resolve_generation",
               "sno": null
             }
           ],
@@ -249,19 +763,19 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Skuttle Bug",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__skuttle_bug",
+              "idName": "skillUpgrade__skuttle_bug",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Healing",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__healing",
+              "idName": "skillUpgrade__healing",
               "sno": null
             }
           ],
@@ -281,27 +795,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Blocked Damage Reduction",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__blocked_damage_reduction",
+              "idName": "skillUpgrade__blocked_damage_reduction",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Force of Nature",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__force_of_nature",
+              "idName": "skillUpgrade__force_of_nature",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Duration",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__duration",
+              "idName": "skillUpgrade__duration",
               "sno": null
             }
           ],
@@ -321,27 +835,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Duration Increase",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__duration_increase",
+              "idName": "skillUpgrade__duration_increase",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Flurry of Claws",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__flurry_of_claws",
+              "idName": "skillUpgrade__flurry_of_claws",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Damage Increase",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__damage_increase",
+              "idName": "skillUpgrade__damage_increase",
               "sno": null
             }
           ],
@@ -361,27 +875,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Charge Increase",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__charge_increase",
+              "idName": "skillUpgrade__charge_increase",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Evasive Swipe",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__evasive_swipe",
+              "idName": "skillUpgrade__evasive_swipe",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Incarnate Duration",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__incarnate_duration",
+              "idName": "skillUpgrade__incarnate_duration",
               "sno": null
             }
           ],
@@ -408,19 +922,19 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Vulnerable",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__vulnerable",
+              "idName": "skillUpgrade__vulnerable",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Tag Team",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__tag_team",
+              "idName": "skillUpgrade__tag_team",
               "sno": null
             }
           ],
@@ -436,14 +950,14 @@
       ],
       "source": {
         "author": null,
-        "capturedAt": "2026-08-09T02:30:41.994Z",
+        "capturedAt": "2026-08-09T06:01:05.847Z",
         "externalId": "35fe4be7-216c-4d51-a3b9-1a75885f7b9f",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "e5b954e85bc6ddba511ce028e7e18a04fc0edfd02d115f106dbf48bfc823235e",
-        "url": "https://d4builds.gg/builds/evade-spiritborn-endgame/",
+        "snapshotHash": "d4ff48e1579dca0db8c66c1cfc59c6cbf13df67a1dae853dfd30252e653bda71",
+        "url": "https://d4builds.gg/builds/35fe4be7-216c-4d51-a3b9-1a75885f7b9f/?var=0",
         "variantIndex": 0,
-        "variantLabel": "Endgame"
+        "variantLabel": "Standard Build"
       },
       "talisman": null,
       "warPlan": null

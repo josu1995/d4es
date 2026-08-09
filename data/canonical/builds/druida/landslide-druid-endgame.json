@@ -51,7 +51,48 @@
         "sno": null
       }
     ],
-    "coreUniques": [],
+    "coreUniques": [
+      {
+        "category": "unique",
+        "enUS": "Gathlen's Birthright",
+        "esES": "Herencia de Gathlen",
+        "i18n": "d4companion",
+        "idName": "Helm_Unique_Druid_102",
+        "sno": 2224763
+      },
+      {
+        "category": "unique",
+        "enUS": "Fractured Runestone",
+        "esES": "Piedra rúnica fracturada",
+        "i18n": "d4companion",
+        "idName": "Ring_Unique_Druid_03_x2",
+        "sno": 2572852
+      },
+      {
+        "category": "unique",
+        "enUS": "Might of the Ursine",
+        "esES": "Poderío de los Osunos",
+        "i18n": "d4companion",
+        "idName": "Ring_Unique_Druid_07_x2",
+        "sno": 2574430
+      },
+      {
+        "category": "unique",
+        "enUS": "The Basilisk",
+        "esES": "El basilisco",
+        "i18n": "d4companion",
+        "idName": "S05_BSK_Druid_001",
+        "sno": 1931637
+      },
+      {
+        "category": "unique",
+        "enUS": "Locran's Talisman",
+        "esES": "Talismán de Locran",
+        "i18n": "d4companion",
+        "idName": "S05_BSK_Generic_009",
+        "sno": 1924261
+      }
+    ],
     "fields": [
       {
         "key": "skill:curated_earth_spike",
@@ -142,6 +183,156 @@
         "values": {
           "d4builds:1d435390-4527-48cf-ae1d-03f44b1174fc:0": 15
         }
+      },
+      {
+        "key": "unique:Helm_Unique_Druid_102",
+        "label": {
+          "category": "unique",
+          "enUS": "Gathlen's Birthright",
+          "esES": "Herencia de Gathlen",
+          "i18n": "d4companion",
+          "idName": "Helm_Unique_Druid_102",
+          "sno": 2224763
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:1d435390-4527-48cf-ae1d-03f44b1174fc:0": "si"
+        }
+      },
+      {
+        "key": "unique:Ring_Unique_Druid_03_x2",
+        "label": {
+          "category": "unique",
+          "enUS": "Fractured Runestone",
+          "esES": "Piedra rúnica fracturada",
+          "i18n": "d4companion",
+          "idName": "Ring_Unique_Druid_03_x2",
+          "sno": 2572852
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:1d435390-4527-48cf-ae1d-03f44b1174fc:0": "si"
+        }
+      },
+      {
+        "key": "unique:Ring_Unique_Druid_07_x2",
+        "label": {
+          "category": "unique",
+          "enUS": "Might of the Ursine",
+          "esES": "Poderío de los Osunos",
+          "i18n": "d4companion",
+          "idName": "Ring_Unique_Druid_07_x2",
+          "sno": 2574430
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:1d435390-4527-48cf-ae1d-03f44b1174fc:0": "si"
+        }
+      },
+      {
+        "key": "unique:S05_BSK_Druid_001",
+        "label": {
+          "category": "unique",
+          "enUS": "The Basilisk",
+          "esES": "El basilisco",
+          "i18n": "d4companion",
+          "idName": "S05_BSK_Druid_001",
+          "sno": 1931637
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:1d435390-4527-48cf-ae1d-03f44b1174fc:0": "si"
+        }
+      },
+      {
+        "key": "unique:S05_BSK_Generic_009",
+        "label": {
+          "category": "unique",
+          "enUS": "Locran's Talisman",
+          "esES": "Talismán de Locran",
+          "i18n": "d4companion",
+          "idName": "S05_BSK_Generic_009",
+          "sno": 1924261
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:1d435390-4527-48cf-ae1d-03f44b1174fc:0": "si"
+        }
+      },
+      {
+        "key": "glyph:Rare_035_Intelligence_Side",
+        "label": {
+          "category": "glyph",
+          "enUS": "Dominate",
+          "esES": "Dominar",
+          "i18n": "d4companion",
+          "idName": "Rare_035_Intelligence_Side",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:1d435390-4527-48cf-ae1d-03f44b1174fc:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_040_Willpower_Main",
+        "label": {
+          "category": "glyph",
+          "enUS": "Earth and Sky",
+          "esES": "Tierra y cielo",
+          "i18n": "d4companion",
+          "idName": "Rare_040_Willpower_Main",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:1d435390-4527-48cf-ae1d-03f44b1174fc:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_049_Dexterity_Side",
+        "label": {
+          "category": "glyph",
+          "enUS": "Outmatch",
+          "esES": "Aventajar",
+          "i18n": "d4companion",
+          "idName": "Rare_049_Dexterity_Side",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:1d435390-4527-48cf-ae1d-03f44b1174fc:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_050_Dexterity_Main",
+        "label": {
+          "category": "glyph",
+          "enUS": "Spirit",
+          "esES": "Espíritu",
+          "i18n": "d4companion",
+          "idName": "Rare_050_Dexterity_Main",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:1d435390-4527-48cf-ae1d-03f44b1174fc:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_Dex_Generic",
+        "label": {
+          "category": "glyph",
+          "enUS": "Headhunter",
+          "esES": "Cazacabezas",
+          "i18n": "d4companion",
+          "idName": "Rare_Dex_Generic",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:1d435390-4527-48cf-ae1d-03f44b1174fc:0": "presente"
+        }
       }
     ],
     "variantCount": 1
@@ -173,24 +364,416 @@
     "en": "Landslide",
     "es": "Alud"
   },
-  "updatedAt": "2026-08-09T02:30:41.994Z",
+  "updatedAt": "2026-08-09T05:58:58.102Z",
   "variants": [
     {
       "completeness": {
-        "hasGear": false,
+        "hasGear": true,
         "hasMercenary": false,
-        "hasParagon": false,
+        "hasParagon": true,
         "hasSkills": true,
         "hasTalisman": false,
         "hasWarPlan": false,
-        "score": 0.35
+        "score": 0.85
       },
-      "gear": {},
+      "gear": {
+        "amulet": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Locran's Talisman",
+            "esES": "Talismán de Locran",
+            "i18n": "d4companion",
+            "idName": "S05_BSK_Generic_009",
+            "sno": 1924261
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "amulet",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Diamond",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__diamond",
+              "sno": null
+            }
+          ]
+        },
+        "boots": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Great Storm Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__great_storm_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "boots",
+          "sockets": []
+        },
+        "chest": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Glynn's Anvil",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_glynn_s_anvil",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "chest",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Cir",
+              "esES": "Cir",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Condition_CastRepeatSkill",
+              "sno": 2060617
+            },
+            {
+              "category": "rune",
+              "enUS": "Mot",
+              "esES": "Mot",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Effect_Rogue_DarkShroud",
+              "sno": 2089934
+            }
+          ]
+        },
+        "gloves": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Crushing Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__crushing_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "gloves",
+          "sockets": []
+        },
+        "helm": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Gathlen's Birthright",
+            "esES": "Herencia de Gathlen",
+            "i18n": "d4companion",
+            "idName": "Helm_Unique_Druid_102",
+            "sno": 2224763
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "helm",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Igni",
+              "esES": "Igni",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Condition_Bomb",
+              "sno": 2165976
+            },
+            {
+              "category": "rune",
+              "enUS": "Que",
+              "esES": "Que",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Effect_Druid_EarthenBulwark",
+              "sno": 2004804
+            }
+          ]
+        },
+        "pants": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Debilitating Toxins",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_debilitating_toxins",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "pants",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Sapphire",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__sapphire",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Sapphire",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__sapphire",
+              "sno": null
+            }
+          ]
+        },
+        "ring1": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Might of the Ursine",
+            "esES": "Poderío de los Osunos",
+            "i18n": "d4companion",
+            "idName": "Ring_Unique_Druid_07_x2",
+            "sno": 2574430
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "ring1",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Diamond",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__diamond",
+              "sno": null
+            }
+          ]
+        },
+        "ring2": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Fractured Runestone",
+            "esES": "Piedra rúnica fracturada",
+            "i18n": "d4companion",
+            "idName": "Ring_Unique_Druid_03_x2",
+            "sno": 2572852
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "ring2",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Diamond",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__diamond",
+              "sno": null
+            }
+          ]
+        },
+        "weapon": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "The Basilisk",
+            "esES": "El basilisco",
+            "i18n": "d4companion",
+            "idName": "S05_BSK_Druid_001",
+            "sno": 1931637
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "weapon",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Skull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__skull",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Skull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__skull",
+              "sno": null
+            }
+          ]
+        }
+      },
       "id": "d4builds:1d435390-4527-48cf-ae1d-03f44b1174fc:0",
       "levelBand": "endgame",
       "mercenary": null,
       "paragon": {
-        "boards": [],
+        "boards": [
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Dominate",
+                "esES": "Dominar",
+                "i18n": "d4companion",
+                "idName": "Rare_035_Intelligence_Side",
+                "sno": null
+              }
+            },
+            "order": 0,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "1Starting Board Str 25•Dex 59•Int 64•Will 105",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__1starting_board_str_25_dex_59_int_64_will_105",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Headhunter",
+                "esES": "Cazacabezas",
+                "i18n": "d4companion",
+                "idName": "Rare_Dex_Generic",
+                "sno": null
+              }
+            },
+            "order": 1,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "2Earthen Devastation Str 25•Dex 49•Int 59•Will 115",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__2earthen_devastation_str_25_dex_49_int_59_will_115",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Earth and Sky",
+                "esES": "Tierra y cielo",
+                "i18n": "d4companion",
+                "idName": "Rare_040_Willpower_Main",
+                "sno": null
+              }
+            },
+            "order": 2,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "3Constricting Tendrils Str 10•Dex 74•Int 54•Will 110",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__3constricting_tendrils_str_10_dex_74_int_54_will_110",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Spirit",
+                "esES": "Espíritu",
+                "i18n": "d4companion",
+                "idName": "Rare_050_Dexterity_Main",
+                "sno": null
+              }
+            },
+            "order": 3,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "5Heightened Malice Str 10•Dex 74•Int 59•Will 105",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__5heightened_malice_str_10_dex_74_int_59_will_105",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Outmatch",
+                "esES": "Aventajar",
+                "i18n": "d4companion",
+                "idName": "Rare_049_Dexterity_Side",
+                "sno": null
+              }
+            },
+            "order": 4,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "4Survival Instincts Str 20•Dex 59•Int 59•Will 110",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__4survival_instincts_str_20_dex_59_int_59_will_110",
+              "sno": null
+            },
+            "rotation": null
+          }
+        ],
         "level": null
       },
       "runewords": [],
@@ -209,19 +792,19 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Thrill of the Hunt",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__thrill_of_the_hunt",
+              "idName": "skillUpgrade__thrill_of_the_hunt",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Attack Speed",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__attack_speed",
+              "idName": "skillUpgrade__attack_speed",
               "sno": null
             }
           ],
@@ -241,19 +824,19 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Greater Cyclone Armor",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__greater_cyclone_armor",
+              "idName": "skillUpgrade__greater_cyclone_armor",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Resistance",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__resistance",
+              "idName": "skillUpgrade__resistance",
               "sno": null
             }
           ],
@@ -273,27 +856,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Movement Speed",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__movement_speed",
+              "idName": "skillUpgrade__movement_speed",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Hero of the Storm",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__hero_of_the_storm",
+              "idName": "skillUpgrade__hero_of_the_storm",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Additional Strikes",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__additional_strikes",
+              "idName": "skillUpgrade__additional_strikes",
               "sno": null
             }
           ],
@@ -313,27 +896,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Fortify",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__fortify",
+              "idName": "skillUpgrade__fortify",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Cornered Beast",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__cornered_beast",
+              "idName": "skillUpgrade__cornered_beast",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Cooldown Reduction",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__cooldown_reduction",
+              "idName": "skillUpgrade__cooldown_reduction",
               "sno": null
             }
           ],
@@ -353,27 +936,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Overpower",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__overpower",
+              "idName": "skillUpgrade__overpower",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Seismic Shift",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__seismic_shift",
+              "idName": "skillUpgrade__seismic_shift",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Spirit",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__spirit",
+              "idName": "skillUpgrade__spirit",
               "sno": null
             }
           ],
@@ -393,27 +976,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Additional Pillar",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__additional_pillar",
+              "idName": "skillUpgrade__additional_pillar",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Continental Shift",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__continental_shift",
+              "idName": "skillUpgrade__continental_shift",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Critical Strike Chance",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__critical_strike_chance",
+              "idName": "skillUpgrade__critical_strike_chance",
               "sno": null
             }
           ],
@@ -422,14 +1005,14 @@
       ],
       "source": {
         "author": "Rob2628",
-        "capturedAt": "2026-08-09T02:30:41.994Z",
+        "capturedAt": "2026-08-09T05:58:58.102Z",
         "externalId": "1d435390-4527-48cf-ae1d-03f44b1174fc",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "94154cdca7d209e07b6ffc73354686974f4a6247ef8102b067f275566bc38ca7",
-        "url": "https://d4builds.gg/builds/landslide-druid-endgame/",
+        "snapshotHash": "7d26cd6be1a4fb19868e044d8dc597514c6c293f10a291b232f4b9a419d60d6c",
+        "url": "https://d4builds.gg/builds/1d435390-4527-48cf-ae1d-03f44b1174fc/?var=0",
         "variantIndex": 0,
-        "variantLabel": "Endgame"
+        "variantLabel": "Standard Build"
       },
       "talisman": null,
       "warPlan": null

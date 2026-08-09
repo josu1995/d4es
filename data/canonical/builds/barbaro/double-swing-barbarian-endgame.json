@@ -51,7 +51,48 @@
         "sno": null
       }
     ],
-    "coreUniques": [],
+    "coreUniques": [
+      {
+        "category": "unique",
+        "enUS": "Ramaladni's Magnum Opus",
+        "esES": "Obra maestra de Ramaladni",
+        "i18n": "d4companion",
+        "idName": "1HSword_Unique_Barb_101",
+        "sno": 578742
+      },
+      {
+        "category": "unique",
+        "enUS": "The Grandfather",
+        "esES": "El padrino",
+        "i18n": "d4companion",
+        "idName": "2HSword_Unique_Generic_001;S14_2HSword_Unique_Generic_001",
+        "sno": 2646305
+      },
+      {
+        "category": "unique",
+        "enUS": "Twin Strikes",
+        "esES": "Golpes gemelos",
+        "i18n": "d4companion",
+        "idName": "Gloves_Unique_Barb_100_x2",
+        "sno": 2577796
+      },
+      {
+        "category": "unique",
+        "enUS": "Tuskhelm of Joritz the Mighty",
+        "esES": "Casco acolmillado de Joritz el Poderoso",
+        "i18n": "d4companion",
+        "idName": "Helm_Unique_Barb_100",
+        "sno": 1489569
+      },
+      {
+        "category": "unique",
+        "enUS": "Ring of Starless Skies",
+        "esES": null,
+        "i18n": "none",
+        "idName": "unique__ring_of_starless_skies",
+        "sno": null
+      }
+    ],
     "fields": [
       {
         "key": "skill:curated_challenging_shout",
@@ -142,6 +183,156 @@
         "values": {
           "d4builds:526f92bf-ebc2-40c9-acc8-75f2dfd3e744:0": 15
         }
+      },
+      {
+        "key": "unique:1HSword_Unique_Barb_101",
+        "label": {
+          "category": "unique",
+          "enUS": "Ramaladni's Magnum Opus",
+          "esES": "Obra maestra de Ramaladni",
+          "i18n": "d4companion",
+          "idName": "1HSword_Unique_Barb_101",
+          "sno": 578742
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:526f92bf-ebc2-40c9-acc8-75f2dfd3e744:0": "si"
+        }
+      },
+      {
+        "key": "unique:2HSword_Unique_Generic_001;S14_2HSword_Unique_Generic_001",
+        "label": {
+          "category": "unique",
+          "enUS": "The Grandfather",
+          "esES": "El padrino",
+          "i18n": "d4companion",
+          "idName": "2HSword_Unique_Generic_001;S14_2HSword_Unique_Generic_001",
+          "sno": 2646305
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:526f92bf-ebc2-40c9-acc8-75f2dfd3e744:0": "si"
+        }
+      },
+      {
+        "key": "unique:Gloves_Unique_Barb_100_x2",
+        "label": {
+          "category": "unique",
+          "enUS": "Twin Strikes",
+          "esES": "Golpes gemelos",
+          "i18n": "d4companion",
+          "idName": "Gloves_Unique_Barb_100_x2",
+          "sno": 2577796
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:526f92bf-ebc2-40c9-acc8-75f2dfd3e744:0": "si"
+        }
+      },
+      {
+        "key": "unique:Helm_Unique_Barb_100",
+        "label": {
+          "category": "unique",
+          "enUS": "Tuskhelm of Joritz the Mighty",
+          "esES": "Casco acolmillado de Joritz el Poderoso",
+          "i18n": "d4companion",
+          "idName": "Helm_Unique_Barb_100",
+          "sno": 1489569
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:526f92bf-ebc2-40c9-acc8-75f2dfd3e744:0": "si"
+        }
+      },
+      {
+        "key": "unique:unique__ring_of_starless_skies",
+        "label": {
+          "category": "unique",
+          "enUS": "Ring of Starless Skies",
+          "esES": null,
+          "i18n": "none",
+          "idName": "unique__ring_of_starless_skies",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:526f92bf-ebc2-40c9-acc8-75f2dfd3e744:0": "si"
+        }
+      },
+      {
+        "key": "glyph:Rare_016_Dexterity_Side",
+        "label": {
+          "category": "glyph",
+          "enUS": "Exploit",
+          "esES": "Explotar",
+          "i18n": "d4companion",
+          "idName": "Rare_016_Dexterity_Side",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:526f92bf-ebc2-40c9-acc8-75f2dfd3e744:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_021_Strength_Main",
+        "label": {
+          "category": "glyph",
+          "enUS": "Ambidextrous",
+          "esES": "Ambidiestro",
+          "i18n": "d4companion",
+          "idName": "Rare_021_Strength_Main",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:526f92bf-ebc2-40c9-acc8-75f2dfd3e744:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_030_Dexterity_Side",
+        "label": {
+          "category": "glyph",
+          "enUS": "Wrath",
+          "esES": "Cólera",
+          "i18n": "d4companion",
+          "idName": "Rare_030_Dexterity_Side",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:526f92bf-ebc2-40c9-acc8-75f2dfd3e744:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_080_Strength_Main",
+        "label": {
+          "category": "glyph",
+          "enUS": "Twister",
+          "esES": "Remolino",
+          "i18n": "d4companion",
+          "idName": "Rare_080_Strength_Main",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:526f92bf-ebc2-40c9-acc8-75f2dfd3e744:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_Str_Generic",
+        "label": {
+          "category": "glyph",
+          "enUS": "Challenger",
+          "esES": "Contendiente",
+          "i18n": "d4companion",
+          "idName": "Rare_Str_Generic",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:526f92bf-ebc2-40c9-acc8-75f2dfd3e744:0": "presente"
+        }
       }
     ],
     "variantCount": 1
@@ -173,24 +364,511 @@
     "en": "Double Swing",
     "es": "Ataque doble"
   },
-  "updatedAt": "2026-08-09T02:30:41.994Z",
+  "updatedAt": "2026-08-09T06:07:28.817Z",
   "variants": [
     {
       "completeness": {
-        "hasGear": false,
+        "hasGear": true,
         "hasMercenary": false,
-        "hasParagon": false,
+        "hasParagon": true,
         "hasSkills": true,
         "hasTalisman": false,
         "hasWarPlan": false,
-        "score": 0.35
+        "score": 0.85
       },
-      "gear": {},
+      "gear": {
+        "amulet": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Walloping",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_walloping",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "amulet",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Topaz",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__topaz",
+              "sno": null
+            }
+          ]
+        },
+        "boots": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Anger Management",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_anger_management",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "boots",
+          "sockets": []
+        },
+        "chest": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Juggernaut's Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__juggernaut_s_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "chest",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Cir",
+              "esES": "Cir",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Condition_CastRepeatSkill",
+              "sno": 2060617
+            },
+            {
+              "category": "rune",
+              "enUS": "Mot",
+              "esES": "Mot",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Effect_Rogue_DarkShroud",
+              "sno": 2089934
+            }
+          ]
+        },
+        "gloves": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Twin Strikes",
+            "esES": "Golpes gemelos",
+            "i18n": "d4companion",
+            "idName": "Gloves_Unique_Barb_100_x2",
+            "sno": 2577796
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "gloves",
+          "sockets": []
+        },
+        "helm": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Tuskhelm of Joritz the Mighty",
+            "esES": "Casco acolmillado de Joritz el Poderoso",
+            "i18n": "d4companion",
+            "idName": "Helm_Unique_Barb_100",
+            "sno": 1489569
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "helm",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Ruby",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ruby",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Ruby",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ruby",
+              "sno": null
+            }
+          ]
+        },
+        "pants": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Heavenly Strength",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_heavenly_strength",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "pants",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Igni",
+              "esES": "Igni",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Condition_Bomb",
+              "sno": 2165976
+            },
+            {
+              "category": "rune",
+              "enUS": "Thul",
+              "esES": "Thul",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Effect_Sorcerer_FrostNova",
+              "sno": 1969845
+            }
+          ]
+        },
+        "ring1": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Inner Calm",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_inner_calm",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "ring1",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Emerald",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__emerald",
+              "sno": null
+            }
+          ]
+        },
+        "ring2": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Ring of Starless Skies",
+            "esES": null,
+            "i18n": "none",
+            "idName": "unique__ring_of_starless_skies",
+            "sno": null
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": true
+          },
+          "quality": "unique",
+          "slot": "ring2",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Ruby",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ruby",
+              "sno": null
+            }
+          ]
+        },
+        "weapon": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Crushing Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__crushing_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "weapon",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Skull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__skull",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Skull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__skull",
+              "sno": null
+            }
+          ]
+        },
+        "weapon2": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Ramaladni's Magnum Opus",
+            "esES": "Obra maestra de Ramaladni",
+            "i18n": "d4companion",
+            "idName": "1HSword_Unique_Barb_101",
+            "sno": 578742
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": true
+          },
+          "quality": "unique",
+          "slot": "weapon2",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Skull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__skull",
+              "sno": null
+            }
+          ]
+        },
+        "weapon3": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "The Grandfather",
+            "esES": "El padrino",
+            "i18n": "d4companion",
+            "idName": "2HSword_Unique_Generic_001;S14_2HSword_Unique_Generic_001",
+            "sno": 2646305
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": true
+          },
+          "quality": "unique",
+          "slot": "weapon3",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Skull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__skull",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Skull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__skull",
+              "sno": null
+            }
+          ]
+        },
+        "weapon4": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of the Warpath",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_the_warpath",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "weapon4",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Skull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__skull",
+              "sno": null
+            }
+          ]
+        }
+      },
       "id": "d4builds:526f92bf-ebc2-40c9-acc8-75f2dfd3e744:0",
       "levelBand": "endgame",
       "mercenary": null,
       "paragon": {
-        "boards": [],
+        "boards": [
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Exploit",
+                "esES": "Explotar",
+                "i18n": "d4companion",
+                "idName": "Rare_016_Dexterity_Side",
+                "sno": null
+              }
+            },
+            "order": 0,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "1Starting Board Str 105•Dex 59•Int 25•Will 64",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__1starting_board_str_105_dex_59_int_25_will_64",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Ambidextrous",
+                "esES": "Ambidiestro",
+                "i18n": "d4companion",
+                "idName": "Rare_021_Strength_Main",
+                "sno": null
+              }
+            },
+            "order": 1,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "2Carnage Str 110•Dex 59•Int 20•Will 59",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__2carnage_str_110_dex_59_int_20_will_59",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Twister",
+                "esES": "Remolino",
+                "i18n": "d4companion",
+                "idName": "Rare_080_Strength_Main",
+                "sno": null
+              }
+            },
+            "order": 2,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "3Blood Rage Str 115•Dex 51•Int 25•Will 59",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__3blood_rage_str_115_dex_51_int_25_will_59",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Wrath",
+                "esES": "Cólera",
+                "i18n": "d4companion",
+                "idName": "Rare_030_Dexterity_Side",
+                "sno": null
+              }
+            },
+            "order": 3,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "4Warbringer Str 110•Dex 74•Int 10•Will 54",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__4warbringer_str_110_dex_74_int_10_will_54",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Challenger",
+                "esES": "Contendiente",
+                "i18n": "d4companion",
+                "idName": "Rare_Str_Generic",
+                "sno": null
+              }
+            },
+            "order": 4,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "5Flawless Technique Str 90•Dex 64•Int 25•Will 69",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__5flawless_technique_str_90_dex_64_int_25_will_69",
+              "sno": null
+            },
+            "rotation": null
+          }
+        ],
         "level": null
       },
       "runewords": [],
@@ -209,27 +887,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Damage Increase",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__damage_increase",
+              "idName": "skillUpgrade__damage_increase",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Twister",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__twister",
+              "idName": "skillUpgrade__twister",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Chance to Hit Twice",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__chance_to_hit_twice",
+              "idName": "skillUpgrade__chance_to_hit_twice",
               "sno": null
             }
           ],
@@ -249,27 +927,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Duration Bonus",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__duration_bonus",
+              "idName": "skillUpgrade__duration_bonus",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Bawl",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__bawl",
+              "idName": "skillUpgrade__bawl",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Damage Bonus",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__damage_bonus",
+              "idName": "skillUpgrade__damage_bonus",
               "sno": null
             }
           ],
@@ -289,27 +967,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Vulnerable",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__vulnerable",
+              "idName": "skillUpgrade__vulnerable",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Mighty Roar",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__mighty_roar",
+              "idName": "skillUpgrade__mighty_roar",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Ferocity",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__ferocity",
+              "idName": "skillUpgrade__ferocity",
               "sno": null
             }
           ],
@@ -329,27 +1007,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Fortify",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__fortify",
+              "idName": "skillUpgrade__fortify",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Booming",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__booming",
+              "idName": "skillUpgrade__booming",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Fury Gain",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__fury_gain",
+              "idName": "skillUpgrade__fury_gain",
               "sno": null
             }
           ],
@@ -369,27 +1047,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Fury Generation",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__fury_generation",
+              "idName": "skillUpgrade__fury_generation",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Maximum Carnage",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__maximum_carnage",
+              "idName": "skillUpgrade__maximum_carnage",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Duration Bonus",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__duration_bonus",
+              "idName": "skillUpgrade__duration_bonus",
               "sno": null
             }
           ],
@@ -409,27 +1087,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Weaken",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__weaken",
+              "idName": "skillUpgrade__weaken",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Retaliation",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__retaliation",
+              "idName": "skillUpgrade__retaliation",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Resolve",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__resolve",
+              "idName": "skillUpgrade__resolve",
               "sno": null
             }
           ],
@@ -445,14 +1123,14 @@
       ],
       "source": {
         "author": "Rob2628",
-        "capturedAt": "2026-08-09T02:30:41.994Z",
+        "capturedAt": "2026-08-09T06:07:28.817Z",
         "externalId": "526f92bf-ebc2-40c9-acc8-75f2dfd3e744",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "b0094eab020bdce3a14a4c17390d28bd36dda69913e280c7e710bfa6308d5084",
-        "url": "https://d4builds.gg/builds/double-swing-barbarian-endgame/",
+        "snapshotHash": "12ea68eb41679cecf8e8c4846df76e1f6eb0596a4bea3c829bed83fdd6bc45e3",
+        "url": "https://d4builds.gg/builds/526f92bf-ebc2-40c9-acc8-75f2dfd3e744/?var=0",
         "variantIndex": 0,
-        "variantLabel": "Endgame"
+        "variantLabel": "Standard Build"
       },
       "talisman": null,
       "warPlan": null

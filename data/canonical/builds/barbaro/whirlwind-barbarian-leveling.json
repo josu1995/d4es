@@ -142,6 +142,36 @@
         "values": {
           "d4builds:2c273831-6609-4414-8486-6da72c903e83:0": 1
         }
+      },
+      {
+        "key": "glyph:Rare_080_Strength_Main",
+        "label": {
+          "category": "glyph",
+          "enUS": "Twister",
+          "esES": "Remolino",
+          "i18n": "d4companion",
+          "idName": "Rare_080_Strength_Main",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:2c273831-6609-4414-8486-6da72c903e83:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_Str_Generic",
+        "label": {
+          "category": "glyph",
+          "enUS": "Challenger",
+          "esES": "Contendiente",
+          "i18n": "d4companion",
+          "idName": "Rare_Str_Generic",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:2c273831-6609-4414-8486-6da72c903e83:0": "presente"
+        }
       }
     ],
     "variantCount": 1
@@ -173,24 +203,444 @@
     "en": "Whirlwind",
     "es": "Torbellino"
   },
-  "updatedAt": "2026-08-09T02:30:41.994Z",
+  "updatedAt": "2026-08-09T06:00:02.148Z",
   "variants": [
     {
       "completeness": {
-        "hasGear": false,
+        "hasGear": true,
         "hasMercenary": false,
-        "hasParagon": false,
+        "hasParagon": true,
         "hasSkills": true,
         "hasTalisman": false,
         "hasWarPlan": false,
-        "score": 0.35
+        "score": 0.85
       },
-      "gear": {},
+      "gear": {
+        "amulet": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Heavenly Strength",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_heavenly_strength",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "amulet",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Emerald",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__emerald",
+              "sno": null
+            }
+          ]
+        },
+        "boots": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Anger Management",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_anger_management",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "boots",
+          "sockets": []
+        },
+        "chest": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Disobedience",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_disobedience",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "chest",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Cir",
+              "esES": "Cir",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Condition_CastRepeatSkill",
+              "sno": 2060617
+            },
+            {
+              "category": "rune",
+              "enUS": "Que",
+              "esES": "Que",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Effect_Druid_EarthenBulwark",
+              "sno": 2004804
+            }
+          ]
+        },
+        "gloves": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Channeling",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_channeling",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "gloves",
+          "sockets": []
+        },
+        "helm": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Juggernaut's Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__juggernaut_s_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "helm",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Ruby",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ruby",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Ruby",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ruby",
+              "sno": null
+            }
+          ]
+        },
+        "pants": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Irrepressible Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__irrepressible_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "pants",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Moni",
+              "esES": "Moni",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Condition_OnStutterStep",
+              "sno": 2063886
+            },
+            {
+              "category": "rune",
+              "enUS": "Gar",
+              "esES": "Gar",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Effect_CritBuff",
+              "sno": 1969098
+            }
+          ]
+        },
+        "ring1": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Berserk Fury",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_berserk_fury",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "ring1",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Ruby",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ruby",
+              "sno": null
+            }
+          ]
+        },
+        "ring2": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of the Expectant",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_the_expectant",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "ring2",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Topaz",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__topaz",
+              "sno": null
+            }
+          ]
+        },
+        "weapon": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Crushing Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__crushing_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "weapon",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Skull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__skull",
+              "sno": null
+            }
+          ]
+        },
+        "weapon2": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Edgemaster's Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__edgemaster_s_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "weapon2",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Skull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__skull",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Skull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__skull",
+              "sno": null
+            }
+          ]
+        },
+        "weapon3": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Walloping",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_walloping",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "weapon3",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Skull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__skull",
+              "sno": null
+            }
+          ]
+        }
+      },
       "id": "d4builds:2c273831-6609-4414-8486-6da72c903e83:0",
       "levelBand": "leveling",
       "mercenary": null,
       "paragon": {
-        "boards": [],
+        "boards": [
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Twister",
+                "esES": "Remolino",
+                "i18n": "d4companion",
+                "idName": "Rare_080_Strength_Main",
+                "sno": null
+              }
+            },
+            "order": 0,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "1Starting Board Str 105•Dex 59•Int 25•Will 64",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__1starting_board_str_105_dex_59_int_25_will_64",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": null,
+            "order": 1,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "2Force of Nature Str 100•Dex 49•Int 20•Will 79",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__2force_of_nature_str_100_dex_49_int_20_will_79",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Challenger",
+                "esES": "Contendiente",
+                "i18n": "d4companion",
+                "idName": "Rare_Str_Generic",
+                "sno": null
+              }
+            },
+            "order": 2,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "3Carnage Str 110•Dex 59•Int 20•Will 59",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__3carnage_str_110_dex_59_int_20_will_59",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": null,
+            "order": 3,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "4Weapons Master Str 110•Dex 49•Int 20•Will 69",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__4weapons_master_str_110_dex_49_int_20_will_69",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": null,
+            "order": 4,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "5Blood Rage Str 115•Dex 51•Int 25•Will 59",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__5blood_rage_str_115_dex_51_int_25_will_59",
+              "sno": null
+            },
+            "rotation": null
+          }
+        ],
         "level": null
       },
       "runewords": [],
@@ -209,27 +659,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Healing",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__healing",
+              "idName": "skillUpgrade__healing",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Skewer",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__skewer",
+              "idName": "skillUpgrade__skewer",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Fury Generation",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__fury_generation",
+              "idName": "skillUpgrade__fury_generation",
               "sno": null
             }
           ],
@@ -249,27 +699,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Fury Generation",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__fury_generation",
+              "idName": "skillUpgrade__fury_generation",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Stomping Grounds",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__stomping_grounds",
+              "idName": "skillUpgrade__stomping_grounds",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Size Bonus",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__size_bonus",
+              "idName": "skillUpgrade__size_bonus",
               "sno": null
             }
           ],
@@ -289,27 +739,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Pull",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__pull",
+              "idName": "skillUpgrade__pull",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Death From Above",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__death_from_above",
+              "idName": "skillUpgrade__death_from_above",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Fury Generation",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__fury_generation",
+              "idName": "skillUpgrade__fury_generation",
               "sno": null
             }
           ],
@@ -329,27 +779,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Damage Bonus",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__damage_bonus",
+              "idName": "skillUpgrade__damage_bonus",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Empowered",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__empowered",
+              "idName": "skillUpgrade__empowered",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Attack Speed and Damage Bonus",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__attack_speed_and_damage_bonus",
+              "idName": "skillUpgrade__attack_speed_and_damage_bonus",
               "sno": null
             }
           ],
@@ -369,27 +819,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Duration Bonus",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__duration_bonus",
+              "idName": "skillUpgrade__duration_bonus",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Bawl",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__bawl",
+              "idName": "skillUpgrade__bawl",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Damage Bonus",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__damage_bonus",
+              "idName": "skillUpgrade__damage_bonus",
               "sno": null
             }
           ],
@@ -409,27 +859,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Cost Damage Bonus",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__cost_damage_bonus",
+              "idName": "skillUpgrade__cost_damage_bonus",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Tornado",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__tornado",
+              "idName": "skillUpgrade__tornado",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Channel Damage Bonus",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__channel_damage_bonus",
+              "idName": "skillUpgrade__channel_damage_bonus",
               "sno": null
             }
           ],
@@ -438,14 +888,14 @@
       ],
       "source": {
         "author": "Rob2628",
-        "capturedAt": "2026-08-09T02:30:41.994Z",
+        "capturedAt": "2026-08-09T06:00:02.148Z",
         "externalId": "2c273831-6609-4414-8486-6da72c903e83",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "98227d518ebad6a7b297a25ef75c7c6acc023d02029ea3c0a285714b2ebeadee",
-        "url": "https://d4builds.gg/builds/whirlwind-barbarian-leveling/",
+        "snapshotHash": "0213b71d7ad4e4dae21ba1f9dbf4b93c56dba76e9c444fd529d0e821b3deb92d",
+        "url": "https://d4builds.gg/builds/2c273831-6609-4414-8486-6da72c903e83/?var=0",
         "variantIndex": 0,
-        "variantLabel": "Leveling"
+        "variantLabel": "Standard Build"
       },
       "talisman": null,
       "warPlan": null

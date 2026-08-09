@@ -51,7 +51,56 @@
         "sno": null
       }
     ],
-    "coreUniques": [],
+    "coreUniques": [
+      {
+        "category": "unique",
+        "enUS": "Azurewrath",
+        "esES": "Ira celeste",
+        "i18n": "d4companion",
+        "idName": "1HSword_Unique_Barb_102",
+        "sno": 1439444
+      },
+      {
+        "category": "unique",
+        "enUS": "Skyhunter",
+        "esES": "Cazadora celestial",
+        "i18n": "d4companion",
+        "idName": "2HBow_Unique_Rogue_001",
+        "sno": 578774
+      },
+      {
+        "category": "unique",
+        "enUS": "Harlequin Crest",
+        "esES": "Cresta de arlequín",
+        "i18n": "d4companion",
+        "idName": "Helm_Unique_Generic_002;S14_Helm_Unique_Generic_002",
+        "sno": 2646317
+      },
+      {
+        "category": "unique",
+        "enUS": "Shrouded Gift",
+        "esES": "Regalo velado",
+        "i18n": "d4companion",
+        "idName": "Pants_Unique_Rogue_001_x2",
+        "sno": 2582112
+      },
+      {
+        "category": "unique",
+        "enUS": "Signet of Pelghain",
+        "esES": "Sello de Pelghain",
+        "i18n": "d4companion",
+        "idName": "Ring_Unique_Generic_105_x2",
+        "sno": 2586356
+      },
+      {
+        "category": "unique",
+        "enUS": "Scoundrel's Kiss",
+        "esES": "Beso de canalla",
+        "i18n": "d4companion",
+        "idName": "Ring_Unique_Rogue_101",
+        "sno": 1902466
+      }
+    ],
     "fields": [
       {
         "key": "skill:curated_dash",
@@ -142,6 +191,171 @@
         "values": {
           "d4builds:786335db-8ac8-4054-945c-8edf9ce41084:0": 15
         }
+      },
+      {
+        "key": "unique:1HSword_Unique_Barb_102",
+        "label": {
+          "category": "unique",
+          "enUS": "Azurewrath",
+          "esES": "Ira celeste",
+          "i18n": "d4companion",
+          "idName": "1HSword_Unique_Barb_102",
+          "sno": 1439444
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:786335db-8ac8-4054-945c-8edf9ce41084:0": "si"
+        }
+      },
+      {
+        "key": "unique:2HBow_Unique_Rogue_001",
+        "label": {
+          "category": "unique",
+          "enUS": "Skyhunter",
+          "esES": "Cazadora celestial",
+          "i18n": "d4companion",
+          "idName": "2HBow_Unique_Rogue_001",
+          "sno": 578774
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:786335db-8ac8-4054-945c-8edf9ce41084:0": "si"
+        }
+      },
+      {
+        "key": "unique:Helm_Unique_Generic_002;S14_Helm_Unique_Generic_002",
+        "label": {
+          "category": "unique",
+          "enUS": "Harlequin Crest",
+          "esES": "Cresta de arlequín",
+          "i18n": "d4companion",
+          "idName": "Helm_Unique_Generic_002;S14_Helm_Unique_Generic_002",
+          "sno": 2646317
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:786335db-8ac8-4054-945c-8edf9ce41084:0": "si"
+        }
+      },
+      {
+        "key": "unique:Pants_Unique_Rogue_001_x2",
+        "label": {
+          "category": "unique",
+          "enUS": "Shrouded Gift",
+          "esES": "Regalo velado",
+          "i18n": "d4companion",
+          "idName": "Pants_Unique_Rogue_001_x2",
+          "sno": 2582112
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:786335db-8ac8-4054-945c-8edf9ce41084:0": "si"
+        }
+      },
+      {
+        "key": "unique:Ring_Unique_Generic_105_x2",
+        "label": {
+          "category": "unique",
+          "enUS": "Signet of Pelghain",
+          "esES": "Sello de Pelghain",
+          "i18n": "d4companion",
+          "idName": "Ring_Unique_Generic_105_x2",
+          "sno": 2586356
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:786335db-8ac8-4054-945c-8edf9ce41084:0": "si"
+        }
+      },
+      {
+        "key": "unique:Ring_Unique_Rogue_101",
+        "label": {
+          "category": "unique",
+          "enUS": "Scoundrel's Kiss",
+          "esES": "Beso de canalla",
+          "i18n": "d4companion",
+          "idName": "Ring_Unique_Rogue_101",
+          "sno": 1902466
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:786335db-8ac8-4054-945c-8edf9ce41084:0": "si"
+        }
+      },
+      {
+        "key": "glyph:Rare_020_Dexterity_Side",
+        "label": {
+          "category": "glyph",
+          "enUS": "Control",
+          "esES": "Control",
+          "i18n": "d4companion",
+          "idName": "Rare_020_Dexterity_Side",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:786335db-8ac8-4054-945c-8edf9ce41084:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_059_Dexterity_Main",
+        "label": {
+          "category": "glyph",
+          "enUS": "Devious",
+          "esES": "Artero",
+          "i18n": "d4companion",
+          "idName": "Rare_059_Dexterity_Main",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:786335db-8ac8-4054-945c-8edf9ce41084:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_063_Intelligence_Side",
+        "label": {
+          "category": "glyph",
+          "enUS": "Canny",
+          "esES": "Astuto",
+          "i18n": "d4companion",
+          "idName": "Rare_063_Intelligence_Side",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:786335db-8ac8-4054-945c-8edf9ce41084:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_132_Strength_Side",
+        "label": {
+          "category": "glyph",
+          "enUS": "Assassin",
+          "esES": "Homicida",
+          "i18n": "d4companion",
+          "idName": "Rare_132_Strength_Side",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:786335db-8ac8-4054-945c-8edf9ce41084:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_Dex_Generic",
+        "label": {
+          "category": "glyph",
+          "enUS": "Headhunter",
+          "esES": "Cazacabezas",
+          "i18n": "d4companion",
+          "idName": "Rare_Dex_Generic",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:786335db-8ac8-4054-945c-8edf9ce41084:0": "presente"
+        }
       }
     ],
     "variantCount": 1
@@ -173,24 +387,474 @@
     "en": "Rapid Fire",
     "es": "Rapid Fire"
   },
-  "updatedAt": "2026-08-09T02:30:41.994Z",
+  "updatedAt": "2026-08-09T06:16:31.142Z",
   "variants": [
     {
       "completeness": {
-        "hasGear": false,
+        "hasGear": true,
         "hasMercenary": false,
-        "hasParagon": false,
+        "hasParagon": true,
         "hasSkills": true,
         "hasTalisman": false,
         "hasWarPlan": false,
-        "score": 0.35
+        "score": 0.85
       },
-      "gear": {},
+      "gear": {
+        "amulet": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Ferocious Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__ferocious_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "amulet",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Diamond",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__diamond",
+              "sno": null
+            }
+          ]
+        },
+        "boots": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Mending Obscurity",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_mending_obscurity",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "boots",
+          "sockets": []
+        },
+        "chest": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Heavenly Strength",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_heavenly_strength",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "chest",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Igni",
+              "esES": "Igni",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Condition_Bomb",
+              "sno": 2165976
+            },
+            {
+              "category": "rune",
+              "enUS": "Mot",
+              "esES": "Mot",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Effect_Rogue_DarkShroud",
+              "sno": 2089934
+            }
+          ]
+        },
+        "gloves": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Frozen Memories",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_frozen_memories",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "gloves",
+          "sockets": []
+        },
+        "helm": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Harlequin Crest",
+            "esES": "Cresta de arlequín",
+            "i18n": "d4companion",
+            "idName": "Helm_Unique_Generic_002;S14_Helm_Unique_Generic_002",
+            "sno": 2646317
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": true
+          },
+          "quality": "unique",
+          "slot": "helm",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Cir",
+              "esES": "Cir",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Condition_CastRepeatSkill",
+              "sno": 2060617
+            },
+            {
+              "category": "rune",
+              "enUS": "Gar",
+              "esES": "Gar",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Effect_CritBuff",
+              "sno": 1969098
+            }
+          ]
+        },
+        "pants": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Shrouded Gift",
+            "esES": "Regalo velado",
+            "i18n": "d4companion",
+            "idName": "Pants_Unique_Rogue_001_x2",
+            "sno": 2582112
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "pants",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Emerald",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__emerald",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Emerald",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__emerald",
+              "sno": null
+            }
+          ]
+        },
+        "ring1": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Signet of Pelghain",
+            "esES": "Sello de Pelghain",
+            "i18n": "d4companion",
+            "idName": "Ring_Unique_Generic_105_x2",
+            "sno": 2586356
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "ring1",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Diamond",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__diamond",
+              "sno": null
+            }
+          ]
+        },
+        "ring2": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Scoundrel's Kiss",
+            "esES": "Beso de canalla",
+            "i18n": "d4companion",
+            "idName": "Ring_Unique_Rogue_101",
+            "sno": 1902466
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "ring2",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Diamond",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__diamond",
+              "sno": null
+            }
+          ]
+        },
+        "weapon": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Skyhunter",
+            "esES": "Cazadora celestial",
+            "i18n": "d4companion",
+            "idName": "2HBow_Unique_Rogue_001",
+            "sno": 578774
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "weapon",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Sapphire",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__sapphire",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Sapphire",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__sapphire",
+              "sno": null
+            }
+          ]
+        },
+        "weapon2": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Azurewrath",
+            "esES": "Ira celeste",
+            "i18n": "d4companion",
+            "idName": "1HSword_Unique_Barb_102",
+            "sno": 1439444
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "weapon2",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Sapphire",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__sapphire",
+              "sno": null
+            }
+          ]
+        },
+        "weapon3": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Imitated Imbuement",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_imitated_imbuement",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "weapon3",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Sapphire",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__sapphire",
+              "sno": null
+            }
+          ]
+        }
+      },
       "id": "d4builds:786335db-8ac8-4054-945c-8edf9ce41084:0",
       "levelBand": "endgame",
       "mercenary": null,
       "paragon": {
-        "boards": [],
+        "boards": [
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Devious",
+                "esES": "Artero",
+                "i18n": "d4companion",
+                "idName": "Rare_059_Dexterity_Main",
+                "sno": null
+              }
+            },
+            "order": 0,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "1Starting Board Str 64•Dex 105•Int 59•Will 25",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__1starting_board_str_64_dex_105_int_59_will_25",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Control",
+                "esES": "Control",
+                "i18n": "d4companion",
+                "idName": "Rare_020_Dexterity_Side",
+                "sno": null
+              }
+            },
+            "order": 1,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "2Exploit Weakness Str 54•Dex 110•Int 74•Will 10",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__2exploit_weakness_str_54_dex_110_int_74_will_10",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Assassin",
+                "esES": "Homicida",
+                "i18n": "d4companion",
+                "idName": "Rare_132_Strength_Side",
+                "sno": null
+              }
+            },
+            "order": 2,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "3Eldritch Bounty Str 64•Dex 110•Int 59•Will 15",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__3eldritch_bounty_str_64_dex_110_int_59_will_15",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Canny",
+                "esES": "Astuto",
+                "i18n": "d4companion",
+                "idName": "Rare_063_Intelligence_Side",
+                "sno": null
+              }
+            },
+            "order": 3,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "4Leyrana's Instinct Str 59•Dex 105•Int 74•Will 10",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__4leyrana_s_instinct_str_59_dex_105_int_74_will_10",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Headhunter",
+                "esES": "Cazacabezas",
+                "i18n": "d4companion",
+                "idName": "Rare_Dex_Generic",
+                "sno": null
+              }
+            },
+            "order": 4,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "5Cheap Shot Str 59•Dex 110•Int 59•Will 20",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__5cheap_shot_str_59_dex_110_int_59_will_20",
+              "sno": null
+            },
+            "rotation": null
+          }
+        ],
         "level": null
       },
       "runewords": [],
@@ -209,27 +873,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Cooldown",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__cooldown",
+              "idName": "skillUpgrade__cooldown",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Frozen Heart",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__frozen_heart",
+              "idName": "skillUpgrade__frozen_heart",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Resolve",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__resolve",
+              "idName": "skillUpgrade__resolve",
               "sno": null
             }
           ],
@@ -249,19 +913,19 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Primer",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__primer",
+              "idName": "skillUpgrade__primer",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Charges and Cooldown Reduction",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__charges_and_cooldown_reduction",
+              "idName": "skillUpgrade__charges_and_cooldown_reduction",
               "sno": null
             }
           ],
@@ -281,27 +945,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Increased Duration and Damage",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__increased_duration_and_damage",
+              "idName": "skillUpgrade__increased_duration_and_damage",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Silhouette",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__silhouette",
+              "idName": "skillUpgrade__silhouette",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Charge or Energy Cost Reduction",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__charge_or_energy_cost_reduction",
+              "idName": "skillUpgrade__charge_or_energy_cost_reduction",
               "sno": null
             }
           ],
@@ -321,11 +985,11 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Calculation",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__calculation",
+              "idName": "skillUpgrade__calculation",
               "sno": null
             }
           ],
@@ -345,27 +1009,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Energy Gain",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__energy_gain",
+              "idName": "skillUpgrade__energy_gain",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Breakneck Quiver",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__breakneck_quiver",
+              "idName": "skillUpgrade__breakneck_quiver",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Ferocity",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__ferocity",
+              "idName": "skillUpgrade__ferocity",
               "sno": null
             }
           ],
@@ -385,27 +1049,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Unstoppable",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__unstoppable",
+              "idName": "skillUpgrade__unstoppable",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Relentless",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__relentless",
+              "idName": "skillUpgrade__relentless",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Cooldown",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__cooldown",
+              "idName": "skillUpgrade__cooldown",
               "sno": null
             }
           ],
@@ -414,14 +1078,14 @@
       ],
       "source": {
         "author": null,
-        "capturedAt": "2026-08-09T02:30:41.994Z",
+        "capturedAt": "2026-08-09T06:16:31.142Z",
         "externalId": "786335db-8ac8-4054-945c-8edf9ce41084",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "845d20c68d1dd3c9131f0dadfbdeded940044a4677fbcba4d441d7fdd5c5c3fc",
-        "url": "https://d4builds.gg/builds/rapid-fire-rogue-endgame/",
+        "snapshotHash": "0953fd4e07cb7a4a8e1929c87f9dd7233d26af4ad8e5f71c63823b49fbe4c18d",
+        "url": "https://d4builds.gg/builds/786335db-8ac8-4054-945c-8edf9ce41084/?var=0",
         "variantIndex": 0,
-        "variantLabel": "Endgame"
+        "variantLabel": "Standard Build"
       },
       "talisman": null,
       "warPlan": null

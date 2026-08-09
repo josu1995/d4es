@@ -51,7 +51,32 @@
         "sno": null
       }
     ],
-    "coreUniques": [],
+    "coreUniques": [
+      {
+        "category": "unique",
+        "enUS": "Etna's Lost Dagger",
+        "esES": "Daga perdida de Etna",
+        "i18n": "d4companion",
+        "idName": "1HDagger_Unique_Rogue_003_x2",
+        "sno": 2580867
+      },
+      {
+        "category": "unique",
+        "enUS": "Cowl of the Nameless",
+        "esES": "Capuz del Sin Nombre",
+        "i18n": "d4companion",
+        "idName": "Helm_Unique_Rogue_001",
+        "sno": 579719
+      },
+      {
+        "category": "unique",
+        "enUS": "Shrouded Gift",
+        "esES": "Regalo velado",
+        "i18n": "d4companion",
+        "idName": "Pants_Unique_Rogue_001_x2",
+        "sno": 2582112
+      }
+    ],
     "fields": [
       {
         "key": "skill:curated_dance_of_knives",
@@ -142,6 +167,126 @@
         "values": {
           "d4builds:f507dd18-52cd-4dc7-baa9-1923dd8bb57a:0": 15
         }
+      },
+      {
+        "key": "unique:1HDagger_Unique_Rogue_003_x2",
+        "label": {
+          "category": "unique",
+          "enUS": "Etna's Lost Dagger",
+          "esES": "Daga perdida de Etna",
+          "i18n": "d4companion",
+          "idName": "1HDagger_Unique_Rogue_003_x2",
+          "sno": 2580867
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:f507dd18-52cd-4dc7-baa9-1923dd8bb57a:0": "si"
+        }
+      },
+      {
+        "key": "unique:Helm_Unique_Rogue_001",
+        "label": {
+          "category": "unique",
+          "enUS": "Cowl of the Nameless",
+          "esES": "Capuz del Sin Nombre",
+          "i18n": "d4companion",
+          "idName": "Helm_Unique_Rogue_001",
+          "sno": 579719
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:f507dd18-52cd-4dc7-baa9-1923dd8bb57a:0": "si"
+        }
+      },
+      {
+        "key": "unique:Pants_Unique_Rogue_001_x2",
+        "label": {
+          "category": "unique",
+          "enUS": "Shrouded Gift",
+          "esES": "Regalo velado",
+          "i18n": "d4companion",
+          "idName": "Pants_Unique_Rogue_001_x2",
+          "sno": 2582112
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:f507dd18-52cd-4dc7-baa9-1923dd8bb57a:0": "si"
+        }
+      },
+      {
+        "key": "glyph:Rare_045_Intelligence_Side",
+        "label": {
+          "category": "glyph",
+          "enUS": "Bane",
+          "esES": "Arruinador",
+          "i18n": "d4companion",
+          "idName": "Rare_045_Intelligence_Side",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:f507dd18-52cd-4dc7-baa9-1923dd8bb57a:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_048_Dexterity_Side",
+        "label": {
+          "category": "glyph",
+          "enUS": "Tracker",
+          "esES": "Rastreador",
+          "i18n": "d4companion",
+          "idName": "Rare_048_Dexterity_Side",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:f507dd18-52cd-4dc7-baa9-1923dd8bb57a:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_052_Dexterity_Main",
+        "label": {
+          "category": "glyph",
+          "enUS": "Versatility",
+          "esES": "Versatilidad",
+          "i18n": "d4companion",
+          "idName": "Rare_052_Dexterity_Main",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:f507dd18-52cd-4dc7-baa9-1923dd8bb57a:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_063_Intelligence_Side",
+        "label": {
+          "category": "glyph",
+          "enUS": "Canny",
+          "esES": "Astuto",
+          "i18n": "d4companion",
+          "idName": "Rare_063_Intelligence_Side",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:f507dd18-52cd-4dc7-baa9-1923dd8bb57a:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_064_Intelligence_Side",
+        "label": {
+          "category": "glyph",
+          "enUS": "Efficacy",
+          "esES": "Eficacia",
+          "i18n": "d4companion",
+          "idName": "Rare_064_Intelligence_Side",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:f507dd18-52cd-4dc7-baa9-1923dd8bb57a:0": "presente"
+        }
       }
     ],
     "variantCount": 1
@@ -173,24 +318,474 @@
     "en": "Dance of Knives",
     "es": "Danza de cuchillos"
   },
-  "updatedAt": "2026-08-09T02:30:41.994Z",
+  "updatedAt": "2026-08-09T06:39:54.772Z",
   "variants": [
     {
       "completeness": {
-        "hasGear": false,
+        "hasGear": true,
         "hasMercenary": false,
-        "hasParagon": false,
+        "hasParagon": true,
         "hasSkills": true,
         "hasTalisman": false,
         "hasWarPlan": false,
-        "score": 0.35
+        "score": 0.85
       },
-      "gear": {},
+      "gear": {
+        "amulet": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Writhing Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__writhing_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "amulet",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Diamond",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__diamond",
+              "sno": null
+            }
+          ]
+        },
+        "boots": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Mending Obscurity",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_mending_obscurity",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "boots",
+          "sockets": []
+        },
+        "chest": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Debilitating Toxins",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_debilitating_toxins",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "chest",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Bac",
+              "esES": "Bac",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Condition_OnMove",
+              "sno": 1999351
+            },
+            {
+              "category": "rune",
+              "enUS": "Que",
+              "esES": "Que",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Effect_Druid_EarthenBulwark",
+              "sno": 2004804
+            }
+          ]
+        },
+        "gloves": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Malice",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_malice",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "gloves",
+          "sockets": []
+        },
+        "helm": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Cowl of the Nameless",
+            "esES": "Capuz del Sin Nombre",
+            "i18n": "d4companion",
+            "idName": "Helm_Unique_Rogue_001",
+            "sno": 579719
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": true
+          },
+          "quality": "unique",
+          "slot": "helm",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Igni",
+              "esES": "Igni",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Condition_Bomb",
+              "sno": 2165976
+            },
+            {
+              "category": "rune",
+              "enUS": "Mot",
+              "esES": "Mot",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Effect_Rogue_DarkShroud",
+              "sno": 2089934
+            }
+          ]
+        },
+        "pants": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Shrouded Gift",
+            "esES": "Regalo velado",
+            "i18n": "d4companion",
+            "idName": "Pants_Unique_Rogue_001_x2",
+            "sno": 2582112
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "pants",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Emerald",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__emerald",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Emerald",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__emerald",
+              "sno": null
+            }
+          ]
+        },
+        "ring1": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Crushing Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__crushing_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "ring1",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Diamond",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__diamond",
+              "sno": null
+            }
+          ]
+        },
+        "ring2": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Alchemical Advantage",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_alchemical_advantage",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "ring2",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Diamond",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__diamond",
+              "sno": null
+            }
+          ]
+        },
+        "weapon": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Channeling",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_channeling",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "weapon",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Emerald",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__emerald",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Emerald",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__emerald",
+              "sno": null
+            }
+          ]
+        },
+        "weapon2": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Imitated Imbuement",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_imitated_imbuement",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "weapon2",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Emerald",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__emerald",
+              "sno": null
+            }
+          ]
+        },
+        "weapon3": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Etna's Lost Dagger",
+            "esES": "Daga perdida de Etna",
+            "i18n": "d4companion",
+            "idName": "1HDagger_Unique_Rogue_003_x2",
+            "sno": 2580867
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "weapon3",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Emerald",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__emerald",
+              "sno": null
+            }
+          ]
+        }
+      },
       "id": "d4builds:f507dd18-52cd-4dc7-baa9-1923dd8bb57a:0",
       "levelBand": "endgame",
       "mercenary": null,
       "paragon": {
-        "boards": [],
+        "boards": [
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Efficacy",
+                "esES": "Eficacia",
+                "i18n": "d4companion",
+                "idName": "Rare_064_Intelligence_Side",
+                "sno": null
+              }
+            },
+            "order": 0,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "1Starting Board Str 64•Dex 105•Int 59•Will 25",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__1starting_board_str_64_dex_105_int_59_will_25",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Versatility",
+                "esES": "Versatilidad",
+                "i18n": "d4companion",
+                "idName": "Rare_052_Dexterity_Main",
+                "sno": null
+              }
+            },
+            "order": 1,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "2Eldritch Bounty Str 64•Dex 110•Int 59•Will 15",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__2eldritch_bounty_str_64_dex_110_int_59_will_15",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Tracker",
+                "esES": "Rastreador",
+                "i18n": "d4companion",
+                "idName": "Rare_048_Dexterity_Side",
+                "sno": null
+              }
+            },
+            "order": 2,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "4Exploit Weakness Str 54•Dex 110•Int 74•Will 10",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__4exploit_weakness_str_54_dex_110_int_74_will_10",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Bane",
+                "esES": "Arruinador",
+                "i18n": "d4companion",
+                "idName": "Rare_045_Intelligence_Side",
+                "sno": null
+              }
+            },
+            "order": 3,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "3Danse Macabre Str 79•Dex 95•Int 54•Will 20",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__3danse_macabre_str_79_dex_95_int_54_will_20",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Canny",
+                "esES": "Astuto",
+                "i18n": "d4companion",
+                "idName": "Rare_063_Intelligence_Side",
+                "sno": null
+              }
+            },
+            "order": 4,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "5Cheap Shot Str 59•Dex 110•Int 59•Will 20",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__5cheap_shot_str_59_dex_110_int_59_will_20",
+              "sno": null
+            },
+            "rotation": null
+          }
+        ],
         "level": null
       },
       "runewords": [],
@@ -209,11 +804,11 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Toxic Touch",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__toxic_touch",
+              "idName": "skillUpgrade__toxic_touch",
               "sno": null
             }
           ],
@@ -233,27 +828,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Resolve",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__resolve",
+              "idName": "skillUpgrade__resolve",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Recuperate",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__recuperate",
+              "idName": "skillUpgrade__recuperate",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Unstoppable",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__unstoppable",
+              "idName": "skillUpgrade__unstoppable",
               "sno": null
             }
           ],
@@ -273,27 +868,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Weaken",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__weaken",
+              "idName": "skillUpgrade__weaken",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Primer",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__primer",
+              "idName": "skillUpgrade__primer",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Charges and Cooldown Reduction",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__charges_and_cooldown_reduction",
+              "idName": "skillUpgrade__charges_and_cooldown_reduction",
               "sno": null
             }
           ],
@@ -313,27 +908,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Movement Speed",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__movement_speed",
+              "idName": "skillUpgrade__movement_speed",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Shadow Dancer",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__shadow_dancer",
+              "idName": "skillUpgrade__shadow_dancer",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Consume Chance",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__consume_chance",
+              "idName": "skillUpgrade__consume_chance",
               "sno": null
             }
           ],
@@ -353,27 +948,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Slow and Movement Speed",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__slow_and_movement_speed",
+              "idName": "skillUpgrade__slow_and_movement_speed",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Star Shards",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__star_shards",
+              "idName": "skillUpgrade__star_shards",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Pierce and Size",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__pierce_and_size",
+              "idName": "skillUpgrade__pierce_and_size",
               "sno": null
             }
           ],
@@ -400,27 +995,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Weaken & Vulnerable",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__weaken_vulnerable",
+              "idName": "skillUpgrade__weaken_vulnerable",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Relentless",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__relentless",
+              "idName": "skillUpgrade__relentless",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Cooldown",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__cooldown",
+              "idName": "skillUpgrade__cooldown",
               "sno": null
             }
           ],
@@ -429,14 +1024,14 @@
       ],
       "source": {
         "author": null,
-        "capturedAt": "2026-08-09T02:30:41.994Z",
+        "capturedAt": "2026-08-09T06:39:54.772Z",
         "externalId": "f507dd18-52cd-4dc7-baa9-1923dd8bb57a",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "9d9195d5fb63b30768548aadee943cb1e493107c286e910c6feca94301129ebc",
-        "url": "https://d4builds.gg/builds/dance-of-knives-rogue-endgame/",
+        "snapshotHash": "40ed7d1238a4d3f965217f77431f8663e467bee4da746ea22bc86490772ace3c",
+        "url": "https://d4builds.gg/builds/f507dd18-52cd-4dc7-baa9-1923dd8bb57a/?var=0",
         "variantIndex": 0,
-        "variantLabel": "Endgame"
+        "variantLabel": "Standard Build"
       },
       "talisman": null,
       "warPlan": null

@@ -51,7 +51,40 @@
         "sno": null
       }
     ],
-    "coreUniques": [],
+    "coreUniques": [
+      {
+        "category": "unique",
+        "enUS": "Herald's Morningstar",
+        "esES": "Estrella del alba del Heraldo",
+        "i18n": "d4companion",
+        "idName": "1HMace_Unique_Paladin_001",
+        "sno": 2420789
+      },
+      {
+        "category": "unique",
+        "enUS": "Harlequin Crest",
+        "esES": "Cresta de arlequín",
+        "i18n": "d4companion",
+        "idName": "Helm_Unique_Generic_002;S14_Helm_Unique_Generic_002",
+        "sno": 2646317
+      },
+      {
+        "category": "unique",
+        "enUS": "Argent Veil",
+        "esES": "Velo argénteo",
+        "i18n": "d4companion",
+        "idName": "Ring_Unique_Paladin_001",
+        "sno": 2429561
+      },
+      {
+        "category": "unique",
+        "enUS": "Ring of Starless Skies",
+        "esES": null,
+        "i18n": "none",
+        "idName": "unique__ring_of_starless_skies",
+        "sno": null
+      }
+    ],
     "fields": [
       {
         "key": "skill:curated_blessed_hammer",
@@ -142,6 +175,141 @@
         "values": {
           "d4builds:9f5e43b1-5b99-4296-9eb5-5c888120e9b7:0": 5
         }
+      },
+      {
+        "key": "unique:1HMace_Unique_Paladin_001",
+        "label": {
+          "category": "unique",
+          "enUS": "Herald's Morningstar",
+          "esES": "Estrella del alba del Heraldo",
+          "i18n": "d4companion",
+          "idName": "1HMace_Unique_Paladin_001",
+          "sno": 2420789
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:9f5e43b1-5b99-4296-9eb5-5c888120e9b7:0": "si"
+        }
+      },
+      {
+        "key": "unique:Helm_Unique_Generic_002;S14_Helm_Unique_Generic_002",
+        "label": {
+          "category": "unique",
+          "enUS": "Harlequin Crest",
+          "esES": "Cresta de arlequín",
+          "i18n": "d4companion",
+          "idName": "Helm_Unique_Generic_002;S14_Helm_Unique_Generic_002",
+          "sno": 2646317
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:9f5e43b1-5b99-4296-9eb5-5c888120e9b7:0": "si"
+        }
+      },
+      {
+        "key": "unique:Ring_Unique_Paladin_001",
+        "label": {
+          "category": "unique",
+          "enUS": "Argent Veil",
+          "esES": "Velo argénteo",
+          "i18n": "d4companion",
+          "idName": "Ring_Unique_Paladin_001",
+          "sno": 2429561
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:9f5e43b1-5b99-4296-9eb5-5c888120e9b7:0": "si"
+        }
+      },
+      {
+        "key": "unique:unique__ring_of_starless_skies",
+        "label": {
+          "category": "unique",
+          "enUS": "Ring of Starless Skies",
+          "esES": null,
+          "i18n": "none",
+          "idName": "unique__ring_of_starless_skies",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:9f5e43b1-5b99-4296-9eb5-5c888120e9b7:0": "si"
+        }
+      },
+      {
+        "key": "glyph:Rare_050_Dexterity_Main",
+        "label": {
+          "category": "glyph",
+          "enUS": "Spirit",
+          "esES": "Espíritu",
+          "i18n": "d4companion",
+          "idName": "Rare_050_Dexterity_Main",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:9f5e43b1-5b99-4296-9eb5-5c888120e9b7:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_106_Willpower_Side",
+        "label": {
+          "category": "glyph",
+          "enUS": "Arbiter",
+          "esES": "Árbitro",
+          "i18n": "d4companion",
+          "idName": "Rare_106_Willpower_Side",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:9f5e43b1-5b99-4296-9eb5-5c888120e9b7:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_107_Strength_Main",
+        "label": {
+          "category": "glyph",
+          "enUS": "Resplendence",
+          "esES": "Resplandor",
+          "i18n": "d4companion",
+          "idName": "Rare_107_Strength_Main",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:9f5e43b1-5b99-4296-9eb5-5c888120e9b7:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_108_Intelligence_Side",
+        "label": {
+          "category": "glyph",
+          "enUS": "Judicator",
+          "esES": "Judicante",
+          "i18n": "d4companion",
+          "idName": "Rare_108_Intelligence_Side",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:9f5e43b1-5b99-4296-9eb5-5c888120e9b7:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_110_Strength_Main",
+        "label": {
+          "category": "glyph",
+          "enUS": "Apostle",
+          "esES": "Apóstol",
+          "i18n": "d4companion",
+          "idName": "Rare_110_Strength_Main",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:9f5e43b1-5b99-4296-9eb5-5c888120e9b7:0": "presente"
+        }
       }
     ],
     "variantCount": 1
@@ -173,24 +341,437 @@
     "en": "Blessed Hammer",
     "es": "Martillo bendito"
   },
-  "updatedAt": "2026-08-09T02:30:41.994Z",
+  "updatedAt": "2026-08-09T06:25:01.389Z",
   "variants": [
     {
       "completeness": {
-        "hasGear": false,
+        "hasGear": true,
         "hasMercenary": false,
-        "hasParagon": false,
+        "hasParagon": true,
         "hasSkills": true,
         "hasTalisman": false,
         "hasWarPlan": false,
-        "score": 0.35
+        "score": 0.85
       },
-      "gear": {},
+      "gear": {
+        "amulet": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Celestial Strife",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_celestial_strife",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "amulet",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Ruby",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ruby",
+              "sno": null
+            }
+          ]
+        },
+        "boots": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of the Arbiter's Zephyr",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_the_arbiter_s_zephyr",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "boots",
+          "sockets": []
+        },
+        "chest": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Angelic Masterwork",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_angelic_masterwork",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "chest",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Cir",
+              "esES": "Cir",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Condition_CastRepeatSkill",
+              "sno": 2060617
+            },
+            {
+              "category": "rune",
+              "enUS": "Vex",
+              "esES": "Vex",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Effect_BonusToAllSkills",
+              "sno": 2024156
+            }
+          ]
+        },
+        "gloves": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Holy Punishment",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_holy_punishment",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "gloves",
+          "sockets": []
+        },
+        "helm": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Harlequin Crest",
+            "esES": "Cresta de arlequín",
+            "i18n": "d4companion",
+            "idName": "Helm_Unique_Generic_002;S14_Helm_Unique_Generic_002",
+            "sno": 2646317
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": true
+          },
+          "quality": "unique",
+          "slot": "helm",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Cem",
+              "esES": "Cem",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Condition_OnEvade",
+              "sno": 1968096
+            },
+            {
+              "category": "rune",
+              "enUS": "Que",
+              "esES": "Que",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Effect_Druid_EarthenBulwark",
+              "sno": 2004804
+            }
+          ]
+        },
+        "offhand": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Ascension",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_ascension",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "offhand",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Ruby",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ruby",
+              "sno": null
+            }
+          ]
+        },
+        "pants": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Layered Wards",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_layered_wards",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "pants",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Ruby",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ruby",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Ruby",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ruby",
+              "sno": null
+            }
+          ]
+        },
+        "ring1": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Ring of Starless Skies",
+            "esES": null,
+            "i18n": "none",
+            "idName": "unique__ring_of_starless_skies",
+            "sno": null
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": true
+          },
+          "quality": "unique",
+          "slot": "ring1",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Topaz",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__topaz",
+              "sno": null
+            }
+          ]
+        },
+        "ring2": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Argent Veil",
+            "esES": "Velo argénteo",
+            "i18n": "d4companion",
+            "idName": "Ring_Unique_Paladin_001",
+            "sno": 2429561
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "ring2",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Emerald",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__emerald",
+              "sno": null
+            }
+          ]
+        },
+        "weapon": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Herald's Morningstar",
+            "esES": "Estrella del alba del Heraldo",
+            "i18n": "d4companion",
+            "idName": "1HMace_Unique_Paladin_001",
+            "sno": 2420789
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": true
+          },
+          "quality": "unique",
+          "slot": "weapon",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Ruby",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ruby",
+              "sno": null
+            }
+          ]
+        }
+      },
       "id": "d4builds:9f5e43b1-5b99-4296-9eb5-5c888120e9b7:0",
       "levelBand": "endgame",
       "mercenary": null,
       "paragon": {
-        "boards": [],
+        "boards": [
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Spirit",
+                "esES": "Espíritu",
+                "i18n": "d4companion",
+                "idName": "Rare_050_Dexterity_Main",
+                "sno": null
+              }
+            },
+            "order": 0,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "1Starting Board Str 105•Dex 25•Int 64•Will 59",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__1starting_board_str_105_dex_25_int_64_will_59",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Arbiter",
+                "esES": "Árbitro",
+                "i18n": "d4companion",
+                "idName": "Rare_106_Willpower_Side",
+                "sno": null
+              }
+            },
+            "order": 1,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "2Castle Str 117•Dex 15•Int 64•Will 59",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__2castle_str_117_dex_15_int_64_will_59",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Apostle",
+                "esES": "Apóstol",
+                "i18n": "d4companion",
+                "idName": "Rare_110_Strength_Main",
+                "sno": null
+              }
+            },
+            "order": 2,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "3Shield Bearer Str 115•Dex 25•Int 59•Will 49",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__3shield_bearer_str_115_dex_25_int_59_will_49",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Resplendence",
+                "esES": "Resplandor",
+                "i18n": "d4companion",
+                "idName": "Rare_107_Strength_Main",
+                "sno": null
+              }
+            },
+            "order": 3,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "4Relentless Str 90•Dex 25•Int 69•Will 64",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__4relentless_str_90_dex_25_int_69_will_64",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Judicator",
+                "esES": "Judicante",
+                "i18n": "d4companion",
+                "idName": "Rare_108_Intelligence_Side",
+                "sno": null
+              }
+            },
+            "order": 4,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "5Beacon Str 95•Dex 20•Int 79•Will 54",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__5beacon_str_95_dex_20_int_79_will_54",
+              "sno": null
+            },
+            "rotation": null
+          }
+        ],
         "level": null
       },
       "runewords": [],
@@ -209,27 +790,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Cost Reduction",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__cost_reduction",
+              "idName": "skillUpgrade__cost_reduction",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Disciple's Halo",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__disciple_s_halo",
+              "idName": "skillUpgrade__disciple_s_halo",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Cast Speed",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__cast_speed",
+              "idName": "skillUpgrade__cast_speed",
               "sno": null
             }
           ],
@@ -256,27 +837,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Additional Maximum Resource",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__additional_maximum_resource",
+              "idName": "skillUpgrade__additional_maximum_resource",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Rite of Vengeance",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__rite_of_vengeance",
+              "idName": "skillUpgrade__rite_of_vengeance",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Potency",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__potency",
+              "idName": "skillUpgrade__potency",
               "sno": null
             }
           ],
@@ -296,27 +877,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Maximum Life",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__maximum_life",
+              "idName": "skillUpgrade__maximum_life",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Rite of Might",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__rite_of_might",
+              "idName": "skillUpgrade__rite_of_might",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Potency",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__potency",
+              "idName": "skillUpgrade__potency",
               "sno": null
             }
           ],
@@ -336,27 +917,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Duration",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__duration",
+              "idName": "skillUpgrade__duration",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Hallowed Ground",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__hallowed_ground",
+              "idName": "skillUpgrade__hallowed_ground",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Resource Generation",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__resource_generation",
+              "idName": "skillUpgrade__resource_generation",
               "sno": null
             }
           ],
@@ -376,27 +957,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Weaken",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__weaken",
+              "idName": "skillUpgrade__weaken",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Gather the Guilty",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__gather_the_guilty",
+              "idName": "skillUpgrade__gather_the_guilty",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Size Increase",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__size_increase",
+              "idName": "skillUpgrade__size_increase",
               "sno": null
             }
           ],
@@ -416,27 +997,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Wing Strike Recast",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__wing_strike_recast",
+              "idName": "skillUpgrade__wing_strike_recast",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Seraph's Wings",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__seraph_s_wings",
+              "idName": "skillUpgrade__seraph_s_wings",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Duration",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__duration",
+              "idName": "skillUpgrade__duration",
               "sno": null
             }
           ],
@@ -445,14 +1026,14 @@
       ],
       "source": {
         "author": "Rob2628",
-        "capturedAt": "2026-08-09T02:30:41.994Z",
+        "capturedAt": "2026-08-09T06:25:01.389Z",
         "externalId": "9f5e43b1-5b99-4296-9eb5-5c888120e9b7",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "076d9e20a26b605b1190495d1baacb2dd011724daf1d6352359469dbc8d287c6",
-        "url": "https://d4builds.gg/builds/blessed-hammer-paladin-endgame/",
+        "snapshotHash": "f4ef145ad660ae040a6956d9d867497f49cbd7cbecd62e6a336869105218fb42",
+        "url": "https://d4builds.gg/builds/9f5e43b1-5b99-4296-9eb5-5c888120e9b7/?var=0",
         "variantIndex": 0,
-        "variantLabel": "Endgame"
+        "variantLabel": "Standard Build"
       },
       "talisman": null,
       "warPlan": null

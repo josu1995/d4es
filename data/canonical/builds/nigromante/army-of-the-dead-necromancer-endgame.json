@@ -51,7 +51,40 @@
         "sno": null
       }
     ],
-    "coreUniques": [],
+    "coreUniques": [
+      {
+        "category": "unique",
+        "enUS": "Sanguivor, Blade of Zir",
+        "esES": "Sanguívora, hoja de Zir",
+        "i18n": "d4companion",
+        "idName": "2HSword_Unique_Necro_100",
+        "sno": 2238900
+      },
+      {
+        "category": "unique",
+        "enUS": "The Undercrown",
+        "esES": "La cofia",
+        "i18n": "d4companion",
+        "idName": "Helm_Unique_Necro_101",
+        "sno": 2587975
+      },
+      {
+        "category": "unique",
+        "enUS": "Blood Moon Breeches",
+        "esES": "Calzas de la luna de sangre",
+        "i18n": "d4companion",
+        "idName": "Pants_Unique_Necro_100",
+        "sno": 1612622
+      },
+      {
+        "category": "unique",
+        "enUS": "Signet of Pelghain",
+        "esES": "Sello de Pelghain",
+        "i18n": "d4companion",
+        "idName": "Ring_Unique_Generic_105_x2",
+        "sno": 2586356
+      }
+    ],
     "fields": [
       {
         "key": "skill:curated_blood_mist",
@@ -142,6 +175,141 @@
         "values": {
           "d4builds:eff0d5ea-4918-4e28-a37e-a471ff2e1d6d:0": 8
         }
+      },
+      {
+        "key": "unique:2HSword_Unique_Necro_100",
+        "label": {
+          "category": "unique",
+          "enUS": "Sanguivor, Blade of Zir",
+          "esES": "Sanguívora, hoja de Zir",
+          "i18n": "d4companion",
+          "idName": "2HSword_Unique_Necro_100",
+          "sno": 2238900
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:eff0d5ea-4918-4e28-a37e-a471ff2e1d6d:0": "si"
+        }
+      },
+      {
+        "key": "unique:Helm_Unique_Necro_101",
+        "label": {
+          "category": "unique",
+          "enUS": "The Undercrown",
+          "esES": "La cofia",
+          "i18n": "d4companion",
+          "idName": "Helm_Unique_Necro_101",
+          "sno": 2587975
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:eff0d5ea-4918-4e28-a37e-a471ff2e1d6d:0": "si"
+        }
+      },
+      {
+        "key": "unique:Pants_Unique_Necro_100",
+        "label": {
+          "category": "unique",
+          "enUS": "Blood Moon Breeches",
+          "esES": "Calzas de la luna de sangre",
+          "i18n": "d4companion",
+          "idName": "Pants_Unique_Necro_100",
+          "sno": 1612622
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:eff0d5ea-4918-4e28-a37e-a471ff2e1d6d:0": "si"
+        }
+      },
+      {
+        "key": "unique:Ring_Unique_Generic_105_x2",
+        "label": {
+          "category": "unique",
+          "enUS": "Signet of Pelghain",
+          "esES": "Sello de Pelghain",
+          "i18n": "d4companion",
+          "idName": "Ring_Unique_Generic_105_x2",
+          "sno": 2586356
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:eff0d5ea-4918-4e28-a37e-a471ff2e1d6d:0": "si"
+        }
+      },
+      {
+        "key": "glyph:Rare_046_Dexterity_Side",
+        "label": {
+          "category": "glyph",
+          "enUS": "Abyssal",
+          "esES": "Abisal",
+          "i18n": "d4companion",
+          "idName": "Rare_046_Dexterity_Side",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:eff0d5ea-4918-4e28-a37e-a471ff2e1d6d:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_066_Dexterity_Side",
+        "label": {
+          "category": "glyph",
+          "enUS": "Essence",
+          "esES": "Esencia",
+          "i18n": "d4companion",
+          "idName": "Rare_066_Dexterity_Side",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:eff0d5ea-4918-4e28-a37e-a471ff2e1d6d:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_072_Intelligence_Main",
+        "label": {
+          "category": "glyph",
+          "enUS": "Mage",
+          "esES": "Mago",
+          "i18n": "d4companion",
+          "idName": "Rare_072_Intelligence_Main",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:eff0d5ea-4918-4e28-a37e-a471ff2e1d6d:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_078_Willpower_Side",
+        "label": {
+          "category": "glyph",
+          "enUS": "Darkness",
+          "esES": "Oscuridad",
+          "i18n": "d4companion",
+          "idName": "Rare_078_Willpower_Side",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:eff0d5ea-4918-4e28-a37e-a471ff2e1d6d:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_112_Willpower_Main",
+        "label": {
+          "category": "glyph",
+          "enUS": "Eliminator",
+          "esES": "Eliminador",
+          "i18n": "d4companion",
+          "idName": "Rare_112_Willpower_Main",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:eff0d5ea-4918-4e28-a37e-a471ff2e1d6d:0": "presente"
+        }
       }
     ],
     "variantCount": 1
@@ -173,24 +341,416 @@
     "en": "Army of the Dead",
     "es": "Army of the Dead"
   },
-  "updatedAt": "2026-08-09T02:30:41.994Z",
+  "updatedAt": "2026-08-09T06:38:19.005Z",
   "variants": [
     {
       "completeness": {
-        "hasGear": false,
+        "hasGear": true,
         "hasMercenary": false,
-        "hasParagon": false,
+        "hasParagon": true,
         "hasSkills": true,
         "hasTalisman": false,
         "hasWarPlan": false,
-        "score": 0.35
+        "score": 0.85
       },
-      "gear": {},
+      "gear": {
+        "amulet": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Hellbent Commander Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__hellbent_commander_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "amulet",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Ruby",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ruby",
+              "sno": null
+            }
+          ]
+        },
+        "boots": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Hewed Flesh",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_hewed_flesh",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "boots",
+          "sockets": []
+        },
+        "chest": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Glynn's Anvil",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_glynn_s_anvil",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "chest",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Igni",
+              "esES": "Igni",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Condition_Bomb",
+              "sno": 2165976
+            },
+            {
+              "category": "rune",
+              "enUS": "Teb",
+              "esES": "Teb",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Effect_Necromancer_IronMaiden",
+              "sno": 2088916
+            }
+          ]
+        },
+        "gloves": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Frozen Memories",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_frozen_memories",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "gloves",
+          "sockets": []
+        },
+        "helm": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "The Undercrown",
+            "esES": "La cofia",
+            "i18n": "d4companion",
+            "idName": "Helm_Unique_Necro_101",
+            "sno": 2587975
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "helm",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Nagu",
+              "esES": "Nagu",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Condition_Summons",
+              "sno": 2155996
+            },
+            {
+              "category": "rune",
+              "enUS": "Mot",
+              "esES": "Mot",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Effect_Rogue_DarkShroud",
+              "sno": 2089934
+            }
+          ]
+        },
+        "pants": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Blood Moon Breeches",
+            "esES": "Calzas de la luna de sangre",
+            "i18n": "d4companion",
+            "idName": "Pants_Unique_Necro_100",
+            "sno": 1612622
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "pants",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Topaz",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__topaz",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Topaz",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__topaz",
+              "sno": null
+            }
+          ]
+        },
+        "ring1": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Vehement Brawler's Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__vehement_brawler_s_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "ring1",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Topaz",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__topaz",
+              "sno": null
+            }
+          ]
+        },
+        "ring2": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Signet of Pelghain",
+            "esES": "Sello de Pelghain",
+            "i18n": "d4companion",
+            "idName": "Ring_Unique_Generic_105_x2",
+            "sno": 2586356
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "ring2",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Diamond",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__diamond",
+              "sno": null
+            }
+          ]
+        },
+        "weapon": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Sanguivor, Blade of Zir",
+            "esES": "Sanguívora, hoja de Zir",
+            "i18n": "d4companion",
+            "idName": "2HSword_Unique_Necro_100",
+            "sno": 2238900
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": true
+          },
+          "quality": "unique",
+          "slot": "weapon",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Sapphire",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__sapphire",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Sapphire",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__sapphire",
+              "sno": null
+            }
+          ]
+        }
+      },
       "id": "d4builds:eff0d5ea-4918-4e28-a37e-a471ff2e1d6d:0",
       "levelBand": "endgame",
       "mercenary": null,
       "paragon": {
-        "boards": [],
+        "boards": [
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Abyssal",
+                "esES": "Abisal",
+                "i18n": "d4companion",
+                "idName": "Rare_046_Dexterity_Side",
+                "sno": null
+              }
+            },
+            "order": 0,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "1Starting Board Str 25•Dex 59•Int 105•Will 64",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__1starting_board_str_25_dex_59_int_105_will_64",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Darkness",
+                "esES": "Oscuridad",
+                "i18n": "d4companion",
+                "idName": "Rare_078_Willpower_Side",
+                "sno": null
+              }
+            },
+            "order": 1,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "2Flesh-eater Str 20•Dex 59•Int 110•Will 59",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__2flesh_eater_str_20_dex_59_int_110_will_59",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Mage",
+                "esES": "Mago",
+                "i18n": "d4companion",
+                "idName": "Rare_072_Intelligence_Main",
+                "sno": null
+              }
+            },
+            "order": 2,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "3Wither Str 20•Dex 49•Int 110•Will 69",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__3wither_str_20_dex_49_int_110_will_69",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Eliminator",
+                "esES": "Eliminador",
+                "i18n": "d4companion",
+                "idName": "Rare_112_Willpower_Main",
+                "sno": null
+              }
+            },
+            "order": 3,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "4Frailty Str 20•Dex 54•Int 95•Will 79",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__4frailty_str_20_dex_54_int_95_will_79",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Essence",
+                "esES": "Esencia",
+                "i18n": "d4companion",
+                "idName": "Rare_066_Dexterity_Side",
+                "sno": null
+              }
+            },
+            "order": 4,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "5Scent of Death Str 15•Dex 54•Int 110•Will 69",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__5scent_of_death_str_15_dex_54_int_110_will_69",
+              "sno": null
+            },
+            "rotation": null
+          }
+        ],
         "level": null
       },
       "runewords": [],
@@ -209,27 +769,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Healing",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__healing",
+              "idName": "skillUpgrade__healing",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Service and Sacrifice",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__service_and_sacrifice",
+              "idName": "skillUpgrade__service_and_sacrifice",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Resolve",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__resolve",
+              "idName": "skillUpgrade__resolve",
               "sno": null
             }
           ],
@@ -249,27 +809,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Corpse Generation",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__corpse_generation",
+              "idName": "skillUpgrade__corpse_generation",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Dead Cold",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__dead_cold",
+              "idName": "skillUpgrade__dead_cold",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Damage Bonus",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__damage_bonus",
+              "idName": "skillUpgrade__damage_bonus",
               "sno": null
             }
           ],
@@ -296,27 +856,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Overpower",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__overpower",
+              "idName": "skillUpgrade__overpower",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Blood Transfusion",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__blood_transfusion",
+              "idName": "skillUpgrade__blood_transfusion",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Critical Strike",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__critical_strike",
+              "idName": "skillUpgrade__critical_strike",
               "sno": null
             }
           ],
@@ -336,27 +896,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Multiple Corpses",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__multiple_corpses",
+              "idName": "skillUpgrade__multiple_corpses",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Bloody Mess",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__bloody_mess",
+              "idName": "skillUpgrade__bloody_mess",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Blood Orb",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__blood_orb",
+              "idName": "skillUpgrade__blood_orb",
               "sno": null
             }
           ],
@@ -376,27 +936,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Ferocity, Resolve, or Overpower",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__ferocity_resolve_or_overpower",
+              "idName": "skillUpgrade__ferocity_resolve_or_overpower",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Coven",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__coven",
+              "idName": "skillUpgrade__coven",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Critical Strike Chance",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__critical_strike_chance",
+              "idName": "skillUpgrade__critical_strike_chance",
               "sno": null
             }
           ],
@@ -416,27 +976,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Unstoppable",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__unstoppable",
+              "idName": "skillUpgrade__unstoppable",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Fel Gluttony",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__fel_gluttony",
+              "idName": "skillUpgrade__fel_gluttony",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Weaken",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__weaken",
+              "idName": "skillUpgrade__weaken",
               "sno": null
             }
           ],
@@ -445,14 +1005,14 @@
       ],
       "source": {
         "author": "Rob2628",
-        "capturedAt": "2026-08-09T02:30:41.994Z",
+        "capturedAt": "2026-08-09T06:38:19.005Z",
         "externalId": "eff0d5ea-4918-4e28-a37e-a471ff2e1d6d",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "5de5472ac3a036d2efa82c2613de9cfb0043ae9d5e18bb60314af20f08f07092",
-        "url": "https://d4builds.gg/builds/army-of-the-dead-necromancer-endgame/",
+        "snapshotHash": "f82fa19bde196bdfe882dd0746928c6238a8581bb302e8f67ac7e9aafde0dc6d",
+        "url": "https://d4builds.gg/builds/eff0d5ea-4918-4e28-a37e-a471ff2e1d6d/?var=0",
         "variantIndex": 0,
-        "variantLabel": "Endgame"
+        "variantLabel": "Standard Build"
       },
       "talisman": null,
       "warPlan": null

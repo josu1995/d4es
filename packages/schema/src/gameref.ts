@@ -10,6 +10,12 @@ export type I18nSource = z.infer<typeof I18nSource>;
 export const GameRefCategory = z.enum([
   'skill',
   'skillVariant',
+  /**
+   * Mejora de rama del arbol rediseñado. OJO: la fuente las llama "rune", pero no son
+   * las runas engarzables del juego (Ahu, Bac...): son las elecciones de cada rama de
+   * una habilidad. Mezclarlas rompia la busqueda y el informe de traducciones.
+   */
+  'skillUpgrade',
   'rune',
   'runeword',
   'affix',

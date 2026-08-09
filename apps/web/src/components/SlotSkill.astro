@@ -5,7 +5,7 @@ import { skillInfo } from '../lib/data';
 
 /**
  * Un slot de habilidad como el de d4builds: icono circular con borde por categoria,
- * insignia de rango y, debajo, las runas elegidas. El contenido del tooltip se emite en
+ * insignia de rango y, debajo, las mejoras de rama elegidas. El contenido del tooltip se emite en
  * un <template> y el motor de tooltips de la ficha lo pinta al pasar el raton.
  */
 interface Props {
@@ -21,8 +21,9 @@ const nombreIcono = skill.skillVariant?.enUS ?? skill.ref.enUS;
 const info = skillInfo(skill.ref.enUS);
 const color = colorCategoria(info?.category ?? null);
 
-// Descripcion de cada runa elegida, sacada del dataset de la habilidad.
-const runas = skill.runes.map((r) => ({
+// Las "mejoras" son las elecciones de rama del arbol. La fuente las llama runas, pero
+// no lo son: las runas de verdad se engarzan en el equipo.
+const mejoras = skill.runes.map((r) => ({
   nombre: r.esES ?? r.enUS,
   sinTraducir: r.esES === null,
   descripcion: info?.runes[r.enUS] ?? null,
@@ -67,9 +68,9 @@ const runas = skill.runes.map((r) => ({
   </span>
 
   {
-    runas.length > 0 && (
-      <div class="flex gap-1" aria-label={`Runas de ${nombreVisible}`}>
-        {runas.map((r, i) => (
+    mejoras.length > 0 && (
+      <div class="flex gap-1" aria-label={`Mejoras de ${nombreVisible}`}>
+        {mejoras.map((r, i) => (
           <button
             type="button"
             class="runa-chip h-3.5 w-3.5 rotate-45 border border-oro-apagado/60 bg-piedra-alta transition-colors hover:border-oro"
@@ -103,9 +104,9 @@ const runas = skill.runes.map((r) => ({
   {info?.description && <p class="tt-descripcion">{info.description}</p>}
   {info?.extra.map((e) => <p class="tt-extra">{e}</p>)}
   {
-    runas.length > 0 && (
+    mejoras.length > 0 && (
       <div class="tt-runas">
-        {runas.map((r) => (
+        {mejoras.map((r) => (
           <div>
             <span class="tt-runa-nombre">◆ {r.nombre}</span>
             {r.descripcion && <span class="tt-runa-desc"> — {r.descripcion}</span>}
@@ -118,13 +119,13 @@ const runas = skill.runes.map((r) => ({
 </template>
 
 {
-  runas.map((r, i) => (
+  mejoras.map((r, i) => (
     <template id={`${idTooltip}-r${i}`}>
       <div class="tt-titulo">◆ {r.nombre}</div>
       {r.descripcion ? (
         <p class="tt-descripcion">{r.descripcion}</p>
       ) : (
-        <p class="tt-extra">Runa de {nombreVisible}</p>
+        <p class="tt-extra">Mejora de {nombreVisible}</p>
       )}
     </template>
   ))

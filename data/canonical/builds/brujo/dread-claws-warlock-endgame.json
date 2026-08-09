@@ -51,7 +51,48 @@
         "sno": null
       }
     ],
-    "coreUniques": [],
+    "coreUniques": [
+      {
+        "category": "unique",
+        "enUS": "Litany of Sable",
+        "esES": "Letanía lúgubre",
+        "i18n": "d4companion",
+        "idName": "1HDagger_Unique_Warlock_001",
+        "sno": 2559874
+      },
+      {
+        "category": "unique",
+        "enUS": "Seed of Horazon",
+        "esES": "Semilla de Horazón",
+        "i18n": "d4companion",
+        "idName": "Amulet_Unique_Warlock_001",
+        "sno": 2559896
+      },
+      {
+        "category": "unique",
+        "enUS": "Footfalls of the Waning World",
+        "esES": "Pisadas del mundo menguante",
+        "i18n": "d4companion",
+        "idName": "Boots_Unique_Warlock_001",
+        "sno": 2559904
+      },
+      {
+        "category": "unique",
+        "enUS": "Heir of Perdition",
+        "esES": "Heredero de la perdición",
+        "i18n": "d4companion",
+        "idName": "Helm_Unique_Generic_004;S14_Helm_Unique_Generic_004",
+        "sno": 2105794
+      },
+      {
+        "category": "unique",
+        "enUS": "Ring of Starless Skies",
+        "esES": null,
+        "i18n": "none",
+        "idName": "unique__ring_of_starless_skies",
+        "sno": null
+      }
+    ],
     "fields": [
       {
         "key": "skill:curated_doom",
@@ -142,6 +183,156 @@
         "values": {
           "d4builds:6daa660e-d706-4572-afb6-4352304c1244:0": 1
         }
+      },
+      {
+        "key": "unique:1HDagger_Unique_Warlock_001",
+        "label": {
+          "category": "unique",
+          "enUS": "Litany of Sable",
+          "esES": "Letanía lúgubre",
+          "i18n": "d4companion",
+          "idName": "1HDagger_Unique_Warlock_001",
+          "sno": 2559874
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:6daa660e-d706-4572-afb6-4352304c1244:0": "si"
+        }
+      },
+      {
+        "key": "unique:Amulet_Unique_Warlock_001",
+        "label": {
+          "category": "unique",
+          "enUS": "Seed of Horazon",
+          "esES": "Semilla de Horazón",
+          "i18n": "d4companion",
+          "idName": "Amulet_Unique_Warlock_001",
+          "sno": 2559896
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:6daa660e-d706-4572-afb6-4352304c1244:0": "si"
+        }
+      },
+      {
+        "key": "unique:Boots_Unique_Warlock_001",
+        "label": {
+          "category": "unique",
+          "enUS": "Footfalls of the Waning World",
+          "esES": "Pisadas del mundo menguante",
+          "i18n": "d4companion",
+          "idName": "Boots_Unique_Warlock_001",
+          "sno": 2559904
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:6daa660e-d706-4572-afb6-4352304c1244:0": "si"
+        }
+      },
+      {
+        "key": "unique:Helm_Unique_Generic_004;S14_Helm_Unique_Generic_004",
+        "label": {
+          "category": "unique",
+          "enUS": "Heir of Perdition",
+          "esES": "Heredero de la perdición",
+          "i18n": "d4companion",
+          "idName": "Helm_Unique_Generic_004;S14_Helm_Unique_Generic_004",
+          "sno": 2105794
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:6daa660e-d706-4572-afb6-4352304c1244:0": "si"
+        }
+      },
+      {
+        "key": "unique:unique__ring_of_starless_skies",
+        "label": {
+          "category": "unique",
+          "enUS": "Ring of Starless Skies",
+          "esES": null,
+          "i18n": "none",
+          "idName": "unique__ring_of_starless_skies",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:6daa660e-d706-4572-afb6-4352304c1244:0": "si"
+        }
+      },
+      {
+        "key": "glyph:Rare_019_Dexterity_Side",
+        "label": {
+          "category": "glyph",
+          "enUS": "Destruction",
+          "esES": "Destrucción",
+          "i18n": "d4companion",
+          "idName": "Rare_019_Dexterity_Side",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:6daa660e-d706-4572-afb6-4352304c1244:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_046_Dexterity_Side",
+        "label": {
+          "category": "glyph",
+          "enUS": "Abyssal",
+          "esES": "Abisal",
+          "i18n": "d4companion",
+          "idName": "Rare_046_Dexterity_Side",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:6daa660e-d706-4572-afb6-4352304c1244:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_112_Willpower_Main",
+        "label": {
+          "category": "glyph",
+          "enUS": "Eliminator",
+          "esES": "Eliminador",
+          "i18n": "d4companion",
+          "idName": "Rare_112_Willpower_Main",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:6daa660e-d706-4572-afb6-4352304c1244:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_123_Willpower_Main",
+        "label": {
+          "category": "glyph",
+          "enUS": "Mastermind",
+          "esES": "Mente magistral",
+          "i18n": "d4companion",
+          "idName": "Rare_123_Willpower_Main",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:6daa660e-d706-4572-afb6-4352304c1244:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_128_Strength_Side",
+        "label": {
+          "category": "glyph",
+          "enUS": "Demonologist",
+          "esES": "Demonólogo",
+          "i18n": "d4companion",
+          "idName": "Rare_128_Strength_Side",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:6daa660e-d706-4572-afb6-4352304c1244:0": "presente"
+        }
       }
     ],
     "variantCount": 1
@@ -173,24 +364,437 @@
     "en": "Dread Claws",
     "es": "Garras pavorosas"
   },
-  "updatedAt": "2026-08-09T02:30:41.994Z",
+  "updatedAt": "2026-08-09T06:14:55.283Z",
   "variants": [
     {
       "completeness": {
-        "hasGear": false,
+        "hasGear": true,
         "hasMercenary": false,
-        "hasParagon": false,
+        "hasParagon": true,
         "hasSkills": true,
         "hasTalisman": false,
         "hasWarPlan": false,
-        "score": 0.35
+        "score": 0.85
       },
-      "gear": {},
+      "gear": {
+        "amulet": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Seed of Horazon",
+            "esES": "Semilla de Horazón",
+            "i18n": "d4companion",
+            "idName": "Amulet_Unique_Warlock_001",
+            "sno": 2559896
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "amulet",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Diamond",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__diamond",
+              "sno": null
+            }
+          ]
+        },
+        "boots": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Footfalls of the Waning World",
+            "esES": "Pisadas del mundo menguante",
+            "i18n": "d4companion",
+            "idName": "Boots_Unique_Warlock_001",
+            "sno": 2559904
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "boots",
+          "sockets": []
+        },
+        "chest": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Juggernaut's Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__juggernaut_s_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "chest",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Igni",
+              "esES": "Igni",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Condition_Bomb",
+              "sno": 2165976
+            },
+            {
+              "category": "rune",
+              "enUS": "Prid",
+              "esES": "Prid",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Effect_Warlock_ChainPrison",
+              "sno": 2531290
+            }
+          ]
+        },
+        "gloves": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Fathomless Dark",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_fathomless_dark",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "gloves",
+          "sockets": []
+        },
+        "helm": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Heir of Perdition",
+            "esES": "Heredero de la perdición",
+            "i18n": "d4companion",
+            "idName": "Helm_Unique_Generic_004;S14_Helm_Unique_Generic_004",
+            "sno": 2105794
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": true
+          },
+          "quality": "unique",
+          "slot": "helm",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Cir",
+              "esES": "Cir",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Condition_CastRepeatSkill",
+              "sno": 2060617
+            },
+            {
+              "category": "rune",
+              "enUS": "Que",
+              "esES": "Que",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Effect_Druid_EarthenBulwark",
+              "sno": 2004804
+            }
+          ]
+        },
+        "offhand": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Crushing Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__crushing_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "offhand",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Amethyst",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__amethyst",
+              "sno": null
+            }
+          ]
+        },
+        "pants": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Diabolical Armor",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_diabolical_armor",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "pants",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Sapphire",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__sapphire",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Sapphire",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__sapphire",
+              "sno": null
+            }
+          ]
+        },
+        "ring1": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Ring of Starless Skies",
+            "esES": null,
+            "i18n": "none",
+            "idName": "unique__ring_of_starless_skies",
+            "sno": null
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": true
+          },
+          "quality": "unique",
+          "slot": "ring1",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Diamond",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__diamond",
+              "sno": null
+            }
+          ]
+        },
+        "ring2": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Edgemaster's Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__edgemaster_s_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "ring2",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Diamond",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__diamond",
+              "sno": null
+            }
+          ]
+        },
+        "weapon": {
+          "affixes": [],
+          "aspect": null,
+          "item": {
+            "category": "unique",
+            "enUS": "Litany of Sable",
+            "esES": "Letanía lúgubre",
+            "i18n": "d4companion",
+            "idName": "1HDagger_Unique_Warlock_001",
+            "sno": 2559874
+          },
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "unique",
+          "slot": "weapon",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Amethyst",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__amethyst",
+              "sno": null
+            }
+          ]
+        }
+      },
       "id": "d4builds:6daa660e-d706-4572-afb6-4352304c1244:0",
       "levelBand": "endgame",
       "mercenary": null,
       "paragon": {
-        "boards": [],
+        "boards": [
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Abyssal",
+                "esES": "Abisal",
+                "i18n": "d4companion",
+                "idName": "Rare_046_Dexterity_Side",
+                "sno": null
+              }
+            },
+            "order": 0,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "1Starting Board Str 64•Dex 25•Int 59•Will 105",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__1starting_board_str_64_dex_25_int_59_will_105",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Demonologist",
+                "esES": "Demonólogo",
+                "i18n": "d4companion",
+                "idName": "Rare_128_Strength_Side",
+                "sno": null
+              }
+            },
+            "order": 1,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "2Dominion Str 86•Dex 20•Int 54•Will 90",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__2dominion_str_86_dex_20_int_54_will_90",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Destruction",
+                "esES": "Destrucción",
+                "i18n": "d4companion",
+                "idName": "Rare_019_Dexterity_Side",
+                "sno": null
+              }
+            },
+            "order": 2,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "3Greater Hex Str 69•Dex 25•Int 64•Will 90",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__3greater_hex_str_69_dex_25_int_64_will_90",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Mastermind",
+                "esES": "Mente magistral",
+                "i18n": "d4companion",
+                "idName": "Rare_123_Willpower_Main",
+                "sno": null
+              }
+            },
+            "order": 3,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "5Dynamism Str 59•Dex 20•Int 59•Will 110",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__5dynamism_str_59_dex_20_int_59_will_110",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Eliminator",
+                "esES": "Eliminador",
+                "i18n": "d4companion",
+                "idName": "Rare_112_Willpower_Main",
+                "sno": null
+              }
+            },
+            "order": 4,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "5Ritualism Str 54•Dex 10•Int 74•Will 110",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__5ritualism_str_54_dex_10_int_74_will_110",
+              "sno": null
+            },
+            "rotation": null
+          }
+        ],
         "level": null
       },
       "runewords": [],
@@ -209,27 +813,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Damage",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__damage",
+              "idName": "skillUpgrade__damage",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Cascading Dread",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__cascading_dread",
+              "idName": "skillUpgrade__cascading_dread",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Ambush",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__ambush",
+              "idName": "skillUpgrade__ambush",
               "sno": null
             }
           ],
@@ -249,27 +853,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Wrath",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__wrath",
+              "idName": "skillUpgrade__wrath",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Contagion",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__contagion",
+              "idName": "skillUpgrade__contagion",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Assimilation",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__assimilation",
+              "idName": "skillUpgrade__assimilation",
               "sno": null
             }
           ],
@@ -289,27 +893,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Lesser Demon Vulnerable",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__lesser_demon_vulnerable",
+              "idName": "skillUpgrade__lesser_demon_vulnerable",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Focused Glare",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__focused_glare",
+              "idName": "skillUpgrade__focused_glare",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Wide Beam",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__wide_beam",
+              "idName": "skillUpgrade__wide_beam",
               "sno": null
             }
           ],
@@ -329,27 +933,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Damage Scaling",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__damage_scaling",
+              "idName": "skillUpgrade__damage_scaling",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Terror Demon",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__terror_demon",
+              "idName": "skillUpgrade__terror_demon",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Dominance",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__dominance",
+              "idName": "skillUpgrade__dominance",
               "sno": null
             }
           ],
@@ -391,27 +995,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Movement Speed",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__movement_speed",
+              "idName": "skillUpgrade__movement_speed",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Infiltration Trails",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__infiltration_trails",
+              "idName": "skillUpgrade__infiltration_trails",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Cast Range",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__cast_range",
+              "idName": "skillUpgrade__cast_range",
               "sno": null
             }
           ],
@@ -420,14 +1024,14 @@
       ],
       "source": {
         "author": "Rob2628",
-        "capturedAt": "2026-08-09T02:30:41.994Z",
+        "capturedAt": "2026-08-09T06:14:55.283Z",
         "externalId": "6daa660e-d706-4572-afb6-4352304c1244",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "52a36a250edd764e03d7c0b32a3f143c3c3eb4ffd710ff1e8c68aebb841602eb",
-        "url": "https://d4builds.gg/builds/dread-claws-warlock-endgame/",
+        "snapshotHash": "b37f2fd900860774b78aea077bc878f22b5ad46afaafeba26faed4701d3463bc",
+        "url": "https://d4builds.gg/builds/6daa660e-d706-4572-afb6-4352304c1244/?var=0",
         "variantIndex": 0,
-        "variantLabel": "Endgame"
+        "variantLabel": "Standard Build"
       },
       "talisman": null,
       "warPlan": null

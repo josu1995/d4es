@@ -142,6 +142,21 @@
         "values": {
           "d4builds:5951dece-9c35-4527-a1bf-bdced9bc75b9:0": 1
         }
+      },
+      {
+        "key": "glyph:Rare_Dex_Generic",
+        "label": {
+          "category": "glyph",
+          "enUS": "Headhunter",
+          "esES": "Cazacabezas",
+          "i18n": "d4companion",
+          "idName": "Rare_Dex_Generic",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:5951dece-9c35-4527-a1bf-bdced9bc75b9:0": "presente"
+        }
       }
     ],
     "variantCount": 1
@@ -173,24 +188,313 @@
     "en": "Evade",
     "es": "Perforatrueno"
   },
-  "updatedAt": "2026-08-09T02:30:41.994Z",
+  "updatedAt": "2026-08-09T06:09:04.548Z",
   "variants": [
     {
       "completeness": {
-        "hasGear": false,
+        "hasGear": true,
         "hasMercenary": false,
-        "hasParagon": false,
+        "hasParagon": true,
         "hasSkills": true,
         "hasTalisman": false,
         "hasWarPlan": false,
-        "score": 0.35
+        "score": 0.85
       },
-      "gear": {},
+      "gear": {
+        "amulet": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Unyielding Hits",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_unyielding_hits",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "amulet",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Skull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__skull",
+              "sno": null
+            }
+          ]
+        },
+        "boots": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Duelist's Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__duelist_s_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "boots",
+          "sockets": []
+        },
+        "chest": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Layered Wards",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_layered_wards",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "chest",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Neo",
+              "esES": "Neo",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Condition_OnAvoidDamage",
+              "sno": 2063987
+            },
+            {
+              "category": "rune",
+              "enUS": "Que",
+              "esES": "Que",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Effect_Druid_EarthenBulwark",
+              "sno": 2004804
+            }
+          ]
+        },
+        "gloves": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Rebounding Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__rebounding_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "gloves",
+          "sockets": []
+        },
+        "helm": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Might",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_might",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "helm",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Cem",
+              "esES": "Cem",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Condition_OnEvade",
+              "sno": 1968096
+            },
+            {
+              "category": "rune",
+              "enUS": "Gar",
+              "esES": "Gar",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Effect_CritBuff",
+              "sno": 1969098
+            }
+          ]
+        },
+        "pants": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Disobedience",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_disobedience",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "pants",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Emerald",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__emerald",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Emerald",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__emerald",
+              "sno": null
+            }
+          ]
+        },
+        "ring1": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Conceited Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__conceited_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "ring1",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Skull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__skull",
+              "sno": null
+            }
+          ]
+        },
+        "ring2": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of the Moonrise",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_the_moonrise",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "ring2",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Skull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__skull",
+              "sno": null
+            }
+          ]
+        }
+      },
       "id": "d4builds:5951dece-9c35-4527-a1bf-bdced9bc75b9:0",
       "levelBand": "leveling",
       "mercenary": null,
       "paragon": {
-        "boards": [],
+        "boards": [
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Headhunter",
+                "esES": "Cazacabezas",
+                "i18n": "d4companion",
+                "idName": "Rare_Dex_Generic",
+                "sno": null
+              }
+            },
+            "order": 0,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "1Starting Board Str 59•Dex 105•Int 64•Will 25",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__1starting_board_str_59_dex_105_int_64_will_25",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": null,
+            "order": 1,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "2Prodigy's Tempo Str 49•Dex 110•Int 69•Will 20",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__2prodigy_s_tempo_str_49_dex_110_int_69_will_20",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": null,
+            "order": 2,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "3Drive Str 64•Dex 90•Int 69•Will 25",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__3drive_str_64_dex_90_int_69_will_25",
+              "sno": null
+            },
+            "rotation": null
+          }
+        ],
         "level": null
       },
       "runewords": [],
@@ -209,27 +513,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Damage to Sparking",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__damage_to_sparking",
+              "idName": "skillUpgrade__damage_to_sparking",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Lightning Dancer",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__lightning_dancer",
+              "idName": "skillUpgrade__lightning_dancer",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Critical Strike",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__critical_strike",
+              "idName": "skillUpgrade__critical_strike",
               "sno": null
             }
           ],
@@ -249,27 +553,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Blocked Damage Reduction",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__blocked_damage_reduction",
+              "idName": "skillUpgrade__blocked_damage_reduction",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Force of Nature",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__force_of_nature",
+              "idName": "skillUpgrade__force_of_nature",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Duration",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__duration",
+              "idName": "skillUpgrade__duration",
               "sno": null
             }
           ],
@@ -289,27 +593,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Vigor Generation",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__vigor_generation",
+              "idName": "skillUpgrade__vigor_generation",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Erupting Skin",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__erupting_skin",
+              "idName": "skillUpgrade__erupting_skin",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Healing",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__healing",
+              "idName": "skillUpgrade__healing",
               "sno": null
             }
           ],
@@ -363,14 +667,14 @@
       ],
       "source": {
         "author": "Rob2628",
-        "capturedAt": "2026-08-09T02:30:41.994Z",
+        "capturedAt": "2026-08-09T06:09:04.548Z",
         "externalId": "5951dece-9c35-4527-a1bf-bdced9bc75b9",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "9cf72f545d2baaf0404c9515ee4841bcd76d948e1a9cf57f094a51193173f088",
-        "url": "https://d4builds.gg/builds/evade-spiritborn-leveling/",
+        "snapshotHash": "7c979e1abf981b7b1e1419a974d7c9098963e9450d40c8027340e0d4d135dfbd",
+        "url": "https://d4builds.gg/builds/5951dece-9c35-4527-a1bf-bdced9bc75b9/?var=0",
         "variantIndex": 0,
-        "variantLabel": "Leveling"
+        "variantLabel": "Standard Build"
       },
       "talisman": null,
       "warPlan": null

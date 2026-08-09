@@ -142,6 +142,81 @@
         "values": {
           "d4builds:e2d79811-4661-479f-80c4-e0d5a5e00960:0": 14
         }
+      },
+      {
+        "key": "glyph:Rare_046_Dexterity_Side",
+        "label": {
+          "category": "glyph",
+          "enUS": "Abyssal",
+          "esES": "Abisal",
+          "i18n": "d4companion",
+          "idName": "Rare_046_Dexterity_Side",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:e2d79811-4661-479f-80c4-e0d5a5e00960:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_066_Dexterity_Side",
+        "label": {
+          "category": "glyph",
+          "enUS": "Essence",
+          "esES": "Esencia",
+          "i18n": "d4companion",
+          "idName": "Rare_066_Dexterity_Side",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:e2d79811-4661-479f-80c4-e0d5a5e00960:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_071_Intelligence_Main",
+        "label": {
+          "category": "glyph",
+          "enUS": "Deadraiser",
+          "esES": "Alzamuertos",
+          "i18n": "d4companion",
+          "idName": "Rare_071_Intelligence_Main",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:e2d79811-4661-479f-80c4-e0d5a5e00960:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_072_Intelligence_Main",
+        "label": {
+          "category": "glyph",
+          "enUS": "Mage",
+          "esES": "Mago",
+          "i18n": "d4companion",
+          "idName": "Rare_072_Intelligence_Main",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:e2d79811-4661-479f-80c4-e0d5a5e00960:0": "presente"
+        }
+      },
+      {
+        "key": "glyph:Rare_073_Intelligence_Main",
+        "label": {
+          "category": "glyph",
+          "enUS": "Amplify",
+          "esES": "Amplificar",
+          "i18n": "d4companion",
+          "idName": "Rare_073_Intelligence_Main",
+          "sno": null
+        },
+        "status": "agree",
+        "values": {
+          "d4builds:e2d79811-4661-479f-80c4-e0d5a5e00960:0": "presente"
+        }
       }
     ],
     "variantCount": 1
@@ -173,24 +248,408 @@
     "en": "Minion",
     "es": "Guerrero esqueleto"
   },
-  "updatedAt": "2026-08-09T02:30:41.994Z",
+  "updatedAt": "2026-08-09T06:34:03.802Z",
   "variants": [
     {
       "completeness": {
-        "hasGear": false,
+        "hasGear": true,
         "hasMercenary": false,
-        "hasParagon": false,
+        "hasParagon": true,
         "hasSkills": true,
         "hasTalisman": false,
         "hasWarPlan": false,
-        "score": 0.35
+        "score": 0.85
       },
-      "gear": {},
+      "gear": {
+        "amulet": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Reanimation",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_reanimation",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "amulet",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Skull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__skull",
+              "sno": null
+            }
+          ]
+        },
+        "boots": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Creeping Cadaver",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_creeping_cadaver",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "boots",
+          "sockets": []
+        },
+        "chest": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Might",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_might",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "chest",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Cem",
+              "esES": "Cem",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Condition_OnEvade",
+              "sno": 1968096
+            },
+            {
+              "category": "rune",
+              "enUS": "Gar",
+              "esES": "Gar",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Effect_CritBuff",
+              "sno": 1969098
+            }
+          ]
+        },
+        "gloves": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Edgemaster's Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__edgemaster_s_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "gloves",
+          "sockets": []
+        },
+        "helm": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Hardened Bones",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_hardened_bones",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "helm",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Topaz",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__topaz",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Topaz",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__topaz",
+              "sno": null
+            }
+          ]
+        },
+        "offhand": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Hellbent Commander Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__hellbent_commander_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "offhand",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Skull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__skull",
+              "sno": null
+            }
+          ]
+        },
+        "pants": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Juggernaut's Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__juggernaut_s_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "pants",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Neo",
+              "esES": "Neo",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Condition_OnAvoidDamage",
+              "sno": 2063987
+            },
+            {
+              "category": "rune",
+              "enUS": "Que",
+              "esES": "Que",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Effect_Druid_EarthenBulwark",
+              "sno": 2004804
+            }
+          ]
+        },
+        "ring1": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of the Great Feast",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_the_great_feast",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "ring1",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Skull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__skull",
+              "sno": null
+            }
+          ]
+        },
+        "ring2": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Inner Calm",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_inner_calm",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "ring2",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Skull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__skull",
+              "sno": null
+            }
+          ]
+        }
+      },
       "id": "d4builds:e2d79811-4661-479f-80c4-e0d5a5e00960:0",
       "levelBand": "leveling",
       "mercenary": null,
       "paragon": {
-        "boards": [],
+        "boards": [
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Deadraiser",
+                "esES": "Alzamuertos",
+                "i18n": "d4companion",
+                "idName": "Rare_071_Intelligence_Main",
+                "sno": null
+              }
+            },
+            "order": 0,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "1Starting Board Str 25•Dex 59•Int 105•Will 64",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__1starting_board_str_25_dex_59_int_105_will_64",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Amplify",
+                "esES": "Amplificar",
+                "i18n": "d4companion",
+                "idName": "Rare_073_Intelligence_Main",
+                "sno": null
+              }
+            },
+            "order": 1,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "2Cult Leader Str 15•Dex 59•Int 110•Will 64",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__2cult_leader_str_15_dex_59_int_110_will_64",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Abyssal",
+                "esES": "Abisal",
+                "i18n": "d4companion",
+                "idName": "Rare_046_Dexterity_Side",
+                "sno": null
+              }
+            },
+            "order": 2,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "3Flesh-eater Str 20•Dex 59•Int 110•Will 59",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__3flesh_eater_str_20_dex_59_int_110_will_59",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Essence",
+                "esES": "Esencia",
+                "i18n": "d4companion",
+                "idName": "Rare_066_Dexterity_Side",
+                "sno": null
+              }
+            },
+            "order": 3,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "4Scent of Death Str 15•Dex 54•Int 110•Will 69",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__4scent_of_death_str_15_dex_54_int_110_will_69",
+              "sno": null
+            },
+            "rotation": null
+          },
+          {
+            "glyph": {
+              "rank": null,
+              "ref": {
+                "category": "glyph",
+                "enUS": "Mage",
+                "esES": "Mago",
+                "i18n": "d4companion",
+                "idName": "Rare_072_Intelligence_Main",
+                "sno": null
+              }
+            },
+            "order": 4,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "5Wither Str 20•Dex 49•Int 110•Will 69",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__5wither_str_20_dex_49_int_110_will_69",
+              "sno": null
+            },
+            "rotation": null
+          }
+        ],
         "level": null
       },
       "runewords": [],
@@ -209,27 +668,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Cooldown Reduction",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__cooldown_reduction",
+              "idName": "skillUpgrade__cooldown_reduction",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Dizzying Curse",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__dizzying_curse",
+              "idName": "skillUpgrade__dizzying_curse",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Movement Speed",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__movement_speed",
+              "idName": "skillUpgrade__movement_speed",
               "sno": null
             }
           ],
@@ -249,27 +708,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Damage Bonus",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__damage_bonus",
+              "idName": "skillUpgrade__damage_bonus",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Master of Puppets",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__master_of_puppets",
+              "idName": "skillUpgrade__master_of_puppets",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Resolve",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__resolve",
+              "idName": "skillUpgrade__resolve",
               "sno": null
             }
           ],
@@ -289,27 +748,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Essence Generation",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__essence_generation",
+              "idName": "skillUpgrade__essence_generation",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Bitter Harvest",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__bitter_harvest",
+              "idName": "skillUpgrade__bitter_harvest",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Vulnerable",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__vulnerable",
+              "idName": "skillUpgrade__vulnerable",
               "sno": null
             }
           ],
@@ -329,27 +788,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Ferocity, Resolve, or Overpower",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__ferocity_resolve_or_overpower",
+              "idName": "skillUpgrade__ferocity_resolve_or_overpower",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Coven",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__coven",
+              "idName": "skillUpgrade__coven",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Duration Damage Bonus",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__duration_damage_bonus",
+              "idName": "skillUpgrade__duration_damage_bonus",
               "sno": null
             }
           ],
@@ -369,27 +828,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Passive Bonus",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__passive_bonus",
+              "idName": "skillUpgrade__passive_bonus",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Unyielding Commander",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__unyielding_commander",
+              "idName": "skillUpgrade__unyielding_commander",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Cooldown Reduction",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__cooldown_reduction",
+              "idName": "skillUpgrade__cooldown_reduction",
               "sno": null
             }
           ],
@@ -409,27 +868,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Ferocity",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__ferocity",
+              "idName": "skillUpgrade__ferocity",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Harvest",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__harvest",
+              "idName": "skillUpgrade__harvest",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Critical Strike Chance",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__critical_strike_chance",
+              "idName": "skillUpgrade__critical_strike_chance",
               "sno": null
             }
           ],
@@ -438,14 +897,14 @@
       ],
       "source": {
         "author": "Rob2628",
-        "capturedAt": "2026-08-09T02:30:41.994Z",
+        "capturedAt": "2026-08-09T06:34:03.802Z",
         "externalId": "e2d79811-4661-479f-80c4-e0d5a5e00960",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "d3d266a4e31c209a653caf37e93ba154fb77eee844674a26cab1801782f8bdb8",
-        "url": "https://d4builds.gg/builds/minion-necromancer-leveling/",
+        "snapshotHash": "5417dc1be0d1aa180b4547d5ceb7557b84b1bfc91a55780f06b9a56d6ab491c0",
+        "url": "https://d4builds.gg/builds/e2d79811-4661-479f-80c4-e0d5a5e00960/?var=0",
         "variantIndex": 0,
-        "variantLabel": "Leveling"
+        "variantLabel": "Standard Build"
       },
       "talisman": null,
       "warPlan": null

@@ -173,24 +173,306 @@
     "en": "Hydra",
     "es": "Hidra"
   },
-  "updatedAt": "2026-08-09T02:30:41.994Z",
+  "updatedAt": "2026-08-09T06:30:52.179Z",
   "variants": [
     {
       "completeness": {
-        "hasGear": false,
+        "hasGear": true,
         "hasMercenary": false,
-        "hasParagon": false,
+        "hasParagon": true,
         "hasSkills": true,
         "hasTalisman": false,
         "hasWarPlan": false,
-        "score": 0.35
+        "score": 0.85
       },
-      "gear": {},
+      "gear": {
+        "amulet": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Channeling",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_channeling",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "amulet",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Skull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__skull",
+              "sno": null
+            }
+          ]
+        },
+        "boots": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Nebulous Brews",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_nebulous_brews",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "boots",
+          "sockets": []
+        },
+        "chest": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Juggernaut's Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__juggernaut_s_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "chest",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Neo",
+              "esES": "Neo",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Condition_OnAvoidDamage",
+              "sno": 2063987
+            },
+            {
+              "category": "rune",
+              "enUS": "Ceh",
+              "esES": "Ceh",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Effect_SummonSpiritWolf",
+              "sno": 2057115
+            }
+          ]
+        },
+        "gloves": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Edgemaster's Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__edgemaster_s_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "gloves",
+          "sockets": []
+        },
+        "helm": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Concentration",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_concentration",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "helm",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Topaz",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__topaz",
+              "sno": null
+            },
+            {
+              "category": "rune",
+              "enUS": "Topaz",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__topaz",
+              "sno": null
+            }
+          ]
+        },
+        "offhand": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Inner Calm",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_inner_calm",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "offhand",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Ruby",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__ruby",
+              "sno": null
+            }
+          ]
+        },
+        "pants": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Aspect of Might",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__aspect_of_might",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "pants",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Cir",
+              "esES": "Cir",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Condition_CastRepeatSkill",
+              "sno": 2060617
+            },
+            {
+              "category": "rune",
+              "enUS": "Thul",
+              "esES": "Thul",
+              "i18n": "d4companion",
+              "idName": "Item_Rune_Effect_Sorcerer_FrostNova",
+              "sno": 1969845
+            }
+          ]
+        },
+        "ring1": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Battle Caster's Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__battle_caster_s_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "ring1",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Skull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__skull",
+              "sno": null
+            }
+          ]
+        },
+        "ring2": {
+          "affixes": [],
+          "aspect": {
+            "category": "aspect",
+            "enUS": "Conceited Aspect",
+            "esES": null,
+            "i18n": "none",
+            "idName": "aspect__conceited_aspect",
+            "sno": null
+          },
+          "item": null,
+          "minItemPower": null,
+          "mythic": {
+            "craftPath": null,
+            "isMythic": false
+          },
+          "quality": "legendary",
+          "slot": "ring2",
+          "sockets": [
+            {
+              "category": "rune",
+              "enUS": "Skull",
+              "esES": null,
+              "i18n": "none",
+              "idName": "rune__skull",
+              "sno": null
+            }
+          ]
+        }
+      },
       "id": "d4builds:d7e85144-9110-4f93-ac3c-8c79f2fdb2a8:0",
       "levelBand": "leveling",
       "mercenary": null,
       "paragon": {
-        "boards": [],
+        "boards": [
+          {
+            "glyph": null,
+            "order": 0,
+            "ref": {
+              "category": "paragonBoard",
+              "enUS": "1Starting Board Str 25•Dex 59•Int 105•Will 64",
+              "esES": null,
+              "i18n": "none",
+              "idName": "paragonBoard__1starting_board_str_25_dex_59_int_105_will_64",
+              "sno": null
+            },
+            "rotation": null
+          }
+        ],
         "level": null
       },
       "runewords": [],
@@ -209,27 +491,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Healthy Damage Bonus",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__healthy_damage_bonus",
+              "idName": "skillUpgrade__healthy_damage_bonus",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Focused Flame",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__focused_flame",
+              "idName": "skillUpgrade__focused_flame",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Execute",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__execute",
+              "idName": "skillUpgrade__execute",
               "sno": null
             }
           ],
@@ -249,27 +531,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Movement Speed",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__movement_speed",
+              "idName": "skillUpgrade__movement_speed",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Wormhole",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__wormhole",
+              "idName": "skillUpgrade__wormhole",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Ferocity",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__ferocity",
+              "idName": "skillUpgrade__ferocity",
               "sno": null
             }
           ],
@@ -289,19 +571,19 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Resource Regeneration",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__resource_regeneration",
+              "idName": "skillUpgrade__resource_regeneration",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Permafrost",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__permafrost",
+              "idName": "skillUpgrade__permafrost",
               "sno": null
             }
           ],
@@ -321,27 +603,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Pull",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__pull",
+              "idName": "skillUpgrade__pull",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Living Bomb",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__living_bomb",
+              "idName": "skillUpgrade__living_bomb",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Cooldown Reduction",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__cooldown_reduction",
+              "idName": "skillUpgrade__cooldown_reduction",
               "sno": null
             }
           ],
@@ -361,27 +643,27 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Additional Hits",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__additional_hits",
+              "idName": "skillUpgrade__additional_hits",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Overcharged",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__overcharged",
+              "idName": "skillUpgrade__overcharged",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Additional Hits",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__additional_hits",
+              "idName": "skillUpgrade__additional_hits",
               "sno": null
             }
           ],
@@ -401,19 +683,19 @@
           },
           "runes": [
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Healing",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__healing",
+              "idName": "skillUpgrade__healing",
               "sno": null
             },
             {
-              "category": "rune",
+              "category": "skillUpgrade",
               "enUS": "Bathed in Flame",
               "esES": null,
               "i18n": "none",
-              "idName": "rune__bathed_in_flame",
+              "idName": "skillUpgrade__bathed_in_flame",
               "sno": null
             }
           ],
@@ -422,14 +704,14 @@
       ],
       "source": {
         "author": "Rob2628",
-        "capturedAt": "2026-08-09T02:30:41.994Z",
+        "capturedAt": "2026-08-09T06:30:52.179Z",
         "externalId": "d7e85144-9110-4f93-ac3c-8c79f2fdb2a8",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "0bce4e71c18b43f2c606ff5d9e7d70df6e7e110d651cadc8213f6cd33a53c795",
-        "url": "https://d4builds.gg/builds/hydra-sorcerer-leveling/",
+        "snapshotHash": "a3cd8f627824e0d445f56a82dd35457fc149147e65cd3bf0f52ddb55ed789ad2",
+        "url": "https://d4builds.gg/builds/d7e85144-9110-4f93-ac3c-8c79f2fdb2a8/?var=0",
         "variantIndex": 0,
-        "variantLabel": "Leveling"
+        "variantLabel": "Standard Build"
       },
       "talisman": null,
       "warPlan": null
