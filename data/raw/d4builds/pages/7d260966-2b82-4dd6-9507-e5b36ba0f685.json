@@ -1,6 +1,6 @@
 {
   "buildId": "7d260966-2b82-4dd6-9507-e5b36ba0f685",
-  "capturadoEn": "2026-08-09T18:25:46.031Z",
+  "capturadoEn": "2026-08-09T18:26:06.127Z",
   "pestanas": [
     "Gear & Skills",
     "Skill Tree",
@@ -1830,111 +1830,6 @@
         {
           "afijos": [
             {
-              "ga": 1,
-              "templado": false,
-              "texto": "Intelligence"
-            },
-            {
-              "ga": 1,
-              "templado": false,
-              "texto": "Maximum Life"
-            },
-            {
-              "ga": 0,
-              "templado": false,
-              "texto": "Armor"
-            },
-            {
-              "ga": 0,
-              "templado": false,
-              "texto": "Movement Speed"
-            },
-            {
-              "ga": 0,
-              "templado": true,
-              "texto": "Movement Speed (Natural Motion - Mobility)"
-            },
-            {
-              "ga": 0,
-              "templado": true,
-              "texto": "Transfigure"
-            }
-          ],
-          "slot": "Boots"
-        },
-        {
-          "afijos": [
-            {
-              "ga": 0,
-              "templado": false,
-              "texto": "All Damage Multiplier"
-            },
-            {
-              "ga": 0,
-              "templado": false,
-              "texto": "Critical Strike Chance"
-            },
-            {
-              "ga": 1,
-              "templado": false,
-              "texto": "Critical Strike Damage Multiplier"
-            },
-            {
-              "ga": 1,
-              "templado": false,
-              "texto": "Vulnerable Damage Multiplier"
-            },
-            {
-              "ga": 1,
-              "templado": true,
-              "texto": "Lucky Hit: Up to a 15% Chance to Restore X Primary Resource (Worldly Stability - Resource)"
-            },
-            {
-              "ga": 0,
-              "templado": true,
-              "texto": "Transfigure"
-            }
-          ],
-          "slot": "Ring 2"
-        },
-        {
-          "afijos": [
-            {
-              "ga": 0,
-              "templado": false,
-              "texto": "Intelligence"
-            },
-            {
-              "ga": 0,
-              "templado": false,
-              "texto": "Ranks to Blood Surge"
-            },
-            {
-              "ga": 1,
-              "templado": false,
-              "texto": "Critical Strike Damage Multiplier"
-            },
-            {
-              "ga": 1,
-              "templado": false,
-              "texto": "Vulnerable Damage Multiplier"
-            },
-            {
-              "ga": 0,
-              "templado": true,
-              "texto": "Damage Per Overpower Stack (Sharpened Finesse - Offensive)"
-            },
-            {
-              "ga": 0,
-              "templado": true,
-              "texto": "Transfigure"
-            }
-          ],
-          "slot": "Gloves"
-        },
-        {
-          "afijos": [
-            {
               "ga": 0,
               "templado": false,
               "texto": "Weapon Type"
@@ -1971,6 +1866,41 @@
             }
           ],
           "slot": "Weapon"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Intelligence"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Ranks to Blood Surge"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Critical Strike Damage Multiplier"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Vulnerable Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Damage Per Overpower Stack (Sharpened Finesse - Offensive)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Gloves"
         },
         {
           "afijos": [
@@ -2040,14 +1970,14 @@
               "texto": "Transfigure"
             }
           ],
-          "slot": "Chest Armor"
+          "slot": "Helm"
         },
         {
           "afijos": [
             {
-              "ga": 0,
+              "ga": 1,
               "templado": false,
-              "texto": "Primary Core Stat"
+              "texto": "Intelligence"
             },
             {
               "ga": 1,
@@ -2055,24 +1985,19 @@
               "texto": "Critical Strike Damage Multiplier"
             },
             {
-              "ga": 1,
+              "ga": 0,
               "templado": false,
-              "texto": "Vulnerable Damage Multiplier"
+              "texto": "Armor"
             },
             {
               "ga": 0,
               "templado": false,
-              "texto": "All Damage Multiplier"
-            },
-            {
-              "ga": 1,
-              "templado": true,
-              "texto": "Lucky Hit: Up to a 15% Chance to Restore X Primary Resource (Worldly Stability - Resource)"
+              "texto": "Resistance to All Elements"
             },
             {
               "ga": 0,
               "templado": true,
-              "texto": "Embattled Aspect"
+              "texto": "Maximum Life (Worldly Endurance - Defensive)"
             },
             {
               "ga": 0,
@@ -2080,7 +2005,7 @@
               "texto": "Transfigure"
             }
           ],
-          "slot": "Amulet"
+          "slot": "Pants"
         },
         {
           "afijos": [
@@ -2115,7 +2040,42 @@
               "texto": "Transfigure"
             }
           ],
-          "slot": "Helm"
+          "slot": "Chest Armor"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "All Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Critical Strike Chance"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Critical Strike Damage Multiplier"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Vulnerable Damage Multiplier"
+            },
+            {
+              "ga": 1,
+              "templado": true,
+              "texto": "Lucky Hit: Up to a 15% Chance to Restore X Primary Resource (Worldly Stability - Resource)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Ring 2"
         },
         {
           "afijos": [
@@ -2167,7 +2127,7 @@
             {
               "ga": 1,
               "templado": false,
-              "texto": "Critical Strike Damage Multiplier"
+              "texto": "Maximum Life"
             },
             {
               "ga": 0,
@@ -2177,12 +2137,12 @@
             {
               "ga": 0,
               "templado": false,
-              "texto": "Resistance to All Elements"
+              "texto": "Movement Speed"
             },
             {
               "ga": 0,
               "templado": true,
-              "texto": "Maximum Life (Worldly Endurance - Defensive)"
+              "texto": "Movement Speed (Natural Motion - Mobility)"
             },
             {
               "ga": 0,
@@ -2190,7 +2150,47 @@
               "texto": "Transfigure"
             }
           ],
-          "slot": "Pants"
+          "slot": "Boots"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Primary Core Stat"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Critical Strike Damage Multiplier"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Vulnerable Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "All Damage Multiplier"
+            },
+            {
+              "ga": 1,
+              "templado": true,
+              "texto": "Lucky Hit: Up to a 15% Chance to Restore X Primary Resource (Worldly Stability - Resource)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Embattled Aspect"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Amulet"
         }
       ],
       "warPlans": [
