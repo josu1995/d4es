@@ -1,0 +1,180 @@
+---
+import Base from '../../layouts/Base.astro';
+import { loadDiccionario } from '../../lib/data';
+
+/*
+  Importador BYOL (Bring Your Own Link).
+
+  maxroll.gg prohíbe expresamente en su robots.txt el rastreo, la minería de datos y la
+  creación de conjuntos de datos con su contenido. Por eso nuestro servidor NO lo toca
+  nunca. Lo que sí puede hacer cualquiera es abrir un enlace que le han pasado: eso es lo
+  que ocurre aquí, en tu navegador, con una URL que pegas tú. No se guarda nada, no pasa
+  por nuestro servidor y no se publica en ninguna parte.
+
+  El diccionario se embebe en la página porque el planificador de maxroll devuelve los
+  identificadores internos del juego, que son exactamente las claves de nuestro
+  diccionario: la traducción es un cruce directo, sin inventar nada.
+*/
+const dict = loadDiccionario();
+
+// Solo las categorías que aparecen en un planificador, para no cargar de más.
+const CATEGORIAS = new Set(['glyph', 'paragonBoard', 'unique', 'aspect', 'rune']);
+const compacto: Record<string, string> = {};
+for (const [clave, entrada] of Object.entries(dict.byIdName)) {
+  const [categoria] = clave.split(':');
+  if (categoria && CATEGORIAS.has(categoria)) compacto[entrada.idName] = entrada.es;
+}
+const totalTerminos = Object.keys(compacto).length;
+---
+
+<Base
+  titulo="Traducir una build de Maxroll al español — D4es"
+  descripcion="Pega el enlace de un planificador de Maxroll y tradúcelo al castellano en tu propio navegador. Nada se envía a ningún servidor."
+>
+  <div class="mx-auto max-w-3xl px-4 py-10">
+    <h1 class="font-titulo text-3xl sm:text-4xl">Traducir una build de Maxroll</h1>
+    <p class="mt-4 text-ceniza leading-relaxed">
+      Pega el enlace de un planificador de Maxroll y te lo traduce al castellano usando los nombres
+      oficiales del juego. Sirve para cuando alguien te pasa una build y no sabes cómo se llaman las cosas
+      en tu cliente.
+    </p>
+
+    <div class="mt-6 grabado rounded-lg border-oro-apagado/40 bg-oro/5 p-4 text-sm">
+      <p class="text-pergamino"><strong>Esto ocurre en tu navegador, no en nuestro servidor.</strong></p>
+      <p class="mt-1.5 text-ceniza">
+        Las condiciones de Maxroll prohíben que un sitio como este rastree su contenido, así que no lo
+        hacemos: nuestro servidor nunca les pide nada. Cuando pulsas el botón, es <em>tu</em> navegador
+        quien abre el enlace que tú has pegado, igual que si lo abrieras tú. No guardamos nada, no
+        publicamos nada y no queda registro en ningún sitio.
+      </p>
+    </div>
+
+    <form id="form" class="mt-6 grabado rounded-lg bg-piedra p-5">
+      <label for="url" class="block text-xs uppercase tracking-wider text-humo mb-1.5">
+        Enlace del planificador
+      </label>
+      <div class="flex flex-col gap-2 sm:flex-row">
+        <input
+          id="url"
+          type="url"
+          placeholder="https://maxroll.gg/d4/planner/xxxxxxxx"
+          class="flex-1 rounded bg-abismo grabado px-3 py-2.5 text-sm placeholder:text-humo focus:border-oro-apagado"
+          autocomplete="off"
+        />
+        <button
+          type="submit"
+          class="grabado grabado-hover rounded bg-brasa/20 border-brasa/50 px-5 py-2.5 text-sm font-medium hover:bg-brasa/30"
+        >
+          Traducir
+        </button>
+      </div>
+      <p class="mt-2 text-xs text-humo">
+        También vale pegar solo el identificador (la parte final del enlace).
+      </p>
+    </form>
+
+    <div id="salida" class="mt-6" role="status" aria-live="polite"></div>
+
+    <section class="mt-10 text-sm text-ceniza">
+      <h2 class="font-titulo text-xl text-pergamino">Si no funciona</h2>
+      <p class="mt-2">
+        Es posible que tu navegador bloquee la petición por seguridad (es una petición a otro dominio y
+        depende de cómo lo permita Maxroll). En ese caso no hay truco por nuestra parte: abre el enlace
+        directamente y usa el <a href="/glosario" class="underline underline-offset-4">glosario</a> o el
+        <a href="/objetos" class="underline underline-offset-4">buscador de objetos</a>, que traducen
+        término a término en los dos sentidos.
+      </p>
+    </section>
+  </div>
+</Base>
+
+<script define:vars={{ diccionario: compacto, totalTerminos }}>
+  const form = document.getElementById('form');
+  const entrada = document.getElementById('url');
+  const salida = document.getElementById('salida');
+
+  const traducir = (idName) => diccionario[idName] ?? null;
+
+  function tarjeta(titulo, cuerpo, tono = 'normal') {
+    const borde = tono === 'error' ? 'border-brasa/50 bg-brasa/10' : 'bg-piedra';
+    return `<div class="grabado rounded-lg ${borde} p-5">
+      <h2 class="font-titulo text-xl">${titulo}</h2>${cuerpo}</div>`;
+  }
+
+  function extraerId(texto) {
+    const limpio = texto.trim();
+    const m = limpio.match(/planner\/([A-Za-z0-9_-]+)/);
+    if (m) return m[1];
+    // Un identificador suelto: alfanumérico y corto.
+    if (/^[A-Za-z0-9_-]{4,20}$/.test(limpio)) return limpio;
+    return null;
+  }
+
+  function listaTraducida(items, etiqueta) {
+    if (items.length === 0) return '';
+    const filas = items
+      .map((i) => {
+        const es = traducir(i);
+        return es
+          ? `<li class="px-3 py-1.5 text-pergamino">${es} <span class="text-humo text-xs">${i}</span></li>`
+          : `<li class="px-3 py-1.5 text-ceniza">${i} <span class="chip-en">EN</span></li>`;
+      })
+      .join('');
+    return `<h3 class="mt-4 text-xs uppercase tracking-wider text-humo">${etiqueta}</h3>
+      <ul class="mt-1.5 divide-y divide-grabado grabado rounded bg-abismo overflow-hidden">${filas}</ul>`;
+  }
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const id = extraerId(entrada.value);
+    if (!id) {
+      salida.innerHTML = tarjeta('No reconozco ese enlace', '<p class="mt-2 text-sm text-ceniza">Debería ser algo como https://maxroll.gg/d4/planner/xxxxxxxx</p>', 'error');
+      return;
+    }
+
+    salida.innerHTML = tarjeta('Pidiendo la build…', `<p class="mt-2 text-sm text-ceniza">Tu navegador está abriendo el planificador ${id}.</p>`);
+
+    try {
+      // La petición sale del navegador del usuario, no de nuestro servidor.
+      const res = await fetch(`https://planners.maxroll.gg/profiles/d4/${id}`, { mode: 'cors' });
+      if (!res.ok) throw new Error(`el planificador respondió ${res.status}`);
+      const sobre = await res.json();
+      // El planificador anida un JSON dentro de otro: hay que deserializar dos veces.
+      const datos = typeof sobre.data === 'string' ? JSON.parse(sobre.data) : sobre.data;
+      const perfiles = (datos?.profiles ?? []).filter((p) => !p.hidden);
+
+      if (perfiles.length === 0) throw new Error('la respuesta no trae ningún perfil');
+
+      const bloques = perfiles
+        .map((p) => {
+          const skills = p.skillBar ?? [];
+          const tableros = (p.paragon?.steps?.[0]?.data ?? []).map((b) => b.id).filter(Boolean);
+          const glifos = (p.paragon?.steps?.[0]?.data ?? [])
+            .map((b) => b.glyph)
+            .filter(Boolean);
+          return `<div class="mt-5 border-t border-grabado pt-4">
+            <h3 class="font-titulo text-lg text-pergamino">${p.name ?? 'Perfil'}</h3>
+            ${listaTraducida(skills, 'Habilidades de la barra')}
+            ${listaTraducida(tableros, 'Tableros de Paragón')}
+            ${listaTraducida(glifos, 'Glifos')}
+          </div>`;
+        })
+        .join('');
+
+      salida.innerHTML = tarjeta(
+        sobre.name ?? 'Build de Maxroll',
+        `<p class="mt-1 text-sm text-humo">${perfiles.length} variante(s) · traducido con ${totalTerminos} términos oficiales</p>
+         ${bloques}
+         <p class="mt-5 text-xs text-humo">Los términos con <span class="chip-en">EN</span> no están en nuestro diccionario: se muestran tal cual, sin inventar la traducción.</p>
+         <a href="https://maxroll.gg/d4/planner/${id}" rel="nofollow noopener" target="_blank" class="mt-3 inline-block text-sm underline underline-offset-4">Ver la build original en Maxroll →</a>`,
+      );
+    } catch (err) {
+      salida.innerHTML = tarjeta(
+        'No se ha podido leer la build',
+        `<p class="mt-2 text-sm text-ceniza">${String(err instanceof Error ? err.message : err)}</p>
+         <p class="mt-2 text-sm text-ceniza">Lo más probable es que tu navegador haya bloqueado la petición a otro dominio. No hay forma de evitarlo desde aquí sin que nuestro servidor pida los datos, y eso es justo lo que no vamos a hacer.</p>`,
+        'error',
+      );
+    }
+  });
+</script>

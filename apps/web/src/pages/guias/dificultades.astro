@@ -1,0 +1,127 @@
+---
+import Base from '../../layouts/Base.astro';
+import { TORMENT_TIERS, DIFFICULTY_COUNT, MAX_LEVEL } from '@d4es/schema';
+import { loadEstado } from '../../lib/data';
+
+const estado = loadEstado();
+
+/*
+  Este dato es de los que más confusión generan: la escala cambió por completo con Lord
+  of Hatred y medio internet sigue midiendo con la vieja. Lo que sí está confirmado es
+  el número de escalones; los umbrales concretos de cada Tormento están pendientes de
+  comprobar dentro del juego, así que aquí no se inventa ninguna tabla de números.
+*/
+const previas = ['Normal', 'Difícil', 'Experto', 'Penitente'];
+---
+
+<Base
+  titulo={`Las ${DIFFICULTY_COUNT} dificultades de Diablo 4 y los ${TORMENT_TIERS} Tormentos`}
+  descripcion={`Cuántas dificultades hay en Diablo 4 tras Lord of Hatred: ${DIFFICULTY_COUNT} en total, de las cuales ${TORMENT_TIERS} son de Tormento. Por qué las guías que hablan de T4 están obsoletas.`}
+>
+  <article class="mx-auto max-w-3xl px-4 py-10">
+    <nav aria-label="Migas de pan" class="text-xs text-humo">
+      <a href="/guias" class="hover:text-pergamino">Guías</a>
+    </nav>
+
+    <h1 class="mt-3 font-titulo text-3xl sm:text-4xl">Las dificultades, explicadas</h1>
+
+    <p class="mt-4 text-ceniza leading-relaxed">
+      Si vienes de leer una guía y hablaba de «Tormento IV» como el techo del juego, esa guía es de antes
+      de abril de 2026. Lord of Hatred rehízo la escala entera.
+    </p>
+
+    <div class="mt-6 grid gap-4 sm:grid-cols-3">
+      <div class="grabado rounded-lg bg-piedra p-5 text-center">
+        <p class="font-titulo text-4xl text-oro">{DIFFICULTY_COUNT}</p>
+        <p class="mt-1 text-sm text-ceniza">dificultades en total</p>
+      </div>
+      <div class="grabado rounded-lg bg-piedra p-5 text-center">
+        <p class="font-titulo text-4xl text-brasa-viva">{TORMENT_TIERS}</p>
+        <p class="mt-1 text-sm text-ceniza">son de Tormento</p>
+      </div>
+      <div class="grabado rounded-lg bg-piedra p-5 text-center">
+        <p class="font-titulo text-4xl text-pergamino">{MAX_LEVEL}</p>
+        <p class="mt-1 text-sm text-ceniza">nivel máximo</p>
+      </div>
+    </div>
+
+    <section class="mt-8 grabado rounded-lg bg-piedra p-5">
+      <h2 class="font-titulo text-xl">Cómo se reparten</h2>
+      <p class="mt-2 text-sm text-ceniza">
+        Los cuatro primeros escalones son los de siempre, los que recorres mientras subes de nivel:
+      </p>
+      <ol class="mt-3 flex flex-wrap gap-2">
+        {
+          previas.map((p, i) => (
+            <li class="rounded border border-grabado bg-abismo px-3 py-1.5 text-sm text-ceniza">
+              {i + 1}. {p}
+            </li>
+          ))
+        }
+      </ol>
+      <p class="mt-4 text-sm text-ceniza">
+        A partir de ahí empieza el endgame de verdad, con <strong class="text-pergamino">{TORMENT_TIERS} niveles
+        de Tormento</strong> en vez de los cuatro de antes:
+      </p>
+      <ol class="mt-3 flex flex-wrap gap-1.5">
+        {
+          Array.from({ length: TORMENT_TIERS }, (_, i) => (
+            <li class="rounded border border-brasa/40 bg-brasa/10 px-2.5 py-1 font-mono text-sm text-brasa-viva">
+              T{i + 1}
+            </li>
+          ))
+        }
+      </ol>
+      <p class="mt-4 text-xs text-humo">
+        El nombre exacto de los cuatro escalones previos y los umbrales de cada Tormento están pendientes de
+        comprobar dentro del juego. El número de escalones sí está confirmado.
+      </p>
+    </section>
+
+    <section class="mt-6 grabado rounded-lg bg-piedra p-5">
+      <h2 class="font-titulo text-xl">Por qué se hizo así</h2>
+      <p class="mt-2 text-sm text-ceniza">
+        Con cuatro Tormentos, el salto entre uno y otro era enorme: o arrasabas o no podías entrar. Con doce,
+        la progresión es mucho más gradual y siempre hay un escalón justo por encima de lo que puedes hacer
+        hoy. También sirve para que el mundo abierto siga siendo relevante en el endgame, en vez de quedar
+        reducido a un par de actividades.
+      </p>
+    </section>
+
+    <section class="mt-6 grabado rounded-lg bg-piedra p-5">
+      <h2 class="font-titulo text-xl">Qué mirar antes de subir de escalón</h2>
+      <ul class="mt-3 space-y-2 text-sm text-ceniza">
+        <li class="flex gap-2">
+          <span class="text-humo">·</span>
+          <span>
+            <strong class="text-pergamino">Resistencias y armadura al tope</strong> antes que daño. Subir de
+            Tormento castiga mucho más la supervivencia que la falta de daño.
+          </span>
+        </li>
+        <li class="flex gap-2">
+          <span class="text-humo">·</span>
+          <span>
+            <strong class="text-pergamino">Nivel de Fosa que aguantas</strong>: es la mejor vara de medir
+            real, y es el dato que publican las builds de este sitio.
+          </span>
+        </li>
+        <li class="flex gap-2">
+          <span class="text-humo">·</span>
+          <span>
+            <strong class="text-pergamino">Glifos por encima de 51</strong>: ese es el umbral en el que un
+            glifo alcanza su radio máximo y desbloquea su bonus multiplicativo. Antes de eso, subir de
+            Tormento suele ser precipitarse.
+          </span>
+        </li>
+      </ul>
+    </section>
+
+    <aside class="mt-8 grabado rounded-lg border-oro-apagado/40 bg-oro/5 p-4 text-sm">
+      <p class="text-pergamino"><strong>Estado de esta guía.</strong></p>
+      <p class="mt-1.5 text-ceniza">
+        Verificada para el parche {estado.parche}, temporada {estado.temporadaActual}. Los números de arriba
+        se leen de la configuración del sitio, así que cuando cambien con un parche, cambian aquí solos.
+      </p>
+    </aside>
+  </article>
+</Base>
