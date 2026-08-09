@@ -1,0 +1,4349 @@
+{
+  "buildId": "de491527-1280-4d83-b5ea-dd26ca882385",
+  "capturadoEn": "2026-08-09T18:03:33.100Z",
+  "pestanas": [
+    "Gear & Skills",
+    "Skill Tree",
+    "Paragon",
+    "Mercenaries",
+    "War Plans",
+    "Notes"
+  ],
+  "porVariante": [
+    {
+      "arbol": [],
+      "arbolEsCanvas": true,
+      "debug": {},
+      "etiqueta": "Standard Build",
+      "gear": [
+        {
+          "calidad": "unique",
+          "engarces": [
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Runes/ritual.png",
+              "nombre": "Igni",
+              "tipo": "ritual"
+            },
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Runes/invocation.png",
+              "nombre": "Que",
+              "tipo": "invocation"
+            }
+          ],
+          "icono": "https://sunderarmor.com/DIABLO4/Uniques/2/gathlen's_birthright.png",
+          "nombre": "Gathlen's Birthright",
+          "slot": "Helm"
+        },
+        {
+          "calidad": null,
+          "engarces": [
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Runes/ritual.png",
+              "nombre": "Poc",
+              "tipo": "ritual"
+            },
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Runes/invocation.png",
+              "nombre": "Gar",
+              "tipo": "invocation"
+            }
+          ],
+          "icono": "https://sunderarmor.com/DIABLO4/Codex/1/defensive.png",
+          "nombre": "Aspect of Glynn's Anvil",
+          "slot": "Chest Armor"
+        },
+        {
+          "calidad": null,
+          "engarces": [],
+          "icono": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
+          "nombre": "Archdruid's Aspect",
+          "slot": "Gloves"
+        },
+        {
+          "calidad": "unique",
+          "engarces": [
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Gems/grand-sapphire.png",
+              "nombre": "Sapphire",
+              "tipo": "grand-sapphire"
+            },
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Gems/grand-sapphire.png",
+              "nombre": "Sapphire",
+              "tipo": "grand-sapphire"
+            }
+          ],
+          "icono": "https://sunderarmor.com/DIABLO4/Uniques/2/tibault's_will.png",
+          "nombre": "Tibault's Will",
+          "slot": "Pants"
+        },
+        {
+          "calidad": null,
+          "engarces": [],
+          "icono": "https://sunderarmor.com/DIABLO4/Codex/1/utility.png",
+          "nombre": "Great Storm Aspect",
+          "slot": "Boots"
+        },
+        {
+          "calidad": null,
+          "engarces": [
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Gems/grand-topaz.png",
+              "nombre": "Topaz",
+              "tipo": "grand-topaz"
+            },
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Gems/grand-topaz.png",
+              "nombre": "Topaz",
+              "tipo": "grand-topaz"
+            }
+          ],
+          "icono": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
+          "nombre": "Crushing Aspect",
+          "slot": "2H Weapon"
+        },
+        {
+          "calidad": null,
+          "engarces": [],
+          "icono": null,
+          "nombre": null,
+          "slot": ""
+        },
+        {
+          "calidad": null,
+          "engarces": [],
+          "icono": null,
+          "nombre": null,
+          "slot": ""
+        },
+        {
+          "calidad": null,
+          "engarces": [
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Gems/grand-diamond.png",
+              "nombre": "Diamond",
+              "tipo": "grand-diamond"
+            }
+          ],
+          "icono": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
+          "nombre": "Aspect of Inner Calm",
+          "slot": "Amulet"
+        },
+        {
+          "calidad": "mythic",
+          "engarces": [
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Gems/grand-diamond.png",
+              "nombre": "Diamond",
+              "tipo": "grand-diamond"
+            }
+          ],
+          "icono": "https://sunderarmor.com/DIABLO4/Uniques/2/might_of_the_ursine.png",
+          "nombre": "Might of the Ursine",
+          "slot": "Ring 1"
+        },
+        {
+          "calidad": "unique",
+          "engarces": [
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Gems/grand-diamond.png",
+              "nombre": "Diamond",
+              "tipo": "grand-diamond"
+            }
+          ],
+          "icono": "https://sunderarmor.com/DIABLO4/Uniques/2/dirge_of_airidah.png",
+          "nombre": "Dirge of Airidah",
+          "slot": "Ring 2"
+        },
+        {
+          "calidad": null,
+          "engarces": [],
+          "icono": null,
+          "nombre": null,
+          "slot": ""
+        },
+        {
+          "calidad": "unique",
+          "engarces": [],
+          "icono": "https://sunderarmor.com/DIABLO4/Uniques/offhand.png",
+          "nombre": "Offhand",
+          "slot": ""
+        },
+        {
+          "calidad": null,
+          "engarces": [],
+          "icono": null,
+          "nombre": null,
+          "slot": ""
+        }
+      ],
+      "index": 0,
+      "mercenarios": {
+        "etiquetas": [
+          "7",
+          "12",
+          "19",
+          "29"
+        ],
+        "nodos": [
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "large",
+              "after_bottom",
+              "skill__tree__item--active",
+              "valiance"
+            ],
+            "maximo": null,
+            "nombre": "Valiance",
+            "puntos": null,
+            "slug": "valiance",
+            "x": 1050,
+            "y": 230
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "large",
+              "after_bottom",
+              "skill__tree__item--active",
+              "valiance"
+            ],
+            "maximo": null,
+            "nombre": "Valiance",
+            "puntos": null,
+            "slug": "valiance",
+            "x": 1050,
+            "y": 230
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "large",
+              "after_bottom",
+              "skill__tree__item--active",
+              "valiance"
+            ],
+            "maximo": null,
+            "nombre": "Valiance",
+            "puntos": null,
+            "slug": "valiance",
+            "x": 1050,
+            "y": 230
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "large",
+              "after_bottom",
+              "skill__tree__item--active",
+              "skill__tree__item--fill",
+              "skill__tree__item--full",
+              "shield_charge"
+            ],
+            "maximo": 1,
+            "nombre": "Shield Charge",
+            "puntos": 1,
+            "slug": "shield_charge",
+            "x": 900,
+            "y": 350
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "large",
+              "after_bottom",
+              "skill__tree__item--active",
+              "skill__tree__item--fill",
+              "skill__tree__item--full",
+              "shield_charge"
+            ],
+            "maximo": 1,
+            "nombre": "Shield Charge",
+            "puntos": 1,
+            "slug": "shield_charge",
+            "x": 900,
+            "y": 350
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "large",
+              "after_bottom",
+              "skill__tree__item--active",
+              "skill__tree__item--fill",
+              "skill__tree__item--full",
+              "shield_charge"
+            ],
+            "maximo": 1,
+            "nombre": "Shield Charge",
+            "puntos": 1,
+            "slug": "shield_charge",
+            "x": 900,
+            "y": 350
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "large",
+              "after_bottom",
+              "ground_slam"
+            ],
+            "maximo": 1,
+            "nombre": "Ground Slam",
+            "puntos": 0,
+            "slug": "ground_slam",
+            "x": 1200,
+            "y": 350
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "large",
+              "after_bottom",
+              "ground_slam"
+            ],
+            "maximo": 1,
+            "nombre": "Ground Slam",
+            "puntos": 0,
+            "slug": "ground_slam",
+            "x": 1200,
+            "y": 350
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "large",
+              "after_bottom",
+              "ground_slam"
+            ],
+            "maximo": 1,
+            "nombre": "Ground Slam",
+            "puntos": 0,
+            "slug": "ground_slam",
+            "x": 1200,
+            "y": 350
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "skill__tree__item--active",
+              "skill__tree__item--fill",
+              "skill__tree__item--full",
+              "raheirs_guard"
+            ],
+            "maximo": 1,
+            "nombre": "Raheir's Guard",
+            "puntos": 1,
+            "slug": "raheir's_guard",
+            "x": 830,
+            "y": 470
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "vanguard"
+            ],
+            "maximo": 1,
+            "nombre": "Vanguard",
+            "puntos": 0,
+            "slug": "vanguard",
+            "x": 1010,
+            "y": 470
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "skill__tree__item--active",
+              "skill__tree__item--fill",
+              "skill__tree__item--full",
+              "raheirs_guard"
+            ],
+            "maximo": 1,
+            "nombre": "Raheir's Guard",
+            "puntos": 1,
+            "slug": "raheir's_guard",
+            "x": 830,
+            "y": 470
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "vanguard"
+            ],
+            "maximo": 1,
+            "nombre": "Vanguard",
+            "puntos": 0,
+            "slug": "vanguard",
+            "x": 1010,
+            "y": 470
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "skill__tree__item--active",
+              "skill__tree__item--fill",
+              "skill__tree__item--full",
+              "raheirs_guard"
+            ],
+            "maximo": 1,
+            "nombre": "Raheir's Guard",
+            "puntos": 1,
+            "slug": "raheir's_guard",
+            "x": 830,
+            "y": 470
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "vanguard"
+            ],
+            "maximo": 1,
+            "nombre": "Vanguard",
+            "puntos": 0,
+            "slug": "vanguard",
+            "x": 1010,
+            "y": 470
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "raheirs_aegis"
+            ],
+            "maximo": 1,
+            "nombre": "Raheir's Aegis",
+            "puntos": 0,
+            "slug": "raheir's_aegis",
+            "x": 1130,
+            "y": 470
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "draw_fire"
+            ],
+            "maximo": 1,
+            "nombre": "Draw Fire",
+            "puntos": 0,
+            "slug": "draw_fire",
+            "x": 1310,
+            "y": 470
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "raheirs_aegis"
+            ],
+            "maximo": 1,
+            "nombre": "Raheir's Aegis",
+            "puntos": 0,
+            "slug": "raheir's_aegis",
+            "x": 1130,
+            "y": 470
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "draw_fire"
+            ],
+            "maximo": 1,
+            "nombre": "Draw Fire",
+            "puntos": 0,
+            "slug": "draw_fire",
+            "x": 1310,
+            "y": 470
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "raheirs_aegis"
+            ],
+            "maximo": 1,
+            "nombre": "Raheir's Aegis",
+            "puntos": 0,
+            "slug": "raheir's_aegis",
+            "x": 1130,
+            "y": 470
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "draw_fire"
+            ],
+            "maximo": 1,
+            "nombre": "Draw Fire",
+            "puntos": 0,
+            "slug": "draw_fire",
+            "x": 1310,
+            "y": 470
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "large",
+              "before_left",
+              "after_bottom",
+              "skill__tree__item--active",
+              "skill__tree__item--fill",
+              "skill__tree__item--full",
+              "provoke"
+            ],
+            "maximo": 1,
+            "nombre": "Provoke",
+            "puntos": 1,
+            "slug": "provoke",
+            "x": 810,
+            "y": 590
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "large",
+              "before_left",
+              "after_bottom",
+              "skill__tree__item--active",
+              "skill__tree__item--fill",
+              "skill__tree__item--full",
+              "provoke"
+            ],
+            "maximo": 1,
+            "nombre": "Provoke",
+            "puntos": 1,
+            "slug": "provoke",
+            "x": 810,
+            "y": 590
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "large",
+              "before_left",
+              "after_bottom",
+              "skill__tree__item--active",
+              "skill__tree__item--fill",
+              "skill__tree__item--full",
+              "provoke"
+            ],
+            "maximo": 1,
+            "nombre": "Provoke",
+            "puntos": 1,
+            "slug": "provoke",
+            "x": 810,
+            "y": 590
+          },
+          {
+            "clases": [
+              "r2",
+              "c1",
+              "large",
+              "before_right",
+              "after_bottom",
+              "crater"
+            ],
+            "maximo": 1,
+            "nombre": "Crater",
+            "puntos": 0,
+            "slug": "crater",
+            "x": 990,
+            "y": 590
+          },
+          {
+            "clases": [
+              "r2",
+              "c1",
+              "large",
+              "before_right",
+              "after_bottom",
+              "crater"
+            ],
+            "maximo": 1,
+            "nombre": "Crater",
+            "puntos": 0,
+            "slug": "crater",
+            "x": 990,
+            "y": 590
+          },
+          {
+            "clases": [
+              "r2",
+              "c1",
+              "large",
+              "before_right",
+              "after_bottom",
+              "crater"
+            ],
+            "maximo": 1,
+            "nombre": "Crater",
+            "puntos": 0,
+            "slug": "crater",
+            "x": 990,
+            "y": 590
+          },
+          {
+            "clases": [
+              "r3",
+              "c0",
+              "large",
+              "before_left",
+              "after_bottom",
+              "bastion-v2"
+            ],
+            "maximo": 1,
+            "nombre": "Bastion-v2",
+            "puntos": 0,
+            "slug": "bastion-v2",
+            "x": 1110,
+            "y": 590
+          },
+          {
+            "clases": [
+              "r3",
+              "c0",
+              "large",
+              "before_left",
+              "after_bottom",
+              "bastion-v2"
+            ],
+            "maximo": 1,
+            "nombre": "Bastion-v2",
+            "puntos": 0,
+            "slug": "bastion-v2",
+            "x": 1110,
+            "y": 590
+          },
+          {
+            "clases": [
+              "r3",
+              "c0",
+              "large",
+              "before_left",
+              "after_bottom",
+              "bastion-v2"
+            ],
+            "maximo": 1,
+            "nombre": "Bastion-v2",
+            "puntos": 0,
+            "slug": "bastion-v2",
+            "x": 1110,
+            "y": 590
+          },
+          {
+            "clases": [
+              "r3",
+              "c2",
+              "large",
+              "before_right",
+              "after_bottom",
+              "shield_throw"
+            ],
+            "maximo": 1,
+            "nombre": "Shield Throw",
+            "puntos": 0,
+            "slug": "shield_throw",
+            "x": 1290,
+            "y": 590
+          },
+          {
+            "clases": [
+              "r3",
+              "c2",
+              "large",
+              "before_right",
+              "after_bottom",
+              "shield_throw"
+            ],
+            "maximo": 1,
+            "nombre": "Shield Throw",
+            "puntos": 0,
+            "slug": "shield_throw",
+            "x": 1290,
+            "y": 590
+          },
+          {
+            "clases": [
+              "r3",
+              "c2",
+              "large",
+              "before_right",
+              "after_bottom",
+              "shield_throw"
+            ],
+            "maximo": 1,
+            "nombre": "Shield Throw",
+            "puntos": 0,
+            "slug": "shield_throw",
+            "x": 1290,
+            "y": 590
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "skill__tree__item--active",
+              "skill__tree__item--fill",
+              "skill__tree__item--full",
+              "mocking_lure"
+            ],
+            "maximo": 1,
+            "nombre": "Mocking Lure",
+            "puntos": 1,
+            "slug": "mocking_lure",
+            "x": 740,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "iron_wolfs_ward"
+            ],
+            "maximo": 1,
+            "nombre": "Iron Wolf's Ward",
+            "puntos": 0,
+            "slug": "iron_wolf's_ward",
+            "x": 830,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "skill__tree__item--active",
+              "skill__tree__item--fill",
+              "skill__tree__item--full",
+              "mocking_lure"
+            ],
+            "maximo": 1,
+            "nombre": "Mocking Lure",
+            "puntos": 1,
+            "slug": "mocking_lure",
+            "x": 740,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "iron_wolfs_ward"
+            ],
+            "maximo": 1,
+            "nombre": "Iron Wolf's Ward",
+            "puntos": 0,
+            "slug": "iron_wolf's_ward",
+            "x": 830,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "skill__tree__item--active",
+              "skill__tree__item--fill",
+              "skill__tree__item--full",
+              "mocking_lure"
+            ],
+            "maximo": 1,
+            "nombre": "Mocking Lure",
+            "puntos": 1,
+            "slug": "mocking_lure",
+            "x": 740,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "iron_wolfs_ward"
+            ],
+            "maximo": 1,
+            "nombre": "Iron Wolf's Ward",
+            "puntos": 0,
+            "slug": "iron_wolf's_ward",
+            "x": 830,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "iron_wolfs_call"
+            ],
+            "maximo": 1,
+            "nombre": "Iron Wolf's Call",
+            "puntos": 0,
+            "slug": "iron_wolf's_call",
+            "x": 920,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "sundering_shield"
+            ],
+            "maximo": 1,
+            "nombre": "Sundering Shield",
+            "puntos": 0,
+            "slug": "sundering_shield",
+            "x": 1010,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "iron_wolfs_call"
+            ],
+            "maximo": 1,
+            "nombre": "Iron Wolf's Call",
+            "puntos": 0,
+            "slug": "iron_wolf's_call",
+            "x": 920,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "sundering_shield"
+            ],
+            "maximo": 1,
+            "nombre": "Sundering Shield",
+            "puntos": 0,
+            "slug": "sundering_shield",
+            "x": 1010,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "iron_wolfs_call"
+            ],
+            "maximo": 1,
+            "nombre": "Iron Wolf's Call",
+            "puntos": 0,
+            "slug": "iron_wolf's_call",
+            "x": 920,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "sundering_shield"
+            ],
+            "maximo": 1,
+            "nombre": "Sundering Shield",
+            "puntos": 0,
+            "slug": "sundering_shield",
+            "x": 1010,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "inspiration"
+            ],
+            "maximo": 1,
+            "nombre": "Inspiration",
+            "puntos": 0,
+            "slug": "inspiration",
+            "x": 1130,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "iron_wolfs_virtue"
+            ],
+            "maximo": 1,
+            "nombre": "Iron Wolf's Virtue",
+            "puntos": 0,
+            "slug": "iron_wolf's_virtue",
+            "x": 1220,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "inspiration"
+            ],
+            "maximo": 1,
+            "nombre": "Inspiration",
+            "puntos": 0,
+            "slug": "inspiration",
+            "x": 1130,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "iron_wolfs_virtue"
+            ],
+            "maximo": 1,
+            "nombre": "Iron Wolf's Virtue",
+            "puntos": 0,
+            "slug": "iron_wolf's_virtue",
+            "x": 1220,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "inspiration"
+            ],
+            "maximo": 1,
+            "nombre": "Inspiration",
+            "puntos": 0,
+            "slug": "inspiration",
+            "x": 1130,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "iron_wolfs_virtue"
+            ],
+            "maximo": 1,
+            "nombre": "Iron Wolf's Virtue",
+            "puntos": 0,
+            "slug": "iron_wolf's_virtue",
+            "x": 1220,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "iron_wolfs_arrival"
+            ],
+            "maximo": 1,
+            "nombre": "Iron Wolf's Arrival",
+            "puntos": 0,
+            "slug": "iron_wolf's_arrival",
+            "x": 1310,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "consecrated_shield"
+            ],
+            "maximo": 1,
+            "nombre": "Consecrated Shield",
+            "puntos": 0,
+            "slug": "consecrated_shield",
+            "x": 1400,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "iron_wolfs_arrival"
+            ],
+            "maximo": 1,
+            "nombre": "Iron Wolf's Arrival",
+            "puntos": 0,
+            "slug": "iron_wolf's_arrival",
+            "x": 1310,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "consecrated_shield"
+            ],
+            "maximo": 1,
+            "nombre": "Consecrated Shield",
+            "puntos": 0,
+            "slug": "consecrated_shield",
+            "x": 1400,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c1",
+              "before_right",
+              "iron_wolfs_arrival"
+            ],
+            "maximo": 1,
+            "nombre": "Iron Wolf's Arrival",
+            "puntos": 0,
+            "slug": "iron_wolf's_arrival",
+            "x": 1310,
+            "y": 740
+          },
+          {
+            "clases": [
+              "r1",
+              "c2",
+              "before_left",
+              "consecrated_shield"
+            ],
+            "maximo": 1,
+            "nombre": "Consecrated Shield",
+            "puntos": 0,
+            "slug": "consecrated_shield",
+            "x": 1400,
+            "y": 740
+          }
+        ]
+      },
+      "paragon": [
+        {
+          "casillas": [
+            "r2c10:Int:common:enabled",
+            "r2c11:Int:common:active:enabled",
+            "r2c12:Will:common:active:enabled",
+            "r3c10:Str:common:enabled",
+            "r3c12:Dex:common:active:enabled",
+            "r4c9:Int:magic:active:enabled",
+            "r4c10:Damage:magic:active:enabled",
+            "r4c12:DamageToElite:magic:active:enabled",
+            "r4c13:Dex:magic:active:enabled",
+            "r5c8:Dex:common:enabled",
+            "r5c9:Int:magic:active:enabled",
+            "r5c10:Damage:rare:active:enabled:radius",
+            "r5c12:DamageToElite:rare:active:enabled:radius",
+            "r5c13:Dex:magic:active:enabled",
+            "r5c14:Str:common:enabled",
+            "r6c7:Int:common",
+            "r6c8:Will:common:enabled:radius",
+            "r6c9:Damage:magic:active:enabled",
+            "r6c10:Damage:magic:active:enabled",
+            "r6c12:DamageToElite:magic:active:enabled",
+            "r6c13:DamageToElite:magic:active:enabled",
+            "r6c14:Dex:common:enabled",
+            "r6c15:Will:common:radius",
+            "r7c6:Will:common:radius",
+            "r7c7:Will:common:radius",
+            "r7c8:Will:common:radius",
+            "r7c9:Int:common:enabled",
+            "r7c10:Str:common:active:enabled",
+            "r7c11:Glyph:paragon glyph:active",
+            "r7c12:Dex:common:active:enabled",
+            "r7c13:Dex:common:active:enabled",
+            "r7c14:Will:common:enabled:radius",
+            "r7c15:Int:common",
+            "r7c16:Int:common",
+            "r8c7:Int:common",
+            "r8c8:Will:common:radius",
+            "r8c9:Dex:common:enabled",
+            "r8c10:Will:common:active:enabled:radius",
+            "r8c11:Will:common:enabled:radius",
+            "r8c12:Str:common:enabled",
+            "r8c13:Will:common:active:enabled:radius",
+            "r8c14:Int:common:enabled",
+            "r8c15:Int:common",
+            "r9c8:Will:common:radius",
+            "r9c9:Dex:common:enabled",
+            "r9c10:Will:common:active:enabled:radius",
+            "r9c11:Dex:common:enabled",
+            "r9c12:Int:common:enabled",
+            "r9c13:Will:common:active:enabled:radius",
+            "r9c14:Str:common:enabled",
+            "r10c9:Will:common:enabled:radius",
+            "r10c10:Int:common:active:enabled",
+            "r10c12:Will:common:enabled:radius",
+            "r10c13:Will:common:active:enabled:radius",
+            "r11c9:HPPercent:magic:active:enabled",
+            "r11c10:Will:common:active:enabled:radius",
+            "r11c12:Dex:common:enabled",
+            "r11c13:HPPercent:magic:active:enabled",
+            "r12c8:Armor:magic:enabled",
+            "r12c9:HPPercent:rare:active:enabled",
+            "r12c10:HPPercent:magic:active:enabled",
+            "r12c12:HPPercent:magic:active:enabled",
+            "r12c13:Damage:rare:active:enabled",
+            "r12c14:Damage:magic:enabled",
+            "r13c9:Armor:magic:enabled",
+            "r13c13:Damage:magic:active:enabled",
+            "r14c9:Dex:common",
+            "r14c10:Int:common:enabled",
+            "r14c11:Will:common:active:enabled",
+            "r14c12:Will:common:active:enabled",
+            "r14c13:Will:common:active:enabled",
+            "r15c10:Will:common:enabled",
+            "r15c11:Paragon Starting Node:paragon starting",
+            "r15c12:Int:common:enabled"
+          ],
+          "giro": 0,
+          "glifo": "Earth and Sky",
+          "icono": null,
+          "nivelGlifo": null,
+          "tablero": "Starting Board"
+        },
+        {
+          "casillas": [
+            "r1c16:Will:common:enabled",
+            "r2c11:Int:common:active:enabled",
+            "r2c12:Will:common:enabled",
+            "r2c13:Dex:common",
+            "r2c14:Dex:common:enabled",
+            "r2c15:Dex:magic:active:enabled:radius",
+            "r2c16:DamageStorm:magic:active:enabled",
+            "r2c17:Dex:common:active:enabled:radius",
+            "r3c11:Will:common:active:enabled",
+            "r3c12:Dex:common:enabled",
+            "r3c13:Dex:common",
+            "r3c14:Will:common",
+            "r3c15:DamageStorm:magic:enabled",
+            "r3c16:DamageStorm:rare:active:enabled",
+            "r3c17:Dex:magic:active:enabled:radius",
+            "r3c18:Will:common:enabled",
+            "r4c11:Will:common:active:enabled",
+            "r4c14:Int:common",
+            "r4c15:Int:common:enabled",
+            "r4c16:DamageStorm:magic:active:enabled",
+            "r4c17:Dex:common:active:enabled:radius",
+            "r4c19:Int:common",
+            "r5c11:Dex:common:active:enabled",
+            "r5c12:Will:common:enabled",
+            "r5c13:Will:common:enabled",
+            "r5c14:Str:common:enabled",
+            "r5c15:Will:common:enabled",
+            "r5c16:Will:common:active:enabled",
+            "r5c18:Will:common:enabled",
+            "r5c19:Int:magic:enabled",
+            "r5c20:Dex:common:radius",
+            "r6c8:Will:common:active:enabled",
+            "r6c9:Will:common:active:enabled",
+            "r6c10:Int:common:active:enabled",
+            "r6c11:Int:common:active:enabled",
+            "r6c12:Will:common:active:enabled",
+            "r6c13:Dex:common:active:enabled:radius",
+            "r6c14:Dex:common:active:enabled:radius",
+            "r6c15:Will:common:active:enabled",
+            "r6c16:Glyph:paragon glyph:active",
+            "r6c17:Dex:common:active:enabled:radius",
+            "r6c18:DamageToNear:magic:active:enabled",
+            "r6c19:DamageToNear:rare:active:enabled",
+            "r6c20:DamageToNear:magic:enabled",
+            "r6c21:Will:common",
+            "r7c7:ResistanceAll:magic:active:enabled",
+            "r7c8:Will:common:active:enabled",
+            "r7c9:Int:common:enabled",
+            "r7c10:Str:common:enabled",
+            "r7c11:Will:common:enabled",
+            "r7c13:Dex:common:active:enabled:radius",
+            "r7c14:Will:common:enabled",
+            "r7c16:Int:common:enabled",
+            "r7c17:Str:common:enabled",
+            "r7c18:Will:common:enabled",
+            "r7c19:DamageToNear:magic:active:enabled",
+            "r7c20:Int:magic:enabled",
+            "r8c2:Int:common",
+            "r8c3:Will:common",
+            "r8c4:Will:common",
+            "r8c5:ResistanceAll:magic:enabled",
+            "r8c6:ResistanceAll:rare:active:enabled",
+            "r8c7:ResistanceAll:magic:active:enabled",
+            "r8c13:Will:common:enabled",
+            "r8c15:Int:common",
+            "r8c16:Will:common:enabled",
+            "r8c17:Dex:common:active:enabled:radius",
+            "r8c18:Int:common:active:enabled",
+            "r8c19:Int:common:active:enabled",
+            "r8c20:Will:common:active:enabled",
+            "r9c2:Will:common",
+            "r9c3:Will:common",
+            "r9c4:Int:common",
+            "r9c6:ResistanceAll:magic:enabled",
+            "r9c7:ResistanceAll:magic:active:enabled",
+            "r9c8:Will:common:active:enabled",
+            "r9c9:Dex:common:enabled",
+            "r9c10:Will:common",
+            "r9c12:DamageToFar:magic",
+            "r9c13:DamageToCC:magic",
+            "r9c14:Str:common",
+            "r9c15:Will:common",
+            "r9c16:Will:common",
+            "r9c17:Int:common:enabled",
+            "r9c19:Dex:common:enabled",
+            "r9c20:Dex:common:active:enabled",
+            "r10c2:Dex:common",
+            "r10c3:Int:common",
+            "r10c7:Int:common:enabled",
+            "r10c8:Will:common:active:enabled",
+            "r10c9:Dex:common:active:enabled",
+            "r10c10:Int:common:enabled",
+            "r10c11:DamageToCC:magic",
+            "r10c12:DamageToFar:rare",
+            "r10c13:DamageToFar:magic",
+            "r10c16:Will:common",
+            "r10c17:Dex:common:radius",
+            "r10c19:Int:common:enabled",
+            "r10c20:Will:common:active:enabled",
+            "r11c2:Str:common:enabled",
+            "r11c9:Int:common:active:enabled",
+            "r11c12:DamageToFar:magic",
+            "r11c15:Int:common",
+            "r11c16:Int:common",
+            "r11c17:Str:common",
+            "r11c18:Will:common",
+            "r11c19:Will:common:enabled",
+            "r11c20:Will:common:active:enabled",
+            "r12c2:Int:common",
+            "r12c7:Int:common:enabled",
+            "r12c8:Will:common:active:enabled",
+            "r12c9:Will:common:active:enabled",
+            "r12c10:Will:common:enabled",
+            "r12c12:Str:common",
+            "r12c13:Will:common",
+            "r12c15:Int:common",
+            "r12c16:Will:common",
+            "r13c2:Will:common",
+            "r13c3:Will:common",
+            "r13c7:Dex:common:active:enabled",
+            "r13c8:Will:common:active:enabled",
+            "r13c10:Str:common",
+            "r13c11:Dex:common",
+            "r13c12:Dex:common",
+            "r13c13:Will:common",
+            "r13c15:Will:common",
+            "r13c16:Will:common",
+            "r14c2:Dex:common",
+            "r14c3:Int:common",
+            "r14c6:Dex:common:enabled",
+            "r14c7:Int:common:active:enabled",
+            "r14c9:Dex:common",
+            "r14c10:Int:common",
+            "r14c12:Will:common",
+            "r14c13:Will:common",
+            "r14c15:Will:common",
+            "r14c16:Will:common",
+            "r15c2:Str:common",
+            "r15c3:Int:common",
+            "r15c6:Will:common:active:enabled",
+            "r15c7:Will:common:active:enabled",
+            "r15c8:Dex:common:enabled",
+            "r15c9:Int:common",
+            "r15c10:Will:common",
+            "r15c12:Int:common",
+            "r15c13:Armor:magic",
+            "r15c14:HealingBonus:magic",
+            "r15c15:Armor:magic",
+            "r16c2:Int:common",
+            "r16c3:Will:common",
+            "r16c5:Dex:common:enabled",
+            "r16c6:Druid:legendary:active:enabled",
+            "r16c7:Int:common:enabled",
+            "r16c8:Will:common",
+            "r16c13:HealingBonus:magic",
+            "r16c14:Armor:rare",
+            "r17c3:Will:common:enabled",
+            "r17c4:Int:common:enabled",
+            "r17c5:Int:common:active:enabled",
+            "r17c6:Will:common:active:enabled",
+            "r17c14:Armor:magic",
+            "r18c3:CriticalDamage:magic:active:enabled",
+            "r18c4:DamageToVulnerable:magic:active:enabled",
+            "r18c5:Dex:common:active:enabled",
+            "r18c13:Will:common",
+            "r18c14:Dex:common",
+            "r19c2:DamageToVulnerable:magic:enabled",
+            "r19c3:CriticalDamage:rare:active:enabled",
+            "r19c4:CriticalDamage:magic:active:enabled",
+            "r19c5:Str:common:enabled",
+            "r19c6:Will:common",
+            "r19c7:Will:common",
+            "r19c8:Dex:common",
+            "r19c9:Int:common",
+            "r19c12:Int:common",
+            "r19c13:Dex:common",
+            "r19c14:Str:common",
+            "r20c3:CriticalDamage:magic:active:enabled",
+            "r20c6:Int:common",
+            "r20c7:Int:common",
+            "r20c8:Will:common",
+            "r20c9:Will:common",
+            "r20c10:Will:common",
+            "r20c11:Int:common:enabled",
+            "r20c12:Str:common",
+            "r20c13:Dex:common",
+            "r20c14:Int:common"
+          ],
+          "giro": 90,
+          "glifo": "Spirit",
+          "icono": null,
+          "nivelGlifo": null,
+          "tablero": "Thunderstruck"
+        },
+        {
+          "casillas": [
+            "r2c10:Int:common",
+            "r2c11:Int:common:enabled",
+            "r2c12:Will:common",
+            "r3c10:Str:common",
+            "r3c11:Will:common",
+            "r3c12:Dex:common",
+            "r4c10:Will:common",
+            "r4c11:Will:common",
+            "r4c12:Str:common",
+            "r5c9:Dex:common",
+            "r5c10:Will:common",
+            "r5c11:Dex:common",
+            "r5c12:Int:common",
+            "r5c13:ResistanceAll:magic",
+            "r6c8:Will:common",
+            "r6c9:Will:common",
+            "r6c10:Int:common",
+            "r6c12:ResistanceAll:magic",
+            "r6c13:Armor:magic",
+            "r7c5:ResistanceAll:magic",
+            "r7c6:Armor:magic",
+            "r7c7:ResistanceAll:magic",
+            "r7c8:Armor:magic",
+            "r7c9:Int:common",
+            "r7c10:Str:common",
+            "r7c12:ResistanceAll:magic",
+            "r7c13:ResistanceAll:rare",
+            "r8c4:Will:common",
+            "r8c5:Dex:common",
+            "r8c6:Armor:magic",
+            "r8c7:Armor:rare",
+            "r8c9:Dex:common",
+            "r8c10:Will:common",
+            "r8c11:Will:common",
+            "r8c12:Armor:magic",
+            "r9c4:Int:common",
+            "r9c5:Int:common",
+            "r9c11:Dex:common",
+            "r9c15:LuckyHitBonus:rare:active:enabled",
+            "r9c16:HPPercent:magic:active:enabled",
+            "r9c17:LuckyHitBonus:magic:enabled",
+            "r10c4:Will:common",
+            "r10c5:Dex:common",
+            "r10c11:Int:common:enabled",
+            "r10c14:HPPercent:magic:active:enabled",
+            "r10c15:LuckyHitBonus:magic:active:enabled",
+            "r10c16:LuckyHitBonus:magic:active:enabled",
+            "r10c17:Dex:common:active:enabled",
+            "r10c18:Dex:common:active:enabled",
+            "r10c19:Int:common:enabled",
+            "r10c20:Will:common:enabled",
+            "r11c2:Str:common:enabled",
+            "r11c3:Int:common",
+            "r11c4:Will:common",
+            "r11c6:Will:common:radius",
+            "r11c9:Int:common:enabled",
+            "r11c10:Will:common:active:enabled",
+            "r11c11:Will:common:active:enabled",
+            "r11c12:Dex:common:active:enabled",
+            "r11c13:Dex:common:active:enabled",
+            "r11c14:Will:common:active:enabled",
+            "r11c17:Str:common:enabled",
+            "r11c18:Will:common:active:enabled",
+            "r11c19:Will:common:active:enabled",
+            "r11c20:Will:common:active:enabled",
+            "r12c2:Int:common",
+            "r12c3:Will:common",
+            "r12c4:Will:common",
+            "r12c5:Dex:common",
+            "r12c6:Int:common",
+            "r12c7:Will:common:radius",
+            "r12c9:Will:common:active:enabled",
+            "r12c10:Will:common:active:enabled",
+            "r12c11:Int:common:enabled",
+            "r12c14:Int:common:active:enabled",
+            "r12c15:Int:common:active:enabled",
+            "r12c16:Will:common:enabled",
+            "r12c17:Dex:common",
+            "r12c18:Int:common:enabled",
+            "r12c19:Int:common:enabled",
+            "r12c20:Will:common:enabled",
+            "r13c3:Will:common",
+            "r13c4:Int:common",
+            "r13c5:Int:common",
+            "r13c6:Will:common:radius",
+            "r13c7:Dex:common",
+            "r13c9:Druid:legendary:active:enabled",
+            "r13c10:Str:common:enabled",
+            "r13c11:Dex:common",
+            "r13c14:Str:common:enabled",
+            "r13c15:Will:common:active:enabled",
+            "r13c16:Will:common:enabled",
+            "r13c17:Int:common",
+            "r14c4:Will:common:radius",
+            "r14c5:Dex:common",
+            "r14c6:Dex:common",
+            "r14c7:Int:common",
+            "r14c8:Will:common:radius",
+            "r14c15:HPPercent:magic:active:enabled",
+            "r14c16:Will:common:enabled",
+            "r15c2:Int:magic:enabled",
+            "r15c3:DamageNature:magic:active:enabled",
+            "r15c5:Str:common:enabled",
+            "r15c6:Will:common:enabled:radius",
+            "r15c8:Dex:common",
+            "r15c9:Int:common",
+            "r15c10:Will:common:radius",
+            "r15c14:HPPercent:rare:active:enabled",
+            "r15c15:Armor:magic:active:enabled",
+            "r16c1:Dex:common:enabled",
+            "r16c2:DamageNature:magic:active:enabled",
+            "r16c3:DamageNature:rare:active:enabled:radius",
+            "r16c4:Will:common:active:enabled:radius",
+            "r16c5:Dex:common:active:enabled",
+            "r16c6:Glyph:paragon glyph:active",
+            "r16c7:Int:common:enabled",
+            "r16c8:Will:common:enabled:radius",
+            "r16c9:Will:common:radius",
+            "r16c10:Will:common:radius",
+            "r16c11:Int:common",
+            "r16c14:HPPercent:magic:active:enabled",
+            "r16c15:HPPercent:magic:active:enabled",
+            "r17c2:Will:common:enabled:radius",
+            "r17c3:Int:magic:enabled",
+            "r17c4:DamageNature:magic:active:enabled",
+            "r17c6:Will:common:active:enabled:radius",
+            "r17c7:Dex:common:active:enabled",
+            "r17c8:Will:common:active:enabled:radius",
+            "r17c9:Dex:common:enabled",
+            "r17c10:Str:common:enabled",
+            "r17c12:Dex:common:enabled",
+            "r17c13:Will:common:active:enabled",
+            "r17c14:Will:common:active:enabled",
+            "r17c15:Armor:magic:enabled",
+            "r18c3:Int:common",
+            "r18c4:Will:common:enabled:radius",
+            "r18c5:Damage:magic:enabled",
+            "r18c6:Dex:common:active:enabled",
+            "r18c8:Will:common:active:enabled:radius",
+            "r18c9:Dex:common:active:enabled",
+            "r18c10:Int:common:active:enabled",
+            "r18c11:Will:common:active:enabled",
+            "r18c12:Will:common:active:enabled",
+            "r18c13:Will:common:active:enabled",
+            "r18c14:Dex:common:enabled",
+            "r19c4:Will:common:enabled:radius",
+            "r19c5:Dex:magic:active:enabled",
+            "r19c6:DamageToElite:rare:active:enabled:radius",
+            "r19c7:Damage:magic:active:enabled",
+            "r19c9:Int:common:enabled",
+            "r19c10:Will:common:enabled",
+            "r19c11:Will:common:active:enabled",
+            "r20c5:Dex:common:enabled",
+            "r20c6:Damage:magic:active:enabled",
+            "r20c7:Dex:magic:enabled",
+            "r20c10:Will:common:enabled",
+            "r20c11:Int:common:active:enabled",
+            "r21c6:Will:common:enabled:radius"
+          ],
+          "giro": 180,
+          "glifo": "Fang and Claw",
+          "icono": null,
+          "nivelGlifo": null,
+          "tablero": "Constricting Tendrils"
+        },
+        {
+          "casillas": [
+            "r2c10:Int:common",
+            "r2c11:Int:common:enabled",
+            "r2c12:Will:common",
+            "r2c13:Dex:common",
+            "r2c14:Dex:common",
+            "r3c10:Str:common",
+            "r3c11:Will:common",
+            "r3c13:Dex:common",
+            "r3c14:Will:common",
+            "r3c15:Int:common",
+            "r4c10:Will:common",
+            "r4c11:Will:common",
+            "r4c13:Will:common",
+            "r4c14:Int:common",
+            "r4c15:Int:common",
+            "r4c17:Dex:common:enabled",
+            "r4c18:Druid:legendary:active:enabled",
+            "r5c10:Will:common",
+            "r5c11:Dex:common",
+            "r5c13:Will:common",
+            "r5c14:Str:common",
+            "r5c15:ResistanceAll:magic:enabled",
+            "r5c16:ResistanceAll:magic:enabled",
+            "r5c17:Int:common:active:enabled",
+            "r5c18:Will:common:active:enabled",
+            "r6c9:Will:common",
+            "r6c10:Int:common",
+            "r6c11:Int:common",
+            "r6c14:Dex:common:enabled",
+            "r6c15:ResistanceAll:magic:active:enabled",
+            "r6c16:ResistanceAll:rare:active:enabled",
+            "r6c17:ResistanceAll:magic:active:enabled",
+            "r7c8:ResistanceAll:rare",
+            "r7c9:ResistanceAll:magic",
+            "r7c10:Str:common",
+            "r7c11:Will:common",
+            "r7c13:Dex:common:enabled",
+            "r7c14:Will:common:active:enabled",
+            "r7c15:Int:common:active:enabled",
+            "r7c17:ResistanceAll:magic:enabled",
+            "r7c18:Will:common",
+            "r7c19:Will:common",
+            "r8c6:Int:common",
+            "r8c7:Armor:magic",
+            "r8c8:ResistanceAll:magic",
+            "r8c9:Armor:magic",
+            "r8c11:Will:common",
+            "r8c13:Will:common:active:enabled",
+            "r8c14:Int:common:active:enabled",
+            "r8c15:Int:common:enabled",
+            "r8c17:Dex:common",
+            "r8c18:Int:common",
+            "r8c19:Int:common",
+            "r8c20:Will:common",
+            "r9c5:Int:common",
+            "r9c6:Will:common",
+            "r9c7:Dex:common",
+            "r9c8:ResistanceAll:magic",
+            "r9c11:Dex:common:enabled",
+            "r9c12:Int:common:active:enabled",
+            "r9c13:Will:common:active:enabled",
+            "r9c14:Str:common:enabled",
+            "r9c15:Will:common",
+            "r9c17:Int:common",
+            "r9c18:Will:common",
+            "r9c19:Dex:common",
+            "r9c20:Dex:common",
+            "r10c5:Dex:common",
+            "r10c6:Dex:common",
+            "r10c7:Int:common",
+            "r10c8:Will:common",
+            "r10c11:Armor:magic:active:enabled",
+            "r10c12:HealingBonus:magic:active:enabled",
+            "r10c13:Dex:common:enabled",
+            "r10c20:Will:common",
+            "r11c2:Str:common:active:enabled",
+            "r11c3:Int:common:active:enabled",
+            "r11c4:Will:common:enabled",
+            "r11c5:Str:common:enabled",
+            "r11c6:Will:common",
+            "r11c7:Will:common",
+            "r11c10:HealingBonus:magic:enabled",
+            "r11c11:Armor:rare:active:enabled",
+            "r11c12:Armor:magic:enabled",
+            "r11c13:Dex:common",
+            "r11c14:Will:common",
+            "r11c15:Int:common",
+            "r11c16:Int:common",
+            "r11c17:Str:common",
+            "r11c18:Will:common",
+            "r11c19:Will:common",
+            "r11c20:Will:common:enabled",
+            "r12c2:Int:common:enabled",
+            "r12c3:Will:common:active:enabled",
+            "r12c4:Will:common:active:enabled",
+            "r12c5:Dex:common:active:enabled:radius",
+            "r12c9:Will:common:active:enabled",
+            "r12c10:Will:common:active:enabled",
+            "r12c11:Armor:magic:active:enabled",
+            "r12c15:Int:common:enabled",
+            "r12c16:Will:common",
+            "r12c17:Dex:common",
+            "r12c18:Int:common",
+            "r12c19:Int:common",
+            "r12c20:Will:common",
+            "r13c4:Int:common:enabled",
+            "r13c5:Int:common:active:enabled",
+            "r13c6:Will:common:enabled",
+            "r13c7:Dex:common:active:enabled:radius",
+            "r13c8:Will:common:active:enabled",
+            "r13c9:Dex:common:active:enabled",
+            "r13c10:Str:common:enabled",
+            "r13c14:HealingBonus:magic:active:enabled",
+            "r13c15:HPPercent:magic:active:enabled",
+            "r13c16:Will:common:enabled",
+            "r14c3:Int:common",
+            "r14c4:Will:common:enabled",
+            "r14c5:Dex:common:active:enabled:radius",
+            "r14c6:Dex:common:active:enabled:radius",
+            "r14c7:Int:common:active:enabled",
+            "r14c8:Will:common:active:enabled",
+            "r14c9:Will:common:enabled",
+            "r14c12:Will:common",
+            "r14c13:HPPercent:magic:enabled",
+            "r14c14:HPPercent:magic:active:enabled",
+            "r14c15:HPPercent:rare:active:enabled",
+            "r15c2:Dex:magic:active:enabled:radius",
+            "r15c3:DamageToPoison:magic:enabled",
+            "r15c4:Will:common",
+            "r15c5:Str:common:enabled",
+            "r15c7:Will:common:enabled",
+            "r15c8:Dex:common:active:enabled:radius",
+            "r15c9:Int:common:enabled",
+            "r15c11:Will:common",
+            "r15c12:Int:common",
+            "r15c13:Dex:common:enabled",
+            "r15c14:HealingBonus:magic:active:enabled",
+            "r16c1:Dex:common:active:enabled:radius",
+            "r16c2:DamageToPoison:magic:active:enabled",
+            "r16c3:DamageToPoison:rare:active:enabled",
+            "r16c5:Dex:common:active:enabled:radius",
+            "r16c6:Glyph:paragon glyph:active",
+            "r16c8:Will:common:active:enabled",
+            "r16c9:Will:common:enabled",
+            "r16c11:Int:common:enabled",
+            "r16c12:Str:common:enabled",
+            "r16c13:Dex:common:active:enabled",
+            "r16c14:Int:common:active:enabled",
+            "r17c2:Will:common:enabled",
+            "r17c3:Dex:magic:active:enabled:radius",
+            "r17c4:DamageToPoison:magic:active:enabled",
+            "r17c5:Int:common:active:enabled",
+            "r17c6:Will:common:active:enabled",
+            "r17c7:Dex:common:active:enabled:radius",
+            "r17c8:Will:common:active:enabled",
+            "r17c9:Dex:common:active:enabled:radius",
+            "r17c10:Str:common:active:enabled",
+            "r17c11:Dex:common:active:enabled",
+            "r17c12:Dex:common:active:enabled",
+            "r17c13:Will:common:active:enabled",
+            "r18c3:Int:common:enabled",
+            "r18c4:Will:common:enabled",
+            "r18c5:Damage:magic:active:enabled",
+            "r18c7:Int:common:enabled",
+            "r18c8:Will:common:enabled",
+            "r18c9:Dex:common:active:enabled:radius",
+            "r18c10:Int:common:enabled",
+            "r18c11:Will:common:active:enabled",
+            "r19c4:Will:common:enabled",
+            "r19c5:Int:magic:active:enabled",
+            "r19c6:Damage:rare:active:enabled",
+            "r19c7:Damage:magic:active:enabled",
+            "r19c8:Dex:common:active:enabled:radius",
+            "r19c10:Will:common:enabled",
+            "r19c11:Will:common:active:enabled",
+            "r20c5:Dex:common:active:enabled:radius",
+            "r20c6:Damage:magic:enabled",
+            "r20c7:Int:magic:enabled",
+            "r20c10:Will:common:enabled",
+            "r20c11:Int:common:active:enabled",
+            "r21c6:Will:common"
+          ],
+          "giro": 360,
+          "glifo": "Fulminate",
+          "icono": null,
+          "nivelGlifo": null,
+          "tablero": "Heightened Malice"
+        },
+        {
+          "casillas": [
+            "r2c11:Int:common:enabled",
+            "r2c12:Will:common",
+            "r2c13:Dex:common",
+            "r2c14:Dex:common",
+            "r2c15:Will:common",
+            "r3c11:Will:common",
+            "r3c13:Dex:common",
+            "r3c14:Will:common",
+            "r3c15:DamageWhileHealthy:magic",
+            "r3c16:Armor:magic",
+            "r4c11:Will:common",
+            "r4c15:DamageWhileHealthy:magic",
+            "r4c16:DamageWhileHealthy:rare",
+            "r5c11:Dex:common",
+            "r5c12:Int:common",
+            "r5c13:Will:common",
+            "r5c14:Str:common",
+            "r5c15:DamageWhileHealthy:magic",
+            "r5c16:Armor:magic",
+            "r6c11:Int:common:enabled",
+            "r6c14:Dex:common",
+            "r6c15:Will:common",
+            "r7c5:DamageToHigh:rare:active:enabled",
+            "r7c6:HPPercent:magic:active:enabled",
+            "r7c7:DamageToHigh:magic:active:enabled",
+            "r7c8:Will:common:active:enabled",
+            "r7c9:Int:common:active:enabled",
+            "r7c10:Str:common:active:enabled",
+            "r7c11:Will:common:active:enabled",
+            "r7c12:Dex:common:enabled",
+            "r7c13:Dex:common",
+            "r7c14:Will:common",
+            "r7c15:Int:common",
+            "r8c5:DamageToHigh:magic:enabled",
+            "r8c6:HPPercent:magic:active:enabled",
+            "r8c7:Int:common:enabled",
+            "r8c8:Will:common:active:enabled",
+            "r8c9:Dex:common:enabled",
+            "r8c11:Int:magic:active:enabled:radius",
+            "r8c12:DamageWhileBear:magic:enabled",
+            "r8c13:Will:common",
+            "r8c14:Int:common:radius",
+            "r8c15:Int:common:radius",
+            "r9c3:Will:common",
+            "r9c4:Int:common",
+            "r9c5:DamageToHigh:magic",
+            "r9c7:Dex:common:enabled",
+            "r9c8:Will:common:active:enabled",
+            "r9c10:Will:common:enabled",
+            "r9c11:DamageWhileBear:rare:active:enabled",
+            "r9c12:DamageWhileBear:magic:active:enabled",
+            "r9c13:Will:common:enabled",
+            "r9c15:Will:common",
+            "r9c16:Will:common",
+            "r10c2:Dex:common",
+            "r10c3:Int:common",
+            "r10c4:Will:common",
+            "r10c5:Dex:common",
+            "r10c8:Will:common:active:enabled",
+            "r10c10:Int:magic:radius",
+            "r10c11:DamageWhileBear:magic:enabled",
+            "r10c12:Will:common:active:enabled",
+            "r10c13:Dex:common:enabled",
+            "r10c14:Dex:common:enabled",
+            "r10c15:Will:common:enabled",
+            "r10c16:Will:common:enabled",
+            "r10c17:Int:common:active:enabled:radius",
+            "r10c18:Dex:common:active:enabled",
+            "r10c19:Int:common:active:enabled",
+            "r10c20:Will:common:active:enabled",
+            "r11c2:Str:common:enabled",
+            "r11c7:Druid:legendary:active:enabled",
+            "r11c8:Dex:common:active:enabled",
+            "r11c9:Int:common:enabled:radius",
+            "r11c12:Dex:common:active:enabled",
+            "r11c13:Glyph:paragon glyph:active",
+            "r11c14:Will:common:active:enabled",
+            "r11c15:Int:common:active:enabled:radius",
+            "r11c16:Int:common:active:enabled:radius",
+            "r11c17:Str:common:active:enabled",
+            "r11c18:Will:common:enabled",
+            "r11c20:Will:common:active:enabled",
+            "r12c2:Int:common",
+            "r12c3:Will:common",
+            "r12c4:Will:common",
+            "r12c5:Dex:common",
+            "r12c8:Will:common:enabled",
+            "r12c10:Dex:magic",
+            "r12c11:HPPercent:magic:enabled",
+            "r12c12:Str:common:active:enabled",
+            "r12c13:Will:common:enabled",
+            "r12c14:Int:common:enabled:radius",
+            "r12c15:Int:common:active:enabled:radius",
+            "r12c16:Will:common:enabled",
+            "r12c17:Dex:common:enabled",
+            "r12c18:Int:common",
+            "r12c19:Int:common",
+            "r12c20:Will:common:enabled",
+            "r13c3:Will:common",
+            "r13c4:Int:common",
+            "r13c5:DamageWhileFortified:magic",
+            "r13c7:Dex:common",
+            "r13c8:Will:common",
+            "r13c10:Str:common:enabled",
+            "r13c11:HPPercent:rare:active:enabled",
+            "r13c12:HPPercent:magic:active:enabled",
+            "r13c13:Will:common:enabled",
+            "r13c15:Will:common:active:enabled",
+            "r13c16:Will:common:enabled",
+            "r14c5:DamageWhileFortified:magic",
+            "r14c6:BonusFortify:magic",
+            "r14c7:Int:common",
+            "r14c8:Will:common",
+            "r14c9:Dex:common",
+            "r14c11:Dex:magic:enabled",
+            "r14c12:HPPercent:magic:enabled",
+            "r14c13:Will:common",
+            "r14c14:Dex:common:enabled",
+            "r14c15:Will:common:active:enabled",
+            "r15c5:DamageReductionWhileFortified:rare",
+            "r15c6:BonusFortify:magic",
+            "r15c7:DamageWhileFortified:magic",
+            "r15c8:Dex:common",
+            "r15c9:Int:common",
+            "r15c10:Will:common",
+            "r15c11:Will:common",
+            "r15c12:Int:common:radius",
+            "r15c13:Dex:common",
+            "r15c14:Str:common:enabled",
+            "r15c15:Int:common:active:enabled",
+            "r16c11:Int:common",
+            "r16c14:Int:common:enabled",
+            "r16c15:Will:common:active:enabled",
+            "r17c11:Dex:common",
+            "r17c12:Dex:common",
+            "r17c13:Will:common",
+            "r17c14:Will:common:enabled",
+            "r17c15:Armor:magic:active:enabled",
+            "r17c16:HPPercent:magic:active:enabled",
+            "r18c11:Will:common",
+            "r18c15:Armor:magic:enabled",
+            "r18c16:Armor:rare:active:enabled",
+            "r19c11:Will:common",
+            "r19c13:Dex:common",
+            "r19c14:Str:common",
+            "r19c15:Armor:magic",
+            "r19c16:HPPercent:magic:enabled",
+            "r20c11:Int:common:enabled",
+            "r20c12:Str:common",
+            "r20c13:Dex:common",
+            "r20c14:Int:common",
+            "r20c15:Will:common"
+          ],
+          "giro": 360,
+          "glifo": "Keeper",
+          "icono": null,
+          "nivelGlifo": null,
+          "tablero": "Survival Instincts"
+        }
+      ],
+      "paragonNivel": 255,
+      "stats": [
+        {
+          "afijos": [
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Willpower"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Maximum Life"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Armor"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Spirit Regeneration"
+            },
+            {
+              "ga": 1,
+              "templado": true,
+              "texto": "Maximum Resolve Stacks (Worldly Endurance - Defensive)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Pants"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Willpower"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Vulnerable Damage Multiplier"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Critical Strike Damage Multiplier"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Vulnerable Damage Multiplier"
+            },
+            {
+              "ga": 1,
+              "templado": true,
+              "texto": "Cooldown Reduction (Worldly Stability - Resource)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Critical Strike Chance"
+            }
+          ],
+          "slot": "Ring 2"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Stat 1"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Stat 2"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Stat 3"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Stat 4"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Tempering Stat 1"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Offhand"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Critical Strike Damage Multiplier"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Vulnerable Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Lightning Damage Multiplier"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Critical Strike Chance"
+            },
+            {
+              "ga": 1,
+              "templado": true,
+              "texto": "Maximum Resolve Stacks (Worldly Endurance - Defensive)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Overcharged Aspect"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Lightning Damage"
+            }
+          ],
+          "slot": "Amulet"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Willpower"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Critical Strike Damage Multiplier"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Vulnerable Damage Multiplier"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Critical Strike Chance"
+            },
+            {
+              "ga": 1,
+              "templado": true,
+              "texto": "Cooldown Reduction (Worldly Stability - Resource)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Critical Strike Chance"
+            }
+          ],
+          "slot": "Ring 1"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Weapon Type"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Weapon Damage"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Critical Strike Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Maximum Life"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Willpower"
+            },
+            {
+              "ga": 1,
+              "templado": true,
+              "texto": "Critical Strike Chance (Worldly Destruction - Weapons)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Lightning Damage"
+            }
+          ],
+          "slot": "Weapon"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Willpower"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Armor"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Maximum Life"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Resource Generation"
+            },
+            {
+              "ga": 1,
+              "templado": true,
+              "texto": "Maximum Resolve Stacks (Worldly Endurance - Defensive)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Critical Strike Chance"
+            }
+          ],
+          "slot": "Helm"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Willpower"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Maximum Life"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Armor"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Spirit Regeneration"
+            },
+            {
+              "ga": 1,
+              "templado": true,
+              "texto": "Maximum Resolve Stacks (Worldly Endurance - Defensive)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Critical Strike Chance"
+            }
+          ],
+          "slot": "Chest Armor"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Willpower"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Maximum Life"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Armor"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Movement Speed"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Movement Speed (Natural Motion - Mobility)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Boots"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Critical Strike Damage Multiplier"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Vulnerable Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Lightning Damage Multiplier"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Critical Strike Chance"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Critical Strike Damage (Worldly Finesse - Offensive)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Gloves"
+        }
+      ],
+      "warPlans": [
+        {
+          "actividad": "Whispers",
+          "icono": "https://sunderarmor.com/DIABLO4/WarPlans/whispers.png",
+          "lineas": [
+            {
+              "x1": 380,
+              "x2": 580,
+              "y1": 213,
+              "y2": 154
+            },
+            {
+              "x1": 279,
+              "x2": 380,
+              "y1": 317,
+              "y2": 213
+            },
+            {
+              "x1": 281,
+              "x2": 279,
+              "y1": 642,
+              "y2": 317
+            },
+            {
+              "x1": 498,
+              "x2": 580,
+              "y1": 316,
+              "y2": 154
+            },
+            {
+              "x1": 429,
+              "x2": 498,
+              "y1": 489,
+              "y2": 316
+            },
+            {
+              "x1": 661,
+              "x2": 580,
+              "y1": 315,
+              "y2": 154
+            },
+            {
+              "x1": 579,
+              "x2": 498,
+              "y1": 486,
+              "y2": 316
+            },
+            {
+              "x1": 579,
+              "x2": 661,
+              "y1": 486,
+              "y2": 315
+            },
+            {
+              "x1": 731,
+              "x2": 661,
+              "y1": 485,
+              "y2": 315
+            },
+            {
+              "x1": 505,
+              "x2": 429,
+              "y1": 647,
+              "y2": 489
+            },
+            {
+              "x1": 505,
+              "x2": 579,
+              "y1": 647,
+              "y2": 486
+            },
+            {
+              "x1": 655,
+              "x2": 579,
+              "y1": 645,
+              "y2": 486
+            },
+            {
+              "x1": 655,
+              "x2": 731,
+              "y1": 645,
+              "y2": 485
+            },
+            {
+              "x1": 580,
+              "x2": 505,
+              "y1": 823,
+              "y2": 647
+            },
+            {
+              "x1": 580,
+              "x2": 655,
+              "y1": 823,
+              "y2": 645
+            },
+            {
+              "x1": 778,
+              "x2": 580,
+              "y1": 214,
+              "y2": 154
+            },
+            {
+              "x1": 877,
+              "x2": 778,
+              "y1": 316,
+              "y2": 214
+            },
+            {
+              "x1": 877,
+              "x2": 877,
+              "y1": 645,
+              "y2": 316
+            }
+          ],
+          "nodos": [
+            {
+              "clases": [
+                "category",
+                "unlocked"
+              ],
+              "iconos": [
+                "category_active",
+                "category_whispers"
+              ],
+              "texto": null,
+              "x": 580,
+              "y": 154
+            },
+            {
+              "clases": [
+                "large-circle",
+                "available"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "corrupted_roots"
+              ],
+              "texto": "0/1",
+              "x": 380,
+              "y": 213
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "roots_of_power"
+              ],
+              "texto": "0/1",
+              "x": 279,
+              "y": 317
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "headrotten_feast"
+              ],
+              "texto": "0/1",
+              "x": 281,
+              "y": 642
+            },
+            {
+              "clases": [
+                "diamond",
+                "available"
+              ],
+              "iconos": [
+                "skill_minor_inactive",
+                "tree_of_plenty"
+              ],
+              "texto": null,
+              "x": 498,
+              "y": 316
+            },
+            {
+              "clases": [
+                "diamond",
+                "locked"
+              ],
+              "iconos": [
+                "skill_minor_inactive",
+                "fortune_or_famine"
+              ],
+              "texto": null,
+              "x": 429,
+              "y": 489
+            },
+            {
+              "clases": [
+                "diamond",
+                "available"
+              ],
+              "iconos": [
+                "skill_minor_inactive",
+                "simple_gifts"
+              ],
+              "texto": null,
+              "x": 661,
+              "y": 315
+            },
+            {
+              "clases": [
+                "diamond",
+                "locked"
+              ],
+              "iconos": [
+                "skill_minor_inactive",
+                "wisdom_of_whispers"
+              ],
+              "texto": null,
+              "x": 579,
+              "y": 486
+            },
+            {
+              "clases": [
+                "diamond",
+                "locked"
+              ],
+              "iconos": [
+                "skill_minor_inactive",
+                "material_wealth"
+              ],
+              "texto": null,
+              "x": 731,
+              "y": 485
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "grim_mysteries"
+              ],
+              "texto": "0/1",
+              "x": 505,
+              "y": 647
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "chaotic_favor"
+              ],
+              "texto": "0/1",
+              "x": 655,
+              "y": 645
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "resplendent_favor"
+              ],
+              "texto": "0/1",
+              "x": 580,
+              "y": 823
+            },
+            {
+              "clases": [
+                "large-circle",
+                "available"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "grim_retribution"
+              ],
+              "texto": "0/1",
+              "x": 778,
+              "y": 214
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "colossal_foe"
+              ],
+              "texto": "0/1",
+              "x": 877,
+              "y": 316
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "malignant_invasion"
+              ],
+              "texto": "0/1",
+              "x": 877,
+              "y": 645
+            }
+          ],
+          "restantes": 7,
+          "slug": "whispers"
+        },
+        {
+          "actividad": "Nightmare Dungeons",
+          "icono": "https://sunderarmor.com/DIABLO4/WarPlans/nightmare_dungeons.png",
+          "lineas": [
+            {
+              "x1": 248,
+              "x2": 325,
+              "y1": 247,
+              "y2": 170
+            },
+            {
+              "x1": 175,
+              "x2": 248,
+              "y1": 288,
+              "y2": 247
+            },
+            {
+              "x1": 103,
+              "x2": 175,
+              "y1": 409,
+              "y2": 288
+            },
+            {
+              "x1": 248,
+              "x2": 175,
+              "y1": 408,
+              "y2": 288
+            },
+            {
+              "x1": 175,
+              "x2": 175,
+              "y1": 570,
+              "y2": 288
+            },
+            {
+              "x1": 319,
+              "x2": 325,
+              "y1": 327,
+              "y2": 170
+            },
+            {
+              "x1": 319,
+              "x2": 319,
+              "y1": 490,
+              "y2": 327
+            },
+            {
+              "x1": 319,
+              "x2": 319,
+              "y1": 650,
+              "y2": 490
+            },
+            {
+              "x1": 390,
+              "x2": 325,
+              "y1": 247,
+              "y2": 170
+            },
+            {
+              "x1": 463,
+              "x2": 390,
+              "y1": 288,
+              "y2": 247
+            },
+            {
+              "x1": 463,
+              "x2": 463,
+              "y1": 569,
+              "y2": 288
+            },
+            {
+              "x1": 391,
+              "x2": 463,
+              "y1": 409,
+              "y2": 288
+            },
+            {
+              "x1": 535,
+              "x2": 463,
+              "y1": 409,
+              "y2": 288
+            }
+          ],
+          "nodos": [
+            {
+              "clases": [
+                "category",
+                "unlocked"
+              ],
+              "iconos": [
+                "category_active",
+                "category_nightmare_dungeons"
+              ],
+              "texto": null,
+              "x": 325,
+              "y": 170
+            },
+            {
+              "clases": [
+                "large-circle",
+                "available"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "waking_spoils"
+              ],
+              "texto": "0/1",
+              "x": 248,
+              "y": 247
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "gauntlet"
+              ],
+              "texto": "0/1",
+              "x": 175,
+              "y": 288
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "nemesis"
+              ],
+              "texto": "0/1",
+              "x": 103,
+              "y": 409
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "rewarded_faith"
+              ],
+              "texto": "0/1",
+              "x": 248,
+              "y": 408
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "fearless_conviction"
+              ],
+              "texto": "0/1",
+              "x": 175,
+              "y": 570
+            },
+            {
+              "clases": [
+                "large-circle",
+                "available"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "dread_revival"
+              ],
+              "texto": "0/1",
+              "x": 319,
+              "y": 327
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "recurring_nightmare"
+              ],
+              "texto": "0/1",
+              "x": 319,
+              "y": 490
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "branching_pathways"
+              ],
+              "texto": "0/1",
+              "x": 319,
+              "y": 650
+            },
+            {
+              "clases": [
+                "large-circle",
+                "available"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "goblinfall"
+              ],
+              "texto": "0/1",
+              "x": 390,
+              "y": 247
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "horadric_hunter"
+              ],
+              "texto": "0/1",
+              "x": 463,
+              "y": 288
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "greed_is_good"
+              ],
+              "texto": "0/1",
+              "x": 463,
+              "y": 569
+            },
+            {
+              "clases": [
+                "diamond",
+                "locked"
+              ],
+              "iconos": [
+                "skill_minor_inactive",
+                "cipher_maps"
+              ],
+              "texto": null,
+              "x": 391,
+              "y": 409
+            },
+            {
+              "clases": [
+                "diamond",
+                "locked"
+              ],
+              "iconos": [
+                "skill_minor_inactive",
+                "altar_of_avarice"
+              ],
+              "texto": null,
+              "x": 535,
+              "y": 409
+            }
+          ],
+          "restantes": 7,
+          "slug": "nightmare_dungeons"
+        },
+        {
+          "actividad": "Helltides",
+          "icono": "https://sunderarmor.com/DIABLO4/WarPlans/helltides.png",
+          "lineas": [
+            {
+              "x1": 257,
+              "x2": 329,
+              "y1": 298,
+              "y2": 229
+            },
+            {
+              "x1": 184,
+              "x2": 257,
+              "y1": 393,
+              "y2": 298
+            },
+            {
+              "x1": 59,
+              "x2": 184,
+              "y1": 465,
+              "y2": 393
+            },
+            {
+              "x1": 131,
+              "x2": 184,
+              "y1": 555,
+              "y2": 393
+            },
+            {
+              "x1": 187,
+              "x2": 184,
+              "y1": 633,
+              "y2": 393
+            },
+            {
+              "x1": 328,
+              "x2": 329,
+              "y1": 392,
+              "y2": 229
+            },
+            {
+              "x1": 257,
+              "x2": 328,
+              "y1": 555,
+              "y2": 392
+            },
+            {
+              "x1": 328,
+              "x2": 328,
+              "y1": 555,
+              "y2": 392
+            },
+            {
+              "x1": 401,
+              "x2": 328,
+              "y1": 556,
+              "y2": 392
+            },
+            {
+              "x1": 255,
+              "x2": 257,
+              "y1": 720,
+              "y2": 555
+            },
+            {
+              "x1": 328,
+              "x2": 328,
+              "y1": 719,
+              "y2": 555
+            },
+            {
+              "x1": 400,
+              "x2": 401,
+              "y1": 720,
+              "y2": 556
+            },
+            {
+              "x1": 400,
+              "x2": 329,
+              "y1": 299,
+              "y2": 229
+            },
+            {
+              "x1": 470,
+              "x2": 400,
+              "y1": 394,
+              "y2": 299
+            },
+            {
+              "x1": 598,
+              "x2": 470,
+              "y1": 467,
+              "y2": 394
+            },
+            {
+              "x1": 525,
+              "x2": 470,
+              "y1": 556,
+              "y2": 394
+            },
+            {
+              "x1": 470,
+              "x2": 470,
+              "y1": 636,
+              "y2": 394
+            }
+          ],
+          "nodos": [
+            {
+              "clases": [
+                "category",
+                "unlocked"
+              ],
+              "iconos": [
+                "category_active",
+                "category_helltides"
+              ],
+              "texto": null,
+              "x": 329,
+              "y": 229
+            },
+            {
+              "clases": [
+                "large-circle",
+                "available"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "tainted_shrines"
+              ],
+              "texto": "0/1",
+              "x": 257,
+              "y": 298
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "hated_foe"
+              ],
+              "texto": "0/1",
+              "x": 184,
+              "y": 393
+            },
+            {
+              "clases": [
+                "diamond",
+                "locked"
+              ],
+              "iconos": [
+                "skill_minor_inactive",
+                "meat_brothers"
+              ],
+              "texto": null,
+              "x": 59,
+              "y": 465
+            },
+            {
+              "clases": [
+                "diamond",
+                "locked"
+              ],
+              "iconos": [
+                "skill_minor_inactive",
+                "infernal_rite"
+              ],
+              "texto": null,
+              "x": 131,
+              "y": 555
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "night_terrors"
+              ],
+              "texto": "0/1",
+              "x": 187,
+              "y": 633
+            },
+            {
+              "clases": [
+                "large-circle",
+                "available"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "hellmouth"
+              ],
+              "texto": "0/1",
+              "x": 328,
+              "y": 392
+            },
+            {
+              "clases": [
+                "diamond",
+                "locked"
+              ],
+              "iconos": [
+                "skill_minor_inactive",
+                "planar_tremors"
+              ],
+              "texto": null,
+              "x": 257,
+              "y": 555
+            },
+            {
+              "clases": [
+                "diamond",
+                "locked"
+              ],
+              "iconos": [
+                "skill_minor_inactive",
+                "writhe_and_rot"
+              ],
+              "texto": null,
+              "x": 328,
+              "y": 555
+            },
+            {
+              "clases": [
+                "diamond",
+                "locked"
+              ],
+              "iconos": [
+                "skill_minor_inactive",
+                "crimson_scent"
+              ],
+              "texto": null,
+              "x": 401,
+              "y": 556
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "chaotic_echoes"
+              ],
+              "texto": "0/1",
+              "x": 255,
+              "y": 720
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "bursting_brood"
+              ],
+              "texto": "0/1",
+              "x": 328,
+              "y": 719
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "bound_by_blood"
+              ],
+              "texto": "0/1",
+              "x": 400,
+              "y": 720
+            },
+            {
+              "clases": [
+                "large-circle",
+                "available"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "wretched_vermin"
+              ],
+              "texto": "0/1",
+              "x": 400,
+              "y": 299
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "fall_of_the_fell"
+              ],
+              "texto": "0/1",
+              "x": 470,
+              "y": 394
+            },
+            {
+              "clases": [
+                "diamond",
+                "locked"
+              ],
+              "iconos": [
+                "skill_minor_inactive",
+                "undying_embers"
+              ],
+              "texto": null,
+              "x": 598,
+              "y": 467
+            },
+            {
+              "clases": [
+                "diamond",
+                "locked"
+              ],
+              "iconos": [
+                "skill_minor_inactive",
+                "ashes_to_ashes"
+              ],
+              "texto": null,
+              "x": 525,
+              "y": 556
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "hell's_prize"
+              ],
+              "texto": "0/1",
+              "x": 470,
+              "y": 636
+            }
+          ],
+          "restantes": 7,
+          "slug": "helltides"
+        },
+        {
+          "actividad": "Undercity",
+          "icono": "https://sunderarmor.com/DIABLO4/WarPlans/undercity.png",
+          "lineas": [
+            {
+              "x1": 241,
+              "x2": 310,
+              "y1": 294,
+              "y2": 217
+            },
+            {
+              "x1": 172,
+              "x2": 241,
+              "y1": 373,
+              "y2": 294
+            },
+            {
+              "x1": 103,
+              "x2": 172,
+              "y1": 451,
+              "y2": 373
+            },
+            {
+              "x1": 172,
+              "x2": 103,
+              "y1": 530,
+              "y2": 451
+            },
+            {
+              "x1": 311,
+              "x2": 310,
+              "y1": 373,
+              "y2": 217
+            },
+            {
+              "x1": 312,
+              "x2": 311,
+              "y1": 528,
+              "y2": 373
+            },
+            {
+              "x1": 311,
+              "x2": 312,
+              "y1": 684,
+              "y2": 528
+            },
+            {
+              "x1": 381,
+              "x2": 310,
+              "y1": 294,
+              "y2": 217
+            },
+            {
+              "x1": 451,
+              "x2": 381,
+              "y1": 373,
+              "y2": 294
+            },
+            {
+              "x1": 520,
+              "x2": 451,
+              "y1": 450,
+              "y2": 373
+            },
+            {
+              "x1": 450,
+              "x2": 520,
+              "y1": 528,
+              "y2": 450
+            }
+          ],
+          "nodos": [
+            {
+              "clases": [
+                "category",
+                "unlocked"
+              ],
+              "iconos": [
+                "category_active",
+                "category_undercity"
+              ],
+              "texto": null,
+              "x": 310,
+              "y": 217
+            },
+            {
+              "clases": [
+                "large-circle",
+                "available"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "endless_swarm"
+              ],
+              "texto": "0/1",
+              "x": 241,
+              "y": 294
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "unfortunate_souls"
+              ],
+              "texto": "0/1",
+              "x": 172,
+              "y": 373
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "gutter_filth"
+              ],
+              "texto": "0/1",
+              "x": 103,
+              "y": 451
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "trials_and_tributes"
+              ],
+              "texto": "0/1",
+              "x": 172,
+              "y": 530
+            },
+            {
+              "clases": [
+                "large-circle",
+                "available"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "last_gasp"
+              ],
+              "texto": "0/1",
+              "x": 311,
+              "y": 373
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "bauble_day"
+              ],
+              "texto": "0/1",
+              "x": 312,
+              "y": 528
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "idols_of_war"
+              ],
+              "texto": "0/1",
+              "x": 311,
+              "y": 684
+            },
+            {
+              "clases": [
+                "large-circle",
+                "available"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "jade_epiphany"
+              ],
+              "texto": "0/1",
+              "x": 381,
+              "y": 294
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "finely_tuned"
+              ],
+              "texto": "0/1",
+              "x": 451,
+              "y": 373
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "pathfinder"
+              ],
+              "texto": "0/1",
+              "x": 520,
+              "y": 450
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "initiative"
+              ],
+              "texto": "0/1",
+              "x": 450,
+              "y": 528
+            }
+          ],
+          "restantes": 7,
+          "slug": "undercity"
+        },
+        {
+          "actividad": "Boss Lairs",
+          "icono": "https://sunderarmor.com/DIABLO4/WarPlans/boss_lairs.png",
+          "lineas": [
+            {
+              "x1": 55,
+              "x2": 325,
+              "y1": 250,
+              "y2": 170
+            },
+            {
+              "x1": 54,
+              "x2": 55,
+              "y1": 573,
+              "y2": 250
+            },
+            {
+              "x1": 145,
+              "x2": 325,
+              "y1": 330,
+              "y2": 170
+            },
+            {
+              "x1": 143,
+              "x2": 145,
+              "y1": 492,
+              "y2": 330
+            },
+            {
+              "x1": 235,
+              "x2": 325,
+              "y1": 412,
+              "y2": 170
+            },
+            {
+              "x1": 235,
+              "x2": 235,
+              "y1": 572,
+              "y2": 412
+            },
+            {
+              "x1": 145,
+              "x2": 54,
+              "y1": 653,
+              "y2": 573
+            },
+            {
+              "x1": 145,
+              "x2": 143,
+              "y1": 653,
+              "y2": 492
+            },
+            {
+              "x1": 145,
+              "x2": 235,
+              "y1": 653,
+              "y2": 572
+            },
+            {
+              "x1": 325,
+              "x2": 325,
+              "y1": 331,
+              "y2": 170
+            },
+            {
+              "x1": 326,
+              "x2": 325,
+              "y1": 492,
+              "y2": 331
+            },
+            {
+              "x1": 326,
+              "x2": 326,
+              "y1": 653,
+              "y2": 492
+            },
+            {
+              "x1": 595,
+              "x2": 325,
+              "y1": 249,
+              "y2": 170
+            },
+            {
+              "x1": 593,
+              "x2": 595,
+              "y1": 572,
+              "y2": 249
+            },
+            {
+              "x1": 503,
+              "x2": 325,
+              "y1": 330,
+              "y2": 170
+            },
+            {
+              "x1": 505,
+              "x2": 503,
+              "y1": 491,
+              "y2": 330
+            },
+            {
+              "x1": 414,
+              "x2": 325,
+              "y1": 411,
+              "y2": 170
+            },
+            {
+              "x1": 414,
+              "x2": 414,
+              "y1": 572,
+              "y2": 411
+            },
+            {
+              "x1": 503,
+              "x2": 593,
+              "y1": 654,
+              "y2": 572
+            },
+            {
+              "x1": 503,
+              "x2": 505,
+              "y1": 654,
+              "y2": 491
+            },
+            {
+              "x1": 503,
+              "x2": 414,
+              "y1": 654,
+              "y2": 572
+            }
+          ],
+          "nodos": [
+            {
+              "clases": [
+                "category",
+                "unlocked"
+              ],
+              "iconos": [
+                "category_active",
+                "category_boss_lairs"
+              ],
+              "texto": null,
+              "x": 325,
+              "y": 170
+            },
+            {
+              "clases": [
+                "large-circle",
+                "available"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "lair_of_runes"
+              ],
+              "texto": "0/1",
+              "x": 55,
+              "y": 250
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "lair_of_plenty"
+              ],
+              "texto": "0/1",
+              "x": 54,
+              "y": 573
+            },
+            {
+              "clases": [
+                "large-circle",
+                "available"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "grigoire's_gambit"
+              ],
+              "texto": "0/1",
+              "x": 145,
+              "y": 330
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "duriel's_invasion"
+              ],
+              "texto": "0/1",
+              "x": 143,
+              "y": 492
+            },
+            {
+              "clases": [
+                "large-circle",
+                "available"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "children_of_zir"
+              ],
+              "texto": "0/1",
+              "x": 235,
+              "y": 412
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "embers_of_anguish"
+              ],
+              "texto": "0/1",
+              "x": 235,
+              "y": 572
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "golden_hoard"
+              ],
+              "texto": "0/1",
+              "x": 145,
+              "y": 653
+            },
+            {
+              "clases": [
+                "large-circle",
+                "available"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "two_by_two"
+              ],
+              "texto": "0/1",
+              "x": 325,
+              "y": 331
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "greater_nemesis"
+              ],
+              "texto": "0/1",
+              "x": 326,
+              "y": 492
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "ultimate_nemesis"
+              ],
+              "texto": "0/1",
+              "x": 326,
+              "y": 653
+            },
+            {
+              "clases": [
+                "large-circle",
+                "available"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "nemesis_tides"
+              ],
+              "texto": "0/1",
+              "x": 595,
+              "y": 249
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "infernal_deception"
+              ],
+              "texto": "0/1",
+              "x": 593,
+              "y": 572
+            },
+            {
+              "clases": [
+                "large-circle",
+                "available"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "varshan's_vengeance"
+              ],
+              "texto": "0/1",
+              "x": 503,
+              "y": 330
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "blood_of_bartuc"
+              ],
+              "texto": "0/1",
+              "x": 505,
+              "y": 491
+            },
+            {
+              "clases": [
+                "large-circle",
+                "available"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "out_of_the_cold"
+              ],
+              "texto": "0/1",
+              "x": 414,
+              "y": 411
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "dog_of_astaroth"
+              ],
+              "texto": "0/1",
+              "x": 414,
+              "y": 572
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "exotic_armory"
+              ],
+              "texto": "0/1",
+              "x": 503,
+              "y": 654
+            }
+          ],
+          "restantes": 7,
+          "slug": "boss_lairs"
+        },
+        {
+          "actividad": "Infernal Hordes",
+          "icono": "https://sunderarmor.com/DIABLO4/WarPlans/infernal_hordes.png",
+          "lineas": [
+            {
+              "x1": 179,
+              "x2": 323,
+              "y1": 170,
+              "y2": 168
+            },
+            {
+              "x1": 107,
+              "x2": 179,
+              "y1": 250,
+              "y2": 170
+            },
+            {
+              "x1": 251,
+              "x2": 107,
+              "y1": 249,
+              "y2": 250
+            },
+            {
+              "x1": 179,
+              "x2": 107,
+              "y1": 330,
+              "y2": 250
+            },
+            {
+              "x1": 107,
+              "x2": 107,
+              "y1": 413,
+              "y2": 250
+            },
+            {
+              "x1": 322,
+              "x2": 323,
+              "y1": 330,
+              "y2": 168
+            },
+            {
+              "x1": 250,
+              "x2": 322,
+              "y1": 411,
+              "y2": 330
+            },
+            {
+              "x1": 394,
+              "x2": 322,
+              "y1": 411,
+              "y2": 330
+            },
+            {
+              "x1": 250,
+              "x2": 250,
+              "y1": 574,
+              "y2": 411
+            },
+            {
+              "x1": 393,
+              "x2": 394,
+              "y1": 574,
+              "y2": 411
+            },
+            {
+              "x1": 321,
+              "x2": 322,
+              "y1": 492,
+              "y2": 330
+            },
+            {
+              "x1": 321,
+              "x2": 250,
+              "y1": 654,
+              "y2": 574
+            },
+            {
+              "x1": 321,
+              "x2": 393,
+              "y1": 654,
+              "y2": 574
+            },
+            {
+              "x1": 465,
+              "x2": 323,
+              "y1": 170,
+              "y2": 168
+            },
+            {
+              "x1": 537,
+              "x2": 465,
+              "y1": 251,
+              "y2": 170
+            },
+            {
+              "x1": 537,
+              "x2": 537,
+              "y1": 412,
+              "y2": 251
+            }
+          ],
+          "nodos": [
+            {
+              "clases": [
+                "category",
+                "unlocked"
+              ],
+              "iconos": [
+                "category_active",
+                "category_infernal_hordes"
+              ],
+              "texto": null,
+              "x": 323,
+              "y": 168
+            },
+            {
+              "clases": [
+                "large-circle",
+                "available"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "exalted_council"
+              ],
+              "texto": "0/1",
+              "x": 179,
+              "y": 170
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "council_coffers"
+              ],
+              "texto": "0/1",
+              "x": 107,
+              "y": 250
+            },
+            {
+              "clases": [
+                "diamond",
+                "locked"
+              ],
+              "iconos": [
+                "skill_minor_inactive",
+                "forged_in_flame"
+              ],
+              "texto": null,
+              "x": 251,
+              "y": 249
+            },
+            {
+              "clases": [
+                "diamond",
+                "locked"
+              ],
+              "iconos": [
+                "skill_minor_inactive",
+                "flawless_find"
+              ],
+              "texto": null,
+              "x": 179,
+              "y": 330
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "infernal_hoard"
+              ],
+              "texto": "0/1",
+              "x": 107,
+              "y": 413
+            },
+            {
+              "clases": [
+                "large-circle",
+                "available"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "method_and_madness"
+              ],
+              "texto": "0/1",
+              "x": 322,
+              "y": 330
+            },
+            {
+              "clases": [
+                "diamond",
+                "locked"
+              ],
+              "iconos": [
+                "skill_minor_inactive",
+                "reign_in_hell"
+              ],
+              "texto": null,
+              "x": 250,
+              "y": 411
+            },
+            {
+              "clases": [
+                "diamond",
+                "locked"
+              ],
+              "iconos": [
+                "skill_minor_inactive",
+                "total_chaos"
+              ],
+              "texto": null,
+              "x": 394,
+              "y": 411
+            },
+            {
+              "clases": [
+                "diamond",
+                "locked"
+              ],
+              "iconos": [
+                "skill_minor_inactive",
+                "pulse_of_aether"
+              ],
+              "texto": null,
+              "x": 250,
+              "y": 574
+            },
+            {
+              "clases": [
+                "diamond",
+                "locked"
+              ],
+              "iconos": [
+                "skill_minor_inactive",
+                "bedlam"
+              ],
+              "texto": null,
+              "x": 393,
+              "y": 574
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "impending_doom"
+              ],
+              "texto": "0/1",
+              "x": 321,
+              "y": 492
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "the_black_pact"
+              ],
+              "texto": "0/1",
+              "x": 321,
+              "y": 654
+            },
+            {
+              "clases": [
+                "large-circle",
+                "available"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "cult_of_annihilation"
+              ],
+              "texto": "0/1",
+              "x": 465,
+              "y": 170
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "scale_of_tathamet"
+              ],
+              "texto": "0/1",
+              "x": 537,
+              "y": 251
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "devil's_deal"
+              ],
+              "texto": "0/1",
+              "x": 537,
+              "y": 412
+            }
+          ],
+          "restantes": 7,
+          "slug": "infernal_hordes"
+        },
+        {
+          "actividad": "Pits",
+          "icono": "https://sunderarmor.com/DIABLO4/WarPlans/pits.png",
+          "lineas": [
+            {
+              "x1": 142,
+              "x2": 442,
+              "y1": 185,
+              "y2": 73
+            },
+            {
+              "x1": 68,
+              "x2": 142,
+              "y1": 467,
+              "y2": 185
+            },
+            {
+              "x1": 231,
+              "x2": 142,
+              "y1": 464,
+              "y2": 185
+            },
+            {
+              "x1": 142,
+              "x2": 142,
+              "y1": 748,
+              "y2": 185
+            },
+            {
+              "x1": 442,
+              "x2": 442,
+              "y1": 184,
+              "y2": 73
+            },
+            {
+              "x1": 442,
+              "x2": 442,
+              "y1": 384,
+              "y2": 184
+            },
+            {
+              "x1": 442,
+              "x2": 442,
+              "y1": 582,
+              "y2": 384
+            },
+            {
+              "x1": 343,
+              "x2": 442,
+              "y1": 745,
+              "y2": 582
+            },
+            {
+              "x1": 543,
+              "x2": 442,
+              "y1": 746,
+              "y2": 582
+            },
+            {
+              "x1": 742,
+              "x2": 442,
+              "y1": 186,
+              "y2": 73
+            },
+            {
+              "x1": 655,
+              "x2": 742,
+              "y1": 465,
+              "y2": 186
+            },
+            {
+              "x1": 816,
+              "x2": 742,
+              "y1": 468,
+              "y2": 186
+            },
+            {
+              "x1": 742,
+              "x2": 742,
+              "y1": 748,
+              "y2": 186
+            }
+          ],
+          "nodos": [
+            {
+              "clases": [
+                "category",
+                "unlocked"
+              ],
+              "iconos": [
+                "category_active",
+                "category_pits"
+              ],
+              "texto": null,
+              "x": 442,
+              "y": 73
+            },
+            {
+              "clases": [
+                "large-circle",
+                "available"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "choron's_haste"
+              ],
+              "texto": "0/1",
+              "x": 142,
+              "y": 185
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "choron's_shortcut"
+              ],
+              "texto": "0/1",
+              "x": 68,
+              "y": 467
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "heart_of_stone"
+              ],
+              "texto": "0/1",
+              "x": 231,
+              "y": 464
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "damned_thieves"
+              ],
+              "texto": "0/1",
+              "x": 142,
+              "y": 748
+            },
+            {
+              "clases": [
+                "large-circle",
+                "available"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "choron's_blessing"
+              ],
+              "texto": "0/1",
+              "x": 442,
+              "y": 184
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "pit_butcher"
+              ],
+              "texto": "0/1",
+              "x": 442,
+              "y": 384
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "choron's_favor"
+              ],
+              "texto": "0/1",
+              "x": 442,
+              "y": 582
+            },
+            {
+              "clases": [
+                "diamond",
+                "locked"
+              ],
+              "iconos": [
+                "skill_minor_inactive",
+                "choron's_soul"
+              ],
+              "texto": null,
+              "x": 343,
+              "y": 745
+            },
+            {
+              "clases": [
+                "diamond",
+                "locked"
+              ],
+              "iconos": [
+                "skill_minor_inactive",
+                "choron's_flesh"
+              ],
+              "texto": null,
+              "x": 543,
+              "y": 746
+            },
+            {
+              "clases": [
+                "large-circle",
+                "available"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "choron's_wager"
+              ],
+              "texto": "0/1",
+              "x": 742,
+              "y": 186
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "cursed_merchant"
+              ],
+              "texto": "0/1",
+              "x": 655,
+              "y": 465
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "cursed_rituals"
+              ],
+              "texto": "0/1",
+              "x": 816,
+              "y": 468
+            },
+            {
+              "clases": [
+                "large-circle",
+                "locked"
+              ],
+              "iconos": [
+                "passive_inactive",
+                "cursed_offerings"
+              ],
+              "texto": "0/1",
+              "x": 742,
+              "y": 748
+            }
+          ],
+          "restantes": 7,
+          "slug": "pits"
+        }
+      ]
+    }
+  ],
+  "url": "https://d4builds.gg/builds/de491527-1280-4d83-b5ea-dd26ca882385/?var=0",
+  "variantes": [
+    {
+      "etiqueta": "Standard Build",
+      "index": 0
+    }
+  ]
+}
