@@ -1,0 +1,739 @@
+{
+  "buildId": "fb2a2a80-6907-4be4-a7eb-a98785f128b0",
+  "capturadoEn": "2026-08-09T07:46:01.344Z",
+  "pestanas": [
+    "Gear & Skills",
+    "Skill Tree",
+    "Paragon",
+    "Mercenaries",
+    "War Plans",
+    "Notes"
+  ],
+  "porVariante": [
+    {
+      "arbol": [],
+      "arbolEsCanvas": true,
+      "debug": {
+        "warplans": {
+          "clases": {
+            "active": 1,
+            "alt": 1,
+            "filters__btn": 1,
+            "game__filters__btn": 1,
+            "game__filters__btn__icon": 1,
+            "game__filters__list": 1,
+            "searchbar": 1,
+            "searchbar-close": 1,
+            "searchbar-close-img": 1,
+            "searchbar-icon": 1,
+            "searchbar-input": 1,
+            "skill-line-active-base": 6,
+            "skill-line-active-inner": 5,
+            "skill-line-base": 12,
+            "skill-line-inner": 12,
+            "skill-tree-viewer": 1,
+            "skill-tree-viewer__content": 1,
+            "skill__tree__header": 1,
+            "skill__tree__header__wrapper": 1,
+            "skill__tree__remaining": 1,
+            "skill__tree__remaining__total": 1,
+            "skill__tree__total": 1,
+            "viewer-canvas": 1,
+            "viewer-lines": 1,
+            "viewer-main": 1,
+            "warplan-tab": 7,
+            "warplan-tab__icon": 7,
+            "warplan-tabs": 1
+          },
+          "muestra": "<div class=\"general__wrapper\"><div class=\"skill-tree-viewer\"><div class=\"skill__tree__header alt\"><div class=\"skill__tree__header__wrapper\"><div class=\"skill__tree__remaining\"><div class=\"skill__tree__total\">Remaining:<div class=\"skill__tree__remaining__total\">0</div></div></div><div class=\"searchbar\"><img class=\"searchbar-icon\" src=\"https://sunderarmor.com/search-icon.svg\" alt=\"search icon\"><input id=\"skill-tree-viewer-search\" class=\"searchbar-input\" type=\"text\" placeholder=\"Search skills...\" autocomplete=\"off\" value=\"\"><button class=\"searchbar-close\" tabindex=\"-1\"><img class=\"searchbar-close-img\" src=\"https://sunderarmor.com/close-icon.svg\" alt=\"close icon\"></button></div><button class=\"game__filters__btn filters__btn\"><img src=\"https://sunderarmor.com/DIABLO4/UI/fullscreen_icon.svg\" class=\"game__filters__btn__icon\" alt=\"fullscreen\" style=\"width: 18px; height: 18px;\"></button><div class=\"game__filters__list\"></div><div class=\"warplan-tabs\"><button class=\"warplan-tab active\"><img src=\"https://sunderarmor.com/DIABLO4/WarPlans/whispers.png\" alt=\"Whispers\" class=\"warplan-tab__icon\"></button><button class=\"warplan-tab\"><img src=\"https://sunderarmor.com/DIABLO4/WarPlans/nightmare_dungeons.png\" alt=\"Nightmare Dungeons\" class=\"warplan-tab__icon\"></button><button class=\"warplan-tab\"><img src=\"https://sunderarmor.com/DIABLO4/WarPlans/helltides.png\" alt=\"Helltides\" class=\"warplan-tab__icon\"></button><button class=\"warplan-tab\"><img src=\"https://sunderarmor.com/DIABLO4/WarPlans/undercity.png\" alt=\"Undercity\" class=\"warplan-tab__icon\"></button><button class=\"warplan-tab\"><img src=\"https://sunderarmor.com/DIABLO4/WarPlans/boss_lairs.png\" alt=\"Boss Lairs\" class=\"warplan-tab__icon\"></button><button class=\"warplan-tab\"><img src=\"https://sunderarmor.com/DIABLO4/WarPlans/infernal_hordes.png\" alt=\"Infernal Hordes\" class=\"warplan-tab__icon\"></button><button class=\"warplan-tab\"><img src=\"https://sunderarmor.com/DIABLO4/WarPlans/pits.png\" alt=\"Pits\" class=\"warplan-tab__icon\"></button></div></div></div><div class=\"skill-tree-viewer__content\"><div class=\"viewer-main\"><div class=\"viewer-canvas \" style=\"transform: translate(150px, -60px) scale(0.7); transform-origin: left top; cursor: grab;\"><svg class=\"viewer-lines\"><g><path d=\"M 380 213 L 580 154\" fill=\"none\" stroke=\"#2d2d2d\" stroke-width=\"5\" stroke-linecap=\"round\" class=\"skill-line-base\"></path><path d=\"M 380 213 L 580 154\" fill=\"none\" stroke=\"#191b1f\" stroke-width=\"3\" stroke-linecap=\"round\" class=\"skill-line-inner\"></path><pat",
+          "textos": [
+            "Remaining:01/11/11/11/11/10/11/11/10/10/10/1"
+          ]
+        }
+      },
+      "etiqueta": "Standard Build",
+      "gear": [
+        {
+          "calidad": "unique",
+          "engarces": [
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Runes/ritual.png",
+              "nombre": "Cir",
+              "tipo": "ritual"
+            },
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Runes/invocation.png",
+              "nombre": "Mot",
+              "tipo": "invocation"
+            }
+          ],
+          "icono": "https://sunderarmor.com/DIABLO4/Uniques/2/tuskhelm_of_joritz_the_mighty.png",
+          "nombre": "Tuskhelm of Joritz the Mighty",
+          "slot": "Helm"
+        },
+        {
+          "calidad": null,
+          "engarces": [
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Runes/ritual.png",
+              "nombre": "Igni",
+              "tipo": "ritual"
+            },
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Runes/invocation.png",
+              "nombre": "Que",
+              "tipo": "invocation"
+            }
+          ],
+          "icono": "https://sunderarmor.com/DIABLO4/Codex/1/defensive.png",
+          "nombre": "Juggernaut's Aspect",
+          "slot": "Chest Armor"
+        },
+        {
+          "calidad": "unique",
+          "engarces": [],
+          "icono": "https://sunderarmor.com/DIABLO4/Uniques/2/gohr's_devastating_grips.png",
+          "nombre": "Gohr's Devastating Grips",
+          "slot": "Gloves"
+        },
+        {
+          "calidad": null,
+          "engarces": [
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Gems/grand-ruby.png",
+              "nombre": "Ruby",
+              "tipo": "grand-ruby"
+            },
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Gems/grand-ruby.png",
+              "nombre": "Ruby",
+              "tipo": "grand-ruby"
+            }
+          ],
+          "icono": "https://sunderarmor.com/DIABLO4/Codex/1/defensive.png",
+          "nombre": "Irrepressible Aspect",
+          "slot": "Pants"
+        },
+        {
+          "calidad": null,
+          "engarces": [],
+          "icono": "https://sunderarmor.com/DIABLO4/Codex/1/utility.png",
+          "nombre": "Aspect of Anger Management",
+          "slot": "Boots"
+        },
+        {
+          "calidad": null,
+          "engarces": [
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Gems/grand-skull.png",
+              "nombre": "Skull",
+              "tipo": "grand-skull"
+            },
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Gems/grand-skull.png",
+              "nombre": "Skull",
+              "tipo": "grand-skull"
+            }
+          ],
+          "icono": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
+          "nombre": "Aspect of Channeling",
+          "slot": "Bludgeoning Weapon"
+        },
+        {
+          "calidad": null,
+          "engarces": [
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Gems/grand-skull.png",
+              "nombre": "Skull",
+              "tipo": "grand-skull"
+            }
+          ],
+          "icono": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
+          "nombre": "Heavy Hitting Aspect",
+          "slot": "Dual-Wield Weapon 1"
+        },
+        {
+          "calidad": null,
+          "engarces": [],
+          "icono": null,
+          "nombre": null,
+          "slot": ""
+        },
+        {
+          "calidad": null,
+          "engarces": [
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Gems/grand-topaz.png",
+              "nombre": "Topaz",
+              "tipo": "grand-topaz"
+            }
+          ],
+          "icono": "https://sunderarmor.com/DIABLO4/Codex/1/defensive.png",
+          "nombre": "Aspect of Heavenly Strength",
+          "slot": "Amulet"
+        },
+        {
+          "calidad": null,
+          "engarces": [
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Gems/grand-emerald.png",
+              "nombre": "Emerald",
+              "tipo": "grand-emerald"
+            }
+          ],
+          "icono": "https://sunderarmor.com/DIABLO4/Codex/1/resource.png",
+          "nombre": "Bold Chieftain's Aspect",
+          "slot": "Ring 1"
+        },
+        {
+          "calidad": null,
+          "engarces": [
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Gems/grand-ruby.png",
+              "nombre": "Ruby",
+              "tipo": "grand-ruby"
+            }
+          ],
+          "icono": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
+          "nombre": "Edgemaster's Aspect",
+          "slot": "Ring 2"
+        },
+        {
+          "calidad": null,
+          "engarces": [],
+          "icono": null,
+          "nombre": null,
+          "slot": ""
+        },
+        {
+          "calidad": null,
+          "engarces": [
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Gems/grand-skull.png",
+              "nombre": "Skull",
+              "tipo": "grand-skull"
+            },
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Gems/grand-skull.png",
+              "nombre": "Skull",
+              "tipo": "grand-skull"
+            }
+          ],
+          "icono": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
+          "nombre": "Crushing Aspect",
+          "slot": "Slashing Weapon"
+        },
+        {
+          "calidad": "unique",
+          "engarces": [
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Gems/grand-skull.png",
+              "nombre": "Skull",
+              "tipo": "grand-skull"
+            }
+          ],
+          "icono": "https://sunderarmor.com/DIABLO4/Uniques/2/ramaladni's_magnum_opus.png",
+          "nombre": "Ramaladni's Magnum Opus",
+          "slot": "Dual-Wield Weapon 2"
+        }
+      ],
+      "index": 0,
+      "mercenarios": [
+        {
+          "habilidades": [],
+          "icono": "https://sunderarmor.com/DIABLO4/Skills/VoH2/bloodthirst.png",
+          "nombre": "Bloodthirst",
+          "rol": "Mercenary"
+        },
+        {
+          "habilidades": [],
+          "icono": "https://sunderarmor.com/DIABLO4/Skills/VoH2/whirlwind.png",
+          "nombre": "Whirlwind",
+          "rol": "Reinforcement"
+        }
+      ],
+      "paragon": [
+        {
+          "glifo": "Exploit",
+          "icono": null,
+          "nivelGlifo": null,
+          "tablero": "Starting Board"
+        },
+        {
+          "glifo": "Challenger",
+          "icono": null,
+          "nivelGlifo": null,
+          "tablero": "Carnage"
+        },
+        {
+          "glifo": "Twister",
+          "icono": null,
+          "nivelGlifo": null,
+          "tablero": "Blood Rage"
+        },
+        {
+          "glifo": "Wrath",
+          "icono": null,
+          "nivelGlifo": null,
+          "tablero": "Warbringer"
+        },
+        {
+          "glifo": "Might",
+          "icono": null,
+          "nivelGlifo": null,
+          "tablero": "Force of Nature"
+        }
+      ],
+      "stats": [
+        {
+          "afijos": [
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Strength"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Vulnerable Damage Multiplier"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Critical Strike Chance"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Critical Strike Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Cooldown Reduction (Worldly Stability - Resource)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Ring 1"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Cooldown Reduction"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Critical Strike Chance"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Vulnerable Damage Multiplier"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Critical Strike Damage Multiplier"
+            },
+            {
+              "ga": 1,
+              "templado": true,
+              "texto": "Cooldown Reduction (Worldly Stability - Resource)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Ring 2"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Strength"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Movement Speed"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Fury Regeneration"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Maximum Life"
+            },
+            {
+              "ga": 1,
+              "templado": true,
+              "texto": "Movement Speed (Barbarian Motion - Mobility)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Boots"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Weapon Type"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Strength"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Maximum Life"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Weapon Damage"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Critical Strike Damage Multiplier"
+            },
+            {
+              "ga": 1,
+              "templado": true,
+              "texto": "Critical Strike Chance (Worldly Destruction - Weapons)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Bludgeoning Weapon"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Strength"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Cooldown Reduction"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Maximum Resource"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Maximum Life"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Maximum Life (Worldly Endurance - Defensive)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Helm"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Weapon Type"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Strength"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Critical Strike Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "All Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Maximum Life"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Critical Strike Chance (Worldly Destruction - Weapons)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Physical Damage"
+            }
+          ],
+          "slot": "Slashing Weapon"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Critical Strike Chance"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Vulnerable Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Core Skills"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Critical Strike Damage Multiplier"
+            },
+            {
+              "ga": 1,
+              "templado": true,
+              "texto": "Lucky Hit: Up to a 15% Chance to Restore X Primary Resource (Worldly Stability - Resource)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Aspect of Booming Voice"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Amulet"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Strength"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Maximum Resource"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Maximum Life"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Fury Regeneration"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Maximum Life (Worldly Endurance - Defensive)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Chest Armor"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Weapon Type"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Strength"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Maximum Life"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Critical Strike Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "All Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Critical Strike Chance (Worldly Destruction - Weapons)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Dual-Wield Weapon 1"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Critical Strike Chance"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Ranks to Whirlwind"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Critical Strike Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Vulnerable Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Critical Strike Damage (Worldly Finesse - Offensive)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Gloves"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Strength"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Maximum Resource"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Maximum Life"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Critical Strike Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Critical Strike Chance (Worldly Destruction - Weapons)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Dual-Wield Weapon 2"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Strength"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Maximum Life"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Fury Regeneration"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Resistance to All Elements"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Maximum Life (Worldly Endurance - Defensive)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Pants"
+        }
+      ],
+      "warPlans": []
+    }
+  ],
+  "url": "https://d4builds.gg/builds/fb2a2a80-6907-4be4-a7eb-a98785f128b0/?var=0",
+  "variantes": [
+    {
+      "etiqueta": "Standard Build",
+      "index": 0
+    }
+  ]
+}
