@@ -1,6 +1,6 @@
 {
   "buildId": "2a3b28c9-2b72-4111-9e35-8221a346a618",
-  "capturadoEn": "2026-08-09T15:25:43.205Z",
+  "capturadoEn": "2026-08-09T17:23:41.816Z",
   "pestanas": [
     "Gear & Skills",
     "Skill Tree",
@@ -1056,80 +1056,80 @@
       "paragon": [
         {
           "casillas": [
-            "r2c10:Int",
-            "r2c11:Int",
-            "r2c12:Str",
-            "r3c10:Dex",
-            "r3c12:Will",
-            "r4c9:Will",
-            "r4c10:DamageToElite",
-            "r4c12:DamageToElite",
-            "r4c13:Int",
-            "r5c8:Will",
-            "r5c9:Will",
-            "r5c10:Damage",
-            "r5c12:DamageToElite",
-            "r5c13:Int",
-            "r5c14:Dex",
-            "r6c7:Int",
-            "r6c8:Str",
-            "r6c9:Damage",
-            "r6c10:Damage",
-            "r6c12:Damage",
-            "r6c13:Damage",
-            "r6c14:Will",
-            "r6c15:Str",
-            "r7c6:Str",
-            "r7c7:Str",
-            "r7c8:Str",
-            "r7c9:Int",
-            "r7c10:Dex",
-            "r7c11:Paragon Glyph",
-            "r7c12:Will",
-            "r7c13:Will",
-            "r7c14:Str",
-            "r7c15:Int",
-            "r7c16:Int",
-            "r8c7:Int",
-            "r8c8:Str",
-            "r8c9:Will",
-            "r8c10:Str",
-            "r8c11:Str",
-            "r8c12:Dex",
-            "r8c13:Str",
-            "r8c14:Int",
-            "r8c15:Int",
-            "r9c8:Str",
-            "r9c9:Will",
-            "r9c10:Str",
-            "r9c11:Will",
-            "r9c12:Int",
-            "r9c13:Str",
-            "r9c14:Dex",
-            "r10c9:Str",
-            "r10c10:Int",
-            "r10c12:Str",
-            "r10c13:Str",
-            "r11c9:HPPercent",
-            "r11c10:Str",
-            "r11c12:Will",
-            "r11c13:HPPercent",
-            "r12c8:Armor",
-            "r12c9:HPPercent",
-            "r12c10:HPPercent",
-            "r12c12:HPPercent",
-            "r12c13:Damage",
-            "r12c14:Damage",
-            "r13c9:Armor",
-            "r13c13:Damage",
-            "r14c9:Will",
-            "r14c10:Int",
-            "r14c11:Str:enabled",
-            "r14c12:Str",
-            "r14c13:Str",
-            "r15c10:Str:enabled",
-            "r15c11:Paragon Starting Node",
-            "r15c12:Int:enabled"
+            "r2c10:Int:common",
+            "r2c11:Int:common",
+            "r2c12:Str:common",
+            "r3c10:Dex:common",
+            "r3c12:Will:common",
+            "r4c9:Will:magic",
+            "r4c10:DamageToElite:magic",
+            "r4c12:DamageToElite:magic",
+            "r4c13:Int:magic",
+            "r5c8:Will:common",
+            "r5c9:Will:magic",
+            "r5c10:Damage:rare",
+            "r5c12:DamageToElite:rare",
+            "r5c13:Int:magic",
+            "r5c14:Dex:common",
+            "r6c7:Int:common",
+            "r6c8:Str:common",
+            "r6c9:Damage:magic",
+            "r6c10:Damage:magic",
+            "r6c12:Damage:magic",
+            "r6c13:Damage:magic",
+            "r6c14:Will:common",
+            "r6c15:Str:common",
+            "r7c6:Str:common",
+            "r7c7:Str:common",
+            "r7c8:Str:common",
+            "r7c9:Int:common",
+            "r7c10:Dex:common",
+            "r7c11:Paragon Glyph:paragon glyph",
+            "r7c12:Will:common",
+            "r7c13:Will:common",
+            "r7c14:Str:common",
+            "r7c15:Int:common",
+            "r7c16:Int:common",
+            "r8c7:Int:common",
+            "r8c8:Str:common",
+            "r8c9:Will:common",
+            "r8c10:Str:common",
+            "r8c11:Str:common",
+            "r8c12:Dex:common",
+            "r8c13:Str:common",
+            "r8c14:Int:common",
+            "r8c15:Int:common",
+            "r9c8:Str:common",
+            "r9c9:Will:common",
+            "r9c10:Str:common",
+            "r9c11:Will:common",
+            "r9c12:Int:common",
+            "r9c13:Str:common",
+            "r9c14:Dex:common",
+            "r10c9:Str:common",
+            "r10c10:Int:common",
+            "r10c12:Str:common",
+            "r10c13:Str:common",
+            "r11c9:HPPercent:magic",
+            "r11c10:Str:common",
+            "r11c12:Will:common",
+            "r11c13:HPPercent:magic",
+            "r12c8:Armor:magic",
+            "r12c9:HPPercent:rare",
+            "r12c10:HPPercent:magic",
+            "r12c12:HPPercent:magic",
+            "r12c13:Damage:rare",
+            "r12c14:Damage:magic",
+            "r13c9:Armor:magic",
+            "r13c13:Damage:magic",
+            "r14c9:Will:common",
+            "r14c10:Int:common",
+            "r14c11:Str:common:enabled",
+            "r14c12:Str:common",
+            "r14c13:Str:common",
+            "r15c10:Str:common:enabled",
+            "r15c11:Paragon Starting Node:paragon starting",
+            "r15c12:Int:common:enabled"
           ],
           "giro": 0,
           "glifo": null,
@@ -1140,41 +1140,6 @@
       ],
       "paragonNivel": 336,
       "stats": [
-        {
-          "afijos": [
-            {
-              "ga": 0,
-              "templado": false,
-              "texto": "Strength"
-            },
-            {
-              "ga": 0,
-              "templado": false,
-              "texto": "Maximum Life"
-            },
-            {
-              "ga": 0,
-              "templado": false,
-              "texto": "Stat 3"
-            },
-            {
-              "ga": 0,
-              "templado": false,
-              "texto": "Stat 4"
-            },
-            {
-              "ga": 0,
-              "templado": true,
-              "texto": "Tempering Stat 1"
-            },
-            {
-              "ga": 0,
-              "templado": true,
-              "texto": "Transfigure"
-            }
-          ],
-          "slot": "Pants"
-        },
         {
           "afijos": [
             {
@@ -1200,7 +1165,7 @@
             {
               "ga": 0,
               "templado": true,
-              "texto": "Arbiter of Justice Cooldown Reduction (Disciple Efficiency - Resource)"
+              "texto": "Critical Strike Damage (Worldly Finesse - Offensive)"
             },
             {
               "ga": 0,
@@ -1208,7 +1173,47 @@
               "texto": "Transfigure"
             }
           ],
-          "slot": "Ring 1"
+          "slot": "Gloves"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Weapon Type"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Strength"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Maximum Life"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Critical Strike Chance"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Damage Reduction"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Critical Strike Damage (Worldly Finesse - Offensive)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Offhand"
         },
         {
           "afijos": [
@@ -1244,6 +1249,41 @@
             }
           ],
           "slot": "Helm"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Strength"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Maximum Life"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Stat 3"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Stat 4"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Tempering Stat 1"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Pants"
         },
         {
           "afijos": [
@@ -1395,46 +1435,6 @@
             {
               "ga": 0,
               "templado": false,
-              "texto": "Weapon Type"
-            },
-            {
-              "ga": 0,
-              "templado": false,
-              "texto": "Strength"
-            },
-            {
-              "ga": 0,
-              "templado": false,
-              "texto": "Maximum Life"
-            },
-            {
-              "ga": 0,
-              "templado": false,
-              "texto": "Critical Strike Chance"
-            },
-            {
-              "ga": 0,
-              "templado": false,
-              "texto": "Damage Reduction"
-            },
-            {
-              "ga": 0,
-              "templado": true,
-              "texto": "Critical Strike Damage (Worldly Finesse - Offensive)"
-            },
-            {
-              "ga": 0,
-              "templado": true,
-              "texto": "Transfigure"
-            }
-          ],
-          "slot": "Offhand"
-        },
-        {
-          "afijos": [
-            {
-              "ga": 0,
-              "templado": false,
               "texto": "Strength"
             },
             {
@@ -1455,7 +1455,7 @@
             {
               "ga": 0,
               "templado": true,
-              "texto": "Critical Strike Damage (Worldly Finesse - Offensive)"
+              "texto": "Arbiter of Justice Cooldown Reduction (Disciple Efficiency - Resource)"
             },
             {
               "ga": 0,
@@ -1463,7 +1463,7 @@
               "texto": "Transfigure"
             }
           ],
-          "slot": "Gloves"
+          "slot": "Ring 1"
         },
         {
           "afijos": [
