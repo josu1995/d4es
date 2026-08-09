@@ -260,7 +260,14 @@ function disponible(v: (typeof build.variants)[number], id: string): boolean {
               data-panel-pestana="paragon"
               class="hidden grabado rounded-b-lg rounded-tr-lg bg-piedra p-5 sm:p-6"
             >
-              <h2 class="font-titulo text-xl">Tableros de Paragón</h2>
+              <h2 class="font-titulo text-xl">
+                Tableros de Paragón
+                {v.paragon.level !== null && (
+                  <span class="ml-2 align-middle font-sans text-sm font-normal text-humo">
+                    nivel {v.paragon.level}
+                  </span>
+                )}
+              </h2>
               {v.paragon.boards.length > 0 ? (
                 <>
                   <p class="mt-1 text-sm text-ceniza">

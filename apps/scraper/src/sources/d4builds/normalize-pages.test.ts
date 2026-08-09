@@ -127,7 +127,32 @@ function pagina(overrides: Partial<PaginaRaw['porVariante'][number]> = {}): Pagi
         arbol: [],
         paragon: [{ tablero: 'Blood Drinker', glifo: 'Might', nivelGlifo: 100, icono: null }],
         // La fuente muestra HABILIDADES de mercenario, no el mercenario en si.
-        mercenarios: [{ nombre: 'Ground Slam', rol: 'Mercenary', habilidades: [], icono: null }],
+        // El arbol del mercenario tal como lo publica la fuente: se publica ENTERO, con
+        // las disponibles y las cogidas, y solo cuentan las que llevan --active.
+        mercenarios: {
+          etiquetas: ['Mercenary', 'Reinforcement'],
+          nodos: [
+            {
+              nombre: 'Ground Slam',
+              slug: 'ground_slam',
+              clases: ['r1', 'c1', 'skill__tree__item--active', 'ground_slam'],
+              puntos: 1,
+              maximo: 1,
+              x: 100,
+              y: 200,
+            },
+            {
+              nombre: 'Consecrated Shield',
+              slug: 'consecrated_shield',
+              clases: ['r1', 'c2', 'consecrated_shield'],
+              puntos: 0,
+              maximo: 1,
+              x: 300,
+              y: 200,
+            },
+          ],
+        },
+        paragonNivel: 287,
         warPlans: [],
         debug: {},
         ...overrides,
@@ -382,5 +407,34 @@ describe('esGema', () => {
 
   it('una runa que se llame como una gema no se confunde si hay icono', () => {
     expect(esGema({ tipo: 'skull', icono: 'https://x/DIABLO4/Runes/skull.png' })).toBe(false);
+  });
+});
+
+/**
+ * El extractor anterior leia la barra de habilidades del JUGADOR creyendo que era el
+ * mercenario, asi que cada build publicaba una sola "habilidad de mercenario" y a veces
+ * era una habilidad de la clase.
+ */
+describe('mercenario', () => {
+  it('coge solo las habilidades marcadas como cogidas, no el arbol entero', () => {
+    const { build } = enriquecerConPagina(buildBase, pagina(), new Resolver(dict), duenos);
+    const m = build.variants[0]!.mercenary!;
+    expect(m.skills.map((s) => s.enUS)).toEqual(['Ground Slam']);
+    expect(m.ref.enUS).toBe('Raheir, The Shieldbearer');
+  });
+
+  it('sin ninguna cogida no publica mercenario', () => {
+    const p = pagina();
+    for (const n of p.porVariante[0]!.mercenarios.nodos) {
+      n.clases = n.clases.filter((c) => c !== 'skill__tree__item--active');
+    }
+    const { build } = enriquecerConPagina(buildBase, p, new Resolver(dict), duenos);
+    expect(build.variants[0]!.mercenary).toBeNull();
+    expect(build.variants[0]!.completeness.hasMercenary).toBe(false);
+  });
+
+  it('publica el nivel de Paragon que trae la pagina', () => {
+    const { build } = enriquecerConPagina(buildBase, pagina(), new Resolver(dict), duenos);
+    expect(build.variants[0]!.paragon.level).toBe(287);
   });
 });

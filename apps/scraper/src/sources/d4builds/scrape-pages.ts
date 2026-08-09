@@ -5,6 +5,7 @@ import { chromium, type Browser, type Page } from 'playwright';
 import { PATHS } from '../../paths.js';
 import { stableStringify } from '../../util/stable-json.js';
 import { extraerPlanesDeGuerra, type PlanGuerraRaw } from './warplans.js';
+import { extraerMercenarios, type MercenariosRaw } from './mercenarios.js';
 
 /**
  * Extractor de la pagina de cada build. Es la unica via para el equipo y el Paragon:
@@ -81,8 +82,23 @@ export interface VarianteRaw {
   arbol: { categoria: string; nodos: { nombre: string; puntos: number | null }[] }[];
   /** Confirmacion de que sigue siendo canvas, por si algun dia deja de serlo. */
   arbolEsCanvas?: boolean;
-  paragon: { tablero: string; glifo: string | null; nivelGlifo: number | null; icono: string | null }[];
-  mercenarios: { nombre: string; rol: string | null; habilidades: string[]; icono: string | null }[];
+  paragon: {
+    tablero: string;
+    glifo: string | null;
+    nivelGlifo: number | null;
+    icono: string | null;
+    /** Grados que la fuente rota el tablero; sin esto el dibujo sale girado. */
+    giro?: number | null;
+    /** Casillas compactadas: "r2c11:Will:active:enabled". */
+    casillas?: string[];
+  }[];
+  /**
+   * Arbol del mercenario. Antes esto era la barra de habilidades del JUGADOR leida por
+   * error, asi que cada build publicaba una sola "habilidad de mercenario".
+   */
+  mercenarios: MercenariosRaw;
+  /** Nivel de Paragon que publica la cabecera de la pestana. */
+  paragonNivel?: number | null;
   /** Una entrada por actividad, con sus nodos tal cual los publica la fuente. */
   warPlans: PlanGuerraRaw[];
   /** Descripcion cruda de las pestanas cuyo parser aun no esta afinado. */
@@ -185,12 +201,36 @@ async function extraerStats(page: Page): Promise<StatsSlotRaw[]> {
  * que aporta ("2Carnage Str 110*Dex 59..."), con el glifo entre parentesis en un hijo.
  * Hay que despiezarlo, y por eso este parser tiene mas cocina que los demas.
  */
+/**
+ * El nivel de Paragon lo pinta la cabecera de la pestana como un numero suelto. Se coge
+ * el primer numero de tres o mas cifras que no sea parte de un tablero: por debajo de 100
+ * no hay tableros que valgan, asi que no se confunde con el "1" del orden.
+ */
+async function extraerParagonNivel(page: Page): Promise<number | null> {
+  return page.evaluate(() => {
+    const cont = document.querySelector('.builder__content');
+    if (!cont) return null;
+    for (const el of Array.from(cont.querySelectorAll('*'))) {
+      if (el.children.length > 0) continue;
+      if (el.closest('.paragon__board')) continue;
+      const t = (el.textContent ?? '').trim();
+      if (/^\d{2,4}$/.test(t)) {
+        const n = Number(t);
+        if (n >= 10 && n <= 400) return n;
+      }
+    }
+    return null;
+  });
+}
+
 async function extraerParagon(page: Page): Promise<VarianteRaw['paragon']> {
   return page.evaluate(() => {
     const limpiar = (s: string) => s.replace(/\s+/g, ' ').trim();
+
     return Array.from(document.querySelectorAll('.paragon__board')).map((b) => {
-      const nombreEl = b.querySelector('.paragon__board__name');
-      const glifoEl = b.querySelector('.paragon__board__name__glyph');
+      const el = b as HTMLElement;
+      const nombreEl = el.querySelector('.paragon__board__name');
+      const glifoEl = el.querySelector('.paragon__board__name__glyph');
       const textoGlifo = limpiar(glifoEl?.textContent ?? '');
 
       let tablero = limpiar((nombreEl?.textContent ?? '').replace(textoGlifo, ''));
@@ -201,14 +241,34 @@ async function extraerParagon(page: Page): Promise<VarianteRaw['paragon']> {
       tablero = limpiar(tablero);
 
       // El glifo llega entre parentesis; el nivel no siempre se publica.
-      const nivel = textoGlifo.match(/\b(\d+)\b/);
-      const glifo = limpiar(textoGlifo.replace(/[()]/g, '').replace(/\b\d+\b/g, ''));
+      const nivel = textoGlifo.match(/(\d+)/);
+      const glifo = limpiar(textoGlifo.replace(/[()]/g, '').replace(/\d+/g, ''));
+
+      // Cada tablero va rotado en el DOM, y sin ese dato el dibujo sale girado.
+      const giro = el.style.transform.match(/rotate\((-?[\d.]+)deg\)/);
+
+      // Las casillas: fila/columna van en las clases (r2 c11), el tipo en el alt del
+      // icono y "active" dice si la build la recorre. Se guardan compactas —
+      // "r2c11:Will:active"— porque son ~730 por pagina y en JSON con objetos
+      // engordarian el crudo sin aportar nada.
+      const casillas: string[] = [];
+      for (const t of Array.from(el.querySelectorAll('.paragon__board__tile'))) {
+        const clases = Array.from(t.classList);
+        const fila = clases.find((c) => /^r\d+$/.test(c));
+        const col = clases.find((c) => /^c\d+$/.test(c));
+        if (!fila || !col) continue;
+        const tipo = limpiar((t.querySelector('img') as HTMLImageElement | null)?.alt ?? '');
+        const estados = clases.filter((c) => c === 'active' || c === 'enabled' || c === 'radius');
+        casillas.push([fila + col, tipo, ...estados].join(':'));
+      }
 
       return {
         tablero,
         glifo: glifo.length > 0 ? glifo : null,
         nivelGlifo: nivel ? Number(nivel[1]) : null,
         icono: null,
+        giro: giro ? Math.round(Number(giro[1])) : null,
+        casillas,
       };
     });
   });
@@ -224,30 +284,6 @@ async function extraerArbolImposible(page: Page): Promise<boolean> {
   return page.evaluate(() => document.querySelector('.skill-tree-viewer, .viewer-canvas') !== null);
 }
 
-/**
- * Los mercenarios tambien usan un visor de arbol, pero el contratado y su refuerzo si
- * estan en el DOM como iconos (`.build__skill__wrapper`), con el nombre en el alt.
- */
-async function extraerMercenarios(page: Page): Promise<VarianteRaw['mercenarios']> {
-  return page.evaluate(() => {
-    const limpiar = (s: string) => s.replace(/\s+/g, ' ').trim();
-    const ROLES = ['Mercenary', 'Reinforcement'];
-    return Array.from(document.querySelectorAll('.build__skill__wrapper, .builder__skill__wrapper'))
-      .slice(0, 2)
-      .map((w, i) => {
-        const img = w.querySelector('img') as HTMLImageElement | null;
-        // El nombre util esta en el alt del icono; el src da el identificador interno.
-        const nombre = limpiar(img?.alt ?? '');
-        return {
-          nombre,
-          rol: ROLES[i] ?? null,
-          habilidades: [],
-          icono: img?.src ?? null,
-        };
-      })
-      .filter((m) => m.nombre.length > 0);
-  });
-}
 
 async function extraerVariante(page: Page, index: number, etiqueta: string | null): Promise<VarianteRaw> {
   const debug: Record<string, DebugZona> = {};
@@ -266,11 +302,12 @@ async function extraerVariante(page: Page, index: number, etiqueta: string | nul
 
   await abrirPestana(page, 'Paragon');
   const paragon = await extraerParagon(page);
+  const paragonNivel = await extraerParagonNivel(page);
   if (paragon.length === 0) debug['paragon'] = await describirZona(page, '.paragon__board');
 
-  await abrirPestana(page, 'Mercenaries');
+  // Este extractor abre su pestana y espera al arbol por su cuenta.
   const mercenarios = await extraerMercenarios(page);
-  if (mercenarios.length === 0) debug['mercenarios'] = await describirZona(page, '.builder__content > *');
+  if (mercenarios.nodos.length === 0) debug['mercenarios'] = await describirZona(page, '.builder__content > *');
 
   // Este extractor abre la pestana y recorre las siete solapas por su cuenta.
   const warPlans = await extraerPlanesDeGuerra(page);
@@ -278,7 +315,19 @@ async function extraerVariante(page: Page, index: number, etiqueta: string | nul
     debug['warplans'] = await describirZona(page, '.builder__content > *');
   }
 
-  return { index, etiqueta, gear, stats, arbol: [], arbolEsCanvas, paragon, mercenarios, warPlans, debug };
+  return {
+    index,
+    etiqueta,
+    gear,
+    stats,
+    arbol: [],
+    arbolEsCanvas,
+    paragon,
+    paragonNivel,
+    mercenarios,
+    warPlans,
+    debug,
+  };
 }
 
 async function abrirPagina(browser: Browser, url: string): Promise<Page> {
@@ -380,7 +429,7 @@ export async function runScrapePages(
         if (previo.porVariante[0]?.gear.length) resumen.conEquipo++;
         if (previo.porVariante[0]?.paragon.length) resumen.conParagon++;
         if (previo.porVariante[0]?.arbol.length) resumen.conArbol++;
-        if (previo.porVariante[0]?.mercenarios.length) resumen.conMercenarios++;
+        if (previo.porVariante[0]?.mercenarios?.nodos.length) resumen.conMercenarios++;
         continue;
       }
 
@@ -392,7 +441,7 @@ export async function runScrapePages(
         if (v?.gear.length) resumen.conEquipo++;
         if (v?.paragon.length) resumen.conParagon++;
         if (v?.arbol.length) resumen.conArbol++;
-        if (v?.mercenarios.length) resumen.conMercenarios++;
+        if (v?.mercenarios?.nodos.length) resumen.conMercenarios++;
         process.stdout.write(
           `  ${buildId}: ${v?.gear.length ?? 0} piezas, ${v?.stats.length ?? 0} ranuras con afijos, ` +
             `${v?.paragon.length ?? 0} tableros, ${pagina.variantes.length} variantes\n`,

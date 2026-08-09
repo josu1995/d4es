@@ -13,6 +13,7 @@ import {
 import { Resolver, normalizeName } from '@d4es/i18n';
 import type { GearItemRaw, PaginaRaw, StatsSlotRaw, VarianteRaw } from './scrape-pages.js';
 import type { PlanGuerraRaw } from './warplans.js';
+import type { MercenariosRaw } from './mercenarios.js';
 import { hashOf } from '../../util/stable-json.js';
 
 /**
@@ -122,6 +123,51 @@ export function nombreDesdeSlug(slug: string): string {
     .map((p) => (p.length > 0 ? p[0]!.toUpperCase() + p.slice(1) : p))
     .join(' ')
     .trim();
+}
+
+/**
+ * De quien es el arbol de mercenario que publica la build, y que ha cogido en el.
+ *
+ * La fuente no dice el mercenario: pinta su arbol de habilidades. Se deduce del dataset
+ * del catalogo, donde la `class` de una habilidad de mercenario ES el mercenario
+ * ("Varyana, The Berserker Crone"). El dueño con mas habilidades COGIDAS es el
+ * contratado; si aparece un segundo dueño, es el refuerzo.
+ *
+ * Solo cuentan los nodos cogidos (`skill__tree__item--active`): el arbol se publica
+ * entero, con las 57 habilidades disponibles, y sin filtrar saldrian todas como si la
+ * build las llevara.
+ */
+function normalizarMercenario(
+  crudo: MercenariosRaw | undefined,
+  resolver: Resolver,
+  mercenarioPorHabilidad: ReadonlyMap<string, string>,
+): BuildVariant['mercenary'] {
+  const cogidos = (crudo?.nodos ?? []).filter(
+    (n) => n.clases.includes('skill__tree__item--active') && (n.puntos === null || n.puntos > 0),
+  );
+  if (cogidos.length === 0) return null;
+
+  const porDueno = new Map<string, typeof cogidos>();
+  for (const n of cogidos) {
+    const dueno = mercenarioPorHabilidad.get(normalizeName(n.nombre));
+    if (!dueno) continue;
+    if (!porDueno.has(dueno)) porDueno.set(dueno, []);
+    porDueno.get(dueno)!.push(n);
+  }
+  if (porDueno.size === 0) return null;
+
+  const ordenados = [...porDueno.entries()].sort(
+    (a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0]),
+  );
+  const [contratado, habilidades] = ordenados[0]!;
+
+  return {
+    ref: resolver.resolve('mercenary', contratado),
+    skills: habilidades
+      .sort((a, b) => (a.y ?? 0) - (b.y ?? 0) || (a.x ?? 0) - (b.x ?? 0))
+      .map((n) => resolver.resolve('skill', n.nombre)),
+    reinforcement: ordenados[1] ? resolver.resolve('mercenary', ordenados[1][0]) : null,
+  };
 }
 
 /**
@@ -298,23 +344,7 @@ function construirVariante(
         : null,
     }));
 
-  // La pestaña de mercenarios muestra iconos de HABILIDADES, no del mercenario. Sin esto
-  // publicabamos "Bloodthirst" como si fuera un mercenario, cuando es una habilidad de
-  // Varyana. Se deduce el dueño de cada habilidad y ese es el mercenario de verdad.
-  const duenos: string[] = [];
-  for (const m of crudo.mercenarios) {
-    const dueno = mercenarioPorHabilidad.get(normalizeName(m.nombre));
-    if (dueno && !duenos.includes(dueno)) duenos.push(dueno);
-  }
-  const mercenary = duenos[0]
-    ? {
-        ref: resolver.resolve('mercenary', duenos[0]),
-        skills: crudo.mercenarios
-          .filter((m) => mercenarioPorHabilidad.get(normalizeName(m.nombre)) === duenos[0])
-          .map((m) => resolver.resolve('skill', m.nombre)),
-        reinforcement: duenos[1] ? resolver.resolve('mercenary', duenos[1]) : null,
-      }
-    : null;
+  const mercenary = normalizarMercenario(crudo.mercenarios, resolver, mercenarioPorHabilidad);
 
   const warPlan = normalizarPlanes(crudo.warPlans, resolver, nombreDeNodo);
 
@@ -339,7 +369,7 @@ function construirVariante(
       snapshotHash: hashOf(crudo),
     },
     gear,
-    paragon: { level: null, boards },
+    paragon: { level: crudo.paragonNivel ?? null, boards },
     mercenary,
     warPlan,
     completeness: { ...flags, score: computeCompletenessScore(flags) },
