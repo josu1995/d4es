@@ -1,6 +1,6 @@
 {
   "buildId": "7d260966-2b82-4dd6-9507-e5b36ba0f685",
-  "capturadoEn": "2026-08-09T18:24:07.481Z",
+  "capturadoEn": "2026-08-09T18:24:46.678Z",
   "pestanas": [
     "Gear & Skills",
     "Skill Tree",
@@ -1837,7 +1837,7 @@
             {
               "ga": 1,
               "templado": false,
-              "texto": "Maximum Life"
+              "texto": "Critical Strike Damage Multiplier"
             },
             {
               "ga": 0,
@@ -1860,29 +1860,19 @@
               "texto": "Transfigure"
             }
           ],
-          "slot": "Helm"
+          "slot": "Pants"
         },
         {
           "afijos": [
             {
               "ga": 0,
               "templado": false,
-              "texto": "Weapon Type"
-            },
-            {
-              "ga": 0,
-              "templado": false,
-              "texto": "Weapon Damage"
-            },
-            {
-              "ga": 0,
-              "templado": false,
-              "texto": "Intelligence"
-            },
-            {
-              "ga": 1,
-              "templado": false,
               "texto": "All Damage Multiplier"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Critical Strike Chance"
             },
             {
               "ga": 1,
@@ -1891,8 +1881,13 @@
             },
             {
               "ga": 1,
+              "templado": false,
+              "texto": "Vulnerable Damage Multiplier"
+            },
+            {
+              "ga": 1,
               "templado": true,
-              "texto": "Critical Strike Chance (Worldly Destruction - Weapons)"
+              "texto": "Lucky Hit: Up to a 15% Chance to Restore X Primary Resource (Worldly Stability - Resource)"
             },
             {
               "ga": 0,
@@ -1900,42 +1895,7 @@
               "texto": "Transfigure"
             }
           ],
-          "slot": "Weapon"
-        },
-        {
-          "afijos": [
-            {
-              "ga": 1,
-              "templado": false,
-              "texto": "Intelligence"
-            },
-            {
-              "ga": 1,
-              "templado": false,
-              "texto": "Maximum Life"
-            },
-            {
-              "ga": 0,
-              "templado": false,
-              "texto": "Armor"
-            },
-            {
-              "ga": 0,
-              "templado": false,
-              "texto": "Resistance to All Elements"
-            },
-            {
-              "ga": 0,
-              "templado": true,
-              "texto": "Maximum Life (Worldly Endurance - Defensive)"
-            },
-            {
-              "ga": 0,
-              "templado": true,
-              "texto": "Transfigure"
-            }
-          ],
-          "slot": "Chest Armor"
+          "slot": "Ring 2"
         },
         {
           "afijos": [
@@ -1975,76 +1935,6 @@
         {
           "afijos": [
             {
-              "ga": 0,
-              "templado": false,
-              "texto": "Intelligence"
-            },
-            {
-              "ga": 0,
-              "templado": false,
-              "texto": "Ranks to Blood Surge"
-            },
-            {
-              "ga": 1,
-              "templado": false,
-              "texto": "Critical Strike Damage Multiplier"
-            },
-            {
-              "ga": 1,
-              "templado": false,
-              "texto": "Vulnerable Damage Multiplier"
-            },
-            {
-              "ga": 0,
-              "templado": true,
-              "texto": "Damage Per Overpower Stack (Sharpened Finesse - Offensive)"
-            },
-            {
-              "ga": 0,
-              "templado": true,
-              "texto": "Transfigure"
-            }
-          ],
-          "slot": "Gloves"
-        },
-        {
-          "afijos": [
-            {
-              "ga": 1,
-              "templado": false,
-              "texto": "Intelligence"
-            },
-            {
-              "ga": 1,
-              "templado": false,
-              "texto": "Critical Strike Damage Multiplier"
-            },
-            {
-              "ga": 0,
-              "templado": false,
-              "texto": "Armor"
-            },
-            {
-              "ga": 0,
-              "templado": false,
-              "texto": "Resistance to All Elements"
-            },
-            {
-              "ga": 0,
-              "templado": true,
-              "texto": "Maximum Life (Worldly Endurance - Defensive)"
-            },
-            {
-              "ga": 0,
-              "templado": true,
-              "texto": "Transfigure"
-            }
-          ],
-          "slot": "Pants"
-        },
-        {
-          "afijos": [
-            {
               "ga": 1,
               "templado": false,
               "texto": "Intelligence"
@@ -2076,6 +1966,41 @@
             }
           ],
           "slot": "Boots"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Intelligence"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Maximum Life"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Armor"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Resistance to All Elements"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Maximum Life (Worldly Endurance - Defensive)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Chest Armor"
         },
         {
           "afijos": [
@@ -2120,14 +2045,49 @@
         {
           "afijos": [
             {
-              "ga": 0,
+              "ga": 1,
               "templado": false,
-              "texto": "All Damage Multiplier"
+              "texto": "Intelligence"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Maximum Life"
             },
             {
               "ga": 0,
               "templado": false,
-              "texto": "Critical Strike Chance"
+              "texto": "Armor"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Resistance to All Elements"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Maximum Life (Worldly Endurance - Defensive)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Helm"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Intelligence"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Ranks to Blood Surge"
             },
             {
               "ga": 1,
@@ -2140,9 +2100,9 @@
               "texto": "Vulnerable Damage Multiplier"
             },
             {
-              "ga": 1,
+              "ga": 0,
               "templado": true,
-              "texto": "Lucky Hit: Up to a 15% Chance to Restore X Primary Resource (Worldly Stability - Resource)"
+              "texto": "Damage Per Overpower Stack (Sharpened Finesse - Offensive)"
             },
             {
               "ga": 0,
@@ -2150,7 +2110,7 @@
               "texto": "Transfigure"
             }
           ],
-          "slot": "Ring 2"
+          "slot": "Gloves"
         },
         {
           "afijos": [
@@ -2191,6 +2151,46 @@
             }
           ],
           "slot": "Amulet"
+        },
+        {
+          "afijos": [
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Weapon Type"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Weapon Damage"
+            },
+            {
+              "ga": 0,
+              "templado": false,
+              "texto": "Intelligence"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "All Damage Multiplier"
+            },
+            {
+              "ga": 1,
+              "templado": false,
+              "texto": "Critical Strike Damage Multiplier"
+            },
+            {
+              "ga": 1,
+              "templado": true,
+              "texto": "Critical Strike Chance (Worldly Destruction - Weapons)"
+            },
+            {
+              "ga": 0,
+              "templado": true,
+              "texto": "Transfigure"
+            }
+          ],
+          "slot": "Weapon"
         }
       ],
       "warPlans": [
