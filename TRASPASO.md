@@ -37,10 +37,14 @@ la mitad de lo que hay aquí costó horas de averiguar y no es deducible del có
 **Contenido propio**: guía de crafteo de míticos con calculadora de intentos, guía de jefes y llaves
 (con ficha por jefe), materiales, dificultades, «lo que ya no existe», glosario de jerga, 297 fichas
 de únicos con «cómo conseguirlo», buscador global (Pagefind), comparador de variantes, importador de
-Maxroll en el navegador, RSS y página de cambios. **416 páginas**, **77 tests**.
+Maxroll en el navegador, RSS, página de cambios y **lista de lo que falta verificar en el juego**
+(`/estado/verificar`). **417 páginas**, **99 tests**.
 
-**Traducción**: 2.224 términos del diccionario oficial. En las builds queda un **54% sin traducir**
-(casi todo son mejoras de rama del árbol); los afijos van al **55% traducido**.
+**Traducción**: 2.224 términos del diccionario oficial más **618 mejoras de rama** cosechadas de
+Wowhead. Las mejoras de rama, que eran el mayor agujero, pasan de 414 pendientes a **99**. Lo que
+queda sin traducir es sobre todo afijos, aspectos y los nodos de plan de guerra (ver §6).
+
+**Iconos**: ~570 auto-hospedados en `public/iconos` (14 MB), con caída al CDN para lo que falte.
 
 ---
 
