@@ -188,7 +188,7 @@
     "en": "HotA",
     "es": "Grito de guerra"
   },
-  "updatedAt": "2026-08-09T09:42:31.510Z",
+  "updatedAt": "2026-08-09T17:38:37.663Z",
   "variants": [
     {
       "completeness": {
@@ -277,6 +277,7 @@
             "idName": "legendary_generic_116",
             "sno": 1741829
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/resource.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -372,6 +373,7 @@
             "idName": "legendary_generic_118",
             "sno": 1859769
           },
+          "icon": null,
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -458,6 +460,7 @@
             "idName": "legendary_generic_036",
             "sno": 578792
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/defensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -561,6 +564,7 @@
             "idName": "legendary_generic_120",
             "sno": 1860795
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -647,6 +651,7 @@
             "idName": "legendary_generic_009",
             "sno": 578708
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/defensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -750,6 +755,7 @@
             "idName": "legendary_barb_017",
             "sno": 578723
           },
+          "icon": null,
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -853,6 +859,7 @@
             "idName": "legendary_barb_057",
             "sno": 667442
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/resource.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -948,6 +955,7 @@
             "idName": "legendary_generic_014",
             "sno": 578933
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -1043,6 +1051,7 @@
             "idName": "legendary_barb_041",
             "sno": 579653
           },
+          "icon": null,
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -1146,6 +1155,7 @@
             "idName": "legendary_generic_063",
             "sno": 578875
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -1241,6 +1251,7 @@
             "idName": "S05_BSK_Barbarian_001_x2",
             "sno": 2620618
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/utility.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -1266,20 +1277,52 @@
       "mercenary": {
         "ref": {
           "category": "mercenary",
-          "enUS": "Raheir, The Shieldbearer",
+          "enUS": "Subo, The Drunken Archer",
           "esES": null,
           "i18n": "none",
-          "idName": "mercenary__raheir_the_shieldbearer",
+          "idName": "mercenary__subo_the_drunken_archer",
           "sno": null
         },
         "reinforcement": null,
         "skills": [
           {
             "category": "skill",
-            "enUS": "Bastion-v2",
+            "enUS": "Seeker",
             "esES": null,
             "i18n": "none",
-            "idName": "skill__bastion_v2",
+            "idName": "skill__seeker",
+            "sno": null
+          },
+          {
+            "category": "skill",
+            "enUS": "Wire Trap",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__wire_trap",
+            "sno": null
+          },
+          {
+            "category": "skill",
+            "enUS": "Piercing Arrows",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__piercing_arrows",
+            "sno": null
+          },
+          {
+            "category": "skill",
+            "enUS": "Cover Fire",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__cover_fire",
+            "sno": null
+          },
+          {
+            "category": "skill",
+            "enUS": "Opening Fire",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__opening_fire",
             "sno": null
           }
         ]
@@ -1307,7 +1350,36 @@
               "idName": "paragonBoard__starting_board",
               "sno": null
             },
-            "rotation": null
+            "rotation": 0,
+            "tiles": [
+              "r2c11",
+              "r2c12",
+              "r3c12",
+              "r4c12",
+              "r5c10",
+              "r5c12",
+              "r6c10",
+              "r6c12",
+              "r6c13",
+              "r7c10",
+              "r7c11",
+              "r7c12",
+              "r8c10",
+              "r8c11",
+              "r9c10",
+              "r9c11",
+              "r9c12",
+              "r10c12",
+              "r11c12",
+              "r11c13",
+              "r12c12",
+              "r12c13",
+              "r12c14",
+              "r13c13",
+              "r14c11",
+              "r14c12",
+              "r14c13"
+            ]
           },
           {
             "glyph": null,
@@ -1320,10 +1392,26 @@
               "idName": "Paragon_Barb_01",
               "sno": null
             },
-            "rotation": null
+            "rotation": 0,
+            "tiles": [
+              "r16c6",
+              "r17c5",
+              "r17c6",
+              "r18c5",
+              "r19c3",
+              "r19c4",
+              "r19c5",
+              "r19c6",
+              "r19c7",
+              "r20c7",
+              "r20c8",
+              "r20c9",
+              "r20c10",
+              "r20c11"
+            ]
           }
         ],
-        "level": null
+        "level": 42
       },
       "runewords": [],
       "skills": [
@@ -1577,11 +1665,11 @@
       ],
       "source": {
         "author": "Rob2628",
-        "capturedAt": "2026-08-09T09:42:31.510Z",
+        "capturedAt": "2026-08-09T17:38:37.663Z",
         "externalId": "62257b37-e7e6-4287-a10c-e7d304eff794",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "f7fde5037cc9cf81fde6d064df5a5d5097cb3b5fe34291611a81d1d67978eb05",
+        "snapshotHash": "f9344d6773fb8b59a3924cd0b57f8ba79f2aed70fea4835379371e771d3efa2b",
         "url": "https://d4builds.gg/builds/62257b37-e7e6-4287-a10c-e7d304eff794/?var=0",
         "variantIndex": 0,
         "variantLabel": "Standard Build"

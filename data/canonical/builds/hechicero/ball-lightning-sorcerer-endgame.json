@@ -387,7 +387,7 @@
     "en": "Ball Lightning",
     "es": "Bola de rayos"
   },
-  "updatedAt": "2026-08-09T09:22:59.822Z",
+  "updatedAt": "2026-08-09T17:19:13.790Z",
   "variants": [
     {
       "completeness": {
@@ -476,6 +476,7 @@
             "idName": "x1_legendary_sorc_141_x2",
             "sno": 2574612
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -564,6 +565,7 @@
             }
           ],
           "aspect": null,
+          "icon": "https://sunderarmor.com/DIABLO4/Uniques/2/esu's_heirloom.png",
           "item": {
             "category": "unique",
             "enUS": "Esu's Heirloom",
@@ -650,6 +652,7 @@
             }
           ],
           "aspect": null,
+          "icon": "https://sunderarmor.com/DIABLO4/Uniques/2/raiment_of_the_infinite.png",
           "item": {
             "category": "unique",
             "enUS": "Raiment of the Infinite",
@@ -760,6 +763,7 @@
             "idName": "legendary_sorc_124_x2",
             "sno": 2574571
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -846,6 +850,7 @@
             "idName": "legendary_sorc_120_x2",
             "sno": 2576064
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/defensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -942,6 +947,7 @@
             }
           ],
           "aspect": null,
+          "icon": "https://sunderarmor.com/DIABLO4/Uniques/2/strike_of_stormhorn.png",
           "item": {
             "category": "unique",
             "enUS": "Strike of Stormhorn",
@@ -1037,6 +1043,7 @@
             }
           ],
           "aspect": null,
+          "icon": "https://sunderarmor.com/DIABLO4/Uniques/2/tibault's_will.png",
           "item": {
             "category": "unique",
             "enUS": "Tibault's Will",
@@ -1140,6 +1147,7 @@
             }
           ],
           "aspect": null,
+          "icon": "https://sunderarmor.com/DIABLO4/Uniques/2/galvanic_azurite.png",
           "item": {
             "category": "unique",
             "enUS": "Galvanic Azurite",
@@ -1235,6 +1243,7 @@
             }
           ],
           "aspect": null,
+          "icon": "https://sunderarmor.com/DIABLO4/Uniques/2/thundergod's_blessing.png",
           "item": {
             "category": "unique",
             "enUS": "Thundergod's Blessing",
@@ -1337,6 +1346,7 @@
             "idName": "legendary_sorc_117_x2",
             "sno": 2577860
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -1370,20 +1380,52 @@
       "mercenary": {
         "ref": {
           "category": "mercenary",
-          "enUS": "Varyana, The Berserker Crone",
+          "enUS": "Subo, The Drunken Archer",
           "esES": null,
           "i18n": "none",
-          "idName": "mercenary__varyana_the_berserker_crone",
+          "idName": "mercenary__subo_the_drunken_archer",
           "sno": null
         },
         "reinforcement": null,
         "skills": [
           {
             "category": "skill",
-            "enUS": "Bloodthirst",
+            "enUS": "Seeker",
             "esES": null,
             "i18n": "none",
-            "idName": "skill__bloodthirst",
+            "idName": "skill__seeker",
+            "sno": null
+          },
+          {
+            "category": "skill",
+            "enUS": "Wire Trap",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__wire_trap",
+            "sno": null
+          },
+          {
+            "category": "skill",
+            "enUS": "Ready At Hand",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__ready_at_hand",
+            "sno": null
+          },
+          {
+            "category": "skill",
+            "enUS": "Cover Fire",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__cover_fire",
+            "sno": null
+          },
+          {
+            "category": "skill",
+            "enUS": "Opening Fire",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__opening_fire",
             "sno": null
           }
         ]
@@ -1411,7 +1453,38 @@
               "idName": "paragonBoard__starting_board",
               "sno": null
             },
-            "rotation": null
+            "rotation": 0,
+            "tiles": [
+              "r2c11",
+              "r2c12",
+              "r3c12",
+              "r4c12",
+              "r5c10",
+              "r5c12",
+              "r6c10",
+              "r6c12",
+              "r7c10",
+              "r7c11",
+              "r7c12",
+              "r8c11",
+              "r9c9",
+              "r9c10",
+              "r9c11",
+              "r9c12",
+              "r10c9",
+              "r10c12",
+              "r11c9",
+              "r11c12",
+              "r11c13",
+              "r12c9",
+              "r12c10",
+              "r12c12",
+              "r12c13",
+              "r13c13",
+              "r14c11",
+              "r14c12",
+              "r14c13"
+            ]
           },
           {
             "glyph": {
@@ -1434,7 +1507,51 @@
               "idName": "Paragon_Sorc_02",
               "sno": null
             },
-            "rotation": null
+            "rotation": 180,
+            "tiles": [
+              "r2c11",
+              "r3c11",
+              "r3c12",
+              "r3c13",
+              "r4c13",
+              "r4c14",
+              "r4c15",
+              "r4c16",
+              "r5c13",
+              "r5c14",
+              "r6c13",
+              "r7c9",
+              "r7c10",
+              "r7c11",
+              "r7c12",
+              "r7c13",
+              "r8c9",
+              "r8c13",
+              "r9c9",
+              "r9c10",
+              "r9c13",
+              "r10c10",
+              "r10c13",
+              "r11c2",
+              "r11c3",
+              "r11c4",
+              "r11c13",
+              "r11c14",
+              "r12c4",
+              "r12c13",
+              "r13c4",
+              "r13c5",
+              "r13c6",
+              "r13c7",
+              "r13c8",
+              "r13c9",
+              "r13c10",
+              "r13c11",
+              "r13c12",
+              "r13c13",
+              "r14c4",
+              "r15c4"
+            ]
           },
           {
             "glyph": {
@@ -1457,7 +1574,59 @@
               "idName": "Paragon_Sorc_03",
               "sno": null
             },
-            "rotation": null
+            "rotation": 90,
+            "tiles": [
+              "r4c15",
+              "r4c16",
+              "r5c15",
+              "r6c14",
+              "r6c15",
+              "r7c5",
+              "r7c6",
+              "r7c7",
+              "r7c8",
+              "r7c13",
+              "r7c14",
+              "r8c6",
+              "r8c8",
+              "r8c13",
+              "r9c8",
+              "r9c11",
+              "r9c12",
+              "r9c13",
+              "r10c8",
+              "r10c13",
+              "r11c2",
+              "r11c7",
+              "r11c8",
+              "r11c13",
+              "r12c2",
+              "r12c3",
+              "r12c4",
+              "r12c5",
+              "r12c8",
+              "r12c13",
+              "r13c5",
+              "r13c8",
+              "r13c11",
+              "r13c12",
+              "r13c13",
+              "r14c5",
+              "r14c8",
+              "r14c11",
+              "r15c5",
+              "r15c6",
+              "r15c7",
+              "r15c8",
+              "r15c9",
+              "r15c10",
+              "r15c11",
+              "r16c11",
+              "r17c11",
+              "r18c11",
+              "r19c11",
+              "r20c11"
+            ]
           },
           {
             "glyph": {
@@ -1480,7 +1649,77 @@
               "idName": "Paragon_Sorc_08",
               "sno": null
             },
-            "rotation": null
+            "rotation": 90,
+            "tiles": [
+              "r3c7",
+              "r4c7",
+              "r4c8",
+              "r4c9",
+              "r5c8",
+              "r5c9",
+              "r6c6",
+              "r6c7",
+              "r6c8",
+              "r7c2",
+              "r7c3",
+              "r7c4",
+              "r7c6",
+              "r8c2",
+              "r8c4",
+              "r8c5",
+              "r8c6",
+              "r8c12",
+              "r8c13",
+              "r9c2",
+              "r9c4",
+              "r9c5",
+              "r9c6",
+              "r9c7",
+              "r9c8",
+              "r9c12",
+              "r9c13",
+              "r9c14",
+              "r10c2",
+              "r10c8",
+              "r10c9",
+              "r10c10",
+              "r10c11",
+              "r10c12",
+              "r11c2",
+              "r11c10",
+              "r11c12",
+              "r11c13",
+              "r11c20",
+              "r12c8",
+              "r12c9",
+              "r12c10",
+              "r12c13",
+              "r12c16",
+              "r12c20",
+              "r13c8",
+              "r13c9",
+              "r13c13",
+              "r13c14",
+              "r13c15",
+              "r13c16",
+              "r13c17",
+              "r13c18",
+              "r13c19",
+              "r13c20",
+              "r14c9",
+              "r14c13",
+              "r15c13",
+              "r16c12",
+              "r16c13",
+              "r16c14",
+              "r16c15",
+              "r17c12",
+              "r17c15",
+              "r17c16",
+              "r18c16",
+              "r18c17",
+              "r18c18"
+            ]
           },
           {
             "glyph": {
@@ -1503,10 +1742,67 @@
               "idName": "Paragon_Sorc_01",
               "sno": null
             },
-            "rotation": null
+            "rotation": 90,
+            "tiles": [
+              "r3c16",
+              "r4c16",
+              "r5c16",
+              "r6c13",
+              "r6c14",
+              "r6c15",
+              "r6c16",
+              "r6c17",
+              "r6c18",
+              "r6c19",
+              "r6c20",
+              "r7c13",
+              "r7c20",
+              "r8c6",
+              "r8c7",
+              "r8c13",
+              "r8c20",
+              "r9c7",
+              "r9c8",
+              "r9c12",
+              "r9c13",
+              "r9c20",
+              "r10c8",
+              "r10c9",
+              "r10c12",
+              "r10c20",
+              "r11c9",
+              "r11c12",
+              "r11c20",
+              "r12c8",
+              "r12c9",
+              "r12c10",
+              "r12c12",
+              "r13c7",
+              "r13c8",
+              "r13c10",
+              "r13c11",
+              "r13c12",
+              "r13c13",
+              "r14c7",
+              "r14c13",
+              "r15c6",
+              "r15c7",
+              "r15c13",
+              "r15c14",
+              "r15c15",
+              "r16c6",
+              "r16c14",
+              "r17c5",
+              "r17c6",
+              "r17c14",
+              "r18c3",
+              "r18c4",
+              "r18c5",
+              "r19c3"
+            ]
           }
         ],
-        "level": null
+        "level": 248
       },
       "runewords": [],
       "skills": [
@@ -1767,11 +2063,11 @@
       ],
       "source": {
         "author": null,
-        "capturedAt": "2026-08-09T09:22:59.822Z",
+        "capturedAt": "2026-08-09T17:19:13.790Z",
         "externalId": "0e5a63c6-49fa-4992-a65c-33f50db9bd4e",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "34e124adc7554874650ada95a96a69a6e6bebba7e8a5762f9bc4bf2122feef92",
+        "snapshotHash": "93384fb90bb3cbf7b95e40034b270b13d77063b98344eedd468675f72bd2b195",
         "url": "https://d4builds.gg/builds/0e5a63c6-49fa-4992-a65c-33f50db9bd4e/?var=0",
         "variantIndex": 0,
         "variantLabel": "Standard Build"

@@ -203,7 +203,7 @@
     "en": "Whirlwind",
     "es": "Torbellino"
   },
-  "updatedAt": "2026-08-09T09:28:02.013Z",
+  "updatedAt": "2026-08-09T17:24:18.786Z",
   "variants": [
     {
       "completeness": {
@@ -226,6 +226,7 @@
             "idName": "legendary_paladin_085",
             "sno": 2484503
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/defensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -255,6 +256,7 @@
             "idName": "S05_BSK_Barbarian_001_x2",
             "sno": 2620618
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/utility.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -275,6 +277,7 @@
             "idName": "legendary_generic_036",
             "sno": 578792
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/defensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -312,6 +315,7 @@
             "idName": "legendary_generic_135_x2",
             "sno": 2574509
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -332,6 +336,7 @@
             "idName": "legendary_generic_117",
             "sno": 1746093
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/defensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -369,6 +374,7 @@
             "idName": "legendary_barb_008_x2",
             "sno": 2558637
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/defensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -406,6 +412,7 @@
             "idName": "legendary_barb_022",
             "sno": 578707
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/resource.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -435,6 +442,7 @@
             "idName": "legendary_generic_067",
             "sno": 578865
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -464,6 +472,7 @@
             "idName": "legendary_druid_049_x2",
             "sno": 2542658
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -493,6 +502,7 @@
             "idName": "legendary_generic_063",
             "sno": 578875
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -530,6 +540,7 @@
             "idName": "legendary_barb_003_x2",
             "sno": 2553966
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -555,20 +566,52 @@
       "mercenary": {
         "ref": {
           "category": "mercenary",
-          "enUS": "Aldkin, The Cursed Child",
+          "enUS": "Subo, The Drunken Archer",
           "esES": null,
           "i18n": "none",
-          "idName": "mercenary__aldkin_the_cursed_child",
+          "idName": "mercenary__subo_the_drunken_archer",
           "sno": null
         },
         "reinforcement": null,
         "skills": [
           {
             "category": "skill",
-            "enUS": "Field of Languish",
+            "enUS": "Seeker",
             "esES": null,
             "i18n": "none",
-            "idName": "skill__field_of_languish",
+            "idName": "skill__seeker",
+            "sno": null
+          },
+          {
+            "category": "skill",
+            "enUS": "Wire Trap",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__wire_trap",
+            "sno": null
+          },
+          {
+            "category": "skill",
+            "enUS": "Ready At Hand",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__ready_at_hand",
+            "sno": null
+          },
+          {
+            "category": "skill",
+            "enUS": "Cover Fire",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__cover_fire",
+            "sno": null
+          },
+          {
+            "category": "skill",
+            "enUS": "Opening Fire",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__opening_fire",
             "sno": null
           }
         ]
@@ -596,7 +639,35 @@
               "idName": "paragonBoard__starting_board",
               "sno": null
             },
-            "rotation": null
+            "rotation": 0,
+            "tiles": [
+              "r2c11",
+              "r2c12",
+              "r3c12",
+              "r4c12",
+              "r5c10",
+              "r5c12",
+              "r6c10",
+              "r6c12",
+              "r7c10",
+              "r7c11",
+              "r7c12",
+              "r7c13",
+              "r7c14",
+              "r8c10",
+              "r8c11",
+              "r8c13",
+              "r9c10",
+              "r9c13",
+              "r10c12",
+              "r10c13",
+              "r11c13",
+              "r12c13",
+              "r13c13",
+              "r14c11",
+              "r14c12",
+              "r14c13"
+            ]
           },
           {
             "glyph": null,
@@ -609,7 +680,37 @@
               "idName": "Paragon_Barb_10",
               "sno": null
             },
-            "rotation": null
+            "rotation": 270,
+            "tiles": [
+              "r10c6",
+              "r11c2",
+              "r11c5",
+              "r11c6",
+              "r12c2",
+              "r12c6",
+              "r13c2",
+              "r13c3",
+              "r13c4",
+              "r13c5",
+              "r13c6",
+              "r13c7",
+              "r13c8",
+              "r13c9",
+              "r14c9",
+              "r14c11",
+              "r15c9",
+              "r15c11",
+              "r16c8",
+              "r16c9",
+              "r16c10",
+              "r16c11",
+              "r17c9",
+              "r18c9",
+              "r19c9",
+              "r20c9",
+              "r20c10",
+              "r20c11"
+            ]
           },
           {
             "glyph": {
@@ -632,7 +733,45 @@
               "idName": "Paragon_Barb_03",
               "sno": null
             },
-            "rotation": null
+            "rotation": 90,
+            "tiles": [
+              "r8c13",
+              "r9c11",
+              "r9c12",
+              "r9c13",
+              "r10c12",
+              "r10c13",
+              "r11c2",
+              "r11c7",
+              "r11c8",
+              "r11c13",
+              "r12c2",
+              "r12c3",
+              "r12c8",
+              "r12c11",
+              "r12c12",
+              "r12c13",
+              "r13c3",
+              "r13c4",
+              "r13c5",
+              "r13c8",
+              "r13c11",
+              "r14c5",
+              "r14c8",
+              "r14c11",
+              "r15c5",
+              "r15c6",
+              "r15c7",
+              "r15c8",
+              "r15c9",
+              "r15c10",
+              "r15c11",
+              "r16c11",
+              "r17c11",
+              "r18c11",
+              "r19c11",
+              "r20c11"
+            ]
           },
           {
             "glyph": null,
@@ -645,7 +784,34 @@
               "idName": "Paragon_Barb_08",
               "sno": null
             },
-            "rotation": null
+            "rotation": 90,
+            "tiles": [
+              "r11c20",
+              "r12c20",
+              "r13c16",
+              "r13c17",
+              "r13c18",
+              "r13c19",
+              "r13c20",
+              "r14c16",
+              "r15c15",
+              "r15c16",
+              "r16c12",
+              "r16c13",
+              "r16c14",
+              "r16c15",
+              "r17c13",
+              "r17c15",
+              "r17c16",
+              "r18c13",
+              "r18c16",
+              "r18c17",
+              "r18c18",
+              "r19c13",
+              "r20c11",
+              "r20c12",
+              "r20c13"
+            ]
           },
           {
             "glyph": null,
@@ -658,10 +824,24 @@
               "idName": "Paragon_Barb_02",
               "sno": null
             },
-            "rotation": null
+            "rotation": 90,
+            "tiles": [
+              "r2c11",
+              "r3c9",
+              "r3c10",
+              "r3c11",
+              "r4c9",
+              "r5c9",
+              "r6c9",
+              "r7c9",
+              "r8c9",
+              "r9c9",
+              "r9c10",
+              "r10c10"
+            ]
           }
         ],
-        "level": null
+        "level": 131
       },
       "runewords": [],
       "skills": [
@@ -908,11 +1088,11 @@
       ],
       "source": {
         "author": "Rob2628",
-        "capturedAt": "2026-08-09T09:28:02.013Z",
+        "capturedAt": "2026-08-09T17:24:18.786Z",
         "externalId": "2c273831-6609-4414-8486-6da72c903e83",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "6c38ef15f0b9dbe1afb3454a5dafbe4478287f409a7468ad2a8bb453a66dde71",
+        "snapshotHash": "92272d11eb1f6a66060ad1122dabed762870df2b9ab91552501159eca19015b8",
         "url": "https://d4builds.gg/builds/2c273831-6609-4414-8486-6da72c903e83/?var=0",
         "variantIndex": 0,
         "variantLabel": "Standard Build"

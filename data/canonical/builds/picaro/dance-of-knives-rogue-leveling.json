@@ -173,7 +173,7 @@
     "en": "Dance of Knives",
     "es": "Danza de cuchillos"
   },
-  "updatedAt": "2026-08-09T09:55:46.025Z",
+  "updatedAt": "2026-08-09T17:52:09.138Z",
   "variants": [
     {
       "completeness": {
@@ -196,6 +196,7 @@
             "idName": "legendary_generic_063",
             "sno": 578875
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -225,6 +226,7 @@
             "idName": "legendary_rogue_130",
             "sno": 1968381
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/mobility.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -245,6 +247,7 @@
             "idName": "legendary_generic_011",
             "sno": 578842
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/defensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -282,6 +285,7 @@
             "idName": "legendary_generic_114",
             "sno": 1485369
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -302,6 +306,7 @@
             "idName": "legendary_generic_036",
             "sno": 578792
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/defensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -339,6 +344,7 @@
             "idName": "legendary_rogue_004",
             "sno": 578860
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/defensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -376,6 +382,7 @@
             "idName": "legendary_generic_067",
             "sno": 578865
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -405,6 +412,7 @@
             "idName": "legendary_rogue_150_x2",
             "sno": 2577945
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -434,6 +442,7 @@
             "idName": "legendary_generic_135_x2",
             "sno": 2574509
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -467,20 +476,52 @@
       "mercenary": {
         "ref": {
           "category": "mercenary",
-          "enUS": "Raheir, The Shieldbearer",
+          "enUS": "Subo, The Drunken Archer",
           "esES": null,
           "i18n": "none",
-          "idName": "mercenary__raheir_the_shieldbearer",
+          "idName": "mercenary__subo_the_drunken_archer",
           "sno": null
         },
         "reinforcement": null,
         "skills": [
           {
             "category": "skill",
-            "enUS": "Bastion-v2",
+            "enUS": "Seeker",
             "esES": null,
             "i18n": "none",
-            "idName": "skill__bastion_v2",
+            "idName": "skill__seeker",
+            "sno": null
+          },
+          {
+            "category": "skill",
+            "enUS": "Wire Trap",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__wire_trap",
+            "sno": null
+          },
+          {
+            "category": "skill",
+            "enUS": "Ready At Hand",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__ready_at_hand",
+            "sno": null
+          },
+          {
+            "category": "skill",
+            "enUS": "Cover Fire",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__cover_fire",
+            "sno": null
+          },
+          {
+            "category": "skill",
+            "enUS": "Opening Fire",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__opening_fire",
             "sno": null
           }
         ]
@@ -498,10 +539,11 @@
               "idName": "paragonBoard__starting_board",
               "sno": null
             },
-            "rotation": null
+            "rotation": 0,
+            "tiles": []
           }
         ],
-        "level": null
+        "level": 336
       },
       "runewords": [],
       "skills": [
@@ -755,11 +797,11 @@
       ],
       "source": {
         "author": "Rob2628",
-        "capturedAt": "2026-08-09T09:55:46.025Z",
+        "capturedAt": "2026-08-09T17:52:09.138Z",
         "externalId": "9479f69b-b519-40ab-8340-047efb206b3e",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "066cd71b3a9b13a034baae7a4b2b52aac567e3d3865aac75b72f23067d350025",
+        "snapshotHash": "e0e1c1dfbf4c59b82fb101ac498a79716db80cac0b93f3a737e8d45885db1bae",
         "url": "https://d4builds.gg/builds/9479f69b-b519-40ab-8340-047efb206b3e/?var=0",
         "variantIndex": 0,
         "variantLabel": "Standard Build"

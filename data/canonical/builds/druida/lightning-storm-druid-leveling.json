@@ -188,7 +188,7 @@
     "en": "Lightning Storm",
     "es": "Tormenta de rayos"
   },
-  "updatedAt": "2026-08-09T09:23:37.905Z",
+  "updatedAt": "2026-08-09T17:19:51.164Z",
   "variants": [
     {
       "completeness": {
@@ -277,6 +277,7 @@
             "idName": "legendary_druid_049_x2",
             "sno": 2542658
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -372,6 +373,7 @@
             "idName": "legendary_druid_059_x2",
             "sno": 2540447
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/utility.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -458,6 +460,7 @@
             "idName": "legendary_rogue_104",
             "sno": 1184010
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/defensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -561,6 +564,7 @@
             "idName": "legendary_generic_027",
             "sno": 578845
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -647,6 +651,7 @@
             "idName": "legendary_druid_028_x2",
             "sno": 2620614
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/utility.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -750,6 +755,7 @@
             "idName": "legendary_druid_100",
             "sno": 1206400
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/defensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -853,6 +859,7 @@
             "idName": "legendary_druid_005",
             "sno": 578807
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/resource.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -948,6 +955,7 @@
             "idName": "legendary_generic_129_x2",
             "sno": 2584046
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/resource.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -973,20 +981,52 @@
       "mercenary": {
         "ref": {
           "category": "mercenary",
-          "enUS": "Varyana, The Berserker Crone",
+          "enUS": "Raheir, The Shieldbearer",
           "esES": null,
           "i18n": "none",
-          "idName": "mercenary__varyana_the_berserker_crone",
+          "idName": "mercenary__raheir_the_shieldbearer",
           "sno": null
         },
         "reinforcement": null,
         "skills": [
           {
             "category": "skill",
-            "enUS": "Bloodthirst",
+            "enUS": "Valiance",
             "esES": null,
             "i18n": "none",
-            "idName": "skill__bloodthirst",
+            "idName": "skill__valiance",
+            "sno": null
+          },
+          {
+            "category": "skill",
+            "enUS": "Shield Charge",
+            "esES": "Carga con escudo",
+            "i18n": "wowhead-es",
+            "idName": "curated_shield_charge",
+            "sno": 2466077
+          },
+          {
+            "category": "skill",
+            "enUS": "Raheir's Guard",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__raheir_s_guard",
+            "sno": null
+          },
+          {
+            "category": "skill",
+            "enUS": "Provoke",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__provoke",
+            "sno": null
+          },
+          {
+            "category": "skill",
+            "enUS": "Mocking Lure",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__mocking_lure",
             "sno": null
           }
         ]
@@ -1014,7 +1054,32 @@
               "idName": "paragonBoard__starting_board",
               "sno": null
             },
-            "rotation": null
+            "rotation": 0,
+            "tiles": [
+              "r3c12",
+              "r4c12",
+              "r5c10",
+              "r5c12",
+              "r6c8",
+              "r6c9",
+              "r6c10",
+              "r6c12",
+              "r7c10",
+              "r7c11",
+              "r7c12",
+              "r8c10",
+              "r8c11",
+              "r9c9",
+              "r9c10",
+              "r10c9",
+              "r11c9",
+              "r12c9",
+              "r12c10",
+              "r13c9",
+              "r14c9",
+              "r14c10",
+              "r14c11"
+            ]
           },
           {
             "glyph": null,
@@ -1027,7 +1092,39 @@
               "idName": "Paragon_Druid_01",
               "sno": null
             },
-            "rotation": null
+            "rotation": 0,
+            "tiles": [
+              "r11c16",
+              "r11c17",
+              "r11c18",
+              "r11c19",
+              "r11c20",
+              "r12c16",
+              "r13c16",
+              "r14c15",
+              "r14c16",
+              "r15c14",
+              "r15c15",
+              "r16c6",
+              "r16c14",
+              "r17c5",
+              "r17c6",
+              "r17c14",
+              "r18c5",
+              "r18c13",
+              "r18c14",
+              "r19c5",
+              "r19c6",
+              "r19c7",
+              "r19c8",
+              "r19c9",
+              "r19c13",
+              "r20c9",
+              "r20c10",
+              "r20c11",
+              "r20c12",
+              "r20c13"
+            ]
           },
           {
             "glyph": null,
@@ -1040,10 +1137,29 @@
               "idName": "Paragon_Druid_07",
               "sno": null
             },
-            "rotation": null
+            "rotation": 180,
+            "tiles": [
+              "r9c15",
+              "r10c14",
+              "r10c15",
+              "r10c16",
+              "r10c17",
+              "r11c10",
+              "r11c11",
+              "r11c12",
+              "r11c13",
+              "r11c14",
+              "r11c17",
+              "r11c18",
+              "r11c19",
+              "r11c20",
+              "r12c9",
+              "r12c10",
+              "r13c9"
+            ]
           }
         ],
-        "level": null
+        "level": 72
       },
       "runewords": [],
       "skills": [
@@ -1282,11 +1398,11 @@
       ],
       "source": {
         "author": "Rob2628",
-        "capturedAt": "2026-08-09T09:23:37.905Z",
+        "capturedAt": "2026-08-09T17:19:51.164Z",
         "externalId": "10de5d53-31d3-4d2e-a843-52f6f3f7e4c1",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "b8f9db69f333b1687bd02807aee0dfbd7740498ec52e4ff62b3d7001fb229ebd",
+        "snapshotHash": "093a7f126dd923cf57275a09a3831fb9d0961c35289848a63996ab0ef6f2998a",
         "url": "https://d4builds.gg/builds/10de5d53-31d3-4d2e-a843-52f6f3f7e4c1/?var=0",
         "variantIndex": 0,
         "variantLabel": "Standard Build"

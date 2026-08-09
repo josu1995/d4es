@@ -364,7 +364,7 @@
     "en": "Meteor",
     "es": "Meteorito"
   },
-  "updatedAt": "2026-08-09T09:51:59.436Z",
+  "updatedAt": "2026-08-09T17:48:28.172Z",
   "variants": [
     {
       "completeness": {
@@ -453,6 +453,7 @@
             "idName": "legendary_sorc_139_x2",
             "sno": 2575190
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -541,6 +542,7 @@
             }
           ],
           "aspect": null,
+          "icon": "https://sunderarmor.com/DIABLO4/Uniques/2/esu's_heirloom.png",
           "item": {
             "category": "unique",
             "enUS": "Esu's Heirloom",
@@ -627,6 +629,7 @@
             }
           ],
           "aspect": null,
+          "icon": "https://sunderarmor.com/DIABLO4/Uniques/2/raiment_of_the_infinite.png",
           "item": {
             "category": "unique",
             "enUS": "Raiment of the Infinite",
@@ -737,6 +740,7 @@
             "idName": "legendary_sorc_043_x2",
             "sno": 1040973
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -816,6 +820,7 @@
             }
           ],
           "aspect": null,
+          "icon": "https://sunderarmor.com/DIABLO4/Uniques/2/starfall_coronet.png",
           "item": {
             "category": "unique",
             "enUS": "Starfall Coronet",
@@ -919,6 +924,7 @@
             }
           ],
           "aspect": null,
+          "icon": "https://sunderarmor.com/DIABLO4/Uniques/2/tibault's_will.png",
           "item": {
             "category": "unique",
             "enUS": "Tibault's Will",
@@ -1029,6 +1035,7 @@
             "idName": "legendary_sorc_008_x2",
             "sno": 2575135
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -1117,6 +1124,7 @@
             }
           ],
           "aspect": null,
+          "icon": "https://sunderarmor.com/DIABLO4/Uniques/2/ring_of_starless_skies.png",
           "item": {
             "category": "unique",
             "enUS": "Ring of Starless Skies",
@@ -1153,6 +1161,7 @@
             "idName": "legendary_sorc_116_x2",
             "sno": 2574550
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -1186,20 +1195,52 @@
       "mercenary": {
         "ref": {
           "category": "mercenary",
-          "enUS": "Aldkin, The Cursed Child",
+          "enUS": "Subo, The Drunken Archer",
           "esES": null,
           "i18n": "none",
-          "idName": "mercenary__aldkin_the_cursed_child",
+          "idName": "mercenary__subo_the_drunken_archer",
           "sno": null
         },
         "reinforcement": null,
         "skills": [
           {
             "category": "skill",
-            "enUS": "Field of Languish",
+            "enUS": "Seeker",
             "esES": null,
             "i18n": "none",
-            "idName": "skill__field_of_languish",
+            "idName": "skill__seeker",
+            "sno": null
+          },
+          {
+            "category": "skill",
+            "enUS": "Molotov",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__molotov",
+            "sno": null
+          },
+          {
+            "category": "skill",
+            "enUS": "Scorched Earth",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__scorched_earth",
+            "sno": null
+          },
+          {
+            "category": "skill",
+            "enUS": "Snipe",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__snipe",
+            "sno": null
+          },
+          {
+            "category": "skill",
+            "enUS": "Incendiary Bolt",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__incendiary_bolt",
             "sno": null
           }
         ]
@@ -1227,7 +1268,45 @@
               "idName": "paragonBoard__starting_board",
               "sno": null
             },
-            "rotation": null
+            "rotation": 0,
+            "tiles": [
+              "r2c11",
+              "r2c12",
+              "r3c12",
+              "r4c9",
+              "r4c10",
+              "r4c12",
+              "r4c13",
+              "r5c9",
+              "r5c10",
+              "r5c12",
+              "r5c13",
+              "r6c9",
+              "r6c10",
+              "r6c12",
+              "r6c13",
+              "r7c10",
+              "r7c11",
+              "r7c12",
+              "r7c13",
+              "r8c10",
+              "r8c13",
+              "r9c10",
+              "r9c13",
+              "r10c10",
+              "r10c13",
+              "r11c9",
+              "r11c10",
+              "r11c13",
+              "r12c9",
+              "r12c10",
+              "r12c12",
+              "r12c13",
+              "r13c13",
+              "r14c11",
+              "r14c12",
+              "r14c13"
+            ]
           },
           {
             "glyph": {
@@ -1250,7 +1329,63 @@
               "idName": "Paragon_Sorc_01",
               "sno": null
             },
-            "rotation": null
+            "rotation": 90,
+            "tiles": [
+              "r2c11",
+              "r2c12",
+              "r2c13",
+              "r2c14",
+              "r2c15",
+              "r3c16",
+              "r4c16",
+              "r5c16",
+              "r6c13",
+              "r6c14",
+              "r6c15",
+              "r6c16",
+              "r6c17",
+              "r6c18",
+              "r6c19",
+              "r6c20",
+              "r7c13",
+              "r7c20",
+              "r8c6",
+              "r8c7",
+              "r8c13",
+              "r8c20",
+              "r9c7",
+              "r9c8",
+              "r9c12",
+              "r9c13",
+              "r9c20",
+              "r10c8",
+              "r10c9",
+              "r10c10",
+              "r10c11",
+              "r10c12",
+              "r10c20",
+              "r11c12",
+              "r11c20",
+              "r12c12",
+              "r13c10",
+              "r13c11",
+              "r13c12",
+              "r14c7",
+              "r14c10",
+              "r14c12",
+              "r14c13",
+              "r15c6",
+              "r15c7",
+              "r15c8",
+              "r15c9",
+              "r15c10",
+              "r15c13",
+              "r15c14",
+              "r15c15",
+              "r16c6",
+              "r16c14",
+              "r17c14"
+            ]
           },
           {
             "glyph": {
@@ -1273,7 +1408,61 @@
               "idName": "Paragon_Sorc_02",
               "sno": null
             },
-            "rotation": null
+            "rotation": 0,
+            "tiles": [
+              "r2c11",
+              "r3c11",
+              "r4c11",
+              "r4c12",
+              "r4c13",
+              "r4c14",
+              "r4c15",
+              "r4c16",
+              "r5c13",
+              "r5c14",
+              "r6c6",
+              "r6c7",
+              "r6c13",
+              "r7c6",
+              "r7c13",
+              "r8c6",
+              "r8c7",
+              "r8c13",
+              "r9c7",
+              "r9c8",
+              "r9c9",
+              "r9c10",
+              "r9c12",
+              "r9c13",
+              "r10c7",
+              "r10c10",
+              "r10c12",
+              "r10c13",
+              "r10c14",
+              "r11c2",
+              "r11c3",
+              "r11c4",
+              "r11c7",
+              "r11c12",
+              "r11c13",
+              "r12c4",
+              "r12c7",
+              "r12c13",
+              "r13c4",
+              "r13c5",
+              "r13c6",
+              "r13c7",
+              "r13c8",
+              "r13c9",
+              "r13c10",
+              "r13c11",
+              "r13c12",
+              "r13c13",
+              "r14c5",
+              "r14c9",
+              "r15c4",
+              "r15c5"
+            ]
           },
           {
             "glyph": {
@@ -1296,7 +1485,49 @@
               "idName": "Paragon_Sorc_04",
               "sno": null
             },
-            "rotation": null
+            "rotation": 0,
+            "tiles": [
+              "r9c8",
+              "r9c9",
+              "r9c10",
+              "r9c11",
+              "r9c12",
+              "r9c13",
+              "r9c14",
+              "r10c10",
+              "r11c2",
+              "r11c3",
+              "r11c4",
+              "r11c10",
+              "r12c4",
+              "r12c10",
+              "r13c4",
+              "r13c10",
+              "r14c4",
+              "r14c5",
+              "r14c6",
+              "r14c7",
+              "r14c8",
+              "r14c9",
+              "r14c10",
+              "r14c11",
+              "r15c3",
+              "r15c4",
+              "r15c9",
+              "r15c11",
+              "r16c9",
+              "r16c11",
+              "r17c6",
+              "r17c7",
+              "r17c9",
+              "r18c7",
+              "r18c8",
+              "r18c9",
+              "r19c9",
+              "r20c9",
+              "r20c10",
+              "r20c11"
+            ]
           },
           {
             "glyph": {
@@ -1319,10 +1550,68 @@
               "idName": "Paragon_Sorc_08",
               "sno": null
             },
-            "rotation": null
+            "rotation": 270,
+            "tiles": [
+              "r4c8",
+              "r5c8",
+              "r6c6",
+              "r6c7",
+              "r6c8",
+              "r7c6",
+              "r8c4",
+              "r8c5",
+              "r8c6",
+              "r8c7",
+              "r8c12",
+              "r8c13",
+              "r9c4",
+              "r9c7",
+              "r9c12",
+              "r9c13",
+              "r9c14",
+              "r10c7",
+              "r10c8",
+              "r10c9",
+              "r10c10",
+              "r10c11",
+              "r10c12",
+              "r11c10",
+              "r12c8",
+              "r12c9",
+              "r12c10",
+              "r12c11",
+              "r12c16",
+              "r13c8",
+              "r13c9",
+              "r13c11",
+              "r13c12",
+              "r13c13",
+              "r13c14",
+              "r13c15",
+              "r13c16",
+              "r14c9",
+              "r14c13",
+              "r15c13",
+              "r16c12",
+              "r16c13",
+              "r16c14",
+              "r16c15",
+              "r17c12",
+              "r17c13",
+              "r17c15",
+              "r17c16",
+              "r18c13",
+              "r18c16",
+              "r18c17",
+              "r18c18",
+              "r19c11",
+              "r19c12",
+              "r19c13",
+              "r20c11"
+            ]
           }
         ],
-        "level": null
+        "level": 242
       },
       "runewords": [],
       "skills": [
@@ -1575,11 +1864,11 @@
       ],
       "source": {
         "author": "Rob2628",
-        "capturedAt": "2026-08-09T09:51:59.436Z",
+        "capturedAt": "2026-08-09T17:48:28.172Z",
         "externalId": "85fbebdc-26fd-4d79-b295-2d9234b7dcd7",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "4be53390e234d44adec4f8692eaddb4c8ff90c590f71e9e586372c5571c39de0",
+        "snapshotHash": "be92edfb23df9cfeb5811f8845e55c9998f4d32be52353f87851218481b4e765",
         "url": "https://d4builds.gg/builds/85fbebdc-26fd-4d79-b295-2d9234b7dcd7/?var=0",
         "variantIndex": 0,
         "variantLabel": "Standard Build"

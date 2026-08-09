@@ -364,7 +364,7 @@
     "en": "Twisting Blades",
     "es": "Hojas retorcidas"
   },
-  "updatedAt": "2026-08-09T09:43:09.172Z",
+  "updatedAt": "2026-08-09T17:39:14.392Z",
   "variants": [
     {
       "completeness": {
@@ -453,6 +453,7 @@
             "idName": "legendary_druid_049_x2",
             "sno": 2542658
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -548,6 +549,7 @@
             "idName": "legendary_rogue_152_x2",
             "sno": 2580483
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/utility.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -634,6 +636,7 @@
             "idName": "legendary_rogue_104",
             "sno": 1184010
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/defensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -730,6 +733,7 @@
             }
           ],
           "aspect": null,
+          "icon": "https://sunderarmor.com/DIABLO4/Uniques/2/sea_lord's_fine_gloves.png",
           "item": {
             "category": "unique",
             "enUS": "Sea Lord's Fine Gloves",
@@ -816,6 +820,7 @@
             }
           ],
           "aspect": null,
+          "icon": "https://sunderarmor.com/DIABLO4/Uniques/2/cowl_of_the_nameless.png",
           "item": {
             "category": "unique",
             "enUS": "Cowl of the Nameless",
@@ -919,6 +924,7 @@
             }
           ],
           "aspect": null,
+          "icon": "https://sunderarmor.com/DIABLO4/Uniques/2/shrouded_gift.png",
           "item": {
             "category": "unique",
             "enUS": "Shrouded Gift",
@@ -1029,6 +1035,7 @@
             "idName": "legendary_rogue_003",
             "sno": 578880
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -1124,6 +1131,7 @@
             "idName": "legendary_rogue_150_x2",
             "sno": 2577945
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -1219,6 +1227,7 @@
             "idName": "legendary_generic_134_x2",
             "sno": 2574579
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -1315,6 +1324,7 @@
             }
           ],
           "aspect": null,
+          "icon": "https://sunderarmor.com/DIABLO4/Uniques/2/etna's_lost_dagger.png",
           "item": {
             "category": "unique",
             "enUS": "Etna's Lost Dagger",
@@ -1410,6 +1420,7 @@
             }
           ],
           "aspect": null,
+          "icon": "https://sunderarmor.com/DIABLO4/Uniques/2/the_maestro.png",
           "item": {
             "category": "unique",
             "enUS": "The Maestro",
@@ -1442,20 +1453,52 @@
       "mercenary": {
         "ref": {
           "category": "mercenary",
-          "enUS": "Varyana, The Berserker Crone",
+          "enUS": "Subo, The Drunken Archer",
           "esES": null,
           "i18n": "none",
-          "idName": "mercenary__varyana_the_berserker_crone",
+          "idName": "mercenary__subo_the_drunken_archer",
           "sno": null
         },
         "reinforcement": null,
         "skills": [
           {
             "category": "skill",
-            "enUS": "Bloodthirst",
+            "enUS": "Seeker",
             "esES": null,
             "i18n": "none",
-            "idName": "skill__bloodthirst",
+            "idName": "skill__seeker",
+            "sno": null
+          },
+          {
+            "category": "skill",
+            "enUS": "Molotov",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__molotov",
+            "sno": null
+          },
+          {
+            "category": "skill",
+            "enUS": "Scorched Earth",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__scorched_earth",
+            "sno": null
+          },
+          {
+            "category": "skill",
+            "enUS": "Snipe",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__snipe",
+            "sno": null
+          },
+          {
+            "category": "skill",
+            "enUS": "Incendiary Bolt",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__incendiary_bolt",
             "sno": null
           }
         ]
@@ -1483,7 +1526,38 @@
               "idName": "paragonBoard__starting_board",
               "sno": null
             },
-            "rotation": null
+            "rotation": 0,
+            "tiles": [
+              "r2c11",
+              "r2c12",
+              "r3c12",
+              "r4c12",
+              "r5c10",
+              "r5c12",
+              "r6c10",
+              "r6c12",
+              "r7c10",
+              "r7c11",
+              "r7c12",
+              "r7c13",
+              "r8c9",
+              "r8c10",
+              "r8c13",
+              "r9c9",
+              "r9c13",
+              "r10c9",
+              "r10c13",
+              "r11c9",
+              "r11c13",
+              "r12c9",
+              "r12c10",
+              "r12c12",
+              "r12c13",
+              "r13c13",
+              "r14c11",
+              "r14c12",
+              "r14c13"
+            ]
           },
           {
             "glyph": {
@@ -1506,7 +1580,72 @@
               "idName": "Paragon_Rogue_01",
               "sno": null
             },
-            "rotation": null
+            "rotation": 90,
+            "tiles": [
+              "r2c11",
+              "r2c12",
+              "r2c13",
+              "r2c14",
+              "r2c15",
+              "r2c16",
+              "r3c15",
+              "r3c16",
+              "r3c17",
+              "r4c16",
+              "r5c16",
+              "r5c19",
+              "r6c14",
+              "r6c15",
+              "r6c16",
+              "r6c17",
+              "r6c18",
+              "r6c19",
+              "r6c20",
+              "r7c13",
+              "r7c14",
+              "r7c19",
+              "r7c20",
+              "r8c6",
+              "r8c7",
+              "r8c13",
+              "r8c20",
+              "r9c7",
+              "r9c8",
+              "r9c13",
+              "r9c20",
+              "r10c8",
+              "r10c9",
+              "r10c10",
+              "r10c11",
+              "r10c12",
+              "r10c13",
+              "r10c20",
+              "r11c9",
+              "r11c12",
+              "r11c20",
+              "r12c8",
+              "r12c9",
+              "r12c12",
+              "r12c13",
+              "r13c7",
+              "r13c8",
+              "r13c13",
+              "r14c7",
+              "r14c13",
+              "r15c6",
+              "r15c7",
+              "r15c13",
+              "r15c14",
+              "r16c6",
+              "r16c13",
+              "r16c14",
+              "r17c4",
+              "r17c5",
+              "r17c6",
+              "r18c4",
+              "r19c3",
+              "r19c4"
+            ]
           },
           {
             "glyph": {
@@ -1529,7 +1668,54 @@
               "idName": "Paragon_Rogue_07",
               "sno": null
             },
-            "rotation": null
+            "rotation": 0,
+            "tiles": [
+              "r2c11",
+              "r3c11",
+              "r4c11",
+              "r5c11",
+              "r5c12",
+              "r6c12",
+              "r7c5",
+              "r7c6",
+              "r7c7",
+              "r7c8",
+              "r7c9",
+              "r7c12",
+              "r7c13",
+              "r8c4",
+              "r8c5",
+              "r8c7",
+              "r8c9",
+              "r8c10",
+              "r8c11",
+              "r8c12",
+              "r9c4",
+              "r9c11",
+              "r10c4",
+              "r10c11",
+              "r11c2",
+              "r11c3",
+              "r11c4",
+              "r11c10",
+              "r11c11",
+              "r12c4",
+              "r12c5",
+              "r12c9",
+              "r12c10",
+              "r13c5",
+              "r13c9",
+              "r14c5",
+              "r15c5",
+              "r16c3",
+              "r16c4",
+              "r16c5",
+              "r16c6",
+              "r17c6",
+              "r18c6",
+              "r19c5",
+              "r19c6"
+            ]
           },
           {
             "glyph": {
@@ -1552,7 +1738,51 @@
               "idName": "Paragon_Rogue_10",
               "sno": null
             },
-            "rotation": null
+            "rotation": 0,
+            "tiles": [
+              "r2c11",
+              "r2c12",
+              "r2c13",
+              "r2c14",
+              "r3c14",
+              "r4c14",
+              "r5c14",
+              "r6c8",
+              "r6c9",
+              "r6c10",
+              "r6c11",
+              "r6c12",
+              "r6c13",
+              "r6c14",
+              "r7c11",
+              "r7c13",
+              "r8c13",
+              "r9c13",
+              "r10c13",
+              "r11c11",
+              "r11c12",
+              "r11c13",
+              "r12c11",
+              "r13c11",
+              "r14c11",
+              "r15c8",
+              "r15c11",
+              "r16c7",
+              "r16c8",
+              "r16c9",
+              "r16c10",
+              "r16c11",
+              "r16c12",
+              "r16c13",
+              "r16c14",
+              "r17c7",
+              "r17c9",
+              "r18c9",
+              "r19c9",
+              "r20c9",
+              "r20c10",
+              "r20c11"
+            ]
           },
           {
             "glyph": {
@@ -1575,10 +1805,57 @@
               "idName": "Paragon_Rogue_03",
               "sno": null
             },
-            "rotation": null
+            "rotation": 180,
+            "tiles": [
+              "r2c11",
+              "r3c11",
+              "r4c11",
+              "r5c11",
+              "r6c11",
+              "r7c5",
+              "r7c6",
+              "r7c7",
+              "r7c8",
+              "r7c9",
+              "r7c10",
+              "r7c11",
+              "r8c6",
+              "r8c8",
+              "r8c11",
+              "r9c8",
+              "r9c11",
+              "r9c12",
+              "r9c13",
+              "r10c8",
+              "r10c13",
+              "r11c7",
+              "r11c8",
+              "r11c12",
+              "r11c13",
+              "r12c8",
+              "r12c13",
+              "r13c8",
+              "r13c11",
+              "r13c12",
+              "r13c13",
+              "r14c8",
+              "r14c13",
+              "r14c14",
+              "r14c15",
+              "r15c5",
+              "r15c6",
+              "r15c7",
+              "r15c8",
+              "r15c15",
+              "r16c15",
+              "r17c15",
+              "r17c16",
+              "r18c16",
+              "r19c16"
+            ]
           }
         ],
-        "level": null
+        "level": 228
       },
       "runewords": [],
       "skills": [
@@ -1817,11 +2094,11 @@
       ],
       "source": {
         "author": null,
-        "capturedAt": "2026-08-09T09:43:09.172Z",
+        "capturedAt": "2026-08-09T17:39:14.392Z",
         "externalId": "644d28e7-5883-4887-89ca-2fdd17464dd9",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "81242d6b26629384720d63c272194bc006257f22713f519462b70cfb9a1f527e",
+        "snapshotHash": "12bd39218a48dad533ee7a000bf25f110dc23baa7a62b765dfc76cf46bddd490",
         "url": "https://d4builds.gg/builds/644d28e7-5883-4887-89ca-2fdd17464dd9/?var=0",
         "variantIndex": 0,
         "variantLabel": "Standard Build"

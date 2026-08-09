@@ -364,7 +364,7 @@
     "en": "Summon",
     "es": "Summon"
   },
-  "updatedAt": "2026-08-09T09:46:55.214Z",
+  "updatedAt": "2026-08-09T17:42:55.369Z",
   "variants": [
     {
       "completeness": {
@@ -453,6 +453,7 @@
             "idName": "legendary_necro_118",
             "sno": 1223323
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -548,6 +549,7 @@
             "idName": "legendary_warlock_034_x2",
             "sno": 2548002
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/mobility.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -627,6 +629,7 @@
             }
           ],
           "aspect": null,
+          "icon": "https://sunderarmor.com/DIABLO4/Uniques/2/ae'grom's_schism.png",
           "item": {
             "category": "unique",
             "enUS": "Ae'grom's Schism",
@@ -730,6 +733,7 @@
             }
           ],
           "aspect": null,
+          "icon": "https://sunderarmor.com/DIABLO4/Uniques/2/gauntlets_of_sheol.png",
           "item": {
             "category": "unique",
             "enUS": "Gauntlets of Sheol",
@@ -777,6 +781,7 @@
             }
           ],
           "aspect": null,
+          "icon": "https://sunderarmor.com/DIABLO4/Uniques/2/harlequin_crest.png",
           "item": {
             "category": "unique",
             "enUS": "Harlequin Crest",
@@ -835,6 +840,7 @@
             "idName": "legendary_warlock_015_x2",
             "sno": 2547934
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -930,6 +936,7 @@
             "idName": "legendary_generic_009",
             "sno": 578708
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/defensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -1026,6 +1033,7 @@
             }
           ],
           "aspect": null,
+          "icon": "https://sunderarmor.com/DIABLO4/Uniques/2/the_fecund_seal.png",
           "item": {
             "category": "unique",
             "enUS": "The Fecund Seal",
@@ -1128,6 +1136,7 @@
             "idName": "legendary_necro_136",
             "sno": 2239052
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -1190,6 +1199,7 @@
             }
           ],
           "aspect": null,
+          "icon": "https://sunderarmor.com/DIABLO4/Uniques/2/el'druin,_sword_of_justice.png",
           "item": {
             "category": "unique",
             "enUS": "El'druin, Sword of Justice",
@@ -1222,20 +1232,52 @@
       "mercenary": {
         "ref": {
           "category": "mercenary",
-          "enUS": "Raheir, The Shieldbearer",
+          "enUS": "Subo, The Drunken Archer",
           "esES": null,
           "i18n": "none",
-          "idName": "mercenary__raheir_the_shieldbearer",
+          "idName": "mercenary__subo_the_drunken_archer",
           "sno": null
         },
         "reinforcement": null,
         "skills": [
           {
             "category": "skill",
-            "enUS": "Bastion-v2",
+            "enUS": "Seeker",
             "esES": null,
             "i18n": "none",
-            "idName": "skill__bastion_v2",
+            "idName": "skill__seeker",
+            "sno": null
+          },
+          {
+            "category": "skill",
+            "enUS": "Wire Trap",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__wire_trap",
+            "sno": null
+          },
+          {
+            "category": "skill",
+            "enUS": "Ready At Hand",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__ready_at_hand",
+            "sno": null
+          },
+          {
+            "category": "skill",
+            "enUS": "Cover Fire",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__cover_fire",
+            "sno": null
+          },
+          {
+            "category": "skill",
+            "enUS": "Opening Fire",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__opening_fire",
             "sno": null
           }
         ]
@@ -1263,7 +1305,33 @@
               "idName": "paragonBoard__starting_board",
               "sno": null
             },
-            "rotation": null
+            "rotation": 0,
+            "tiles": [
+              "r2c11",
+              "r2c12",
+              "r3c12",
+              "r4c12",
+              "r5c10",
+              "r5c12",
+              "r6c10",
+              "r6c12",
+              "r7c10",
+              "r7c11",
+              "r7c12",
+              "r7c13",
+              "r8c10",
+              "r8c11",
+              "r8c13",
+              "r9c10",
+              "r9c13",
+              "r10c13",
+              "r11c13",
+              "r12c13",
+              "r13c13",
+              "r14c11",
+              "r14c12",
+              "r14c13"
+            ]
           },
           {
             "glyph": {
@@ -1286,7 +1354,56 @@
               "idName": "Paragon_Warlock_06",
               "sno": null
             },
-            "rotation": null
+            "rotation": 90,
+            "tiles": [
+              "r2c11",
+              "r2c12",
+              "r2c13",
+              "r2c14",
+              "r2c15",
+              "r3c15",
+              "r3c16",
+              "r4c16",
+              "r5c16",
+              "r6c14",
+              "r6c15",
+              "r6c16",
+              "r6c17",
+              "r6c18",
+              "r7c11",
+              "r7c12",
+              "r7c13",
+              "r7c14",
+              "r7c18",
+              "r8c11",
+              "r8c16",
+              "r8c17",
+              "r8c18",
+              "r9c14",
+              "r9c15",
+              "r9c16",
+              "r9c18",
+              "r10c14",
+              "r10c18",
+              "r11c10",
+              "r11c14",
+              "r11c18",
+              "r11c19",
+              "r11c20",
+              "r12c8",
+              "r12c9",
+              "r12c10",
+              "r12c11",
+              "r12c12",
+              "r12c13",
+              "r12c14",
+              "r13c8",
+              "r13c11",
+              "r13c14",
+              "r14c11",
+              "r14c12",
+              "r14c13"
+            ]
           },
           {
             "glyph": {
@@ -1309,7 +1426,50 @@
               "idName": "Paragon_Warlock_10",
               "sno": null
             },
-            "rotation": null
+            "rotation": 0,
+            "tiles": [
+              "r2c8",
+              "r2c9",
+              "r2c10",
+              "r2c11",
+              "r3c8",
+              "r3c11",
+              "r4c8",
+              "r4c10",
+              "r5c8",
+              "r5c9",
+              "r5c10",
+              "r5c11",
+              "r6c8",
+              "r6c11",
+              "r6c12",
+              "r6c13",
+              "r6c14",
+              "r7c11",
+              "r8c8",
+              "r8c9",
+              "r8c10",
+              "r8c11",
+              "r9c2",
+              "r9c3",
+              "r9c4",
+              "r9c5",
+              "r9c6",
+              "r9c7",
+              "r9c8",
+              "r10c2",
+              "r10c5",
+              "r10c8",
+              "r10c9",
+              "r11c2",
+              "r11c5",
+              "r11c9",
+              "r11c10",
+              "r11c11",
+              "r12c11",
+              "r13c11",
+              "r14c11"
+            ]
           },
           {
             "glyph": {
@@ -1332,7 +1492,56 @@
               "idName": "Paragon_Warlock_07",
               "sno": null
             },
-            "rotation": null
+            "rotation": 0,
+            "tiles": [
+              "r11c2",
+              "r11c3",
+              "r11c4",
+              "r11c10",
+              "r11c11",
+              "r11c12",
+              "r11c13",
+              "r11c14",
+              "r12c4",
+              "r12c5",
+              "r12c9",
+              "r12c10",
+              "r12c14",
+              "r13c5",
+              "r13c9",
+              "r13c14",
+              "r13c15",
+              "r14c5",
+              "r14c6",
+              "r14c15",
+              "r15c6",
+              "r15c14",
+              "r15c15",
+              "r16c3",
+              "r16c4",
+              "r16c5",
+              "r16c6",
+              "r16c7",
+              "r16c8",
+              "r16c9",
+              "r16c10",
+              "r16c14",
+              "r17c6",
+              "r17c7",
+              "r17c10",
+              "r17c13",
+              "r17c14",
+              "r18c6",
+              "r18c10",
+              "r18c11",
+              "r18c12",
+              "r18c13",
+              "r19c5",
+              "r19c6",
+              "r19c11",
+              "r20c5",
+              "r20c11"
+            ]
           },
           {
             "glyph": {
@@ -1355,10 +1564,48 @@
               "idName": "Paragon_Warlock_02",
               "sno": null
             },
-            "rotation": null
+            "rotation": 0,
+            "tiles": [
+              "r7c9",
+              "r7c10",
+              "r7c11",
+              "r7c12",
+              "r7c13",
+              "r8c9",
+              "r8c13",
+              "r9c9",
+              "r9c10",
+              "r9c13",
+              "r10c10",
+              "r10c12",
+              "r10c13",
+              "r11c13",
+              "r11c14",
+              "r11c17",
+              "r11c18",
+              "r11c19",
+              "r11c20",
+              "r12c13",
+              "r12c14",
+              "r12c15",
+              "r12c16",
+              "r12c17",
+              "r13c10",
+              "r13c11",
+              "r13c13",
+              "r13c15",
+              "r13c16",
+              "r14c11",
+              "r14c12",
+              "r14c13",
+              "r14c15",
+              "r14c16",
+              "r15c10",
+              "r15c11"
+            ]
           }
         ],
-        "level": null
+        "level": 199
       },
       "runewords": [],
       "skills": [
@@ -1587,11 +1834,11 @@
       ],
       "source": {
         "author": "Rob2628",
-        "capturedAt": "2026-08-09T09:46:55.214Z",
+        "capturedAt": "2026-08-09T17:42:55.369Z",
         "externalId": "775094c6-ea32-4d36-9f25-93d2d08c82ef",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "433327017323c794f9c540179ad6c751388de00f894d758fa5a2471fe13fecda",
+        "snapshotHash": "2bdc1d59864347403e5ce73a7a83a7e4766c83c1b92e7489de9c0afa5df44d52",
         "url": "https://d4builds.gg/builds/775094c6-ea32-4d36-9f25-93d2d08c82ef/?var=0",
         "variantIndex": 0,
         "variantLabel": "Standard Build"

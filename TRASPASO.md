@@ -1,6 +1,6 @@
 # d4es — Traspaso de sesión
 
-Última actualización: **9 de agosto de 2026**. Árbol limpio, todo subido.
+Última actualización: **9 de agosto de 2026 (noche)**. Árbol limpio, todo subido.
 
 Documento para retomar el proyecto en una conversación nueva. Léelo entero antes de tocar nada:
 la mitad de lo que hay aquí costó horas de averiguar y no es deducible del código.
@@ -30,10 +30,10 @@ la mitad de lo que hay aquí costó horas de averiguar y no es deducible del có
 
 | Pestaña | Estado |
 |---|---|
-| Equipo y habilidades | ✅ 904 piezas, 884 con afijos (98%), con afijo superior ★ y templado |
-| Árbol de habilidades | ✅ reconstruido (ver §4) |
-| Paragón | ✅ 92/92 con tableros y glifos en castellano |
-| Mercenarios | ✅ 85/92 |
+| Equipo y habilidades | ✅ 904 piezas (900 con la imagen de la fuente), afijo superior ★, templado, insignia de códice en legendarias y bloque de **prioridad de afijos por pieza** |
+| Árbol de habilidades | ✅ reconstruido (ver §4), tooltips con descripción en castellano donde hay fuente |
+| Paragón | ✅ 92/92 **dibujados casilla a casilla** en SVG (catálogo de 70 formas, 10.894 casillas con rareza), con nivel, giro y glifo, un desplegable por tablero |
+| Mercenarios | ✅ 85/92, cada uno con sus **5 habilidades** (el DOM las traía por triplicado) |
 | Planes de guerra | ✅ 66/92 con plan (las otras 26 no invierten puntos), árbol dibujado entero |
 | Notas del autor | ✅ enlaza al original, no se copia su texto |
 
@@ -41,12 +41,15 @@ la mitad de lo que hay aquí costó horas de averiguar y no es deducible del có
 (con ficha por jefe), materiales, dificultades, «lo que ya no existe», glosario de jerga, 297 fichas
 de únicos con «cómo conseguirlo», buscador global (Pagefind), comparador de variantes, importador de
 Maxroll en el navegador, RSS, página de cambios y **lista de lo que falta verificar en el juego**
-(`/estado/verificar`). **417 páginas**, **116 tests**.
+(`/estado/verificar`). **417 páginas**, **142 tests**.
 
 **Traducción**: 2.426 términos del diccionario oficial más 800 curados (618 mejoras de rama y 7
-gemas cosechadas de Wowhead, con procedencia). Sin traducción verificada: **29,3%**, desde el 54%
-con el que empezó la sesión y pese a haber entrado por el camino los ~100 nodos de plan de guerra.
-Lo que queda son sobre todo esos nodos, y contenido que Wowhead aún no ha localizado (ver §6).
+gemas cosechadas de Wowhead, con procedencia), y ahora también **149 descripciones de habilidad en
+castellano** (cosechadas de la misma ficha de Wowhead que ya daba los nombres). Sin traducción
+verificada: **31,2%** de apariciones. Ojo: es MÁS que el 29,3% anterior **porque hay más contenido
+real**, no menos traducción — cada mercenario enseña ahora sus 5 habilidades (antes 1) y ni los
+mercenarios ni sus habilidades tienen fuente en castellano todavía. Lo que queda son sobre todo
+los nodos de plan de guerra y contenido que Wowhead no ha localizado (ver §6).
 
 **Iconos**: ~570 auto-hospedados en `public/iconos` (14 MB), con caída al CDN para lo que falte.
 
@@ -96,6 +99,37 @@ proxy NO hidrata la página (comprobado: 0 objetos). Única vía: Playwright en 
 **Selectores del DOM verificados** (`.builder__gear__item`, `.builder__stats__group` →
 `.builder__stat` → `.dropdown__button__wrapper`, `.greater__affix__button--filled`,
 `.paragon__board__name`). Están documentados en `scrape-pages.ts`.
+
+**El tablero de Paragón es DOM y se extrae entero.** Cada casilla es un botón con su fila y
+columna en las clases (`r2 c11`), el tipo en el `alt` del icono, la **rareza** en el `alt` del
+fondo (`tile_bg_common.png` → «Common») y `active` si la build la recorre. Se compacta como
+`"r2c11:Will:common:active"` (~730 por página). El **giro** del tablero es el acumulado de su
+animación CSS (450, 540, 900…): se normaliza módulo 360 al normalizar. Tres trampas ya pagadas:
+el `alt` del engarce de glifo varía entre «Glyph» y «Paragon Glyph» según la build (misma
+casilla: se canoniza en `paragon-layout.ts`); el **nivel del glifo NO lo publica la fuente**
+(verificado en sondas: la cabecera solo trae `(Brawl) Str 105…`), así que `rank` va `null`; y
+la forma es fija **por clase + tablero**, no por build — el «Starting Board» del Bárbaro no es
+el del Nigromante — por eso `paragon-boards-dataset.json` se indexa así. «Starting Board» es
+además un rótulo de la fuente, no el nombre del tablero en el juego: se compone en la interfaz
+(«Tablero inicial»), como los `skillVariant`.
+
+**El árbol del mercenario trae cada nodo POR TRIPLICADO** (57 nodos en el DOM = 19 únicos; 15
+activos = 5 únicos). Sin deduplicar por slug en `normalizarMercenario`, cada habilidad se
+publica tres veces. Las `etiquetas` de la pestaña (`["7","12","19","29"]`) no son
+Mercenary/Reinforcement: son umbrales de nivel. El refuerzo no aparece en ese DOM.
+
+**La «imagen» de una pieza legendaria es la categoría de su aspecto en el códice**
+(`Codex/1/offensive.png` y compañía), no un objeto base: d4builds no publica más. La
+previsualización tipo «pantalón básico» es el icono genérico de ranura que ya usamos, y la
+categoría del códice sale como insignia (`GearItem.icon` conserva la URL de la fuente;
+`codexDeIcono()` la clasifica).
+
+**Las descripciones de habilidad en castellano salen de la MISMA ficha de Wowhead** que ya se
+descargaba para las mejoras de rama (`i18n:skills:desc`): bloque `data-skill-type="active"` →
+`whtt-name` + `whtt-description`, con las cabeceras de coste («Tiempo de reutilización:
+67&#160;s») quitadas. Solo hay ficha ES para las habilidades que Wowhead ha localizado; el
+resto sigue en inglés con distintivo. La `desc` vive en la propia entrada curada de
+`skills.esES.json` y hereda su `sourceUrl`.
 
 **El árbol de habilidades se dibuja en un `canvas`.** No hay DOM que leer y no lo va a haber. **No
 lo reintentes.** Se reconstruye con la categoría de cada habilidad + `skillTreeStructure`: cada rama
@@ -177,10 +211,24 @@ Tres trampas ya pagadas, **no las reintroduzcas**:
   ',')` devuelve vacío (es un array de arrays) y buscar la ruta en `toJSON(commits)` tampoco casó.
   Las dos veces el workflow se fue a sonda en silencio y se comió una ronda de CI. Ahora se decide
   con `git diff --name-only` y **queda escrito en `data/reports/ultimo-disparo.json`**, para poder
-  ver qué decidió sin abrir los logs. Si tocas eso, mantén la traza.
+  ver qué decidió sin abrir los logs. Si tocas eso, mantén la traza. Desde agosto de 2026
+  `mercenarios.ts` también cuenta como parser (está en `paths:` y en el grep); antes un push que
+  solo lo tocara no disparaba nada.
+
+- Y la más cara hasta la fecha: **un run que no podía publicar terminaba «success» habiendo
+  perdido todo el trabajo**. Las pasadas se encolan, así que al arrancar, `main` suele ir por
+  delante del commit que disparó el run; el checkout partía del commit viejo, el primer
+  `git pull --rebase` chocaba (bastó `data/reports/scrape-pages.json`), el repo quedaba a medio
+  rebase y los lotes siguientes commiteaban en **detached HEAD** sin que ningún push llegara a
+  `main` (run `31323290074`: 44 min de extracción tirados). Ahora el checkout usa el **tip de
+  `main`**, la publicación reintenta con `-X theirs` (lo recién extraído gana) y si aun así no
+  puede, **el run falla en rojo**. Un run de extracción «success» sin commits de lote es esta
+  trampa reintroducida.
 
 Para re-extraer tras arreglar un parser: lanzar `scrape-pages.yml` con `forzar: true` (borra las
-páginas y empieza de cero; si no, el checkpoint las salta y sigues con los datos malos).
+páginas y empieza de cero; si no, el checkpoint las salta y sigues con los datos malos). Se puede
+disparar sin navegador con la credencial local de git:
+`curl -X POST -u "$user:$token" .../actions/workflows/scrape-pages.yml/dispatches -d '{"ref":"main","inputs":{"forzar":"true"}}'`.
 
 ---
 
@@ -204,7 +252,14 @@ páginas y empieza de cero; si no, el checkpoint las salta y sigues con los dato
      quieren en castellano, hay que partirlas y componerlas en la UI, no traducirlas.
    - **`affix` (78)** — sobre todo etiquetas de la propia fuente (`Primary Core Stat`), textos con
      el valor incrustado y alguna errata suya (`All Damage Multipler`).
-   - **`mercenary` (3)** — tampoco están en Wowhead.
+   - **`mercenary` (3, 84 apariciones) y sus habilidades** — tampoco están en Wowhead. Desde que
+     cada mercenario enseña sus 5 habilidades reales (antes 1 y mal), esta bolsa pesa más en la
+     cifra global: por eso el «sin traducir» SUBIÓ de 29,3% a 31,2% mientras la web ganaba
+     contenido. Van con chip EN, como todo lo demás.
+   - **Descripciones de habilidad**: las 149 con ficha ES en Wowhead ya la tienen
+     (`i18n:skills:desc`). Las ~50 sin localizar siguen con la descripción del catálogo en inglés
+     y el pie que lo dice. Las descripciones de las MEJORAS de rama no se han cosechado (habría
+     que emparejarlas por posición como los nombres): es el siguiente paso natural de esa vía.
 2. **Tablas de botín por jefe**: sin resolver **a propósito**. De cada jefe solo están sus únicos
    «firma»; no hay fuente contrastable que publique la tabla completa y rellenarla a ojo va contra
    la regla 4. Lo que sí hay es la lista priorizada de los **119 únicos que las builds equipan y no
@@ -219,6 +274,12 @@ páginas y empieza de cero; si no, el checkpoint las salta y sigues con los dato
    dispara — `detectarTemporada` ya está exportada, con el umbral documentado y **siete pruebas**,
    incluidos los bordes — y el checklist de la incidencia se ha completado con lo que el proyecto
    tiene hoy (re-extraer páginas, regenerar el árbol de planes, iconos, `/estado/verificar`).
+6. **El árbol del mercenario, dibujado**: el crudo ya trae x/y de cada nodo (19 por mercenario) y
+   la técnica es la misma que planes de guerra + Paragón (catálogo de forma compartido, indexado
+   por mercenario + build con lo cogido). No se hizo en la ronda de agosto por acotar; es el
+   siguiente dibujo natural. Y dos flecos del Paragón: el **nivel de glifo** no lo publica la
+   fuente (queda `null`, la ficha no lo pinta), y los iconos de casilla no se incrustan a
+   propósito (~800 `<image>` por ficha para repetir lo que el color ya dice).
 
 ---
 
@@ -228,7 +289,7 @@ páginas y empieza de cero; si no, el checkpoint las salta y sigues con los dato
 cd c:\Josu\proyectos\d4es
 git pull --rebase          # SIEMPRE lo primero: los bots commitean solos
 
-npm test                   # 77 tests
+npm test                   # 142 tests
 npm run data:refresh       # pipeline completo
 npm run dev                # http://localhost:4321
 npm run build              # lo mismo que ejecuta Netlify

@@ -341,7 +341,7 @@
     "en": "Bone Spirit",
     "es": "Bone Spirit"
   },
-  "updatedAt": "2026-08-09T09:43:46.855Z",
+  "updatedAt": "2026-08-09T17:39:51.110Z",
   "variants": [
     {
       "completeness": {
@@ -430,6 +430,7 @@
             "idName": "legendary_necro_101",
             "sno": 1221426
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -525,6 +526,7 @@
             "idName": "legendary_necro_132",
             "sno": 1977089
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/mobility.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -604,6 +606,7 @@
             }
           ],
           "aspect": null,
+          "icon": "https://sunderarmor.com/DIABLO4/Uniques/2/vengeful_sinew.png",
           "item": {
             "category": "unique",
             "enUS": "Vengeful Sinew",
@@ -707,6 +710,7 @@
             }
           ],
           "aspect": null,
+          "icon": "https://sunderarmor.com/DIABLO4/Uniques/2/gravewalker's_hand.png",
           "item": {
             "category": "unique",
             "enUS": "Gravewalker's Hand",
@@ -800,6 +804,7 @@
             "idName": "legendary_necro_115",
             "sno": 1222592
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/defensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -896,6 +901,7 @@
             }
           ],
           "aspect": null,
+          "icon": "https://sunderarmor.com/DIABLO4/Uniques/2/lidless_wall.png",
           "item": {
             "category": "unique",
             "enUS": "Lidless Wall",
@@ -991,6 +997,7 @@
             }
           ],
           "aspect": null,
+          "icon": "https://sunderarmor.com/DIABLO4/Uniques/2/blood_moon_breeches.png",
           "item": {
             "category": "unique",
             "enUS": "Blood Moon Breeches",
@@ -1101,6 +1108,7 @@
             "idName": "x1_legendary_necro_129",
             "sno": 1848038
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -1196,6 +1204,7 @@
             "idName": "legendary_necro_125",
             "sno": 1740178
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/resource.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -1291,6 +1300,7 @@
             "idName": "legendary_necro_038",
             "sno": 616122
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -1324,20 +1334,52 @@
       "mercenary": {
         "ref": {
           "category": "mercenary",
-          "enUS": "Varyana, The Berserker Crone",
+          "enUS": "Subo, The Drunken Archer",
           "esES": null,
           "i18n": "none",
-          "idName": "mercenary__varyana_the_berserker_crone",
+          "idName": "mercenary__subo_the_drunken_archer",
           "sno": null
         },
         "reinforcement": null,
         "skills": [
           {
             "category": "skill",
-            "enUS": "Bloodthirst",
+            "enUS": "Seeker",
             "esES": null,
             "i18n": "none",
-            "idName": "skill__bloodthirst",
+            "idName": "skill__seeker",
+            "sno": null
+          },
+          {
+            "category": "skill",
+            "enUS": "Wire Trap",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__wire_trap",
+            "sno": null
+          },
+          {
+            "category": "skill",
+            "enUS": "Ready At Hand",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__ready_at_hand",
+            "sno": null
+          },
+          {
+            "category": "skill",
+            "enUS": "Cover Fire",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__cover_fire",
+            "sno": null
+          },
+          {
+            "category": "skill",
+            "enUS": "Opening Fire",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__opening_fire",
             "sno": null
           }
         ]
@@ -1365,7 +1407,45 @@
               "idName": "paragonBoard__starting_board",
               "sno": null
             },
-            "rotation": null
+            "rotation": 0,
+            "tiles": [
+              "r2c11",
+              "r2c12",
+              "r3c12",
+              "r4c9",
+              "r4c10",
+              "r4c12",
+              "r4c13",
+              "r5c9",
+              "r5c10",
+              "r5c12",
+              "r5c13",
+              "r6c9",
+              "r6c10",
+              "r6c12",
+              "r6c13",
+              "r7c10",
+              "r7c11",
+              "r7c12",
+              "r7c13",
+              "r8c10",
+              "r8c13",
+              "r9c10",
+              "r9c13",
+              "r10c10",
+              "r10c13",
+              "r11c9",
+              "r11c10",
+              "r11c13",
+              "r12c9",
+              "r12c10",
+              "r12c12",
+              "r12c13",
+              "r13c13",
+              "r14c11",
+              "r14c12",
+              "r14c13"
+            ]
           },
           {
             "glyph": {
@@ -1388,7 +1468,70 @@
               "idName": "Paragon_Necro_05",
               "sno": null
             },
-            "rotation": null
+            "rotation": 90,
+            "tiles": [
+              "r4c18",
+              "r5c15",
+              "r5c17",
+              "r5c18",
+              "r6c14",
+              "r6c15",
+              "r6c16",
+              "r6c17",
+              "r7c8",
+              "r7c9",
+              "r7c10",
+              "r7c11",
+              "r7c13",
+              "r7c14",
+              "r7c17",
+              "r8c7",
+              "r8c8",
+              "r8c9",
+              "r8c11",
+              "r8c13",
+              "r9c6",
+              "r9c7",
+              "r9c11",
+              "r9c13",
+              "r10c6",
+              "r10c11",
+              "r10c13",
+              "r11c2",
+              "r11c3",
+              "r11c4",
+              "r11c5",
+              "r11c6",
+              "r11c11",
+              "r11c12",
+              "r11c13",
+              "r11c14",
+              "r11c15",
+              "r11c16",
+              "r11c17",
+              "r11c18",
+              "r11c19",
+              "r11c20",
+              "r12c5",
+              "r12c15",
+              "r13c5",
+              "r13c15",
+              "r14c5",
+              "r14c6",
+              "r14c13",
+              "r14c14",
+              "r14c15",
+              "r15c5",
+              "r16c3",
+              "r16c5",
+              "r16c6",
+              "r17c3",
+              "r17c4",
+              "r17c5",
+              "r18c5",
+              "r19c5",
+              "r19c6"
+            ]
           },
           {
             "glyph": {
@@ -1411,7 +1554,66 @@
               "idName": "Paragon_Necro_03",
               "sno": null
             },
-            "rotation": null
+            "rotation": 270,
+            "tiles": [
+              "r4c16",
+              "r5c15",
+              "r5c16",
+              "r6c15",
+              "r7c13",
+              "r7c14",
+              "r7c15",
+              "r8c11",
+              "r8c12",
+              "r8c13",
+              "r9c11",
+              "r9c12",
+              "r10c10",
+              "r10c11",
+              "r10c12",
+              "r11c2",
+              "r11c7",
+              "r11c8",
+              "r11c12",
+              "r11c13",
+              "r12c2",
+              "r12c3",
+              "r12c4",
+              "r12c5",
+              "r12c8",
+              "r12c10",
+              "r12c11",
+              "r12c12",
+              "r13c5",
+              "r13c8",
+              "r13c11",
+              "r13c12",
+              "r14c5",
+              "r14c8",
+              "r14c11",
+              "r14c12",
+              "r14c13",
+              "r14c14",
+              "r14c15",
+              "r15c5",
+              "r15c6",
+              "r15c7",
+              "r15c8",
+              "r15c9",
+              "r15c10",
+              "r15c11",
+              "r15c15",
+              "r16c11",
+              "r16c15",
+              "r17c11",
+              "r17c15",
+              "r17c16",
+              "r18c11",
+              "r18c16",
+              "r19c11",
+              "r19c16",
+              "r20c11"
+            ]
           },
           {
             "glyph": {
@@ -1434,7 +1636,53 @@
               "idName": "Paragon_Necro_04",
               "sno": null
             },
-            "rotation": null
+            "rotation": 90,
+            "tiles": [
+              "r9c8",
+              "r9c9",
+              "r9c10",
+              "r9c11",
+              "r9c12",
+              "r9c13",
+              "r9c14",
+              "r10c10",
+              "r11c10",
+              "r11c18",
+              "r11c19",
+              "r11c20",
+              "r12c10",
+              "r13c10",
+              "r13c17",
+              "r13c18",
+              "r14c10",
+              "r14c11",
+              "r14c12",
+              "r14c13",
+              "r14c14",
+              "r14c15",
+              "r14c16",
+              "r14c17",
+              "r15c9",
+              "r15c10",
+              "r15c11",
+              "r15c13",
+              "r15c17",
+              "r15c18",
+              "r16c9",
+              "r16c11",
+              "r16c13",
+              "r17c7",
+              "r17c8",
+              "r17c9",
+              "r17c13",
+              "r17c14",
+              "r17c15",
+              "r18c9",
+              "r19c9",
+              "r20c9",
+              "r20c10",
+              "r20c11"
+            ]
           },
           {
             "glyph": {
@@ -1457,10 +1705,55 @@
               "idName": "Paragon_Necro_10",
               "sno": null
             },
-            "rotation": null
+            "rotation": 180,
+            "tiles": [
+              "r6c8",
+              "r6c14",
+              "r7c8",
+              "r7c9",
+              "r7c10",
+              "r7c11",
+              "r7c12",
+              "r7c13",
+              "r7c14",
+              "r8c9",
+              "r9c9",
+              "r10c5",
+              "r10c6",
+              "r10c9",
+              "r11c5",
+              "r11c6",
+              "r11c9",
+              "r12c5",
+              "r12c6",
+              "r12c7",
+              "r12c8",
+              "r12c9",
+              "r12c10",
+              "r12c11",
+              "r13c11",
+              "r14c11",
+              "r15c11",
+              "r15c15",
+              "r16c8",
+              "r16c9",
+              "r16c10",
+              "r16c11",
+              "r16c12",
+              "r16c13",
+              "r16c14",
+              "r16c15",
+              "r17c9",
+              "r17c15",
+              "r18c9",
+              "r19c9",
+              "r20c9",
+              "r20c10",
+              "r20c11"
+            ]
           }
         ],
-        "level": null
+        "level": 245
       },
       "runewords": [],
       "skills": [
@@ -1707,11 +2000,11 @@
       ],
       "source": {
         "author": null,
-        "capturedAt": "2026-08-09T09:43:46.855Z",
+        "capturedAt": "2026-08-09T17:39:51.110Z",
         "externalId": "65461ac6-c3c5-4079-b795-6437ffca6880",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "3fc552ab71025c147ee242fb7109bdc0836af8d4578ff3585d5a181a18dc5755",
+        "snapshotHash": "1311ecfc7b32540cce0d794e9e5d0d9d16ed35fe7a3506af87146d7fb6883995",
         "url": "https://d4builds.gg/builds/65461ac6-c3c5-4079-b795-6437ffca6880/?var=0",
         "variantIndex": 0,
         "variantLabel": "Standard Build"

@@ -173,7 +173,7 @@
     "en": "Dread Claws",
     "es": "Garras pavorosas"
   },
-  "updatedAt": "2026-08-09T09:40:38.183Z",
+  "updatedAt": "2026-08-09T17:36:47.354Z",
   "variants": [
     {
       "completeness": {
@@ -262,6 +262,7 @@
             "idName": "legendary_generic_014",
             "sno": 578933
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -357,6 +358,7 @@
             "idName": "legendary_warlock_034_x2",
             "sno": 2548002
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/mobility.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -443,6 +445,7 @@
             "idName": "legendary_generic_009",
             "sno": 578708
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/defensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -546,6 +549,7 @@
             "idName": "legendary_warlock_003_x2",
             "sno": 2547906
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -632,6 +636,7 @@
             "idName": "legendary_generic_117",
             "sno": 1746093
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/defensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -683,6 +688,7 @@
             "idName": "legendary_generic_063",
             "sno": 578875
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -778,6 +784,7 @@
             "idName": "legendary_generic_034",
             "sno": 578909
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/defensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -881,6 +888,7 @@
             "idName": "legendary_warlock_015_x2",
             "sno": 2547934
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -976,6 +984,7 @@
             "idName": "legendary_warlock_002_x2",
             "sno": 2547904
           },
+          "icon": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
           "item": null,
           "minItemPower": null,
           "mythic": {
@@ -1001,20 +1010,52 @@
       "mercenary": {
         "ref": {
           "category": "mercenary",
-          "enUS": "Raheir, The Shieldbearer",
+          "enUS": "Subo, The Drunken Archer",
           "esES": null,
           "i18n": "none",
-          "idName": "mercenary__raheir_the_shieldbearer",
+          "idName": "mercenary__subo_the_drunken_archer",
           "sno": null
         },
         "reinforcement": null,
         "skills": [
           {
             "category": "skill",
-            "enUS": "Bastion-v2",
+            "enUS": "Seeker",
             "esES": null,
             "i18n": "none",
-            "idName": "skill__bastion_v2",
+            "idName": "skill__seeker",
+            "sno": null
+          },
+          {
+            "category": "skill",
+            "enUS": "Wire Trap",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__wire_trap",
+            "sno": null
+          },
+          {
+            "category": "skill",
+            "enUS": "Ready At Hand",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__ready_at_hand",
+            "sno": null
+          },
+          {
+            "category": "skill",
+            "enUS": "Cover Fire",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__cover_fire",
+            "sno": null
+          },
+          {
+            "category": "skill",
+            "enUS": "Opening Fire",
+            "esES": null,
+            "i18n": "none",
+            "idName": "skill__opening_fire",
             "sno": null
           }
         ]
@@ -1032,10 +1073,11 @@
               "idName": "paragonBoard__starting_board",
               "sno": null
             },
-            "rotation": null
+            "rotation": 0,
+            "tiles": []
           }
         ],
-        "level": null
+        "level": 336
       },
       "runewords": [],
       "skills": [
@@ -1257,11 +1299,11 @@
       ],
       "source": {
         "author": "Rob2628",
-        "capturedAt": "2026-08-09T09:40:38.183Z",
+        "capturedAt": "2026-08-09T17:36:47.354Z",
         "externalId": "6039c2cb-3bac-4a50-8f55-84c26e498e0a",
         "provenance": "server-scrape",
         "site": "d4builds",
-        "snapshotHash": "0dd146b262383505ce3ec65efffff9ab4af0176c6f791e5952590f099069a484",
+        "snapshotHash": "1a3ea1b1cffb014f2949ccd77a65d787773ed41f220beee980b24da62bed7fae",
         "url": "https://d4builds.gg/builds/6039c2cb-3bac-4a50-8f55-84c26e498e0a/?var=0",
         "variantIndex": 0,
         "variantLabel": "Standard Build"

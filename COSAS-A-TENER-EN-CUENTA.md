@@ -77,7 +77,7 @@ a `main`** sobre la marcha, en trozos pequeños. No hace falta preguntar cada ve
 ## Antes de dar algo por terminado
 
 ```bash
-npm test           # 119 tests
+npm test           # 142 tests
 npm run data:verify
 npm run build      # lo mismo que ejecuta Netlify
 ```
@@ -85,6 +85,27 @@ npm run build      # lo mismo que ejecuta Netlify
 Y actualizar `TRASPASO.md` con lo que hayas descubierto: la mitad de lo que hay ahí costó horas y
 no se deduce del código.
 
-#  Cosas mias a hacer
-te cuento un poco lo que voy echando en falta por ejemplo echo en falta que al principio cuando en la parte de la del equipo las que no tienen un hombre o son objetos míticos u blancos legendarios los que tienen aspecto esos los aspectos para empezar ponernos en castellano, y luego a esos ponerles una previsualización como está en D4 Wings o Max Roy, que es la imagen de unde un pantalón o algo básico.luego en las habilidades echo de menos que cuando pongo el ratón sobre encima no estén en castellano entonces porque claro estoy en castellano que esté en castellano entonces eso que cambiar luego en el Paragon tú me pones el tablero la runa pero no me pones nada más lo que hay dentro del tablero tendrá que ser un desplegable cada tablerocon la runas que tendría que o sea con el camino tiene ese para huevón porque si no no me sirve de nada entonces tienes que mirar a ver cómo están de cuatro Wheels que por lo que me ha dicho yo creo que es un Canvas o en Sol y simular algo parecidoy por último hay que hacer lo de mercedarios y plan de guerra y ya está y también hay que poner en la parte donde está el equipo por ejemplo como aparecen de cuatro Wheels pues imagínate el pantalón hay que priorizar que tenga vida destreza, regeneración de recursos y no sé qué que se parecen de cuatro Wheels abajo de la Build de los objetos que tienen otra cosa
+## La lista de Josu del 9 de agosto — estado
+
+Lo que se dictó aquella tarde, en limpio, y qué se hizo con ello (ronda del 9 de agosto por la
+noche):
+
+1. **Aspectos en castellano en el equipo** — ya lo estaban (554/554, «Rasgo …»); si se veían en
+   inglés era un despliegue viejo. **Previsualización tipo maxroll**: hecha — icono de la ranura
+   («el pantalón básico»), insignia con la categoría del códice del aspecto (ofensivo/defensivo/
+   utilidad, que es la única «imagen» que d4builds da a una legendaria) y la imagen en grande en
+   el tooltip.
+2. **Tooltips de habilidad en castellano** — hecho donde hay fuente: 149 descripciones cosechadas
+   de la ficha ES de Wowhead (`i18n:skills:desc`, con `sourceUrl`). Las ~50 que Wowhead no ha
+   localizado siguen en inglés con el pie que lo dice: regla 1, no se inventa.
+3. **Paragón dibujado** — hecho: un desplegable por tablero con el tablero entero en SVG (rareza
+   por color, camino de la build encendido, engarce de glifo, giro aplicado). d4builds lo hace
+   con una rejilla de botones + CSS, no canvas, y por eso se pudo extraer casilla a casilla:
+   catálogo compartido de 70 formas en `data/canonical/paragon-boards-dataset.json`.
+4. **Mercenarios** — arreglado del todo: 85/92 con sus **5 habilidades** de verdad (el DOM traía
+   cada nodo por triplicado y antes salía 1 y a veces mal), con icono y chip EN. Los **planes de
+   guerra** ya estaban dibujados de la ronda anterior. Lo que NO se hizo: dibujar el árbol del
+   mercenario (TRASPASO §6.6) y traducir mercenarios/nodos de plan (sin fuente, no se inventa).
+5. **Prioridad de afijos por pieza** — hecho: el bloque «Gear Stats» de d4builds ya se extraía
+   (el orden ES la prioridad); ahora se enseña entero y numerado debajo del equipo.
 
