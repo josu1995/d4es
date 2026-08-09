@@ -74,7 +74,10 @@ export interface VarianteRaw {
   etiqueta: string | null;
   gear: GearItemRaw[];
   stats: StatsSlotRaw[];
+  /** Siempre vacio: el arbol se dibuja en canvas y no hay DOM que leer. */
   arbol: { categoria: string; nodos: { nombre: string; puntos: number | null }[] }[];
+  /** Confirmacion de que sigue siendo canvas, por si algun dia deja de serlo. */
+  arbolEsCanvas?: boolean;
   paragon: { tablero: string; glifo: string | null; nivelGlifo: number | null; icono: string | null }[];
   mercenarios: { nombre: string; rol: string | null; habilidades: string[]; icono: string | null }[];
   warPlans: { nombre: string; detalle: string | null }[];
@@ -146,77 +149,95 @@ async function extraerGear(page: Page): Promise<GearItemRaw[]> {
   });
 }
 
+/**
+ * Estructura real (verificada con la sonda):
+ *   .builder__stats__group           un bloque por ranura
+ *     .builder__stats__slot          nombre de la ranura
+ *     .builder__stats__priority
+ *       .builder__stat               un afijo
+ *         .greater__affix__button--filled   estrella de afijo superior
+ *         .dropdown__button__wrapper        el texto del afijo
+ */
 async function extraerStats(page: Page): Promise<StatsSlotRaw[]> {
   return page.evaluate(() => {
     const limpiar = (s: string) => s.replace(/\s+/g, ' ').trim();
-    return Array.from(document.querySelectorAll('.builder__stats__slot')).map((slot) => {
-      // El nombre de ranura es el primer texto suelto del bloque, antes de los afijos.
-      const titulo = slot.querySelector('.builder__stats__slot__name, .builder__stats__title');
-      const nombreSlot = titulo
-        ? limpiar(titulo.textContent ?? '')
-        : limpiar((slot.firstElementChild?.textContent ?? '').slice(0, 60));
+    return Array.from(document.querySelectorAll('.builder__stats__group')).map((grupo) => {
+      const nombreSlot = limpiar(grupo.querySelector('.builder__stats__slot')?.textContent ?? '');
 
-      const afijos = Array.from(slot.querySelectorAll('.dropdown__button__wrapper')).map((w) => {
-        const boton = w.querySelector('.dropdown__button');
-        const texto = limpiar(boton?.textContent ?? w.textContent ?? '');
-        return {
-          texto,
-          templado: w.querySelector('.dropdown__button__tempering') !== null,
-          ga: w.querySelectorAll('.greater__affix__button--filled').length,
-        };
-      });
+      const afijos = Array.from(grupo.querySelectorAll('.builder__stat')).map((stat) => ({
+        texto: limpiar(stat.querySelector('.dropdown__button__wrapper')?.textContent ?? ''),
+        // El templado se marca con una clase que contiene "tempering" en algun punto.
+        templado: stat.querySelector('[class*="tempering"]') !== null,
+        ga: stat.querySelectorAll('.greater__affix__button--filled').length,
+      }));
+
       return { slot: nombreSlot, afijos: afijos.filter((a) => a.texto.length > 0) };
     });
   });
 }
 
+/**
+ * El nombre del tablero viene todo pegado: numero de orden, nombre y las estadisticas
+ * que aporta ("2Carnage Str 110*Dex 59..."), con el glifo entre parentesis en un hijo.
+ * Hay que despiezarlo, y por eso este parser tiene mas cocina que los demas.
+ */
 async function extraerParagon(page: Page): Promise<VarianteRaw['paragon']> {
   return page.evaluate(() => {
     const limpiar = (s: string) => s.replace(/\s+/g, ' ').trim();
     return Array.from(document.querySelectorAll('.paragon__board')).map((b) => {
-      const nombre = b.querySelector('.paragon__board__name');
-      const glifo = b.querySelector('.paragon__board__name__glyph');
-      const textoGlifo = limpiar(glifo?.textContent ?? '');
-      const nivel = textoGlifo.match(/(\d+)/);
-      const img = b.querySelector('img') as HTMLImageElement | null;
+      const nombreEl = b.querySelector('.paragon__board__name');
+      const glifoEl = b.querySelector('.paragon__board__name__glyph');
+      const textoGlifo = limpiar(glifoEl?.textContent ?? '');
+
+      let tablero = limpiar((nombreEl?.textContent ?? '').replace(textoGlifo, ''));
+      // Fuera el numero de orden inicial.
+      tablero = tablero.replace(/^\d+\s*/, '');
+      // Fuera el bloque de estadisticas, que empieza en la primera abreviatura.
+      tablero = tablero.split(/\s+(?:Str|Dex|Int|Will|Fue|Des|Int|Vol)\s+\d/)[0] ?? tablero;
+      tablero = limpiar(tablero);
+
+      // El glifo llega entre parentesis; el nivel no siempre se publica.
+      const nivel = textoGlifo.match(/\b(\d+)\b/);
+      const glifo = limpiar(textoGlifo.replace(/[()]/g, '').replace(/\b\d+\b/g, ''));
+
       return {
-        // El nombre incluye el glifo dentro; se recorta para no duplicarlo.
-        tablero: limpiar((nombre?.textContent ?? '').replace(textoGlifo, '')),
-        glifo: textoGlifo.replace(/\d+/g, '').trim() || null,
+        tablero,
+        glifo: glifo.length > 0 ? glifo : null,
         nivelGlifo: nivel ? Number(nivel[1]) : null,
-        icono: img?.src ?? null,
+        icono: null,
       };
     });
   });
 }
 
-async function extraerArbol(page: Page): Promise<VarianteRaw['arbol']> {
-  return page.evaluate(() => {
-    const limpiar = (s: string) => s.replace(/\s+/g, ' ').trim();
-    const grupos = Array.from(document.querySelectorAll('[class*="tree__category"], [class*="skill__category"]'));
-    return grupos.map((g) => ({
-      categoria: limpiar(g.querySelector('[class*="name"], [class*="title"]')?.textContent ?? ''),
-      nodos: Array.from(g.querySelectorAll('[class*="node"], [class*="skill__item"]'))
-        .map((n) => {
-          const texto = limpiar(n.textContent ?? '');
-          const m = texto.match(/(\d+)\s*\/\s*\d+/);
-          return { nombre: texto.replace(/\d+\s*\/\s*\d+/, '').trim(), puntos: m ? Number(m[1]) : null };
-        })
-        .filter((n) => n.nombre.length > 0 && n.nombre.length < 60),
-    }));
-  });
+/**
+ * El arbol de habilidades se dibuja en un CANVAS (`skill-tree-viewer` / `viewer-canvas`),
+ * no en el DOM: no hay nada que leer y no lo va a haber. Se deja constancia aqui para que
+ * nadie vuelva a intentarlo. La informacion util (que habilidad, con cuantos puntos y con
+ * que mejoras) ya viene del catalogo publico, que es mas fiable.
+ */
+async function extraerArbolImposible(page: Page): Promise<boolean> {
+  return page.evaluate(() => document.querySelector('.skill-tree-viewer, .viewer-canvas') !== null);
 }
 
+/**
+ * Los mercenarios tambien usan un visor de arbol, pero el contratado y su refuerzo si
+ * estan en el DOM como iconos (`.build__skill__wrapper`), con el nombre en el alt.
+ */
 async function extraerMercenarios(page: Page): Promise<VarianteRaw['mercenarios']> {
   return page.evaluate(() => {
     const limpiar = (s: string) => s.replace(/\s+/g, ' ').trim();
-    return Array.from(document.querySelectorAll('[class*="mercenar"][class*="item"], [class*="mercenary__card"]'))
-      .map((m) => {
-        const img = m.querySelector('img') as HTMLImageElement | null;
+    const ROLES = ['Mercenary', 'Reinforcement'];
+    return Array.from(document.querySelectorAll('.build__skill__wrapper, .builder__skill__wrapper'))
+      .slice(0, 2)
+      .map((w, i) => {
+        const img = w.querySelector('img') as HTMLImageElement | null;
+        // El nombre util esta en el alt del icono; el src da el identificador interno.
+        const nombre = limpiar(img?.alt ?? '');
         return {
-          nombre: limpiar(m.querySelector('[class*="name"]')?.textContent ?? img?.alt ?? ''),
-          rol: limpiar(m.querySelector('[class*="role"], [class*="type"]')?.textContent ?? '') || null,
-          habilidades: Array.from(m.querySelectorAll('[class*="skill"] img')).map((s) => (s as HTMLImageElement).alt),
+          nombre,
+          rol: ROLES[i] ?? null,
+          habilidades: [],
           icono: img?.src ?? null,
         };
       })
@@ -242,14 +263,18 @@ async function extraerVariante(page: Page, index: number, etiqueta: string | nul
   // La primera pestana ya viene montada.
   const gear = await extraerGear(page);
   const stats = await extraerStats(page);
+  if (stats.every((s) => s.afijos.length === 0)) {
+    debug['stats'] = await describirZona(page, '.builder__stats__group');
+  }
 
+  // El arbol es canvas: no se intenta extraer, solo se comprueba que sigue siendolo por
+  // si algun dia lo cambian a DOM y merece la pena volver.
   await abrirPestana(page, 'Skill Tree');
-  const arbol = await extraerArbol(page);
-  if (arbol.length === 0) debug['arbol'] = await describirZona(page, '.builder__content > *');
+  const arbolEsCanvas = await extraerArbolImposible(page);
 
   await abrirPestana(page, 'Paragon');
   const paragon = await extraerParagon(page);
-  if (paragon.length === 0) debug['paragon'] = await describirZona(page, '.builder__content > *');
+  if (paragon.length === 0) debug['paragon'] = await describirZona(page, '.paragon__board');
 
   await abrirPestana(page, 'Mercenaries');
   const mercenarios = await extraerMercenarios(page);
@@ -259,7 +284,7 @@ async function extraerVariante(page: Page, index: number, etiqueta: string | nul
   const warPlans = await extraerWarPlans(page);
   if (warPlans.length === 0) debug['warplans'] = await describirZona(page, '.builder__content > *');
 
-  return { index, etiqueta, gear, stats, arbol, paragon, mercenarios, warPlans, debug };
+  return { index, etiqueta, gear, stats, arbol: [], arbolEsCanvas, paragon, mercenarios, warPlans, debug };
 }
 
 async function abrirPagina(browser: Browser, url: string): Promise<Page> {

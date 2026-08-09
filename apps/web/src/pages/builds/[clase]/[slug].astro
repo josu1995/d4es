@@ -284,9 +284,11 @@ function disponible(v: (typeof build.variants)[number], id: string): boolean {
                         {b.glyph && (
                           <span class="ml-auto flex items-center gap-2 text-sm">
                             <span class="text-oro">{b.glyph.ref.esES ?? b.glyph.ref.enUS}</span>
-                            <span class="rounded border border-grabado px-1.5 py-0.5 font-mono text-xs text-ceniza">
-                              {b.glyph.rank}
-                            </span>
+                            {b.glyph.rank !== null && (
+                              <span class="rounded border border-grabado px-1.5 py-0.5 font-mono text-xs text-ceniza">
+                                {b.glyph.rank}
+                              </span>
+                            )}
                           </span>
                         )}
                       </li>

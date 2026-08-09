@@ -16,6 +16,10 @@ on:
         description: 'uuid concreto, o --limite=N, o vacio para todas'
         required: false
         default: ''
+      forzar:
+        description: 'true para re-extraer paginas ya descargadas (tras arreglar un parser)'
+        required: false
+        default: 'false'
   push:
     branches: [main]
     paths:
@@ -71,6 +75,15 @@ jobs:
         run: |
           git config user.name "d4es-bot"
           git config user.email "bot@users.noreply.github.com"
+
+          # Tras arreglar un parser hay que volver a pedir todo: el checkpoint saltaria
+          # las paginas ya descargadas y seguiriamos con los datos mal extraidos. Se
+          # borran de golpe al empezar, en vez de pasar --forzar en cada lote (que haria
+          # que los lotes 2..6 no encontraran nada pendiente y se pararan en seco).
+          if [ "${{ github.event.inputs.forzar }}" = "true" ] || [ "${{ github.event_name }}" = "push" ]; then
+            echo "Re-extraccion completa: se descartan las paginas anteriores."
+            rm -rf data/raw/d4builds/pages
+          fi
 
           for lote in 1 2 3 4 5 6; do
             echo "::group::Lote $lote"

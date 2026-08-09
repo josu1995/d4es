@@ -147,8 +147,8 @@ function construirVariante(
       glyph: b.glifo
         ? {
             ref: resolver.resolve('glyph', b.glifo),
-            // El nivel de glifo no siempre viene; 1 es el minimo valido del esquema.
-            rank: Math.min(Math.max(b.nivelGlifo ?? 1, 1), 150),
+            // Si la fuente no publica el nivel, se queda en null y la ficha no lo pinta.
+            rank: b.nivelGlifo === null ? null : Math.min(Math.max(b.nivelGlifo, 1), 150),
           }
         : null,
     }));

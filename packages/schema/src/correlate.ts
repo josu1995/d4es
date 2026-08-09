@@ -195,13 +195,15 @@ export function computeConsensus(variants: readonly BuildVariant[]): {
 
   // Glifos y su rango.
   const glyphRefs = new Map<string, GameRef>();
-  const glyphRanks = new Map<string, Map<string, number>>();
+  // El rango puede ser null si la fuente publica el glifo pero no su nivel; en el
+  // consenso eso se representa con 'presente', que basta para decir si coinciden.
+  const glyphRanks = new Map<string, Map<string, number | string>>();
   for (const v of variants) {
     for (const b of v.paragon.boards) {
       if (!b.glyph) continue;
       glyphRefs.set(b.glyph.ref.idName, b.glyph.ref);
       if (!glyphRanks.has(b.glyph.ref.idName)) glyphRanks.set(b.glyph.ref.idName, new Map());
-      glyphRanks.get(b.glyph.ref.idName)!.set(v.id, b.glyph.rank);
+      glyphRanks.get(b.glyph.ref.idName)!.set(v.id, b.glyph.rank ?? 'presente');
     }
   }
   for (const [idName, porVariante] of [...glyphRanks.entries()].sort((a, b) => a[0].localeCompare(b[0]))) {

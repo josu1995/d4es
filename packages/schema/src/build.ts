@@ -60,7 +60,8 @@ export const ParagonBoard = z.object({
   glyph: z
     .object({
       ref: GameRef,
-      rank: z.number().int().min(1).max(MAX_GLYPH_RANK),
+      /** null cuando la fuente publica el glifo pero no su nivel: no se inventa un 1. */
+      rank: z.number().int().min(1).max(MAX_GLYPH_RANK).nullable(),
     })
     .nullable(),
 });
