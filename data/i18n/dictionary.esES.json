@@ -11850,6 +11850,62 @@
       "sno": null,
       "source": "curated"
     },
+    "gem:amethyst": {
+      "category": "gem",
+      "en": "Amethyst",
+      "es": "Amatista",
+      "idName": "gem_amethyst",
+      "sno": null,
+      "source": "wowhead-es"
+    },
+    "gem:diamond": {
+      "category": "gem",
+      "en": "Diamond",
+      "es": "Diamante",
+      "idName": "gem_diamond",
+      "sno": null,
+      "source": "wowhead-es"
+    },
+    "gem:emerald": {
+      "category": "gem",
+      "en": "Emerald",
+      "es": "Esmeralda",
+      "idName": "gem_emerald",
+      "sno": null,
+      "source": "wowhead-es"
+    },
+    "gem:ruby": {
+      "category": "gem",
+      "en": "Ruby",
+      "es": "Rubí",
+      "idName": "gem_ruby",
+      "sno": null,
+      "source": "wowhead-es"
+    },
+    "gem:sapphire": {
+      "category": "gem",
+      "en": "Sapphire",
+      "es": "Zafiro",
+      "idName": "gem_sapphire",
+      "sno": null,
+      "source": "wowhead-es"
+    },
+    "gem:skull": {
+      "category": "gem",
+      "en": "Skull",
+      "es": "Cráneo",
+      "idName": "gem_skull",
+      "sno": null,
+      "source": "wowhead-es"
+    },
+    "gem:topaz": {
+      "category": "gem",
+      "en": "Topaz",
+      "es": "Topacio",
+      "idName": "gem_topaz",
+      "sno": null,
+      "source": "wowhead-es"
+    },
     "glyph:abyssal": {
       "category": "glyph",
       "en": "Abyssal",
@@ -35355,6 +35411,62 @@
       "sno": null,
       "source": "curated"
     },
+    "gem:gem_amethyst": {
+      "category": "gem",
+      "en": "Amethyst",
+      "es": "Amatista",
+      "idName": "gem_amethyst",
+      "sno": null,
+      "source": "wowhead-es"
+    },
+    "gem:gem_diamond": {
+      "category": "gem",
+      "en": "Diamond",
+      "es": "Diamante",
+      "idName": "gem_diamond",
+      "sno": null,
+      "source": "wowhead-es"
+    },
+    "gem:gem_emerald": {
+      "category": "gem",
+      "en": "Emerald",
+      "es": "Esmeralda",
+      "idName": "gem_emerald",
+      "sno": null,
+      "source": "wowhead-es"
+    },
+    "gem:gem_ruby": {
+      "category": "gem",
+      "en": "Ruby",
+      "es": "Rubí",
+      "idName": "gem_ruby",
+      "sno": null,
+      "source": "wowhead-es"
+    },
+    "gem:gem_sapphire": {
+      "category": "gem",
+      "en": "Sapphire",
+      "es": "Zafiro",
+      "idName": "gem_sapphire",
+      "sno": null,
+      "source": "wowhead-es"
+    },
+    "gem:gem_skull": {
+      "category": "gem",
+      "en": "Skull",
+      "es": "Cráneo",
+      "idName": "gem_skull",
+      "sno": null,
+      "source": "wowhead-es"
+    },
+    "gem:gem_topaz": {
+      "category": "gem",
+      "en": "Topaz",
+      "es": "Topacio",
+      "idName": "gem_topaz",
+      "sno": null,
+      "source": "wowhead-es"
+    },
     "glyph:Rare_001_Intelligence_Main": {
       "category": "glyph",
       "en": "Enchanter",
@@ -47293,10 +47405,11 @@
     },
     "curatedCounts": {
       "class": 5,
+      "gem": 7,
       "skill": 149,
       "skillUpgrade": 639
     },
-    "generatedAt": "2026-08-09T10:08:38.459Z",
+    "generatedAt": "2026-08-09T11:20:24.284Z",
     "sourceRepo": "josdemmers/Diablo4Companion",
     "sourceSha": "7b956b088d728a06b889c42555c32d34e1a563a5"
   }

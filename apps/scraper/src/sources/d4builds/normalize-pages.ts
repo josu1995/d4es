@@ -196,6 +196,20 @@ export function esAfijoDeVerdad(texto: string): boolean {
   return !/\baspects?\b/i.test(t);
 }
 
+/**
+ * Gema o runa. La fuente las sirve desde carpetas distintas del CDN y ese es el dato
+ * fiable; el nombre no vale, porque "Skull" podria ser cualquier cosa. Si algun dia
+ * cambiaran las carpetas, se cae al tipo que ya extrae el scraper del nombre del fichero
+ * ("grand-diamond"), que es la otra pista que publica.
+ */
+const GEMAS = /\b(diamond|ruby|skull|topaz|sapphire|emerald|amethyst)\b/i;
+
+export function esGema(engarce: { tipo: string; icono: string | null }): boolean {
+  if (engarce.icono?.includes('/Gems/')) return true;
+  if (engarce.icono?.includes('/Runes/')) return false;
+  return GEMAS.test(engarce.tipo);
+}
+
 /** Un afijo templado o con estrellas no es "otro afijo": es el mismo con mas informacion. */
 function construirGear(
   crudo: GearItemRaw,
@@ -235,7 +249,10 @@ function construirGear(
     sockets: crudo.engarces
       .filter((e) => e.nombre.length > 0)
       .slice(0, 3)
-      .map((e) => resolver.resolve('rune', e.nombre)),
+      // Gema o runa segun la carpeta de la que la sirve la fuente. Publicarlo todo como
+      // runa hacia que "Diamond", "Ruby"... se buscaran en la lista de runas del juego,
+      // donde no estan: 701 apariciones sin traducir por una etiqueta mal puesta.
+      .map((e) => resolver.resolve(esGema(e) ? 'gem' : 'rune', e.nombre)),
     minItemPower: null,
   };
 }

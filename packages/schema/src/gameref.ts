@@ -17,6 +17,13 @@ export const GameRefCategory = z.enum([
    */
   'skillUpgrade',
   'rune',
+  /**
+   * Las gemas NO son runas, aunque las dos se engarcen en el equipo: la fuente las sirve
+   * desde carpetas distintas (/Gems/ y /Runes/) y el diccionario oficial solo trae las
+   * runas. Mezclarlas dejaba 701 apariciones de "Diamond", "Ruby"... buscandose en la
+   * lista de runas, donde no estan ni van a estar.
+   */
+  'gem',
   'runeword',
   'affix',
   'aspect',

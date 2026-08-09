@@ -4,6 +4,7 @@ import { CanonicalBuild, untranslatedRef, type BuildVariant } from '@d4es/schema
 import {
   enriquecerConPagina,
   esAfijoDeVerdad,
+  esGema,
   limpiarNombreTablero,
   nombreDesdeSlug,
   slugDeNodo,
@@ -360,5 +361,26 @@ describe('esAfijoDeVerdad', () => {
     expect(esAfijoDeVerdad('Maximum Life')).toBe(true);
     expect(esAfijoDeVerdad('Cooldown Reduction (Worldly Stability - Resource)')).toBe(true);
     expect(esAfijoDeVerdad('Critical Strike Damage')).toBe(true);
+  });
+});
+
+/**
+ * Una gema no es una runa, aunque las dos se engarcen. Publicarlas todas como runa hacia
+ * que "Diamond", "Ruby"... se buscaran en la lista de runas del juego, donde no estan:
+ * 701 apariciones sin traducir por una etiqueta mal puesta.
+ */
+describe('esGema', () => {
+  it('se fia de la carpeta del CDN, que es el dato fiable', () => {
+    expect(esGema({ tipo: 'grand-diamond', icono: 'https://x/DIABLO4/Gems/grand-diamond.png' })).toBe(true);
+    expect(esGema({ tipo: 'ritual', icono: 'https://x/DIABLO4/Runes/ritual.png' })).toBe(false);
+  });
+
+  it('sin icono se cae al tipo, que es la otra pista que publica la fuente', () => {
+    expect(esGema({ tipo: 'grand-ruby', icono: null })).toBe(true);
+    expect(esGema({ tipo: 'invocation', icono: null })).toBe(false);
+  });
+
+  it('una runa que se llame como una gema no se confunde si hay icono', () => {
+    expect(esGema({ tipo: 'skull', icono: 'https://x/DIABLO4/Runes/skull.png' })).toBe(false);
   });
 });

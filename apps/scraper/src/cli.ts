@@ -17,6 +17,7 @@ const CURATED = [
   join(PATHS.curated, 'clases.esES.json'),
   join(PATHS.curated, 'skills.esES.json'),
   join(PATHS.curated, 'terminos.esES.json'),
+  join(PATHS.curated, 'gemas.esES.json'),
 ];
 
 async function cmdI18nSync(): Promise<number> {
