@@ -1,4 +1,4 @@
-import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import {
@@ -61,6 +61,8 @@ export interface IconosResultado {
   fallidos: { ruta: string; motivo: string }[];
   bytes: number;
   parado: boolean;
+  /** Iconos que ya no referencia nadie y se han barrido. */
+  huerfanosBorrados: string[];
 }
 
 async function leerBuilds(): Promise<CanonicalBuild[]> {
@@ -121,6 +123,7 @@ export async function runIconos(): Promise<IconosResultado> {
     fallidos: [],
     bytes: 0,
     parado: false,
+    huerfanosBorrados: [],
   };
 
   for (const icono of iconos) {
@@ -156,6 +159,24 @@ export async function runIconos(): Promise<IconosResultado> {
     await new Promise((r) => setTimeout(r, PAUSA_MS));
   }
 
+  // Iconos que ya no referencia nadie. Salen solos: un cambio en como se construye el
+  // nombre del fichero deja atras la version anterior, y si no se barren se quedan en el
+  // repositorio para siempre. Solo se borra DENTRO de public/iconos y solo lo que no
+  // aparece en la lista de referenciados, que se acaba de calcular de los datos.
+  const referenciadas = new Set(iconos.map((i) => decodeURIComponent(i.ruta)));
+  const raiz = join(PATHS.webPublic, 'iconos');
+  if (existsSync(raiz)) {
+    for (const familia of await readdir(raiz, { withFileTypes: true })) {
+      if (!familia.isDirectory()) continue;
+      for (const fichero of await readdir(join(raiz, familia.name))) {
+        const ruta = `/iconos/${familia.name}/${fichero}`;
+        if (referenciadas.has(decodeURIComponent(ruta))) continue;
+        await rm(join(raiz, familia.name, fichero));
+        res.huerfanosBorrados.push(ruta);
+      }
+    }
+  }
+
   await mkdir(PATHS.reports, { recursive: true });
   await writeIfChanged(
     join(PATHS.reports, 'iconos.json'),
@@ -165,6 +186,7 @@ export async function runIconos(): Promise<IconosResultado> {
       descargadosEstaVez: res.descargados,
       megasEstaVez: Number((res.bytes / 1024 / 1024).toFixed(2)),
       parado: res.parado,
+      huerfanosBorrados: res.huerfanosBorrados,
       // Los que faltan quedan por escrito: un icono que no existe en la fuente suele
       // significar que el nombre no casa, y eso hay que mirarlo, no esconderlo.
       fallidos: res.fallidos.slice(0, 80),

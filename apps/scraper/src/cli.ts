@@ -213,6 +213,10 @@ async function cmdIconos(): Promise<number> {
     process.stdout.write(`  ${res.fallidos.length} sin descargar (ver data/reports/iconos.json):\n`);
     for (const f of res.fallidos.slice(0, 8)) process.stdout.write(`    ${f.ruta}: ${f.motivo}\n`);
   }
+  if (res.huerfanosBorrados.length > 0) {
+    process.stdout.write(`  ${res.huerfanosBorrados.length} iconos huerfanos barridos
+`);
+  }
   if (res.parado) {
     process.stderr.write('  PARADO: se alcanzo el tope de tamano de una pasada. Revisa antes de seguir.\n');
     return EXIT.guardrail;
