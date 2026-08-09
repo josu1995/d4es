@@ -33,6 +33,42 @@ describe('extraerDescripcionActiva', () => {
     expect(r?.desc).not.toContain('204%');
   });
 
+  it('quita tambien el tiempo de reutilizacion con su unidad y el nbsp numerico', () => {
+    const ficha =
+      '<div data-skill-type="active"><div class="whtt-name">Apocalipsis</div>' +
+      '<div class="whtt-description"><span>Tiempo de reutilización: </span><span>67&#160;s</span><br>' +
+      '<span>Probabilidad de golpe de suerte: </span><span>20%</span><br>' +
+      'Desatas el apocalipsis sobre tus enemigos.</div></div>';
+    const r = extraerDescripcionActiva(ficha);
+    expect(r?.desc).toBe('Desatas el apocalipsis sobre tus enemigos.');
+  });
+
+  it('quita cabeceras con sufijo ("por segundo", "cada 20 s") y las pegadas sin br', () => {
+    const casos: [string, string][] = [
+      // Torbellino: coste por segundo.
+      ['Coste de furia: 15 por segundo<br>Probabilidad de golpe de suerte: 20%<br>Atacas rápidamente.', 'Atacas rápidamente.'],
+      // Garra rauda: cargas con recarga.
+      ['Tiempo de reutilización de las cargas: 4 cada 20&#160;s<br>Saltas hacia delante.', 'Saltas hacia delante.'],
+      // Tenaza de acero: la fuente pega dos cabeceras SIN br.
+      ['<span>Coste de furia:</span> <span>0</span><span>Cargas:</span> <span>2</span><br><span>Tiempo de reutilización de las cargas:</span> <span>11</span>&#160;s<br>Lanzas tres cadenas.', 'Lanzas tres cadenas.'],
+      // Carga: sufijo de varias palabras ("por enemigo golpeado").
+      ['Generación de furia: 5 por enemigo golpeado<br>Tiempo de reutilización: 17&#160;s<br>Corres hacia delante.', 'Corres hacia delante.'],
+    ];
+    for (const [cuerpo, esperado] of casos) {
+      const ficha = `<div data-skill-type="active"><div class="whtt-name">X</div><div class="whtt-description">${cuerpo}</div></div>`;
+      expect(extraerDescripcionActiva(ficha)?.desc).toBe(esperado);
+    }
+  });
+
+  it('no confunde "Pasiva:" ni "Activa:" con una cabecera: son cuerpo', () => {
+    const ficha =
+      '<div data-skill-type="active"><div class="whtt-name">X</div>' +
+      '<div class="whtt-description">Pasiva: Obtienes 1 de Resolución cada 5.0 s.<br>Activa: Te envuelves en piel blindada.</div></div>';
+    expect(extraerDescripcionActiva(ficha)?.desc).toBe(
+      'Pasiva: Obtienes 1 de Resolución cada 5.0 s. Activa: Te envuelves en piel blindada.',
+    );
+  });
+
   it('devuelve null si no hay bloque activo', () => {
     expect(extraerDescripcionActiva('<div data-skill-type="upgrade">x</div>')).toBeNull();
     expect(extraerDescripcionActiva('')).toBeNull();

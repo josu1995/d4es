@@ -48,10 +48,12 @@ function limpiarTexto(html: string): string {
   return html
     .replace(/<br\s*\/?>/gi, '\n')
     .replace(/<[^>]+>/g, '')
-    .replace(/&#39;/g, "'")
+    .replace(/&#(\d+);/g, (_, n: string) => String.fromCodePoint(Number(n)))
     .replace(/&amp;/g, '&')
     .replace(/&quot;/g, '"')
     .replace(/&nbsp;/g, ' ')
+    // El nbsp de los valores ("67 s") llega como  : a espacio normal.
+    .replace(/ /g, ' ')
     .replace(/[ \t]+/g, ' ')
     .trim();
 }
@@ -67,12 +69,26 @@ export function extraerDescripcionActiva(html: string): { nombre: string; desc: 
   const descHtml = bloque.match(/<div class="whtt-description">(.*?)<\/div>/s)?.[1];
   if (!nombre || !descHtml) return null;
 
-  // Fuera las cabeceras "etiqueta: valor" (coste, golpe de suerte...): en el tooltip ya
-  // se pintan aparte, y aqui solo duplicarian. El cuerpo empieza en la primera linea que
-  // no tiene esa pinta.
+  // Fuera las cabeceras "etiqueta: valor" (coste, golpe de suerte, tiempo de
+  // reutilizacion "67 s", "15 por segundo", "4 cada 20 s"...): en el tooltip ya se
+  // pintan aparte y aqui solo duplicarian. Se quitan por FRAGMENTOS y no por lineas,
+  // porque la fuente a veces pega dos cabeceras sin <br> ("Coste de furia: 0Cargas: 2").
+  // El valor tiene que empezar por digitos: "Pasiva: Obtienes..." es cuerpo y se queda.
+  const FRAGMENTO =
+    /^[^:.!?]{1,60}:\s*[\d.,]+\s*%?\s*(s\b\.?|seg\.?|por\s+[a-záéíóúüñ]+(\s+[a-záéíóúüñ]+){0,2}|cada\s+[\d.,]+\s*s\b)?\s*/iu;
   const lineas = limpiarTexto(descHtml).split('\n');
   let inicio = 0;
-  while (inicio < lineas.length && /^[^:]{1,60}:\s*[\d.,%x\s]+$/.test(lineas[inicio]!.trim())) {
+  while (inicio < lineas.length) {
+    let linea = lineas[inicio]!.trim();
+    let recorte = linea.match(FRAGMENTO);
+    while (recorte) {
+      linea = linea.slice(recorte[0].length);
+      recorte = linea.match(FRAGMENTO);
+    }
+    if (linea.length > 0) {
+      lineas[inicio] = linea;
+      break;
+    }
     inicio++;
   }
   const desc = lineas.slice(inicio).join(' ').replace(/\s+/g, ' ').trim();
