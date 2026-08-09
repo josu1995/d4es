@@ -1,6 +1,6 @@
 {
-  "descargadosEstaVez": 39,
-  "enDisco": 488,
+  "descargadosEstaVez": 7,
+  "enDisco": 495,
   "fallidos": [
     {
       "motivo": "HTTP 404",
@@ -59,6 +59,10 @@
       "ruta": "/iconos/unicos/cage_of_madness.png"
     },
     {
+      "motivo": "no es un PNG (6664 bytes)",
+      "ruta": "/iconos/unicos/cassia's_grace.png"
+    },
+    {
       "motivo": "no es un PNG (4596 bytes)",
       "ruta": "/iconos/unicos/cathedral's_song.png"
     },
@@ -79,6 +83,10 @@
       "ruta": "/iconos/unicos/dawnfire.png"
     },
     {
+      "motivo": "no es un PNG (9108 bytes)",
+      "ruta": "/iconos/unicos/deathmask_of_nirmitruq.png"
+    },
+    {
       "motivo": "no es un PNG (9014 bytes)",
       "ruta": "/iconos/unicos/dirge_of_airidah.png"
     },
@@ -89,6 +97,10 @@
     {
       "motivo": "no es un PNG (7666 bytes)",
       "ruta": "/iconos/unicos/drognan's_anguish.png"
+    },
+    {
+      "motivo": "no es un PNG (4254 bytes)",
+      "ruta": "/iconos/unicos/eaglehorn.png"
     },
     {
       "motivo": "HTTP 404",
@@ -155,6 +167,10 @@
       "ruta": "/iconos/unicos/herald's_morningstar.png"
     },
     {
+      "motivo": "no es un PNG (9136 bytes)",
+      "ruta": "/iconos/unicos/hesha_e_kesungi.png"
+    },
+    {
       "motivo": "no es un PNG (6588 bytes)",
       "ruta": "/iconos/unicos/ifeh's_dire_totem.png"
     },
@@ -165,6 +181,10 @@
     {
       "motivo": "no es un PNG (6020 bytes)",
       "ruta": "/iconos/unicos/lidless_wall.png"
+    },
+    {
+      "motivo": "no es un PNG (5276 bytes)",
+      "ruta": "/iconos/unicos/light's_rebuke.png"
     },
     {
       "motivo": "no es un PNG (5624 bytes)",
@@ -199,6 +219,14 @@
       "ruta": "/iconos/unicos/mutilator_plate.png"
     },
     {
+      "motivo": "no es un PNG (8552 bytes)",
+      "ruta": "/iconos/unicos/onyx_soul.png"
+    },
+    {
+      "motivo": "no es un PNG (10782 bytes)",
+      "ruta": "/iconos/unicos/ophidian_iris.png"
+    },
+    {
       "motivo": "no es un PNG (7330 bytes)",
       "ruta": "/iconos/unicos/pact_of_bone.png"
     },
@@ -217,6 +245,10 @@
     {
       "motivo": "no es un PNG (9764 bytes)",
       "ruta": "/iconos/unicos/ring_of_the_ravenous.png"
+    },
+    {
+      "motivo": "HTTP 404",
+      "ruta": "/iconos/unicos/sanguivor_blade_of_zir.png"
     },
     {
       "motivo": "no es un PNG (9788 bytes)",
@@ -271,6 +303,10 @@
       "ruta": "/iconos/unicos/sunstained_war_crozier.png"
     },
     {
+      "motivo": "no es un PNG (1608 bytes)",
+      "ruta": "/iconos/unicos/supplication.png"
+    },
+    {
       "motivo": "no es un PNG (8144 bytes)",
       "ruta": "/iconos/unicos/the_basilisk.png"
     },
@@ -285,45 +321,99 @@
     {
       "motivo": "no es un PNG (9736 bytes)",
       "ruta": "/iconos/unicos/the_hemat_stone.png"
-    },
-    {
-      "motivo": "no es un PNG (4948 bytes)",
-      "ruta": "/iconos/unicos/the_maestro.png"
-    },
-    {
-      "motivo": "no es un PNG (7154 bytes)",
-      "ruta": "/iconos/unicos/the_relentless_heart.png"
-    },
-    {
-      "motivo": "no es un PNG (10652 bytes)",
-      "ruta": "/iconos/unicos/the_third_blade.png"
-    },
-    {
-      "motivo": "no es un PNG (4768 bytes)",
-      "ruta": "/iconos/unicos/the_umbracrux.png"
-    },
-    {
-      "motivo": "no es un PNG (11344 bytes)",
-      "ruta": "/iconos/unicos/the_undercrown.png"
-    },
-    {
-      "motivo": "no es un PNG (9074 bytes)",
-      "ruta": "/iconos/unicos/thundergod's_blessing.png"
-    },
-    {
-      "motivo": "no es un PNG (12218 bytes)",
-      "ruta": "/iconos/unicos/vengeful_sinew.png"
-    },
-    {
-      "motivo": "no es un PNG (8398 bytes)",
-      "ruta": "/iconos/unicos/vision_of_the_firestorm.png"
-    },
-    {
-      "motivo": "no es un PNG (9306 bytes)",
-      "ruta": "/iconos/unicos/ward_of_the_white_dove.png"
     }
   ],
-  "megasEstaVez": 0.63,
+  "huerfanosBorrados": [
+    "/iconos/habilidades/altar_of_avarice.png",
+    "/iconos/habilidades/ashes_to_ashes.png",
+    "/iconos/habilidades/bauble_day.png",
+    "/iconos/habilidades/bedlam.png",
+    "/iconos/habilidades/blood_of_bartuc.png",
+    "/iconos/habilidades/bound_by_blood.png",
+    "/iconos/habilidades/branching_pathways.png",
+    "/iconos/habilidades/bursting_brood.png",
+    "/iconos/habilidades/chaotic_echoes.png",
+    "/iconos/habilidades/chaotic_favor.png",
+    "/iconos/habilidades/children_of_zir.png",
+    "/iconos/habilidades/cipher_maps.png",
+    "/iconos/habilidades/colossal_foe.png",
+    "/iconos/habilidades/corrupted_roots.png",
+    "/iconos/habilidades/council_coffers.png",
+    "/iconos/habilidades/crimson_scent.png",
+    "/iconos/habilidades/cult_of_annihilation.png",
+    "/iconos/habilidades/cursed_merchant.png",
+    "/iconos/habilidades/cursed_offerings.png",
+    "/iconos/habilidades/cursed_rituals.png",
+    "/iconos/habilidades/damned_thieves.png",
+    "/iconos/habilidades/dog_of_astaroth.png",
+    "/iconos/habilidades/dread_revival.png",
+    "/iconos/habilidades/embers_of_anguish.png",
+    "/iconos/habilidades/endless_swarm.png",
+    "/iconos/habilidades/exalted_council.png",
+    "/iconos/habilidades/exotic_armory.png",
+    "/iconos/habilidades/fall_of_the_fell.png",
+    "/iconos/habilidades/fearless_conviction.png",
+    "/iconos/habilidades/finely_tuned.png",
+    "/iconos/habilidades/flawless_find.png",
+    "/iconos/habilidades/forged_in_flame.png",
+    "/iconos/habilidades/fortune_or_famine.png",
+    "/iconos/habilidades/gauntlet.png",
+    "/iconos/habilidades/goblinfall.png",
+    "/iconos/habilidades/golden_hoard.png",
+    "/iconos/habilidades/greater_nemesis.png",
+    "/iconos/habilidades/greed_is_good.png",
+    "/iconos/habilidades/grim_mysteries.png",
+    "/iconos/habilidades/grim_retribution.png",
+    "/iconos/habilidades/gutter_filth.png",
+    "/iconos/habilidades/hated_foe.png",
+    "/iconos/habilidades/headrotten_feast.png",
+    "/iconos/habilidades/heart_of_stone.png",
+    "/iconos/habilidades/hellmouth.png",
+    "/iconos/habilidades/horadric_hunter.png",
+    "/iconos/habilidades/idols_of_war.png",
+    "/iconos/habilidades/impending_doom.png",
+    "/iconos/habilidades/infernal_deception.png",
+    "/iconos/habilidades/infernal_hoard.png",
+    "/iconos/habilidades/infernal_rite.png",
+    "/iconos/habilidades/initiative.png",
+    "/iconos/habilidades/jade_epiphany.png",
+    "/iconos/habilidades/lair_of_plenty.png",
+    "/iconos/habilidades/lair_of_runes.png",
+    "/iconos/habilidades/last_gasp.png",
+    "/iconos/habilidades/malignant_invasion.png",
+    "/iconos/habilidades/material_wealth.png",
+    "/iconos/habilidades/meat_brothers.png",
+    "/iconos/habilidades/method_and_madness.png",
+    "/iconos/habilidades/nemesis.png",
+    "/iconos/habilidades/nemesis_tides.png",
+    "/iconos/habilidades/night_terrors.png",
+    "/iconos/habilidades/out_of_the_cold.png",
+    "/iconos/habilidades/pathfinder.png",
+    "/iconos/habilidades/pit_butcher.png",
+    "/iconos/habilidades/planar_tremors.png",
+    "/iconos/habilidades/pulse_of_aether.png",
+    "/iconos/habilidades/recurring_nightmare.png",
+    "/iconos/habilidades/reign_in_hell.png",
+    "/iconos/habilidades/resplendent_favor.png",
+    "/iconos/habilidades/rewarded_faith.png",
+    "/iconos/habilidades/roots_of_power.png",
+    "/iconos/habilidades/scale_of_tathamet.png",
+    "/iconos/habilidades/simple_gifts.png",
+    "/iconos/habilidades/tainted_shrines.png",
+    "/iconos/habilidades/the_black_pact.png",
+    "/iconos/habilidades/total_chaos.png",
+    "/iconos/habilidades/tree_of_plenty.png",
+    "/iconos/habilidades/trials_and_tributes.png",
+    "/iconos/habilidades/two_by_two.png",
+    "/iconos/habilidades/ultimate_nemesis.png",
+    "/iconos/habilidades/undying_embers.png",
+    "/iconos/habilidades/unfortunate_souls.png",
+    "/iconos/habilidades/waking_spoils.png",
+    "/iconos/habilidades/wisdom_of_whispers.png",
+    "/iconos/habilidades/wretched_vermin.png",
+    "/iconos/habilidades/writhe_and_rot.png"
+  ],
+  "megasEstaVez": 0.08,
   "parado": false,
-  "referenciados": 569
+  "referenciados": 585
 }
