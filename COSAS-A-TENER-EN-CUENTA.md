@@ -84,3 +84,7 @@ npm run build      # lo mismo que ejecuta Netlify
 
 Y actualizar `TRASPASO.md` con lo que hayas descubierto: la mitad de lo que hay ahí costó horas y
 no se deduce del código.
+
+#  Cosas mias a hacer
+te cuento un poco lo que voy echando en falta por ejemplo echo en falta que al principio cuando en la parte de la del equipo las que no tienen un hombre o son objetos míticos u blancos legendarios los que tienen aspecto esos los aspectos para empezar ponernos en castellano, y luego a esos ponerles una previsualización como está en D4 Wings o Max Roy, que es la imagen de unde un pantalón o algo básico.luego en las habilidades echo de menos que cuando pongo el ratón sobre encima no estén en castellano entonces porque claro estoy en castellano que esté en castellano entonces eso que cambiar luego en el Paragon tú me pones el tablero la runa pero no me pones nada más lo que hay dentro del tablero tendrá que ser un desplegable cada tablerocon la runas que tendría que o sea con el camino tiene ese para huevón porque si no no me sirve de nada entonces tienes que mirar a ver cómo están de cuatro Wheels que por lo que me ha dicho yo creo que es un Canvas o en Sol y simular algo parecidoy por último hay que hacer lo de mercedarios y plan de guerra y ya está y también hay que poner en la parte donde está el equipo por ejemplo como aparecen de cuatro Wheels pues imagínate el pantalón hay que priorizar que tenga vida destreza, regeneración de recursos y no sé qué que se parecen de cuatro Wheels abajo de la Build de los objetos que tienen otra cosa
+
