@@ -1,0 +1,348 @@
+{
+  "buildId": "a46f8eee-efa6-49e6-bd04-65ed29ba3a25",
+  "capturadoEn": "2026-08-09T06:26:05.304Z",
+  "pestanas": [
+    "Gear & Skills",
+    "Skill Tree",
+    "Paragon",
+    "Mercenaries",
+    "War Plans",
+    "Notes"
+  ],
+  "porVariante": [
+    {
+      "arbol": [],
+      "debug": {
+        "arbol": {
+          "clases": {
+            "Healing": 3,
+            "Stinger": 5,
+            "ToxicSkin": 1,
+            "Weakened": 2,
+            "WitheringFist": 1,
+            "active": 1,
+            "alt": 1,
+            "build__leveling__item": 12,
+            "build__leveling__item__level": 12,
+            "build__leveling__item__level--red": 2,
+            "build__leveling__item__skill": 11,
+            "build__skill__icon": 12,
+            "build__skill__wrapper": 12,
+            "build__skill__wrapper--leveling": 12,
+            "filters__btn": 1,
+            "game__filters__btn": 1,
+            "game__filters__btn__icon": 1,
+            "game__filters__list": 1,
+            "leveling": 1,
+            "searchbar": 1,
+            "searchbar-close": 1,
+            "searchbar-close-img": 1,
+            "searchbar-icon": 1,
+            "searchbar-input": 1,
+            "skill-tree-viewer": 1,
+            "skill-tree-viewer__content": 1,
+            "skill__tree__header": 1,
+            "skill__tree__header__wrapper": 1,
+            "skill__tree__leveling": 1,
+            "skill__tree__leveling__list": 1,
+            "skill__tree__leveling__title": 1,
+            "skill__tree__leveling__toggle": 1,
+            "skill__tree__leveling__toggle__button": 1,
+            "skill__tree__remaining": 1,
+            "skill__tree__remaining__total": 1,
+            "skill__tree__total": 1
+          },
+          "muestra": "<div class=\"general__wrapper\"><div class=\"skill-tree-viewer\"><div class=\"skill__tree__header alt\"><div class=\"skill__tree__header__wrapper\"><div class=\"skill__tree__remaining\"><div class=\"skill__tree__total\">Remaining:<div class=\"skill__tree__remaining__total\">17</div></div></div><div class=\"searchbar\"><img class=\"searchbar-icon\" src=\"https://sunderarmor.com/search-icon.svg\" alt=\"search icon\"><input id=\"skill-tree-viewer-search\" class=\"searchbar-input\" type=\"text\" placeholder=\"Search skills...\" autocomplete=\"off\" value=\"\"><button class=\"searchbar-close\" tabindex=\"-1\"><img class=\"searchbar-close-img\" src=\"https://sunderarmor.com/close-icon.svg\" alt=\"close icon\"></button></div><button class=\"game__filters__btn filters__btn\"><img src=\"https://sunderarmor.com/DIABLO4/UI/fullscreen_icon.svg\" class=\"game__filters__btn__icon\" alt=\"fullscreen\" style=\"width: 18px; height: 18px;\"></button><div class=\"skill__tree__leveling__toggle active\"><div class=\"skill__tree__leveling__toggle__button\"><span></span></div>Leveling Path</div><div class=\"game__filters__list\"></div></div></div><div class=\"skill-tree-viewer__content leveling\"><div class=\"skill__tree__leveling\"><div class=\"skill__tree__leveling__title\">Leveling Path</div><div class=\"skill__tree__leveling__list\"><div class=\"build__leveling__item\"><div class=\"build__leveling__item__level\">2</div><div class=\"build__skill__wrapper build__skill__wrapper--leveling WitheringFist \" role=\"button\" tabindex=\"0\" aria-expanded=\"false\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/withering_fist.png\" class=\"build__skill__icon\" alt=\"Withering Fist\"></div><div class=\"build__leveling__item__skill\">Withering Fist</div></div><div class=\"build__leveling__item\"><div class=\"build__leveling__item__level\">3</div><div class=\"build__skill__wrapper build__skill__wrapper--leveling Stinger \" role=\"button\" tabindex=\"0\" aria-expanded=\"false\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/stinger.png\" class=\"build__skill__icon\" alt=\"Stinger\"></div><div class=\"build__leveling__item__skill\">Stinger</div></div><div class=\"build__leveling__item\"><div class=\"build__leveling__item__level\">4</div><div class=\"build__skill__wrapper build__skill__wrapper--leveling ToxicSkin \" role=\"button\" tabindex=\"0\" aria-expanded=\"false\"><img src=\"https://sunderarmor.com/DIABLO4/Skills/VoH2/toxic_skin.png\" class=\"build__skill__icon\" alt=\"Toxic Skin\"></div><div class=\"build__leveling__item__skill\">Toxic Skin</div></div><div class=\"build__leveling__item\"><div cl",
+          "textos": []
+        },
+        "mercenarios": {
+          "clases": {
+            "active": 7,
+            "alt": 1,
+            "builder__skill": 4,
+            "builder__skill__icon": 4,
+            "disabled": 1,
+            "empty": 2,
+            "even": 3,
+            "filters__btn": 1,
+            "game__filters__btn": 1,
+            "game__filters__btn__icon": 1,
+            "game__filters__list": 1,
+            "large": 4,
+            "leveling": 1,
+            "odd": 3,
+            "searchbar": 1,
+            "searchbar-close": 1,
+            "searchbar-close-img": 1,
+            "searchbar-icon": 1,
+            "searchbar-input": 1,
+            "skill__tree": 1,
+            "skill__tree--merc": 1,
+            "skill__tree__alternative": 1,
+            "skill__tree__categories": 1,
+            "skill__tree__category": 7,
+            "skill__tree__category__count": 6,
+            "skill__tree__category__count__icon": 6,
+            "skill__tree__category__icon": 1,
+            "skill__tree__connector": 6,
+            "skill__tree__connector__bg": 6,
+            "skill__tree__connector__fill": 6,
+            "skill__tree__header": 1,
+            "skill__tree__header__wrapper": 1,
+            "skill__tree__merc": 1,
+            "skill__tree__merc__button__wrapper": 4,
+            "skill__tree__merc__label": 4,
+            "skill__tree__sections": 1,
+            "skill__tree__wrapper": 1
+          },
+          "muestra": "<div class=\"general__wrapper\"><div class=\"skill__tree skill__tree--merc\"><div class=\"skill__tree__header alt\"><div class=\"skill__tree__header__wrapper\"><div class=\"skill__tree__merc\"><div class=\"skill__tree__merc__button__wrapper\"><div class=\"skill__tree__merc__label\">Mercenary</div><button class=\"builder__skill\" disabled=\"\"><img class=\"builder__skill__icon\" src=\"https://sunderarmor.com/DIABLO4/UI/empty_skill.png\" alt=\"empty skill\"></button></div><div class=\"skill__tree__merc__button__wrapper\"><div class=\"skill__tree__merc__label\">Reinforcement</div><button class=\"builder__skill\" disabled=\"\"><img class=\"builder__skill__icon\" src=\"https://sunderarmor.com/DIABLO4/UI/empty_skill.png\" alt=\"empty skill\"></button></div><div class=\"skill__tree__merc__button__wrapper\"><div class=\"skill__tree__merc__label\">Skill</div><button class=\"builder__skill empty disabled\" disabled=\"\"><img class=\"builder__skill__icon\" src=\"https://sunderarmor.com/DIABLO4/UI/empty_skill.png\" alt=\"empty skill\"></button></div><div class=\"skill__tree__merc__button__wrapper\"><div class=\"skill__tree__merc__label\">Opportunity</div><button class=\"builder__skill empty\" disabled=\"\"><img class=\"builder__skill__icon\" src=\"https://sunderarmor.com/DIABLO4/UI/empty_skill.png\" alt=\"empty skill\"></button></div></div><div class=\"searchbar\"><img class=\"searchbar-icon\" src=\"https://sunderarmor.com/search-icon.svg\" alt=\"search icon\"><input id=\"searchBar\" class=\"searchbar-input\" type=\"text\" placeholder=\"Search by name or keyword...\" autocomplete=\"off\" value=\"\"><button class=\"searchbar-close\" tabindex=\"-1\"><img class=\"searchbar-close-img\" src=\"https://sunderarmor.com/close-icon.svg\" alt=\"close icon\"></button></div><button class=\"game__filters__btn filters__btn\"><img src=\"https://sunderarmor.com/DIABLO4/UI/fullscreen_icon.svg\" class=\"game__filters__btn__icon\" alt=\"fullscreen\" style=\"width: 18px; height: 18px;\"></button><div class=\"game__filters__list\"></div></div></div><div class=\"skill__tree__wrapper leveling\" style=\"overflow: hidden; user-select: none; touch-action: none; cursor: move;\"><div class=\"skill__tree__alternative\" style=\"user-select: none; touch-action: none; transform-origin: 50% 50%; transition: none; transform: scale(0.8) translate(-350px, -550px);\"><div class=\"skill__tree__sections\"><div class=\"skill__tree__categories\"><div class=\"skill__tree__category active\" style=\"left: 1048px; top: 502px;\"><img class=\"skill__tree__category__icon\" src=\"https://sunderarmor.com/DIABLO4/SkillTree/category_basic.png\" ",
+          "textos": [
+            "MercenaryReinforcementSkillOpportunity1211162333"
+          ]
+        },
+        "warplans": {
+          "clases": {
+            "active": 1,
+            "alt": 1,
+            "filters__btn": 1,
+            "game__filters__btn": 1,
+            "game__filters__btn__icon": 1,
+            "game__filters__list": 1,
+            "searchbar": 1,
+            "searchbar-close": 1,
+            "searchbar-close-img": 1,
+            "searchbar-icon": 1,
+            "searchbar-input": 1,
+            "skill-line-base": 16,
+            "skill-line-inner": 15,
+            "skill-tree-viewer": 1,
+            "skill-tree-viewer__content": 1,
+            "skill__tree__header": 1,
+            "skill__tree__header__wrapper": 1,
+            "skill__tree__remaining": 1,
+            "skill__tree__remaining__total": 1,
+            "skill__tree__total": 1,
+            "viewer-canvas": 1,
+            "viewer-lines": 1,
+            "viewer-main": 1,
+            "warplan-tab": 7,
+            "warplan-tab__icon": 7,
+            "warplan-tabs": 1
+          },
+          "muestra": "<div class=\"general__wrapper\"><div class=\"skill-tree-viewer\"><div class=\"skill__tree__header alt\"><div class=\"skill__tree__header__wrapper\"><div class=\"skill__tree__remaining\"><div class=\"skill__tree__total\">Remaining:<div class=\"skill__tree__remaining__total\">7</div></div></div><div class=\"searchbar\"><img class=\"searchbar-icon\" src=\"https://sunderarmor.com/search-icon.svg\" alt=\"search icon\"><input id=\"skill-tree-viewer-search\" class=\"searchbar-input\" type=\"text\" placeholder=\"Search skills...\" autocomplete=\"off\" value=\"\"><button class=\"searchbar-close\" tabindex=\"-1\"><img class=\"searchbar-close-img\" src=\"https://sunderarmor.com/close-icon.svg\" alt=\"close icon\"></button></div><button class=\"game__filters__btn filters__btn\"><img src=\"https://sunderarmor.com/DIABLO4/UI/fullscreen_icon.svg\" class=\"game__filters__btn__icon\" alt=\"fullscreen\" style=\"width: 18px; height: 18px;\"></button><div class=\"game__filters__list\"></div><div class=\"warplan-tabs\"><button class=\"warplan-tab active\"><img src=\"https://sunderarmor.com/DIABLO4/WarPlans/whispers.png\" alt=\"Whispers\" class=\"warplan-tab__icon\"></button><button class=\"warplan-tab\"><img src=\"https://sunderarmor.com/DIABLO4/WarPlans/nightmare_dungeons.png\" alt=\"Nightmare Dungeons\" class=\"warplan-tab__icon\"></button><button class=\"warplan-tab\"><img src=\"https://sunderarmor.com/DIABLO4/WarPlans/helltides.png\" alt=\"Helltides\" class=\"warplan-tab__icon\"></button><button class=\"warplan-tab\"><img src=\"https://sunderarmor.com/DIABLO4/WarPlans/undercity.png\" alt=\"Undercity\" class=\"warplan-tab__icon\"></button><button class=\"warplan-tab\"><img src=\"https://sunderarmor.com/DIABLO4/WarPlans/boss_lairs.png\" alt=\"Boss Lairs\" class=\"warplan-tab__icon\"></button><button class=\"warplan-tab\"><img src=\"https://sunderarmor.com/DIABLO4/WarPlans/infernal_hordes.png\" alt=\"Infernal Hordes\" class=\"warplan-tab__icon\"></button><button class=\"warplan-tab\"><img src=\"https://sunderarmor.com/DIABLO4/WarPlans/pits.png\" alt=\"Pits\" class=\"warplan-tab__icon\"></button></div></div></div><div class=\"skill-tree-viewer__content\"><div class=\"viewer-main\"><div class=\"viewer-canvas \" style=\"transform: translate(150px, -60px) scale(0.7); transform-origin: left top; cursor: grab;\"><svg class=\"viewer-lines\"><g><path d=\"M 380 213 L 580 154\" fill=\"none\" stroke=\"#2d2d2d\" stroke-width=\"5\" stroke-linecap=\"round\" class=\"skill-line-base\"></path><path d=\"M 380 213 L 580 154\" fill=\"none\" stroke=\"#191b1f\" stroke-width=\"3\" stroke-linecap=\"round\" class=\"skill-line-inner\"></path></g>",
+          "textos": [
+            "Remaining:70/10/10/10/10/10/10/10/10/1"
+          ]
+        }
+      },
+      "etiqueta": "Standard Build",
+      "gear": [
+        {
+          "calidad": null,
+          "engarces": [
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Runes/ritual.png",
+              "nombre": "Cir",
+              "tipo": "ritual"
+            },
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Runes/invocation.png",
+              "nombre": "Gar",
+              "tipo": "invocation"
+            }
+          ],
+          "icono": "https://sunderarmor.com/DIABLO4/Codex/1/defensive.png",
+          "nombre": "Aspect of Might",
+          "slot": "Helm"
+        },
+        {
+          "calidad": null,
+          "engarces": [
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Runes/ritual.png",
+              "nombre": "Cem",
+              "tipo": "ritual"
+            },
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Runes/invocation.png",
+              "nombre": "Qua",
+              "tipo": "invocation"
+            }
+          ],
+          "icono": "https://sunderarmor.com/DIABLO4/Codex/1/defensive.png",
+          "nombre": "Aspect of Debilitating Toxins",
+          "slot": "Chest Armor"
+        },
+        {
+          "calidad": null,
+          "engarces": [],
+          "icono": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
+          "nombre": "Tormentor's Aspect",
+          "slot": "Gloves"
+        },
+        {
+          "calidad": null,
+          "engarces": [
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Gems/grand-emerald.png",
+              "nombre": "Emerald",
+              "tipo": "grand-emerald"
+            },
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Gems/grand-emerald.png",
+              "nombre": "Emerald",
+              "tipo": "grand-emerald"
+            }
+          ],
+          "icono": "https://sunderarmor.com/DIABLO4/Codex/1/defensive.png",
+          "nombre": "Aspect of Disobedience",
+          "slot": "Pants"
+        },
+        {
+          "calidad": null,
+          "engarces": [],
+          "icono": "https://sunderarmor.com/DIABLO4/Codex/1/mobility.png",
+          "nombre": "Aspect of Haste",
+          "slot": "Boots"
+        },
+        {
+          "calidad": "unique",
+          "engarces": [],
+          "icono": "https://sunderarmor.com/DIABLO4/Uniques/weapon.png",
+          "nombre": "Weapon",
+          "slot": "Empty"
+        },
+        {
+          "calidad": null,
+          "engarces": [],
+          "icono": null,
+          "nombre": null,
+          "slot": ""
+        },
+        {
+          "calidad": null,
+          "engarces": [],
+          "icono": null,
+          "nombre": null,
+          "slot": ""
+        },
+        {
+          "calidad": null,
+          "engarces": [
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Gems/grand-topaz.png",
+              "nombre": "Topaz",
+              "tipo": "grand-topaz"
+            }
+          ],
+          "icono": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
+          "nombre": "Aspect of Unyielding Hits",
+          "slot": "Amulet"
+        },
+        {
+          "calidad": null,
+          "engarces": [
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Gems/grand-ruby.png",
+              "nombre": "Ruby",
+              "tipo": "grand-ruby"
+            }
+          ],
+          "icono": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
+          "nombre": "Conceited Aspect",
+          "slot": "Ring 1"
+        },
+        {
+          "calidad": null,
+          "engarces": [
+            {
+              "icono": "https://sunderarmor.com/DIABLO4/Gems/grand-diamond.png",
+              "nombre": "Diamond",
+              "tipo": "grand-diamond"
+            }
+          ],
+          "icono": "https://sunderarmor.com/DIABLO4/Codex/1/offensive.png",
+          "nombre": "Aspect of the Moonrise",
+          "slot": "Ring 2"
+        },
+        {
+          "calidad": null,
+          "engarces": [],
+          "icono": null,
+          "nombre": null,
+          "slot": ""
+        },
+        {
+          "calidad": null,
+          "engarces": [],
+          "icono": null,
+          "nombre": null,
+          "slot": ""
+        },
+        {
+          "calidad": null,
+          "engarces": [],
+          "icono": null,
+          "nombre": null,
+          "slot": ""
+        }
+      ],
+      "index": 0,
+      "mercenarios": [],
+      "paragon": [
+        {
+          "glifo": null,
+          "icono": "https://sunderarmor.com/close-icon.svg",
+          "nivelGlifo": null,
+          "tablero": "1Starting Board Str 59•Dex 105•Int 64•Will 25"
+        }
+      ],
+      "stats": [
+        {
+          "afijos": [],
+          "slot": ""
+        },
+        {
+          "afijos": [],
+          "slot": ""
+        },
+        {
+          "afijos": [],
+          "slot": ""
+        },
+        {
+          "afijos": [],
+          "slot": ""
+        },
+        {
+          "afijos": [],
+          "slot": ""
+        },
+        {
+          "afijos": [],
+          "slot": ""
+        },
+        {
+          "afijos": [],
+          "slot": ""
+        },
+        {
+          "afijos": [],
+          "slot": ""
+        },
+        {
+          "afijos": [],
+          "slot": ""
+        }
+      ],
+      "warPlans": []
+    }
+  ],
+  "url": "https://d4builds.gg/builds/a46f8eee-efa6-49e6-bd04-65ed29ba3a25/?var=0",
+  "variantes": [
+    {
+      "etiqueta": "Standard Build",
+      "index": 0
+    }
+  ]
+}
