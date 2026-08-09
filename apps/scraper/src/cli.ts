@@ -84,7 +84,9 @@ async function cmdProbePage(): Promise<number> {
   if (ids.length === 0) {
     // Por defecto, una build endgame con equipo completo y otra de subida de nivel.
     const indice = await readJsonIfExists<{ builds: { id: string }[] }>(PATHS.buildIndex);
-    const porDefecto = ['ddaaaed4-6f3b-4c97-b65b-55b04aa2ae39'];
+    // La segunda tiene los 7 puntos de plan de guerra gastados (Remaining: 0), que es
+    // la unica forma de ver como se marca un nodo invertido frente a uno vacio.
+    const porDefecto = ['ddaaaed4-6f3b-4c97-b65b-55b04aa2ae39', '526f92bf-ebc2-40c9-acc8-75f2dfd3e744'];
     if (!indice) {
       process.stderr.write('No hay indice; usando la build de referencia.\n');
     }

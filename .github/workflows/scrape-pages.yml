@@ -63,15 +63,34 @@ jobs:
       - name: Compilar paquetes
         run: npm run build:pkgs
 
+      # Un push que solo toca la SONDA no puede costar una re-extraccion completa de las
+      # 92 paginas (que es lo que hace el paso de extraer cuando el evento es push).
+      # Se mira que ficheros trae el push: si el parser no cambio, esta pasada es sonda.
+      - name: Decidir que hace este push
+        id: plan
+        if: github.event_name == 'push'
+        env:
+          TOCADOS: ${{ join(github.event.commits.*.modified, ',') }},${{ join(github.event.commits.*.added, ',') }}
+        run: |
+          echo "Ficheros tocados: $TOCADOS"
+          case "$TOCADOS" in
+            *apps/scraper/src/sources/d4builds/scrape-pages.ts*)
+              echo "El parser cambio: re-extraccion completa." >> "$GITHUB_STEP_SUMMARY"
+              echo "modo=scrape" >> "$GITHUB_OUTPUT" ;;
+            *)
+              echo "Solo cambio la sonda: reconocimiento, sin tocar las paginas ya extraidas." >> "$GITHUB_STEP_SUMMARY"
+              echo "modo=probe" >> "$GITHUB_OUTPUT" ;;
+          esac
+
       - name: Sonda de reconocimiento
-        if: github.event.inputs.modo == 'probe'
+        if: github.event.inputs.modo == 'probe' || steps.plan.outputs.modo == 'probe'
         run: node apps/scraper/dist/cli.js probe:page ${{ github.event.inputs.objetivo }}
 
       # Se extrae POR LOTES y se publica despues de cada uno. Asi una cancelacion o un
       # fallo a mitad no tira todo el trabajo: la siguiente pasada arranca donde se
       # quedo, porque el extractor se salta las paginas que ya estan en disco.
       - name: Extraer y publicar por lotes
-        if: github.event.inputs.modo != 'probe'
+        if: (github.event_name != 'push' && github.event.inputs.modo != 'probe') || steps.plan.outputs.modo == 'scrape'
         run: |
           git config user.name "d4es-bot"
           git config user.email "bot@users.noreply.github.com"
@@ -106,7 +125,7 @@ jobs:
           echo "Paginas extraidas: $paginas de $total builds" >> "$GITHUB_STEP_SUMMARY"
 
       - name: Publicar sonda
-        if: github.event.inputs.modo == 'probe'
+        if: github.event.inputs.modo == 'probe' || steps.plan.outputs.modo == 'probe'
         run: |
           if [ -n "$(git status --porcelain data/)" ]; then
             git config user.name "d4es-bot"
