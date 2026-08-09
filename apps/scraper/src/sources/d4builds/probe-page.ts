@@ -3,6 +3,7 @@ import { join } from 'node:path';
 import { chromium, type Page } from 'playwright';
 import { PATHS } from '../../paths.js';
 import { stableStringify } from '../../util/stable-json.js';
+import { extraerPlanesDeGuerra, type PlanGuerraRaw } from './warplans.js';
 
 /**
  * Sonda de reconocimiento. NO extrae datos todavia: solo describe el DOM real de una
@@ -41,37 +42,20 @@ interface ZonaInfo {
 }
 
 /**
- * Reconocimiento de UNA solapa de la pestana "War Plans". Cada actividad (Susurros,
- * Mazmorras de pesadilla, Mareas infernales, Subciudad, Guaridas de jefe, Hordas
- * infernales, Fosa) tiene su propio arbol dentro del mismo visor.
+ * Reconocimiento de la pestana "War Plans". El extractor de verdad vive en
+ * `warplans.ts` y se ejecuta aqui tal cual: asi la sonda valida el MISMO codigo que
+ * luego correra sobre las 92 paginas, en vez de validar una copia parecida.
  */
-export interface SolapaPlanProbe {
-  /** El alt del icono de la solapa: es el nombre de la actividad. */
-  actividad: string;
-  icono: string | null;
-  activa: boolean;
-  /** Puntos que quedan por gastar, tal cual lo publica la cabecera. */
-  restantes: string | null;
-  /** Censo COMPLETO de clases del visor (sin recortar): aqui salen los nodos. */
-  clases: Record<string, number>;
-  /** Nombres de atributo distintos vistos en el visor: delata data-*, title, alt. */
-  atributos: string[];
-  /** Textos cortos distintos: los contadores "1/1" y, con suerte, los nombres. */
-  textos: string[];
-  /** Origenes de imagen distintos: el nombre del nodo suele ir en el fichero. */
-  imagenes: string[];
-  /** outerHTML acotado de los primeros hijos del lienzo, para ver la forma real. */
-  muestras: string[];
-}
-
 export interface WarPlansProbe {
   /** false si la pestana no existe o no llego a montarse. */
   abierta: boolean;
-  /** true si el visor es un <canvas> de verdad (entonces no hay nada que leer). */
+  /** true si el visor es un <canvas> de verdad (entonces no habria nada que leer). */
   esCanvasReal: boolean;
-  solapas: SolapaPlanProbe[];
-  /** Tooltip capturado al posar el raton sobre un nodo invertido, si aparece. */
+  planes: PlanGuerraRaw[];
+  /** Tooltip capturado al posar el raton sobre un nodo, si aparece: confirma el nombre. */
   tooltip: string | null;
+  /** Censo de respaldo del visor. Solo se rellena si la extraccion sale vacia. */
+  censo: { clases: Record<string, number>; muestras: string[] } | null;
 }
 
 export interface ProbeResult {
@@ -93,99 +77,20 @@ export interface ProbeResult {
   warPlans?: WarPlansProbe;
 }
 
-/** Selector del visor de arboles, que War Plans comparte con el arbol de habilidades. */
-const VISOR = '.skill-tree-viewer, [class*="skill-tree-viewer"]';
-
 /**
- * Describe la solapa de plan de guerra que este activa en ese momento. Se ejecuta
- * dentro de la pagina, y saca lo justo para programar el parser: censo de clases,
- * nombres de atributo, textos e imagenes; nada de volcar el HTML entero (es de
- * terceros), solo muestras acotadas.
- */
-async function describirSolapaActiva(page: Page): Promise<Omit<SolapaPlanProbe, 'actividad' | 'icono' | 'activa'>> {
-  return page.evaluate((visorSel) => {
-    const limpiar = (s: string) => s.replace(/\s+/g, ' ').trim();
-    const visor = document.querySelector(visorSel);
-    if (!visor) {
-      return { restantes: null, clases: {}, atributos: [], textos: [], imagenes: [], muestras: [] };
-    }
-
-    const todos = Array.from(visor.querySelectorAll('*'));
-    const clases: Record<string, number> = {};
-    const atributos = new Set<string>();
-    const textos = new Set<string>();
-    const imagenes = new Set<string>();
-
-    for (const el of todos) {
-      for (const c of Array.from(el.classList)) clases[c] = (clases[c] ?? 0) + 1;
-      for (const a of Array.from(el.attributes)) atributos.add(a.name);
-      if (el.children.length === 0) {
-        const t = limpiar(el.textContent ?? '');
-        if (t.length > 0 && t.length < 60) textos.add(t);
-      }
-      const src = (el as HTMLImageElement).src;
-      if (typeof src === 'string' && src.length > 0 && !src.startsWith('data:')) imagenes.add(src);
-    }
-
-    // El lienzo lleva dentro el SVG de las lineas y, detras, los nodos. Interesan los nodos.
-    const lienzo = visor.querySelector('[class*="viewer-canvas"]');
-    const hijos = Array.from(lienzo?.children ?? []).filter((h) => h.tagName.toLowerCase() !== 'svg');
-    const muestras = hijos.slice(0, 3).map((h) => h.outerHTML.slice(0, 1800));
-
-    return {
-      restantes: limpiar(visor.querySelector('[class*="remaining__total"]')?.textContent ?? '') || null,
-      clases: Object.fromEntries(
-        Object.entries(clases)
-          .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
-          .slice(0, 60),
-      ),
-      atributos: Array.from(atributos).sort(),
-      textos: Array.from(textos).slice(0, 40),
-      imagenes: Array.from(imagenes).slice(0, 20),
-      muestras,
-    };
-  }, VISOR);
-}
-
-/**
- * Abre "War Plans" y recorre sus siete solapas de actividad, describiendo cada una.
- *
- * Se hace aqui y no en el extractor porque el contenido de la pestana solo se monta al
- * pulsarla, y cada solapa se monta al pulsar SU boton: sin clics no hay DOM que mirar.
+ * Ejecuta el extractor de planes de guerra y le anade lo que solo interesa en sonda:
+ * la confirmacion de que el visor no es un canvas, el tooltip de un nodo (que es donde
+ * la fuente publica el nombre en limpio) y un censo de respaldo si no sale ningun nodo.
  */
 async function describirWarPlans(page: Page): Promise<WarPlansProbe> {
-  const vacio: WarPlansProbe = { abierta: false, esCanvasReal: false, solapas: [], tooltip: null };
-
-  const boton = page.locator('.builder__navigation__link', { hasText: 'War Plans' }).first();
-  if ((await boton.count()) === 0) return vacio;
-  await boton.click({ timeout: 15_000 }).catch(() => {});
-  await page.waitForTimeout(2500);
-
+  const planes = await extraerPlanesDeGuerra(page);
   const esCanvasReal = await page.evaluate(() => document.querySelector('.skill-tree-viewer canvas') !== null);
 
-  const solapas: SolapaPlanProbe[] = [];
-  const tabs = page.locator('.warplan-tab, [class*="warplan-tab"]:not([class*="tabs"])');
-  const total = await tabs.count();
-  for (let i = 0; i < total; i++) {
-    const tab = tabs.nth(i);
-    await tab.click({ timeout: 10_000 }).catch(() => {});
-    await page.waitForTimeout(1200);
-    const cabecera = await tab.evaluate((el) => {
-      const img = el.querySelector('img') as HTMLImageElement | null;
-      return {
-        actividad: img?.alt ?? '',
-        icono: img?.src ?? null,
-        activa: el.className.includes('active'),
-      };
-    });
-    solapas.push({ ...cabecera, ...(await describirSolapaActiva(page)) });
-  }
-
-  // Si el nombre del nodo no esta en el DOM, estara en el tooltip al pasar el raton.
+  // El nombre del nodo no esta en el texto del DOM: se confirma con el tooltip.
   let tooltip: string | null = null;
-  const invertido = page.locator('.skill-tree-viewer [class*="viewer-canvas"] *', { hasText: /^\d+\/\d+$/ }).first();
-  if ((await invertido.count()) > 0) {
-    await invertido.hover({ timeout: 5000 }).catch(() => {});
+  const nodo = page.locator('.viewer-node').filter({ hasText: /\d+\/\d+/ }).first();
+  if ((await nodo.count()) > 0) {
+    await nodo.hover({ timeout: 5000 }).catch(() => {});
     await page.waitForTimeout(1200);
     tooltip = await page.evaluate(() => {
       const t = document.querySelector('[class*="tooltip"], [role="tooltip"], [class*="popover"]');
@@ -193,7 +98,32 @@ async function describirWarPlans(page: Page): Promise<WarPlansProbe> {
     });
   }
 
-  return { abierta: true, esCanvasReal, solapas, tooltip };
+  // Solo si el extractor se queda a cero hace falta volver a mirar el terreno.
+  const salieronNodos = planes.some((p) => p.nodos.length > 0);
+  const censo = salieronNodos
+    ? null
+    : await page.evaluate(() => {
+        const visor = document.querySelector('.skill-tree-viewer, [class*="skill-tree-viewer"]');
+        if (!visor) return { clases: {}, muestras: [] };
+        const clases: Record<string, number> = {};
+        for (const el of Array.from(visor.querySelectorAll('*'))) {
+          for (const c of Array.from(el.classList)) clases[c] = (clases[c] ?? 0) + 1;
+        }
+        const lienzo = visor.querySelector('[class*="viewer-canvas"]');
+        return {
+          clases: Object.fromEntries(
+            Object.entries(clases)
+              .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+              .slice(0, 60),
+          ),
+          muestras: Array.from(lienzo?.children ?? [])
+            .filter((h) => h.tagName.toLowerCase() !== 'svg')
+            .slice(0, 3)
+            .map((h) => h.outerHTML.slice(0, 1800)),
+        };
+      });
+
+  return { abierta: planes.length > 0, esCanvasReal, planes, tooltip, censo };
 }
 
 async function describir(page: Page, url: string): Promise<ProbeResult> {
@@ -317,11 +247,14 @@ export async function runProbe(buildIds: string[]): Promise<void> {
     const wp = res.warPlans;
     if (wp) {
       process.stdout.write(
-        `  planes de guerra: ${wp.abierta ? `${wp.solapas.length} solapas` : 'no se abrio'}` +
+        `  planes de guerra: ${wp.abierta ? `${wp.planes.length} actividades` : 'no se abrio'}` +
           `${wp.esCanvasReal ? ' (CANVAS: no hay DOM)' : ''} | tooltip: ${wp.tooltip ? 'si' : 'no'}\n`,
       );
-      for (const s of wp.solapas) {
-        process.stdout.write(`    - ${s.actividad || '(sin alt)'}: restantes=${s.restantes ?? '?'}, ${s.textos.length} textos\n`);
+      for (const p of wp.planes) {
+        const invertidos = p.nodos.filter((n) => n.texto && !n.texto.startsWith('0/')).length;
+        process.stdout.write(
+          `    - ${p.actividad || '(sin alt)'}: ${p.nodos.length} nodos, ${invertidos} con puntos, restantes=${p.restantes ?? '?'}\n`,
+        );
       }
     }
   }

@@ -25,6 +25,7 @@ on:
     paths:
       - 'apps/scraper/src/sources/d4builds/probe-page.ts'
       - 'apps/scraper/src/sources/d4builds/scrape-pages.ts'
+      - 'apps/scraper/src/sources/d4builds/warplans.ts'
       - '.github/workflows/scrape-pages.yml'
   schedule:
     # Diario. El checkpoint hace que solo se pidan las paginas que faltan, asi que en
