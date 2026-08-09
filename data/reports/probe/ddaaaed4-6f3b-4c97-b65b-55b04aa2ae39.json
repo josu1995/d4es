@@ -22,13 +22,13 @@
     {
       "lineas": [
         "Gear Stats",
-        "Chest ArmorStrengthDamage Over Time MultiplierMaximum LifeMaximum ResourceMaximum Life (Worldly Endurance - Defensive)Transfigure",
-        "Chest Armor"
+        "Slashing Weapon431 Weapon Damage200% Damage Over Time DurationDamage Over Time MultiplierAll Damage MultiplierDamage Over Time (Worldly Finesse - Offensive)Fire Damage",
+        "Slashing Weapon"
       ],
       "selector": "[class*=\"stat\"]"
     }
   ],
-  "capturadoEn": "2026-08-09T15:07:03.587Z",
+  "capturadoEn": "2026-08-09T17:14:49.564Z",
   "clasesGlobales": {
     "0": 39,
     "1": 10,
@@ -406,8 +406,7 @@
     ],
     "otros": [
       "https://img.youtube.com/vi/9EQPbErRKeg/mqdefault.jpg",
-      "https://sunderarmor.com/WOW/UI/share_icon.svg",
-      "https://sync.intentiq.com/profiles_engine/ProfilesEngineServlet?at=20&mi=10&secure=1&dpi=1477556550&iiqidtype=2&iiqpcid=271e32db-9256-f922-57f0-170c5ec31447&iiqpciddate=1786287990015&tsrnd=886_1786287990020&jsver=6.256&testPercentage=95&testGroup=A&uh=%7B%220%22%3A%22%5C%22Not%3DA%3FBrand%5C%22%3Bv%3D%5C%2299%5C%22%2C%20%5C%22HeadlessChrome%5C%22%3Bv%3D%5C%22151%5C%22%2C%20%5C%22Chromium%5C%22%3Bv%3D%5C%22151%5C%22%22%2C%221%22%3A%22%3F0%22%2C%222%22%3A%22%5C%22Windows%5C%22%22%2C%223%22%3A%22%5C%22x86%5C%22%22%2C%224%22%3A%22%5C%2264%5C%22%22%2C%227%22%3A%22%3F0%22%2C%228%22%3A%22%5C%22Not%3DA%3FBrand%5C%22%3Bv%3D%5C%2299.0.0.0%5C%22%2C%20%5C%22HeadlessChrome%5C%22%3Bv%3D%5C%22151.0.7922.34%5C%22%2C%20%5C%22Chromium%5C%22%3Bv%3D%5C%22151.0.7922.34%5C%22%22%7D&vrref=https%3A%2F%2Fd4builds.gg&gdpr_consent=undefined&gpc=undefined&gdpr=0"
+      "https://sunderarmor.com/WOW/UI/share_icon.svg"
     ]
   },
   "pestanas": [
@@ -2672,12 +2671,12 @@
     },
     "stats": {
       "clasesInternas": {
-        "0": 77,
+        "0": 72,
         "1": 19,
-        "BludgeoningWeapon": 2,
-        "ChestArmor": 2,
+        "Amulet": 2,
+        "SlashingWeapon": 2,
         "barbarian": 132,
-        "builder__stat": 133,
+        "builder__stat": 134,
         "builder__stats__group": 4,
         "builder__stats__list": 1,
         "builder__stats__priority": 14,
@@ -2686,29 +2685,29 @@
         "builder__stats__title": 1,
         "dropdown": 132,
         "dropdown__button": 132,
-        "dropdown__button__tempering": 43,
-        "dropdown__button__wrapper": 131,
-        "filled": 112,
-        "greater__affix__button": 105,
-        "greater__affix__button--filled": 57,
-        "greater__affix__img": 105,
+        "dropdown__button__tempering": 44,
+        "dropdown__button__wrapper": 132,
+        "filled": 117,
+        "greater__affix__button": 107,
+        "greater__affix__button--filled": 59,
+        "greater__affix__img": 106,
         "null": 8,
         "stat__dropdown": 132,
         "stat__dropdown__wrapper": 133,
-        "undefined": 28
+        "undefined": 33
       },
       "encontrados": 51,
-      "muestraHtml": "<div class=\"builder__stats__section\"><div class=\"builder__stats__title\">Gear Stats</div><div class=\"builder__stats__list\"><div class=\"builder__stats__group ChestArmor\"><div class=\"builder__stats__slot\"><img class=\"builder__stats__slot__icon\" src=\"https://sunderarmor.com/DIABLO4/Uniques/chest_armor.png\" alt=\"Chest Armor\">Chest Armor</div><div class=\"builder__stats__priority\"><div class=\"builder__stat\"><button class=\"greater__affix__button\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      0\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Strength</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button greater__affix__button--filled\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      1\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Damage Over Time Multiplier</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      0\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Maximum Life</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button greater__affix__button--filled\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      0\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Maximum Resource</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button greater__affix__button--filled\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dro",
+      "muestraHtml": "<div class=\"builder__stats__section\"><div class=\"builder__stats__title\">Gear Stats</div><div class=\"builder__stats__list\"><div class=\"builder__stats__group SlashingWeapon\"><div class=\"builder__stats__slot\"><img class=\"builder__stats__slot__icon\" src=\"https://sunderarmor.com/DIABLO4/Uniques/slashing_weapon.png\" alt=\"Slashing Weapon\">Slashing Weapon</div><div class=\"builder__stats__priority\"><div class=\"builder__stat\"><button class=\"greater__affix__button\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      0\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>431 Weapon Damage</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button greater__affix__button--filled\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      1\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>200% Damage Over Time Duration</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button greater__affix__button--filled\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      0\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Damage Over Time Multiplier</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      0\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>All Damage Multiplier</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button greater__affix__button--filled\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__d",
       "selector": "[class*=\"builder__stats\"]",
       "textos": [
         "Gear Stats",
-        "Chest ArmorStrengthDamage Over Time MultiplierMaximum LifeMaximum ResourceMaximum Life (Worldly Endurance - Defensive)Transfigure",
-        "Chest Armor",
-        "StrengthDamage Over Time MultiplierMaximum LifeMaximum ResourceMaximum Life (Worldly Endurance - Defensive)Transfigure",
-        "Bludgeoning WeaponWeapon TypeDamage Over Time MultiplierAll Damage MultiplierStrengthMaximum LifeDamage Over Time (Worldly Finesse - Offensive)Fire Damage",
-        "Bludgeoning Weapon",
-        "Weapon TypeDamage Over Time MultiplierAll Damage MultiplierStrengthMaximum LifeDamage Over Time (Worldly Finesse - Offensive)Fire Damage",
-        "BootsFury RegenerationChargeMaximum LifeResistance to All ElementsBarrier Generation (Natural Schemes - Utility)Transfigure"
+        "Slashing Weapon431 Weapon Damage200% Damage Over Time DurationDamage Over Time MultiplierAll Damage MultiplierDamage Over Time (Worldly Finesse - Offensive)Fire Damage",
+        "Slashing Weapon",
+        "431 Weapon Damage200% Damage Over Time DurationDamage Over Time MultiplierAll Damage MultiplierDamage Over Time (Worldly Finesse - Offensive)Fire Damage",
+        "AmuletDamage Over Time MultiplierVulnerable Damage MultiplierFire Damage MultiplierAll SkillsCooldown Reduction (Worldly Stability - Resource)Battle-Mad AspectTransfigure",
+        "Amulet",
+        "Damage Over Time MultiplierVulnerable Damage MultiplierFire Damage MultiplierAll SkillsCooldown Reduction (Worldly Stability - Resource)Battle-Mad AspectTransfigure",
+        "HelmStrengthMaximum LifeMaximum ResourceCooldown ReductionMaximum Life (Worldly Endurance - Defensive)Transfigure"
       ]
     },
     "variantes": {

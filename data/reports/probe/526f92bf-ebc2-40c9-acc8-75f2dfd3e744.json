@@ -22,13 +22,13 @@
     {
       "lineas": [
         "Gear Stats",
-        "GlovesCritical Strike ChanceRanks to Double SwingVulnerable Damage MultiplierCritical Strike Damage MultiplierCritical Strike Damage (Worldly Finesse - Offensive)Physical Damage",
-        "Gloves"
+        "HelmStrengthMaximum LifeMaximum ResourceCooldown ReductionMaximum Life (Worldly Endurance - Defensive)Maximum Resource",
+        "Helm"
       ],
       "selector": "[class*=\"stat\"]"
     }
   ],
-  "capturadoEn": "2026-08-09T15:07:53.682Z",
+  "capturadoEn": "2026-08-09T17:15:39.363Z",
   "clasesGlobales": {
     "0": 40,
     "1": 11,
@@ -402,8 +402,8 @@
       "https://sunderarmor.com/DIABLO4/Uniques/2/ring_of_starless_skies.png",
       "https://sunderarmor.com/DIABLO4/Uniques/2/the_grandfather.png",
       "https://sunderarmor.com/DIABLO4/Uniques/bludgeoning_weapon.png",
-      "https://sunderarmor.com/DIABLO4/Uniques/gloves.png",
-      "https://sunderarmor.com/DIABLO4/Uniques/pants.png"
+      "https://sunderarmor.com/DIABLO4/Uniques/helm.png",
+      "https://sunderarmor.com/DIABLO4/Uniques/bludgeoning_weapon.png"
     ],
     "otros": [
       "https://img.youtube.com/vi/z9ZidNzZABE/mqdefault.jpg",
@@ -2672,42 +2672,43 @@
     },
     "stats": {
       "clasesInternas": {
-        "0": 76,
-        "1": 21,
-        "Gloves": 2,
-        "Pants": 2,
-        "barbarian": 129,
-        "builder__stat": 131,
+        "0": 65,
+        "1": 17,
+        "BludgeoningWeapon": 2,
+        "Helm": 2,
+        "barbarian": 133,
+        "builder__stat": 134,
         "builder__stats__group": 4,
         "builder__stats__list": 1,
         "builder__stats__priority": 14,
         "builder__stats__slot": 14,
         "builder__stats__slot__icon": 23,
         "builder__stats__title": 1,
-        "dropdown": 129,
-        "dropdown__button": 129,
-        "dropdown__button__tempering": 43,
-        "dropdown__button__wrapper": 129,
-        "filled": 129,
-        "greater__affix__button": 107,
-        "greater__affix__button--filled": 54,
-        "greater__affix__img": 106,
-        "stat__dropdown": 129,
-        "stat__dropdown__wrapper": 130,
-        "undefined": 32
+        "dropdown": 133,
+        "dropdown__button": 133,
+        "dropdown__button__tempering": 44,
+        "dropdown__button__wrapper": 132,
+        "filled": 133,
+        "greater__affix__button": 105,
+        "greater__affix__button--filled": 48,
+        "greater__affix__img": 105,
+        "null": 20,
+        "stat__dropdown": 133,
+        "stat__dropdown__wrapper": 134,
+        "undefined": 31
       },
       "encontrados": 51,
-      "muestraHtml": "<div class=\"builder__stats__section\"><div class=\"builder__stats__title\">Gear Stats</div><div class=\"builder__stats__list\"><div class=\"builder__stats__group Gloves\"><div class=\"builder__stats__slot\"><img class=\"builder__stats__slot__icon\" src=\"https://sunderarmor.com/DIABLO4/Uniques/gloves.png\" alt=\"Gloves\">Gloves</div><div class=\"builder__stats__priority\"><div class=\"builder__stat\"><button class=\"greater__affix__button\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      0\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Critical Strike Chance</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button greater__affix__button--filled\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      0\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Ranks to Double Swing</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button greater__affix__button--filled\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      1\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Vulnerable Damage Multiplier</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button greater__affix__button--filled\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      0\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Critical Strike Damage Multiplier</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button greater__affix__button--filled\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"st",
+      "muestraHtml": "<div class=\"builder__stats__section\"><div class=\"builder__stats__title\">Gear Stats</div><div class=\"builder__stats__list\"><div class=\"builder__stats__group Helm\"><div class=\"builder__stats__slot\"><img class=\"builder__stats__slot__icon\" src=\"https://sunderarmor.com/DIABLO4/Uniques/helm.png\" alt=\"Helm\">Helm</div><div class=\"builder__stats__priority\"><div class=\"builder__stat\"><button class=\"greater__affix__button greater__affix__button--filled\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      null\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Strength</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      null\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Maximum Life</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button greater__affix__button--filled\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      null\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Maximum Resource</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      null\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Cooldown Reduction</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      null\" disabl",
       "selector": "[class*=\"builder__stats\"]",
       "textos": [
         "Gear Stats",
-        "GlovesCritical Strike ChanceRanks to Double SwingVulnerable Damage MultiplierCritical Strike Damage MultiplierCritical Strike Damage (Worldly Finesse - Offensive)Physical Damage",
-        "Gloves",
-        "Critical Strike ChanceRanks to Double SwingVulnerable Damage MultiplierCritical Strike Damage MultiplierCritical Strike Damage (Worldly Finesse - Offensive)Physical Damage",
-        "PantsStrengthMaximum LifeFury RegenerationResistance to All ElementsMaximum Life (Worldly Endurance - Defensive)Physical Damage",
-        "Pants",
-        "StrengthMaximum LifeFury RegenerationResistance to All ElementsMaximum Life (Worldly Endurance - Defensive)Physical Damage",
-        "Ring 2Attack SpeedCritical Strike ChanceCritical Strike Damage MultiplierVulnerable Damage MultiplierLucky Hit: Up to a 15% Chance to Restore X Primary Resource (Worldly Stability - Resource)All Skills"
+        "HelmStrengthMaximum LifeMaximum ResourceCooldown ReductionMaximum Life (Worldly Endurance - Defensive)Maximum Resource",
+        "Helm",
+        "StrengthMaximum LifeMaximum ResourceCooldown ReductionMaximum Life (Worldly Endurance - Defensive)Maximum Resource",
+        "Bludgeoning Weapon2h Mace: 392.7% Overpower DamagePhysical Damage MultiplierCritical Strike Damage MultiplierWeapon DamageMaximum LifeCritical Strike Chance (Worldly Destruction - Weapons)Physical Damage",
+        "Bludgeoning Weapon",
+        "2h Mace: 392.7% Overpower DamagePhysical Damage MultiplierCritical Strike Damage MultiplierWeapon DamageMaximum LifeCritical Strike Chance (Worldly Destruction - Weapons)Physical Damage",
+        "Chest ArmorStrengthMaximum ResourceFury RegenerationResistance to All ElementsMaximum Life (Worldly Endurance - Defensive)Maximum Resource"
       ]
     },
     "variantes": {

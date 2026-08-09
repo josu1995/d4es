@@ -1,7 +1,7 @@
 {
   "evento": "push",
-  "run": "31320743557",
-  "base": "8f8e3518fde3219f5fd09dfa071217321b769d61",
-  "modo": "scrape",
-  "ficheros": ["apps/scraper/src/sources/d4builds/mercenarios.ts","apps/scraper/src/sources/d4builds/normalize-pages.test.ts","apps/scraper/src/sources/d4builds/normalize-pages.ts","apps/scraper/src/sources/d4builds/scrape-pages.ts","apps/web/src/pages/builds/[clase]/[slug].astro"]
+  "run": "31325831485",
+  "base": "7e91b15ca9e4223075e893c30fd191558bc917ca",
+  "modo": "probe",
+  "ficheros": [".github/workflows/scrape-pages.yml"]
 }
