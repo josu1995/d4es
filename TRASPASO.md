@@ -38,11 +38,12 @@ la mitad de lo que hay aquí costó horas de averiguar y no es deducible del có
 (con ficha por jefe), materiales, dificultades, «lo que ya no existe», glosario de jerga, 297 fichas
 de únicos con «cómo conseguirlo», buscador global (Pagefind), comparador de variantes, importador de
 Maxroll en el navegador, RSS, página de cambios y **lista de lo que falta verificar en el juego**
-(`/estado/verificar`). **417 páginas**, **99 tests**.
+(`/estado/verificar`). **417 páginas**, **116 tests**.
 
-**Traducción**: 2.224 términos del diccionario oficial más **618 mejoras de rama** cosechadas de
-Wowhead. Las mejoras de rama, que eran el mayor agujero, pasan de 414 pendientes a **99**. Lo que
-queda sin traducir es sobre todo afijos, aspectos y los nodos de plan de guerra (ver §6).
+**Traducción**: 2.426 términos del diccionario oficial más 800 curados (618 mejoras de rama y 7
+gemas cosechadas de Wowhead, con procedencia). Sin traducción verificada: **29,3%**, desde el 54%
+con el que empezó la sesión y pese a haber entrado por el camino los ~100 nodos de plan de guerra.
+Lo que queda son sobre todo esos nodos, y contenido que Wowhead aún no ha localizado (ver §6).
 
 **Iconos**: ~570 auto-hospedados en `public/iconos` (14 MB), con caída al CDN para lo que falte.
 
@@ -133,6 +134,20 @@ habilidades donde aparece un término lo traduzcan igual (`Weaken` sale en 48). 
 corroborado por varias páginas. Ojo: `r.jina.ai` **corta con 429**; hay reintento con espera, y la
 cosecha se puede repetir tantas veces como haga falta porque continúa donde lo dejó.
 
+**En el cliente español los aspectos se llaman «Rasgo», no «Aspecto».** Y el diccionario oficial los
+guarda **sin esa palabra** (`crushing` → «aplastante», `of glynn s anvil` → «del yunque de Glynn»),
+así que el nombre completo se compone. Verificado contra el listado de Wowhead en castellano cruzando
+por el id interno: **36 de 36 coinciden**, incluido que el juego escribe «Rasgo abrumadora», en
+femenino. Se reproduce tal cual: el nombre es ese, y no nos toca arreglarle la concordancia al juego.
+
+**Las gemas no son runas** y el diccionario oficial **solo trae runas**. La fuente sí las distingue
+(`/Gems/` frente a `/Runes/`), y los siete nombres salen de Wowhead cruzando por id de objeto. Tienen
+categoría propia (`gem`) desde esta sesión.
+
+**Ojo con lo que la fuente mete en la lista de «stats»**: `Transfigure` (el botón de transfiguración,
+811 apariciones), `Weapon Type`, `Stat 1..4` y los propios aspectos. **No son afijos.** Se filtran en
+`esAfijoDeVerdad`; si se quita ese filtro vuelven a aparecer 869 líneas que no existen en el juego.
+
 **maxroll.gg no se rastrea nunca.** Su robots.txt (Ziff Davis) lo prohíbe expresamente. El
 importador corre entero en el navegador del usuario.
 
@@ -173,15 +188,20 @@ páginas y empieza de cero; si no, el checkpoint las salta y sigues con los dato
 > los datos no están publicados en ninguna parte contrastable: en su lugar quedan listas de trabajo
 > generadas de los propios ficheros, en `/estado/verificar`.
 
-1. **Traducciones — lo que queda.** Las mejoras de rama pasaron de 414 pendientes a **99**
-   (cosecha de Wowhead, ver §4). Quedan tres bolsas:
-   - **~100 nodos de plan de guerra y 7 actividades, todos en inglés.** No están en Wowhead como
-     habilidades, así que el cosechador actual no los ve; habría que encontrar dónde los publica.
-   - **`affix` y `aspect`** (162 y 138): el diccionario oficial SÍ los trae, así que casi seguro es
-     un problema de que los nombres no casan, no de que falten. Mirar ahí antes de cosechar nada
-     es probablemente la mejor relación esfuerzo/resultado que queda.
-   - **`skillVariant`** (52): son «habilidad + mejora» pegadas (`Teleport Blaze`); se podrían
-     componer de las dos traducciones que ya tenemos.
+1. **Traducciones — se ha llegado al techo de las fuentes disponibles.** De un 54% inicial a un
+   **29,3%**, y ya no salta la etiqueta `i18n-bajo` del guardarraíl. Lo que queda, y por qué:
+   - **Nodos de plan de guerra (65 términos, 2.349 apariciones)** — la bolsa grande. **No hay
+     fuente**: Wowhead no los publica como categoría (`/diablo-4/es/war-plans` no existe) y solo
+     aparecen sueltos como objetos (`carne de Choron`). Es la pista para retomarlo.
+   - **`skill` (50) y `skillUpgrade` (99)** — **Wowhead no los ha localizado todavía**: 48
+     habilidades salen en el listado inglés y no en el castellano. No es que el cosechador falle;
+     es que la traducción no existe aún. Repetir la cosecha cuando Wowhead se ponga al día.
+   - **`skillVariant` (52)** — son «habilidad + mejora» pegadas (`Teleport Blaze`). **No las
+     inventa el juego, las inventa d4builds**, así que no hay nombre oficial que copiar. Si se
+     quieren en castellano, hay que partirlas y componerlas en la UI, no traducirlas.
+   - **`affix` (78)** — sobre todo etiquetas de la propia fuente (`Primary Core Stat`), textos con
+     el valor incrustado y alguna errata suya (`All Damage Multipler`).
+   - **`mercenary` (3)** — tampoco están en Wowhead.
 2. **Tablas de botín por jefe**: sin resolver **a propósito**. De cada jefe solo están sus únicos
    «firma»; no hay fuente contrastable que publique la tabla completa y rellenarla a ojo va contra
    la regla 4. Lo que sí hay es la lista priorizada de los **119 únicos que las builds equipan y no
