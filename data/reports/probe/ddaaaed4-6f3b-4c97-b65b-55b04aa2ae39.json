@@ -22,13 +22,13 @@
     {
       "lineas": [
         "Gear Stats",
-        "BootsFury RegenerationChargeMaximum LifeResistance to All ElementsBarrier Generation (Natural Schemes - Utility)Transfigure",
-        "Boots"
+        "Dual-Wield Weapon 2Weapon TypeDamage Over Time MultiplierAll Damage MultiplierStrengthMaximum LifeDamage Over Time (Worldly Finesse - Offensive)Fire Damage",
+        "Dual-Wield Weapon 2"
       ],
       "selector": "[class*=\"stat\"]"
     }
   ],
-  "capturadoEn": "2026-08-09T08:40:18.217Z",
+  "capturadoEn": "2026-08-09T08:52:39.665Z",
   "clasesGlobales": {
     "0": 39,
     "1": 10,
@@ -1828,43 +1828,43 @@
     },
     "stats": {
       "clasesInternas": {
-        "0": 67,
+        "0": 66,
         "1": 17,
-        "Boots": 2,
         "Dual-WieldWeapon2": 2,
+        "Helm": 1,
         "barbarian": 132,
-        "builder__stat": 133,
-        "builder__stats__group": 4,
+        "builder__stat": 132,
+        "builder__stats__group": 3,
         "builder__stats__list": 1,
-        "builder__stats__priority": 14,
-        "builder__stats__slot": 14,
-        "builder__stats__slot__icon": 23,
+        "builder__stats__priority": 12,
+        "builder__stats__slot": 13,
+        "builder__stats__slot__icon": 21,
         "builder__stats__title": 1,
         "dropdown": 132,
         "dropdown__button": 132,
-        "dropdown__button__tempering": 43,
-        "dropdown__button__wrapper": 131,
-        "filled": 114,
+        "dropdown__button__tempering": 44,
+        "dropdown__button__wrapper": 132,
+        "filled": 113,
         "greater__affix__button": 105,
-        "greater__affix__button--filled": 53,
+        "greater__affix__button--filled": 59,
         "greater__affix__img": 105,
         "null": 18,
         "stat__dropdown": 132,
-        "stat__dropdown__wrapper": 133,
-        "undefined": 30
+        "stat__dropdown__wrapper": 132,
+        "undefined": 31
       },
       "encontrados": 51,
-      "muestraHtml": "<div class=\"builder__stats__section\"><div class=\"builder__stats__title\">Gear Stats</div><div class=\"builder__stats__list\"><div class=\"builder__stats__group Boots\"><div class=\"builder__stats__slot\"><img class=\"builder__stats__slot__icon\" src=\"https://sunderarmor.com/DIABLO4/Uniques/boots.png\" alt=\"Boots\">Boots</div><div class=\"builder__stats__priority\"><div class=\"builder__stat\"><button class=\"greater__affix__button\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      0\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Fury Regeneration</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button greater__affix__button--filled\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      1\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Charge</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      0\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Maximum Life</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      0\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Resistance to All Elements</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      0\" disabled=\"\"><button class=\"dropdown__butt",
+      "muestraHtml": "<div class=\"builder__stats__section\"><div class=\"builder__stats__title\">Gear Stats</div><div class=\"builder__stats__list\"><div class=\"builder__stats__group Dual-WieldWeapon2\"><div class=\"builder__stats__slot\"><img class=\"builder__stats__slot__icon\" src=\"https://sunderarmor.com/DIABLO4/Uniques/dual-wield_weapon_2.png\" alt=\"Dual-Wield Weapon 2\">Dual-Wield Weapon 2</div><div class=\"builder__stats__priority\"><div class=\"builder__stat\" style=\"order: -1;\"><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n      \n      0\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Weapon Type</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button greater__affix__button--filled\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      1\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Damage Over Time Multiplier</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button greater__affix__button--filled\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      0\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>All Damage Multiplier</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      0\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__wrapper\"><span>Strength</span></div></button></div></div></div><div class=\"builder__stat\"><button class=\"greater__affix__button\"><img class=\"greater__affix__img\" src=\"https://sunderarmor.com/DIABLO4/UI/ga.png\" alt=\"greater affix\"></button><div class=\"stat__dropdown__wrapper\"><div class=\"stat__dropdown dropdown\n       barbarian\n       filled\n      0\" disabled=\"\"><button class=\"dropdown__button\" disabled=\"\"><div class=\"dropdown__button__",
       "selector": "[class*=\"builder__stats\"]",
       "textos": [
         "Gear Stats",
-        "BootsFury RegenerationChargeMaximum LifeResistance to All ElementsBarrier Generation (Natural Schemes - Utility)Transfigure",
-        "Boots",
-        "Fury RegenerationChargeMaximum LifeResistance to All ElementsBarrier Generation (Natural Schemes - Utility)Transfigure",
         "Dual-Wield Weapon 2Weapon TypeDamage Over Time MultiplierAll Damage MultiplierStrengthMaximum LifeDamage Over Time (Worldly Finesse - Offensive)Fire Damage",
         "Dual-Wield Weapon 2",
         "Weapon TypeDamage Over Time MultiplierAll Damage MultiplierStrengthMaximum LifeDamage Over Time (Worldly Finesse - Offensive)Fire Damage",
-        "HelmStrengthMaximum LifeMaximum ResourceCooldown ReductionMaximum Life (Worldly Endurance - Defensive)Transfigure"
+        "HelmStrengthMaximum LifeMaximum ResourceCooldown ReductionMaximum Life (Worldly Endurance - Defensive)Transfigure",
+        "Helm",
+        "StrengthMaximum LifeMaximum ResourceCooldown ReductionMaximum Life (Worldly Endurance - Defensive)Transfigure",
+        "AmuletDamage Over Time MultiplierVulnerable Damage MultiplierFire Damage MultiplierAll SkillsCooldown Reduction (Worldly Stability - Resource)Battle-Mad AspectTransfigure"
       ]
     },
     "variantes": {
