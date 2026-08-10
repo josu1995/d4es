@@ -37,11 +37,27 @@ la mitad de lo que hay aquí costó horas de averiguar y no es deducible del có
 | Planes de guerra | ✅ 66/92 con plan (las otras 26 no invierten puntos), árbol dibujado entero |
 | Notas del autor | ✅ enlaza al original, no se copia su texto |
 
+**Dos cosas que no tiene ninguna otra web** (y que solo se pueden hacer teniendo el catálogo
+entero y datos deterministas):
+
+- **Historial por build** (`data/canonical/historial.json`, pestaña «Cambios» de cada ficha y
+  bloque en `/cambios`). La fuente publica la foto de hoy; aquí se guarda la película: qué tocó el
+  autor de la guía y cuándo. Se calcula comparando una **firma** por build (tier, habilidades,
+  equipo por ranura, engarces, tableros, glifos, mercenario — los afijos NO, ahogarían lo
+  importante) con la de la pasada anterior. El guardarraíl que lo sostiene: si un mismo tipo de
+  cambio afecta a **más de la mitad del catálogo** en una pasada, no es la guía, somos nosotros
+  (parser o diccionario) y se marca `ambito: 'sitio'`, que la ficha no pinta. Sin eso, cada vez
+  que tocáramos el extractor las 92 builds dirían «cambió el equipo» y sería mentira.
+- **El meta en cifras** (`/meta`, se calcula en el build de la web desde los canónicos, sin
+  fichero nuevo). Qué llevan de verdad las 92 builds: aspectos, únicos, glifos, tableros, runas y
+  mercenarios más equipados, en total y por clase, más el «núcleo» de cada clase (lo que llevan
+  ≥60% de sus builds). Se cuenta **una vez por build**, no por aparición.
+
 **Contenido propio**: guía de crafteo de míticos con calculadora de intentos, guía de jefes y llaves
 (con ficha por jefe), materiales, dificultades, «lo que ya no existe», glosario de jerga, 297 fichas
 de únicos con «cómo conseguirlo», buscador global (Pagefind), comparador de variantes, importador de
 Maxroll en el navegador, RSS, página de cambios y **lista de lo que falta verificar en el juego**
-(`/estado/verificar`). **417 páginas**, **142 tests**.
+(`/estado/verificar`). **418 páginas**, **151 tests**.
 
 **Traducción**: 2.426 términos del diccionario oficial más 800 curados (618 mejoras de rama y 7
 gemas cosechadas de Wowhead, con procedencia), y ahora también **149 descripciones de habilidad en

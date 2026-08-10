@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
-import { loadIndex, loadEstado, buildUrl } from '../lib/data';
+import ListaCambios from '../components/ListaCambios.astro';
+import { loadIndex, loadEstado, buildUrl, loadHistorial } from '../lib/data';
 import { readFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { ROOT } from '../lib/data';
@@ -30,6 +31,20 @@ const fecha = (iso: string) =>
 const recientes = [...indice.builds]
   .sort((a, b) => b.updatedAt.localeCompare(a.updatedAt) || a.title.localeCompare(b.title))
   .slice(0, 20);
+
+// Lo que ha cambiado DENTRO de las builds, que es lo que importa si estás jugando una.
+// Solo cambios de las guías: los nuestros los aparta el generador del historial.
+const historial = loadHistorial();
+const filaPorId = new Map(indice.builds.map((b) => [b.id, b]));
+const conCambios = Object.entries(historial?.builds ?? {})
+  .map(([id, h]) => ({ id, fila: filaPorId.get(id), entradas: h.entradas.filter((e) => e.ambito === 'fuente') }))
+  .filter((x) => x.fila !== undefined && x.entradas.length > 0)
+  .sort((a, b) => (b.entradas[0]?.fecha ?? '').localeCompare(a.entradas[0]?.fecha ?? ''))
+  .slice(0, 12);
+
+const desdeCuando = historial
+  ? new Date(historial.desde).toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' })
+  : null;
 ---
 
 <Base
@@ -97,6 +112,41 @@ const recientes = [...indice.builds]
         )
       }
     </section>
+
+    {
+      historial && (
+        <section class="mt-6">
+          <h2 class="font-titulo text-xl">Qué ha cambiado dentro de las builds</h2>
+          <p class="mt-1 text-sm text-ceniza">
+            No solo qué builds se han tocado: qué han cambiado exactamente sus autores. Se registra
+            desde el {desdeCuando}, y llevamos {historial.pasadas}{' '}
+            {historial.pasadas === 1 ? 'pasada' : 'pasadas'}.
+          </p>
+
+          {conCambios.length > 0 ? (
+            <div class="mt-4 space-y-4">
+              {conCambios.map((x) => (
+                <article class="grabado rounded-lg bg-piedra p-4">
+                  <h3 class="font-titulo text-lg">
+                    <a href={buildUrl(x.fila!)} class="hover:text-brasa-viva">
+                      {x.fila!.title}
+                    </a>
+                  </h3>
+                  <div class="mt-2">
+                    <ListaCambios entradas={x.entradas} limite={3} />
+                  </div>
+                </article>
+              ))}
+            </div>
+          ) : (
+            <p class="mt-4 grabado rounded-lg bg-piedra p-4 text-sm text-ceniza">
+              Todavía ninguna guía ha cambiado desde que se registra. Es lo normal al principio:
+              esta lista se llena sola conforme sus autores las vayan tocando.
+            </p>
+          )}
+        </section>
+      )
+    }
 
     <section class="mt-6">
       <h2 class="font-titulo text-xl">Builds actualizadas</h2>

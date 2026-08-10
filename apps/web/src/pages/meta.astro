@@ -1,0 +1,215 @@
+---
+import Base from '../layouts/Base.astro';
+import Termino from '../components/Termino.astro';
+import { loadBuilds, loadIndex, loadClasesEs, claseNombre } from '../lib/data';
+import { contarMeta, nucleoDeClase } from '../lib/meta';
+import { iconoClase } from '../lib/iconos';
+import { CLASSES, classById } from '@d4es/schema';
+
+/**
+ * El meta en cifras.
+ *
+ * Todas las webs publican tier lists, que son la opinión de alguien. Esto cuenta otra
+ * cosa: lo que las builds del catálogo EQUIPAN de verdad. Sale de los datos canónicos,
+ * se recalcula en cada build de la web y no hace falta extraer nada nuevo.
+ *
+ * Se cuenta una vez por build, no por aparición, y siempre sobre su variante principal.
+ */
+const builds = loadBuilds();
+const indice = loadIndex();
+const clasesEs = loadClasesEs();
+
+const global = contarMeta(builds);
+
+const porClase = CLASSES.map((c) => {
+  const suyas = builds.filter((b) => b.classId === c.id);
+  return {
+    id: c.id,
+    slug: c.slug,
+    nombre: claseNombre(c.id, clasesEs),
+    builds: suyas.length,
+    categorias: contarMeta(suyas, 10),
+    nucleo: nucleoDeClase(suyas),
+  };
+}).filter((c) => c.builds > 0);
+
+const fecha = new Date(indice.generatedAt).toLocaleDateString('es-ES', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+});
+
+const ETIQUETA_TIPO: Record<string, string> = {
+  aspectos: 'Aspecto',
+  unicos: 'Único',
+  glifos: 'Glifo',
+  runas: 'Engarce',
+  mercenarios: 'Mercenario',
+};
+
+/** Barra de proporción: se lee de un vistazo mejor que el número suelto. */
+function pct(f: { builds: number; de: number }): number {
+  return f.de === 0 ? 0 : Math.round((f.builds / f.de) * 100);
+}
+---
+
+<Base
+  titulo="El meta en cifras — D4es"
+  descripcion="Qué llevan de verdad las builds de Diablo 4 esta temporada: aspectos, únicos, glifos y runas más equipados, contados sobre el catálogo entero."
+  migas={[{ nombre: 'Inicio', url: '/' }, { nombre: 'El meta en cifras', url: '/meta' }]}
+>
+  <div class="mx-auto max-w-4xl px-4 py-10">
+    <h1 class="font-titulo text-3xl">El meta en cifras</h1>
+    <p class="mt-2 max-w-2xl text-ceniza">
+      Una tier list es la opinión de alguien. Esto es otra cosa: lo que las
+      <strong class="text-pergamino">{builds.length} builds</strong> del catálogo llevan puesto de
+      verdad, contado una vez por build. Si un único aparece en media lista, ya sabes qué farmear
+      primero.
+    </p>
+    <p class="mt-1 text-xs text-humo">Datos del {fecha} · temporada {indice.season}.</p>
+
+    <nav class="mt-6 flex flex-wrap gap-1.5" aria-label="Ir a una clase">
+      <a
+        href="#global"
+        class="grabado grabado-hover rounded bg-abismo px-2.5 py-1.5 text-xs text-ceniza"
+      >
+        Todas
+      </a>
+      {
+        porClase.map((c) => (
+          <a
+            href={`#${c.slug}`}
+            class="grabado grabado-hover flex items-center gap-1.5 rounded bg-abismo px-2.5 py-1.5 text-xs text-ceniza"
+          >
+            <img
+              src={iconoClase(c.id)}
+              alt=""
+              width="16"
+              height="16"
+              loading="lazy"
+              class="h-4 w-4"
+              onerror="this.style.display='none'"
+            />
+            {c.nombre}
+            <span class="font-mono text-humo">{c.builds}</span>
+          </a>
+        ))
+      }
+    </nav>
+
+    <section id="global" class="mt-8 scroll-mt-4">
+      <h2 class="font-titulo text-2xl">Todo el catálogo</h2>
+      <div class="mt-4 grid gap-4 sm:grid-cols-2">
+        {
+          global.map((cat) => (
+            <article class="grabado rounded-lg bg-piedra p-4">
+              <h3 class="font-titulo text-lg">{cat.titulo}</h3>
+              <p class="mt-0.5 text-xs text-humo">{cat.pie}</p>
+              <ol class="mt-3 space-y-1.5">
+                {cat.filas.map((f) => (
+                  <li>
+                    <div class="flex items-baseline gap-2 text-sm">
+                      <span class="min-w-0 flex-1 truncate">
+                        {f.es ?? f.en}
+                        {f.es === null && (
+                          <span class="chip-en" data-i18n-missing>
+                            EN
+                          </span>
+                        )}
+                      </span>
+                      <span class="shrink-0 font-mono text-xs text-humo">
+                        {f.builds}/{f.de}
+                      </span>
+                    </div>
+                    <div class="mt-0.5 h-1 w-full rounded-full bg-abismo">
+                      <div
+                        class="h-1 rounded-full bg-brasa"
+                        style={`width: ${pct(f)}%`}
+                        role="presentation"
+                      />
+                    </div>
+                  </li>
+                ))}
+              </ol>
+            </article>
+          ))
+        }
+      </div>
+    </section>
+
+    {
+      porClase.map((c) => (
+        <section id={c.slug} class="mt-10 scroll-mt-4">
+          <h2 class="flex items-center gap-3 font-titulo text-2xl">
+            <img
+              src={iconoClase(c.id)}
+              alt=""
+              width="32"
+              height="32"
+              loading="lazy"
+              class="h-8 w-8 rounded border border-grabado-vivo bg-abismo"
+              onerror="this.style.display='none'"
+            />
+            {c.nombre}
+            <span class="font-sans text-sm font-normal text-humo">{c.builds} builds</span>
+          </h2>
+
+          {c.nucleo.length > 0 && (
+            <div class="mt-3 grabado rounded-lg border-oro-apagado/40 bg-oro/5 p-4">
+              <h3 class="font-titulo text-lg">Lo que necesitas sí o sí</h3>
+              <p class="mt-0.5 text-xs text-humo">
+                Lo que llevan al menos 6 de cada 10 builds de esta clase. Si vas a jugarla, esto es
+                la lista de la compra.
+              </p>
+              <ul class="mt-3 flex flex-wrap gap-2">
+                {c.nucleo.map((n) => (
+                  <li class="grabado rounded bg-abismo px-2.5 py-1.5 text-sm">
+                    <span class="text-[0.65rem] uppercase tracking-wider text-humo">
+                      {ETIQUETA_TIPO[n.tipo] ?? n.tipo}
+                    </span>{' '}
+                    <span class="text-pergamino">{n.es ?? n.en}</span>
+                    <span class="ml-1.5 font-mono text-xs text-oro">
+                      {Math.round((n.builds / n.de) * 100)}%
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          <div class="mt-4 grid gap-4 sm:grid-cols-2">
+            {c.categorias.map((cat) => (
+              <article class="grabado rounded-lg bg-piedra p-4">
+                <h3 class="font-titulo text-base">{cat.titulo}</h3>
+                <ol class="mt-2 space-y-1">
+                  {cat.filas.map((f) => (
+                    <li class="flex items-baseline gap-2 text-sm">
+                      <span class="min-w-0 flex-1 truncate">
+                        {f.es ?? f.en}
+                        {f.es === null && (
+                          <span class="chip-en" data-i18n-missing>
+                            EN
+                          </span>
+                        )}
+                      </span>
+                      <span class="shrink-0 font-mono text-xs text-humo">
+                        {f.builds}/{f.de}
+                      </span>
+                    </li>
+                  ))}
+                </ol>
+              </article>
+            ))}
+          </div>
+        </section>
+      ))
+    }
+
+    <p class="mt-10 max-w-2xl text-sm text-ceniza">
+      Se cuenta una vez por build y sobre su variante principal, así que los porcentajes se leen
+      como «cuántas de las builds publicadas lo llevan». No es una recomendación nuestra: es lo que
+      hay en las guías, contado. El detalle de cada una está en
+      <a href="/builds" class="underline underline-offset-4">el catálogo</a>.
+    </p>
+  </div>
+</Base>

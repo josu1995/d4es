@@ -1,0 +1,93 @@
+---
+import type { EntradaHistorial } from '@d4es/schema';
+import { NOMBRE_SLOT } from '../lib/etiquetas';
+
+/**
+ * Los cambios de una build, en cristiano.
+ *
+ * La foto de hoy la publica cualquiera; lo que aquí se cuenta es la película: qué cambió
+ * el autor de la guía y cuándo. Solo llegan aquí los cambios de ámbito `fuente` — los
+ * nuestros (un parser nuevo, una tanda de traducciones) los aparta el generador, porque
+ * atribuirlos a la guía sería mentir al que la está jugando.
+ */
+interface Props {
+  entradas: EntradaHistorial[];
+  /** Cuántas entradas pintar como mucho. */
+  limite?: number;
+}
+
+const { entradas, limite = 8 } = Astro.props;
+
+const ETIQUETA_TIPO: Record<string, string> = {
+  tier: 'Tier',
+  pit: 'Fosa',
+  habilidad: 'Habilidad',
+  equipo: 'Equipo',
+  engarce: 'Engarce',
+  glifo: 'Glifo',
+  tablero: 'Tablero',
+  mercenario: 'Mercenario',
+};
+
+/** El «dónde» viene en crudo (`helm`, `ring1#2`): aquí se dice en castellano. */
+function donde(tipo: string, valor: string): string {
+  if (valor.length === 0) return '';
+  if (tipo === 'equipo') return NOMBRE_SLOT[valor] ?? valor;
+  if (tipo === 'engarce') {
+    const [slot, n] = valor.split('#');
+    return `${NOMBRE_SLOT[slot ?? ''] ?? slot}, engarce ${n}`;
+  }
+  if (tipo === 'tablero' || tipo === 'glifo') return `tablero ${valor}`;
+  if (tipo === 'habilidad') return '';
+  return valor;
+}
+
+const fecha = (iso: string) =>
+  new Date(iso).toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' });
+
+const visibles = entradas.slice(0, limite);
+---
+
+<ol class="space-y-4">
+  {
+    visibles.map((e) => (
+      <li>
+        <p class="text-xs uppercase tracking-wider text-humo">{fecha(e.fecha)}</p>
+        <ul class="mt-1.5 space-y-1">
+          {e.cambios.map((c) => {
+            const lugar = donde(c.tipo, c.donde);
+            return (
+              <li class="text-sm">
+                <span class="text-humo">
+                  {ETIQUETA_TIPO[c.tipo] ?? c.tipo}
+                  {lugar && <span> · {lugar}</span>}:{' '}
+                </span>
+                {c.antes && c.despues ? (
+                  <>
+                    <span class="text-ceniza line-through decoration-humo/60">
+                      {c.antes.es ?? c.antes.en}
+                    </span>
+                    <span class="text-humo"> → </span>
+                    <span class="text-pergamino">{c.despues.es ?? c.despues.en}</span>
+                  </>
+                ) : c.despues ? (
+                  <>
+                    <span class="text-oro">+ </span>
+                    <span class="text-pergamino">{c.despues.es ?? c.despues.en}</span>
+                  </>
+                ) : (
+                  <>
+                    <span class="text-brasa">− </span>
+                    <span class="text-ceniza line-through decoration-humo/60">
+                      {c.antes?.es ?? c.antes?.en}
+                    </span>
+                  </>
+                )}
+              </li>
+            );
+          })}
+        </ul>
+      </li>
+    ))
+  }
+</ol>

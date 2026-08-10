@@ -4,12 +4,14 @@ import { fileURLToPath } from 'node:url';
 import {
   BuildIndex,
   CanonicalBuild,
+  Historial,
   ParagonBoardsDataset,
   SkillsDataset,
   WarPlansDataset,
   classById,
   skillNameKey,
   type BuildIndexRow,
+  type EntradaHistorial,
   type ParagonBoardLayout,
   type SkillInfo,
   type WarPlanActivityLayout,
@@ -130,6 +132,25 @@ export function loadParagonDataset(): ParagonBoardsDataset | null {
   if (!existsSync(path)) return null;
   cacheParagon = ParagonBoardsDataset.parse(JSON.parse(readFileSync(path, 'utf8')));
   return cacheParagon;
+}
+
+let cacheHistorial: Historial | null = null;
+
+/**
+ * Historial de cambios por build. Devuelve null mientras no se haya generado ninguna
+ * pasada; la web entonces no pinta la seccion, en vez de fingir que no hubo cambios.
+ */
+export function loadHistorial(): Historial | null {
+  if (cacheHistorial) return cacheHistorial;
+  const path = join(DATA, 'canonical', 'historial.json');
+  if (!existsSync(path)) return null;
+  cacheHistorial = Historial.parse(JSON.parse(readFileSync(path, 'utf8')));
+  return cacheHistorial;
+}
+
+/** Cambios de una build, solo los que son de la guia (los nuestros no se pintan). */
+export function historialDeBuild(id: string): EntradaHistorial[] {
+  return (loadHistorial()?.builds[id]?.entradas ?? []).filter((e) => e.ambito === 'fuente');
 }
 
 export function layoutTablero(claseSlug: string, nombreEn: string): ParagonBoardLayout | null {

@@ -6,7 +6,17 @@ import ArbolHabilidades from '../../../components/ArbolHabilidades.astro';
 import Termino from '../../../components/Termino.astro';
 import ArbolPlanGuerra from '../../../components/ArbolPlanGuerra.astro';
 import TableroParagon from '../../../components/TableroParagon.astro';
-import { loadBuilds, loadClasesEs, claseNombre, skillInfo, layoutPlan, layoutTablero } from '../../../lib/data';
+import ListaCambios from '../../../components/ListaCambios.astro';
+import {
+  loadBuilds,
+  loadClasesEs,
+  claseNombre,
+  skillInfo,
+  layoutPlan,
+  layoutTablero,
+  historialDeBuild,
+  loadHistorial,
+} from '../../../lib/data';
 import { iconoClase, iconoActividadPlan, iconoSkill } from '../../../lib/iconos';
 import { NOMBRE_SLOT, capitalizar } from '../../../lib/etiquetas';
 import {
@@ -32,6 +42,15 @@ const { build } = Astro.props;
 const clasesEs = loadClasesEs();
 const nombreClase = claseNombre(build.classId, clasesEs);
 const claseSlug = classById(build.classId)?.slug ?? build.classId;
+
+// El historial arranca el día que se empezó a registrar: antes de eso hay foto, no película.
+const cambios = historialDeBuild(build.id);
+const registrandoDesde = (() => {
+  const desde = loadHistorial()?.desde;
+  return desde
+    ? `desde el ${new Date(desde).toLocaleDateString('es-ES', { day: 'numeric', month: 'long' })}`
+    : 'desde hace poco';
+})();
 
 const principal = build.variants.find((v) => v.id === build.primaryVariantId) ?? build.variants[0]!;
 const hayVariasFuentes = build.variants.length > 1;
@@ -70,6 +89,7 @@ const PESTANAS = [
   { id: 'paragon', etiqueta: 'Paragón' },
   { id: 'mercenarios', etiqueta: 'Mercenarios' },
   { id: 'warplans', etiqueta: 'Planes de guerra' },
+  { id: 'cambios', etiqueta: 'Cambios' },
   { id: 'notas', etiqueta: 'Notas del autor' },
 ] as const;
 
@@ -584,6 +604,35 @@ function disponible(v: (typeof build.variants)[number], id: string): boolean {
                   Esta build no publica plan de guerra, o todavía no está extraído.
                 </p>
               )}
+            </section>
+
+            {/* CAMBIOS */}
+            <section
+              data-panel-pestana="cambios"
+              class="hidden grabado rounded-b-lg rounded-tr-lg bg-piedra p-5 sm:p-6"
+            >
+              <h2 class="font-titulo text-xl">Qué ha cambiado en esta build</h2>
+              {cambios.length > 0 ? (
+                <>
+                  <p class="mt-1 text-sm text-ceniza max-w-2xl">
+                    Lo que el autor de la guía ha ido tocando desde que la seguimos. Útil si ya la
+                    estás jugando: aquí ves si te has quedado con una versión vieja sin enterarte.
+                  </p>
+                  <div class="mt-4">
+                    <ListaCambios entradas={cambios} limite={12} />
+                  </div>
+                </>
+              ) : (
+                <p class="mt-2 text-ceniza max-w-2xl">
+                  Sin cambios desde que la seguimos ({registrandoDesde}). No es que no pase nada: es
+                  que esta build no se ha tocado. Cuando su autor cambie algo, aparecerá aquí.
+                </p>
+              )}
+              <p class="mt-6 text-xs text-humo max-w-2xl">
+                Solo se listan los cambios de la guía. Cuando cambiamos algo nosotros —el extractor,
+                una tanda de traducciones— se detecta porque afecta a medio catálogo a la vez y se
+                deja fuera, para no apuntarle a la guía cosas que no ha hecho.
+              </p>
             </section>
 
             {/* NOTAS */}

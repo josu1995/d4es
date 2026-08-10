@@ -3,6 +3,7 @@ import { join, relative } from 'node:path';
 import { existsSync } from 'node:fs';
 import {
   BuildIndex,
+  Historial,
   RawD4BuildsCatalog,
   RawD4BuildsTierList,
   SkillsDataset,
@@ -22,6 +23,7 @@ import { normalizeD4BuildsCatalog } from '../sources/d4builds/normalize.js';
 import { enriquecerConPagina } from '../sources/d4builds/normalize-pages.js';
 import { construirLayoutPlanes } from '../sources/d4builds/warplans-layout.js';
 import { construirLayoutParagon } from '../sources/d4builds/paragon-layout.js';
+import { calcularHistorial } from './historial.js';
 import type { PaginaRaw } from '../sources/d4builds/scrape-pages.js';
 import { readJsonIfExists, stableStringify, writeIfChanged } from '../util/stable-json.js';
 import { evaluarGuardrails } from './guardrails.js';
@@ -324,6 +326,27 @@ export async function runNormalize(): Promise<NormalizeResultado> {
       const nodos = layout.dataset.activities.reduce((n, a) => n + a.nodes.length, 0);
       process.stdout.write(
         `  planes de guerra: ${layout.dataset.activities.length} actividades, ${nodos} nodos de forma\n`,
+      );
+    }
+  }
+
+  // El historial: que cambio en cada build respecto a la pasada anterior. Se calcula
+  // DESPUES de los guardarrailes, con las builds que de verdad se han publicado, y su
+  // fecha es la del snapshot (determinista, como todo lo demas).
+  {
+    const path = join(PATHS.canonical, 'historial.json');
+    const previo = await readJsonIfExists<Historial>(path);
+    const res = calcularHistorial(builds, previo, catalogo.meta.lastChangedAt);
+    if (await writeIfChanged(path, stableStringify(Historial.parse(res.historial)))) tocados++;
+    process.stdout.write(
+      `  historial: pasada ${res.historial.pasadas} | ${res.conCambios} builds con cambios de la fuente\n`,
+    );
+    if (res.atribuidosAlSitio.length > 0) {
+      // No es un fallo: es el guardarrail funcionando. Pero queda dicho, porque significa
+      // que esta pasada tocamos algo nosotros y esos cambios NO son de las guias.
+      avisos.push(
+        `historial: ${res.atribuidosAlSitio.join(', ')} cambiaron en medio catalogo a la vez — ` +
+          `se atribuyen al sitio, no a las builds`,
       );
     }
   }
