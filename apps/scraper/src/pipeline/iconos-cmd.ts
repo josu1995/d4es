@@ -112,8 +112,14 @@ export async function reunirIconos(): Promise<Icono[]> {
   const paragon = await readJsonIfExists<ParagonBoardsDataset>(
     join(PATHS.canonical, 'paragon-boards-dataset.json'),
   );
+  // El engarce de glifo y el nodo de inicio NO se piden: el CDN no publica fichero para
+  // ellos (404 comprobado) y la web no lo necesita — el glifo se dibuja como rombo y el
+  // nodo de inicio, como una casilla mas.
+  const SIN_ICONO_PROPIO = new Set(['Glyph', 'Paragon Starting Node']);
   const tiposParagon = new Set<string>();
-  for (const b of paragon?.boards ?? []) for (const t of b.tiles) if (t.type) tiposParagon.add(t.type);
+  for (const b of paragon?.boards ?? []) {
+    for (const t of b.tiles) if (t.type && !SIN_ICONO_PROPIO.has(t.type)) tiposParagon.add(t.type);
+  }
   for (const tipo of tiposParagon) {
     anadir(iconoDeCasillaParagon(tipo, false));
     anadir(iconoDeCasillaParagon(tipo, true));

@@ -62,10 +62,16 @@ const dibujadas = layout.tiles.map((t) => {
   };
 });
 
+/**
+ * El engarce de glifo y el nodo de inicio no tienen icono propio en el CDN (404): el
+ * primero ya se dibuja como rombo dorado y el segundo se queda como una casilla más.
+ */
+const SIN_ICONO_PROPIO = new Set(['Glyph', 'Paragon Starting Node']);
+
 // Un símbolo por combinación (tipo, encendida) de las que se usan de verdad.
 const simbolos = new Map<string, { tipo: string; activa: boolean; id: string }>();
 for (const t of dibujadas) {
-  if (!t.type) continue;
+  if (!t.type || SIN_ICONO_PROPIO.has(t.type)) continue;
   const clave = `${t.type}|${t.activa}`;
   if (simbolos.has(clave)) continue;
   simbolos.set(clave, {
@@ -74,7 +80,8 @@ for (const t of dibujadas) {
     id: `p-${idBase}-${t.type.replace(/[^A-Za-z0-9]/g, '')}-${t.activa ? 'on' : 'off'}`,
   });
 }
-const idDe = (tipo: string, activa: boolean) => simbolos.get(`${tipo}|${activa}`)?.id ?? null;
+const idDe = (tipo: string, activa: boolean): string | null =>
+  simbolos.get(`${tipo}|${activa}`)?.id ?? null;
 
 const anchoRejilla = (rot === 90 || rot === 270 ? rows : cols) * PASO - HUECO;
 const altoRejilla = (rot === 90 || rot === 270 ? cols : rows) * PASO - HUECO;
