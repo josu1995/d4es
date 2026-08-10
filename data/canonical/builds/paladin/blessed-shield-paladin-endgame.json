@@ -387,11 +387,11 @@
               "order": 2,
               "ref": {
                 "category": "affix",
-                "enUS": "All Damage Multipler",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__all_damage_multipler",
-                "sno": null
+                "enUS": "x All Damage Multiplier",
+                "esES": "Multiplicador de todo el daño x",
+                "i18n": "d4companion",
+                "idName": "S04_Damage_All;X2_Damage_All_Greater;X2_UBERUNIQUE_Damage_All",
+                "sno": 1829588
               },
               "tempered": false
             },
@@ -557,11 +557,11 @@
               "order": 1,
               "ref": {
                 "category": "affix",
-                "enUS": "Ranks to Juggernaut Skills",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__ranks_to_juggernaut_skills",
-                "sno": null
+                "enUS": "to Juggernaut Skills",
+                "esES": "a las habilidades de categoría Juggernaut",
+                "i18n": "d4companion",
+                "idName": "Talisman_Charm_Affix_UNIQUE_SkillRankBonus_Paladin_Juggernaut;Talisman_Charm_SkillRankBonus_Paladin_Category_Juggernaut;UNIQUE_SkillRankBonus_Paladin_Juggernaut;X2_SkillRankBonus_Paladin_Category_Juggernaut",
+                "sno": 2481059
               },
               "tempered": false
             },
@@ -852,11 +852,11 @@
               "order": 1,
               "ref": {
                 "category": "affix",
-                "enUS": "Ranks to Blessed Hammer",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__ranks_to_blessed_hammer",
-                "sno": null
+                "enUS": "to Blessed Hammer",
+                "esES": "a Martillo bendito",
+                "i18n": "d4companion",
+                "idName": "Talisman_Charm_SkillRankBonus_Paladin_Core_BlessedHammer;Talisman_Charm_SkillRankBonus_Paladin_Core_BlessedHammer_MagicOnly;X2_SkillRankBonus_Paladin_Core_BlessedHammer",
+                "sno": 2420823
               },
               "tempered": false
             },

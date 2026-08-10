@@ -156,3 +156,50 @@ describe('afijos: el grupo de templado no cambia el afijo', () => {
     expect(r().resolve('affix', 'Maximum Life').esES).toBe('de vida máxima');
   });
 });
+
+/**
+ * Casos reales del catalogo: 54 terminos (158 apariciones) que estaban en el diccionario
+ * y salian en ingles por diferencias de escritura entre la fuente y el juego.
+ */
+describe('afijos: las formas en que la fuente los escribe distinto', () => {
+  const r = () =>
+    new Resolver(
+      dict([
+        // El diccionario CONSERVA el numero, pero no el simbolo de % ni la X del hueco.
+        {
+          category: 'affix',
+          en: 'Lucky Hit: Up to a 15 Chance to Restore Primary Resource',
+          es: 'Golpe de suerte: Hasta un 15 de probabilidad de restaurar recurso principal',
+        },
+        { category: 'affix', en: 'x All Damage Multiplier', es: 'Multiplicador de todo el daño x' },
+        { category: 'affix', en: 'to War Cry', es: 'a Grito de guerra' },
+        { category: 'affix', en: 'Critical Strike Chance', es: 'de probabilidad de golpe crítico' },
+      ]),
+    );
+
+  it('quita el % y la X con que la fuente marca el hueco del valor', () => {
+    expect(
+      r().resolve('affix', 'Lucky Hit: Up to a 15% Chance to Restore X Primary Resource (Worldly Stability - Resource)')
+        .esES,
+    ).toBe('Golpe de suerte: Hasta un 15 de probabilidad de restaurar recurso principal');
+  });
+
+  it('corrige las erratas de la propia fuente', () => {
+    expect(r().resolve('affix', 'All Damage Multipler').esES).toBe('Multiplicador de todo el daño x');
+    expect(r().resolve('affix', 'Critcal Strike Chance').esES).toBe('de probabilidad de golpe crítico');
+  });
+
+  it('entiende el "Ranks" que antepone la fuente a los rangos de habilidad', () => {
+    expect(r().resolve('affix', 'Ranks to War Cry').esES).toBe('a Grito de guerra');
+  });
+
+  it('un afijo que NO esta en el diccionario se unifica pero no se inventa', () => {
+    // La fuente lo publica con el valor delante y con el grupo detras; es el mismo afijo,
+    // asi que se publica una sola forma en ingles, sin traduccion.
+    const a = r().resolve('affix', '242 Primary Core Stat');
+    const b = r().resolve('affix', 'Primary Core Stat (Worldly Stability - Resource)');
+    expect(a.esES).toBeNull();
+    expect(a.enUS).toBe('Primary Core Stat');
+    expect(b.enUS).toBe('Primary Core Stat');
+  });
+});

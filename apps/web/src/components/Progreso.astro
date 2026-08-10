@@ -1,0 +1,211 @@
+---
+import type { BuildVariant } from '@d4es/schema';
+import { loadUnicos, texto } from '../lib/contenido';
+import { NOMBRE_SLOT } from '../lib/etiquetas';
+
+/**
+ * «Qué me falta»: la lista de la compra de esta build.
+ *
+ * Una ficha te dice qué lleva la build. Lo que no te dice ninguna es qué te falta A TI, y
+ * eso es lo que decide cómo empleas la próxima hora de juego. Aquí se marca lo que ya
+ * tienes y queda a la vista lo que queda, con el jefe del que cae cada único —dato que ya
+ * teníamos cruzado en `loadUnicos()`.
+ *
+ * Se guarda en tu navegador (`localStorage`), por build. Sin cuentas, sin servidor y sin
+ * que salga de tu equipo: es una lista de la compra, no un perfil.
+ */
+interface Props {
+  buildId: string;
+  variante: BuildVariant;
+}
+
+const { buildId, variante } = Astro.props;
+
+const unicos = loadUnicos();
+const porNombreEn = new Map(unicos.map((u) => [u.en.toLowerCase(), u]));
+
+/** Cada cosa que hay que conseguir, con de dónde sale si lo sabemos. */
+interface Objetivo {
+  clave: string;
+  tipo: 'unico' | 'aspecto' | 'glifo' | 'engarce';
+  nombre: string;
+  sinTraducir: boolean;
+  donde: string;
+  url: string | null;
+}
+
+const objetivos: Objetivo[] = [];
+const vistos = new Set<string>();
+const anotar = (o: Objetivo) => {
+  if (vistos.has(o.clave)) return;
+  vistos.add(o.clave);
+  objetivos.push(o);
+};
+
+for (const [slot, pieza] of Object.entries(variante.gear)) {
+  const ranura = NOMBRE_SLOT[slot] ?? slot;
+  if (pieza.item) {
+    const ficha = porNombreEn.get(pieza.item.enUS.toLowerCase());
+    const jefes = ficha?.jefes ?? [];
+    anotar({
+      clave: `unico:${pieza.item.enUS}`,
+      tipo: 'unico',
+      nombre: pieza.item.esES ?? pieza.item.enUS,
+      sinTraducir: pieza.item.esES === null,
+      donde:
+        jefes.length > 0
+          ? `${ranura} · lo suelta ${jefes.map((j) => texto(j.nombre)).join(' o ')}`
+          : // Las tablas de botín por jefe están a medias A PROPÓSITO: solo tenemos los
+            // únicos «firma» de cada uno, y rellenar el resto a ojo iría contra la regla
+            // de no inventar. Se dice tal cual en vez de dejar el hueco en blanco.
+            `${ranura} · ningún jefe de nuestra lista lo suelta: cae del botín general`,
+      url: ficha ? `/objetos/unicos/${ficha.slug}` : null,
+    });
+  }
+  if (pieza.aspect) {
+    anotar({
+      clave: `aspecto:${pieza.aspect.enUS}`,
+      tipo: 'aspecto',
+      nombre: pieza.aspect.esES ?? pieza.aspect.enUS,
+      sinTraducir: pieza.aspect.esES === null,
+      donde: `${ranura} · del códice o extraído de un legendario`,
+      url: null,
+    });
+  }
+  for (const s of pieza.sockets) {
+    anotar({
+      clave: `engarce:${s.enUS}`,
+      tipo: 'engarce',
+      nombre: s.esES ?? s.enUS,
+      sinTraducir: s.esES === null,
+      donde: 'Engarce',
+      url: null,
+    });
+  }
+}
+
+for (const b of variante.paragon.boards) {
+  if (!b.glyph) continue;
+  anotar({
+    clave: `glifo:${b.glyph.ref.enUS}`,
+    tipo: 'glifo',
+    nombre: b.glyph.ref.esES ?? b.glyph.ref.enUS,
+    sinTraducir: b.glyph.ref.esES === null,
+    donde: 'Glifo · cae en mazmorras de pesadilla y sube en la Fosa',
+    url: null,
+  });
+}
+
+const ETIQUETA: Record<Objetivo['tipo'], string> = {
+  unico: 'Único',
+  aspecto: 'Aspecto',
+  glifo: 'Glifo',
+  engarce: 'Engarce',
+};
+
+// Primero lo que más cuesta conseguir: los únicos dependen de la suerte; los aspectos,
+// de encontrar un legendario cualquiera con ese poder.
+const ORDEN: Objetivo['tipo'][] = ['unico', 'glifo', 'aspecto', 'engarce'];
+const ordenados = [...objetivos].sort(
+  (a, b) => ORDEN.indexOf(a.tipo) - ORDEN.indexOf(b.tipo) || a.nombre.localeCompare(b.nombre, 'es'),
+);
+---
+
+<div data-progreso={buildId}>
+  <div class="flex flex-wrap items-baseline gap-x-4 gap-y-1">
+    <p class="text-sm text-ceniza">
+      <span data-progreso-cuenta class="text-pergamino">0</span> de {ordenados.length} conseguidos
+    </p>
+    <button
+      type="button"
+      data-progreso-limpiar
+      class="text-xs text-ceniza underline underline-offset-4 hover:text-pergamino"
+    >
+      Desmarcar todo
+    </button>
+  </div>
+  <div class="mt-2 h-1.5 w-full rounded-full bg-abismo">
+    <div data-progreso-barra class="h-1.5 rounded-full bg-brasa transition-all" style="width: 0%"></div>
+  </div>
+
+  <ul class="mt-4 space-y-1.5">
+    {
+      ordenados.map((o) => (
+        <li>
+          <label class="grabado grabado-hover flex cursor-pointer items-start gap-3 rounded bg-abismo p-3">
+            <input
+              type="checkbox"
+              data-progreso-item={o.clave}
+              class="mt-0.5 h-4 w-4 shrink-0 accent-[var(--color-brasa)]"
+            />
+            <span class="min-w-0 flex-1">
+              <span class="text-[0.65rem] uppercase tracking-wider text-humo">{ETIQUETA[o.tipo]}</span>{' '}
+              {o.url ? (
+                <a href={o.url} class="text-pergamino underline decoration-grabado-vivo underline-offset-4 hover:text-brasa-viva">
+                  {o.nombre}
+                </a>
+              ) : (
+                <span class="text-pergamino">{o.nombre}</span>
+              )}
+              {o.sinTraducir && <span class="chip-en" data-i18n-missing>EN</span>}
+              <span class="block text-xs text-humo">{o.donde}</span>
+            </span>
+          </label>
+        </li>
+      ))
+    }
+  </ul>
+</div>
+
+<script>
+  // Lo marcado vive solo en este navegador: es una lista de la compra, no un perfil.
+  for (const raiz of document.querySelectorAll<HTMLElement>('[data-progreso]')) {
+    const buildId = raiz.dataset['progreso']!;
+    const clave = `d4es:progreso:${buildId}`;
+    const casillas = raiz.querySelectorAll<HTMLInputElement>('[data-progreso-item]');
+    const cuenta = raiz.querySelector<HTMLElement>('[data-progreso-cuenta]')!;
+    const barra = raiz.querySelector<HTMLElement>('[data-progreso-barra]')!;
+
+    const leer = (): Set<string> => {
+      try {
+        const crudo = localStorage.getItem(clave);
+        return new Set(crudo ? (JSON.parse(crudo) as string[]) : []);
+      } catch {
+        // Navegador con el almacenamiento capado: la lista funciona igual, sin recordar.
+        return new Set();
+      }
+    };
+
+    const guardar = (s: Set<string>) => {
+      try {
+        localStorage.setItem(clave, JSON.stringify([...s]));
+      } catch {
+        /* sin almacenamiento: no se recuerda y ya está */
+      }
+    };
+
+    const pintar = () => {
+      const hechos = [...casillas].filter((c) => c.checked).length;
+      cuenta.textContent = String(hechos);
+      barra.style.width = `${casillas.length === 0 ? 0 : Math.round((hechos / casillas.length) * 100)}%`;
+    };
+
+    const guardados = leer();
+    for (const c of casillas) {
+      c.checked = guardados.has(c.dataset['progresoItem']!);
+      c.addEventListener('change', () => {
+        const s = leer();
+        if (c.checked) s.add(c.dataset['progresoItem']!);
+        else s.delete(c.dataset['progresoItem']!);
+        guardar(s);
+        pintar();
+      });
+    }
+    raiz.querySelector('[data-progreso-limpiar]')!.addEventListener('click', () => {
+      for (const c of casillas) c.checked = false;
+      guardar(new Set());
+      pintar();
+    });
+    pintar();
+  }
+</script>

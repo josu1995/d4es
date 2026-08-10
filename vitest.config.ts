@@ -11,7 +11,9 @@ export default defineConfig({
     },
   },
   test: {
-    include: ['packages/**/*.test.ts', 'apps/scraper/**/*.test.ts'],
+    // La web tambien: sus funciones puras (el meta, el evaluador de objetos) son logica
+    // de verdad y se prueban igual que las del pipeline.
+    include: ['packages/**/*.test.ts', 'apps/scraper/**/*.test.ts', 'apps/web/src/lib/**/*.test.ts'],
     environment: 'node',
   },
 });

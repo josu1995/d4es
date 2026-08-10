@@ -1,0 +1,246 @@
+---
+import Base from '../../layouts/Base.astro';
+import { loadBuilds, loadClasesEs, claseNombre, buildUrl } from '../../lib/data';
+import { classById } from '@d4es/schema';
+
+/*
+  ¿Y si me cambio de build?
+
+  La pregunta de mitad de temporada: te has cansado de tu personaje y quieres saber si
+  cambiarte cuesta una tarde o dos semanas. La respuesta es qué reaprovechas — qué únicos,
+  aspectos, glifos y tableros comparten las dos builds — y eso solo se puede contestar
+  teniendo el catálogo entero, que es justo lo que tenemos.
+
+  Se calcula en el navegador para poder comparar cualquier par de las 92 sin generar 8.000
+  páginas. Los datos van dentro de la página, reducidos a lo que hace falta comparar.
+*/
+const builds = loadBuilds();
+const clasesEs = loadClasesEs();
+
+interface BuildComparable {
+  id: string;
+  titulo: string;
+  clase: string;
+  claseNombre: string;
+  url: string;
+  tier: string | null;
+  unicos: string[];
+  aspectos: string[];
+  glifos: string[];
+  tableros: string[];
+  habilidades: string[];
+}
+
+// Se comparan por nombre visible: es lo que el jugador reconoce, y da igual el idioma
+// interno con tal de que las dos builds usen la misma etiqueta.
+const datos: BuildComparable[] = builds
+  .map((b) => {
+    const v = b.variants.find((x) => x.id === b.primaryVariantId) ?? b.variants[0]!;
+    const unicos: string[] = [];
+    const aspectos: string[] = [];
+    const glifos: string[] = [];
+    const tableros: string[] = [];
+    for (const pieza of Object.values(v.gear)) {
+      if (pieza.item) unicos.push(pieza.item.esES ?? pieza.item.enUS);
+      if (pieza.aspect) aspectos.push(pieza.aspect.esES ?? pieza.aspect.enUS);
+    }
+    for (const t of v.paragon.boards) {
+      tableros.push(t.ref.esES ?? t.ref.enUS);
+      if (t.glyph) glifos.push(t.glyph.ref.esES ?? t.glyph.ref.enUS);
+    }
+    return {
+      id: b.id,
+      titulo: b.title.es,
+      clase: b.classId,
+      claseNombre: claseNombre(b.classId, clasesEs),
+      url: buildUrl({ classSlug: classById(b.classId)?.slug ?? b.classId, id: b.id }),
+      tier: b.ratings.tierLabel,
+      unicos: [...new Set(unicos)],
+      aspectos: [...new Set(aspectos)],
+      glifos: [...new Set(glifos)],
+      tableros: [...new Set(tableros)],
+      habilidades: [...new Set(v.skills.map((s) => s.ref.esES ?? s.ref.enUS))],
+    };
+  })
+  .sort((a, b) => a.claseNombre.localeCompare(b.claseNombre, 'es') || a.titulo.localeCompare(b.titulo, 'es'));
+---
+
+<Base
+  titulo="¿Y si me cambio de build? — Qué reaprovechas — D4es"
+  descripcion="Compara dos builds de Diablo 4 y descubre qué únicos, aspectos y glifos reaprovechas al cambiarte, y qué tendrías que farmear de cero."
+  migas={[
+    { nombre: 'Inicio', url: '/' },
+    { nombre: 'Herramientas', url: '/herramientas/importar' },
+    { nombre: 'Cambiar de build', url: '/herramientas/cambiar-de-build' },
+  ]}
+>
+  <div class="mx-auto max-w-4xl px-4 py-10">
+    <h1 class="font-titulo text-3xl sm:text-4xl">¿Y si me cambio de build?</h1>
+    <p class="mt-4 max-w-2xl leading-relaxed text-ceniza">
+      Te has cansado de tu personaje y quieres cambiar. La pregunta no es cuál es mejor, es
+      <strong class="text-pergamino"> cuánto te cuesta el cambio</strong>: qué ya tienes farmeado y
+      te sirve, y qué empiezas de cero. Elige las dos y te lo decimos.
+    </p>
+
+    <form class="mt-6 grid gap-4 grabado rounded-lg bg-piedra p-5 sm:grid-cols-2" id="form">
+      <div>
+        <label for="desde" class="mb-1.5 block text-xs uppercase tracking-wider text-humo">
+          La que juegas ahora
+        </label>
+        <select id="desde" class="w-full grabado rounded bg-abismo px-3 py-2 text-sm text-pergamino">
+          {datos.map((b, i) => (
+            <option value={b.id} selected={i === 0}>
+              {b.claseNombre} · {b.titulo}
+            </option>
+          ))}
+        </select>
+      </div>
+      <div>
+        <label for="hasta" class="mb-1.5 block text-xs uppercase tracking-wider text-humo">
+          A la que te quieres cambiar
+        </label>
+        <select id="hasta" class="w-full grabado rounded bg-abismo px-3 py-2 text-sm text-pergamino">
+          {datos.map((b, i) => (
+            <option value={b.id} selected={i === 1}>
+              {b.claseNombre} · {b.titulo}
+            </option>
+          ))}
+        </select>
+      </div>
+    </form>
+
+    <section class="mt-6" id="resultado" aria-live="polite"></section>
+  </div>
+
+  <script type="application/json" id="datos-cambio" set:html={JSON.stringify(datos)} />
+</Base>
+
+<script>
+  interface B {
+    id: string;
+    titulo: string;
+    clase: string;
+    claseNombre: string;
+    url: string;
+    tier: string | null;
+    unicos: string[];
+    aspectos: string[];
+    glifos: string[];
+    tableros: string[];
+    habilidades: string[];
+  }
+
+  const datos = JSON.parse(document.getElementById('datos-cambio')!.textContent!) as B[];
+  const porId = new Map(datos.map((b) => [b.id, b]));
+  const selDesde = document.getElementById('desde') as HTMLSelectElement;
+  const selHasta = document.getElementById('hasta') as HTMLSelectElement;
+  const salida = document.getElementById('resultado')!;
+
+  const CAMPOS: { clave: keyof B; titulo: string; nota: string }[] = [
+    { clave: 'unicos', titulo: 'Únicos', nota: 'Lo más caro de farmear: si coinciden, te ahorras horas.' },
+    { clave: 'aspectos', titulo: 'Aspectos', nota: 'Si ya lo tienes en el códice, lo pones en cualquier legendario.' },
+    { clave: 'glifos', titulo: 'Glifos', nota: 'Subirlos cuesta Fosa; reaprovechar uno subido vale mucho.' },
+    { clave: 'tableros', titulo: 'Tableros de Paragón', nota: 'Los puntos se reparten gratis, pero el camino cambia.' },
+    { clave: 'habilidades', titulo: 'Habilidades', nota: 'Cambiarlas es gratis; sirve para ver si el estilo se parece.' },
+  ];
+
+  function crear(tag: string, clase: string, texto?: string): HTMLElement {
+    const e = document.createElement(tag);
+    e.className = clase;
+    if (texto !== undefined) e.textContent = texto;
+    return e;
+  }
+
+  function pintar() {
+    const a = porId.get(selDesde.value);
+    const b = porId.get(selHasta.value);
+    salida.replaceChildren();
+    if (!a || !b) return;
+
+    if (a.id === b.id) {
+      salida.append(
+        crear('p', 'grabado rounded-lg bg-piedra p-5 text-sm text-ceniza', 'Elige dos builds distintas.'),
+      );
+      return;
+    }
+
+    // Lo que de verdad cuesta conseguir. Las habilidades y los tableros se reparten
+    // gratis, así que no cuentan para el "cuánto te cuesta".
+    const caros = ['unicos', 'aspectos', 'glifos'] as const;
+    let compartidos = 0;
+    let necesarios = 0;
+    for (const c of caros) {
+      const tuyos = new Set(a[c] as string[]);
+      for (const x of b[c] as string[]) {
+        necesarios++;
+        if (tuyos.has(x)) compartidos++;
+      }
+    }
+    const pct = necesarios === 0 ? 0 : Math.round((compartidos / necesarios) * 100);
+    const veredicto =
+      pct >= 60
+        ? 'Cambio barato: reaprovechas casi todo.'
+        : pct >= 30
+          ? 'Cambio a medias: parte del farmeo te vale.'
+          : 'Cambio caro: empiezas casi de cero.';
+
+    const cab = crear('div', 'grabado rounded-lg bg-piedra p-5');
+    const h = crear('h2', 'font-titulo text-xl', veredicto);
+    cab.append(h);
+    cab.append(
+      crear(
+        'p',
+        'mt-1 text-sm text-ceniza',
+        `Reaprovechas ${compartidos} de las ${necesarios} cosas que hay que farmear para «${b.titulo}»` +
+          (a.clase !== b.clase ? ' — y además es otra clase, así que necesitas otro personaje.' : '.'),
+      ),
+    );
+    const barra = crear('div', 'mt-3 h-2 w-full rounded-full bg-abismo');
+    const relleno = crear('div', 'h-2 rounded-full bg-brasa');
+    relleno.style.width = `${pct}%`;
+    barra.append(relleno);
+    cab.append(barra);
+    salida.append(cab);
+
+    const grid = crear('div', 'mt-4 grid gap-4 sm:grid-cols-2');
+    for (const campo of CAMPOS) {
+      const tuyos = new Set(a[campo.clave] as string[]);
+      const suyos = b[campo.clave] as string[];
+      const tienes = suyos.filter((x) => tuyos.has(x));
+      const faltan = suyos.filter((x) => !tuyos.has(x));
+      const sobran = (a[campo.clave] as string[]).filter((x) => !new Set(suyos).has(x));
+
+      const art = crear('article', 'grabado rounded-lg bg-piedra p-4');
+      art.append(crear('h3', 'font-titulo text-lg', campo.titulo));
+      art.append(crear('p', 'mt-0.5 text-xs text-humo', campo.nota));
+
+      const bloque = (titulo: string, lista: string[], clase: string) => {
+        if (lista.length === 0) return;
+        art.append(crear('p', 'mt-3 text-xs uppercase tracking-wider text-humo', `${titulo} (${lista.length})`));
+        const ul = crear('ul', 'mt-1 flex flex-wrap gap-1.5');
+        for (const x of lista) ul.append(crear('li', `rounded border px-2 py-1 text-xs ${clase}`, x));
+        art.append(ul);
+      };
+      bloque('Ya lo tienes', tienes, 'border-brasa/60 bg-brasa/15 text-pergamino');
+      bloque('Te falta', faltan, 'border-grabado bg-abismo text-ceniza');
+      bloque('Dejas de usar', sobran, 'border-grabado bg-abismo text-humo line-through decoration-humo/50');
+      grid.append(art);
+    }
+    salida.append(grid);
+
+    const pie = crear('div', 'mt-4 flex flex-wrap gap-4 text-sm');
+    for (const x of [a, b]) {
+      const enlace = document.createElement('a');
+      enlace.href = x.url;
+      enlace.className = 'text-ceniza underline underline-offset-4 hover:text-pergamino';
+      enlace.textContent = `Ver «${x.titulo}» →`;
+      pie.append(enlace);
+    }
+    salida.append(pie);
+  }
+
+  selDesde.addEventListener('change', pintar);
+  selHasta.addEventListener('change', pintar);
+  document.getElementById('form')!.addEventListener('submit', (e) => e.preventDefault());
+  pintar();
+</script>

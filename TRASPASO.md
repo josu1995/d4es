@@ -37,8 +37,24 @@ la mitad de lo que hay aquí costó horas de averiguar y no es deducible del có
 | Planes de guerra | ✅ 66/92 con plan (las otras 26 no invierten puntos), árbol dibujado entero |
 | Notas del autor | ✅ enlaza al original, no se copia su texto |
 
-**Dos cosas que no tiene ninguna otra web** (y que solo se pueden hacer teniendo el catálogo
-entero y datos deterministas):
+**Herramientas que no tiene ninguna otra web** (y que solo se pueden hacer teniendo el catálogo
+entero y datos deterministas). Las tres primeras se calculan **en el navegador**, con los datos
+embebidos en la página: nada de servidor, y funcionan con el juego abierto al lado.
+
+- **«¿Lo tiro o lo guardo?»** (`/herramientas/objeto`, 35 KB de datos embebidos). Marcas la ranura
+  y los afijos del objeto que te ha caído y te dice qué builds lo aprovechan y cuántas de sus
+  prioridades cubre. Le da la vuelta al dato que ya teníamos: en vez de ir build por build mirando
+  qué pide, se pregunta al revés. La lista de afijos se ordena por cuántas builds los piden, así
+  que de paso es una chuleta de qué buscar. El objeto se marca a mano a propósito: el juego no deja
+  copiar el texto de un ítem, y leerlo de la pantalla es OCR (eso es D4Companion, otro proyecto).
+- **«Qué me falta»** (pestaña de cada ficha). La lista de la compra de la build: únicos, aspectos,
+  glifos y engarces, con el jefe que suelta cada único cuando lo sabemos. Se marca lo que ya tienes
+  y se guarda en `localStorage` por build — sin cuentas y sin salir del equipo.
+- **«¿Y si me cambio de build?»** (`/herramientas/cambiar-de-build`). Compara dos builds y dice
+  cuánto reaprovechas al cambiarte. Solo cuentan únicos, aspectos y glifos para el veredicto: las
+  habilidades y los puntos de Paragón se reparten gratis y meterlos mentiría sobre el coste.
+- **RSS por clase** (`/rss/<clase>.xml`): los cambios de las guías de esa clase, sacados del
+  historial. Sigues tu clase y te enteras el día que tocan la build que juegas.
 
 - **Historial por build** (`data/canonical/historial.json`, pestaña «Cambios» de cada ficha y
   bloque en `/cambios`). La fuente publica la foto de hoy; aquí se guarda la película: qué tocó el
@@ -57,7 +73,8 @@ entero y datos deterministas):
 (con ficha por jefe), materiales, dificultades, «lo que ya no existe», glosario de jerga, 297 fichas
 de únicos con «cómo conseguirlo», buscador global (Pagefind), comparador de variantes, importador de
 Maxroll en el navegador, RSS, página de cambios y **lista de lo que falta verificar en el juego**
-(`/estado/verificar`). **418 páginas**, **151 tests**.
+(`/estado/verificar`). **420 páginas**, **163 tests** (desde esta ronda, `vitest` también recoge
+las funciones puras de la web: `apps/web/src/lib/**`).
 
 **Traducción**: 2.426 términos del diccionario oficial más 800 curados (618 mejoras de rama y 7
 gemas cosechadas de Wowhead, con procedencia), y ahora también **149 descripciones de habilidad en
@@ -200,6 +217,18 @@ categoría propia (`gem`) desde esta sesión.
 **Ojo con lo que la fuente mete en la lista de «stats»**: `Transfigure` (el botón de transfiguración,
 811 apariciones), `Weapon Type`, `Stat 1..4` y los propios aspectos. **No son afijos.** Se filtran en
 `esAfijoDeVerdad`; si se quita ese filtro vuelven a aparecer 869 líneas que no existen en el juego.
+
+**La fuente escribe los afijos distinto que el juego, y por eso salían en inglés.** El diccionario
+guarda el afijo **con** su número pero **sin** el símbolo de `%` ni la `X` con que la fuente marca
+el hueco del valor: por dos caracteres se perdían 39 apariciones de un solo afijo. Además la fuente
+antepone `Ranks` a los rangos de habilidad (el juego dice `to War Cry`), pega el valor delante
+(`242 Primary Core Stat`) y el grupo de templado detrás, y arrastra dos erratas suyas
+(`Multipler`, `Critcal`). `lookupAfijo` prueba esas variantes —cada una sale de una diferencia
+concreta y verificable, no de adivinar— y con eso los términos sin traducir bajaron de **78 a 20**
+(de 305 apariciones a 147). Lo que queda **no está en el diccionario**: `Faith per Second`,
+`Shadow Damage`… y `Primary Core Stat`, que es una etiqueta de la fuente («tu estadística
+principal»), no un afijo del juego. Cuando un afijo no casa se publica **unificado** (sin el valor
+delante ni el grupo detrás) para que el mismo afijo no cuente como cuatro términos distintos.
 
 **maxroll.gg no se rastrea nunca.** Su robots.txt (Ziff Davis) lo prohíbe expresamente. El
 importador corre entero en el navegador del usuario.

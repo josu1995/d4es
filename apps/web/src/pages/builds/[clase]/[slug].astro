@@ -7,6 +7,7 @@ import Termino from '../../../components/Termino.astro';
 import ArbolPlanGuerra from '../../../components/ArbolPlanGuerra.astro';
 import TableroParagon from '../../../components/TableroParagon.astro';
 import ListaCambios from '../../../components/ListaCambios.astro';
+import Progreso from '../../../components/Progreso.astro';
 import {
   loadBuilds,
   loadClasesEs,
@@ -89,6 +90,7 @@ const PESTANAS = [
   { id: 'paragon', etiqueta: 'Paragón' },
   { id: 'mercenarios', etiqueta: 'Mercenarios' },
   { id: 'warplans', etiqueta: 'Planes de guerra' },
+  { id: 'progreso', etiqueta: 'Qué me falta' },
   { id: 'cambios', etiqueta: 'Cambios' },
   { id: 'notas', etiqueta: 'Notas del autor' },
 ] as const;
@@ -604,6 +606,26 @@ function disponible(v: (typeof build.variants)[number], id: string): boolean {
                   Esta build no publica plan de guerra, o todavía no está extraído.
                 </p>
               )}
+            </section>
+
+            {/* QUE ME FALTA */}
+            <section
+              data-panel-pestana="progreso"
+              class="hidden grabado rounded-b-lg rounded-tr-lg bg-piedra p-5 sm:p-6"
+            >
+              <h2 class="font-titulo text-xl">Qué me falta para esta build</h2>
+              <p class="mt-1 max-w-2xl text-sm text-ceniza">
+                La lista de la compra: marca lo que ya tengas y queda a la vista lo que te queda por
+                conseguir, con de dónde sale cada cosa. Se guarda en este navegador, así que puedes
+                volver mañana y seguir donde lo dejaste.
+              </p>
+              <div class="mt-4">
+                <Progreso buildId={`${build.id}:${v.source.variantIndex}`} variante={v} />
+              </div>
+              <p class="mt-6 max-w-2xl text-xs text-humo">
+                No se envía nada a ningún servidor ni hace falta cuenta: lo marcado vive solo en tu
+                equipo. Si borras los datos del navegador, se borra la lista.
+              </p>
             </section>
 
             {/* CAMBIOS */}

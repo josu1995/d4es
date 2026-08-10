@@ -430,11 +430,11 @@
               "order": 0,
               "ref": {
                 "category": "affix",
-                "enUS": "Ranks to All Skills",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__ranks_to_all_skills",
-                "sno": null
+                "enUS": "to All Skills",
+                "esES": "a todas las habilidades",
+                "i18n": "d4companion",
+                "idName": "S14_Mythic_SkillRanksAll;SkillRanksAll_UBERUNIQUE;X2_SkillRankBonus_AllSkills;X2_Transfiguration_SkillRankBonus_AllSkills;X2_UBERUNIQUE_SkillRankBonus_AllSkills",
+                "sno": 1983837
               },
               "tempered": false
             },
@@ -482,11 +482,11 @@
               "order": 4,
               "ref": {
                 "category": "affix",
-                "enUS": "Lucky Hit: Up to a 15% Chance to Restore X Primary Resource (Worldly Stability - Resource)",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__lucky_hit_up_to_a_15_chance_to_restore_x_primary_resource_worldly_stability_resource",
-                "sno": null
+                "enUS": "Lucky Hit: Up to a 15 Chance to Restore Primary Resource",
+                "esES": "Golpe de suerte: Hasta un 15 de probabilidad de restaurar un de recurso primario",
+                "i18n": "d4companion",
+                "idName": "Lucky_Hit_Resource;Lucky_Hit_Resource_UBERUNIQUE;Lucky_Hit_Resource_UNIQUE;S04_Lucky_Hit_Resource_Percent;S10_Lucky_Hit_Resource_Flat;Tempered_Generic_LuckyHit_Resource_Tier1;Tempered_Generic_LuckyHit_Resource_Tier2;Tempered_Generic_LuckyHit_Resource_Tier3;UBERUNIQUE_Lucky_Hit_Resource_Ahavarion",
+                "sno": 1639488
               },
               "tempered": true
             }
@@ -804,10 +804,10 @@
               "order": 0,
               "ref": {
                 "category": "affix",
-                "enUS": "242 Primary Core Stat",
+                "enUS": "Primary Core Stat",
                 "esES": null,
                 "i18n": "none",
-                "idName": "affix__242_primary_core_stat",
+                "idName": "affix__primary_core_stat",
                 "sno": null
               },
               "tempered": false
@@ -1230,11 +1230,11 @@
               "order": 2,
               "ref": {
                 "category": "affix",
-                "enUS": "All Damage Multipler",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__all_damage_multipler",
-                "sno": null
+                "enUS": "x All Damage Multiplier",
+                "esES": "Multiplicador de todo el daño x",
+                "i18n": "d4companion",
+                "idName": "S04_Damage_All;X2_Damage_All_Greater;X2_UBERUNIQUE_Damage_All",
+                "sno": 1829588
               },
               "tempered": false
             },
@@ -1334,11 +1334,11 @@
               "order": 2,
               "ref": {
                 "category": "affix",
-                "enUS": "All Damage Multipler",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__all_damage_multipler",
-                "sno": null
+                "enUS": "x All Damage Multiplier",
+                "esES": "Multiplicador de todo el daño x",
+                "i18n": "d4companion",
+                "idName": "S04_Damage_All;X2_Damage_All_Greater;X2_UBERUNIQUE_Damage_All",
+                "sno": 1829588
               },
               "tempered": false
             },
@@ -1417,11 +1417,11 @@
               "order": 1,
               "ref": {
                 "category": "affix",
-                "enUS": "Ranks to Basic Skills",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__ranks_to_basic_skills",
-                "sno": null
+                "enUS": "to Basic Skills",
+                "esES": "a las habilidades de categoría Básica",
+                "i18n": "d4companion",
+                "idName": "S04_SkillRankBonus_Generic_Category_Basic;SkillRankBonus_Generic_Category_Basic;Talisman_Charm_Affix_UNIQUE_SkillRankBonus_Generic_Category_Basic_Higher;Talisman_Charm_SkillRankBonus_Generic_Category_Basic;Talisman_Charm_SkillRankBonus_Generic_Category_Basic_MagicOnly;UNIQUE_SkillRankBonus_Generic_Category_Basic;UNIQUE_SkillRankBonus_Generic_Category_Basic_Higher;X2_Transfiguration_SkillRankBonus_Generic_Category_Basic",
+                "sno": 1047026
               },
               "tempered": false
             },

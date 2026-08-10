@@ -325,11 +325,11 @@
               "order": 3,
               "ref": {
                 "category": "affix",
-                "enUS": "Ranks to All Skills",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__ranks_to_all_skills",
-                "sno": null
+                "enUS": "to All Skills",
+                "esES": "a todas las habilidades",
+                "i18n": "d4companion",
+                "idName": "S14_Mythic_SkillRanksAll;SkillRanksAll_UBERUNIQUE;X2_SkillRankBonus_AllSkills;X2_Transfiguration_SkillRankBonus_AllSkills;X2_UBERUNIQUE_SkillRankBonus_AllSkills",
+                "sno": 1983837
               },
               "tempered": false
             },
@@ -594,10 +594,10 @@
               "order": 0,
               "ref": {
                 "category": "affix",
-                "enUS": "242 Primary Core Stat",
+                "enUS": "Primary Core Stat",
                 "esES": null,
                 "i18n": "none",
-                "idName": "affix__242_primary_core_stat",
+                "idName": "affix__primary_core_stat",
                 "sno": null
               },
               "tempered": false
@@ -767,11 +767,11 @@
               "order": 2,
               "ref": {
                 "category": "affix",
-                "enUS": "All Damage Multipler",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__all_damage_multipler",
-                "sno": null
+                "enUS": "x All Damage Multiplier",
+                "esES": "Multiplicador de todo el daño x",
+                "i18n": "d4companion",
+                "idName": "S04_Damage_All;X2_Damage_All_Greater;X2_UBERUNIQUE_Damage_All",
+                "sno": 1829588
               },
               "tempered": false
             },

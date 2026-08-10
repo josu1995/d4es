@@ -400,11 +400,11 @@
               "order": 3,
               "ref": {
                 "category": "affix",
-                "enUS": "Ranks to All Skills",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__ranks_to_all_skills",
-                "sno": null
+                "enUS": "to All Skills",
+                "esES": "a todas las habilidades",
+                "i18n": "d4companion",
+                "idName": "S14_Mythic_SkillRanksAll;SkillRanksAll_UBERUNIQUE;X2_SkillRankBonus_AllSkills;X2_Transfiguration_SkillRankBonus_AllSkills;X2_UBERUNIQUE_SkillRankBonus_AllSkills",
+                "sno": 1983837
               },
               "tempered": false
             },
@@ -583,11 +583,11 @@
               "order": 3,
               "ref": {
                 "category": "affix",
-                "enUS": "Ranks to Defensive Skills",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__ranks_to_defensive_skills",
-                "sno": null
+                "enUS": "to Defensive Skills",
+                "esES": "a las habilidades de categoría Defensiva",
+                "i18n": "d4companion",
+                "idName": "S04_SkillRankBonus_Generic_Category_Defensive;SkillRankBonus_Generic_Category_Defensive;Talisman_Charm_SkillRankBonus_Generic_Category_Defensive;UNIQUE_SkillRankBonus_Generic_Category_Defensive_Higher;X2_Transfiguration_SkillRankBonus_Generic_Category_Defensive",
+                "sno": 1047055
               },
               "tempered": false
             },
@@ -735,10 +735,10 @@
               "order": 0,
               "ref": {
                 "category": "affix",
-                "enUS": "242 Primary Core Stat",
+                "enUS": "Primary Core Stat",
                 "esES": null,
                 "i18n": "none",
-                "idName": "affix__242_primary_core_stat",
+                "idName": "affix__primary_core_stat",
                 "sno": null
               },
               "tempered": false

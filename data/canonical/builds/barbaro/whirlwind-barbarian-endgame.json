@@ -390,11 +390,11 @@
               "order": 4,
               "ref": {
                 "category": "affix",
-                "enUS": "Lucky Hit: Up to a 15% Chance to Restore X Primary Resource (Worldly Stability - Resource)",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__lucky_hit_up_to_a_15_chance_to_restore_x_primary_resource_worldly_stability_resource",
-                "sno": null
+                "enUS": "Lucky Hit: Up to a 15 Chance to Restore Primary Resource",
+                "esES": "Golpe de suerte: Hasta un 15 de probabilidad de restaurar un de recurso primario",
+                "i18n": "d4companion",
+                "idName": "Lucky_Hit_Resource;Lucky_Hit_Resource_UBERUNIQUE;Lucky_Hit_Resource_UNIQUE;S04_Lucky_Hit_Resource_Percent;S10_Lucky_Hit_Resource_Flat;Tempered_Generic_LuckyHit_Resource_Tier1;Tempered_Generic_LuckyHit_Resource_Tier2;Tempered_Generic_LuckyHit_Resource_Tier3;UBERUNIQUE_Lucky_Hit_Resource_Ahavarion",
+                "sno": 1639488
               },
               "tempered": true
             }
@@ -638,11 +638,11 @@
               "order": 1,
               "ref": {
                 "category": "affix",
-                "enUS": "Ranks to Whirlwind",
-                "esES": null,
-                "i18n": "none",
-                "idName": "affix__ranks_to_whirlwind",
-                "sno": null
+                "enUS": "to Whirlwind",
+                "esES": "a Torbellino",
+                "i18n": "d4companion",
+                "idName": "S04_SkillRankBonus_Barb_Core_Whirlwind;SkillRankBonus_Barb_Core_5_Slot01;SkillRankBonus_Barb_Core_5_Whirlwind_UNIQUE;Talisman_Charm_SkillRankBonus_Barb_Core_Whirlwind;Talisman_Charm_SkillRankBonus_Barb_Core_Whirlwind_MagicOnly;UNIQUE_SkillRankBonus_Barb_Core_Whirlwind_Higher",
+                "sno": 1861920
               },
               "tempered": false
             },

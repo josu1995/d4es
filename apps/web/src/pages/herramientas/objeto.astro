@@ -1,0 +1,336 @@
+---
+import Base from '../../layouts/Base.astro';
+import { loadBuilds, loadClasesEs, claseNombre, buildUrl } from '../../lib/data';
+import { datosEvaluador } from '../../lib/objetos';
+
+/*
+  ¿Lo tiro o lo guardo?
+
+  La pregunta más repetida de una sesión de Diablo 4, y la que ninguna web en castellano
+  contesta: te cae una pieza y quieres saber si le sirve a tu build — o a alguna otra de
+  tu clase, por si te la piensas cambiar.
+
+  El dato que lo hace posible ya lo teníamos: la lista PRIORIZADA de afijos que cada build
+  pide en cada ranura, que es el bloque «Gear Stats» de la fuente, donde el orden importa.
+  Aquí se le da la vuelta: en lugar de ir build por build mirando qué pide, marcas lo que
+  tienes y se te dice quién lo quiere.
+
+  Todo ocurre en tu navegador. Los datos viajan dentro de la página, así que funciona
+  igual de rápido con el juego abierto al lado y no depende de ninguna petición.
+
+  Lo honesto: el objeto hay que marcarlo a mano, porque Diablo 4 no deja copiar el texto
+  de un ítem. Leerlo de la pantalla es lo que hace D4Companion con reconocimiento óptico,
+  y eso es otra herramienta y otro proyecto.
+*/
+const builds = loadBuilds();
+const clasesEs = loadClasesEs();
+const datos = datosEvaluador(
+  builds,
+  (id) => claseNombre(id, clasesEs),
+  (b) => buildUrl(b as never),
+);
+---
+
+<Base
+  titulo="¿Lo tiro o lo guardo? — Evaluador de objetos de Diablo 4"
+  descripcion="Marca los afijos del objeto que te ha caído y descubre qué builds lo aprovechan y cuánto. En castellano y en tu propio navegador."
+  migas={[
+    { nombre: 'Inicio', url: '/' },
+    { nombre: 'Herramientas', url: '/herramientas/importar' },
+    { nombre: '¿Lo tiro o lo guardo?', url: '/herramientas/objeto' },
+  ]}
+>
+  <div class="mx-auto max-w-4xl px-4 py-10">
+    <h1 class="font-titulo text-3xl sm:text-4xl">¿Lo tiro o lo guardo?</h1>
+    <p class="mt-4 max-w-2xl leading-relaxed text-ceniza">
+      Te ha caído una pieza y no sabes si vale. Dinos qué ranura es y qué afijos trae, y te decimos
+      qué builds la aprovechan y hasta qué punto — no solo la tuya, también las demás de tu clase,
+      por si algún día te la cambias.
+    </p>
+
+    <div class="mt-6 grabado rounded-lg border-oro-apagado/40 bg-oro/5 p-4 text-sm">
+      <p class="text-pergamino"><strong>Se calcula en tu navegador, sin enviar nada.</strong></p>
+      <p class="mt-1.5 text-ceniza">
+        Las prioridades de las {datos.builds.length} builds viajan dentro de esta página. Marcar los afijos
+        es cosa tuya: el juego no deja copiar el texto de un objeto, así que no hay forma de leerlo
+        automáticamente sin mirar tu pantalla, y eso no lo hacemos.
+      </p>
+    </div>
+
+    <form class="mt-6 grabado rounded-lg bg-piedra p-5" id="filtros">
+      <div class="grid gap-4 sm:grid-cols-2">
+        <div>
+          <label for="clase" class="mb-1.5 block text-xs uppercase tracking-wider text-humo">
+            Clase
+          </label>
+          <select
+            id="clase"
+            class="w-full grabado rounded bg-abismo px-3 py-2 text-sm text-pergamino"
+          >
+            <option value="">Todas las clases</option>
+            {datos.clases.map((c) => <option value={c.id}>{c.nombre}</option>)}
+          </select>
+        </div>
+        <div>
+          <label for="ranura" class="mb-1.5 block text-xs uppercase tracking-wider text-humo">
+            Ranura
+          </label>
+          <select
+            id="ranura"
+            class="w-full grabado rounded bg-abismo px-3 py-2 text-sm text-pergamino"
+          >
+            {datos.ranuras.map((r, i) => (
+              <option value={r.id} selected={i === 0}>
+                {r.nombre}
+              </option>
+            ))}
+          </select>
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <div class="flex flex-wrap items-baseline justify-between gap-2">
+          <label class="text-xs uppercase tracking-wider text-humo">
+            Afijos del objeto <span class="text-humo/70">(marca los que traiga)</span>
+          </label>
+          <button
+            type="button"
+            id="limpiar"
+            class="text-xs text-ceniza underline underline-offset-4 hover:text-pergamino"
+          >
+            Quitar todos
+          </button>
+        </div>
+        <input
+          id="buscar"
+          type="search"
+          placeholder="Buscar un afijo…"
+          class="mt-2 w-full grabado rounded bg-abismo px-3 py-2 text-sm text-pergamino placeholder:text-humo"
+        />
+        <p class="mt-2 text-xs text-humo">
+          Ordenados por lo que más piden las builds de esa ranura, así que lo de arriba es lo que
+          te interesa buscar aunque no tengas el objeto delante.
+        </p>
+        <div id="lista-afijos" class="mt-2 flex max-h-72 flex-wrap gap-1.5 overflow-y-auto p-0.5"></div>
+      </div>
+    </form>
+
+    <section class="mt-6" id="resultados" aria-live="polite"></section>
+
+    <p class="mt-8 max-w-2xl text-sm text-ceniza">
+      Lo que se compara son las prioridades que publica cada guía para esa ranura. Que un objeto
+      encaje mucho no lo convierte en mejor que el que llevas puesto: los números concretos (cuánta
+      vida, cuánto daño) no los tenemos, y sin ellos decirte «este es mejor» sería inventar.
+    </p>
+  </div>
+
+  <script type="application/json" id="datos-evaluador" set:html={JSON.stringify(datos)} />
+</Base>
+
+<script>
+  interface Datos {
+    afijos: string[];
+    sinTraducir: number[];
+    clases: { id: string; slug: string; nombre: string }[];
+    ranuras: { id: string; nombre: string }[];
+    builds: {
+      id: string;
+      titulo: string;
+      clase: string;
+      url: string;
+      tier: string | null;
+      ranuras: Record<string, number[]>;
+    }[];
+  }
+
+  const datos = JSON.parse(document.getElementById('datos-evaluador')!.textContent!) as Datos;
+  const sinTraducir = new Set(datos.sinTraducir);
+
+  const selClase = document.getElementById('clase') as HTMLSelectElement;
+  const selRanura = document.getElementById('ranura') as HTMLSelectElement;
+  const buscar = document.getElementById('buscar') as HTMLInputElement;
+  const lista = document.getElementById('lista-afijos')!;
+  const resultados = document.getElementById('resultados')!;
+  const marcados = new Set<number>();
+
+  /** Builds que entran en el filtro de clase. */
+  function buildsFiltradas() {
+    const clase = selClase.value;
+    return datos.builds.filter((b) => (clase === '' || b.clase === clase) && b.ranuras[selRanura.value]);
+  }
+
+  /**
+   * Los afijos que tiene sentido ofrecer: los que alguna build pide EN ESA RANURA. Se
+   * ordenan por cuántas los piden, que de paso convierte la lista en una chuleta de qué
+   * buscar.
+   */
+  function afijosDeLaRanura(): { i: number; veces: number }[] {
+    const cuenta = new Map<number, number>();
+    for (const b of buildsFiltradas()) {
+      for (const i of b.ranuras[selRanura.value] ?? []) cuenta.set(i, (cuenta.get(i) ?? 0) + 1);
+    }
+    return [...cuenta.entries()]
+      .map(([i, veces]) => ({ i, veces }))
+      .sort((a, b) => b.veces - a.veces || datos.afijos[a.i]!.localeCompare(datos.afijos[b.i]!, 'es'));
+  }
+
+  function pintarAfijos() {
+    const filtro = buscar.value.trim().toLowerCase();
+    const opciones = afijosDeLaRanura().filter(
+      (o) => filtro === '' || datos.afijos[o.i]!.toLowerCase().includes(filtro),
+    );
+    lista.replaceChildren();
+    if (opciones.length === 0) {
+      const p = document.createElement('p');
+      p.className = 'text-sm text-humo';
+      p.textContent = 'Ninguna build pide afijos en esa ranura con este filtro.';
+      lista.append(p);
+      return;
+    }
+    for (const o of opciones) {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.dataset['afijo'] = String(o.i);
+      b.setAttribute('aria-pressed', String(marcados.has(o.i)));
+      b.className =
+        'grabado grabado-hover rounded bg-abismo px-2.5 py-1.5 text-left text-xs text-ceniza ' +
+        'aria-pressed:border-brasa/60 aria-pressed:bg-brasa/15 aria-pressed:text-pergamino';
+      b.textContent = datos.afijos[o.i]!;
+      if (sinTraducir.has(o.i)) {
+        const chip = document.createElement('span');
+        chip.className = 'chip-en';
+        chip.textContent = 'EN';
+        b.append(chip);
+      }
+      const n = document.createElement('span');
+      n.className = 'ml-1.5 font-mono text-humo';
+      n.textContent = String(o.veces);
+      b.append(n);
+      b.addEventListener('click', () => {
+        if (marcados.has(o.i)) marcados.delete(o.i);
+        else marcados.add(o.i);
+        b.setAttribute('aria-pressed', String(marcados.has(o.i)));
+        pintarResultados();
+      });
+      lista.append(b);
+    }
+  }
+
+  function pintarResultados() {
+    resultados.replaceChildren();
+    if (marcados.size === 0) {
+      const p = document.createElement('p');
+      p.className = 'grabado rounded-lg bg-piedra p-5 text-sm text-ceniza';
+      p.textContent =
+        'Marca arriba los afijos que trae el objeto y aquí aparecerá qué builds lo aprovechan.';
+      resultados.append(p);
+      return;
+    }
+
+    const evaluadas = buildsFiltradas()
+      .map((b) => {
+        const pedidos = b.ranuras[selRanura.value] ?? [];
+        const aciertos = pedidos.map((i, pos) => ({ i, pos })).filter((x) => marcados.has(x.i));
+        // Cuánto de lo que ESA build pide traes tú. Se pondera por posición: acertar la
+        // primera prioridad vale más que la quinta, que es como funciona en el juego.
+        const puntos = aciertos.reduce((s, x) => s + 1 / (x.pos + 1), 0);
+        return { b, pedidos, aciertos, puntos };
+      })
+      .filter((x) => x.aciertos.length > 0)
+      .sort(
+        (x, y) =>
+          y.aciertos.length - x.aciertos.length ||
+          y.puntos - x.puntos ||
+          x.b.titulo.localeCompare(y.b.titulo, 'es'),
+      );
+
+    const cabecera = document.createElement('h2');
+    cabecera.className = 'font-titulo text-xl';
+    cabecera.textContent =
+      evaluadas.length === 0
+        ? 'Ninguna build pide esos afijos en esa ranura'
+        : `Lo aprovechan ${evaluadas.length} ${evaluadas.length === 1 ? 'build' : 'builds'}`;
+    resultados.append(cabecera);
+
+    if (evaluadas.length === 0) {
+      const p = document.createElement('p');
+      p.className = 'mt-2 text-sm text-ceniza';
+      p.textContent =
+        'Con esos afijos, en esa ranura, no encaja en ninguna de las builds del catálogo. Eso no ' +
+        'quiere decir que sea basura: puede servirte para llenar hueco mientras farmeas algo mejor.';
+      resultados.append(p);
+      return;
+    }
+
+    const ul = document.createElement('div');
+    ul.className = 'mt-3 space-y-2';
+    for (const e of evaluadas.slice(0, 20)) {
+      const art = document.createElement('article');
+      art.className = 'grabado rounded-lg bg-piedra p-4';
+
+      const h = document.createElement('div');
+      h.className = 'flex flex-wrap items-baseline gap-x-3 gap-y-1';
+      const a = document.createElement('a');
+      a.href = e.b.url;
+      a.className = 'font-titulo text-lg hover:text-brasa-viva';
+      a.textContent = e.b.titulo;
+      h.append(a);
+      if (e.b.tier) {
+        const t = document.createElement('span');
+        t.className = 'text-xs text-oro';
+        t.textContent = `Tier ${e.b.tier}`;
+        h.append(t);
+      }
+      const cuenta = document.createElement('span');
+      cuenta.className = 'ml-auto font-mono text-xs text-humo';
+      cuenta.textContent = `${e.aciertos.length} de sus ${e.pedidos.length} prioridades`;
+      h.append(cuenta);
+      art.append(h);
+
+      // Sus prioridades en orden, marcando las que traes.
+      const ol = document.createElement('ol');
+      ol.className = 'mt-2 flex flex-wrap gap-1.5';
+      e.pedidos.forEach((i, pos) => {
+        const li = document.createElement('li');
+        const tiene = marcados.has(i);
+        li.className =
+          'rounded border px-2 py-1 text-xs ' +
+          (tiene
+            ? 'border-brasa/60 bg-brasa/15 text-pergamino'
+            : 'border-grabado bg-abismo text-humo');
+        li.textContent = `${pos + 1}. ${datos.afijos[i]!}`;
+        ol.append(li);
+      });
+      art.append(ol);
+      ul.append(art);
+    }
+    resultados.append(ul);
+
+    if (evaluadas.length > 20) {
+      const p = document.createElement('p');
+      p.className = 'mt-3 text-xs text-humo';
+      p.textContent = `Se muestran las 20 que mejor encajan de ${evaluadas.length}.`;
+      resultados.append(p);
+    }
+  }
+
+  function refrescar() {
+    // Al cambiar de ranura, lo marcado deja de tener sentido: son otros afijos.
+    marcados.clear();
+    pintarAfijos();
+    pintarResultados();
+  }
+
+  selClase.addEventListener('change', refrescar);
+  selRanura.addEventListener('change', refrescar);
+  buscar.addEventListener('input', pintarAfijos);
+  document.getElementById('limpiar')!.addEventListener('click', () => {
+    marcados.clear();
+    pintarAfijos();
+    pintarResultados();
+  });
+  document.getElementById('filtros')!.addEventListener('submit', (e) => e.preventDefault());
+
+  pintarAfijos();
+  pintarResultados();
+</script>
