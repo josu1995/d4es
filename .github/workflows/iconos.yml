@@ -55,7 +55,19 @@ jobs:
             nuevos=$(git diff --cached --name-only --diff-filter=A -- apps/web/public/iconos | wc -l)
             peso=$(du -sh apps/web/public/iconos | cut -f1)
             git commit -m "iconos: $nuevos nuevos (total $peso) [run ${{ github.run_id }}]"
-            git pull --rebase --autostash && git push
+            # Si no se puede publicar, el paso FALLA. Un `pull --rebase && push` a secas
+            # deja el trabajo sin subir y el run en verde (ver la trampa de scrape-pages
+            # en TRASPASO §5): aqui serian ~200 iconos descargados y tirados.
+            publicado=no
+            for intento in 1 2 3; do
+              if git pull --rebase --autostash -X theirs && git push; then publicado=si; break; fi
+              git rebase --abort 2>/dev/null || true
+              sleep 5
+            done
+            if [ "$publicado" != "si" ]; then
+              echo "::error::No se pudieron publicar los iconos descargados."
+              exit 1
+            fi
             echo "$nuevos iconos nuevos, $peso en total." >> "$GITHUB_STEP_SUMMARY"
           else
             echo "Nada que descargar: ya estaban todos." >> "$GITHUB_STEP_SUMMARY"

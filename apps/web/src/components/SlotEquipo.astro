@@ -1,7 +1,7 @@
 ---
 import type { GearItem } from '@d4es/schema';
 import { iconoUnico, iconoRanura, iconoCodex, codexDeIcono, COLOR_CALIDAD, CODEX_ES } from '../lib/iconos';
-import { NOMBRE_SLOT, CALIDAD_ES } from '../lib/etiquetas';
+import { NOMBRE_SLOT, CALIDAD_ES, capitalizar } from '../lib/etiquetas';
 import { loadDiccionario } from '../lib/data';
 
 /**
@@ -113,7 +113,9 @@ const etiquetaCalidad = item.mythic.isMythic ? 'Mítico' : (CALIDAD_ES[item.qual
           {item.affixes.slice(0, 4).map((a) => (
             <li class="text-[0.7rem] leading-tight text-ceniza">
               {a.greater && <span class="text-oro" title="Afijo superior">★ </span>}
-              <span class={a.tempered ? 'text-rareza-magico' : ''}>{a.ref.esES ?? a.ref.enUS}</span>
+              <span class={a.tempered ? 'text-rareza-magico' : ''}>
+                {capitalizar(a.ref.esES ?? a.ref.enUS)}
+              </span>
               {a.ref.esES === null && <span class="chip-en" data-i18n-missing>EN</span>}
               {a.tempered && <span class="text-humo" title="Afijo templado"> ⚒</span>}
             </li>
@@ -149,7 +151,7 @@ const etiquetaCalidad = item.mythic.isMythic ? 'Mítico' : (CALIDAD_ES[item.qual
         {item.affixes.map((a) => (
           <div>
             <span class="tt-runa-nombre">
-              {a.greater ? '★' : '·'} {a.ref.esES ?? a.ref.enUS}
+              {a.greater ? '★' : '·'} {capitalizar(a.ref.esES ?? a.ref.enUS)}
             </span>
             {a.ref.esES === null && <span class="chip-en">EN</span>}
             {a.tempered && <span class="tt-runa-desc"> (templado)</span>}

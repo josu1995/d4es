@@ -87,6 +87,15 @@ export function skillDescEs(nombreEn: string): string | null {
   return dict.byEnglish[`skill:${skillNameKey(nombreEn)}`]?.desc ?? null;
 }
 
+/**
+ * Descripcion en castellano de una MEJORA de rama (lo que el tooltip llama inscripcion).
+ * Misma cosecha y misma regla: si no hay, null y se pinta la inglesa del catalogo.
+ */
+export function mejoraDescEs(nombreEn: string): string | null {
+  const dict = loadDiccionario();
+  return dict.byEnglish[`skillUpgrade:${skillNameKey(nombreEn)}`]?.desc ?? null;
+}
+
 let cachePlanes: WarPlansDataset | null = null;
 
 /**

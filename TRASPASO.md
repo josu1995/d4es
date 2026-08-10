@@ -269,6 +269,10 @@ disparar sin navegador con la credencial local de git:
 4. **Iconos auto-hospedados**: ✅ hechos. ~570 ficheros (14 MB) servidos desde `public/iconos`, con
    caída al CDN para lo que falte. Quedan ~80 sin descargar: los `*_v2` son duplicados del PTR que
    no existen en el CDN, y el resto son nombres que no casan (ver `data/reports/iconos.json`).
+   ⚠️ **Pendiente: los iconos de casilla de Paragón** (`/iconos/paragon/`, ~107 tipos × 2 variantes
+   apagada/encendida). El recolector ya los pide, pero **hay que commitear y lanzar `iconos.yml`**
+   para que se descarguen: la caída al CDN no vale aquí porque el proxy lo bloquea, así que hasta
+   entonces las casillas se ven con su color y su borde pero sin dibujo.
 5. **Corte de temporada**: la T14 acaba hacia el **15 de septiembre de 2026**. **No se ha ejecutado
    a propósito**: hacerlo ahora archivaría una temporada viva. Lo que sí se ha cubierto es lo que lo
    dispara — `detectarTemporada` ya está exportada, con el umbral documentado y **siete pruebas**,

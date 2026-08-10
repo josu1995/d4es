@@ -23,7 +23,8 @@ export type FamiliaIcono =
   | 'ranuras'
   | 'planes'
   | 'actividades'
-  | 'codex';
+  | 'codex'
+  | 'paragon';
 
 export interface Icono {
   /** URL de origen. */
@@ -78,6 +79,15 @@ export type CodexCategoria = (typeof CODEX_CATEGORIAS)[number];
 
 export function iconoDeCodex(categoria: CodexCategoria): Icono {
   return icono('codex', 'Codex/1', categoria);
+}
+
+/**
+ * Icono de una casilla de Paragon. El nombre del fichero es el propio tipo que publica la
+ * fuente en el alt (`Will` -> `Paragon/3/Will.png`), y las casillas que la build recorre
+ * usan la variante `_active`, que es como las pinta el juego.
+ */
+export function iconoDeCasillaParagon(tipo: string, activa: boolean): Icono {
+  return icono('paragon', 'Paragon/3', activa ? `${tipo}_active` : tipo);
 }
 
 /**

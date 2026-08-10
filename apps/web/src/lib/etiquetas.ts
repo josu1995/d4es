@@ -20,6 +20,17 @@ export const NOMBRE_SLOT: Record<string, string> = {
   offhand: 'Mano izquierda',
 };
 
+/**
+ * Primera letra en mayuscula, para PINTAR. El diccionario oficial guarda los afijos como
+ * los escribe el juego, que es en sufijo del nombre del objeto ("de fuerza", "de vida
+ * maxima"), y por eso salen en minuscula al listarlos sueltos. El dato NO se toca: la
+ * mayuscula es cosa de la interfaz, y asi el termino sigue casando con el diccionario.
+ */
+export function capitalizar(texto: string): string {
+  if (texto.length === 0) return texto;
+  return texto[0]!.toLocaleUpperCase('es') + texto.slice(1);
+}
+
 /** Calidad de una pieza, como etiqueta de interfaz. */
 export const CALIDAD_ES: Record<string, string> = {
   normal: 'Normal',

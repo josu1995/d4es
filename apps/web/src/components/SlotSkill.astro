@@ -1,7 +1,7 @@
 ---
 import type { SkillEntry } from '@d4es/schema';
 import { iconoSkill, colorCategoria } from '../lib/iconos';
-import { skillInfo, skillDescEs } from '../lib/data';
+import { skillInfo, skillDescEs, mejoraDescEs } from '../lib/data';
 
 /**
  * Un slot de habilidad como el de d4builds: icono circular con borde por categoria,
@@ -28,11 +28,15 @@ const descripcion = descEs ?? info?.description ?? null;
 
 // Las "mejoras" son las elecciones de rama del arbol. La fuente las llama runas, pero
 // no lo son: las runas de verdad se engarzan en el equipo.
-const mejoras = skill.runes.map((r) => ({
-  nombre: r.esES ?? r.enUS,
-  sinTraducir: r.esES === null,
-  descripcion: info?.runes[r.enUS] ?? null,
-}));
+const mejoras = skill.runes.map((r) => {
+  const descEsMejora = mejoraDescEs(r.enUS);
+  return {
+    nombre: r.esES ?? r.enUS,
+    sinTraducir: r.esES === null,
+    descripcion: descEsMejora ?? info?.runes[r.enUS] ?? null,
+    enIngles: descEsMejora === null,
+  };
+});
 ---
 
 <div class="flex flex-col items-center gap-1.5 w-24">
@@ -120,7 +124,11 @@ const mejoras = skill.runes.map((r) => ({
       </div>
     )
   }
-  {!descEs && info?.description && <p class="tt-idioma">Descripción original en inglés</p>}
+  {
+    ((!descEs && info?.description) || mejoras.some((r) => r.descripcion && r.enIngles)) && (
+      <p class="tt-idioma">Parte de este texto sigue en inglés: no hay traducción publicada</p>
+    )
+  }
 </template>
 
 {
@@ -128,7 +136,10 @@ const mejoras = skill.runes.map((r) => ({
     <template id={`${idTooltip}-r${i}`}>
       <div class="tt-titulo">◆ {r.nombre}</div>
       {r.descripcion ? (
-        <p class="tt-descripcion">{r.descripcion}</p>
+        <>
+          <p class="tt-descripcion">{r.descripcion}</p>
+          {r.enIngles && <p class="tt-idioma">Descripción original en inglés</p>}
+        </>
       ) : (
         <p class="tt-extra">Mejora de {nombreVisible}</p>
       )}

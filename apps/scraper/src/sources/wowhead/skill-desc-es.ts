@@ -39,6 +39,8 @@ const REINTENTOS = 3;
 export interface CosechaDescripciones {
   fichas: number;
   nuevas: number;
+  /** Descripciones de mejoras de rama (las "inscripciones" del tooltip). */
+  nuevasMejoras: number;
   /** Fichas cuyo bloque activo no casa con el nombre esperado, o sin descripcion. */
   descartadas: string[];
   fallos: string[];
@@ -97,6 +99,29 @@ export function extraerDescripcionActiva(html: string): { nombre: string; desc: 
   return { nombre: limpiarTexto(nombre), desc };
 }
 
+/**
+ * Descripciones de las MEJORAS de rama de la ficha (lo que el tooltip llama
+ * inscripciones). Se devuelven indexadas por su nombre EN CASTELLANO, que es lo que
+ * permite casarlas sin depender de la posicion: el nombre ya se cosecho antes y esta
+ * verificado, asi que si coincide es la misma mejora.
+ */
+export function extraerDescripcionesMejoras(html: string): Map<string, string> {
+  const salida = new Map<string, string>();
+  for (const bloque of html.split('data-skill-type="upgrade"').slice(1)) {
+    const nombre = bloque.match(/<div class="whtt-name">([^<]+)<\/div>/)?.[1];
+    const desc = bloque.match(/<div class="whtt-description">(.*?)<\/div>/s)?.[1];
+    if (!nombre || !desc) continue;
+    const limpio = limpiarTexto(desc).replace(/\s+/g, ' ').trim();
+    if (limpio.length === 0) continue;
+    // Si un nombre sale dos veces con textos distintos no se elige a dedo: se descarta.
+    const clave = limpiarTexto(nombre);
+    if (salida.has(clave) && salida.get(clave) !== limpio) salida.set(clave, '');
+    else if (!salida.has(clave)) salida.set(clave, limpio);
+  }
+  for (const [k, v] of salida) if (v === '') salida.delete(k);
+  return salida;
+}
+
 async function fichaEs(sno: number): Promise<string> {
   const url = `https://www.wowhead.com/diablo-4/es/skill/${sno}`;
   for (let intento = 0; ; intento++) {
@@ -125,7 +150,7 @@ export async function cosecharDescripcionesEs(maxFichas = 200): Promise<CosechaD
   };
   const entradas = fichero.entradas ?? [];
 
-  const res: CosechaDescripciones = { fichas: 0, nuevas: 0, descartadas: [], fallos: [] };
+  const res: CosechaDescripciones = { fichas: 0, nuevas: 0, nuevasMejoras: 0, descartadas: [], fallos: [] };
   const guardar = async () => {
     await writeFile(
       destino,
@@ -134,28 +159,65 @@ export async function cosecharDescripcionesEs(maxFichas = 200): Promise<CosechaD
     );
   };
 
-  const pendientes = entradas.filter((e) => e.category === 'skill' && e.sno && !e.desc);
-  process.stdout.write(`${pendientes.length} habilidades con ficha ES y sin descripcion\n`);
+  // Que mejoras tiene cada habilidad: lo publica el catalogo de d4builds en el dataset.
+  const dataset = JSON.parse(
+    await readFile(join(PATHS.canonical, 'skills-dataset.json'), 'utf8'),
+  ) as { byName: Record<string, { name: string; runes?: Record<string, string> }> };
+  const mejorasDeSkill = new Map<string, string[]>();
+  for (const info of Object.values(dataset.byName)) {
+    const mejoras = Object.keys(info.runes ?? {});
+    if (mejoras.length > 0) mejorasDeSkill.set(info.name.toLowerCase(), mejoras);
+  }
+  const upgradePorEn = new Map<string, EntradaCurada>();
+  for (const e of entradas) {
+    if (e.category === 'skillUpgrade') upgradePorEn.set(e.en.toLowerCase(), e);
+  }
+
+  // Se pide la ficha si falta la descripcion de la habilidad O la de alguna de sus
+  // mejoras: es la misma pagina, asi que una peticion cubre las dos cosas.
+  const pendientes = entradas.filter((e) => {
+    if (e.category !== 'skill' || !e.sno) return false;
+    if (!e.desc) return true;
+    return (mejorasDeSkill.get(e.en.toLowerCase()) ?? []).some((m) => {
+      const up = upgradePorEn.get(m.toLowerCase());
+      return up !== undefined && !up.desc;
+    });
+  });
+  process.stdout.write(`${pendientes.length} fichas por pedir (habilidad y/o sus mejoras sin descripcion)\n`);
 
   for (const e of pendientes) {
     if (res.fichas >= maxFichas) break;
     try {
       const html = await fichaEs(e.sno!);
       res.fichas++;
+
       const activa = extraerDescripcionActiva(html);
       if (!activa) {
         res.descartadas.push(`${e.en}: la ficha no trae bloque activo con descripcion`);
-        continue;
-      }
-      // El nombre del bloque debe ser la traduccion ya cosechada: si no, esta pagina no
-      // es la que se esperaba (redireccion, SNO reciclado...) y no se publica nada.
-      if (activa.nombre !== e.es) {
+      } else if (activa.nombre !== e.es) {
+        // El nombre del bloque debe ser la traduccion ya cosechada: si no, esta pagina no
+        // es la que se esperaba (redireccion, SNO reciclado...) y no se publica nada.
         res.descartadas.push(`${e.en}: el bloque dice "${activa.nombre}" y se esperaba "${e.es}"`);
         continue;
+      } else if (!e.desc) {
+        e.desc = activa.desc;
+        res.nuevas++;
       }
-      e.desc = activa.desc;
-      res.nuevas++;
-      process.stdout.write(`  [${res.fichas}] ${e.es.padEnd(28)} ${activa.desc.slice(0, 60)}...\n`);
+
+      // Las mejoras de esta ficha, casadas por su nombre en castellano (ya verificado).
+      const porNombreEs = extraerDescripcionesMejoras(html);
+      let mejorasNuevas = 0;
+      for (const m of mejorasDeSkill.get(e.en.toLowerCase()) ?? []) {
+        const up = upgradePorEn.get(m.toLowerCase());
+        if (!up || up.desc) continue;
+        const desc = porNombreEs.get(up.es);
+        if (!desc) continue;
+        up.desc = desc;
+        mejorasNuevas++;
+        res.nuevasMejoras++;
+      }
+
+      process.stdout.write(`  [${res.fichas}] ${e.es.padEnd(28)} +${mejorasNuevas} mejoras\n`);
     } catch (err) {
       res.fallos.push(`${e.en}: ${err instanceof Error ? err.message : String(err)}`);
     }

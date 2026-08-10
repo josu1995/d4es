@@ -6,6 +6,7 @@ import {
   CODEX_CATEGORIAS,
   iconoDeActividadPlan,
   iconoDeClase,
+  iconoDeCasillaParagon,
   iconoDeCodex,
   iconoDeNodoPlan,
   iconoDeRanura,
@@ -13,6 +14,7 @@ import {
   iconoHabilidad,
   type CanonicalBuild,
   type Icono,
+  type ParagonBoardsDataset,
   type WarPlansDataset,
 } from '@d4es/schema';
 import { PATHS } from '../paths.js';
@@ -103,6 +105,18 @@ export async function reunirIconos(): Promise<Icono[]> {
   for (const a of planes?.activities ?? []) {
     anadir(iconoDeActividadPlan(a.slug));
     for (const n of a.nodes) anadir(iconoDeNodoPlan(n.slug));
+  }
+
+  // Iconos de casilla de Paragon: son ~100 tipos distintos, no las 10.894 casillas. Se
+  // piden en sus dos variantes porque la casilla recorrida usa la version encendida.
+  const paragon = await readJsonIfExists<ParagonBoardsDataset>(
+    join(PATHS.canonical, 'paragon-boards-dataset.json'),
+  );
+  const tiposParagon = new Set<string>();
+  for (const b of paragon?.boards ?? []) for (const t of b.tiles) if (t.type) tiposParagon.add(t.type);
+  for (const tipo of tiposParagon) {
+    anadir(iconoDeCasillaParagon(tipo, false));
+    anadir(iconoDeCasillaParagon(tipo, true));
   }
 
   for (const b of await leerBuilds()) {

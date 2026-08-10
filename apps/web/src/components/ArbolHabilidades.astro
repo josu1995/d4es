@@ -1,6 +1,6 @@
 ---
 import type { SkillEntry } from '@d4es/schema';
-import { arbolDeClase, skillInfo, skillDescEs } from '../lib/data';
+import { arbolDeClase, skillInfo, skillDescEs, mejoraDescEs } from '../lib/data';
 import { iconoSkill, colorCategoria } from '../lib/iconos';
 
 /**
@@ -138,12 +138,15 @@ const totalPuntos = asignadas.reduce((n, s) => n + s.rank, 0);
                       )}
                       {usada && usada.runes.length > 0 && (
                         <div class="tt-runas">
-                          {usada.runes.map((r) => (
-                            <div>
-                              <span class="tt-runa-nombre">◆ {r.esES ?? r.enUS}</span>
-                              {info?.runes[r.enUS] && <span class="tt-runa-desc"> — {info.runes[r.enUS]}</span>}
-                            </div>
-                          ))}
+                          {usada.runes.map((r) => {
+                            const d = mejoraDescEs(r.enUS) ?? info?.runes[r.enUS] ?? null;
+                            return (
+                              <div>
+                                <span class="tt-runa-nombre">◆ {r.esES ?? r.enUS}</span>
+                                {d && <span class="tt-runa-desc"> — {d}</span>}
+                              </div>
+                            );
+                          })}
                         </div>
                       )}
                     </template>

@@ -1,5 +1,6 @@
 ---
 import type { ParagonBoardLayout } from '@d4es/schema';
+import { iconoCasillaParagon } from '../lib/iconos';
 
 /**
  * Un tablero de Paragón dibujado entero, con el camino de la build encendido.
@@ -11,13 +12,13 @@ import type { ParagonBoardLayout } from '@d4es/schema';
  * qué casillas recorre y con qué giro monta el tablero.
  *
  * El giro se aplica TRANSFORMANDO las coordenadas (fila, columna), no con un rotate del
- * SVG: así el dibujo queda girado como en el juego pero cualquier texto o marca queda
- * derecho.
+ * SVG: así el dibujo queda girado como en el juego pero los iconos quedan derechos.
  *
- * Las casillas no llevan imagen a propósito: serían ~800 <image> por ficha para repetir
- * lo que el color ya dice. La rareza colorea (común/mágico/raro/legendario, los mismos
- * tokens que el equipo), el engarce de glifo va como rombo, y el tipo exacto de cada
- * casilla viaja en su <title>.
+ * Cada casilla lleva su icono, como en d4builds y maxroll. Son ~160 por tablero y hasta
+ * 9 tableros por ficha, así que NO se emite una <image> por casilla: se declara una vez
+ * por tipo en <defs> y cada casilla es un <use>, que el navegador dibuja sin volver a
+ * descargar nada. Las casillas recorridas usan la variante encendida del icono, que es
+ * como las pinta el juego.
  */
 interface Props {
   layout: ParagonBoardLayout;
@@ -27,9 +28,11 @@ interface Props {
   tiles: Set<string>;
   /** Nombre del glifo engarzado (para el título de la casilla del glifo). */
   glifo?: string | null;
+  /** Sufijo para los id de <defs>: han de ser únicos en toda la página. */
+  idBase: string;
 }
 
-const { layout, rotation, tiles, glifo = null } = Astro.props;
+const { layout, rotation, tiles, glifo = null, idBase } = Astro.props;
 
 /** Lado de una casilla y hueco entre ellas, en unidades del viewBox. */
 const LADO = 22;
@@ -49,14 +52,29 @@ function girar(row: number, col: number): { r: number; c: number } {
 
 const dibujadas = layout.tiles.map((t) => {
   const { r, c } = girar(t.row, t.col);
+  const activa = tiles.has(`r${t.row}c${t.col}`);
   return {
     ...t,
-    activa: tiles.has(`r${t.row}c${t.col}`),
+    activa,
     esGlifo: t.type === 'Glyph',
     x: (c - 1) * PASO,
     y: (r - 1) * PASO,
   };
 });
+
+// Un símbolo por combinación (tipo, encendida) de las que se usan de verdad.
+const simbolos = new Map<string, { tipo: string; activa: boolean; id: string }>();
+for (const t of dibujadas) {
+  if (!t.type) continue;
+  const clave = `${t.type}|${t.activa}`;
+  if (simbolos.has(clave)) continue;
+  simbolos.set(clave, {
+    tipo: t.type,
+    activa: t.activa,
+    id: `p-${idBase}-${t.type.replace(/[^A-Za-z0-9]/g, '')}-${t.activa ? 'on' : 'off'}`,
+  });
+}
+const idDe = (tipo: string, activa: boolean) => simbolos.get(`${tipo}|${activa}`)?.id ?? null;
 
 const anchoRejilla = (rot === 90 || rot === 270 ? rows : cols) * PASO - HUECO;
 const altoRejilla = (rot === 90 || rot === 270 ? cols : rows) * PASO - HUECO;
@@ -89,6 +107,19 @@ function tituloDe(t: (typeof dibujadas)[number]): string {
     role="img"
     aria-label={`Tablero de Paragón ${layout.name}`}
   >
+    <defs>
+      {
+        [...simbolos.values()].map((s) => (
+          <image
+            id={s.id}
+            href={iconoCasillaParagon(s.tipo, s.activa)}
+            width={LADO - 6}
+            height={LADO - 6}
+          />
+        ))
+      }
+    </defs>
+
     {
       dibujadas.map((t) => {
         const borde = t.activa
@@ -97,8 +128,9 @@ function tituloDe(t: (typeof dibujadas)[number]): string {
         const relleno = t.activa ? 'rgb(200 69 47 / 0.35)' : 'var(--color-piedra)';
         const cx = t.x + LADO / 2;
         const cy = t.y + LADO / 2;
+        const icono = t.type ? idDe(t.type, t.activa) : null;
         return (
-          <g opacity={t.activa ? '1' : '0.45'}>
+          <g opacity={t.activa ? '1' : '0.5'}>
             <title>{tituloDe(t)}</title>
             {t.esGlifo ? (
               <rect
@@ -124,6 +156,7 @@ function tituloDe(t: (typeof dibujadas)[number]): string {
                 stroke-width={t.rarity && t.rarity !== 'common' ? 2.5 : 1.5}
               />
             )}
+            {icono && <use href={`#${icono}`} x={t.x + 3} y={t.y + 3} />}
           </g>
         );
       })

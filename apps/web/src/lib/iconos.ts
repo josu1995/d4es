@@ -4,6 +4,7 @@ import {
   ICONO_CDN,
   codexDeIcono,
   iconoDeActividadPlan,
+  iconoDeCasillaParagon,
   iconoDeClase,
   iconoDeCodex,
   iconoDeNodoPlan,
@@ -119,6 +120,11 @@ export function iconoRanura(slot: string): string | null {
  */
 export function iconoCodex(categoria: CodexCategoria): string {
   return servir(iconoDeCodex(categoria));
+}
+
+/** Icono de una casilla de Paragon, en su variante apagada o encendida. */
+export function iconoCasillaParagon(tipo: string, activa: boolean): string {
+  return servir(iconoDeCasillaParagon(tipo, activa));
 }
 
 export { codexDeIcono };

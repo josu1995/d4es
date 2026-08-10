@@ -183,7 +183,10 @@ async function cmdSkillsDesc(): Promise<number> {
 
   process.stdout.write(`Cosechando descripciones de habilidad en castellano (hasta ${maxFichas} fichas)...\n`);
   const res = await cosecharDescripcionesEs(maxFichas);
-  process.stdout.write(`\n${res.fichas} fichas pedidas | ${res.nuevas} descripciones nuevas\n`);
+  process.stdout.write(
+    `\n${res.fichas} fichas pedidas | ${res.nuevas} descripciones de habilidad | ` +
+      `${res.nuevasMejoras} de mejoras de rama\n`,
+  );
   if (res.descartadas.length > 0) {
     process.stdout.write(`${res.descartadas.length} descartadas (nombre que no casa o ficha sin bloque):\n`);
     for (const d of res.descartadas.slice(0, 10)) process.stdout.write(`  ${d}\n`);
