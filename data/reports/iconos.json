@@ -1,6 +1,6 @@
 {
-  "descargadosEstaVez": 4,
-  "enDisco": 499,
+  "descargadosEstaVez": 208,
+  "enDisco": 707,
   "fallidos": [
     {
       "motivo": "HTTP 404",
@@ -21,6 +21,22 @@
     {
       "motivo": "HTTP 404",
       "ruta": "/iconos/habilidades/whirlwind_v2.png"
+    },
+    {
+      "motivo": "HTTP 404",
+      "ruta": "/iconos/paragon/Glyph_active.png"
+    },
+    {
+      "motivo": "HTTP 404",
+      "ruta": "/iconos/paragon/Glyph.png"
+    },
+    {
+      "motivo": "HTTP 404",
+      "ruta": "/iconos/paragon/Paragon%20Starting%20Node_active.png"
+    },
+    {
+      "motivo": "HTTP 404",
+      "ruta": "/iconos/paragon/Paragon%20Starting%20Node.png"
     },
     {
       "motivo": "no es un PNG (6510 bytes)",
@@ -305,26 +321,10 @@
     {
       "motivo": "no es un PNG (1608 bytes)",
       "ruta": "/iconos/unicos/supplication.png"
-    },
-    {
-      "motivo": "no es un PNG (8144 bytes)",
-      "ruta": "/iconos/unicos/the_basilisk.png"
-    },
-    {
-      "motivo": "no es un PNG (8574 bytes)",
-      "ruta": "/iconos/unicos/the_fecund_seal.png"
-    },
-    {
-      "motivo": "no es un PNG (6524 bytes)",
-      "ruta": "/iconos/unicos/the_hand_of_naz.png"
-    },
-    {
-      "motivo": "no es un PNG (9736 bytes)",
-      "ruta": "/iconos/unicos/the_hemat_stone.png"
     }
   ],
   "huerfanosBorrados": [],
-  "megasEstaVez": 0.76,
+  "megasEstaVez": 1.55,
   "parado": false,
-  "referenciados": 589
+  "referenciados": 801
 }
